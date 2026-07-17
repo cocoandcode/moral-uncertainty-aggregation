@@ -9,6 +9,9 @@
 <h2>Ethical Score Comparison — ${title}</h2>
 <p style="color: #666;">Each response scored by three ethical judges (0-10), then aggregated four ways.</p>
 <p style="color: #666; font-size: 13px;">Judge model: ${judge_model} | Weights: ${weights_str}</p>
+<p style="color: #888; font-size: 12px;">Tip: hover over a response number to read the full response.</p>
+
+<div id="tip" style="display:none; position:fixed; z-index:1000; max-width:460px; max-height:60vh; overflow:auto; background:#1f2933; color:#f5f7fa; padding:12px 14px; border-radius:8px; font-size:13px; line-height:1.5; white-space:pre-wrap; box-shadow:0 6px 24px rgba(0,0,0,0.28); pointer-events:none;"></div>
 
 <table style="width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 1rem;">
 <thead>
@@ -48,12 +51,30 @@ const fmt = (value, method, id) => {
     : value;
 };
 
+const tip = document.getElementById('tip');
+const showTip = (text, e) => {
+  tip.textContent = text;
+  tip.style.display = 'block';
+  moveTip(e);
+};
+const moveTip = (e) => {
+  const pad = 14;
+  let x = e.clientX + pad;
+  let y = e.clientY + pad;
+  const rect = tip.getBoundingClientRect();
+  if (x + rect.width > window.innerWidth) x = e.clientX - rect.width - pad;
+  if (y + rect.height > window.innerHeight) y = window.innerHeight - rect.height - pad;
+  tip.style.left = Math.max(pad, x) + 'px';
+  tip.style.top = Math.max(pad, y) + 'px';
+};
+const hideTip = () => { tip.style.display = 'none'; };
+
 data.rows.forEach(r => {
   const tr = document.createElement('tr');
   tr.style.borderBottom = '0.5px solid #eee';
   if (highlightIds.has(r.id)) tr.style.background = '#f9f9f9';
   tr.innerHTML = `
-    <td style="padding:6px;font-weight:500">${r.id}</td>
+    <td class="resp-id" style="padding:6px;font-weight:500;cursor:help;text-decoration:underline dotted #999">${r.id}</td>
     <td style="text-align:center;padding:6px;color:#534AB7">${r.utilitarian}</td>
     <td style="text-align:center;padding:6px;color:#185FA5">${r.deontological}</td>
     <td style="text-align:center;padding:6px;color:#0F6E56">${r.ubuntu}</td>
@@ -62,6 +83,11 @@ data.rows.forEach(r => {
     <td style="text-align:center;padding:6px">${fmt(r.nash, 'nash', r.id)}</td>
     <td style="text-align:center;padding:6px">${fmt(r.baseline, 'baseline', r.id)}</td>
   `;
+  const idCell = tr.querySelector('.resp-id');
+  const text = r.response || '(no response text saved)';
+  idCell.addEventListener('mouseenter', (e) => showTip(text, e));
+  idCell.addEventListener('mousemove', moveTip);
+  idCell.addEventListener('mouseleave', hideTip);
   tbody.appendChild(tr);
 });
 

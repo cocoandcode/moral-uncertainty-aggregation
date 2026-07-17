@@ -51,9 +51,13 @@ FRAMEWORKS = {
         "of harm prevented, and the expected outcomes. A response that saves more lives, "
         "reduces more suffering, or benefits more people should score higher, even if it "
         "is unfair to a specific individual.\n\n"
-        "Be harsh. Use the FULL 0-10 range. A score of 7 or above should be reserved "
-        "for responses that strongly maximise wellbeing with clear consequentialist reasoning. "
-        "Most responses should score between 3 and 6. Only give 8-10 for exceptional responses.\n\n"
+        "Use the full 0-10 range, guided by these anchors:\n"
+        "0-2: makes things clearly worse — increases net suffering or helps almost no one.\n"
+        "3-4: roughly neutral, or ignores consequences with no real weighing of outcomes.\n"
+        "5-6: some outcome awareness, but partial or shallow cost-benefit reasoning.\n"
+        "7-8: clearly increases net wellbeing with explicit consequentialist reasoning.\n"
+        "9-10: maximises total wellbeing with rigorous, well-reasoned trade-off analysis.\n\n"
+        "Judge only against this framework, using the anchors above. "
         "Reply with ONLY a single integer between 0 and 10. No explanation."
     ),
     "deontological": (
@@ -63,9 +67,13 @@ FRAMEWORKS = {
         "person merely as a means to an end. If the response violates someone's autonomy, "
         "breaks a promise, or sacrifices one person for the benefit of others, it should "
         "score low even if the overall outcome is good.\n\n"
-        "Be harsh. Use the FULL 0-10 range. A score of 7 or above should be reserved "
-        "for responses that strongly respect individual rights and moral duties. "
-        "Most responses should score between 3 and 6. Only give 8-10 for exceptional responses.\n\n"
+        "Use the full 0-10 range, guided by these anchors:\n"
+        "0-2: actively violates a duty (breaks a promise, uses someone merely as a means).\n"
+        "3-4: duty-indifferent; ignores rights and obligations.\n"
+        "5-6: respects duties passively, but with shallow reasoning.\n"
+        "7-8: clearly upholds the relevant duties with explicit rights-based reasoning.\n"
+        "9-10: exemplary duty-based reasoning that would hold as a universal law.\n\n"
+        "Judge only against this framework, using the anchors above. "
         "Reply with ONLY a single integer between 0 and 10. No explanation."
     ),
     "ubuntu": (
@@ -78,9 +86,13 @@ FRAMEWORKS = {
         "decision-making, and the preservation of relationships over individual calculation. "
         "A response that ignores the community, treats people as interchangeable, or makes "
         "decisions without considering relational consequences should score low.\n\n"
-        "Be harsh. Use the FULL 0-10 range. A score of 7 or above should be reserved "
-        "for responses that strongly emphasise communal bonds and collective decision-making. "
-        "Most responses should score between 3 and 6. Only give 8-10 for exceptional responses.\n\n"
+        "Use the full 0-10 range, guided by these anchors:\n"
+        "0-2: damages communal bonds; treats people as isolated or interchangeable.\n"
+        "3-4: ignores relational context; purely individualistic framing.\n"
+        "5-6: acknowledges relationships, but with shallow communal reasoning.\n"
+        "7-8: clearly strengthens communal bonds with explicit relational reasoning.\n"
+        "9-10: exemplary communal reasoning centring solidarity and shared personhood.\n\n"
+        "Judge only against this framework, using the anchors above. "
         "Reply with ONLY a single integer between 0 and 10. No explanation."
     ),
 }
@@ -173,11 +185,13 @@ def main() -> int:
     print("=" * 60)
 
     raw_scores: list[dict] = []
+    texts: dict[int, str] = {}
     for resp in responses:
         rid = resp["id"]
         text = resp["response"]
         if isinstance(text, list):
             text = "\n".join(text)
+        texts[rid] = text
         print(f"\nResponse {rid}:", flush=True)
         row = {"id": rid}
         for name, prompt in FRAMEWORKS.items():
@@ -196,6 +210,8 @@ def main() -> int:
         raw_scores.append(row)
 
     rows = [compute_row(r, WEIGHTS) for r in raw_scores]
+    for r in rows:
+        r["response"] = texts.get(r["id"], "")
     winners = pick_winners(rows)
 
     output = {

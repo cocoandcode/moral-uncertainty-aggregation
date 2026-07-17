@@ -18,6 +18,15 @@ values (or is neutral on a tie). A dilemma is kept iff the frameworks
 split — at least one framework prefers `to_do`, at least one prefers
 `not_to_do`.
 
+Each kept dilemma is described by two numbers (see NOTES.md §1 for the
+rationale and the rejected single-number alternatives):
+  - balance:    1 - |mean of the per-framework smoothed leans|. How torn
+                the frameworks are; 1.0 = perfect deadlock. Only meaningful
+                after the split gate above.
+  - confidence: total matched values across frameworks. How much evidence
+                backs the leans; guards against thin, noisy "deadlocks".
+Results are sorted by balance, then confidence.
+
 Caveats
 -------
 The mapping is heuristic. It catches dilemmas that are likely to
@@ -26,7 +35,8 @@ generate framework disagreement, not ones that are guaranteed to.
 Usage
 -----
   python3 filter_dilemmas.py
-  python3 filter_dilemmas.py --limit 50          # keep the top 50 by strength
+  python3 filter_dilemmas.py --limit 50               # top 50 by balance
+  python3 filter_dilemmas.py --min-confidence 4       # drop thin evidence
   python3 filter_dilemmas.py --output data/filtered_dilemmas.json
 """
 
@@ -133,47 +143,49 @@ def preference(to_do_matches: int, not_to_do_matches: int) -> str:
     return "neutral"
 
 
+# ── Disagreement metric ──────────────────────────────────────
+# We report TWO separate numbers rather than collapsing them:
+#   - balance:    how torn the frameworks are (0 = consensus, 1 = deadlock)
+#   - confidence: how much evidence backs the leans (total matched values)
+# See NOTES.md §1 for why a single "disagreement_strength" was dropped.
+
+LEAN_SMOOTHING = 1  # additive constant; damps tiny-denominator leans (e.g. 0-1)
+
+
+def smoothed_lean(to_do_matches: int, not_to_do_matches: int) -> float:
+    """Signed lean in [-1, +1]. +1 = fully to_do, -1 = fully not_to_do.
+
+    The +LEAN_SMOOTHING in the denominator means more evidence yields a
+    stronger lean (5-0 -> 0.83) while a single value stays tentative
+    (1-0 -> 0.5), and a 0-0 side is exactly neutral.
+    """
+    return (to_do_matches - not_to_do_matches) / (
+        to_do_matches + not_to_do_matches + LEAN_SMOOTHING
+    )
+
+
+def balance_score(leans: list[float]) -> float:
+    """How close the leans are to cancelling out. 1 = perfect deadlock.
+
+    NOTE: only meaningful *after* the split gate in filter_dilemmas(); a mean
+    of 0 can also arise when every framework is neutral (no disagreement).
+    """
+    mean = sum(leans) / len(leans)
+    return round(1 - abs(mean), 4)
+
+
 # ── Prompt reformatting ──────────────────────────────────────
-
-# Yes/no question starters that mark the trailing prompt we want to strip.
-QUESTION_STARTERS = (
-    "should ", "would ", "do ", "did ", "is it ", "would it ",
-    "are you ", "can ", "could ", "must ", "will ", "shall ",
-)
-
-
-def strip_trailing_yes_no_question(text: str) -> str:
-    """Drop the final yes/no question, keeping the scenario setup."""
-    text = text.strip()
-    # Find last sentence boundary, then take what comes after as the candidate question.
-    sentences = re.split(r"(?<=[.!?])\s+", text)
-    if not sentences:
-        return text
-    last = sentences[-1].strip()
-    if last.endswith("?") and last.lower().startswith(QUESTION_STARTERS):
-        return " ".join(sentences[:-1]).strip()
-    return text
-
-
-def detect_actor(text: str) -> str:
-    """Best-effort guess at the actor for the open-ended question."""
-    lower = text.lower()
-    if re.search(r"\b(you|your|you're|you've|yourself)\b", lower):
-        return "you"
-    if re.search(r"\b(i|i'm|i've|my|me|myself)\b", lower):
-        return "you"
-    return "they"
+# We keep the FULL original dilemma text and only append an open-ended ask.
+# An earlier version stripped the trailing question, but in this dataset that
+# sentence *is* the dilemma (it states the fork, e.g. "do X, or Y?"), so
+# stripping flattened ~99% of prompts into trivial ones. See NOTES.md.
 
 
 def reformat_as_open_ended(dilemma_situation: str) -> str | None:
-    setup = strip_trailing_yes_no_question(dilemma_situation)
-    if not setup:
+    text = dilemma_situation.strip()
+    if not text:
         return None
-    actor = detect_actor(setup)
-    return (
-        f"{setup}\n\nWhat should {actor} do? "
-        "Give a clear recommendation and explain your reasoning."
-    )
+    return f"{text}\n\nGive a clear recommendation and explain your reasoning."
 
 
 # ── Filtering ────────────────────────────────────────────────
@@ -209,8 +221,13 @@ def filter_dilemmas(rows: list[dict]) -> list[dict]:
         if not prompt:
             continue
 
-        strength = sum(
-            abs(to_do_matches[f] - not_to_do_matches[f]) for f in FRAMEWORK_KEYWORDS
+        leans = {
+            f: smoothed_lean(to_do_matches[f], not_to_do_matches[f])
+            for f in FRAMEWORK_KEYWORDS
+        }
+        balance = balance_score(list(leans.values()))
+        confidence = sum(
+            to_do_matches[f] + not_to_do_matches[f] for f in FRAMEWORK_KEYWORDS
         )
 
         kept.append({
@@ -221,6 +238,7 @@ def filter_dilemmas(rows: list[dict]) -> list[dict]:
             "frameworks": {
                 f: {
                     "prefers": prefs[f],
+                    "lean": round(leans[f], 4),
                     "to_do_value_matches": to_do_matches[f],
                     "not_to_do_value_matches": not_to_do_matches[f],
                 }
@@ -228,10 +246,12 @@ def filter_dilemmas(rows: list[dict]) -> list[dict]:
             },
             "to_do_action": to_do.get("action"),
             "not_to_do_action": not_to_do.get("action"),
-            "disagreement_strength": strength,
+            "balance": balance,
+            "confidence": confidence,
         })
 
-    kept.sort(key=lambda d: d["disagreement_strength"], reverse=True)
+    # Sort by balance (most torn first), tie-broken by confidence (most evidence).
+    kept.sort(key=lambda d: (d["balance"], d["confidence"]), reverse=True)
     return kept
 
 
@@ -262,7 +282,8 @@ def to_output_schema(kept: list[dict]) -> dict:
             "frameworks": item["frameworks"],
             "to_do_action": item["to_do_action"],
             "not_to_do_action": item["not_to_do_action"],
-            "disagreement_strength": item["disagreement_strength"],
+            "balance": item["balance"],
+            "confidence": item["confidence"],
         }
     return output
 
@@ -274,7 +295,10 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT,
                         help=f"Output JSON file (default: {DEFAULT_OUTPUT.relative_to(ROOT)})")
     parser.add_argument("--limit", type=int, default=None,
-                        help="Keep only the top N dilemmas by disagreement strength")
+                        help="Keep only the top N dilemmas (by balance, then confidence)")
+    parser.add_argument("--min-confidence", type=int, default=0,
+                        help="Drop dilemmas with fewer than this many total matched "
+                             "values (guards against fake deadlock from thin evidence)")
     args = parser.parse_args()
 
     if not args.source.is_file():
@@ -288,9 +312,14 @@ def main() -> int:
     kept = filter_dilemmas(rows)
     print(f"  {len(kept)} dilemmas show framework disagreement")
 
+    if args.min_confidence > 0:
+        before = len(kept)
+        kept = [d for d in kept if d["confidence"] >= args.min_confidence]
+        print(f"  dropped {before - len(kept)} with confidence < {args.min_confidence}")
+
     if args.limit is not None:
         kept = kept[: args.limit]
-        print(f"  trimmed to top {len(kept)} by disagreement strength")
+        print(f"  trimmed to top {len(kept)} by balance")
 
     output = to_output_schema(kept)
 
@@ -300,12 +329,13 @@ def main() -> int:
     print(f"Wrote {len(output)} dilemmas to {args.output.relative_to(ROOT)}")
 
     if kept:
-        print("\nTop 5 by disagreement strength:")
+        print("\nTop 5 by balance (balance / confidence):")
         for item in kept[:5]:
             prefs_str = " | ".join(
                 f"{f[:3]}:{item['frameworks'][f]['prefers']}" for f in FRAMEWORK_KEYWORDS
             )
-            print(f"  [{item['disagreement_strength']}] {item['basic_situation'][:50]:<50} {prefs_str}")
+            print(f"  [{item['balance']:.3f} / {item['confidence']:>2}] "
+                  f"{item['basic_situation'][:46]:<46} {prefs_str}")
     return 0
 
 
