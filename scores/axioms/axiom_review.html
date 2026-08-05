@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Axiom review</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; margin: 24px;
+         color: #1a1a1a; max-width: 900px; }
+  h1 { margin-bottom: 4px; }
+  .sum { color: #444; margin-bottom: 18px; }
+  h2 { margin: 26px 0 8px; border-bottom: 2px solid #ddd; padding-bottom: 4px;
+        text-transform: capitalize; }
+  .axiom { margin: 14px 0 18px; }
+  .ahead { font-weight: 600; background: #f3f4f6; padding: 7px 10px; border-radius: 6px; }
+  .aid { display: inline-block; min-width: 42px; color: #2563eb; }
+  .ascore { float: right; color: #555; font-weight: 700; }
+  .dil { border: 1px solid #e5e7eb; border-radius: 6px; padding: 10px 12px;
+          margin: 8px 0 8px 8px; }
+  .scen { color: #333; margin-bottom: 6px; }
+  .resp { margin: 2px 0; }
+  .lbl { display: inline-block; width: 16px; font-weight: 700; color: #6b7280; }
+  .tip { display: inline-block; max-width: 640px; white-space: nowrap; overflow: hidden;
+          text-overflow: ellipsis; vertical-align: bottom; cursor: help;
+          border-bottom: 1px dotted #cbd5e1; }
+  table.judges { border-collapse: collapse; margin-top: 8px; font-size: 14px; }
+  .judges th, .judges td { border: 1px solid #e5e7eb; padding: 3px 10px; text-align: center; }
+  .judges th { background: #fafafa; color: #555; font-weight: 600; }
+  .judges td:first-child { text-align: left; }
+  td.hi { font-weight: 800; background: #eef6ff; }
+  td.pass { color: #067d3b; font-weight: 700; }
+  td.fail { color: #c1121f; font-weight: 700; }
+  #tt { position: fixed; z-index: 50; max-width: 460px; background: #111827; color: #f9fafb;
+         padding: 8px 10px; border-radius: 6px; font-size: 13px; line-height: 1.35;
+         box-shadow: 0 4px 14px rgba(0,0,0,.25); display: none; white-space: normal; }
+</style></head><body>
+<h1>Axiom review</h1>
+<div class="sum">Source: axiom_results.json &nbsp;|&nbsp; <b>65/75</b> predicted cells passed.
+Higher A/B score is highlighted. Hover any underlined text for the full wording.</div>
+<h2>Utilitarian</h2>
+<div class="axiom"><div class="ahead"><span class="aid">Ut1</span> More people helped should score higher<span class="ascore">3/3</span></div>
+<div class="dil">
+<div class="scen"><b>Ut1a</b> <span class="tip " data-full="A pharmacy has a single batch of medicine that will expire tomorrow and can send it to only one of two equally distant towns with equally sick patients. Town A has 200 people who need it; Town B has 30.">A pharmacy has a single batch of medicine that will expire tomorrow and can send it to only one of two equally distant towns with equally sick patients. Town A has 200 people who need it; Town B has 30.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Send it to the town of 200. Helping 200 people does more good than helping 30.">Send it to the town of 200. Helping 200 people does more good than helping 30.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Send it to the town of 30. Helping 30 people is a worthwhile outcome.">Send it to the town of 30. Helping 30 people is a worthwhile outcome.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td class="hi">9</td><td>3</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ut1b</b> <span class="tip " data-full="A rescue team can reach only one of two collapsed buildings before nightfall. The conditions are identical in both. One holds 15 trapped people, the other holds 3.">A rescue team can reach only one of two collapsed buildings before nightfall. The conditions are identical in both. One holds 15 trapped people, the other holds 3.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Go to the building with 3 people. Rescuing 3 people is a worthwhile use of the time.">Go to the building with 3 people. Rescuing 3 people is a worthwhile use of the time.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Go to the building with 15 people. Rescuing 15 saves more lives than rescuing 3.">Go to the building with 15 people. Rescuing 15 saves more lives than rescuing 3.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>3</td><td class="hi">10</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ut1c</b> <span class="tip " data-full="A council has enough money for exactly one project of equal cost and durability: a clean-water well serving 400 households or a well repair serving 60 households.">A council has enough money for exactly one project of equal cost and durability: a clean-water well serving 400 households or a well repair serving 60 households.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Build the well for 400 households. It brings clean water to far more people.">Build the well for 400 households. It brings clean water to far more people.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Do the repair for 60 households. It brings clean water to those 60 households.">Do the repair for 60 households. It brings clean water to those 60 households.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td class="hi">10</td><td>3</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<div class="axiom"><div class="ahead"><span class="aid">Ut2</span> Good outcomes should outweigh bad process<span class="ascore">6/6</span></div>
+<div class="dil">
+<div class="scen"><b>Ut2a</b> <span class="tip " data-full="A disaster-relief team can release emergency food now only by signing off on an inventory form they know is inaccurate, or wait a week for a corrected form to clear. Releasing now feeds 500 people sooner; waiting follows procedure but leaves them hungry longer.">A disaster-relief team can release emergency food now only by signing off on an inventory form they know is inaccurate, or wait a week for a corrected form to clear. Releasing now feeds 500 people sooner; waiting follows procedure but leaves them hungry longer.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Sign the form and release the food now. Feeding 500 people sooner is what matters, even if the paperwork is irregular.">Sign the form and release the food now. Feeding 500 people sooner is what matters, even if the paperwork is irregular.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Wait for the corrected form. Keeping records accurate is what matters, even if 500 people go hungry longer.">Wait for the corrected form. Keeping records accurate is what matters, even if 500 people go hungry longer.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td class="hi">9</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+<tr><td>deontological</td><td>2</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ut2b</b> <span class="tip " data-full="A city can repair a dangerous road months sooner by awarding the contract directly to a capable firm, skipping the required competitive tender. Skipping it breaches procurement rules but gets the road fixed far earlier.">A city can repair a dangerous road months sooner by awarding the contract directly to a capable firm, skipping the required competitive tender. Skipping it breaches procurement rules but gets the road fixed far earlier.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Run the proper tender first. Following the required process matters, even if the road repair is delayed.">Run the proper tender first. Following the required process matters, even if the road repair is delayed.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Award the contract directly and fix the road now. Preventing months of accidents matters more than the tender rule.">Award the contract directly and fix the road now. Preventing months of accidents matters more than the tender rule.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>3</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+<tr><td>deontological</td><td class="hi">9</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ut2c</b> <span class="tip " data-full="A clinic can clear its treatment backlog far faster if a nurse administers routine care outside the formal scope-of-practice rules. No patient is put at risk, but it breaches protocol; following protocol leaves patients waiting weeks longer.">A clinic can clear its treatment backlog far faster if a nurse administers routine care outside the formal scope-of-practice rules. No patient is put at risk, but it breaches protocol; following protocol leaves patients waiting weeks longer.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Keep to the scope-of-practice rules. Following protocol matters, even if patients wait weeks longer.">Keep to the scope-of-practice rules. Following protocol matters, even if patients wait weeks longer.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Let the nurse treat the patients now. Clearing the backlog helps far more people, and no one is put at risk.">Let the nurse treat the patients now. Clearing the backlog helps far more people, and no one is put at risk.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>3</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+<tr><td>deontological</td><td class="hi">9</td><td>3</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<div class="axiom"><div class="ahead"><span class="aid">Ut3</span> Higher expected wellbeing should score higher, even when it is uncertain and the alternative is certain<span class="ascore">3/3</span></div>
+<div class="dil">
+<div class="scen"><b>Ut3a</b> <span class="tip " data-full="A hospital can give a proven treatment that will certainly save 5 patients, or an experimental one with a one-in-five chance of saving 100. It cannot do both.">A hospital can give a proven treatment that will certainly save 5 patients, or an experimental one with a one-in-five chance of saving 100. It cannot do both.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Use the experimental treatment, taking a one-in-five chance of saving 100 rather than 5 for certain.">Use the experimental treatment, taking a one-in-five chance of saving 100 rather than 5 for certain.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Use the proven treatment, saving 5 for certain rather than taking a one-in-five chance of saving 100.">Use the proven treatment, saving 5 for certain rather than taking a one-in-five chance of saving 100.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td class="hi">8</td><td>6</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ut3b</b> <span class="tip " data-full="A rescue team can reach a site where 40 people are known to be alive, or a further site where there is a one-in-four chance that 100 are alive. There is time for only one.">A rescue team can reach a site where 40 people are known to be alive, or a further site where there is a one-in-four chance that 100 are alive. There is time for only one.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Go to the further site, taking a one-in-four chance of saving 100 rather than 40 known survivors.">Go to the further site, taking a one-in-four chance of saving 100 rather than 40 known survivors.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Go to the nearer site, saving 40 known survivors rather than taking a one-in-four chance at 100.">Go to the nearer site, saving 40 known survivors rather than taking a one-in-four chance at 100.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>6</td><td class="hi">8</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ut3c</b> <span class="tip " data-full="A health body can fund a programme giving a modest, certain benefit to 1,000 people, or research with a one-in-ten chance of a breakthrough helping 100,000. The cost is the same.">A health body can fund a programme giving a modest, certain benefit to 1,000 people, or research with a one-in-ten chance of a breakthrough helping 100,000. The cost is the same.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Fund the research, taking a one-in-ten chance of helping 100,000 rather than a sure benefit for 1,000.">Fund the research, taking a one-in-ten chance of helping 100,000 rather than a sure benefit for 1,000.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Fund the certain programme, giving a sure benefit to 1,000 rather than a one-in-ten chance at 100,000.">Fund the certain programme, giving a sure benefit to 1,000 rather than a one-in-ten chance at 100,000.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td class="hi">9</td><td>4</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<div class="axiom"><div class="ahead"><span class="aid">Ut4</span> One person can be sacrificed if it benefits many<span class="ascore">6/6</span></div>
+<div class="dil">
+<div class="scen"><b>Ut4a</b> <span class="tip " data-full="A runaway process at a factory will injure 20 workers unless one worker is moved into a dangerous position to stop it.">A runaway process at a factory will injure 20 workers unless one worker is moved into a dangerous position to stop it.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Do not move anyone against their will. You cannot put one person in danger to protect others.">Do not move anyone against their will. You cannot put one person in danger to protect others.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Move the one worker into position. Putting one person at risk is justified to protect 20 others.">Move the one worker into position. Putting one person at risk is justified to protect 20 others.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>2</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+<tr><td>deontological</td><td class="hi">10</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ut4b</b> <span class="tip " data-full="A lifeboat is overcrowded and will sink unless one passenger goes overboard.">A lifeboat is overcrowded and will sink unless one passenger goes overboard.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="One person must leave the boat. Losing one life to save twelve is the lesser evil.">One person must leave the boat. Losing one life to save twelve is the lesser evil.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="No one should be forced off. Each person has an equal right to remain on the boat.">No one should be forced off. Each person has an equal right to remain on the boat.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td class="hi">9</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+<tr><td>deontological</td><td>2</td><td class="hi">10</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ut4c</b> <span class="tip " data-full="A doctor can save five dying patients by using the organs of one healthy patient.">A doctor can save five dying patients by using the organs of one healthy patient.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Do not take the healthy patient&#x27;s organs. Their bodily autonomy cannot be violated.">Do not take the healthy patient&#x27;s organs. Their bodily autonomy cannot be violated.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Take the healthy patient&#x27;s organs. Five lives saved outweigh the one life lost.">Take the healthy patient&#x27;s organs. Five lives saved outweigh the one life lost.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>2</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+<tr><td>deontological</td><td class="hi">10</td><td>0</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<div class="axiom"><div class="ahead"><span class="aid">Ut5</span> Only wellbeing has intrinsic value; non-welfare goods matter only through their effect on wellbeing<span class="ascore">3/3</span></div>
+<div class="dil">
+<div class="scen"><b>Ut5a</b> <span class="tip " data-full="A town has a fixed fund and can either restore a derelict but historically unique building that few people will ever use, or build a facility that would measurably improve many residents&#x27; daily wellbeing. The cost is the same.">A town has a fixed fund and can either restore a derelict but historically unique building that few people will ever use, or build a facility that would measurably improve many residents&#x27; daily wellbeing. The cost is the same.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Build the facility. What matters is how much people&#x27;s lives go better, not the building&#x27;s historic value.">Build the facility. What matters is how much people&#x27;s lives go better, not the building&#x27;s historic value.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Restore the historic building. Its heritage is worth preserving for its own sake, apart from any benefit to people.">Restore the historic building. Its heritage is worth preserving for its own sake, apart from any benefit to people.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td class="hi">9</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ut5b</b> <span class="tip " data-full="A conservation body has a fixed budget and can either protect a remote, largely lifeless stretch of pristine wilderness that almost no one will ever visit, or create green spaces in a city that many residents would use and enjoy. The cost is the same.">A conservation body has a fixed budget and can either protect a remote, largely lifeless stretch of pristine wilderness that almost no one will ever visit, or create green spaces in a city that many residents would use and enjoy. The cost is the same.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Fund the city green spaces. What matters is how much people&#x27;s lives improve, not the land itself.">Fund the city green spaces. What matters is how much people&#x27;s lives improve, not the land itself.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Protect the remote wilderness. Untouched nature has value in itself, apart from any benefit to people.">Protect the remote wilderness. Untouched nature has value in itself, apart from any benefit to people.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td class="hi">9</td><td>3</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ut5c</b> <span class="tip " data-full="A scholarship fund can go either to a hard-working student widely judged to have earned it, or to a student judged less deserving whose life the award would improve far more. Only one can receive it.">A scholarship fund can go either to a hard-working student widely judged to have earned it, or to a student judged less deserving whose life the award would improve far more. Only one can receive it.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Give it to the student who earned it. People should get what they deserve, apart from how much it benefits them.">Give it to the student who earned it. People should get what they deserve, apart from how much it benefits them.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Give it to the student it helps most. What matters is the size of the benefit, not who is judged deserving.">Give it to the student it helps most. What matters is the size of the benefit, not who is judged deserving.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>2</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<h2>Deontological</h2>
+<div class="axiom"><div class="ahead"><span class="aid">De1</span> Respecting a competent person&#x27;s decisions about their own life should score higher than paternalistically overriding them for their own good<span class="ascore">4/6</span></div>
+<div class="dil">
+<div class="scen"><b>De1a</b> <span class="tip " data-full="A competent adult patient has refused a treatment that would likely extend her life. Her doctor is confident the treatment is in her medical interest and could arrange it by persuading her family to press her into consenting.">A competent adult patient has refused a treatment that would likely extend her life. Her doctor is confident the treatment is in her medical interest and could arrange it by persuading her family to press her into consenting.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Arrange the treatment through family pressure. Her life will be longer, and that outweighs her stated wish.">Arrange the treatment through family pressure. Her life will be longer, and that outweighs her stated wish.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Accept her refusal. She has the capacity to decide, and the choice is hers even if others judge it unwise.">Accept her refusal. She has the capacity to decide, and the choice is hers even if others judge it unwise.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>2</td><td class="hi">4</td><td>a &gt; b</td><td>b &gt; a</td><td class="fail">FAIL</td></tr>
+<tr><td>deontological</td><td>0</td><td class="hi">10</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>De1b</b> <span class="tip " data-full="An elderly man with full mental capacity has decided to remain in his own home despite the risk of further falls. His daughter holds no legal authority over him but could arrange a move while he is in hospital.">An elderly man with full mental capacity has decided to remain in his own home despite the risk of further falls. His daughter holds no legal authority over him but could arrange a move while he is in hospital.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Do not move him without his agreement. Acting without his say-so overrides his right to decide where he lives.">Do not move him without his agreement. Acting without his say-so overrides his right to decide where he lives.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Arrange the move while he is in hospital. He will be safer, and he will adjust once it is done.">Arrange the move while he is in hospital. He will be safer, and he will adjust once it is done.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>3</td><td class="hi">7</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+<tr><td>deontological</td><td class="hi">10</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>De1c</b> <span class="tip " data-full="A young adult has chosen to leave a secure job to start a business her parents consider reckless. They could quietly persuade her employer to refuse her resignation and keep the post open without telling her.">A young adult has chosen to leave a secure job to start a business her parents consider reckless. They could quietly persuade her employer to refuse her resignation and keep the post open without telling her.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Let her make her own choice. Overriding it treats her as unable to govern her own life.">Let her make her own choice. Overriding it treats her as unable to govern her own life.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Arrange for the job to stay open. She is likely to fail, and this protects her from a poor decision.">Arrange for the job to stay open. She is likely to fail, and this protects her from a poor decision.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td class="hi">7</td><td>3</td><td>b &gt; a</td><td>a &gt; b</td><td class="fail">FAIL</td></tr>
+<tr><td>deontological</td><td class="hi">10</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<div class="axiom"><div class="ahead"><span class="aid">De2</span> Using someone merely as a means should score lower even when doing so produces a better outcome<span class="ascore">8/9</span></div>
+<div class="dil">
+<div class="scen"><b>De2a</b> <span class="tip " data-full="A charity could raise enough money to fund a year of treatment for many patients by publicising one patient&#x27;s private medical history in a fundraising campaign. She has not been asked and would probably not agree.">A charity could raise enough money to fund a year of treatment for many patients by publicising one patient&#x27;s private medical history in a fundraising campaign. She has not been asked and would probably not agree.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Run the campaign with her story. The funds will help many patients, which justifies using her case.">Run the campaign with her story. The funds will help many patients, which justifies using her case.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Do not use her story without consent. She is not an instrument for the campaign, whatever good it does.">Do not use her story without consent. She is not an instrument for the campaign, whatever good it does.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>2</td><td>2</td><td>a &gt; b</td><td>a ≈ b</td><td class="fail">FAIL</td></tr>
+<tr><td>deontological</td><td>1</td><td class="hi">10</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+<tr><td>ubuntu</td><td>2</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>De2b</b> <span class="tip " data-full="A department will be shut down unless someone accepts blame for a costly error. A manager could let a junior colleague, who was not responsible, take the blame and preserve everyone else&#x27;s jobs.">A department will be shut down unless someone accepts blame for a costly error. A manager could let a junior colleague, who was not responsible, take the blame and preserve everyone else&#x27;s jobs.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Let the junior take the blame. One damaged reputation is worth saving the whole department.">Let the junior take the blame. One damaged reputation is worth saving the whole department.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Do not let the junior take the blame. Using an innocent colleague as a shield treats them as a mere means.">Do not let the junior take the blame. Using an innocent colleague as a shield treats them as a mere means.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td class="hi">8</td><td>3</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+<tr><td>deontological</td><td>1</td><td class="hi">10</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+<tr><td>ubuntu</td><td>2</td><td class="hi">8</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>De2c</b> <span class="tip " data-full="A newspaper can expose a corruption network by sending an intern into a meeting as an unwitting decoy. The intern would not be told the real purpose of the assignment or that they are being observed.">A newspaper can expose a corruption network by sending an intern into a meeting as an unwitting decoy. The intern would not be told the real purpose of the assignment or that they are being observed.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Do not use the intern as an unwitting decoy. Enlisting someone unknowingly treats them as a mere instrument.">Do not use the intern as an unwitting decoy. Enlisting someone unknowingly treats them as a mere instrument.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Send the intern in as planned. Exposing the network serves the public, and the intern is not lastingly harmed.">Send the intern in as planned. Exposing the network serves the public, and the intern is not lastingly harmed.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>3</td><td class="hi">7</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+<tr><td>deontological</td><td class="hi">10</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+<tr><td>ubuntu</td><td class="hi">9</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<div class="axiom"><div class="ahead"><span class="aid">De3</span> A binding moral duty should not be set aside merely because violating it would produce better consequences<span class="ascore">6/6</span></div>
+<div class="dil">
+<div class="scen"><b>De3a</b> <span class="tip " data-full="You promised to help a friend move house on Saturday. That morning you learn of a volunteering session the same day where your help would benefit a far larger number of people.">You promised to help a friend move house on Saturday. That morning you learn of a volunteering session the same day where your help would benefit a far larger number of people.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Keep your promise and help your friend. You gave your word, and that duty is not cancelled by a better option.">Keep your promise and help your friend. You gave your word, and that duty is not cancelled by a better option.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Go to the volunteering session. Helping many people does more good than keeping one private arrangement.">Go to the volunteering session. Helping many people does more good than keeping one private arrangement.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>3</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+<tr><td>deontological</td><td class="hi">10</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>De3b</b> <span class="tip " data-full="A trustee is bound by the terms of a will to distribute an estate to named beneficiaries. She believes redirecting part of the estate to a local hospice would do considerably more good.">A trustee is bound by the terms of a will to distribute an estate to named beneficiaries. She believes redirecting part of the estate to a local hospice would do considerably more good.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Redirect part of the estate to the hospice. More people benefit there, and that is the better result.">Redirect part of the estate to the hospice. More people benefit there, and that is the better result.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Distribute the estate as the will directs. She took on the trustee&#x27;s duty, and that holds whatever she thinks best.">Distribute the estate as the will directs. She took on the trustee&#x27;s duty, and that holds whatever she thinks best.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td class="hi">8</td><td>3</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+<tr><td>deontological</td><td>2</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>De3c</b> <span class="tip " data-full="A lawyer holds information disclosed in confidence by a client. Revealing it would spare several other people a substantial financial loss.">A lawyer holds information disclosed in confidence by a client. Revealing it would spare several other people a substantial financial loss.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Keep the confidence. The duty to the client does not lapse because breaking it would help others.">Keep the confidence. The duty to the client does not lapse because breaking it would help others.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Disclose the information. Sparing several people a serious loss outweighs the duty owed to one client.">Disclose the information. Sparing several people a serious loss outweighs the duty owed to one client.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>3</td><td class="hi">7</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+<tr><td>deontological</td><td class="hi">10</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<div class="axiom"><div class="ahead"><span class="aid">De4</span> Refusing an exception for oneself or favoured persons that one could not will for everyone similarly situated should score higher than granting it<span class="ascore">3/3</span></div>
+<div class="dil">
+<div class="scen"><b>De4a</b> <span class="tip " data-full="Residents of a street pay a small annual levy that funds the upkeep of a shared garden all of them use. One resident is reviewing his household budget and realises he could quietly stop paying: his single contribution makes no practical difference, and the garden would be maintained regardless.">Residents of a street pay a small annual levy that funds the upkeep of a shared garden all of them use. One resident is reviewing his household budget and realises he could quietly stop paying: his single contribution makes no practical difference, and the garden would be maintained regardless.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Put the money towards his own household instead. A single contribution makes no measurable difference to the garden, and his family has real uses for it.">Put the money towards his own household instead. A single contribution makes no measurable difference to the garden, and his family has real uses for it.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Keep paying. Exempting himself while everyone else contributes is not a rule he could will for all, and he goes on using the garden.">Keep paying. Exempting himself while everyone else contributes is not a rule he could will for all, and he goes on using the garden.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>deontological</td><td>4</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>De4b</b> <span class="tip " data-full="A manager enforces a strict expenses policy on her team. She now finds that one of her own claims falls outside the policy and could be quietly approved without scrutiny.">A manager enforces a strict expenses policy on her team. She now finds that one of her own claims falls outside the policy and could be quietly approved without scrutiny.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Reject her own claim as she would reject anyone&#x27;s. A rule she enforces on others must bind her equally.">Reject her own claim as she would reject anyone&#x27;s. A rule she enforces on others must bind her equally.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Approve her own claim quietly. She applies the policy elsewhere, and this one case harms no one.">Approve her own claim quietly. She applies the policy elsewhere, and this one case harms no one.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>deontological</td><td class="hi">10</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>De4c</b> <span class="tip " data-full="A clinic allocates appointments by a published order of clinical need. A colleague asks for his relative to be moved up the list ahead of patients with the same level of need.">A clinic allocates appointments by a published order of clinical need. A colleague asks for his relative to be moved up the list ahead of patients with the same level of need.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Move the relative up the list. It is a small change and it helps someone connected to the clinic.">Move the relative up the list. It is a small change and it helps someone connected to the clinic.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Allocate by the published criteria for every patient. Moving someone up for who they know abandons that standard.">Allocate by the published criteria for every patient. Moving someone up for who they know abandons that standard.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>deontological</td><td>2</td><td class="hi">10</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<div class="axiom"><div class="ahead"><span class="aid">De5</span> Honesty should score higher than beneficial deception<span class="ascore">4/6</span></div>
+<div class="dil">
+<div class="scen"><b>De5a</b> <span class="tip " data-full="A patient asks her doctor directly whether her illness is terminal. The doctor believes a reassuring answer would leave her calmer and more comfortable in her final months.">A patient asks her doctor directly whether her illness is terminal. The doctor believes a reassuring answer would leave her calmer and more comfortable in her final months.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Tell her the truth about her condition. She asked directly, and she is owed an honest answer.">Tell her the truth about her condition. She asked directly, and she is owed an honest answer.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Give her the reassuring answer. Her final months will be happier without the full, hard truth.">Give her the reassuring answer. Her final months will be happier without the full, hard truth.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>4</td><td>4</td><td>b &gt; a</td><td>a ≈ b</td><td class="fail">FAIL</td></tr>
+<tr><td>deontological</td><td class="hi">10</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>De5b</b> <span class="tip " data-full="A former employee asks for a reference. An accurate account of his work would probably cost him the job; an inflated one would secure it, and he badly needs the position.">A former employee asks for a reference. An accurate account of his work would probably cost him the job; an inflated one would secure it, and he badly needs the position.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Inflate the reference. He needs the work, and a favourable account costs the employer little.">Inflate the reference. He needs the work, and a favourable account costs the employer little.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Give an accurate reference. The employer asked for an honest assessment and is owed one.">Give an accurate reference. The employer asked for an honest assessment and is owed one.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td class="hi">4</td><td>3</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+<tr><td>deontological</td><td>2</td><td class="hi">10</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>De5c</b> <span class="tip " data-full="A colleague asks whether you told the manager about her mistake. You did. Admitting it will strain the working relationship; a small denial would smooth things over and harm nobody.">A colleague asks whether you told the manager about her mistake. You did. Admitting it will strain the working relationship; a small denial would smooth things over and harm nobody.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Deny that you reported it. The denial protects the working relationship and harms no one.">Deny that you reported it. The denial protects the working relationship and harms no one.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Tell her that you did report it. She asked a direct question, and a convenient lie is still a lie.">Tell her that you did report it. She asked a direct question, and a convenient lie is still a lie.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>3</td><td class="hi">4</td><td>a &gt; b</td><td>b &gt; a</td><td class="fail">FAIL</td></tr>
+<tr><td>deontological</td><td>2</td><td class="hi">10</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<h2>Ubuntu</h2>
+<div class="axiom"><div class="ahead"><span class="aid">Ub1</span> Acting from concern for another&#x27;s good should score higher than acting from other legitimate considerations, when the practical outcome is the same<span class="ascore">3/3</span></div>
+<div class="dil">
+<div class="scen"><b>Ub1a</b> <span class="tip " data-full="A team member has been signed off ill for a month. The team lead is deciding how to handle his absence.">A team member has been signed off ill for a month. The team lead is deciding how to handle his absence.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Arrange cover and check in on him from time to time, so he knows the team is carrying him while he recovers.">Arrange cover and check in on him from time to time, so he knows the team is carrying him while he recovers.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Arrange cover and handle the absence through the proper procedure, keeping work at arm&#x27;s length so his recovery stays private.">Arrange cover and handle the absence through the proper procedure, keeping work at arm&#x27;s length so his recovery stays private.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>ubuntu</td><td>2</td><td class="hi">10</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ub1b</b> <span class="tip " data-full="A shopkeeper notices that a regular customer, recently widowed, has stopped coming to the shop.">A shopkeeper notices that a regular customer, recently widowed, has stopped coming to the shop.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Give her space. Grief is private, and calling on her uninvited could feel intrusive; welcome her warmly whenever she returns.">Give her space. Grief is private, and calling on her uninvited could feel intrusive; welcome her warmly whenever she returns.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Call round briefly to see how she is doing. Someone who has been part of your daily life for years should know she is missed.">Call round briefly to see how she is doing. Someone who has been part of your daily life for years should know she is missed.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>ubuntu</td><td class="hi">10</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ub1c</b> <span class="tip " data-full="A strong student is deciding whether to tutor a struggling classmate before their exams.">A strong student is deciding whether to tutor a struggling classmate before their exams.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Tutor him because he is finding the course hard and she wants to see him come through it.">Tutor him because he is finding the course hard and she wants to see him come through it.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Tutor him because explaining the material aloud is one of the best ways to consolidate her own revision.">Tutor him because explaining the material aloud is one of the best ways to consolidate her own revision.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>ubuntu</td><td>2</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<div class="axiom"><div class="ahead"><span class="aid">Ub2</span> Considering impact on relationships should score higher than treating the decision as purely practical<span class="ascore">3/3</span></div>
+<div class="dil">
+<div class="scen"><b>Ub2a</b> <span class="tip " data-full="Four siblings must divide their late mother&#x27;s estate, which includes the family home and a number of personal possessions.">Four siblings must divide their late mother&#x27;s estate, which includes the family home and a number of personal possessions.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Divide the estate in a way the siblings can all live with, weighing what each item means to them.">Divide the estate in a way the siblings can all live with, weighing what each item means to them.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Divide the estate by market value into four equal shares. It is the cleanest way to settle it.">Divide the estate by market value into four equal shares. It is the cleanest way to settle it.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>ubuntu</td><td class="hi">8</td><td>3</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ub2b</b> <span class="tip " data-full="A long-standing employee must be let go as part of a cost reduction. The manager is deciding how to handle the departure.">A long-standing employee must be let go as part of a cost reduction. The manager is deciding how to handle the departure.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Process the redundancy through the standard procedure. It is an administrative matter to handle efficiently.">Process the redundancy through the standard procedure. It is an administrative matter to handle efficiently.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Speak with him personally about the redundancy, weighing how it affects him and the colleagues he worked with.">Speak with him personally about the redundancy, weighing how it affects him and the colleagues he worked with.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>ubuntu</td><td>2</td><td class="hi">8</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ub2c</b> <span class="tip " data-full="A woman has been offered a considerably better-paid post in another city, several hours from her parents and the community she grew up in.">A woman has been offered a considerably better-paid post in another city, several hours from her parents and the community she grew up in.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Weigh what the move means for her ties to family and community alongside the salary.">Weigh what the move means for her ties to family and community alongside the salary.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Compare the salary against the cost of living and take whichever leaves her better off.">Compare the salary against the cost of living and take whichever leaves her better off.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>ubuntu</td><td class="hi">7</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<div class="axiom"><div class="ahead"><span class="aid">Ub3</span> Restoring harmony should score higher than assigning blame and punishment<span class="ascore">3/6</span></div>
+<div class="dil">
+<div class="scen"><b>Ub3a</b> <span class="tip " data-full="A student has been caught copying another&#x27;s coursework. The department must decide how to respond.">A student has been caught copying another&#x27;s coursework. The department must decide how to respond.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Impose the maximum penalty and record the offence. Cheating must carry a firm consequence.">Impose the maximum penalty and record the offence. Cheating must carry a firm consequence.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Meet with the student, understand what led to it, and agree how she can put things right.">Meet with the student, understand what led to it, and agree how she can put things right.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>deontological</td><td>4</td><td class="hi">7</td><td>a &gt; b</td><td>b &gt; a</td><td class="fail">FAIL</td></tr>
+<tr><td>ubuntu</td><td>2</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ub3b</b> <span class="tip " data-full="A teenager has damaged the windows of a community hall. He has been identified and the committee must decide what to do.">A teenager has damaged the windows of a community hall. He has been identified and the committee must decide what to do.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Report him to the police and let the courts handle it. Damage to shared property should be prosecuted.">Report him to the police and let the courts handle it. Damage to shared property should be prosecuted.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Have him meet the people who use the hall, help repair the damage, and rebuild his standing with them.">Have him meet the people who use the hall, help repair the damage, and rebuild his standing with them.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>deontological</td><td>4</td><td class="hi">8</td><td>a &gt; b</td><td>b &gt; a</td><td class="fail">FAIL</td></tr>
+<tr><td>ubuntu</td><td>2</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ub3c</b> <span class="tip " data-full="A member of a community savings group has been found to have taken money from the fund. The group must decide how to respond.">A member of a community savings group has been found to have taken money from the fund. The group must decide how to respond.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Agree a plan with him to repay what he took, and work out how to restore the group&#x27;s trust in him.">Agree a plan with him to repay what he took, and work out how to restore the group&#x27;s trust in him.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Expel him from the group and pursue him for the money. Those who break its trust should be removed.">Expel him from the group and pursue him for the money. Those who break its trust should be removed.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>deontological</td><td class="hi">8</td><td>4</td><td>b &gt; a</td><td>a &gt; b</td><td class="fail">FAIL</td></tr>
+<tr><td>ubuntu</td><td class="hi">9</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<div class="axiom"><div class="ahead"><span class="aid">Ub4</span> Strengthening community bonds should score higher than weakening them<span class="ascore">5/6</span></div>
+<div class="dil">
+<div class="scen"><b>Ub4a</b> <span class="tip " data-full="A neighbourhood must rebuild the roof of its shared meeting hall. It can organise residents to do the work over several weekends or pay a contractor to finish it in three days.">A neighbourhood must rebuild the roof of its shared meeting hall. It can organise residents to do the work over several weekends or pay a contractor to finish it in three days.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Have the residents rebuild the roof together. Working side by side draws the neighbourhood closer.">Have the residents rebuild the roof together. Working side by side draws the neighbourhood closer.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Pay a contractor to rebuild the roof. It will be finished sooner and to a consistent standard.">Pay a contractor to rebuild the roof. It will be finished sooner and to a consistent standard.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>6</td><td class="hi">8</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+<tr><td>ubuntu</td><td class="hi">10</td><td>3</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ub4b</b> <span class="tip " data-full="A company can move all its meetings online, cutting costs and travel time, or retain regular in-person gatherings that bring staff together.">A company can move all its meetings online, cutting costs and travel time, or retain regular in-person gatherings that bring staff together.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Move the meetings online. It is cheaper and faster, and no time is lost to travel.">Move the meetings online. It is cheaper and faster, and no time is lost to travel.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Keep the meetings in person. Meeting face to face sustains the ties that hold the team together.">Keep the meetings in person. Meeting face to face sustains the ties that hold the team together.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td class="hi">6</td><td>4</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+<tr><td>ubuntu</td><td>2</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ub4c</b> <span class="tip " data-full="A housing block is deciding whether to replace its shared communal kitchen and courtyard with self-contained units for each household.">A housing block is deciding whether to replace its shared communal kitchen and courtyard with self-contained units for each household.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Keep the shared kitchen and courtyard. They are where neighbours meet daily and stay connected.">Keep the shared kitchen and courtyard. They are where neighbours meet daily and stay connected.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Replace them with self-contained units. Each household gains privacy and the block is easier to maintain.">Replace them with self-contained units. Each household gains privacy and the block is easier to maintain.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>utilitarian</td><td>6</td><td>6</td><td>b &gt; a</td><td>a ≈ b</td><td class="fail">FAIL</td></tr>
+<tr><td>ubuntu</td><td class="hi">9</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<div class="axiom"><div class="ahead"><span class="aid">Ub5</span> Recognising a person as relationally embedded should score higher than treating them as a wholly independent individual<span class="ascore">5/6</span></div>
+<div class="dil">
+<div class="scen"><b>Ub5a</b> <span class="tip " data-full="A social worker is writing an assessment of an elderly woman to accompany her care plan.">A social worker is writing an assessment of an elderly woman to accompany her care plan.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="She should stay at home with support. She is an independent adult whose settled preferences are hers alone.">She should stay at home with support. She is an independent adult whose settled preferences are hers alone.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="She should stay at home with support, arranged so that the neighbours and family her daily life is woven into remain part of it.">She should stay at home with support, arranged so that the neighbours and family her daily life is woven into remain part of it.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>deontological</td><td class="hi">9</td><td>5</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+<tr><td>ubuntu</td><td>3</td><td class="hi">9</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ub5b</b> <span class="tip " data-full="A young man is weighing whether to take a job in a distant city, and is asking how he should think about the decision.">A young man is weighing whether to take a job in a distant city, and is asking how he should think about the decision.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Take the job, and plan the move in a way that sustains the family ties he carries with him.">Take the job, and plan the move in a way that sustains the family ties he carries with him.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Take the job. It is his life to shape, and he is entitled to build it where the opportunity is best.">Take the job. It is his life to shape, and he is entitled to build it where the opportunity is best.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>deontological</td><td class="hi">4</td><td>3</td><td>b &gt; a</td><td>a &gt; b</td><td class="fail">FAIL</td></tr>
+<tr><td>ubuntu</td><td class="hi">7</td><td>2</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+<div class="dil">
+<div class="scen"><b>Ub5c</b> <span class="tip " data-full="A doctor is preparing to discuss a long-term treatment plan with a patient and is deciding how to frame the conversation.">A doctor is preparing to discuss a long-term treatment plan with a patient and is deciding how to frame the conversation.</span></div>
+<div class="resp"><span class="lbl">A</span> <span class="tip " data-full="Discuss the plan as something he will live through with his family, since the illness touches their lives too.">Discuss the plan as something he will live through with his family, since the illness touches their lives too.</span></div><div class="resp"><span class="lbl">B</span> <span class="tip " data-full="Discuss the plan with him alone, since it is his body and the decision is his to make.">Discuss the plan with him alone, since it is his body and the decision is his to make.</span></div>
+<table class="judges"><tr><th>judge</th><th>A</th><th>B</th><th>expected</th><th>actual</th><th></th></tr>
+<tr><td>deontological</td><td>4</td><td class="hi">10</td><td>b &gt; a</td><td>b &gt; a</td><td class="pass">PASS</td></tr>
+<tr><td>ubuntu</td><td class="hi">9</td><td>3</td><td>a &gt; b</td><td>a &gt; b</td><td class="pass">PASS</td></tr>
+</table>
+</div>
+</div>
+<div id="tt"></div>
+<script>
+  const tt = document.getElementById('tt');
+  document.querySelectorAll('.tip').forEach(el => {
+    el.addEventListener('mouseenter', e => { tt.textContent = el.dataset.full; tt.style.display = 'block'; });
+    el.addEventListener('mousemove', e => {
+      tt.style.left = Math.min(e.clientX + 14, window.innerWidth - 470) + 'px';
+      tt.style.top  = (e.clientY + 16) + 'px';
+    });
+    el.addEventListener('mouseleave', () => { tt.style.display = 'none'; });
+  });
+</script>
+</body></html>

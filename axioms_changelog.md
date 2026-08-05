@@ -68,8 +68,8 @@ rejected (see below).
 
 ### Re-run (5x, gpt-4o-mini, TOLERANCE=0)
 
-Saved to `scores/axioms_repeated.json`; the pre-revision results are preserved
-in `scores/axiom_results_repeated.json` for comparison.
+Saved to `scores/axioms/axioms_repeated.json`; the pre-revision results are preserved
+in `scores/axioms/axiom_results_repeated.json` for comparison.
 
 - Overall 86.9% (was 87.2%); diagonal 99.1% (was 98.7%).
 - **Every changed cell passed 5/5 on its own judge**, with wide margins:
@@ -383,7 +383,7 @@ register-neutral parallel responses, no `a ≈ b` ties.
 ## First axiom-harness run (gpt-4o-mini, TOLERANCE=0)
 
 Ran `test_axioms.py`: 75 predicted (non-null) cells, 270 API calls, ~4.5 min.
-Detailed output in `scores/axiom_results.json`.
+Detailed output in `scores/axioms/axiom_results.json`.
 
 **Headline: 62/75 overall — but 43/45 on the diagonal.**
 The diagonal (each judge scored on its *own* framework's axioms) is what tests

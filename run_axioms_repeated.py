@@ -23,7 +23,7 @@ from openai import OpenAI
 from test_axioms import AXIOMS_FILE, load_axioms, score_pair, grade
 
 ROOT = Path(__file__).resolve().parent
-SCORES_DIR = ROOT / "scores"
+SCORES_DIR = ROOT / "scores" / "axioms"
 
 # Map an axiom id prefix to the judge whose own framework it tests.
 PREFIX_TO_JUDGE = {"Ut": "utilitarian", "De": "deontological", "Ub": "ubuntu"}

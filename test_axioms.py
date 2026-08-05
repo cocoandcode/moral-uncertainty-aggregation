@@ -23,7 +23,7 @@ from score_responses import FRAMEWORKS, score_response
 
 ROOT = Path(__file__).resolve().parent
 AXIOMS_FILE = ROOT / "data" / "axioms.json"
-SCORES_DIR = ROOT / "scores"
+SCORES_DIR = ROOT / "scores" / "axioms"
 
 # Minimum score gap that counts as a real preference (tie-handling rule).
 # 0 = any strict difference counts; a tie fails a directional prediction.

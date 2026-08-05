@@ -33,7 +33,7 @@ WRAP_WIDTH = 100
 OLLAMA_URL = "http://localhost:11434/api/generate"
 
 ROOT = Path(__file__).resolve().parent
-DILEMMAS_FILE = ROOT / "data" / "dilemmas.json"
+DILEMMAS_FILE = ROOT / "data" / "filtered_dilemmas.json"
 RESPONSES_DIR = ROOT / "responses"
 
 

@@ -5,8 +5,8 @@ A small, local experiment comparing how different moral aggregation methods sele
 The workflow:
 
 1. Generate multiple candidate answers to a moral dilemma.
-2. Score each answer under three ethical frameworks.
-3. Aggregate those framework scores with multiple decision rules.
+2. Score each answer under three ethical frameworks (raw 0–10 scores).
+3. (Later) Normalise scores, then aggregate with multiple decision rules.
 4. Visualize which response each rule picks.
 
 Generation uses Ollama locally with `llama3.1:8b`. Scoring uses OpenAI's `gpt-4o-mini`.
@@ -24,6 +24,7 @@ Generation uses Ollama locally with `llama3.1:8b`. Scoring uses OpenAI's `gpt-4o
 │   └── daily_dilemmas.json   # Reference corpus
 ├── responses/                # Stage 1 output (one file per dilemma)
 ├── scores/                   # Stage 2 output (.json + .html dashboard)
+│   └── axioms/               # Axiom harness results (separate from main study)
 ├── templates/
 │   └── scores.html           # HTML template for the dashboard
 ├── requirements.txt
@@ -70,7 +71,12 @@ python3 score_responses.py grandmother          # writes scores/grandmother.{jso
 
 `score_responses.py` accepts either a slug (e.g. `grandmother`) or a full path to a responses file.
 
-Open `scores/<slug>.html` in your browser to inspect the winners by method.
+Open `scores/index.html` in your browser for a linked table of all scored
+dilemmas. Each row opens `scores/<slug>.html` — hover a response number to
+read the full text. Scoring writes **raw** judge scores only; aggregation
+happens in a later step after normalisation.
+Re-run `python3 build_index.py` (or `python3 rebuild_score_html.py`) anytime
+to refresh the index after scoring.
 
 ## Output schema
 
@@ -81,10 +87,9 @@ Open `scores/<slug>.html` in your browser to inspect the winners by method.
 
 `scores/<slug>.json`:
 
-- `dilemma`, `slug`, `judge_model`, `weights`
-- `scores` — raw framework scores per response
-- `aggregated` — same rows with the four aggregation values added
-- `winners` — best id and value for each aggregation method
+- `dilemma`, `slug`, `judge_model`
+- `scores` — raw framework scores per response (`id`, U/D/Ub)
+- `rows` — same scores plus full response text (for the HTML dashboard)
 
 ## Caveats
 

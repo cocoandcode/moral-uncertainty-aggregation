@@ -2,7 +2,7 @@
 Build a compact, hover-to-expand HTML review of the axiom run.
 
 Joins data/axioms.json (dilemmas + responses) with a results file
-(default scores/axiom_results.json) and writes an HTML dashboard grouped
+(default scores/axioms/axiom_results.json) and writes an HTML dashboard grouped
 by framework and axiom, so each judge's A/B scores can be eyeballed against
 the responses that produced them.
 
@@ -18,8 +18,9 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-RESULTS = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "scores" / "axiom_results.json"
-OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "scores" / "axiom_review.html"
+AXIOM_SCORES = ROOT / "scores" / "axioms"
+RESULTS = Path(sys.argv[1]) if len(sys.argv) > 1 else AXIOM_SCORES / "axiom_results.json"
+OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else AXIOM_SCORES / "axiom_review.html"
 AXIOMS = Path(sys.argv[3]) if len(sys.argv) > 3 else ROOT / "data" / "axioms.json"
 
 axioms = json.loads(AXIOMS.read_text())

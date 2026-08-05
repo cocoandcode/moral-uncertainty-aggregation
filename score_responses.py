@@ -1,9 +1,11 @@
 """
-Aggregating Ethics — Stage 2: Score generated responses
+Aggregating Ethics — Stage 2: Score generated responses (raw scores only)
 
 Loads a responses file from `responses/`, scores each entry under three
-ethical frameworks via GPT-4o-mini, applies four aggregation rules, and
-writes a JSON + HTML dashboard to `scores/`.
+ethical frameworks via GPT-4o-mini, and writes JSON + HTML to `scores/`.
+
+Aggregation and winner selection are deferred until after normalisation
+(see aggregation.py). This stage only produces raw 0–10 judge scores.
 
 Before running:
   1. pip3 install -r requirements.txt
@@ -11,12 +13,13 @@ Before running:
   3. python3 score_responses.py <slug-or-path>
 
 Examples:
-  python3 score_responses.py grandmother
-  python3 score_responses.py responses/grandmother.json
+  python3 score_responses.py getting_help_with_your_problems
+  python3 score_responses.py responses/getting_help_with_your_problems.json
 """
 
 from __future__ import annotations
 
+import html as html_module
 import json
 import os
 import re
@@ -31,11 +34,8 @@ except ImportError:
     print("Run: pip3 install -r requirements.txt")
     sys.exit(1)
 
-from aggregation import DEFAULT_WEIGHTS, compute_row, pick_winners
-
 # ── Settings ─────────────────────────────────────────────────
 MODEL = "gpt-4o-mini"
-WEIGHTS = DEFAULT_WEIGHTS
 
 ROOT = Path(__file__).resolve().parent
 RESPONSES_DIR = ROOT / "responses"
@@ -145,22 +145,33 @@ def score_response(
     return None
 
 
-def render_html(title: str, rows: list[dict], winners: dict, output_path: Path) -> None:
-    weights_str = (
-        f"Util={WEIGHTS[0]}, Deont={WEIGHTS[1]}, Ubuntu={WEIGHTS[2]}"
-    )
-    payload = json.dumps({"rows": rows, "winners": winners})
+def render_html(
+    title: str,
+    rows: list[dict],
+    output_path: Path,
+    dilemma: str = "",
+    judge_model: str | None = None,
+) -> None:
+    payload = json.dumps({"rows": rows})
     template = Template(TEMPLATE_FILE.read_text())
-    # safe_substitute leaves JS template literals like ${value} untouched
-    # while still filling in our named placeholders.
     html = template.safe_substitute(
-        title=title,
-        judge_model=MODEL,
-        weights_str=weights_str,
+        title=html_module.escape(title),
+        dilemma=html_module.escape(dilemma or "(dilemma text not saved)"),
+        judge_model=html_module.escape(judge_model or MODEL),
         data_json=payload,
     )
     output_path.write_text(html)
     print(f"HTML written to {output_path.relative_to(ROOT)}")
+
+
+def refresh_index() -> None:
+    try:
+        from build_index import build
+
+        path = build()
+        print(f"Index updated: {path.relative_to(ROOT)}")
+    except Exception as e:
+        print(f"Warning: could not refresh scores/index.html ({e})")
 
 
 def main() -> int:
@@ -168,7 +179,7 @@ def main() -> int:
         arg = sys.argv[1]
     except IndexError:
         print("Usage: python3 score_responses.py <slug-or-path>")
-        print("Example: python3 score_responses.py grandmother")
+        print("Example: python3 score_responses.py getting_help_with_your_problems")
         return 1
 
     try:
@@ -197,19 +208,17 @@ def main() -> int:
     output_html = SCORES_DIR / f"{slug}.html"
 
     print(f"Scoring {len(responses)} responses with {MODEL}...")
-    print("Frameworks: utilitarian, deontological, ubuntu")
+    print("Frameworks: utilitarian, deontological, ubuntu (raw scores only)")
     print("=" * 60)
 
-    raw_scores: list[dict] = []
-    texts: dict[int, str] = {}
+    rows: list[dict] = []
     for resp in responses:
         rid = resp["id"]
         text = resp["response"]
         if isinstance(text, list):
             text = "\n".join(text)
-        texts[rid] = text
         print(f"\nResponse {rid}:", flush=True)
-        row = {"id": rid}
+        row: dict = {"id": rid, "response": text}
         for name, prompt in FRAMEWORKS.items():
             print(f"  {name}...", end=" ", flush=True)
             s = score_response(client, text, prompt, dilemma_text)
@@ -223,32 +232,35 @@ def main() -> int:
             else:
                 print(s)
             row[name] = s
-        raw_scores.append(row)
-
-    rows = [compute_row(r, WEIGHTS) for r in raw_scores]
-    for r in rows:
-        r["response"] = texts.get(r["id"], "")
-    winners = pick_winners(rows)
+        rows.append(row)
 
     output = {
         "dilemma": data.get("dilemma"),
         "slug": slug,
         "judge_model": MODEL,
-        "weights": list(WEIGHTS),
-        "scores": raw_scores,
-        "aggregated": rows,
-        "winners": winners,
+        "scores": [
+            {
+                "id": r["id"],
+                "utilitarian": r["utilitarian"],
+                "deontological": r["deontological"],
+                "ubuntu": r["ubuntu"],
+            }
+            for r in rows
+        ],
+        # Full rows (with response text) for the HTML dashboard / later stages
+        "rows": rows,
     }
     with output_json.open("w") as f:
         json.dump(output, f, indent=2)
     print(f"\nScores saved to {output_json.relative_to(ROOT)}")
 
     print(f"\n{'=' * 60}")
-    print("Scores:")
-    for r in raw_scores:
+    print("Raw scores:")
+    for r in rows:
         print(f"  R{r['id']:>2}: U={r['utilitarian']} D={r['deontological']} Ub={r['ubuntu']}")
 
-    render_html(title, rows, winners, output_html)
+    render_html(title, rows, output_html, dilemma=dilemma_text or "")
+    refresh_index()
     print("Done!")
     return 0
 

@@ -2,13 +2,21 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Ethical Scores — ${title}</title>
+  <title>Raw scores — ${title}</title>
 </head>
 <body style="font-family: Arial, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem;">
 
-<h2>Ethical Score Comparison — ${title}</h2>
-<p style="color: #666;">Each response scored by three ethical judges (0-10), then aggregated four ways.</p>
-<p style="color: #666; font-size: 13px;">Judge model: ${judge_model} | Weights: ${weights_str}</p>
+<p style="margin: 0 0 0.75rem;"><a href="index.html" style="color:#185FA5;text-decoration:none;">← All dilemmas</a></p>
+
+<h2>Raw framework scores — ${title}</h2>
+<p style="color: #666;">Each response scored 0–10 by three ethical judges. Aggregation / winner selection is deferred until after normalisation.</p>
+<p style="color: #666; font-size: 13px;">Judge model: ${judge_model}</p>
+
+<div style="margin: 1rem 0; padding: 12px 14px; background: #f7f7f8; border-radius: 8px; border-left: 3px solid #185FA5;">
+  <p style="font-size: 11px; color: #888; margin: 0 0 6px; text-transform: uppercase; letter-spacing: 0.04em;">Dilemma</p>
+  <p style="margin: 0; font-size: 14px; line-height: 1.55; white-space: pre-wrap;">${dilemma}</p>
+</div>
+
 <p style="color: #888; font-size: 12px;">Tip: hover over a response number to read the full response.</p>
 
 <div id="tip" style="display:none; position:fixed; z-index:1000; max-width:460px; max-height:60vh; overflow:auto; background:#1f2933; color:#f5f7fa; padding:12px 14px; border-radius:8px; font-size:13px; line-height:1.5; white-space:pre-wrap; box-shadow:0 6px 24px rgba(0,0,0,0.28); pointer-events:none;"></div>
@@ -20,36 +28,15 @@
 <th style="text-align: center; padding: 8px 6px; color: #534AB7;">Utilitarian</th>
 <th style="text-align: center; padding: 8px 6px; color: #185FA5;">Deontological</th>
 <th style="text-align: center; padding: 8px 6px; color: #0F6E56;">Ubuntu</th>
-<th style="text-align: center; padding: 8px 6px; border-left: 2px solid #eee;">EC</th>
-<th style="text-align: center; padding: 8px 6px;">Maximin</th>
-<th style="text-align: center; padding: 8px 6px;">Nash</th>
-<th style="text-align: center; padding: 8px 6px;">Baseline</th>
 </tr>
 </thead>
 <tbody id="tbody"></tbody>
 </table>
 
-<div style="margin-top: 1.5rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;">
-<div id="w-ec" style="background: #f5f5f5; border-radius: 8px; padding: 12px;"><p style="font-size: 11px; color: #888; margin: 0;">Expected choiceworthiness</p><p class="winner" style="font-size: 18px; font-weight: 500; margin: 4px 0 0;"></p></div>
-<div id="w-max" style="background: #f5f5f5; border-radius: 8px; padding: 12px;"><p style="font-size: 11px; color: #888; margin: 0;">Maximin</p><p class="winner" style="font-size: 18px; font-weight: 500; margin: 4px 0 0;"></p></div>
-<div id="w-nash" style="background: #f5f5f5; border-radius: 8px; padding: 12px;"><p style="font-size: 11px; color: #888; margin: 0;">Nash parliament</p><p class="winner" style="font-size: 18px; font-weight: 500; margin: 4px 0 0;"></p></div>
-<div id="w-base" style="background: #f5f5f5; border-radius: 8px; padding: 12px;"><p style="font-size: 11px; color: #888; margin: 0;">Baseline (utilitarian)</p><p class="winner" style="font-size: 18px; font-weight: 500; margin: 4px 0 0;"></p></div>
-</div>
-
-<p id="verdict" style="margin-top: 1rem; font-size: 14px; padding: 12px; border-radius: 8px; background: #e8f4f8; color: #1a5276;"></p>
-
 <script id="payload" type="application/json">${data_json}</script>
 <script>
 const data = JSON.parse(document.getElementById('payload').textContent);
-const winners = data.winners;
-const highlightIds = new Set(Object.values(winners).map(w => w.id));
 const tbody = document.getElementById('tbody');
-
-const fmt = (value, method, id) => {
-  return winners[method].id === id
-    ? `<strong style="color:#1a5276">${value}</strong>`
-    : value;
-};
 
 const tip = document.getElementById('tip');
 const showTip = (text, e) => {
@@ -72,16 +59,11 @@ const hideTip = () => { tip.style.display = 'none'; };
 data.rows.forEach(r => {
   const tr = document.createElement('tr');
   tr.style.borderBottom = '0.5px solid #eee';
-  if (highlightIds.has(r.id)) tr.style.background = '#f9f9f9';
   tr.innerHTML = `
     <td class="resp-id" style="padding:6px;font-weight:500;cursor:help;text-decoration:underline dotted #999">${r.id}</td>
     <td style="text-align:center;padding:6px;color:#534AB7">${r.utilitarian}</td>
     <td style="text-align:center;padding:6px;color:#185FA5">${r.deontological}</td>
     <td style="text-align:center;padding:6px;color:#0F6E56">${r.ubuntu}</td>
-    <td style="text-align:center;padding:6px;border-left:2px solid #eee">${fmt(r.ec.toFixed(2), 'ec', r.id)}</td>
-    <td style="text-align:center;padding:6px">${fmt(r.maximin, 'maximin', r.id)}</td>
-    <td style="text-align:center;padding:6px">${fmt(r.nash, 'nash', r.id)}</td>
-    <td style="text-align:center;padding:6px">${fmt(r.baseline, 'baseline', r.id)}</td>
   `;
   const idCell = tr.querySelector('.resp-id');
   const text = r.response || '(no response text saved)';
@@ -90,18 +72,6 @@ data.rows.forEach(r => {
   idCell.addEventListener('mouseleave', hideTip);
   tbody.appendChild(tr);
 });
-
-const labels = {ec: '#w-ec', maximin: '#w-max', nash: '#w-nash', baseline: '#w-base'};
-for (const [method, sel] of Object.entries(labels)) {
-  const w = winners[method];
-  const v = method === 'ec' ? w.value.toFixed(2) : w.value;
-  document.querySelector(`${sel} .winner`).textContent = `Response ${w.id} (${v})`;
-}
-
-const unique = new Set(Object.values(winners).map(w => w.id)).size;
-document.getElementById('verdict').textContent =
-  `${unique} different response(s) selected across 4 methods — the aggregation choice ` +
-  (unique > 1 ? 'changes' : 'does not change') + " the AI's recommendation.";
 </script>
 </body>
 </html>
