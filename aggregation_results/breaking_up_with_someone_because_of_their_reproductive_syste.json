@@ -1,0 +1,362 @@
+{
+  "slug": "breaking_up_with_someone_because_of_their_reproductive_syste",
+  "dilemma": "Jane and John have been in a relationship for two years, both desiring to have children. John finds out he is infertile and Jane decides to end the relationship due to this. Should Jane prioritize her desire for biological children over her relationship with John?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Jane leaves John for her desire to have biological children",
+  "not_to_do_action": "Jane stays with John despite her desire for biological children",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.48617830554512725,
+      "maximin": -0.950093021099074,
+      "nash": 9.759462241800337,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.30307699090088885,
+      "maximin": -0.950093021099074,
+      "nash": 21.958790044050755,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.039991892085550124,
+      "maximin": -0.950093021099074,
+      "nash": 17.350155096533932,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.5655992538948862,
+      "maximin": -1.8205899768103024,
+      "nash": 1.2199327802250421,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.5534545205033308,
+      "maximin": -1.648249557870649,
+      "nash": 1.219932780225042,
+      "baseline": -1.3853414989546882,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5932426428046317,
+      "maximin": -0.07959606538784551,
+      "nash": 32.93818506607613,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1701388983405728,
+      "maximin": -0.950093021099074,
+      "nash": 19.51892448360067,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.8794104106154885,
+      "maximin": -1.2363314859195875,
+      "nash": 5.421923467666853,
+      "baseline": -0.950093021099074,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.3504491266795178,
+      "maximin": -0.950093021099074,
+      "nash": 10.843846935333707,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 5,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.438243333945157,
+      "maximin": -1.8205899768103024,
+      "nash": 1.3554808669167133,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.6985373464552023,
+      "maximin": -1.8205899768103024,
+      "nash": 0.8132885201500281,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.3180128105977376,
+      "maximin": -0.5148445432434597,
+      "nash": 24.398655604500842,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.17292998464586617,
+      "maximin": -0.950093021099074,
+      "nash": 19.518924483600674,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.30307699090088885,
+      "maximin": -0.950093021099074,
+      "nash": 21.958790044050755,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.3180128105977376,
+      "maximin": -0.5148445432434597,
+      "nash": 24.398655604500842,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.3180128105977376,
+      "maximin": -0.5148445432434597,
+      "nash": 24.398655604500842,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 6,
+      "value": 0.5932426428046317,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 6,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 6,
+      "value": 32.93818506607613,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 6,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "6": "**Recommendation: No**\n\nJane should not prioritize her desire for biological children over her relationship with John.\nHere's why:\n\n1. **Love and commitment are more than just biological connections**: Relationships involve\nemotional, intellectual, and physical bonds that transcend the ability to have children. Jane's love\nand commitment to John as a person, partner, and friend are worth considering alongside her desire\nfor parenthood.\n2. **John is still a good partner and human being regardless of infertility**: John's fertility\nstatus does not diminish his value or worth as a person. His infirmity may require adjustments in\nthe relationship, but it should not be a deal-breaker.\n3. **Prioritizing biological children over relationships can lead to resentment and burnout**:\nPlacing too much emphasis on Jane's desire for biological children might create tension and stress\nwithin the relationship, leading to resentment and burnout if John feels like he's being judged or\nrejected because of his fertility issues.\n4. **Exploring alternatives (e.g., adoption) rather than an immediate break-up is a more mature\napproach**: In some cases, Jane and John could consider alternative family-building options, such as\nadoption, donor conception, or fostering. Ending the relationship immediately without exploring\nthese possibilities may indicate that she's prioritizing her desire for biological children above\nall else.\n5. **Jane's own happiness and well-being matter**: Ultimately, Jane needs to consider what will\nbring her greatest happiness and fulfillment in life. While having biological children can be a\nsignificant aspect of this, it is not the only one. A fulfilling relationship with John, which\nbrings emotional connection, companionship, and support, should also be prioritized.\n\nBefore making any decisions, I would recommend that Jane have an open and honest conversation with\nJohn about her feelings, desires, and concerns regarding fertility and their relationship. This\nconversation may help them both gain a deeper understanding of each other's perspectives and make\ninformed decisions about their future together or apart."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 1
+}

@@ -1,0 +1,364 @@
+{
+  "slug": "changing_your_mind_about_having_someone_at_your_birthday",
+  "dilemma": "You've been planning a birthday party and invited a close friend who recently had a falling out with another friend. Now, the other friend is upset and doesn't want to attend if the first friend is present, putting you in the middle of their feud. Should you uninvite the first friend to ensure the second one attends, or risk creating more tension by keeping the original guest list?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Uninvite the first friend",
+  "not_to_do_action": "Keep the original guest list",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.037200805780256724,
+      "maximin": -0.950093021099074,
+      "nash": 17.079058923150587,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1701388983405728,
+      "maximin": -0.950093021099074,
+      "nash": 19.51892448360067,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.2286753793403754,
+      "maximin": -0.950093021099074,
+      "nash": 12.19932780225042,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1701388983405728,
+      "maximin": -0.950093021099074,
+      "nash": 19.51892448360067,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.09573728678005934,
+      "maximin": -0.950093021099074,
+      "nash": 14.639193362700503,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8401851241355291,
+      "maximin": -1.6267725046846555,
+      "nash": 4.269764730787647,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.3616134719006915,
+      "maximin": -0.950093021099074,
+      "nash": 9.759462241800335,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.037200805780256724,
+      "maximin": -0.950093021099074,
+      "nash": 17.079058923150587,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8523298575270846,
+      "maximin": -1.6267725046846555,
+      "nash": 4.879731120900168,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.2408201127319307,
+      "maximin": -1.3853414989546882,
+      "nash": 10.979395022025377,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.49176047815571416,
+      "maximin": -0.950093021099074,
+      "nash": 8.675077548266966,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7697813966679017,
+      "maximin": -1.3853414989546882,
+      "nash": 4.879731120900169,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.18507471803742154,
+      "maximin": -0.5148445432434597,
+      "nash": 21.687693870667413,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7072470315752131,
+      "maximin": -1.6267725046846555,
+      "nash": 5.693019641050196,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.21373955964352664,
+      "maximin": -0.5148445432434597,
+      "nash": 13.554808669167134,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8523298575270846,
+      "maximin": -1.6267725046846555,
+      "nash": 4.879731120900168,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 13,
+      "value": 0.18507471803742154,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 13,
+      "value": -0.5148445432434597,
+      "tied_ids": [
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 13,
+      "value": 21.687693870667413,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 6,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        6,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "6": "**Recommendation:**\n\nUninvite the close friend who was involved in the recent falling out.\n\n**Reasoning:**\n\nAs a host, your primary concern is usually to ensure that everyone has a good time at your party.\nHowever, in this situation, keeping both friends on the guest list would likely lead to tension and\ndiscomfort for all parties involved. Here's why:\n\n1. **Risk of awkwardness:** Having both friends in attendance could create an uncomfortable\natmosphere, with unresolved conflicts between them simmering beneath the surface.\n2. **Emotional safety:** Allowing the second friend to skip the party due to the presence of the\nfirst friend might put them in a difficult emotional state, feeling forced to stay away from your\ncelebration or risk a confrontation.\n3. **Loss of trust:** Keeping both friends on the guest list could damage your relationship with one\nor both parties, as they may feel you're taking sides or not prioritizing their feelings and\nboundaries.\n\nUninviting the first friend might be difficult, especially if you consider them a close friend.\nHowever, this action would allow the second friend to attend the party without feeling anxious about\nencountering their rival. By prioritizing your second friend's comfort and emotional safety, you're\nalso creating an environment where everyone can have a more enjoyable experience.\n\nIf you do choose to uninvite the first friend, be sure to handle the situation sensitively:\n\n1. **Be honest but tactful:** Explain the situation to the first friend in a non-confrontational\nmanner, emphasizing your concern for their presence affecting others' feelings.\n2. **Offer a valid reason:** Give them a clear understanding that you're making this decision to\ncreate a more relaxed atmosphere at your party and avoid potential conflict.\n\nUltimately, being kind but firm will help maintain relationships with both friends in the long run.",
+    "13": "**Recommendation:** Do not uninvite the first friend, but consider speaking with both parties\nprivately before the party.\n\n**Why:**\n\n1. **Prioritizing relationships**: The second friend's desire to attend solely because the other\nwon't be present creates an expectation that you should manage their feelings and relationships. By\nkeeping the original guest list, you're maintaining a more neutral stance.\n2. **Complicating the issue**: Uninviting one friend would lead to further entanglement in their\nfeud. You wouldn't want to become the de facto mediator or referee, which can put strain on your\nrelationship with both friends.\n3. **Preserving friendships**: By not forcing either friend to confront each other, you're keeping\nthe lines of communication open and allowing them to address issues on their own terms (or at least\nin private).\n4. **It's about shared experiences**: The purpose of a birthday party is often to celebrate a\nfriendship or connection with loved ones. Prioritizing one friend's feelings over another could blur\nthe line between personal loyalty and social responsibility.\n5. **Encouraging conflict resolution**: By maintaining the original guest list, you're giving both\nfriends the opportunity to interact or avoid each other as they choose. This might encourage them to\naddress their issues in a constructive manner or help them develop strategies for coexisting.\n\n**The conversation with both parties:**\nBefore the party, have separate conversations with each friend about what happened and how it's\naffecting your relationship. You can express your support and understanding while encouraging open\ncommunication between them (e.g., \"I value our friendship, but I also care about my other friend; I\nhope we can all navigate this together\"). This approach acknowledges both friends' concerns without\nimposing a solution that compromises your relationships or invites more tension.\n\n**The party**:\nKeep the focus on celebrating with friends and let events unfold as they will. Should tensions\narise, remain neutral and ensure your celebration doesn't become a platform for conflict.\n\nUltimately, prioritize maintaining open relationships with all parties involved, while respecting\neach friend's feelings and boundaries."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

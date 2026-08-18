@@ -1,0 +1,369 @@
+{
+  "slug": "being_embarrassed_when_your_rash_is_visible",
+  "dilemma": "You're a high school student who developed a visible rash due to stress. You're selected to give a presentation in front of the whole school, but you fear your rash will distract others and cause you humiliation. Should you ask your friend to present on your behalf, possibly burdening them, or face the potential embarrassment yourself?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Asking friend to present",
+  "not_to_do_action": "Presenting yourself",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.3466776522038427,
+      "maximin": -0.8506210025087526,
+      "nash": 10.843846935333707,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.20159482625197134,
+      "maximin": -0.8506210025087526,
+      "nash": 13.012616322400449,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.21653064594882007,
+      "maximin": -0.8506210025087526,
+      "nash": 12.19932780225042,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.3616134719006915,
+      "maximin": -0.950093021099074,
+      "nash": 9.759462241800335,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.3466776522038427,
+      "maximin": -0.8506210025087526,
+      "nash": 10.843846935333707,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.20159482625197134,
+      "maximin": -0.8506210025087526,
+      "nash": 13.012616322400449,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.23146646564566886,
+      "maximin": -0.950093021099074,
+      "nash": 10.843846935333707,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.1944283651236835,
+      "maximin": -0.07959606538784551,
+      "nash": 21.958790044050755,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.06149027256336742,
+      "maximin": -0.4518067248278044,
+      "nash": 18.298991703375627,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.058699186258073965,
+      "maximin": -0.8506210025087526,
+      "nash": 16.26577040300056,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.21653064594882007,
+      "maximin": -0.8506210025087526,
+      "nash": 12.19932780225042,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.07144781999694866,
+      "maximin": -0.8506210025087526,
+      "nash": 14.639193362700503,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.08359255338850399,
+      "maximin": -0.5148445432434597,
+      "nash": 15.249159752813023,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.06149027256336742,
+      "maximin": -0.4518067248278044,
+      "nash": 18.298991703375627,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.3466776522038427,
+      "maximin": -0.8506210025087526,
+      "nash": 10.843846935333707,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5066962978525629,
+      "maximin": -1.3853414989546882,
+      "nash": 7.3195966813502515,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 8,
+      "value": 0.1944283651236835,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 8,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 8,
+      "value": 21.958790044050755,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        2,
+        6,
+        8,
+        9,
+        10,
+        12,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "What a difficult spot to be in!\n\nAfter some consideration, I would recommend that I try to face my fear and present myself despite\nthe visible rash. Here's why:\n\n1. **It's an opportunity to practice resilience**: By facing my anxiety head-on and giving the\npresentation despite my reservations, I'll learn valuable coping skills and demonstrate to myself\nand others that I'm capable of overcoming obstacles.\n2. **Avoid burdening my friend**: Asking my friend to present on my behalf could indeed be a big ask\nand create undue pressure on them. If they agree, it might lead to resentment or guilt, which is not\na good outcome for either of us.\n3. **I'll learn from the experience**: Regardless of how I do, presenting despite my discomfort will\nhelp me grow and gain confidence in my public speaking abilities. The possibility of getting through\nthis tough situation will be worth the temporary awkwardness.\n4. **It's a chance to show I'm proactive and responsible**: If I choose not to present and instead\nask someone else to do it for me, it might suggest that I lack courage or initiative. By taking on\nthe challenge and giving my best effort, I'll demonstrate that I'm committed to fulfilling my\nresponsibilities.\n\nOf course, if my rash becomes a severe distraction (e.g., if it's causing discomfort during speaking\nor interfering with my ability to communicate), it would be reasonable to consider alternative\narrangements with my teacher. However, assuming it doesn't hinder me too much, I believe facing my\nfears and giving the presentation myself is the best decision.\n\nIt's just a presentation, not a life-altering event! I'll do my best, acknowledge the challenges,\nand move forward with greater resilience.",
+    "8": "I would recommend facing the potential embarrassment myself. Here's why:\n\nFirstly, if I were to ask my friend to present for me, it could indeed be burdensome for them, as\nyou mentioned. They might feel overwhelmed by the responsibility or worried about how I would feel\nabout their performance. By doing the presentation myself, I can take on that responsibility and\navoid putting an extra load on someone I care about.\n\nSecondly, presenting this topic requires my own unique perspective and experiences related to stress\nmanagement and self-care. As someone who has developed a physical manifestation of stress (my rash),\nI have valuable insights to share with my peers on how to cope with stress in a healthy way. If I\nwere to ask someone else to present, they might not be able to convey this message as effectively.\n\nThirdly, facing the potential embarrassment head-on can actually help me build resilience and\nconfidence. By standing up in front of my schoolmates with visible skin issues and speaking about my\nstruggles, I demonstrate that I'm willing to be vulnerable and open about my struggles, which can\ninspire others to do the same. This could create a more supportive and empathetic school\nenvironment.\n\nLastly, while it's true that my rash might draw unwanted attention away from the actual topic of\nstress management, it's also an opportunity for me to educate my peers about the tangible effects of\nchronic stress on the body. I can use this experience as a teaching moment to talk about the\nimportance of mental and physical health, self-care, and seeking help when needed.\n\nOverall, while the thought of standing in front of everyone with a visible rash is daunting, I\nbelieve that facing this challenge head-on will be a valuable learning experience for me and my\npeers."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

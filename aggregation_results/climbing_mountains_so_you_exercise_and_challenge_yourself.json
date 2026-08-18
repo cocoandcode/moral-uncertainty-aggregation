@@ -1,0 +1,370 @@
+{
+  "slug": "climbing_mountains_so_you_exercise_and_challenge_yourself",
+  "dilemma": "You're an experienced mountain climber, climbing a challenging peak with a group of less experienced climbers. You notice one of the climbers struggling considerably and slowing down the group, but you're all running out of time and resources. Should you leave the struggling climber behind with just enough resources to survive and continue the climb or risk the safety of the entire group by staying back?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Leave the struggling climber behind",
+  "not_to_do_action": "Stay back with the struggling climber",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.43601508346120493,
+      "maximin": -0.950093021099074,
+      "nash": 24.39865560450084,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 2,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8252493044386804,
+      "maximin": -2.0172135234497235,
+      "nash": 3.2531540806001122,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4332239971559115,
+      "maximin": -0.950093021099074,
+      "nash": 24.398655604500842,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2754336019911434,
+      "maximin": -1.6267725046846555,
+      "nash": 2.4398655604500843,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.5661620897162276,
+      "maximin": -0.950093021099074,
+      "nash": 27.109617338334267,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.19043048103079754,
+      "maximin": -1.2363314859195875,
+      "nash": 13.012616322400449,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.5661620897162276,
+      "maximin": -0.950093021099074,
+      "nash": 27.109617338334267,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 2,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -0.9581873969989965,
+      "maximin": -2.0172135234497235,
+      "nash": 2.1687693870667415,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 2,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9703321303905519,
+      "maximin": -2.0172135234497235,
+      "nash": 2.8465098205250983,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 2,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6923112118783643,
+      "maximin": -2.0172135234497235,
+      "nash": 4.337538774133483,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 1,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -2.4076545422147912,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.813748533013376,
+      "maximin": -2.4076545422147912,
+      "nash": 0.40664426007501403,
+      "baseline": -1.3853414989546882,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.5661620897162276,
+      "maximin": -0.950093021099074,
+      "nash": 27.109617338334267,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.8563277416199704,
+      "maximin": -0.07959606538784551,
+      "nash": 40.6644260075014,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.30307699090088885,
+      "maximin": -0.950093021099074,
+      "nash": 21.958790044050755,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.5661620897162276,
+      "maximin": -0.950093021099074,
+      "nash": 27.109617338334267,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.8563277416199704,
+      "maximin": -0.07959606538784551,
+      "nash": 40.6644260075014,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 13,
+      "value": 0.8563277416199704,
+      "tied_ids": [
+        13,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 13,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        13,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 13,
+      "value": 40.6644260075014,
+      "tied_ids": [
+        13,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        2,
+        8,
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "What a difficult decision!\n\nAfter careful consideration, I would recommend leaving the struggling climber behind with necessary\nresources to ensure their survival.\n\nHere's my rationale:\n\n1. **Safety of the group**: As an experienced climber leading this expedition, my primary\nresponsibility is the safety of the entire team. If we stay back to assist the struggling climber,\nit risks not only our own lives but also the lives of others in the group. In a high-risk\nenvironment like mountain climbing, every second counts, and the added delay could be catastrophic.\n2. **Consequence of abandoning**: While it's never easy to leave someone behind, I would rather\nleave with the knowledge that we provided sufficient resources for their survival than to attempt to\ncontinue up the mountain only to risk more lives in a potentially fruitless effort. Leaving a person\nwith basic necessities like food, water, and warm clothing should give them a chance to wait out the\nstorm or recover.\n3. **Assistance beyond our capabilities**: In a situation where we're already running low on time\nand resources, it's essential to recognize our limitations. Attempting to rescue or provide\nprolonged care for someone in distress could put our group at further risk of hypothermia, exposure,\nor accidents while searching for help.\n4. **Emergency response and protocols**: Climbing organizations often have protocols in place for\nemergencies like this, including procedures for leaving members behind if necessary. Leaving a note\nwith the location, resources provided, and an estimated duration for rescue can facilitate the\nemergency response process.\n\nTo mitigate the impact of abandoning our struggling climber, I would ensure that we:\n\n* Provide sufficient food (non-perishable) to sustain them for several days.\n* Give them access to warm clothing and extra layers for colder conditions.\n* Leave clear instructions and our planned route on a note or communication device, including an\nestimate of when help should arrive.\n\nUltimately, this difficult decision requires weighing the risks to all involved. While it's not a\nmorally easy choice, prioritizing the safety of our entire group ensures that everyone has a chance\nto make it back down the mountain, rather than risking more lives in an attempt to save one person.",
+    "13": "What a difficult and weighty decision! As an experienced mountain climber, I would strongly advise\nagainst leaving the struggling climber behind with just enough resources to survive. Here's why:\n\n1. **Group dynamics:** Climbing a challenging peak is not just about reaching the summit; it's also\nabout teamwork, camaraderie, and mutual support. Leaving someone behind would create tension and\npotentially damage relationships within the group.\n2. **Risk of accidents:** If we leave one member of the group behind, there will be fewer pairs to\nwatch out for each other in case of an emergency or a fall. This increases the risk of accidents\noccurring while one climber is trying to complete the ascent without proper support.\n3. **Struggling climber's physical condition:** Without knowing the specific circumstances, it's\ndifficult to assess the struggling climmer's physical condition. They might be experiencing altitude\nsickness, dehydration, or other health issues that could worsen rapidly if they're forced to fend\nfor themselves in suboptimal conditions.\n4. **Limited resources:** We are already running low on time and resources (e.g., food, water,\noxygen). Abandoning one climber with minimal supplies would reduce their chances of survival even\nfurther.\n\nBy staying behind to assist the struggling climber, we take a calculated risk that prioritizes human\nlife over reaching the summit. Here's what I'd recommend:\n\n**Adjust our ascent schedule and strategy:**\n\n* We assess the struggling climmer's condition and see if there are any signs of severe illness or\nexhaustion.\n* If they're still capable of climbing but need assistance, we take a shorter route to reduce\nexposure time to the elements (weather, altitude).\n* We share resources (food, water, oxygen) among the group to ensure no one is struggling\nunnecessarily.\n* If the situation worsens, we might have to reevaluate our ascent schedule and consider turning\nback or seeking alternative routes.\n\n**Leave no climber behind:**\n\nIn extreme cases where time is extremely limited (e.g., severe weather forecast, low air pressure),\nand all other options have been exhausted:\n\n* We would consider halting the ascent altogether if one member of the group is unable to continue\nsafely.\n* If this decision is made in a timely manner, we could arrange for evacuation or seek an\nalternative route that's safer.\n\nBy staying together as a team, sharing resources, and prioritizing each other's safety, I believe we\nminimize the risks and maximize our chances of reaching the summit without casualties."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

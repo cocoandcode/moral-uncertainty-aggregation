@@ -1,0 +1,377 @@
+{
+  "slug": "doing_things_you_enjoy_with_others",
+  "dilemma": "You are part of a hiking group with your friends. One of your friends doesn't have the right gear but wants to participate in a difficult hike which may put the entire group at risk. Should you allow your friend to join the hike or prioritize the safety of the group?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Allow friend to join hike",
+  "not_to_do_action": "Not allow friend to join hike",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.3638006578586656,
+      "maximin": -0.8506210025087526,
+      "nash": 21.958790044050755,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.23365365160364288,
+      "maximin": -0.8506210025087526,
+      "nash": 19.51892448360067,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.23365365160364288,
+      "maximin": -0.8506210025087526,
+      "nash": 19.51892448360067,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.3693828304692524,
+      "maximin": -0.06500842962438384,
+      "nash": 25.61858838472588,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.36659174416395895,
+      "maximin": -0.4518067248278044,
+      "nash": 24.39865560450084,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.49952983672427503,
+      "maximin": -0.052992447146856116,
+      "nash": 29.278386725401006,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.2869343734164476,
+      "maximin": -1.2363314859195875,
+      "nash": 9.759462241800335,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.23365365160364288,
+      "maximin": -0.8506210025087526,
+      "nash": 19.51892448360067,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.36659174416395895,
+      "maximin": -0.4518067248278044,
+      "nash": 24.39865560450084,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.04157618060325119,
+      "maximin": -0.8506210025087526,
+      "nash": 15.18138570946719,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 3,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.2841432871111542,
+      "maximin": -1.6267725046846555,
+      "nash": 9.149495851687814,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.4967387504189817,
+      "maximin": -0.4518067248278044,
+      "nash": 27.44848755506344,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.36659174416395895,
+      "maximin": -0.4518067248278044,
+      "nash": 24.39865560450084,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.23644473790893633,
+      "maximin": -0.4518067248278044,
+      "nash": 21.348823653938233,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.3638006578586656,
+      "maximin": -0.8506210025087526,
+      "nash": 21.958790044050755,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.36659174416395895,
+      "maximin": -0.4518067248278044,
+      "nash": 24.39865560450084,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 6,
+      "value": 0.49952983672427503,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 6,
+      "value": -0.052992447146856116,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 6,
+      "value": 29.278386725401006,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "**Recommendation: Do not allow your friend to join the hike without proper gear.**\n\n**Reasoning:** The safety of the group should be the top priority in any hiking or outdoor activity.\nA difficult hike already comes with inherent risks, such as inclement weather, steep terrain, and\npotential medical emergencies. Allowing a friend who is inadequately equipped to participate can\nsignificantly increase these risks and put everyone's lives at risk.\n\nHere are some key reasons why your friend should not be allowed to join the hike without proper\ngear:\n\n1. **Increased risk of injury or accident**: Your friend may struggle with physical demands, leading\nto fatigue, dehydration, or more severe medical issues. This could compromise their own safety and\npotentially jeopardize the group's overall well-being.\n2. **Group dynamics disruption**: Allowing someone with inadequate gear to participate can disrupt\nthe team's momentum, create distractions, and make it harder for others in the group to stay focused\non their own needs and goals.\n3. **Leadership and decision-making challenges**: As a group member concerned about safety, you may\nfeel torn between allowing your friend to join and potentially jeopardizing everyone's safety or\nsetting boundaries that could lead to conflict within the group.\n4. **Group cohesion and camaraderie issues**: Permitting someone without proper gear to participate\ncan create tension among group members who worry about their safety or are concerned with the\nleader's priorities.\n\nIn this situation, as a member of the group and friend, you have a responsibility to speak up for\nyour own concerns and the collective well-being of the group. You should respectfully advise your\nfriend that they cannot join the hike without proper gear and emphasize the importance of\nprioritizing their safety and preparation.\n\nThis decision may require some difficult conversations with your friend, but ultimately, it's\nessential to maintain a safe and enjoyable hiking experience for everyone involved. It might also be\nhelpful to discuss alternative options with your friend, such as postponing the hike or finding\nlower-risk alternatives that still allow them to participate while prioritizing their safety.",
+    "6": "I strongly recommend prioritizing the safety of the group by not allowing your friend to join the\nhike without proper gear.\n\nHere's my reasoning:\n\n1. **Group responsibility**: As part of a hiking group, each member has a collective responsibility\nfor everyone else's well-being and safety. By ignoring or downplaying the risks associated with your\nfriend's lack of gear, you may inadvertently put others in harm's way.\n2. **Risk assessment**: Difficult hikes come with inherent risks, such as inclement weather,\nchallenging terrain, and unpredictable wildlife encounters. Without the proper gear, your friend\nwill be less prepared to respond to these risks effectively, which could compromise not just their\nown safety but also that of the entire group.\n3. **Safety protocols**: Hiking groups often establish strict safety protocols to minimize the risk\nof accidents or injuries. In this scenario, allowing a member with inadequate gear to join would\nundermine these protocols and potentially jeopardize the entire group's experience.\n4. **Emergency preparedness**: A group must always be prepared for emergencies, such as unexpected\nweather changes or equipment failure. With your friend on board, you'd need to divert resources\n(e.g., share gear or rely on others to help in case of an emergency), which could lead to chaos and\nprolonged rescue situations if something were to go wrong.\n5. **Empowering responsible decision-making**: By insisting on proper gear for everyone involved,\nyou demonstrate leadership that prioritizes safety over expediency or accommodating individual\nwants.\n\n**What to do next:**\n\n1. Explain your concerns to your friend, highlighting the risks associated with inadequate gear and\nthe potential consequences of not prioritizing group safety.\n2. Discuss alternative options, such as delaying the hike until your friend can acquire or borrow\nsuitable gear, choosing a less challenging route, or splitting into two groups to accommodate\ndifferent skill levels and preferences.\n3. Make a collective decision based on the group's understanding of risks and shared commitment to\nsafety.\n\nRemember that prioritizing the safety of everyone involved is essential for a responsible and\nenjoyable hiking experience. By emphasizing group responsibility and safety above individual\ndesires, you can ensure a safe and memorable adventure for all."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

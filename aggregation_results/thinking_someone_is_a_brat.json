@@ -1,0 +1,395 @@
+{
+  "slug": "thinking_someone_is_a_brat",
+  "dilemma": "You are a teacher, and you think one of your students is a brat due to their consistent disruptive behavior. You feel it's impacting the learning environment, but you don't want to label the child negatively and potentially impact their self-esteem. Should you discuss your concerns with the student's parents or not?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Discussing concerns with the student's parents",
+  "not_to_do_action": "Not discussing concerns with the student's parents",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.028491120660246,
+      "maximin": 0.715873607905752,
+      "nash": 49.407277599114195,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8983441144052232,
+      "maximin": 0.32543258914068407,
+      "nash": 43.91758008810151,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8983441144052232,
+      "maximin": 0.32543258914068407,
+      "nash": 43.91758008810151,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7654060218449071,
+      "maximin": 0.32543258914068407,
+      "nash": 39.03784896720134,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8983441144052232,
+      "maximin": 0.32543258914068407,
+      "nash": 43.91758008810151,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8834082947083745,
+      "maximin": 0.715873607905752,
+      "nash": 43.91758008810151,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.028491120660246,
+      "maximin": 0.715873607905752,
+      "nash": 49.407277599114195,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8834082947083745,
+      "maximin": 0.715873607905752,
+      "nash": 43.91758008810151,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.028491120660246,
+      "maximin": 0.715873607905752,
+      "nash": 49.407277599114195,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8983441144052232,
+      "maximin": 0.32543258914068407,
+      "nash": 43.91758008810151,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.028491120660246,
+      "maximin": 0.715873607905752,
+      "nash": 49.407277599114195,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8983441144052232,
+      "maximin": 0.32543258914068407,
+      "nash": 43.91758008810151,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.028491120660246,
+      "maximin": 0.715873607905752,
+      "nash": 49.407277599114195,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.028491120660246,
+      "maximin": 0.715873607905752,
+      "nash": 49.407277599114195,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8983441144052232,
+      "maximin": 0.32543258914068407,
+      "nash": 43.91758008810151,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.028491120660246,
+      "maximin": 0.715873607905752,
+      "nash": 49.407277599114195,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 1,
+      "value": 1.028491120660246,
+      "tied_ids": [
+        1,
+        7,
+        9,
+        11,
+        13,
+        14,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        1,
+        6,
+        7,
+        8,
+        9,
+        11,
+        13,
+        14,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 49.407277599114195,
+      "tied_ids": [
+        1,
+        7,
+        9,
+        11,
+        13,
+        14,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would strongly recommend discussing my concerns with the student's parents. Here's why:\n\n**Reason 1: Identify underlying issues, not just labeling behaviors**\nInstead of simply labeling the child as a \"brat,\" which could potentially damage their self-esteem,\nI want to understand the underlying reasons for their behavior. Is there an issue at home that needs\nattention? Are they struggling with something in school or socially? By talking to parents, I can\ngain insights into possible causes and work together to develop strategies for improvement.\n\n**Reason 2: Collaborative approach to problem-solving**\nBy involving parents, we can take a collaborative approach to addressing the student's behavior.\nParents may have already discussed similar issues with their child, so they can offer valuable\ncontext and input on how to move forward. This approach ensures that the student is not being\nsingled out or stigmatized for their actions.\n\n**Reason 3: Positive behavioral support and reinforcement**\nIf I were to handle this issue alone without consulting parents, it's possible that the student\nmight become defensive, resistant to feedback, or more entrenched in their current behavior\npatterns. However, if parents are brought into the conversation, we can explore strategies for\npositive behavioral support and reinforcement together. This could include incentives, consequences,\nand interventions aimed at encouraging desired behaviors.\n\n**Reason 4: Responsibility-sharing**\nFinally, by discussing my concerns with the student's parents, I'm not solely shouldering the\nresponsibility of addressing their child's behavior. With a shared approach, we can work together to\ncreate a more supportive learning environment for all students.\n\nTo discuss this issue sensitively and effectively, I would follow these steps:\n\n* Schedule a private meeting with the student and their parents\n* Use non-judgmental language, focusing on behaviors rather than personal characteristics\n* Explain my concerns about how their behavior is impacting the class\n* Encourage open discussion to understand potential causes and develop strategies for improvement"
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

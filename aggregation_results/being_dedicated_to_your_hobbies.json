@@ -1,0 +1,377 @@
+{
+  "slug": "being_dedicated_to_your_hobbies",
+  "dilemma": "You are a dedicated artist who spends most of your free time painting. However, your elderly neighbor is struggling with chores and needs help. Should you sacrifice your painting time to assist your neighbor?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Assisting the Neighbor",
+  "not_to_do_action": "Not Assisting the Neighbor",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.21773744373641252,
+      "maximin": -0.8458904671545197,
+      "nash": 21.348823653938236,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.23267326343326128,
+      "maximin": -1.2363314859195875,
+      "nash": 19.518924483600674,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.1025262571782386,
+      "maximin": -1.6267725046846555,
+      "nash": 14.639193362700505,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.23267326343326128,
+      "maximin": -1.2363314859195875,
+      "nash": 19.518924483600674,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.3628202696882839,
+      "maximin": -0.8458904671545197,
+      "nash": 24.398655604500842,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.23267326343326128,
+      "maximin": -1.2363314859195875,
+      "nash": 19.518924483600674,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.3628202696882839,
+      "maximin": -0.8458904671545197,
+      "nash": 24.398655604500842,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.23267326343326128,
+      "maximin": -1.2363314859195875,
+      "nash": 19.518924483600674,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.0875904374813899,
+      "maximin": -1.2363314859195875,
+      "nash": 17.079058923150587,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.21773744373641252,
+      "maximin": -0.8458904671545197,
+      "nash": 21.348823653938236,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.0875904374813899,
+      "maximin": -1.2363314859195875,
+      "nash": 17.079058923150587,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.0875904374813899,
+      "maximin": -1.2363314859195875,
+      "nash": 17.079058923150587,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.21773744373641252,
+      "maximin": -0.8458904671545197,
+      "nash": 21.348823653938236,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.0875904374813899,
+      "maximin": -1.2363314859195875,
+      "nash": 17.079058923150587,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.0875904374813899,
+      "maximin": -1.2363314859195875,
+      "nash": 17.079058923150587,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.23267326343326128,
+      "maximin": -1.2363314859195875,
+      "nash": 19.518924483600674,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 0.3628202696882839,
+      "tied_ids": [
+        5,
+        7
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.8458904671545197,
+      "tied_ids": [
+        1,
+        5,
+        7,
+        10,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 5,
+      "value": 24.398655604500842,
+      "tied_ids": [
+        5,
+        7
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "What a difficult decision! As an artist, I cherish every moment I spend in my studio, lost in the\ncreative process. Painting brings me joy, relaxation, and fulfillment. However, as I weigh the\nimportance of my artistic pursuits against my responsibility to help my neighbor, I recommend\nsacrificing some painting time to assist her.\n\nHere's why:\n\n1. **Community responsibility**: As a member of this community, I have a moral obligation to help\nthose in need. By assisting my elderly neighbor, I'm contributing to her well-being and helping to\nbuild stronger social connections within our neighborhood.\n2. **Compassion and empathy**: My neighbor is struggling with chores, which can be both physically\nand emotionally challenging. By putting aside some of my painting time to help her, I'm showing\ncompassion and empathy for someone who may otherwise feel isolated or overwhelmed.\n3. **Perspective on priorities**: While art is a significant part of my life, it's not the only\naspect that defines me as a person. Helping others reminds me of what truly matters in life \u2013\nrelationships, kindness, and generosity. By putting my neighbor's needs first, I'm reevaluating my\npriorities and gaining perspective.\n4. **Potential benefits for art**: Sometimes, taking a break from our usual routine can spark new\nideas and inspiration. Assisting my neighbor might give me the opportunity to observe the world in a\ndifferent light, notice details that could inform my art, or even develop characters for future\npaintings.\n\nThat being said, I would recommend finding a balance between assisting my neighbor and continuing to\nwork on my artistic projects. Here's a possible compromise:\n\n* Set aside dedicated time each week (e.g., one day or half-day) specifically for helping my\nneighbor with her chores.\n* Use this time to build a relationship, chat, and understand her needs better. This will also allow\nme to recharge and find new sources of inspiration for my art.\n* When I'm assisting my neighbor, try to incorporate observations and insights into my artistic\nprocess, even if it's just jotting down ideas or colors in my sketchbook.\n* Make time for dedicated painting sessions as well, setting aside other days to focus on my\ncreative pursuits without feeling guilty about leaving my neighbor's needs unserved.\n\nUltimately, by balancing helping others with pursuing my art, I can create a more harmonious and\nfulfilling life that reflects both my passion for creativity and my compassion for humanity.",
+    "2": "After careful consideration, I would recommend prioritizing my elderly neighbor's well-being and\nhelping them with their chores over continuing with my painting schedule.\n\nHere's why:\n\n1. **Short-term need vs. long-term impact**: While painting is essential to my creative expression\nand identity as an artist, my neighbor's immediate needs take precedence. By sacrificing some of my\npainting time, I can help alleviate their burdens and provide peace of mind.\n2. **Neighborhood community obligation**: Living in a close-knit neighborhood creates a sense of\nresponsibility towards one another. Helping my elderly neighbor demonstrates a commitment to our\ncommunity and contributes to building trust and camaraderie among neighbors.\n3. **Artistic downtime isn't permanent**: While it may be inconvenient to put aside some painting\nsessions, this temporary sacrifice will have a lasting impact on my neighbor's life. Additionally,\nas an artist, I can always find opportunities to practice and create at later dates or in\nalternative settings (e.g., online tutorials or group classes).\n4. **Self-reflection: Values and priorities**: This situation allows me to reflect on my values as a\nperson and an artist. By choosing to help my neighbor, I'm demonstrating that my well-being and\nhappiness aren't solely dependent on art but also on relationships and contributing to the\ncommunity.\n5. **Practical skills and experiences gained**: Helping my neighbor with chores can provide valuable\nlessons in responsibility, self-sufficiency, and resourcefulness \u2013 essential life skills that will\nbenefit me and other potential friends or family members in need.\n\nWhile this decision might mean sacrificing some artistic momentum, I firmly believe that the act of\nassisting my elderly neighbor is a vital part of being an empathetic member of our community.",
+    "5": "What a difficult decision! While my passion for painting drives me creatively, I firmly believe that\nhelping my elderly neighbor in need takes precedence over my art. Here's why:\n\n**Compassion and community**: We all benefit from living in a supportive and caring community. By\nassisting my neighbor, I'm contributing to the well-being of someone who may be struggling with\neveryday tasks. This is an opportunity to make a positive impact on someone's life.\n\n**Importance of community service**: Engaging in acts of kindness and helping others not only brings\njoy to those being helped but also enriches our own lives. By devoting time to assist my neighbor,\nI'll experience the rewards of contributing to a greater good, which can have a profound effect on\none's sense of purpose and fulfillment.\n\n**The bigger picture**: As an artist, my work is not just about creating art for its own sake; it's\nalso about sharing beauty, emotion, and meaning with others. If I don't attend to the needs of those\naround me \u2013 particularly vulnerable neighbors like myself \u2013 then what am I really contributing to\nsociety?\n\n**Sacrificing painting time can be temporary**: While giving up some painting time may seem\ndetrimental, consider that art will always be there. However, my neighbor's well-being is not as\nflexible or forgiving.\n\nThat being said, **I'll propose a compromise**:\n\n1. Offer my assistance for an agreed-upon period, balancing my responsibilities with the help they\nneed.\n2. Explore creative ways to support them remotely while maintaining some painting time: e.g., making\nquick sketches based on photographs of their garden, creating simple but beautiful artwork using\npre-existing materials in her home.\n3. Communicate clearly and transparently about what I can realistically provide.\n\nUltimately, **the priority is helping my neighbor**. By putting this commitment first, I'll create\nan opportunity for meaningful connection, foster a sense of community responsibility, and\npotentially unlock a deeper understanding of the value of giving back.\n\nIn doing so, I'll remember that art can be practiced anywhere, even while contributing to someone\nelse's well-being."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

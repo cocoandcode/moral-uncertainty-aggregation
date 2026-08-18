@@ -342,5 +342,187 @@ pipeline, to fix the intertheoretic-value / scale-bias problem). Therefore the
 harness stays on **raw 0–10 scores**; normalizing it would be both a no-op and
 circular (baking in the transform the harness is meant to independently justify).
 
+## 11. RESOLVED — false HEDGE / OTHER labels (prompt v1 → v2)
+
+**The v1 failure.** `recommendations/*.json` were first labelled with a prompt
+whose `HEDGE` category was "stays inside the binary but will not commit". This
+swallowed any answer that recommended an action cautiously. Soft middle paths
+(gradual distancing, monitor-then-decide) were split arbitrarily between `HEDGE`
+and `OTHER`, and similar responses received different labels. v1 totals across
+8,000 responses: TO_DO 2,938 / NOT_TO_DO 4,053 / HEDGE 762 / OTHER 247.
+
+**The v2 fix** (`PROMPT_VERSION = 2` in `label_recommendations.py`), three
+changes:
+
+1. `HEDGE` renamed to **`REFUSAL`** and narrowed to responses that decline to
+   engage at all ("I cannot provide guidance on..."). A response that reasons
+   and reaches any recommendation can no longer be a refusal, however cautiously
+   worded. This connects the label to the generator-refusal artefact in item 5.
+2. **The bar for `TO_DO` / `NOT_TO_DO` was lowered explicitly.** Conviction is
+   no longer required: tentative, conditional, caveated, and softened or gradual
+   versions of a named action all take that action's label. The prompt
+   enumerates these cases rather than leaving them to inference.
+3. **`OTHER` was made residual**, for a genuinely distinct third course or no
+   discernible lean at all — with an explicit instruction *not* to use it for
+   mild or qualified recommendations.
+
+**Evidence field.** Each label now carries the short quote that carries the
+recommendation, so labels are auditable without re-reading whole responses. This
+is what the gold-set validation (item 13) will check against.
+
+**Pilot** on `abruptly_cutting_contact_with_people`: all four known-bad cases
+fixed (R2/R8/R11/R16 `HEDGE` → `NOT_TO_DO`), the two genuine refusals separated
+out (R1/R12 `HEDGE` → `REFUSAL`), and two mislabelled middle paths corrected
+(R7/R13 `OTHER` → `NOT_TO_DO`). v1 labels are preserved in `recommendations_v1/`
+for the old-vs-new comparison.
+
+**Full re-label (all 500 dilemmas / 8,000 responses).** v2 totals: TO\_DO 3,195 /
+NOT\_TO\_DO 4,074 / REFUSAL 668 / OTHER 63. 90.9% of labels are unchanged from
+v1, so the firm cases held and the movement is concentrated where it was meant
+to be. The v1 → v2 transitions:
+
+| v1 ↓ / v2 → | TO_DO | NOT_TO_DO | REFUSAL | OTHER |
+|---|---|---|---|---|
+| TO_DO | 2925 | 8 | 5 | 0 |
+| NOT_TO_DO | 20 | 3844 | 189 | 0 |
+| HEDGE | 174 | 101 | 464 | 23 |
+| OTHER | 76 | 121 | 10 | 40 |
+
+Three corrections, in order of importance:
+
+1. **189 responses moved `NOT_TO_DO` → `REFUSAL`.** v1 had no refusal category,
+   so flat refusals were read as endorsing the "don't act" side. v1 was
+   therefore counting the generator-refusal artefact of item 5 as substantive
+   moral recommendations *against* the action — a real error in the v1 numbers,
+   not a matter of taste.
+2. **275 old `HEDGE`s became a named action**, and **197 old `OTHER`s** did too:
+   the soft-lean and mild-recommendation fixes.
+3. **`OTHER` collapsed to 63 of 8,000** (0.8%), so it is now genuinely residual.
+   This substantially reduces the exposure flagged in item 12 — the divergence
+   analysis no longer leans on a large incoherent bucket.
+
+**Automatic validity checks** (no human labelling required; these test whether
+the labels are *self-consistent and grounded*, not whether they are correct):
+
+- **Refusal separation is clean.** Only **1 of 668** `REFUSAL` labels lacks an
+  explicit refusal opener ("I can't…", "I'm unable to…"). Median length is
+  **25 words for `REFUSAL` vs 308 for everything else** — the class picks out a
+  structurally distinct kind of response, not a judgement call.
+- **Evidence quotes are grounded.** 7,659 labels carry a supporting quote; after
+  normalising Unicode punctuation and markdown, **99.1% appear verbatim** in the
+  response they were drawn from. The 67 that do not are light paraphrases, not
+  fabrications. The labeller is reading the text, not inventing support.
+- **48 responses open with a refusal phrase but received an action label.**
+  Spot-checked: all are the "disclaimer, then substantive advice" pattern the v2
+  prompt explicitly instructs the model to judge on the advice. Correct, but
+  this is the most delicate boundary in the scheme and where human review should
+  concentrate.
+
+**What these checks do NOT establish.** Every number above is evidence of
+compliance and internal consistency, not accuracy. That the labels moved the way
+the revised prompt asked shows only that the prompt was followed. An accuracy
+claim still requires human ground truth — see item 13.
+
+**Effect on the divergence results** (`aggregate_scores.py` re-run on v2 labels;
+response-level selection is untouched, only the labels changed):
+
+- Pairwise recommendation-level disagreement **203 → 169** of 3,000 comparisons;
+  dilemmas where all four rules share a recommendation **436 → 444** of 500.
+- Agreements resting *solely* on both winners being `OTHER` — the incoherence
+  risk raised in item 12 — fell from **160 to 20**. That exposure is now small
+  enough to disclose rather than engineer around.
+- **A new residual takes its place: 54 agreements rest solely on both winners
+  being `REFUSAL`.** Two rules both selecting a refusal is not agreement on a
+  moral recommendation; it is agreement that the generator declined to answer.
+  These should not be counted as substantive agreement in Results. Under v1 this
+  was invisible because refusals were mislabelled `NOT_TO_DO` — i.e. they were
+  being counted as genuine agreement on a moral position.
+- **46 winning slots are `REFUSAL`**, so the aggregation rules do sometimes rank
+  a refusal as the most choiceworthy response. Direct evidence for the claim in
+  item 5 that generator-side safety alignment shrinks the action space before
+  any ethical judgement happens.
+
+**Both levels are now reported per dilemma** (`unanimous` and
+`unanimous_recommendation` in each result JSON; two columns in `index.html`).
+Over 500 dilemmas:
+
+| | count | |
+|---|---|---|
+| same response *and* same recommendation | 339 | rules fully agree |
+| different response, same recommendation | 105 | disagreement is rhetorical, not practical |
+| different recommendation | **56** | genuine action-level divergence |
+
+Sanity check: no dilemma has "same response" but "different recommendation",
+which is structurally impossible (sharing a response entails sharing its label)
+and confirms the two measures are wired together correctly.
+
+**The 105 matter for the argument.** They are dilemmas where the aggregation
+rules pick different *texts* that endorse the same *action* — so the raw
+response-level divergence figure (161/500) overstates practical disagreement by
+roughly a factor of three. The defensible headline is that the rules diverge on
+what to actually do in **56/500 (11.2%)** of dilemmas.
+
+**Caveat on what the agreements agree about:** of the 444 recommendation-level
+agreements, 221 are `NOT_TO_DO`, 212 `TO_DO`, **9 `REFUSAL`** and 2 `OTHER`.
+The 9 refusal-agreements are agreement that the generator declined to answer,
+not agreement on a moral position, and should be excluded or reported
+separately in Results.
+
+**Residual inconsistency to disclose:** near-identical phrasings can still split.
+On the pilot, R9 ("Recommendation: Yes, ... gradually disengage") was labelled
+`TO_DO` while R7/R8/R13/R14 ("distance herself *rather than* cutting him off")
+were labelled `NOT_TO_DO`. Defensible — R9 affirms the question and never
+contrasts with cutting off — but it shows the softened-action boundary is where
+residual error will sit.
+
+## 12. IDEA — quantify *how far* a response leans, not just which bucket
+
+The current label is categorical (`TO_DO` / `NOT_TO_DO` / `REFUSAL` / `OTHER`).
+The v2 prompt (item 11) resolves the worst of this by routing softened actions
+to their named action, but the underlying issue survives: "gradually distance
+yourself" and "cut off contact immediately" now share the label `NOT_TO_DO` /
+`TO_DO` respectively while differing enormously in force, and the category
+discards that.
+
+**Proposal:** add a scalar stance score per response, e.g. `lean ∈ [-1, +1]`,
+where `+1` = unambiguously recommends `to_do_action`, `-1` = unambiguously
+recommends `not_to_do_action`, and `0` = no lean either way. Soft/conditional
+middle paths land near ±0.2–0.5 instead of collapsing onto a firm action. This
+parallels the smoothed `lean` already used for value counts in item 1h, so the
+project would use one consistent notion of "direction with magnitude".
+
+**Why it matters:**
+
+- **Dissolves the softened-action boundary**, which is where the labeller is
+  least reliable even after the v2 prompt (see the R9 case in item 11).
+- **Fixes the `OTHER` incoherence** flagged in the Divergence Measurement
+  section of `MUA.tex`: two responses sharing the `OTHER` label may endorse
+  quite different third courses, so a shared label is weak evidence of
+  agreement. A scalar places both on a common axis and makes the distance
+  explicit. Evidence: `OTHER` is 247/8000 responses (3.1%) but 166/2110 winner
+  slots (7.9%) — it wins ~2.5× its base rate — and **160 of the 2,797 pairwise
+  rule "agreements" rest solely on both winners being `OTHER`**.
+- **Makes divergence graded.** Recommendation-level divergence is currently
+  binary (labels disjoint or not). With a scalar it becomes
+  `|lean_A − lean_B|`, so the write-up can say *how far apart* two aggregation
+  rules land, not merely that they differ. Two rules picking a firm `TO_DO` and
+  a firm `NOT_TO_DO` is a far stronger result than one picking a firm `TO_DO`
+  and the other a lukewarm one — currently both count identically.
+
+**Caveats to resolve before adopting:**
+
+- A scalar is **harder to validate** than a category. No confusion matrix; you
+  would need agreement with human ratings via a correlation/ordinal-agreement
+  statistic (Spearman, or Krippendorff's α with an interval/ordinal metric).
+- **Genuinely orthogonal third courses** (e.g. "bring in a mediator") have no
+  natural position on a `to_do`/`not_to_do` axis. A scalar alone cannot express
+  them, so an off-axis flag is still needed — the scalar supplements the
+  categories rather than replacing them.
+- LLM scalar outputs cluster on round numbers and are less stable than
+  categorical choices; would need checking for that artefact.
+
+**Suggested shape:** keep the categorical label *and* emit `lean`; report the
+categories descriptively, run the divergence analysis on `lean`.
+
 ## (Add further notes below as we go)
 

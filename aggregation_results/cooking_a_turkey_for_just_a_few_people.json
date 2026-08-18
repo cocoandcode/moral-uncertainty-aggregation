@@ -1,0 +1,363 @@
+{
+  "slug": "cooking_a_turkey_for_just_a_few_people",
+  "dilemma": "You're cooking a turkey for a small gathering of friends who are diverse in their dietary choices. One of your friends is a strict vegan and feels uncomfortable in the presence of cooked meat. Should you change your entire menu to accommodate for one person's dietary choices?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Change Entire Menu",
+  "not_to_do_action": "Not Change Entire Menu",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.0002037697842494,
+      "maximin": -1.2494352801897008,
+      "nash": 4.06644260075014,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5771000253201904,
+      "maximin": -1.2363314859195875,
+      "nash": 7.590692854733595,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5892447587117458,
+      "maximin": -1.2363314859195875,
+      "nash": 8.13288520150028,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.45909775245672313,
+      "maximin": -0.8458904671545197,
+      "nash": 10.16610650187535,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5892447587117458,
+      "maximin": -1.2363314859195875,
+      "nash": 8.13288520150028,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8672656772239333,
+      "maximin": -1.2363314859195875,
+      "nash": 5.421923467666853,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7221828512720618,
+      "maximin": -1.2363314859195875,
+      "nash": 6.5063081612002245,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.038785094297957734,
+      "maximin": -0.4554494483894518,
+      "nash": 16.26577040300056,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.3423022773808483,
+      "maximin": 0.32543258914068407,
+      "nash": 26.56742499156758,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8672656772239333,
+      "maximin": -1.2363314859195875,
+      "nash": 5.421923467666853,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8672656772239333,
+      "maximin": -1.2363314859195875,
+      "nash": 5.421923467666853,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8672656772239333,
+      "maximin": -1.2363314859195875,
+      "nash": 5.421923467666853,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2754336019911434,
+      "maximin": -1.6267725046846555,
+      "nash": 2.4398655604500843,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.1452865957361207,
+      "maximin": -1.2494352801897008,
+      "nash": 3.2531540806001122,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8672656772239333,
+      "maximin": -1.2363314859195875,
+      "nash": 5.421923467666853,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.6041805784085945,
+      "maximin": -0.8458904671545197,
+      "nash": 8.471755418229458,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 9,
+      "value": 0.3423022773808483,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 9,
+      "value": 0.32543258914068407,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 9,
+      "value": 26.56742499156758,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 8,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "8": "I would recommend not changing your entire menu to accommodate the vegan guest's preferences, but\nrather finding alternative options that cater to their needs while still allowing everyone else to\nenjoy the meal. Here's why:\n\n1. **Respect for others' values**: As a host, it's essential to respect and appreciate the\ndifferences in dietary choices among your guests. By providing an option for the vegan guest, you\ndemonstrate your understanding of their preferences and commitment to accommodating their needs.\n2. **Variety and inclusivity**: Offering a separate dish or course that is vegan-friendly can cater\nto the specific requirements of this guest while still allowing others to enjoy the traditional\nturkey meal. This approach promotes inclusivity and variety, making everyone feel welcome at the\ngathering.\n3. **Flexibility and compromise**: If you were to change your entire menu to accommodate one\nperson's preferences, it might not be feasible or enjoyable for yourself as a host. By providing\nalternatives, you can find a middle ground that works for both groups, allowing each guest to make\ntheir own choices about what they want to eat.\n4. **Consider the impact on others**: Changing the main course to a vegan option would likely impact\nother guests who are not vegan or vegetarian and may feel disappointed or uncomfortable if their\ntraditional meal is replaced. By keeping the original menu intact with an additional vegan option,\nyou ensure that all guests have a choice.\n\nTo accommodate the vegan guest, consider the following suggestions:\n\n* Prepare a separate side dish or appetizer that is clearly labeled as vegan, such as roasted\nvegetables, quinoa salad, or a fruit platter.\n* Offer a variety of dips and sauces that can be served alongside the traditional turkey meal. For\nexample, hummus, guacamole, or salsa can be great options for vegans to enjoy with their plant-based\nmeals.\n* Make sure there are plenty of vegan-friendly drinks and snacks available throughout the gathering.\n\nBy taking these steps, you'll create a welcoming atmosphere where everyone feels included and has\noptions that suit their dietary preferences.",
+    "9": "A delicious conundrum!\n\nIn this situation, I would recommend accommodating the vegan friend while also ensuring that\neveryone else has something they can enjoy as well. Here's why:\n\n1. **Respect for their choice**: As a host, it's considerate to respect your friend's dietary\npreferences and choices. Veganism is not just a diet; it's a lifestyle choice that reflects their\nvalues and principles.\n2. **Cultural sensitivity**: By accommodating the vegan friend, you're demonstrating an\nunderstanding of diverse cultural and personal practices related to food.\n3. **Creating a welcoming environment**: Everyone should feel welcome and included in your\ngathering. Providing a separate meal option for your vegan friend sends a clear message that they\nare valued and respected.\n\nHowever, I would not recommend changing your entire menu to accommodate one person's dietary\nchoices. Here's why:\n\n1. **Unrealistic expectation**: Changing the entire menu for one person may create an unrealistic\nexpectation for future gatherings.\n2. **Inconvenience to others**: Forgoing non-vegan dishes might inconvenience other guests who are\nused to enjoying traditional holiday meals with turkey.\n3. **Fusion of flavors, not fusion of menus**: Instead of changing the entire menu, consider adding\nsome delicious vegan options alongside your traditional dishes.\n\nHere's a suggestion:\n\n* Prepare a separate, well-labeled (e.g., \"Vegan\" or \" Plant-based\") dish for your vegan friend that\ncan be served alongside the turkey.\n* Offer a variety of sides and salads that can be enjoyed by everyone, including vegans. This way,\neven if there isn't a dedicated vegan main course, there are still plenty of options available.\n\nBy finding a balance between accommodating the vegan guest's dietary needs while also considering\nyour other guests' preferences, you'll create a welcoming and inclusive atmosphere for everyone."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

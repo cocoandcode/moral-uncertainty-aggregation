@@ -1,0 +1,366 @@
+{
+  "slug": "getting_outside_and_explore_new_places",
+  "dilemma": "You are an avid hiker who enjoys exploring new places. You discover a pristine trail that is home to a rare species of plants which could be disturbed by human presence. Should you share the location of this trail with fellow hikers or keep it to yourself to preserve its natural state?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Share the location",
+  "not_to_do_action": "Keep the location to yourself",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.08857082565177143,
+      "maximin": -0.8506210025087526,
+      "nash": 17.350155096533932,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7520544906657594,
+      "maximin": -0.950093021099074,
+      "nash": 6.5063081612002245,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5920358450170392,
+      "maximin": -0.8506210025087526,
+      "nash": 8.13288520150028,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2754336019911434,
+      "maximin": -1.6267725046846555,
+      "nash": 2.4398655604500843,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0123485031758046,
+      "maximin": -1.2363314859195875,
+      "nash": 4.337538774133483,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7221828512720618,
+      "maximin": -1.2363314859195875,
+      "nash": 6.5063081612002245,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.43201719936831906,
+      "maximin": -1.2363314859195875,
+      "nash": 8.675077548266966,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2754336019911434,
+      "maximin": -1.6267725046846555,
+      "nash": 2.4398655604500843,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8551209438323779,
+      "maximin": -1.2494352801897008,
+      "nash": 4.879731120900169,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4469530190651678,
+      "maximin": -0.8506210025087526,
+      "nash": 9.488366068416994,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.5649552919286351,
+      "maximin": -1.2494352801897008,
+      "nash": 6.5063081612002245,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.1452865957361207,
+      "maximin": -1.2494352801897008,
+      "nash": 3.2531540806001122,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.1452865957361207,
+      "maximin": -1.2494352801897008,
+      "nash": 3.2531540806001122,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.1452865957361207,
+      "maximin": -1.2494352801897008,
+      "nash": 3.2531540806001122,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.1452865957361207,
+      "maximin": -1.2494352801897008,
+      "nash": 3.2531540806001122,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7221828512720618,
+      "maximin": -1.2363314859195875,
+      "nash": 6.5063081612002245,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 1,
+      "value": 0.08857082565177143,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.8506210025087526,
+      "tied_ids": [
+        1,
+        3,
+        10
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 17.350155096533932,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        1,
+        7,
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "As an avid hiker, I understand the allure of discovering new trails and sharing them with others.\nHowever, in this case, I strongly believe that it's essential to prioritize preserving the natural\nstate of the pristine trail and keeping its location private.\n\nHere are my reasons for making this recommendation:\n\n1. **Protection of a rare species**: The presence of a rare plant species is a delicate ecosystem\nthat requires care and attention to preserve. Human activity, even in moderation, can disrupt the\nplants' natural habitat, threatening their very existence. By keeping the trail private, we minimize\nthe risk of disturbing or harming these unique organisms.\n2. **Minimizing human impact**: Even if hikers are experienced and respectful, their presence on the\ntrail can still cause unintended damage to the environment. Footprints, trampling of vegetation, and\nerosion can have lasting effects on the ecosystem. By limiting access to the trail, we reduce the\nlikelihood of human-induced harm.\n3. **Conservation of sensitive habitats**: Pristine areas like this one are often home to other rare\nor endangered species that depend on the specific conditions present in the area. Protecting these\necosystems is crucial for maintaining biodiversity and ensuring the long-term health of our planet.\n4. **Responsibility as a hiker**: As an avid hiker, I understand my responsibility to be a steward\nof nature. Keeping this trail private is one way to demonstrate respect for the environment and its\ninhabitants.\n\nIf you're thinking about sharing the location with fellow hikers or online communities, consider\nthese alternatives:\n\n1. **Share information, not locations**: Instead of revealing the exact location, provide\neducational materials or brochures that describe the unique features and importance of preserving\nthis ecosystem.\n2. **Support conservation efforts**: Contact local conservation organizations or parks departments\nto discuss potential collaborative efforts in protecting and preserving sensitive habitats.\n3. **Volunteer for conservation work**: Get involved with organizations dedicated to habitat\nrestoration and conservation, which will allow you to contribute to preserving the natural state of\nthis pristine trail.\n\nBy taking a responsible approach, we can ensure that these rare plant species continue to thrive\nwithout being exposed to unnecessary human impact."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 1
+}

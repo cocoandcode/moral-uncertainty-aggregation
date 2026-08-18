@@ -1,0 +1,363 @@
+{
+  "slug": "participating_in_a_family_business",
+  "dilemma": "In a family-owned restaurant, the eldest son is the manager. He is aware of his younger brother stealing money from the cash register regularly, but their parents are oblivious. Should the elder brother confront his sibling about the theft or inform their parents about it?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confront the younger brother",
+  "not_to_do_action": "Not inform the parents",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.20536630072764636,
+      "maximin": -0.8458904671545197,
+      "nash": 13.554808669167134,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.3476580403742243,
+      "maximin": -1.2363314859195875,
+      "nash": 9.759462241800337,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.038785094297957734,
+      "maximin": -0.4554494483894518,
+      "nash": 16.26577040300056,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5771000253201904,
+      "maximin": -1.2363314859195875,
+      "nash": 7.590692854733595,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.20536630072764636,
+      "maximin": -0.8458904671545197,
+      "nash": 13.554808669167134,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.6135342254948565,
+      "maximin": -1.2363314859195875,
+      "nash": 7.590692854733595,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.0698635314792477,
+      "maximin": -0.4554494483894518,
+      "nash": 19.51892448360067,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.20536630072764636,
+      "maximin": -0.8458904671545197,
+      "nash": 13.554808669167134,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -1.0095574168705113,
+      "maximin": -1.6267725046846555,
+      "nash": 4.06644260075014,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.20280162403956375,
+      "maximin": -0.4554494483894518,
+      "nash": 21.958790044050755,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.7464723180551726,
+      "maximin": -1.2363314859195875,
+      "nash": 6.5063081612002245,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.20536630072764636,
+      "maximin": -0.8458904671545197,
+      "nash": 13.554808669167134,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.05372091399480647,
+      "maximin": -0.4518067248278044,
+      "nash": 16.60464061972974,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.3233685735911136,
+      "maximin": -1.2363314859195875,
+      "nash": 11.386039282100393,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.3476580403742243,
+      "maximin": -1.2363314859195875,
+      "nash": 9.759462241800337,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.7343275846636172,
+      "maximin": -1.2363314859195875,
+      "nash": 6.777404334583567,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 10,
+      "value": 0.20280162403956375,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 13,
+      "value": -0.4518067248278044,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 10,
+      "value": 21.958790044050755,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 3,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "3": "I would recommend that the eldest son, the manager, informs their parents about the situation.\nHere's why:\n\n**Reasons to inform the parents:**\n\n1. **Immediate consequences**: By addressing the issue with both parents, they can take immediate\naction to stop the theft, preventing further loss and potential negative impacts on the business.\n2. **Accountability**: As the elder brother is aware of his sibling's actions and has the\nresponsibility as manager, he should address this matter directly with their parents, who are\nultimately responsible for overseeing the restaurant's operations.\n3. **Trusted authority figures**: The parents have a reputation to uphold and may feel embarrassed\nor ashamed if they discover that one of their children is involved in stealing from the business.\n4. **Protecting relationships**: Confronting his sibling alone might lead to resentment, distrust,\nor even further deceit if the brother finds out. Informing their parents allows them to approach the\nsituation together as a family and address it as a whole.\n\n**Why not confronting the sibling directly?**\n\nWhile confronting the sibling may seem like an easy way out, it may not be the most effective\nsolution:\n\n1. **Potential for denial or defensiveness**: The brother might deny his actions or become defensive\nwhen confronted by his older sibling, leading to further conflict.\n2. **Strained relationships**: A confrontation between siblings in a professional setting could\ndamage their relationship and create tension within the family.\n3. **No resolution without consequences**: If only the eldest son addresses his sibling, it may lead\nto repeated incidents with no clear resolution or penalties for the misbehavior.\n\n**How to approach informing the parents:**\n\nWhen speaking with their parents, the eldest son should:\n\n1. Be honest and transparent about what has been happening.\n2. Avoid blame or accusation of the younger brother; instead, focus on the facts and behaviors\nobserved.\n3. Offer suggestions on how to prevent similar incidents in the future.\n\nBy informing their parents, the eldest son will help maintain honesty within the family, ensure\naccountability for the actions, and promote an environment of respect and responsibility in the\nrestaurant.",
+    "10": "**Recommendation:** The elder brother should initially try to address the issue with his younger\nbrother privately.\n\n**Why:**\n\n1. **Family dynamics**: Confronting a family member in public could lead to embarrassment, hurt\nfeelings, and potentially damage relationships within the family.\n2. **Potential denial or defensiveness**: If confronted directly by their parents, the younger\nbrother might become defensive, deny any wrongdoing, and blame the elder brother for being too\nsuspicious.\n3. **Opportunity for personal growth**: Addressing the issue privately allows the older brother to\ndemonstrate his responsibility, accountability, and empathy as a sibling and manager.\n4. **Encourages honesty and change**: Talking to the younger brother directly may help him realize\nthe gravity of his actions and encourage him to change his behavior.\n\n**What if that doesn't work?**\n\nIf after a private conversation, the younger brother continues to steal money from the register, it\nis essential for the older brother to involve their parents in order to:\n\n1. **Maintain family trust**: It's crucial to address the issue promptly and transparently to\nprevent further distrust among family members.\n2. **Ensure accountability**: Parents need to know about the thefts to take necessary actions, such\nas changing security measures or monitoring staff more closely.\n3. **Prevent future harm**: Allowing the behavior to continue could lead to more significant\nconsequences, like financial losses or reputational damage for the restaurant.\n\n**Involving parents would involve a careful approach:**\n\n1. **Gather evidence**: Collect concrete proof of the thefts before discussing it with their\nparents.\n2. **Express concerns**: Present the evidence and explain why action is necessary to prevent further\nissues.\n3. **Seek support and guidance**: Work together as a family to find a solution and determine the\nbest course of action.\n\nBy following this approach, the elder brother can address the issue responsibly while maintaining\npositive relationships within their family and ensuring the continued success of their restaurant\nbusiness.",
+    "13": "A delicate situation indeed! Here's a considered recommendation:\n\n**Recommendation:** The eldest son should inform his parents about the younger brother's theft.\n\n**Reasoning:**\n\n1. **Responsibility**: As the manager, the elder brother has a responsibility to oversee the\noperations of the restaurant and ensure its integrity. Ignoring or turning a blind eye to his\nbrother's actions would be a dereliction of duty.\n2. **Family harmony vs. fairness**: While confronting the younger brother directly might seem like\nan easier option, it could lead to defensiveness and potentially create conflict between the\nbrothers. Informing their parents will allow for a more impartial and fair discussion, resolving the\nissue in a family setting rather than through individual confrontation.\n3. **Restoring trust**: If the younger brother's behavior continues unchecked, it may damage\nrelationships within the family and erode trust among all members. By involving their parents, the\nelder brother can help his sibling understand that his actions have consequences and seek support\nfor addressing this issue before it escalates further.\n4. **Preventing escalation**: Ignoring or downplaying the theft could encourage the younger brother\nto continue stealing, potentially harming not only the family business but also the relationships\nwithin the family. By raising awareness with their parents, the elder brother can prevent a more\nsignificant problem from developing.\n5. **Parental responsibility**: Ultimately, it is the responsibility of parents to set and enforce\nexpectations for their children's behavior, ensuring they are acting responsibly and with integrity.\nThe eldest son should inform his parents so they can assess the situation and intervene as\nnecessary.\n\n**Alternative approach:**\n\nIf the eldest son decides not to involve their parents immediately, he could consider a more\nempathetic approach:\n\n1. Address the issue directly with his younger brother (e.g., during a private conversation) to\nunderstand why he feels compelled to steal and provide guidance on alternatives.\n2. Encourage the younger brother to seek help or apologize to their parents if they learn about his\nbehavior.\n\nHowever, it's essential to prioritize fairness and transparency in addressing the issue, as this\napproach can still carry risks of fostering resentment and undermining trust within the family."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

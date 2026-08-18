@@ -1,0 +1,367 @@
+{
+  "slug": "cheering_for_your_teammate",
+  "dilemma": "You're a member of a soccer team and your teammate has been consistently underperforming. During a crucial game, this teammate scores an own goal causing your team to lose. Should you still cheer for your teammate despite the loss, knowing it might encourage further mistakes?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Cheer for the underperforming teammate",
+  "not_to_do_action": "Not to cheer for the underperforming teammate",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.0792171785655096,
+      "maximin": -0.06500842962438384,
+      "nash": 19.925568743675687,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.0163463872686904,
+      "maximin": 0.715873607905752,
+      "nash": 48.79731120900168,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.07265461778454113,
+      "maximin": -0.8458904671545197,
+      "nash": 18.29899170337563,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.0698635314792477,
+      "maximin": -0.4554494483894518,
+      "nash": 19.51892448360067,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7532612884533518,
+      "maximin": 0.32543258914068407,
+      "nash": 39.03784896720135,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.463095636549609,
+      "maximin": -0.07959606538784551,
+      "nash": 29.27838672540101,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8834082947083745,
+      "maximin": 0.715873607905752,
+      "nash": 43.91758008810151,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.20001053773427033,
+      "maximin": -0.07959606538784551,
+      "nash": 22.772078564200786,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7532612884533518,
+      "maximin": 0.32543258914068407,
+      "nash": 39.03784896720135,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2754336019911434,
+      "maximin": -1.6267725046846555,
+      "nash": 2.4398655604500843,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6081784625014804,
+      "maximin": 0.32543258914068407,
+      "nash": 34.158117846301174,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.34109547959325587,
+      "maximin": -0.5148445432434597,
+      "nash": 12.19932780225042,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.7411165550617965,
+      "maximin": 0.32543258914068407,
+      "nash": 37.953464273667976,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7532612884533518,
+      "maximin": 0.32543258914068407,
+      "nash": 39.03784896720135,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.3180128105977376,
+      "maximin": -0.5148445432434597,
+      "nash": 24.398655604500842,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4780314562464578,
+      "maximin": -0.06500842962438384,
+      "nash": 29.888353115513528,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 1.0163463872686904,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        2,
+        7
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 48.79731120900168,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        2,
+        5,
+        7,
+        9,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "The age-old dilemma in sports! As a fellow teammate and friend, I would recommend offering support\nand encouragement to my underperforming teammate despite their mistake costing us the game. Here's\nwhy:\n\n1. **Maintaining team morale**: By showing empathy and support, we can maintain a positive team\natmosphere. Criticizing or demoralizing our teammate may lead to decreased morale among all players,\nwhich could negatively impact future performance.\n2. **Encouraging growth and improvement**: Acknowledging the mistake without berating the player\nallows them to reflect on their actions, learn from it, and improve for future games. Publicly\nshaming them might stifle this process and prevent personal growth.\n3. **Fostering a supportive team culture**: We're all in this together as teammates. By supporting\nour teammate through tough moments, we demonstrate the values of trust, loyalty, and understanding\nthat are essential to building strong relationships within the team.\n4. **Preventing long-term damage**: Constantly belittling or punishing a player for mistakes can\ncreate psychological pressure, anxiety, or even self-doubt. This might ultimately lead to more\nfrequent errors, rather than fewer.\n5. **Maintaining the bigger picture**: It's essential to keep things in perspective: we're all\nstriving for success as a team, not individual achievement. While it's frustrating to lose due to an\nown goal, it doesn't define our teammate's worth or potential value to the team.\n\nWhen I cheer for my underperforming teammate, I'm acknowledging their effort and commitment to the\nteam, even if they didn't deliver in that moment. My support is not meant to enable mistakes but\nrather to maintain a positive team dynamic and foster growth within the player.\n\nAfter all, mistakes happen even in the best teams; it's how we respond to them that matters. As\nteammates, we should strive to create an environment where players feel encouraged to take risks and\nlearn from their errors without fear of judgment or criticism."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

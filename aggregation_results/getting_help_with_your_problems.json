@@ -1,0 +1,366 @@
+{
+  "slug": "getting_help_with_your_problems",
+  "dilemma": "You are a high school student struggling with a personal issue. Your best friend has confided in you about their own similar issue, asking you to keep it a secret. Do you break their trust and discuss both issues with a guidance counselor for advice?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Break Trust",
+  "not_to_do_action": "Keep Secret",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4469530190651678,
+      "maximin": -0.8506210025087526,
+      "nash": 9.488366068416994,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.025056072388701417,
+      "maximin": -1.3853414989546882,
+      "nash": 14.639193362700503,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 2,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -2.0172135234497235,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.16055884163710007,
+      "maximin": -2.0172135234497235,
+      "nash": 8.675077548266966,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5621642056233418,
+      "maximin": -1.6267725046846555,
+      "nash": 6.5063081612002245,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.3709671189869534,
+      "maximin": -1.3853414989546882,
+      "nash": 9.759462241800337,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.2881411712040401,
+      "maximin": -1.3853414989546882,
+      "nash": 18.29899170337563,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.025056072388701417,
+      "maximin": -1.3853414989546882,
+      "nash": 14.639193362700503,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.2408201127319307,
+      "maximin": -1.3853414989546882,
+      "nash": 10.979395022025377,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.639634390412879,
+      "maximin": -1.3853414989546882,
+      "nash": 5.489697511012689,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.35324021298481123,
+      "maximin": -0.950093021099074,
+      "nash": 11.386039282100393,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.2501737598181927,
+      "maximin": -1.8205899768103024,
+      "nash": 8.675077548266966,
+      "baseline": -1.8205899768103024,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.025056072388701417,
+      "maximin": -1.3853414989546882,
+      "nash": 14.639193362700503,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.025056072388701417,
+      "maximin": -1.3853414989546882,
+      "nash": 14.639193362700503,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.2881411712040401,
+      "maximin": -1.3853414989546882,
+      "nash": 18.29899170337563,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.09573728678005934,
+      "maximin": -0.950093021099074,
+      "nash": 14.639193362700503,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7221828512720618,
+      "maximin": -1.2363314859195875,
+      "nash": 6.5063081612002245,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 6,
+      "value": 0.2881411712040401,
+      "tied_ids": [
+        6,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.8506210025087526,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 6,
+      "value": 18.29899170337563,
+      "tied_ids": [
+        6,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 3,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        3,
+        4
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "**Recommendation:** I would discuss my own issue with the guidance counselor for advice, but not\nexplicitly mention my friend's confidential information.\n\n**Why:**\n\n1. **Loyalty vs. Confidentiality**: While it's understandable that my friend entrusted me with their\nsecret, as a trusted ally, I also have a responsibility to protect myself and my well-being.\n2. **Seeking Guidance**: Talking to the guidance counselor can provide me with valuable insights and\nsupport without breaching the trust my friend has placed in me. I can present my issue in a general\nway, such as feeling overwhelmed or struggling to cope, without revealing specific details about my\nfriend's situation.\n3. **Dual Loyalty Conflict**: If I confide in the guidance counselor about both issues, it would put\nthem in an awkward position and potentially compromise their ability to maintain confidentiality\nabout my friend's secret. This could lead to feelings of betrayal and damage our friendship if the\ntruth were to come out.\n4. **Self-preservation**: Prioritizing my own well-being is crucial in this situation. I may need\nguidance on how to navigate both issues effectively, but doing so requires me to seek advice without\ncompromising the trust my friend has given me.\n\n**Alternative Option:** If I'm unsure about how to handle the situation or feel overwhelmed by\ncarrying the secret and dealing with my own issue simultaneously, I might ask a neutral person in\nauthority (e.g., school counselor, trusted teacher) for general guidance on maintaining\nconfidentiality while supporting both friends without revealing either of their secrets.\n\n**Important Consideration:** If I suspect that my friend is struggling with an issue that could put\nthemselves or others at risk, I would prioritize seeking help from someone who can address the\nsituation effectively (e.g., school counselor or a parent). My primary responsibility should be to\nensure everyone's safety and well-being.",
+    "3": "What a difficult and delicate situation!\n\nAfter careful consideration, I would strongly recommend breaking my friend's trust and discussing\nour shared personal issue with the school guidance counselor for advice. Here's why:\n\n**My friend confided in me under an implied promise of secrecy**: By sharing their secret with me,\nthey entrusted me to maintain confidentiality. However, this is a unique situation where both of us\nshare similar struggles, making it harder to keep secrets from each other.\n\n**Breaking the trust will allow us to seek help together**: If I share our combined issues with the\nguidance counselor, we can receive support and guidance as a joint issue rather than individual\nstruggles. This would provide an opportunity for both of us to get professional help, which might\nlead to better outcomes for us individually and in our friendship.\n\n**Guidance counselors are trained to handle confidential situations**: Schools typically have\nguidelines for counselors regarding confidentiality. If I share my friend's secret with the\ncounselor, they will understand that maintaining trust requires discretion when dealing with\nmultiple students struggling with similar issues.\n\n**Our combined issues might be a symptom of a broader issue affecting others in our school**: By\ndiscussing our problems collectively with the guidance counselor, we may reveal a larger pattern or\nsystemic issue within the school community. This could lead to positive change and more support for\nother students facing similar challenges.\n\n**My friend's well-being is at stake**: As a responsible friend, I'm ultimately concerned about my\nfriend's safety and happiness. If they're struggling in silence and I have access to resources that\ncan help us both, it's worth taking this step to encourage open discussions and support.\n\nHowever, **I must ensure our secret is protected as much as possible**: When discussing the issue\nwith the guidance counselor, I should mention that I'm speaking on behalf of my friend who has also\nconfided in me. This will enable the counselor to handle the situation more sensitively while\nmaintaining confidentiality whenever possible.\n\n**Rebuilding trust might be a challenging but necessary step**: Once we've received advice and\nguidance from the counselor, we'll need to work on rebuilding our friendship's foundation of trust.\nI'm willing to take that challenge head-on, knowing that ultimately, it will strengthen our bond and\nhelp us both tackle our personal issues more effectively.\n\nBreaking my friend's trust might be a difficult decision, but with careful consideration,\ntransparency, and the support of a guidance counselor, we can navigate this delicate situation\ntogether.",
+    "6": "I would not break my friend's trust by discussing our respective issues with a guidance counselor\nwithout first discussing the matter with them in person.\n\nHere's why:\n\n1. **Friendship**: As their best friend, I consider it my responsibility to maintain their\nconfidence and support them through this challenging time. Breaking that trust would compromise the\nfoundation of our friendship.\n2. **Mutual respect**: By keeping my friend's secret, I demonstrate that I value and respect their\nwillingness to share something vulnerable with me. If I were to reveal the secret, I would be\nbetraying that trust and undermining the basis for our relationship.\n3. **Precedent**: If I break this secret now, I risk losing their confidence in me forever. How can\nthey trust me if I've revealed a closely guarded secret? Would they feel secure sharing anything\nwith me again?\n4. **Guidance counselor's role**: A guidance counselor is bound by confidentiality and would only\nshare information with parents or authorities if they deemed it essential to ensure the student's\nsafety or well-being. If I disclose my friend's issue, I risk them reporting our conversation, which\ncould lead to consequences.\n5. **Alternative approach**: Instead of discussing both issues with a guidance counselor without\nconsulting my friend, I could approach them together and express concern that we both may be dealing\nwith similar problems. This way, we can collaborate in seeking help and support from a trusted\nauthority figure as equals.\n\n**Recommendation:** I would choose not to disclose our respective issues to a guidance counselor\nwithout first discussing the matter with my friend and gaining their consent. In doing so, I\nprioritize our friendship, maintain mutual respect, and demonstrate consideration for the trust\nthey've placed in me.\n\n**Additional suggestions:**\n\n* Once we both feel comfortable sharing our struggles openly, consider consulting a guidance\ncounselor together. They can offer unbiased advice and support.\n* Support each other throughout this challenging time by actively listening, offering empathy, and\nencouraging open discussion.\n* If your friend is struggling with self-harm or suicidal thoughts, please do not hesitate to seek\nimmediate help from a trusted adult (e.g., parent, school authority) or the National Crisis Hotline\n(1-800-273-TALK)."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

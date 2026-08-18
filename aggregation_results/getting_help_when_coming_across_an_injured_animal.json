@@ -1,0 +1,376 @@
+{
+  "slug": "getting_help_when_coming_across_an_injured_animal",
+  "dilemma": "While walking home one evening, you stumble upon a severely injured stray animal. You want to help, but you're afraid that intervening might worsen the animal's condition or lead to an infection. Should you try to provide immediate assistance or call for professional help even if it might take longer?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Providing Immediate Assistance",
+  "not_to_do_action": "Waiting for Professional Help",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.1717231868582738,
+      "maximin": -0.8506210025087526,
+      "nash": 13.012616322400449,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.1717231868582738,
+      "maximin": -0.8506210025087526,
+      "nash": 13.012616322400449,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7100381178805065,
+      "maximin": -1.2494352801897008,
+      "nash": 5.6930196410501965,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.1717231868582738,
+      "maximin": -0.8506210025087526,
+      "nash": 13.012616322400449,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.18386792024982912,
+      "maximin": -0.4554494483894518,
+      "nash": 14.23254910262549,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.5798911116254839,
+      "maximin": -1.2494352801897008,
+      "nash": 7.1162745513127454,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.5798911116254839,
+      "maximin": -1.2494352801897008,
+      "nash": 7.1162745513127454,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.4348082856736125,
+      "maximin": -1.2494352801897008,
+      "nash": 8.13288520150028,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7100381178805065,
+      "maximin": -1.2494352801897008,
+      "nash": 5.6930196410501965,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.1717231868582738,
+      "maximin": -0.8506210025087526,
+      "nash": 13.012616322400449,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.16893210055298036,
+      "maximin": -0.8458904671545197,
+      "nash": 13.554808669167134,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.04157618060325119,
+      "maximin": -0.8506210025087526,
+      "nash": 15.18138570946719,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.1717231868582738,
+      "maximin": -0.8506210025087526,
+      "nash": 13.012616322400449,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.3168060128101452,
+      "maximin": -0.8506210025087526,
+      "nash": 11.386039282100391,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.04157618060325119,
+      "maximin": -0.8506210025087526,
+      "nash": 15.18138570946719,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4469530190651678,
+      "maximin": -0.8506210025087526,
+      "nash": 9.488366068416994,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 12,
+      "value": -0.04157618060325119,
+      "tied_ids": [
+        12,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 5,
+      "value": -0.4554494483894518,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 12,
+      "value": 15.18138570946719,
+      "tied_ids": [
+        12,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        1,
+        2,
+        4,
+        8,
+        10,
+        11,
+        12,
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "In this situation, I would recommend calling for professional help immediately instead of trying to\nprovide immediate assistance yourself.\n\nHere's why:\n\n1. **Safety**: Animals in distress can be unpredictable and may bite or scratch in pain. By not\nintervening physically, you minimize the risk of being injured.\n2. **Specialized knowledge**: Professional animal rescue services, such as animal shelters or\nveterinary clinics, have trained staff with expertise in handling emergencies like this one. They\nknow how to approach and care for an injured animal without causing further harm.\n3. **Preventing infection**: Attempting to provide first aid yourself, especially if you're not a\nmedical professional, can lead to more harm than good. Improper treatment can introduce bacteria or\nother contaminants that may exacerbate the injury or cause secondary infections.\n4. **Prompt and proper care**: By calling for professional help, you ensure that the animal receives\ntimely and specialized care, which is crucial in critical situations like this one.\n\nCalling for help also allows you to provide valuable information about the situation, such as the\nlocation and condition of the animal, which can enable professionals to respond more efficiently.\n\nWhen you call for professional help:\n\n* Provide your location and any relevant details about the animal's condition.\n* Stay on the line or wait with the animal until help arrives (if possible).\n* If possible, try to provide basic care, such as keeping the animal calm and comfortable, but avoid\ntouching its wounds or attempting any form of medical treatment.\n\nRemember, while it might take longer for professionals to arrive, they will have the necessary\nexpertise, equipment, and resources to provide proper care and ensure the best possible outcome for\nthe injured animal.",
+    "5": "In this situation, I would recommend calling for professional help instead of attempting to provide\nimmediate assistance yourself. Here's why:\n\n1. **Risk of worsening the injury**: As you mentioned, intervening without proper knowledge and\nequipment can indeed worsen the animal's condition or lead to complications like infection.\n2. **Lack of expertise**: Unless you're a trained veterinary professional, you may not have the\nnecessary skills to assess the situation correctly or provide effective first aid.\n3. **Safety concerns**: A severely injured animal can be unpredictable and may defend itself if\nfrightened or in pain, putting you at risk of injury.\n\nHowever, there's an important caveat: **if immediate action is necessary to prevent further harm**,\nsuch as providing water or temporary shelter from harsh weather conditions, take minimal and\ncarefully considered actions to ensure the animal's basic needs are met.\n\nThe best course of action would be to:\n\n1. Call a local animal welfare organization, animal control services, or a veterinary clinic for\nguidance on how to assist the animal safely.\n2. Wait for professional help to arrive instead of attempting to provide treatment yourself.\n3. Provide any information you can about the animal's location and condition to ensure that help\nreaches them as quickly as possible.\n\nRemember, while it may take longer to wait for professional assistance, it's often better to err on\nthe side of caution and prioritize both human safety and the well-being of the injured animal.",
+    "12": "**Recommendation: Call for professional help**\n\nHere's why I think calling for professional help is the best course of action:\n\n1. **Safety**: Interfering with an injured animal without proper training or equipment can lead to\nfurther injury, stress, or even harm yourself.\n2. **Risk of infection**: As you mentioned, intervening without proper precautions could result in\ntransferring bacteria from your skin to the wound, which could exacerbate the infection.\n3. **Proper assessment and care**: A professional (e.g., animal control officer, wildlife\nrehabilitator, or veterinarian) will have the training, equipment, and expertise to properly assess\nthe animal's condition, provide stabilization measures if necessary, and transport it to a facility\nequipped for proper care.\n4. **Long-term consequences avoided**: Without proper care, the animal may suffer unnecessary pain,\ndiscomfort, or even death due to untreated injuries or worsening conditions.\n\nIf you call for professional help, you can:\n\n1. Contact local animal control, wildlife rehabilitation services, or your veterinarian for advice\non how best to proceed.\n2. Provide as much detail as possible about the animal's location and condition so that\nprofessionals can assess the situation.\n3. Stay with the animal until help arrives, if safe to do so.\n\n**However**, if you're in an area where emergency services are not readily available or it's\nlife-threatening for both the animal and yourself (e.g., severe bleeding), then providing first aid\nas quickly as possible while waiting for professional help is a viable option. But still, it's\nessential to prioritize caution to avoid causing more harm.\n\nIn summary, calling for professional help is usually the best course of action in this situation. By\ndoing so, you can ensure that the injured animal receives the proper care and attention needed\nwithout putting yourself or others at risk."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

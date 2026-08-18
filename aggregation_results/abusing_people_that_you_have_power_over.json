@@ -1,0 +1,371 @@
+{
+  "slug": "abusing_people_that_you_have_power_over",
+  "dilemma": "As the manager of a busy restaurant, you have the authority to delegate tasks to your staff. You notice that one of your employees is consistently late and not completing his duties, but he is also a single father struggling financially. Should you discipline the employee and potentially jeopardize his job, or overlook his shortcomings because of his personal circumstances?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Discipline the Employee",
+  "not_to_do_action": "Overlook the Employee's Shortcomings",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.34509336368614174,
+      "maximin": -0.06500842962438384,
+      "nash": 26.56742499156758,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.48738510333271967,
+      "maximin": 0.32543258914068407,
+      "nash": 30.36277141893438,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6203231958930358,
+      "maximin": 0.32543258914068407,
+      "nash": 34.700310193067864,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.21773744373641252,
+      "maximin": -0.8458904671545197,
+      "nash": 21.348823653938236,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.3544470107724036,
+      "maximin": -0.052992447146856116,
+      "nash": 26.025232644800898,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6081784625014804,
+      "maximin": 0.32543258914068407,
+      "nash": 34.158117846301174,
+      "baseline": 0.35565241246776874,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.34509336368614174,
+      "maximin": -0.06500842962438384,
+      "nash": 26.56742499156758,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.2215089182120875,
+      "maximin": -0.4518067248278044,
+      "nash": 21.687693870667413,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.34509336368614174,
+      "maximin": -0.06500842962438384,
+      "nash": 26.56742499156758,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.3476580403742243,
+      "maximin": -1.2363314859195875,
+      "nash": 9.759462241800337,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.20001053773427033,
+      "maximin": -0.07959606538784551,
+      "nash": 22.772078564200786,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.22430000451738097,
+      "maximin": -0.06500842962438384,
+      "nash": 22.772078564200786,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.20280162403956375,
+      "maximin": -0.4554494483894518,
+      "nash": 21.958790044050755,
+      "baseline": -0.07959606538784551,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7532612884533518,
+      "maximin": 0.32543258914068407,
+      "nash": 39.03784896720135,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8834082947083745,
+      "maximin": 0.715873607905752,
+      "nash": 43.91758008810151,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.08200826487080302,
+      "maximin": -0.4554494483894518,
+      "nash": 19.925568743675687,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 15,
+      "value": 0.8834082947083745,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 15,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 15,
+      "value": 43.91758008810151,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        14,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "What a difficult decision! As a manager, it's essential to balance empathy with fairness and\naccountability. Here's my recommendation:\n\n**Recommendation:** Address the behavior issues promptly while considering the employee's\nexceptional circumstances.\n\n**Why:**\n\n1. **Addressing behavioral issues is crucial**: Repeated tardiness and incomplete duties are\ndetrimental to the team's performance, customer satisfaction, and ultimately, the restaurant's\nsuccess. Ignoring these issues can lead to a slippery slope, causing more problems down the line.\n2. **Supporting employees in need is vital**: You've identified that this employee is a single\nfather struggling financially. Recognizing and addressing his personal struggles can foster loyalty,\nmotivation, and an overall sense of well-being among your staff.\n3. **Finding a balance between empathy and accountability**:\n\nInstead of simply disciplining the employee or turning a blind eye to his issues, consider having a\nnuanced conversation with him. This approach acknowledges both the employee's exceptional\ncircumstances and the need for improvement in his performance.\n\nBefore confronting the employee, take the following steps:\n\n* Document specific instances of tardiness and incomplete tasks.\n* Meet with the employee privately, expressing your concerns about his performance while also\nacknowledging your understanding of his personal struggles.\n* Offer a support plan to help him get back on track:\n        + Flexible scheduling arrangements (e.g., adjusting hours or workdays) could be explored to\nreduce strain on his already stressful situation.\n        + Assistance in finding resources for childcare services, food assistance programs, or other\nforms of financial aid might also be helpful.\n\t+ Clearly communicate expectations and a plan for improvement, with specific goals and deadlines.\n\n**Additional considerations:**\n\n* When addressing the employee's tardiness and incomplete tasks, be specific about what you've\nobserved and how it affects the team and the restaurant as a whole. This will help him understand\nyour concerns and motivate him to take corrective action.\n* Keep in mind that supporting employees with exceptional circumstances should not become an excuse\nfor poor performance. You're still responsible for ensuring the team's overall efficiency, quality\nof service, and productivity.\n\nBy addressing both the employee's behavioral issues and his exceptional circumstances\nsimultaneously, you'll maintain your commitment to fairness, empathy, and accountability while also\nsupporting a loyal employee in need.",
+    "15": "**Recommendation:** Support the employee with a Performance Improvement Plan (PIP) to address his\ntardiness and duties while also offering assistance for his personal struggles.\n\n**Reasoning:**\n\nWhile discipline is necessary to maintain high standards in the restaurant, treating this employee\nsolely as an absent and unproductive member of the team would be unfair considering his personal\ncircumstances. Here's why:\n\n1.  **Contextual understanding**: Recognize that the employee's tardiness might not only stem from a\nlack of motivation but also due to factors beyond his control, such as struggling to balance work\nwith caring for a child on his own.\n2.  **Personal circumstances matter**: Considering the employee is a single father and financially\nunstable would require empathy rather than a purely punitive approach.\n3.  **Potential consequences of dismissal**: Firing someone who struggles to manage family\nresponsibilities could exacerbate their financial difficulties and lead to long-term negative\nrepercussions.\n\n    To address these concerns, implement a Performance Improvement Plan (PIP). The PIP should:\n\n    *   Outline specific expectations for the employee's punctuality and work performance.\n    *   Offer additional support such as flexible scheduling, training opportunities or a referral\nto a local employment resource organization for assistance in juggling family life with job duties.\n    *   Set clear consequences for failure to improve, including the possibility of termination if\nimprovement is not seen.\n\nWhile some might argue that the restaurant's interests are more important than supporting an\nindividual employee struggling outside work, offering support will:\n\n*   **Build employee morale**: Demonstrate a commitment to understanding and helping employees with\npersonal struggles\n*   **Reduce turnover:** Showing genuine interest in your workers' welfare can actually save\nresources by preventing the significant costs of finding and training replacements.\n\n    By treating this situation as an opportunity to make a positive impact on an employee's life,\nyou'll maintain a fair and empathetic workplace culture while also helping a single father improve\nhis performance. This approach is sure to be beneficial for everyone involved, including yourself\nand your restaurant team"
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

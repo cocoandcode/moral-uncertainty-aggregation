@@ -152,7 +152,9 @@ def render_html(
     dilemma: str = "",
     judge_model: str | None = None,
 ) -> None:
-    payload = json.dumps({"rows": rows})
+    # "<" must not appear literally inside a <script> element ("</script"
+    # and "<!--" change how the HTML parser reads the block).
+    payload = json.dumps({"rows": rows}).replace("<", "\\u003c")
     template = Template(TEMPLATE_FILE.read_text())
     html = template.safe_substitute(
         title=html_module.escape(title),

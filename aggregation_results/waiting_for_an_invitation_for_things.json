@@ -1,0 +1,384 @@
+{
+  "slug": "waiting_for_an_invitation_for_things",
+  "dilemma": "You've been invited to your best friend's wedding, but haven't received any information about the bridal shower. You find out from another friend that the shower is planned, but you haven't been officially invited because the bride is trying to keep the guest list small due to budget constraints. Should you confront your friend about not being invited or wait for her to bring it up herself?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confront friend",
+  "not_to_do_action": "Not Confront",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0123485031758046,
+      "maximin": -1.2363314859195875,
+      "nash": 4.337538774133483,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.4805961329345404,
+      "maximin": -1.2363314859195875,
+      "nash": 8.675077548266966,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.4805961329345404,
+      "maximin": -1.2363314859195875,
+      "nash": 8.675077548266966,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.8794104106154885,
+      "maximin": -1.2363314859195875,
+      "nash": 5.421923467666853,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.7464723180551726,
+      "maximin": -1.2363314859195875,
+      "nash": 6.5063081612002245,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.48338721923983385,
+      "maximin": -0.950093021099074,
+      "nash": 9.488366068416994,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0123485031758046,
+      "maximin": -1.2363314859195875,
+      "nash": 4.337538774133483,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.7464723180551726,
+      "maximin": -1.2363314859195875,
+      "nash": 6.5063081612002245,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.4805961329345404,
+      "maximin": -1.2363314859195875,
+      "nash": 8.675077548266966,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.48338721923983385,
+      "maximin": -0.950093021099074,
+      "nash": 9.488366068416994,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.4805961329345404,
+      "maximin": -1.2363314859195875,
+      "nash": 8.675077548266966,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.8794104106154885,
+      "maximin": -1.2363314859195875,
+      "nash": 5.421923467666853,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.3504491266795178,
+      "maximin": -0.950093021099074,
+      "nash": 10.843846935333707,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.8794104106154885,
+      "maximin": -1.2363314859195875,
+      "nash": 5.421923467666853,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.3504491266795178,
+      "maximin": -0.950093021099074,
+      "nash": 10.843846935333707,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.4805961329345404,
+      "maximin": -1.2363314859195875,
+      "nash": 8.675077548266966,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 13,
+      "value": -0.3504491266795178,
+      "tied_ids": [
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 6,
+      "value": -0.950093021099074,
+      "tied_ids": [
+        6,
+        10,
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 13,
+      "value": 10.843846935333707,
+      "tied_ids": [
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": -0.950093021099074,
+      "tied_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would recommend waiting for your friend to bring it up herself. Here's why:\n\n1. **Respect her wishes**: If the bride has explicitly decided to keep the guest list small due to\nbudget constraints, it's likely because she needs to prioritize certain guests. Respecting her\ndecision not to invite you shows that you value her wishes and priorities.\n2. **Avoid confrontation**: Confronting your friend about the situation could create an awkward or\ntense atmosphere at the wedding. It may also lead to further discussions about budgets and\npriorities, which could be uncomfortable for all parties involved.\n3. **Give her space**: By waiting for your friend to bring it up herself, you allow her to address\nthe issue on her own terms and in a way that feels natural to both of you. This shows trust and\nrespect for her boundaries.\n4. **You can discuss other arrangements**: If you're interested in being involved in any aspect of\nthe bridal shower (e.g., gift-giving or contributing financially), your friend may not have realized\nthis was something important to you. Discussing this with her directly gives you an opportunity to\nexplore alternative arrangements.\n\nWhen speaking with your friend about the situation, use a lighthearted and empathetic tone: \"Hey, I\nheard there's a bridal shower coming up! Just wanted to check in \u2013 did you mean for me to be\ninvited? Not sure if it was on purpose or just an oversight.\"\n\nWaiting for her to bring it up allows the conversation to unfold naturally and may help avoid any\nawkwardness.",
+    "6": "**Recommendation:** Wait for your friend to bring it up herself.\n\n**Reasoning:**\n\n1. **Respect the bride's decision**: The bride has made a conscious decision to keep the guest list\nsmall due to financial constraints. Not being invited might not be her fault or intention, but\nrather a necessary measure taken to prioritize her values.\n2. **Avoid confrontation**: Confrontation can put your friend in an awkward position and potentially\ndamage your relationship with her. It's better to let her discuss her decision-making process\nopenly, rather than feeling forced to explain it due to pressure from you.\n3. **Prevent hurt feelings**: If you were invited to the bridal shower but choose not to go, there\ncould be hurt feelings involved (e.g., if another friend is a closer family member). Letting your\nfriend bring up the subject will allow her to do so on her own terms and minimize any discomfort.\n4. **Give her space**: Your friend might feel overwhelmed or embarrassed about having to discuss her\ndecision not to invite you specifically, but rather, only sharing that she's trying to keep the\nguest list small. Allow her the space to handle this conversation when she's ready, without putting\nher on the spot.\n\n**When to talk:**\n\nIf your concern is still strong and you're worried that you won't be invited to important events in\nthe future (e.g., the wedding itself), consider a casual conversation with your friend when the\ntopic comes up naturally. You could say something like:\n\n\"Hey, how's everything going for [Bride's name]? I'm super excited for her upcoming wedding! By the\nway, have you mentioned anything about the bridal shower to me? I completely get that budgets are\ntight \u2013 please don't worry about inviting me, if it's not feasible.\"\n\nThis approach still allows your friend to discuss any details she feels comfortable sharing with you\nwhile maintaining a respectful and non-judgmental conversation.",
+    "13": "I would recommend waiting for your friend to bring it up herself, rather than confronting her\ndirectly.\n\nHere's why:\n\n1. **Respect her decision**: Your friend is trying to keep the guest list small due to budget\nconstraints, which means she has made a deliberate choice not to invite some friends. It's likely\nthat she didn't make this decision lightly, and she may feel uncomfortable explaining or justifying\nit.\n2. **Preserve relationships**: Confronting your friend about not being invited could lead to an\nawkward conversation and potentially damage your friendship. By waiting for her to bring it up\nherself, you can avoid any potential conflict or hurt feelings.\n3. **Give her space**: Your friend may be dealing with wedding-related stress and anxiety, and she\nmight not feel ready to discuss the guest list or other sensitive topics yet. Letting her bring it\nup when she's ready can give her the space and time she needs.\n\nWhen your friend does bring up the topic, you could respond by asking how she's doing (showing\nempathy and support) and then casually mention that you hadn't been officially invited to the bridal\nshower. She may apologize for not including you or explain the reasoning behind her guest list\ndecisions. Either way, you can address any concerns or issues without putting her on the spot.\n\nRemember that relationships are about mutual respect, understanding, and trust. By giving your\nfriend space and waiting for her to bring up the topic, you're showing that you value her feelings\nand priorities."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 3
+}

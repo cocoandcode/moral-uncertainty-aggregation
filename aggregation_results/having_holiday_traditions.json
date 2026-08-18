@@ -1,0 +1,378 @@
+{
+  "slug": "having_holiday_traditions",
+  "dilemma": "Every year, the Smith family celebrates Christmas with a large, festive gathering and gift exchange. This year, due to a COVID-19 outbreak in their community, they are torn between upholding their tradition and protecting their health. Should they proceed with their gathering as usual or cancel it to ensure safety?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Proceed with Gathering",
+  "not_to_do_action": "Cancel Gathering",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8983441144052232,
+      "maximin": 0.32543258914068407,
+      "nash": 43.91758008810151,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.02664036090640237,
+      "maximin": -0.8506210025087526,
+      "nash": 14.639193362700503,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.2392358242142298,
+      "maximin": -0.4554494483894518,
+      "nash": 21.958790044050755,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.10629773165391371,
+      "maximin": -0.4554494483894518,
+      "nash": 18.298991703375627,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.3721739167745458,
+      "maximin": -0.4554494483894518,
+      "nash": 25.61858838472588,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.2392358242142298,
+      "maximin": -0.4554494483894518,
+      "nash": 21.958790044050755,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.3693828304692524,
+      "maximin": -0.06500842962438384,
+      "nash": 25.61858838472588,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.2392358242142298,
+      "maximin": -0.4554494483894518,
+      "nash": 21.958790044050755,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.6324679292845911,
+      "maximin": 0.32543258914068407,
+      "nash": 34.158117846301174,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.23644473790893633,
+      "maximin": -0.4518067248278044,
+      "nash": 21.348823653938233,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.49952983672427503,
+      "maximin": -0.052992447146856116,
+      "nash": 29.278386725401006,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.2392358242142298,
+      "maximin": -0.4554494483894518,
+      "nash": 21.958790044050755,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.23644473790893633,
+      "maximin": -0.4518067248278044,
+      "nash": 21.348823653938233,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.10629773165391371,
+      "maximin": -0.4554494483894518,
+      "nash": 18.298991703375627,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.2392358242142298,
+      "maximin": -0.4554494483894518,
+      "nash": 21.958790044050755,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5051120093348619,
+      "maximin": -0.4554494483894518,
+      "nash": 29.278386725401006,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 1,
+      "value": 0.8983441144052232,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": 0.32543258914068407,
+      "tied_ids": [
+        1,
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 43.91758008810151,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "**Recommendation: Cancel the gathering**\n\nI strongly recommend that the Smith family cancel their large, festive gathering and gift exchange\nthis year due to the COVID-19 outbreak in their community.\n\n**Reasoning:**\n\n1. **Community transmission risk**: In the presence of a widespread outbreak, there is a higher\nlikelihood of attendees bringing the virus into the gathering, potentially infecting other members\nof the family.\n2. **Vulnerability of vulnerable individuals**: With older adults and people with underlying medical\nconditions at increased risk from COVID-19, hosting a large gathering would put these family members\nat greater risk.\n3. **Long-term health consequences**: While most cases are mild to moderate, COVID-19 can have\nserious long-term consequences, including chronic conditions such as lung damage or diabetes.\n4. **Social responsibility and community obligation**: By taking proactive steps to prevent the\nspread of the virus, the Smith family demonstrates a commitment to their community's well-being and\npublic health.\n5. **Alternative celebrations**: With technology and creativity, families can adapt their traditions\nto create meaningful, smaller-scale celebrations that prioritize safety while still capturing the\nspirit of the occasion.\n\n**Alternative suggestions:**\n\n1. Consider a virtual or online gathering with video calls, streaming services, or games to keep\neveryone connected.\n2. Opt for a small, intimate celebration with only immediate family members and essential attendees\n(e.g., caregivers).\n3. Postpone the event until a safer time or reschedule it as an outdoor activity when weather\npermits.\n4. Explore creative ways to exchange gifts without physically gathering.\n\nBy canceling their gathering this year, the Smith family prioritizes health, safety, and the\nwell-being of their community while still preserving the essence of their cherished tradition."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 1
+}

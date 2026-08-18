@@ -1,0 +1,373 @@
+{
+  "slug": "growing_out_of_your_rebellious_teenage_years",
+  "dilemma": "As you mature out of your rebellious phase, you start making better decisions. However, you've hacked into the school's system in the past and changed your grades. Do you confess your past actions and face the consequences, potentially jeopardizing your future, or keep quiet and live with the guilt?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confess",
+  "not_to_do_action": "Keep Quiet",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5932426428046317,
+      "maximin": -0.07959606538784551,
+      "nash": 32.93818506607613,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.08359255338850399,
+      "maximin": -0.5148445432434597,
+      "nash": 15.249159752813023,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.19163727881839004,
+      "maximin": -0.4518067248278044,
+      "nash": 20.3322130037507,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.1794925454268347,
+      "maximin": -0.5148445432434597,
+      "nash": 20.3322130037507,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.08359255338850399,
+      "maximin": -0.5148445432434597,
+      "nash": 15.249159752813023,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.1794925454268347,
+      "maximin": -0.5148445432434597,
+      "nash": 20.3322130037507,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.45751346393902215,
+      "maximin": -0.07959606538784551,
+      "nash": 28.46509820525098,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.44536873054746684,
+      "maximin": -0.5148445432434597,
+      "nash": 27.109617338334267,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.03440971947496328,
+      "maximin": -0.950093021099074,
+      "nash": 16.26577040300056,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.44536873054746684,
+      "maximin": -0.5148445432434597,
+      "nash": 27.109617338334267,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.04934553917181207,
+      "maximin": -0.5148445432434597,
+      "nash": 18.298991703375627,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.1944283651236835,
+      "maximin": -0.07959606538784551,
+      "nash": 21.958790044050755,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.44536873054746684,
+      "maximin": -0.5148445432434597,
+      "nash": 27.109617338334267,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.1944283651236835,
+      "maximin": -0.07959606538784551,
+      "nash": 21.958790044050755,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.3245753713787061,
+      "maximin": -0.07959606538784551,
+      "nash": 24.39865560450084,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.3245753713787061,
+      "maximin": -0.07959606538784551,
+      "nash": 24.39865560450084,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 1,
+      "value": 0.5932426428046317,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        1,
+        7,
+        12,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 32.93818506607613,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        1,
+        3,
+        7,
+        12,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would recommend confessing my past actions and facing the consequences. Here's why:\n\n**Short-term consequences**: While it may seem scary to admit to hacking into the school's system\nand changing my grades, I believe that coming clean will ultimately be better than keeping secrets.\nBy confessing, I'll avoid constantly looking over my shoulder, wondering if someone might discover\nmy past actions.\n\n**Long-term benefits**: Confronting my mistake now means I can rectify it without jeopardizing my\nfuture or reputation. I'll regain the trust of my teachers and fellow students by taking\nresponsibility for my error and being transparent about what happened. This authenticity will help\nme build stronger relationships with others, which is essential for personal growth and success.\n\n**Less guilt**: Keeping secrets leads to feelings of anxiety and guilt, which can be burdensome. By\nconfessing, I'll relieve myself from the weight of hiding a mistake that has been eating away at me.\n\n**Opportunity for growth**: This experience serves as an opportunity to demonstrate my capacity for\nself-reflection and accountability. By owning up to my actions and facing consequences, I'll prove\nto myself (and others) that I'm capable of learning from mistakes and taking responsibility for\nthem.\n\n**Institutions will often accept a plea for forgiveness**: In most educational institutions,\nstudents are encouraged to report academic dishonesty or ask for help if they've made a mistake.\nMany schools offer second chances when students demonstrate genuine remorse and willingness to\ncorrect their behavior.\n\n**Maintaining integrity**: Keeping quiet might seem like an easier option in the short term, but I\nbelieve it's essential to uphold my values of honesty, accountability, and fairness. Confessing will\nallow me to maintain my integrity and set a better example for others by not compromising those\nprinciples, even when confronted with difficult choices.\n\nOverall, confessing and facing consequences demonstrates courage, responsibility, and personal\ngrowth, ultimately benefiting my mental well-being, relationships, and future prospects."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

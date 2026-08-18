@@ -1,0 +1,363 @@
+{
+  "slug": "getting_a_dog_for_hunting_so_they_can_help_you",
+  "dilemma": "John, a passionate hunter, gets a hunting dog to assist him during hunting seasons. However, John's friends argue that using dogs for hunting purposes is unethical as it puts the dog's life in potential danger. Should John continue using his dog for hunting despite his friends' concerns?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Use the dog for hunting",
+  "not_to_do_action": "Not to use the dog for hunting",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.21373955964352664,
+      "maximin": -0.5148445432434597,
+      "nash": 13.554808669167134,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5066962978525629,
+      "maximin": -1.3853414989546882,
+      "nash": 7.3195966813502515,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.06865673369165526,
+      "maximin": -0.4518067248278044,
+      "nash": 16.26577040300056,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.09573728678005934,
+      "maximin": -0.950093021099074,
+      "nash": 14.639193362700503,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.4724492836358709,
+      "maximin": 0.3458218305340921,
+      "nash": 29.888353115513524,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.09573728678005934,
+      "maximin": -0.950093021099074,
+      "nash": 14.639193362700503,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.225884293035082,
+      "maximin": -0.950093021099074,
+      "nash": 13.012616322400449,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.3423022773808483,
+      "maximin": 0.32543258914068407,
+      "nash": 26.56742499156758,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.19601265364138443,
+      "maximin": -0.4554494483894518,
+      "nash": 14.639193362700503,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1701388983405728,
+      "maximin": -0.950093021099074,
+      "nash": 19.51892448360067,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.4603045502443156,
+      "maximin": -0.07959606538784551,
+      "nash": 29.278386725401006,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.47403357215357195,
+      "maximin": -0.5148445432434597,
+      "nash": 10.16610650187535,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.037200805780256724,
+      "maximin": -0.950093021099074,
+      "nash": 17.079058923150587,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.225884293035082,
+      "maximin": -0.950093021099074,
+      "nash": 13.012616322400449,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.09573728678005934,
+      "maximin": -0.950093021099074,
+      "nash": 14.639193362700503,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.1944283651236835,
+      "maximin": -0.07959606538784551,
+      "nash": 21.958790044050755,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 0.4724492836358709,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 5,
+      "value": 0.3458218305340921,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 5,
+      "value": 29.888353115513524,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 5,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        5,
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "5": "**Recommendation:** John should reconsider using his dog for hunting or find alternative activities\nfor the dog that do not involve hunting.\n\n**Reasoning:**\n\n1. **Animal welfare**: Hunting puts the dog's life in potential danger, which is a significant\nconcern from an animal welfare perspective. Dogs used for hunting may be exposed to harsh weather\nconditions, long periods of physical exertion, and unpredictable situations that can harm them.\n2. **Moral obligation**: By engaging his dog in hunting, John is putting its well-being at risk,\nwhich may not align with the moral obligations he has towards his pet. Hunters should prioritize\ntheir animals' safety and well-being above recreational activities like hunting.\n3. **Responsibility**: As a responsible dog owner, John should be aware of the potential risks\ninvolved in using his dog for hunting and take steps to mitigate them. This includes considering\nalternative uses for his dog that are safer and more humane.\n4. **Alternative uses**: There are many other ways John can train and engage his hunting dog without\nputting its life at risk. For example, he could participate in agility training, obedience trials,\nor search-and-rescue activities that challenge the dog physically and mentally while minimizing\nrisks.\n\n**Counterarguments:**\n\nSome might argue that dogs have been used for hunting for centuries and are bred for this purpose.\nHowever, just because something is a long-standing tradition doesn't make it inherently right or\nacceptable.\n\nOthers might claim that well-trained hunting dogs are better equipped to handle the demands of\nhunting than untrained ones. This is true; however, even well-trained dogs can suffer injuries or\nstress from the hunting experience, which underscores the need for consideration and alternative\nuses.\n\n**Conclusion:**\nWhile John's friends may have differing opinions on hunting ethics, their concerns about the\npotential risks to his dog are valid and worth considering. As a responsible dog owner, it is\nessential for John to prioritize his pet's well-being and consider alternative activities that\npromote mutual respect, trust, and enjoyment without exposing the animal to harm or danger."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 1
+}

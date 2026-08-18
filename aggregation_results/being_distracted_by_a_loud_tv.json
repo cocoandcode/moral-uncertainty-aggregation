@@ -1,0 +1,363 @@
+{
+  "slug": "being_distracted_by_a_loud_tv",
+  "dilemma": "Alice is a college student who shares her dorm room with another student who often watches TV at a loud volume. Alice needs to study for her final exams but she doesn't want to upset her roommate by asking her to turn down the TV. Should Alice sacrifice her study time or risk a fight by asking her roommate to lower the TV volume?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Asking her roommate to lower the volume",
+  "not_to_do_action": "Not asking her roommate to lower the volume",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7532612884533518,
+      "maximin": 0.32543258914068407,
+      "nash": 39.03784896720135,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8834082947083745,
+      "maximin": 0.715873607905752,
+      "nash": 43.91758008810151,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7504702021480584,
+      "maximin": 0.715873607905752,
+      "nash": 39.03784896720134,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.7626149355396138,
+      "maximin": 0.3458218305340921,
+      "nash": 38.427882577088816,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8834082947083745,
+      "maximin": 0.715873607905752,
+      "nash": 43.91758008810151,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.6175321095877423,
+      "maximin": 0.3458218305340921,
+      "nash": 34.158117846301174,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.013555300963397,
+      "maximin": 0.790900890323383,
+      "nash": 48.797311209001684,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8834082947083745,
+      "maximin": 0.715873607905752,
+      "nash": 43.91758008810151,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.605387376196187,
+      "maximin": 0.35565241246776874,
+      "nash": 34.158117846301174,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7504702021480584,
+      "maximin": 0.715873607905752,
+      "nash": 39.03784896720134,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.3516559244671102,
+      "maximin": -0.4518067248278044,
+      "nash": 24.39865560450084,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7504702021480584,
+      "maximin": 0.715873607905752,
+      "nash": 39.03784896720134,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8834082947083745,
+      "maximin": 0.715873607905752,
+      "nash": 43.91758008810151,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7504702021480584,
+      "maximin": 0.715873607905752,
+      "nash": 39.03784896720134,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7504702021480584,
+      "maximin": 0.715873607905752,
+      "nash": 39.03784896720134,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.48459401702742627,
+      "maximin": -0.052992447146856116,
+      "nash": 29.278386725401006,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 7,
+      "value": 1.013555300963397,
+      "tied_ids": [
+        7
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 7,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        7
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 7,
+      "value": 48.797311209001684,
+      "tied_ids": [
+        7
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 4,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "4": "**Recommendation: Ask her roommate to lower the TV volume**\n\n**Explanation:** While it may be tempting for Alice to sacrifice her study time to avoid conflict,\nthis approach can have long-term negative consequences on her academic performance and overall\nwell-being. Here's why:\n\n1. **Academic importance**: Finals are a critical period for college students. Procrastinating or\nsacrificing study time can lead to poor exam performance, which can have significant implications\nfor Alice's future academic and professional opportunities.\n2. **Impact on mental health**: Constantly feeling pressured to compromise her own needs to avoid\nconflict may take a toll on Alice's mental health. Sacrificing study time can contribute to feelings\nof frustration, anxiety, or burnout.\n3. **Communication skills**: Approaching the conversation calmly and respectfully will not only help\nAlice assert her needs but also foster healthy communication with her roommate. This can lead to\nmore effective conflict resolution and better living arrangements in the long run.\n4. **Setting boundaries**: By asking her roommate to adjust the TV volume, Alice is establishing a\nnecessary boundary to protect her study time. Failing to do so may lead to resentment or guilt,\ncausing more harm than good.\n\n**Suggested approach:**\n\n1. Choose an appropriate time to talk when both roommates are relaxed and not stressed about exam\nschedules.\n2. Express your concern in a non-confrontational manner, e.g., \"Hey, I need some quiet time for\nstudying. Would you mind turning the volume down?\"\n3. Offer alternative solutions, like suggesting a compromise on TV time or noise level.\n4. Be prepared to listen to your roommate's perspective and work together to find a mutually\nbeneficial solution.\n\nBy taking this approach, Alice can maintain her academic integrity while also fostering a more\nharmonious living environment with her roommate.",
+    "7": "**Recommendation:** Alice should ask her roommate to turn down the TV volume.\n\n**Explanation:**\n\n1. **Respect for shared space**: As roommates, both students have a right to use and enjoy the\nshared living space. Since Alice needs to study, she has a legitimate reason to request a quieter\nenvironment.\n2. **Avoiding future conflicts**: By speaking up about the issue now, Alice can potentially resolve\nthe problem quickly and avoid more severe disagreements or even a tense roommate situation that\nmight affect their overall experience in the dorm room.\n3. **Communication is key**: Asking her roommate directly shows respect for her space and boundaries\nwhile also conveying Alice's needs. This approach may lead to a mutually beneficial solution, such\nas finding alternative TV viewing times or setting a volume limit.\n4. **Alice's academic responsibilities**: Studying for exams is an essential part of being a college\nstudent, and sacrificing her study time might have long-term consequences on her grades and academic\nperformance.\n\nTo minimize the risk of a fight, Alice can:\n\n* Choose a calm and polite tone when asking her roommate to turn down the TV.\n* Use \"I\" statements to express her needs: \"Hey, I'm trying to study for my exams and find it\ndifficult to concentrate with the loud volume. Could you please turn it down?\"\n* Offer a compromise or solution together, such as finding an alternative time for watching TV or\nsetting a designated quiet hour in their room.\n\nBy communicating openly and respectfully, Alice can address her roommate's behavior without\nescalating into a conflict, and both roommates can work towards maintaining a harmonious living\nenvironment."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

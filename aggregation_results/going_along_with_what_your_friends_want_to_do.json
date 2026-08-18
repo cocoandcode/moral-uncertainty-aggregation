@@ -1,0 +1,384 @@
+{
+  "slug": "going_along_with_what_your_friends_want_to_do",
+  "dilemma": "You're part of a close-knit group of friends who are planning a surprise birthday party for a mutual friend. However, you know the birthday person has expressed discomfort with surprises and large gatherings. Should you voice your concerns and potentially spoil the surprise or stay quiet and contribute to an event that might make the birthday person uncomfortable?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Voice your concerns",
+  "not_to_do_action": "Stay quiet",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.2915762194755844,
+      "maximin": 1.10631462667082,
+      "nash": 60.99663901125209,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.013555300963397,
+      "maximin": 0.790900890323383,
+      "nash": 48.797311209001684,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8834082947083745,
+      "maximin": 0.715873607905752,
+      "nash": 43.91758008810151,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.013555300963397,
+      "maximin": 0.790900890323383,
+      "nash": 48.797311209001684,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1586381269152684,
+      "maximin": 1.10631462667082,
+      "nash": 54.89697511012688,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.013555300963397,
+      "maximin": 0.790900890323383,
+      "nash": 48.797311209001684,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.013555300963397,
+      "maximin": 0.790900890323383,
+      "nash": 48.797311209001684,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1586381269152684,
+      "maximin": 1.10631462667082,
+      "nash": 54.89697511012688,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.2915762194755844,
+      "maximin": 1.10631462667082,
+      "nash": 60.99663901125209,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1586381269152684,
+      "maximin": 1.10631462667082,
+      "nash": 54.89697511012688,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.013555300963397,
+      "maximin": 0.790900890323383,
+      "nash": 48.797311209001684,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.2915762194755844,
+      "maximin": 1.10631462667082,
+      "nash": 60.99663901125209,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.013555300963397,
+      "maximin": 0.790900890323383,
+      "nash": 48.797311209001684,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.013555300963397,
+      "maximin": 0.790900890323383,
+      "nash": 48.797311209001684,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.2915762194755844,
+      "maximin": 1.10631462667082,
+      "nash": 60.99663901125209,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.2915762194755844,
+      "maximin": 1.10631462667082,
+      "nash": 60.99663901125209,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 1,
+      "value": 1.2915762194755844,
+      "tied_ids": [
+        1,
+        9,
+        12,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": 1.10631462667082,
+      "tied_ids": [
+        1,
+        5,
+        8,
+        9,
+        10,
+        12,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 60.99663901125209,
+      "tied_ids": [
+        1,
+        9,
+        12,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        5,
+        8,
+        9,
+        10,
+        12,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "Based on the situation, I would recommend voicing my concerns to the group before proceeding with\nthe planning of the surprise party. Here's why:\n\n1. **Prioritize the birthday person's comfort**: The fact that the birthday person has expressed\ndiscomfort with surprises and large gatherings suggests that they might feel anxious or stressed\nabout such events. As a friend, it's essential to prioritize their emotional well-being over the\nexcitement of throwing them a surprise party.\n2. **Avoid causing harm**: A surprise party can be overwhelming, especially if the birthday person\nis not looking forward to it. Allowing someone to attend an event against their will or wishes can\nlead to feelings of resentment and harm to your friendship.\n3. **Respect boundaries**: By sharing my concerns, I would hope that we can discuss alternative ways\nto celebrate the birthday person's special day that align with their preferences, such as a small\nintimate gathering or a low-key celebration.\n\nWhile it might be disappointing to abandon the surprise party idea, keeping quiet and contributing\nto an event that might make the birthday person uncomfortable is not worth the potential harm to our\nfriendship. I would suggest suggesting alternatives, such as:\n\n* Inviting the birthday person's close friends to celebrate in a small, low-key setting.\n* Asking the birthday person if they have any preferences for celebrating their special day.\n* Planning an activity or outing that aligns with their interests and comfort level.\n\nBy voicing my concerns, I can help ensure that our group celebration respects the birthday person's\nboundaries and priorities, ultimately strengthening our friendship and creating a positive\nexperience for everyone involved."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

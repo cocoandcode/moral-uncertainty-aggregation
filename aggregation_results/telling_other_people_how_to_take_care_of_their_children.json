@@ -1,0 +1,363 @@
+{
+  "slug": "telling_other_people_how_to_take_care_of_their_children",
+  "dilemma": "As a child psychologist, I'm often consulted by parents seeking advice on child-rearing. I've noticed a couple who are over-disciplining their child, which I believe is causing emotional harm. Should I directly intervene and risk offending the parents, or should I indirectly give them guidance hoping they understand their mistake?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Direct Intervention",
+  "not_to_do_action": "Indirect Guidance",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.19043048103079754,
+      "maximin": -1.2363314859195875,
+      "nash": 13.012616322400449,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.17828574763924224,
+      "maximin": -1.2363314859195875,
+      "nash": 13.28371249578379,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.7343275846636172,
+      "maximin": -1.2363314859195875,
+      "nash": 6.777404334583567,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.4563066661514297,
+      "maximin": -1.2363314859195875,
+      "nash": 9.759462241800337,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.4563066661514297,
+      "maximin": -1.2363314859195875,
+      "nash": 9.759462241800337,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.19043048103079754,
+      "maximin": -1.2363314859195875,
+      "nash": 13.012616322400449,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.3233685735911136,
+      "maximin": -1.2363314859195875,
+      "nash": 11.386039282100393,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.17828574763924224,
+      "maximin": -1.2363314859195875,
+      "nash": 13.28371249578379,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.4563066661514297,
+      "maximin": -1.2363314859195875,
+      "nash": 9.759462241800337,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7504702021480584,
+      "maximin": 0.715873607905752,
+      "nash": 39.03784896720134,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5892447587117458,
+      "maximin": -1.2363314859195875,
+      "nash": 8.13288520150028,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.4563066661514297,
+      "maximin": -1.2363314859195875,
+      "nash": 9.759462241800337,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.44416193275987437,
+      "maximin": -1.2363314859195875,
+      "nash": 9.488366068416994,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.4563066661514297,
+      "maximin": -1.2363314859195875,
+      "nash": 9.759462241800337,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.3638006578586656,
+      "maximin": -0.8506210025087526,
+      "nash": 21.958790044050755,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5892447587117458,
+      "maximin": -1.2363314859195875,
+      "nash": 8.13288520150028,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 10,
+      "value": 0.7504702021480584,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 10,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 10,
+      "value": 39.03784896720134,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 15,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "10": "What a delicate and sensitive situation! As a child psychologist, it's great that you're concerned\nabout the potential emotional harm caused by over-disciplining. Here's my recommended approach:\n\n**Directly intervene with sensitivity**\n\nWhile it may seem like indirectly giving guidance might be a safer route, I believe direct\nintervention is the most effective way to address this situation. Here's why:\n\n1.  **Clear communication**: Direct intervention allows you to have an open and honest conversation\nwith the parents about your concerns. This approach helps ensure that they understand your\nperspective and can work together to find a solution.\n2.  **Avoiding misunderstandings**: Indirect guidance might lead to misinterpretation or confusion,\nwhich could exacerbate the problem. By being direct, you minimize the risk of misunderstanding and\nallow for a clearer understanding of your concerns.\n3.  **Empowering parents**: Direct intervention enables you to provide specific, actionable advice\nthat empowers the parents to make changes in their discipline approach. This promotes a\ncollaborative relationship between you and the family.\n\nTo ensure your conversation is constructive and sensitive, consider the following:\n\n*   **Frame it as concern for the child's well-being**: Instead of accusing or blaming the parents,\nexpress your concerns about the potential emotional harm caused by over-disciplining.\n*   **Use \"I\" statements**: Share your professional observations and thoughts using \"I\" statements,\nwhich help to avoid blame and defensiveness. For example: \"As a child psychologist, I've seen that\noverly strict discipline can have negative effects on children's emotional development.\"\n*   **Focus on positive changes**: Collaborate with the parents to identify small, achievable steps\nthey can take to adapt their discipline approach and promote more positive relationships between\nparent and child.\n\nPrioritize empathy and understanding throughout your conversation. By taking a direct yet sensitive\napproach, you'll increase the likelihood of making a positive impact on both the child's emotional\nwell-being and the family dynamics as a whole.\n\nAs a final thought: Direct intervention is not about \"judging\" the parents or their choices; it's\nabout offering guidance and support to help them become better equipped to nurture their child's\ndevelopment.",
+    "15": "**Direct Intervention is Recommended**\n\nYou should consider directly addressing the issue with the couple. While it's natural to worry about\noffending them, this concern is outweighed by the potential for long-term harm to the child.\n\nHere are the reasons behind this recommendation:\n\n1.  **Timely intervention**: Early identification and intervention can significantly improve a\nchild's outcomes in development and emotional regulation.\n2.  **Effectiveness of direct guidance**: By directly addressing their over-disciplinary behavior,\nyou may be able to influence their approach more effectively than with indirect suggestions.\n3.  **Reduced likelihood of misinterpretation**: Direct communication reduces the risk that your\nmessage is misconstrued or lost in translation.\n4.  **Respect for parents' expertise**: A direct and supportive approach acknowledges the parents'\nauthority and experience, while also addressing their need for guidance.\n\nHere are some suggestions to make this conversation more effective:\n\n1.  **Choose a non-confrontational tone**: Begin the conversation by expressing your concern about\nthe child's well-being and emphasizing your desire to support them.\n2.  **Use \"I\" statements**: Instead of blaming the parents, express your observations in a way that\nfocuses on the child's experience: (\"I've noticed \\[specific behaviors\\].\")\n3.  **Focus on evidence-based practices**: Ground your recommendations with current research and\ndevelopmental theories to provide credibility and authority.\n4.  **Collaborate on solutions**: Engage the couple in identifying alternative discipline methods\nand co-create a plan for implementing these changes.\n\nDirect intervention can be challenging, but it is often more effective than indirect guidance in\npromoting positive change."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

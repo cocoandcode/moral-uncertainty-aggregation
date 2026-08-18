@@ -1,0 +1,363 @@
+{
+  "slug": "calling_someone_when_no_one_is_at_work_when_you_arrive",
+  "dilemma": "You are the manager of a store and you arrive to find the shop unmanned. Your only employee on shift is not responding to calls, but you know they have been dealing with personal issues recently. Should you fire the employee for negligence, or give them another chance considering their personal circumstances?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Fire the Employee",
+  "not_to_do_action": "Keep the Employee",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.463095636549609,
+      "maximin": -0.07959606538784551,
+      "nash": 29.27838672540101,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.463095636549609,
+      "maximin": -0.07959606538784551,
+      "nash": 29.27838672540101,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7532612884533518,
+      "maximin": 0.32543258914068407,
+      "nash": 39.03784896720135,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.20001053773427033,
+      "maximin": -0.07959606538784551,
+      "nash": 22.772078564200786,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5932426428046317,
+      "maximin": -0.07959606538784551,
+      "nash": 32.93818506607613,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.463095636549609,
+      "maximin": -0.07959606538784551,
+      "nash": 29.27838672540101,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.463095636549609,
+      "maximin": -0.07959606538784551,
+      "nash": 29.27838672540101,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4481598168527603,
+      "maximin": -0.5148445432434597,
+      "nash": 27.44848755506344,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.05771879808769231,
+      "maximin": -0.5148445432434597,
+      "nash": 18.29899170337563,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.463095636549609,
+      "maximin": -0.07959606538784551,
+      "nash": 29.27838672540101,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.34788444999143514,
+      "maximin": -0.4554494483894518,
+      "nash": 25.618588384725882,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.463095636549609,
+      "maximin": -0.07959606538784551,
+      "nash": 29.27838672540101,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.3329486302945864,
+      "maximin": -0.07959606538784551,
+      "nash": 25.618588384725886,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.463095636549609,
+      "maximin": -0.07959606538784551,
+      "nash": 29.27838672540101,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.463095636549609,
+      "maximin": -0.07959606538784551,
+      "nash": 29.27838672540101,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6081784625014804,
+      "maximin": 0.32543258914068407,
+      "nash": 34.158117846301174,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 3,
+      "value": 0.7532612884533518,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 3,
+      "value": 0.32543258914068407,
+      "tied_ids": [
+        3,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 3,
+      "value": 39.03784896720135,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 3,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "3": "As a manager, it's essential to consider both the business needs and the welfare of employees. In\nthis scenario, I would recommend not firing the employee immediately but instead having a\ncompassionate approach while also addressing the company's requirements.\n\n**Reasoning:**\n\n1.  **Compassion and understanding**: Given that you're aware of your employee's personal issues,\nit's essential to consider their circumstances. Firing them without understanding what might be\ncausing their absence could exacerbate any existing mental health concerns.\n2.  **Investigate the situation**: Before making a decision, investigate why your employee wasn't\npresent at work. Was there an urgent family matter? Had they experienced a personal crisis?\nClarifying this will help you make an informed decision.\n3.  **Address the immediate business needs**: In the meantime, consider taking temporary measures to\naddress the shop's unmanned situation. This could include contacting other employees to cover\nshifts, arranging for external support (e.g., staffing agency or temp workers), or exploring\nalternative solutions (e.g., closing early).\n4.  **Discuss and document the issue**: Schedule a private conversation with your employee as soon\nas possible. Explain that their absence has been noticed and that you're concerned about their\nwell-being. Discuss possible solutions, such as providing additional support or temporary\naccommodations to help them manage their responsibilities.\n5.  **Review performance records and policies**: Ensure you have all relevant information on hand.\nReview company policies regarding employee absences, including the expectation for notifying\nmanagement in case of absence.\n6.  **Consider a performance improvement plan**: Depending on the outcome of your discussion, you\nmight want to establish a performance improvement plan (PIP). This could include specific targets\nand deadlines for improving attendance and addressing any personal issues.\n\n**Recommendation:**\n\nFire is not an appropriate initial response, but instead have a compassionate approach and consider\nimplementing a PIP if necessary. This approach will help both the employee and the business address\ntheir responsibilities while providing support where needed.\n\nAlways prioritize your role as a manager to provide a balance between the welfare of employees and\nthe needs of the company. Consider your actions' long-term effects on everyone involved. By doing\nso, you can create a more positive work environment and build stronger relationships with your team\nmembers."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 1
+}

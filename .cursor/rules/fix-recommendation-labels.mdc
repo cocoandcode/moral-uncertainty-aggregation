@@ -1,0 +1,17 @@
+---
+description: Open TODO — fix false HEDGE/OTHER recommendation labels before analysis
+alwaysApply: true
+---
+
+# TODO: Fix recommendation labels (HEDGE / OTHER)
+
+Do not treat current `recommendations/*.json` labels as final for Results.
+
+**Problem:** `gpt-4o-mini` over-used `HEDGE` for soft middle-path answers (e.g. gradual distance, monitor then decide). Those should usually be `OTHER`. True `HEDGE` is only refusal / no recommended action. Labels are also inconsistent (similar answers split across HEDGE and OTHER).
+
+**When the user resumes analysis or divergence work, remind them** to:
+1. Tighten the system prompt in `label_recommendations.py` (narrow HEDGE; middle paths → OTHER; prefer TO_DO/NOT_TO_DO if one named action is favoured).
+2. Pilot on known bad cases (e.g. `abruptly_cutting_contact_with_people` R2, R8, R11, R16).
+3. Re-label (full corpus preferred), then re-run `aggregate_scores.py` so HTML/JSON pick up the new labels.
+
+Until that is done, do not compute or report recommendation-level divergence as final.

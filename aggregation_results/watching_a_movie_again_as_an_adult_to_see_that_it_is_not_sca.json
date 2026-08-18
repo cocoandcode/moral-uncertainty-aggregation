@@ -1,0 +1,362 @@
+{
+  "slug": "watching_a_movie_again_as_an_adult_to_see_that_it_is_not_sca",
+  "dilemma": "As an adult, you decide to watch a horror movie you saw as a child and found terrifying. You realize it's not scary at all and were thinking about showing it to your young niece who loves thrilling stories. Should you let her watch the movie, potentially exposing her to fear, or should you protect her from potential scares?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Show the movie",
+  "not_to_do_action": "Don't show the movie",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5892447587117458,
+      "maximin": -1.2363314859195875,
+      "nash": 8.13288520150028,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.09294620047476596,
+      "maximin": -0.950093021099074,
+      "nash": 15.18138570946719,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.037200805780256724,
+      "maximin": -0.950093021099074,
+      "nash": 17.079058923150587,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6368433041075856,
+      "maximin": -1.3853414989546882,
+      "nash": 6.5063081612002245,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1701388983405728,
+      "maximin": -0.950093021099074,
+      "nash": 19.51892448360067,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5892447587117458,
+      "maximin": -1.2363314859195875,
+      "nash": 8.13288520150028,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.225884293035082,
+      "maximin": -0.950093021099074,
+      "nash": 13.012616322400449,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1701388983405728,
+      "maximin": -0.950093021099074,
+      "nash": 19.51892448360067,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.18228363173212814,
+      "maximin": -0.5148445432434597,
+      "nash": 21.348823653938233,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.09573728678005934,
+      "maximin": -0.950093021099074,
+      "nash": 14.639193362700503,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.225884293035082,
+      "maximin": -0.950093021099074,
+      "nash": 13.012616322400449,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.2408201127319307,
+      "maximin": -1.3853414989546882,
+      "nash": 10.979395022025377,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.09973517087294523,
+      "maximin": -1.2363314859195875,
+      "nash": 17.350155096533932,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.09573728678005934,
+      "maximin": -0.950093021099074,
+      "nash": 14.639193362700503,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.037200805780256724,
+      "maximin": -0.950093021099074,
+      "nash": 17.079058923150587,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.039991892085550124,
+      "maximin": -0.950093021099074,
+      "nash": 17.350155096533932,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 9,
+      "value": 0.18228363173212814,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 9,
+      "value": -0.5148445432434597,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 9,
+      "value": 21.348823653938233,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 13,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "9": "I strongly recommend **not** letting your young niece watch the horror movie that initially\nfrightened you as a child, but now seems tame.\n\nWhile it's essential for children to learn about courage and resilience in the face of fear,\nexposing them to intense fear without their emotional readiness can have unintended consequences.\nYoung children might not fully understand what is happening on screen or may become overwhelmed by\ntheir emotions, leading to:\n\n1. **Fear and anxiety**: Intense scares can cause a child's fear response system to be triggered,\npotentially leading to ongoing anxiety and phobias.\n2. **Trauma**: Children may misinterpret the movie as an actual threat, experiencing trauma-like\nreactions, such as nightmares or avoidance behaviors.\n3. **Over-reliance on adults**: Without understanding how to manage their fear, children might\nbecome overly reliant on adult protection, which can hinder their emotional development and\nindependence.\n\nInstead of showing her the horror movie, consider these alternatives:\n\n1. **Find a more age-appropriate horror option**: If your niece enjoys thrilling stories, find\nmovies or books that are specifically designed for her age group, with fewer scares and more\nsuspense.\n2. **Explain the movie to her in context**: Discuss the movie's genre, themes, and intentions behind\nit, so she understands what to expect and can make informed choices about whether she wants to watch\nit.\n3. **Use it as a conversation starter**: Watch the movie together and use the experience as an\nopportunity to talk about fear, anxiety, and emotional regulation.\n\nRemember, children's brains and emotional capacities are still developing, making them more\nsusceptible to intense emotions. Prioritize your niece's emotional well-being by introducing her to\nhorror themes in moderation and contextually.",
+    "13": "I would recommend allowing your young niece to watch the movie with you. Here's why:\n\n1. **Emotional resilience**: Exposure to moderate fear in a controlled environment can actually help\nchildren develop emotional resilience. This means they'll learn to cope with scary situations,\nreducing their vulnerability to long-term anxiety or trauma.\n2. **Builds confidence and trust**: Watching the movie together allows you to gauge your niece's\nreaction and be available for comfort and reassurance if needed. If she feels scared or\nuncomfortable, you can discuss it together and offer support. This helps build trust and a safe\nemotional environment between you both.\n3. **Appreciate scary stories more**: Exposing children to scary stories in moderation can actually\nhelp them appreciate the thrill of these types of tales without becoming overwhelmed. Your niece\nmight develop a nuanced understanding of what constitutes a \"good\" horror movie (e.g., the\ndistinction between frightening and traumatic).\n4. **Contextualize fear**: By watching the movie together, you can set clear expectations with your\nniece: it's okay to feel scared sometimes, but we're in control, and you'll be safe throughout. This\nhelps her develop a rational understanding of fear rather than letting it control her.\n\nHowever, keep these guidelines in mind:\n\n* **Supervise closely**: Watch the movie together, and pay attention to how your niece responds. Be\nprepared to intervene or adjust the experience if needed.\n* **Set boundaries**: If she becomes too scared or uncomfortable, you can pause the movie, discuss\nher feelings, and reassure her that it's okay to take a break or watch something else instead.\n* **Choose age-appropriate content**: Select a horror movie suitable for your niece's age and\nmaturity level. Some children might not be ready for complex themes or intense scares.\n\nUltimately, watching a scary movie with your niece allows you to build trust, confidence, and\nemotional resilience together while also introducing her to thrilling stories in a controlled\nenvironment."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

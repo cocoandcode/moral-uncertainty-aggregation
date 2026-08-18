@@ -1,0 +1,363 @@
+{
+  "slug": "finding_your_passion",
+  "dilemma": "You have recently discovered a passion for painting, but you are currently in a stable, high-paying job. However, pursuing this passion would mean leaving your job and potentially struggling financially. Do you quit your job and pursue your passion, risking financial instability, or do you continue with your current job, sacrificing your newfound passion?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Quitting Job to Pursue Painting",
+  "not_to_do_action": "Continuing with Current Job",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.05372091399480647,
+      "maximin": -0.4518067248278044,
+      "nash": 16.60464061972974,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7371186709689106,
+      "maximin": -0.8506210025087526,
+      "nash": 6.777404334583567,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4618888387620166,
+      "maximin": -0.8506210025087526,
+      "nash": 9.759462241800335,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7371186709689106,
+      "maximin": -0.8506210025087526,
+      "nash": 6.777404334583567,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5920358450170392,
+      "maximin": -0.8506210025087526,
+      "nash": 8.13288520150028,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7371186709689106,
+      "maximin": -0.8506210025087526,
+      "nash": 6.777404334583567,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.45909775245672313,
+      "maximin": -0.8458904671545197,
+      "nash": 10.16610650187535,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.038785094297957734,
+      "maximin": -0.4554494483894518,
+      "nash": 16.26577040300056,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7371186709689106,
+      "maximin": -0.8506210025087526,
+      "nash": 6.777404334583567,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.31401492650485174,
+      "maximin": -0.8458904671545197,
+      "nash": 11.860457585521242,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7371186709689106,
+      "maximin": -0.8506210025087526,
+      "nash": 6.777404334583567,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5920358450170392,
+      "maximin": -0.8506210025087526,
+      "nash": 8.13288520150028,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7371186709689106,
+      "maximin": -0.8506210025087526,
+      "nash": 6.777404334583567,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.3289507462017005,
+      "maximin": -0.4554494483894518,
+      "nash": 12.19932780225042,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0123485031758046,
+      "maximin": -1.2363314859195875,
+      "nash": 4.337538774133483,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4469530190651678,
+      "maximin": -0.8506210025087526,
+      "nash": 9.488366068416994,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 8,
+      "value": -0.038785094297957734,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.4518067248278044,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 16.60464061972974,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 8,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "**Recommendation:** Pursue your passion for painting while maintaining your stable income.\n\n**Why not quit the job entirely:**\n\n1. **Financial Security**: Leaving a high-paying job to pursue painting might lead to financial\nuncertainty, which can be overwhelming. It's essential to have a safety net in case your artistic\nendeavors don't generate immediate income.\n2. **Loss of Skills and Experience**: Your current job provides valuable skills and experience that\nmay not be easily transferable to the art world. Quitting without a solid plan for sustaining\nyourself financially could lead to unnecessary stress and struggle.\n3. **Opportunity Cost**: Leaving a stable job might mean giving up opportunities for professional\ndevelopment, networking, or other experiences that can benefit your overall career.\n\n**Why you should pursue painting:**\n\n1. **Personal Fulfillment**: Painting brings you joy and satisfaction, which is essential for\noverall well-being.\n2. **Creative Expression**: Pursuing your passion allows you to express yourself creatively,\npotentially leading to personal growth and self-discovery.\n3. **Portfolio Development**: By continuing to paint while maintaining your current job, you can\ndevelop a portfolio of work, gaining experience and potentially building towards a more sustainable\nart career.\n\n**Balancing Act:**\n\nTo pursue painting without sacrificing stability:\n\n1. **Start small**: Begin by allocating dedicated time for painting each week, whether it's in the\nmorning, evenings, or weekends.\n2. **Take classes or workshops**: Enroll in online courses or attend local workshops to learn new\ntechniques, gain feedback, and network with fellow artists.\n3. **Sell your art (optional)**: If you're interested in generating income from your paintings,\nexplore marketplaces like Etsy, Redbubble, or at local galleries/art fairs.\n4. **Consider a flexible job arrangement**: Talk to your employer about telecommuting, flexible\nhours, or compressed workweeks, which can allow you to balance your painting schedule with your job.\n\nBy pursuing painting while maintaining your stable income, you'll be able to enjoy the creative\nfulfillment and personal growth that comes with it, without putting your financial security at risk.",
+    "8": "After careful consideration, I recommend continuing with my current job while still allowing time to\nnurture my passion for painting in a sustainable way. Here's why:\n\n**Financial Security**: Leaving a stable, high-paying job to pursue an uncertain artistic career\nwould be a significant risk financially. I wouldn't want to sacrifice my financial stability and\nsecurity, which provides peace of mind and allows me to cover essential expenses.\n\n**Risk Mitigation**: By continuing in my current role, I can maintain a financial safety net while\nstill exploring my passion for painting on the side. This approach allows me to mitigate risks\nassociated with quitting my job without immediate guarantees of success as an artist.\n\n**Sustainable Pursuit of Passion**: To pursue my passion sustainably, I would prioritize evenings,\nweekends, and vacation time for creative pursuits. This would enable me to balance my\nresponsibilities at work while still nurturing my artistic interests. Over time, I could explore\nonline platforms, exhibitions, or local art markets to monetize my artwork and potentially\ntransition into a more fulfilling career.\n\n**Gradual Transition**: Continuing in my current job allows me to set goals for transitioning out of\nthe job within a specific timeframe (e.g., 2-3 years). During this time, I can:\n\n1. Build a portfolio of paintings to showcase my talent.\n2. Research and network with other artists to learn about opportunities and potential income\nstreams.\n3. Take online courses or workshops to enhance my skills and understanding of the art world.\n\n**Personal Growth**: Engaging in both worlds (stable job and artistic pursuits) can foster personal\ngrowth by:\n\n1. Balancing different aspects of life, including creative expression and financial security.\n2. Encouraging experimentation and exploration in various mediums and styles.\n3. Developing patience, discipline, and adaptability while navigating two careers.\n\n**No-Regret Option**: Quitting my job without a solid plan for financial stability could lead to\nregret if I struggle to succeed as an artist. Continuing with my current job provides a no-regret\noption, giving me time to build confidence in my artistic abilities while maintaining financial\nstability.\n\nIn conclusion, balancing my passion for painting with my stable job is the wisest approach. This\nallows me to prioritize both creative expression and financial security, providing the best possible\nchance for long-term success as an artist."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

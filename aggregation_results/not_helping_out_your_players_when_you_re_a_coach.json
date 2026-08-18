@@ -1,0 +1,369 @@
+{
+  "slug": "not_helping_out_your_players_when_you_re_a_coach",
+  "dilemma": "John is a high school football coach who has a demanding full-time job outside of coaching. One of his players, Mike, is struggling with his performance and needs extra practice, but John is unable to provide the necessary time due to his job commitments. Should John sacrifice his personal time to help Mike improve or should he continue prioritizing his own job and personal life?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Sacrifice personal time",
+  "not_to_do_action": "Prioritize job and personal life",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.05749238847048149,
+      "maximin": -1.2363314859195875,
+      "nash": 14.639193362700505,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.19043048103079754,
+      "maximin": -1.2363314859195875,
+      "nash": 13.012616322400449,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.7343275846636172,
+      "maximin": -1.2363314859195875,
+      "nash": 6.777404334583567,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.47780504662924705,
+      "maximin": -1.6267725046846555,
+      "nash": 7.319596681350252,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.20159482625197134,
+      "maximin": -0.8506210025087526,
+      "nash": 13.012616322400449,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4618888387620166,
+      "maximin": -0.8506210025087526,
+      "nash": 9.759462241800335,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.20257521442235293,
+      "maximin": -1.2363314859195875,
+      "nash": 12.199327802250421,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8822014969207821,
+      "maximin": -0.950093021099074,
+      "nash": 5.421923467666853,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.335513306982669,
+      "maximin": -1.2363314859195875,
+      "nash": 10.843846935333707,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.0002037697842494,
+      "maximin": -1.2494352801897008,
+      "nash": 4.06644260075014,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5920358450170392,
+      "maximin": -0.8506210025087526,
+      "nash": 8.13288520150028,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.0875904374813899,
+      "maximin": -1.2363314859195875,
+      "nash": 17.079058923150587,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.0875904374813899,
+      "maximin": -1.2363314859195875,
+      "nash": 17.079058923150587,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7371186709689106,
+      "maximin": -0.8506210025087526,
+      "nash": 6.777404334583567,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.3233685735911136,
+      "maximin": -1.2363314859195875,
+      "nash": 11.386039282100393,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6069716647138881,
+      "maximin": -0.8506210025087526,
+      "nash": 8.13288520150028,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 12,
+      "value": 0.0875904374813899,
+      "tied_ids": [
+        12,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 5,
+      "value": -0.8506210025087526,
+      "tied_ids": [
+        5,
+        6,
+        11,
+        14,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 12,
+      "value": 17.079058923150587,
+      "tied_ids": [
+        12,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 12,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        12,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "5": "**Recommendation:** John should find alternative solutions to support Mike, rather than sacrificing\nhis personal time.\n\n**Reasoning:**\n\nWhile it's natural for John to feel inclined to help one of his players improve their performance,\nprioritizing his own job and personal life is essential for both himself and the team. Here's why:\n\n1. **Job commitments:** John has a full-time job outside of coaching, which requires dedication and\nattention. Sacrificing his free time would negatively impact his work-life balance, ultimately\naffecting his ability to provide quality coaching and meet his job responsibilities.\n2. **Personal well-being:** Coaching is a high-stress profession that can be emotionally draining,\nespecially with a demanding full-time job on top of it. By prioritizing his personal life, John\nensures he maintains the energy and motivation needed to continue being an effective coach.\n3. **Alternative solutions:** Rather than sacrificing his own time, John could explore alternative\nways to support Mike, such as:\n        * Scheduling extra practice sessions during designated team time (e.g., before or after\nregular practice).\n\t* Inviting another coach or experienced player to work with Mike on their specific areas of need.\n        * Creating a customized practice plan that Mike can follow independently or with his\nparents' guidance.\n        * Referencing additional resources, such as videos or sports clinics, that may help Mike\nimprove his skills.\n4. **Coaching responsibility:** John is also responsible for managing the team and ensuring all\nplayers have equal access to coaching time. If he focuses too much on one player, it might\ncompromise his ability to effectively support others.\n\nIn conclusion, while supporting Mike's improvement is essential, prioritizing John's job\ncommitments, personal well-being, and coaching responsibilities is more crucial in this situation.\nAlternative solutions can be explored to ensure Mike receives the necessary help without\ncompromising John's own life.",
+    "12": "I recommend that Coach John prioritize Mike's needs and find ways to adjust his schedule to provide\nadditional practice time for him.\n\nHere's why:\n\n1. **Moral obligation**: As a coach, John has a responsibility to help his players reach their full\npotential, especially when they're struggling. By providing extra support, he's fulfilling his duty\nas a mentor and role model.\n2. **Impact on team dynamics**: Mike's struggles could be affecting not just him, but also the rest\nof the team. If left unresolved, it might impact team morale, cohesion, and ultimately, their\nperformance on the field. By addressing Mike's needs, John is investing in the overall success of\nhis team.\n3. **Coach-player relationship**: As a coach, building strong relationships with his players is\ncrucial for trust, motivation, and success. Sacrificing personal time to help Mike demonstrates\nempathy, understanding, and a commitment to his player's growth \u2013 essential qualities for any coach.\n4. **Short-term vs. long-term benefits**: While sacrificing personal time may seem like a short-term\nsacrifice, it can lead to significant long-term benefits. A happy and improved player is more likely\nto stay committed, have better grades, and become an even better team player.\n\nThat being said, I'm not recommending that John should completely abandon his personal life or\nprioritize Mike over everything else. Here are some practical suggestions for balancing these\ncompeting demands:\n\n*   Talk to the school administration or athletic department to explore possible support staff\n(e.g., another coach) who could provide additional practice time.\n*   Communicate with Mike and his family about the extra effort required, setting clear expectations\nfor what he needs to work on.\n*   Use John's off-season or slower periods in the season to plan ahead and schedule additional\npractices.\n*   Prioritize tasks outside of coaching that can be managed remotely or delegated to others.\n\nCoach John can find creative ways to manage his demanding job while still supporting his player.\nWith some innovative problem-solving and resourcefulness, he'll ensure Mike's growth on the field\nwithout sacrificing his own life too much in the process!"
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

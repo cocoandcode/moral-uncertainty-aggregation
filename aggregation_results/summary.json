@@ -1,0 +1,71 @@
+{
+  "dilemmas": 500,
+  "candidates_per_dilemma": [
+    16
+  ],
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "tie_tolerance": 1e-09,
+  "unanimous": 339,
+  "unanimous_recommendation": 444,
+  "all_rules_unique_winner": 75,
+  "per_rule": {
+    "ec": {
+      "dilemmas_with_tie": 166,
+      "tie_rate": 0.332,
+      "mean_tie_size": 3.3012048192771086,
+      "max_tie_size": 12,
+      "complete_ties": 0
+    },
+    "maximin": {
+      "dilemmas_with_tie": 280,
+      "tie_rate": 0.56,
+      "mean_tie_size": 4.875,
+      "max_tie_size": 16,
+      "complete_ties": 6
+    },
+    "nash": {
+      "dilemmas_with_tie": 180,
+      "tie_rate": 0.36,
+      "mean_tie_size": 3.3222222222222224,
+      "max_tie_size": 12,
+      "complete_ties": 0
+    },
+    "baseline": {
+      "dilemmas_with_tie": 383,
+      "tie_rate": 0.766,
+      "mean_tie_size": 7.1122715404699735,
+      "max_tie_size": 16,
+      "complete_ties": 26
+    }
+  },
+  "pairwise": {
+    "ec_vs_maximin": {
+      "strict_divergence": 0.206,
+      "forced_divergence": 0.5473508269508272
+    },
+    "ec_vs_nash": {
+      "strict_divergence": 0.074,
+      "forced_divergence": 0.28736724386724394
+    },
+    "ec_vs_baseline": {
+      "strict_divergence": 0.166,
+      "forced_divergence": 0.7090231546231552
+    },
+    "maximin_vs_nash": {
+      "strict_divergence": 0.11,
+      "forced_divergence": 0.49907304917304907
+    },
+    "maximin_vs_baseline": {
+      "strict_divergence": 0.266,
+      "forced_divergence": 0.7884874130499135
+    },
+    "nash_vs_baseline": {
+      "strict_divergence": 0.214,
+      "forced_divergence": 0.7419969030969037
+    }
+  }
+}

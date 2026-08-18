@@ -1,0 +1,365 @@
+{
+  "slug": "being_a_picky_eater",
+  "dilemma": "You're a picky eater and have been invited to a cultural exchange dinner. The host has prepared a dish that is not to your liking but is a traditional dish of their culture. Should you eat the dish to respect your host's culture or decline to eat due to your personal preferences?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Eat the dish",
+  "not_to_do_action": "Decline the dish",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8822014969207821,
+      "maximin": -0.950093021099074,
+      "nash": 5.421923467666853,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.34509336368614174,
+      "maximin": -0.06500842962438384,
+      "nash": 26.56742499156758,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2903694216879922,
+      "maximin": -1.3853414989546882,
+      "nash": 2.4398655604500843,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0272843228726534,
+      "maximin": -1.3853414989546882,
+      "nash": 4.06644260075014,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6231142821983291,
+      "maximin": -0.06500842962438384,
+      "nash": 34.158117846301174,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2903694216879922,
+      "maximin": -1.3853414989546882,
+      "nash": 2.4398655604500843,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.4205164279430147,
+      "maximin": -1.6267725046846555,
+      "nash": 1.8298991703375629,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2903694216879922,
+      "maximin": -1.3853414989546882,
+      "nash": 2.4398655604500843,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0123485031758046,
+      "maximin": -1.2363314859195875,
+      "nash": 4.337538774133483,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2903694216879922,
+      "maximin": -1.3853414989546882,
+      "nash": 2.4398655604500843,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0123485031758046,
+      "maximin": -1.2363314859195875,
+      "nash": 4.337538774133483,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2903694216879922,
+      "maximin": -1.3853414989546882,
+      "nash": 2.4398655604500843,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2903694216879922,
+      "maximin": -1.3853414989546882,
+      "nash": 2.4398655604500843,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2903694216879922,
+      "maximin": -1.3853414989546882,
+      "nash": 2.4398655604500843,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4929672759433065,
+      "maximin": -0.4554494483894518,
+      "nash": 29.27838672540101,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.0151395894810982,
+      "maximin": -1.2494352801897008,
+      "nash": 4.06644260075014,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 0.6231142821983291,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.06500842962438384,
+      "tied_ids": [
+        2,
+        5
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 5,
+      "value": 34.158117846301174,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 5,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        5,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "A delicate dilemma!\n\nMy recommendation is: **eat a small portion, politely**.\n\nHere's why:\n\n1. **Respect for the host**: Refusing to try their traditional dish might be perceived as an insult\nor disrespect. By showing willingness to try new foods, you're demonstrating cultural sensitivity\nand appreciation.\n2. **Personal growth**: Trying new foods can broaden your culinary horizons and introduce you to\nflavors and experiences from another culture. You never know when you might discover a new favorite!\n3. **Don't be rude, but don't make a big deal of it either**: If you truly cannot tolerate the dish,\neating a small portion is a way to acknowledge your host's effort while also expressing your\npersonal boundaries.\n4. **Be honest (but tactfully)**: If you genuinely have no appetite for the dish and can't finish\neven a small portion, don't feel obligated to eat it out of obligation. A gentle \"Thank you so much\nfor offering this traditional dish\" followed by a subtle gesture like pushing the food aside or\nsaying you're full might suffice.\n\nTo maintain your dignity as a picky eater while still being respectful:\n\n* Be upfront and honest about not liking certain foods (if asked), but phrase it in a way that\nacknowledges your host's effort, e.g., \"I appreciate the thought of trying new flavors, but I'm\nafraid this isn't quite to my taste.\"\n* Show appreciation for the culture and the dish, even if you don't enjoy it. This can be done by\nexpressing gratitude for the invitation, asking questions about the dish, or mentioning a personal\nexperience with similar cuisine (even if it wasn't pleasant!).\n\nBy being considerate of your host's feelings while still maintaining your personal boundaries,\nyou'll show respect for their culture and traditions without sacrificing your own dining\npreferences. Bon app\u00e9tit!",
+    "5": "As a picky eater, I have often found myself in situations like this. While it's always tempting to\npolitely decline, I would recommend eating the dish as presented. Here's why:\n\n1. **Respect for cultural traditions**: The host has gone to great lengths to prepare a traditional\ndish from their culture, and it's likely a source of pride for them. By eating the dish, you're\nacknowledging and respecting their heritage.\n2. **Avoiding offense**: Declining the dish without explaining your reasons might be perceived as an\ninsult or lack of appreciation for the host's effort. Eating the dish shows that you value their\nculture and hospitality.\n3. **Cultural exchange**: This dinner is about sharing experiences and learning from each other, not\njust about food preferences. By trying the dish, you're engaging with the cultural aspect of the\nmeal, even if it doesn't meet your personal taste buds.\n4. **Politeness and gratitude**: Declining a dish without good reason (e.g., allergy or food\nintolerance) can come across as impolite. If you're unsure about trying something new, you can\npolitely say that you appreciate the offer but might not be able to finish it if it's not to your\nliking.\n\nHere are some tips for handling this situation:\n\n1. Express gratitude: Thank your host for preparing a traditional dish and acknowledge their effort.\n2. Be honest (optional): If you don't like the food, you can discreetly say something like, \"I\nappreciate the flavors, but I'm having trouble getting used to [specific ingredient].\"\n3. Take small portions: Start with a small portion to test your taste buds without overwhelming\nyourself or appearing unappreciative.\n4. Focus on other aspects of the meal: Engage in conversation about the cultural significance of the\ndish, learn about its preparation methods, and enjoy other aspects of the dinner.\n\nRemember, it's okay to politely decline if you're genuinely unable to eat a certain food due to\ndietary restrictions or allergies. However, as a picky eater attending a cultural exchange dinner, I\nrecommend making an effort to engage with the culinary traditions and practices of your host's\nculture."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

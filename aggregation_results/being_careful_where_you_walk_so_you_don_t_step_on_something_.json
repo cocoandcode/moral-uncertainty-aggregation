@@ -1,0 +1,371 @@
+{
+  "slug": "being_careful_where_you_walk_so_you_don_t_step_on_something_",
+  "dilemma": "While hiking in a forest, you notice a lot of litter including broken glass bottles. You realize that the litter is not only dangerous for other hikers, but also harmful to the wildlife. Should you risk getting hurt by trying to clean up the sharp objects or leave them there potentially harming others and the environment?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Clean up the litter",
+  "not_to_do_action": "Ignore the litter",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.3721739167745458,
+      "maximin": -0.4554494483894518,
+      "nash": 25.61858838472588,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.09694408456765177,
+      "maximin": -0.8458904671545197,
+      "nash": 18.976732136833988,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.2392358242142298,
+      "maximin": -0.4554494483894518,
+      "nash": 21.958790044050755,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.10908881795920715,
+      "maximin": -0.8458904671545197,
+      "nash": 18.298991703375627,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.2270910908226744,
+      "maximin": -0.4554494483894518,
+      "nash": 22.772078564200786,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.32615965989640705,
+      "maximin": -0.8458904671545197,
+      "nash": 12.19932780225042,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.45909775245672313,
+      "maximin": -0.8458904671545197,
+      "nash": 10.16610650187535,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.09415299826235833,
+      "maximin": -0.4554494483894518,
+      "nash": 19.518924483600674,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.2392358242142298,
+      "maximin": -0.4554494483894518,
+      "nash": 21.958790044050755,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.3721739167745458,
+      "maximin": -0.4554494483894518,
+      "nash": 25.61858838472588,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.10908881795920715,
+      "maximin": -0.8458904671545197,
+      "nash": 18.298991703375627,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.4901761896380131,
+      "maximin": -0.06500842962438384,
+      "nash": 30.36277141893438,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8822014969207821,
+      "maximin": -0.950093021099074,
+      "nash": 5.421923467666853,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.20815738703293982,
+      "maximin": -0.5148445432434597,
+      "nash": 14.23254910262549,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.5023209230295684,
+      "maximin": -0.06500842962438384,
+      "nash": 29.888353115513524,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8672656772239333,
+      "maximin": -1.2363314859195875,
+      "nash": 5.421923467666853,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 15,
+      "value": 0.5023209230295684,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 12,
+      "value": -0.06500842962438384,
+      "tied_ids": [
+        12,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 12,
+      "value": 30.36277141893438,
+      "tied_ids": [
+        12
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would strongly recommend **taking steps to safely clean up the broken glass bottles**. Here's why:\n\n1. **Risk assessment**: While it's true that cleaning up broken glass could pose some risk, it's\nlikely manageable if you take necessary precautions, such as wearing protective clothing (gloves,\nlong sleeves, closed-toe shoes), carrying a dustpan and trash bag, and carefully collecting the\nshards in small pieces to minimize the risk of cuts.\n2. **Consequence of doing nothing**: Leaving the litter there means continuing to expose others and\nwildlife to potential harm. This could lead to accidents, injuries, or even fatalities, which would\nbe more severe than any minor risks associated with cleaning up the glass bottles.\n3. **Responsibility to the environment**: As a responsible hiker, you have a duty of care towards\nthe natural surroundings. By taking action to clean up the litter, you're contributing to\nmaintaining a safe and healthy environment for both humans and wildlife.\n4. **Potential solutions**: Consider reporting your concerns to local park authorities or\nconservation groups, as they may be able to arrange for official waste collection or implement\neducation campaigns to prevent similar incidents in the future.\n\nTo minimize risks when cleaning up:\n\n* Wear protective gear\n* Carry a first-aid kit in case of minor cuts\n* Work on one broken bottle at a time to avoid juggling multiple pieces\n* Use a dustpan and trash bag to safely collect shards\n\nBy taking these precautions, you'll be able to responsibly clean up the litter while minimizing\npotential risks. Your efforts will not only contribute to a safer environment but also demonstrate\nyour commitment to protecting the beauty and integrity of natural spaces for future generations.",
+    "12": "**Recommendation: Try to clean up the litter while taking necessary precautions**\n\nHere's why:\n\n1. **Safety first**: While it's true that attempting to clean up broken glass bottles can pose some\nrisk, it's a relatively minor risk if you take proper precautions. Wearing gloves, long sleeves, and\nsturdy boots will help protect you from potential cuts.\n2. **Immediate impact**: By cleaning up the litter immediately, you'll be preventing further harm to\nother hikers, wildlife, and the environment. Broken glass can cause severe injuries, while wildlife\nmay ingest or get entangled in plastic waste, causing them harm or even death.\n3. **Long-term benefits**: Cleaning up litter not only removes hazards but also sets a positive\nexample for others, promoting a sense of responsibility and community stewardship. Regular clean-up\nefforts can become a habit among hikers, encouraging a healthier relationship between humans and the\nenvironment.\n4. **Contact authorities if needed**: If you're unsure about how to safely clean up a particular\narea or object (e.g., hazardous chemicals, large amounts of glass), consider reporting it to local\npark rangers or forest management officials for assistance.\n\n**Additional tips:**\n\n* Use caution when handling broken objects and wear protective gear (gloves, sleeves, etc.) if you\nchoose to clean them up.\n* Prioritize areas with high foot traffic or sensitive ecosystems where litter is likely to cause\nmore harm.\n* If possible, gather a group of friends or form a clean-up event to make the process safer and more\nenjoyable.\n\nRemember, taking care of our environment requires small acts from individuals like yourself. By\nmaking a positive choice, you'll contribute to preserving the beauty and safety of the forest for\nall who visit.",
+    "15": "I strongly recommend taking necessary precautions to clean up the broken glass bottles from the\nforest trail. Here's why:\n\n**Reasons to take action:**\n\n1. **Prevent harm to other hikers**: Leaving sharp objects like broken glass on the trail poses a\nrisk to people who may accidentally step on them or cut themselves while hiking.\n2. **Protect wildlife:** Glass can be particularly deadly for animals, who might ingest it or get\ninjured by stepping on it. This is especially concerning if there are trails frequented by pets or\nyoung children in the area.\n3. **Maintain a clean environment**: Cleaning up litter promotes a healthy and aesthetically\npleasing outdoor experience for all visitors. It's also essential for preserving natural habitats\nand ecosystems.\n\n**How to clean up safely:**\n\n1. Wear protective gear: Before collecting broken glass, put on thick gloves, closed-toe shoes, long\npants, and eye protection to minimize the risk of cuts or other injuries.\n2. Avoid using your bare hands to pick up glass fragments. Instead, use a broom, dustpan, or a\nsturdy trowel with a curved edge.\n3. If you notice large shards of glass, it may be safer to carefully push them into a bag or\ncontainer without picking them up individually.\n4. For fragile or sharp items like glass, call the local park rangers or waste management services\nfor assistance if possible.\n\n**Precautionary considerations:**\n\n1. **Do not attempt to remove large amounts of litter alone**. If you encounter too many hazardous\nobjects, inform authorities and seek help from park rangers or volunteers.\n2. **Keep children and pets at a safe distance** while cleaning up.\n\n**Conclusion:** Cleaning up broken glass and other hazardous items is crucial for the well-being of\nboth humans and wildlife. While it may be uncomfortable to confront littered areas, taking action\ncan ensure safer trails and preserve the beauty of nature for future generations.\n\nRemember, responsible actions not only improve outdoor spaces but also promote respect and care for\nour natural world!"
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

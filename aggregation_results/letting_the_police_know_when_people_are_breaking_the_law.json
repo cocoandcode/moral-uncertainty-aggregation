@@ -1,0 +1,375 @@
+{
+  "slug": "letting_the_police_know_when_people_are_breaking_the_law",
+  "dilemma": "You are the manager of a small business in a rough neighborhood. Your CCTV cameras catch a group of local teens vandalizing a neighboring shop. Do you report this to the police, possibly exposing the teens to harsh legal consequences, or do you attempt to address it privately with the teens and their parents?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Reporting to the police",
+  "not_to_do_action": "Addressing privately",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8401851241355291,
+      "maximin": -1.6267725046846555,
+      "nash": 4.269764730787647,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.07265461778454113,
+      "maximin": -0.8458904671545197,
+      "nash": 18.29899170337563,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": -0.06963712186203685,
+      "maximin": -1.2363314859195875,
+      "nash": 13.554808669167134,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": -0.21471994781390824,
+      "maximin": -1.2363314859195875,
+      "nash": 10.843846935333707,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.07265461778454113,
+      "maximin": -0.8458904671545197,
+      "nash": 18.29899170337563,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -0.8280403907439738,
+      "maximin": -1.648249557870649,
+      "nash": 3.2531540806001122,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.5649552919286351,
+      "maximin": -1.2494352801897008,
+      "nash": 6.5063081612002245,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.6951022981836579,
+      "maximin": -1.6267725046846555,
+      "nash": 4.879731120900169,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -0.8280403907439738,
+      "maximin": -1.648249557870649,
+      "nash": 3.2531540806001122,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -0.8280403907439738,
+      "maximin": -1.648249557870649,
+      "nash": 3.2531540806001122,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.07265461778454113,
+      "maximin": -0.8458904671545197,
+      "nash": 18.29899170337563,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.07544570408983459,
+      "maximin": -1.2363314859195875,
+      "nash": 16.26577040300056,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -0.6978933844889512,
+      "maximin": -1.648249557870649,
+      "nash": 4.337538774133483,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.07265461778454113,
+      "maximin": -0.8458904671545197,
+      "nash": 18.29899170337563,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.43201719936831906,
+      "maximin": -1.2363314859195875,
+      "nash": 8.675077548266966,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.05749238847048149,
+      "maximin": -1.2363314859195875,
+      "nash": 14.639193362700505,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 12,
+      "value": 0.07544570408983459,
+      "tied_ids": [
+        12
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.8458904671545197,
+      "tied_ids": [
+        2,
+        5,
+        11,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 18.29899170337563,
+      "tied_ids": [
+        2,
+        5,
+        11,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 6,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        13,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "As the manager of a small business in a rough neighborhood, I would recommend addressing the\nvandalism privately with the teens and their parents first, before reporting it to the police if\nnecessary.\n\nHere's my reasoning:\n\n1. **Local dynamics**: In neighborhoods like these, relationships between local businesses,\nresidents, and youth are often complex. Some kids might see you as a \"soft target\" or feel desperate\ndue to socio-economic conditions. By engaging with them privately, I may be able to understand the\nunderlying issues contributing to their behavior.\n2. **Preventive measures**: Addressing the problem privately might also lead to more effective\nlong-term solutions. If the teens are open to talking about why they vandalized the shop, it could\nhighlight broader social issues that need to be addressed in the community (e.g., lack of youth\nprograms or resources). In this case, I might work with local organizations or authorities to\nimplement targeted initiatives.\n3. **Community cohesion**: Reporting vandalism to the police can escalate tensions and strain\nrelationships between businesses and residents, potentially even creating more conflicts in an\nalready fragile social fabric. By taking a less confrontational approach, I aim to maintain good\nrelations with the neighborhood's youth, which is crucial for business survival in this area.\n\nThat being said, I wouldn't entirely dismiss the role of law enforcement if necessary. If:\n\n1. **Serious damage**: The vandalism results in significant financial losses or endangers people's\nsafety.\n2. **Repeating offenders**: These aren't first-time culprits; they have a pattern of reckless\nbehavior that necessitates accountability.\n3. **Resistance from teens and parents**: They refuse to accept responsibility, show no interest in\nmaking amends, or become hostile when confronted about their actions.\n\nIn such cases, reporting the incident to the police would be necessary to ensure justice and\nmaintain order in the community.",
+    "6": "**Recommendation:** Report the incident to the police.\n\n**Reasoning:**\n\nWhile it may be tempting to address the situation privately with the teens and their parents to\navoid harsh legal consequences, reporting the incident to the police is the most effective and\nresponsible approach in this case. Here's why:\n\n1. **Safety and security**: The primary concern of any business owner is the safety and security of\ntheir property, customers, and employees. Vandalism can lead to physical harm or emotional distress\nfor innocent people. By reporting the incident, we ensure that these individuals are held\naccountable and the shop is protected.\n2. **Precedent and consequences**: If we choose not to report the vandalism, it sets a precedent\nthat destruction of property in our neighborhood is acceptable. The teens may think they can get\naway with this behavior without repercussions, which could embolden others to engage in similar\nactivities. By reporting the incident, we demonstrate that such actions have real consequences.\n3. **Addressing root causes**: While addressing the issue privately might seem like a more\n\"community-focused\" approach, it can also be seen as enabling or excusing the behavior. Reporting\nthe vandalism to the police sends a strong message that this behavior will not be tolerated in our\nneighborhood and encourages authorities to take proactive measures to prevent future incidents.\n4. **Support for local law enforcement**: By collaborating with the police, we demonstrate our\ncommitment to working together to maintain public safety and order. This partnership helps build\ntrust between our business community and law enforcement, which is essential for addressing broader\nneighborhood issues.\n5. **Potential benefits for the teens**: Reporting the incident might seem harsh at first, but it\ncan ultimately have a positive impact on the teens involved. The experience could serve as an\nopportunity for them to learn from their mistakes, understand the consequences of their actions, and\ndevelop a greater appreciation for property rights and the importance of respecting others'\nbelongings.\n\n**Additional steps:**\n\n1. Provide any available evidence (CCTV footage) to the police.\n2. Work with local authorities to establish a regular crime watch program or community policing\ninitiative to build trust and prevent future incidents.\n3. Consider partnering with other businesses in the neighborhood to develop a joint approach for\naddressing vandalism and promoting community engagement.\n\nWhile a private, community-focused approach might seem appealing, reporting the vandalism to the\npolice is the most effective way to address this incident and create positive change in our\nneighborhood.",
+    "12": "After careful consideration, I would recommend attempting to address the issue privately with the\nteens and their parents before reporting it to the police. Here's why:\n\n**Reasoning:**\n\n1. **Community-based approach**: Since this is a local teen issue, addressing it through community\nmeans might lead to more effective and sustainable results. Engaging with the parents and teens\nmight also help to build trust and foster a sense of responsibility within the community.\n2. **Prevention over punishment**: While harsh legal consequences can deter some individuals, they\nmay not address the root causes of the problem. Addressing the issue privately could potentially\nprevent further vandalism and promote a culture of respect for property and law-abiding behavior\namong these teens.\n3. **Avoidance of escalating tensions**: Reporting this incident to the police might be perceived as\n\"tattling\" or \"snitching,\" potentially creating animosity between local residents, law enforcement,\nand businesses. A private approach can help maintain a positive, collaborative relationship with the\ncommunity.\n4. **Potential for personal growth**: By engaging with the teens privately, we may create\nopportunities for them to reflect on their actions, take responsibility, and develop important life\nskills like empathy, communication, and conflict resolution.\n\n**Recommendations:**\n\nTo implement this approach effectively:\n\n1. **Consult local outreach programs or community organizations**: Familiarize yourself with\nexisting initiatives that work with at-risk youth in the neighborhood. They can provide guidance and\nsupport in approaching the teens' parents.\n2. **Reach out to the teens' families**: Schedule private meetings or phone calls with the parents\nof the identified individuals. Be honest about what happened, while emphasizing your concern for\ntheir children's well-being and community relationships.\n3. **Establish consequences and next steps**: Work together with the teens and their parents to\noutline a plan for making amends (e.g., repairing damages) and preventing future incidents.\n4. **Escalate if necessary**: If the private approach doesn't yield positive results, or if further\nvandalism is reported, then it's essential to involve law enforcement.\n\nBy taking this community-based, preventive approach, we may be able to address the underlying causes\nof the vandalism while fostering a more constructive relationship between our business and the\nsurrounding neighborhood."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

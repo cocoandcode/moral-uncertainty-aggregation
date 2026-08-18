@@ -1,0 +1,366 @@
+{
+  "slug": "setting_a_schedule_if_you_want_to_achieve_something",
+  "dilemma": "John is a student who is struggling to manage his time effectively. He has a big exam coming up but his friend is also in need of emotional support due to a personal crisis. Should John prioritize his study schedule or devote time to care for his friend?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Prioritize Study Schedule",
+  "not_to_do_action": "Devote Time to Friend",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.2782246882964368,
+      "maximin": -1.648249557870649,
+      "nash": 2.1687693870667415,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7221828512720618,
+      "maximin": -1.2363314859195875,
+      "nash": 6.5063081612002245,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.0002037697842494,
+      "maximin": -1.2494352801897008,
+      "nash": 4.06644260075014,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9852679500874006,
+      "maximin": -1.6267725046846555,
+      "nash": 3.6597983406751258,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9852679500874006,
+      "maximin": -1.6267725046846555,
+      "nash": 3.6597983406751258,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.45909775245672313,
+      "maximin": -0.8458904671545197,
+      "nash": 10.16610650187535,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.5798911116254839,
+      "maximin": -1.2494352801897008,
+      "nash": 7.1162745513127454,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7100381178805065,
+      "maximin": -1.2494352801897008,
+      "nash": 5.6930196410501965,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4469530190651678,
+      "maximin": -0.8506210025087526,
+      "nash": 9.488366068416994,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8551209438323779,
+      "maximin": -1.2494352801897008,
+      "nash": 4.879731120900169,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.335513306982669,
+      "maximin": -1.2363314859195875,
+      "nash": 10.843846935333707,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8551209438323779,
+      "maximin": -1.2494352801897008,
+      "nash": 4.879731120900169,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.0002037697842494,
+      "maximin": -1.2494352801897008,
+      "nash": 4.06644260075014,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8551209438323779,
+      "maximin": -1.2494352801897008,
+      "nash": 4.879731120900169,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4469530190651678,
+      "maximin": -0.8506210025087526,
+      "nash": 9.488366068416994,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.1331418623445653,
+      "maximin": -1.648249557870649,
+      "nash": 2.7109617338334266,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 11,
+      "value": -0.335513306982669,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 6,
+      "value": -0.8458904671545197,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 11,
+      "value": 10.843846935333707,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 7,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        7,
+        8,
+        9,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "6": "This is a classic dilemma that requires considering multiple factors, including John's\nresponsibility towards himself (studying for the exam) and his responsibility towards his friend.\nHere's a balanced approach:\n\n**Recommendation:** John should prioritize his study schedule while also dedicating some time to\ncare for his friend.\n\n**Reasoning:**\n\n1. **Academic responsibility:** The big exam is an immediate priority that requires attention and\nfocus. Failing to prepare adequately can have significant consequences, including decreased academic\nperformance and future opportunities.\n2. **Friendship value:** However, neglecting a friend in need of emotional support can also have\nlasting effects on the relationship. As John's friend mentioned \"personal crisis\", it likely affects\nnot only their well-being but potentially has emotional implications for John too (e.g., empathy,\nfriendship bond). Caring for his friend is not just an obligation; it's also important to John's\nemotional health and personal growth.\n3. **Balance and flexibility:** Rather than choosing between study or friend time, John can aim for\nbalance and flexibility in managing both responsibilities. This might involve rearranging schedules,\ndelegating tasks to others if possible, or seeking alternative resources (e.g., a tutor or emotional\nsupport group) for either himself or his friend.\n4. **Boundary setting:** If prioritizing one over the other creates excessive pressure or negatively\nimpacts either aspect of John's life, he should set clear boundaries and communicate them clearly\nwith his friend. This means being honest about his limitations while still showing empathy and\nconcern.\n\n**Actionable suggestions:**\n\n1. Allocate dedicated time for study (e.g., 6 hours/day) while allowing smaller blocks of flexible\nschedule time to accommodate caring for his friend.\n2. Discuss his needs and plans with the friend to ensure he's not expected to compromise his own\nsituation.\n3. Consider external support networks or services that can help manage stress and provide emotional\nsupport.\n4. Encourage open communication about feelings, worries, and concerns between John and his friend.\n\nUltimately, finding a suitable balance will allow John to attend to both responsibilities while\nminimizing the negative impacts on himself and his friend.",
+    "7": "What a difficult and compassionate conundrum!\n\nWhile it's essential for John to show empathy and support for his friend, I would recommend that he\nprioritizes his study schedule for the exam coming up. Here's why:\n\n1. **Immediate consequences**: Failing to prepare adequately for an exam can have significant\nlong-term consequences on John's academic future. A missed opportunity or poor performance could\nimpact his grades, university acceptances, and even future career prospects.\n2. **Time-sensitive urgency**: An exam is a fixed event with a set date, whereas emotional support\nfor his friend can be provided at any time, including after the exam is completed.\n3. **Potential for long-term harm**: While neglecting to care for his friend in this moment might\ncause short-term distress, it's unlikely to have long-lasting negative consequences on their\nrelationship or well-being.\n4. **Scheduling support around study commitments**: John can still show kindness and empathy towards\nhis friend while managing his time effectively. For example, he could offer support over the phone,\nmeet up during breaks between studying, or provide emotional care after completing his exam.\n\nTo make this decision easier, John should:\n\n* Communicate openly with his friend about his study schedule and limitations.\n* Set aside specific times for caring for his friend, rather than sacrificing his own needs.\n* Use available resources to support both his studies and his friend's well-being (e.g., campus\ncounseling services).\n\nBy prioritizing his study schedule, John will ensure that he meets his academic responsibilities\nwhile still showing empathy and understanding towards his friend during this challenging time.",
+    "11": "What a difficult and relatable scenario!\n\nIn this situation, I would recommend that John **devote some time to caring for his friend**, but\nalso encourage him to prioritize his own study schedule as much as possible.\n\nHere's why:\n\n1. **Supporting a friend in need is essential**: While it's great that John wants to help his friend\nduring their crisis, supporting them right now might be crucial for both of their emotional\nwell-being. Being present and available can make a significant difference in someone's life.\n2. **Impact on mental health**: If John focuses solely on his studies, he might end up feeling burnt\nout, stressed, or anxious about not being able to help his friend. This could have long-term\nconsequences for his mental health and potentially impact his academic performance too.\n3. **Short-term vs. long-term goals**: While passing an exam is important, it's a relatively\nshort-term goal that can be prepared for within the given timeframe (if John manages his time\nefficiently). Supporting his friend in this moment of crisis, on the other hand, is a more critical\nand immediate need.\n\nThat being said, I'm not suggesting John drop everything and abandon his studies. Here are some\nsuggestions:\n\n* **Allocate a set time for studying**: Set aside dedicated blocks of time each day or week to focus\non reviewing materials, completing assignments, and preparing for the exam.\n* **Communicate with your friend**: Explain the importance of balancing responsibilities and ask if\nthere's anything specific you can do to help within your current schedule.\n* **Seek support from others (if needed)**: If your friend requires ongoing emotional support or is\nexperiencing a prolonged crisis, consider seeking help from family members, other friends, or\nprofessional counselors. This way, John can focus on his own needs while also supporting his friend.\n* **Be honest and set boundaries**: Make sure you communicate clearly with both your friend and\nyourself about the balance between study time and emotional support.\n\nUltimately, managing relationships and responsibilities effectively is a skill that requires\nflexibility and adaptability. By being proactive and considerate of both their academic goals and\npersonal needs, John can make the most of this situation while maintaining strong friendships."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}
