@@ -524,5 +524,94 @@ project would use one consistent notion of "direction with magnitude".
 **Suggested shape:** keep the categorical label *and* emit `lean`; report the
 categories descriptively, run the divergence analysis on `lean`.
 
+## 13. DPO four-policy extension — ABANDONED 21 Aug 2026
+
+Considered, prototyped, and dropped in favour of judge distillation (item 16).
+`DPO_EXTENSION.md`, `build_dpo_pairs.py` and `dpo_pairs/` have been deleted.
+The 400/100 dilemma split survives as `data/dilemma_split.json` (seed 42,
+write-once) and is now the distillation train/validation split.
+
+**Why dropped:** the effect-size ceiling is too small for the available
+power. See item 15 for the measured numbers.
+
+**Two results from that work worth keeping:**
+
+- **Sigma robustness check on the main study.** Replacing the per-judge
+  sigmas with a common sigma flips zero EC and Nash orderings and leaves the
+  winner sets unchanged on all 500 dilemmas (Maximin: 13/500). So the
+  published divergence results do not depend on the normalisation constants.
+  **Still worth a sentence in MUA.tex.**
+- **Pair-construction lessons**, if this is ever revived: split by dilemma;
+  sample pairs at random rather than top-N (top-N collapses `chosen` onto one
+  response and biases toward the extremes where all rules agree); impose no
+  minimum score gap, since dominance pairs (weakly better on all three
+  judges, the most reliable labels) sit at *small* EC gaps; instead drop pairs
+  whose ordering flips or ties under a common sigma (EC ~8%, Maximin ~4%,
+  no-op for Nash and Baseline).
+
+## 14. Scoring scale is coarse — DECIDED: keep 0–10, disclose it
+
+Revisited whether to re-score all 500 dilemmas on 0–100 to break the high tie
+rates. **Decision: no.** Keep the 0–10 scores and report the coarseness as a
+limitation (now written into `MUA.tex`, §Ties and §Future Work).
+
+**Evidence for how coarse it is** (all 8,000 responses, computed from `scores/*.json`):
+
+- A judge uses only **3.6 distinct utilitarian values** among the sixteen
+  candidates for a dilemma on average (3.6 deont, 4.0 ubuntu).
+- The sixteen responses realise a mean of **9.4 distinct score triples**, so
+  **60% of responses share their exact (U, D, Ub) triple** with another
+  candidate in the same dilemma. Those ties survive z-scoring, which is affine.
+- Top-heavy distributions (the item-7 ceiling effect, still present): the
+  deontological judge puts **58% of scores in 8–10**; utilitarian and ubuntu
+  ~41% each.
+- Consequence: baseline ties on 383/500 (77%), 26 of them across all sixteen.
+
+**Why 0–100 is not the obvious fix:**
+
+1. LLM judges cluster on round numbers, so a 0–100 rubric yields nowhere near
+   100 usable levels. It splits rounding ties, not near-paraphrase ties.
+2. The anchors were **axiom-validated at 0–10**. New anchors = a new
+   instrument, so the axiom suite would have to be re-run (and possibly
+   re-tuned) before any number is comparable to the current results.
+3. Cost is not the blocker (~$3–4), but 24,000 calls against a 10k/day request
+   cap is ~3 days, plus rewriting Results.
+4. The set-valued winner convention already stops the coarseness from inflating
+   the headline: disagreement is only counted where no tie-break could remove
+   it, so the 56 action-level disagreements are conservative.
+
+If it is ever done properly, revalidate on the axioms at the new scale and
+report both sets of figures.
+
+## 15. Two extension pilots run (21 Aug 2026) — distillation favoured over DPO
+
+**DPO effect-size ceiling (Test A).** Joined recommendation labels onto the
+four (now deleted) `dpo_pairs/` files and measured what each taught about actions:
+all four rules push the *same* way (net toward `TO_DO`: EC +5.5pp, Maximin
++4.0, Nash +5.4, Baseline +11.6; net away from `REFUSAL`: −5.9 to −8.4pp).
+Largest between-rule difference is Baseline-vs-Maximin ≈ 7.6pp, EC-vs-Nash
+0.1pp — an **upper bound** on trained action divergence, before DPO
+attenuation. Power simulation: ~0.85 for an 8pp shift at 179 held-out
+dilemmas × k=8; ~0.5 for 5pp. So the DPO headline question (Q2) is at high
+risk of a marginal/ambiguous result. Note the refusal-push differences are
+tiny and point *against* the "Maximin refuses more" hypothesis (Q3) at the
+training-signal level. Also found: filter yields 579 dilemmas total, so 79
+unused ones (all with named actions, mean balance 0.78 vs 0.94) are available
+to enlarge the held-out set for free — policies generate their own responses,
+so held-out dilemmas need no pre-generated candidates.
+
+**Distillation pilot (Test B).** Bag-of-words ridge (hashed, 4096 dims,
+5-fold CV split by dilemma) predicting judge scores: Pearson 0.68 / 0.53 /
+0.64 (U / D / Ub). On the axiom cells with directional predictions: 73% /
+74% / 44% (chance 50%). Read: big headroom for a real student model, the
+certification test can fail a bad copy (Ubuntu), and the floor itself is a
+side-result (half of judge variance is lexical).
+
+**Decision: distillation.** Written up in `DISTILLATION_EXTENSION.md`; DPO
+dropped and its files deleted (item 13). If DPO is ever revived, rebuild the
+pairs from `scores/normalized/` and `responses/`, enlarge the held-out set to
+~179 using the 79 spare dilemmas, and pre-register Baseline-vs-uncertainty
+(not EC-vs-Nash) as the primary contrast.
+
 ## (Add further notes below as we go)
 

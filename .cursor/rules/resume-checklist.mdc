@@ -1,0 +1,52 @@
+---
+description: Open TODOs to raise when the user resumes work on the dissertation
+alwaysApply: true
+---
+
+# Resume checklist
+
+**When the user returns to this project, remind them of these two items before
+starting new work.** They asked to be reminded on 19 Aug 2026 while taking a
+break.
+
+## 1. Proof-read the write-up so far
+
+`MUA.tex` has grown substantially and has not been read end to end. Sections
+needing a careful pass in particular:
+
+- **Divergence Measurement** (`sec:divergence`) and **Results**
+  (`sec:results`) — newly written, never proof-read.
+- **Known rough spots elsewhere:** a stray `\textbf{RESUME}` marker in
+  Section~`sec:zscore`; "Due to Nash's is scale-invariance" (broken grammar,
+  same section); the all-caps note in `\subsection{Dilemma Dataset}`; the two
+  `(?)` markers in the Introduction.
+- **Still empty / stubbed:** Research Question, Contributions, Related Work
+  subsections (2.1 is bullets awaiting prose; RL/LLMs, Ubuntu Ethics, Moral
+  Dilemma Datasets are empty), Methodology Overview, Reward Models.
+- There is **no Hypotheses section**. If one is added it belongs before
+  Results, and should match what the results actually test rather than
+  predicting large divergence.
+
+## 2. The chosen extension is judge distillation, not DPO
+
+Settled 21 Aug 2026. The four-policies DPO plan was prototyped and
+**abandoned** for insufficient effect size; its code and data files were
+deleted. Do not propose reviving it unless the user asks. Background is in
+`NOTES.md` items 13 and 15.
+
+The live plan is **certified open judges**: distil the three `gpt-4o-mini`
+framework judges into small open models, then re-run the axiom harness on the
+copies. Read `DISTILLATION_EXTENSION.md` before writing any training code.
+Points that must survive into the write-up:
+
+- Split **by dilemma, not by response** (`data/dilemma_split.json`, 400/100,
+  seed 42). The 16 responses to one dilemma are correlated, so splitting by
+  response leaks and inflates every fidelity number.
+- Correlation alone is not sufficient evidence of a faithful copy. The
+  **axiom harness is the real test**: the pilot's Ubuntu model reached a
+  respectable correlation while scoring at chance on the axioms.
+- Report axiom pass rates for the teacher too, or there is no ceiling to
+  compare the students against.
+- Mind the OpenAI **10,000 requests/day** cap for any teacher re-scoring.
+
+Estimated 5–8 working days.

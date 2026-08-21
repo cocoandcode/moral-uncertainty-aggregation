@@ -52,14 +52,9 @@
 
 As AI systems become increasingly capable and influential, the problem of ensuring they behave in accordance with human values grows correspondingly urgent. The alignment problem \cite{christian2020} is the task of ensuring that an AI system pursues the goals and honours the values its developers and users intend, rather than proxies that merely correlate with them. In practice, the dominant approach to aligning large language models is Reinforcement Learning from Human Feedback (RLHF) \cite{ouyang2022}, in which human raters compare model outputs and their preferences are distilled into a reward signal that guides fine-tuning.
 
-These raters often disagree with one another, particularly in normatively ambiguous moral dilemmas, where there is no universal consensus on right or wrong. Crucially, these disagreements do not stem merely from personal idiosyncrasy or noise; they reflect principled differences between competing ethical frameworks. A utilitarian, a Kantian, and an Ubuntu thinker may each reach a different conclusion while reasoning coherently from within their own tradition. In RLHF, this disagreement is not preserved, however. 
+These raters often disagree with one another, particularly in normatively ambiguous moral dilemmas, where there is no universal consensus on right or wrong. Crucially, these disagreements do not stem merely from personal idiosyncrasy or noise; they reflect principled differences between competing ethical frameworks. A utilitarian, a Kantian, and an Ubuntu thinker may each reach a different conclusion while reasoning coherently from within their own tradition. In RLHF, this disagreement is not preserved, however. A single reward model is trained to fit the aggregate of many annotators' conflicting preferences, converging on a signal that reflects the pool's majority tendency and offers no explicit account of how competing moral views ought to be combined \cite{casper2023}.
 
-
-(?)
-A single reward model is trained to fit the aggregate of many annotators' conflicting preferences, converging on a signal that reflects the pool's majority tendency and offers no explicit account of how competing moral views ought to be combined \cite{casper2023}.
-(?)
-
-This paper investigates whether the choice of moral aggregation method produces measurably different LLM behaviour when applied to normatively ambiguous dilemmas. Drawing on MacAskill, Bykvist, and Ord's formal framework for decision-making under moral uncertainty \cite{macaskill2020}, we implement three aggregation schemes (Expected Choiceworthiness, Maximin, and Nash Moral Parliament) as competing response-selection criteria for a language model. Candidate responses are scored by three ethical reward models, each operationalising a distinct moral tradition: utilitarian, deontological, and Ubuntu. We test whether different aggregation methods select systematically different responses, and if so, where and why the methods diverge. This question has growing practical importance. As users increasingly turn to language models for guidance on sensitive personal and ethical decisions, the implicit moral character of these systems is no longer a theoretical concern but a design choice with real consequences.
+\textbf{This paper investigates whether the choice of moral aggregation method produces measurably different LLM behaviour when applied to normatively ambiguous dilemmas.} Drawing on MacAskill, Bykvist, and Ord's formal framework for decision-making under moral uncertainty \cite{macaskill2020}, we implement three aggregation schemes (Expected Choiceworthiness, Maximin, and Nash Moral Parliament) as competing response-selection criteria for a language model. Candidate responses are scored by three ethical reward models, each operationalising a distinct moral tradition: utilitarian, deontological, and Ubuntu. We test whether different aggregation methods select systematically different responses, and if so, where and why the methods diverge. This question has growing practical importance. As users increasingly turn to language models for guidance on sensitive personal and ethical decisions, the implicit moral character of these systems is no longer a theoretical concern but a design choice with real consequences.
 
 \subsection{Research Question}
 
@@ -713,11 +708,10 @@ and $9$ would end up reported as decisively preferring one of them. Global
 $\mu_j$ and $\sigma_j$ measure each gap against how much that judge varies
 across the whole corpus, so genuine near-indifference stays small.
 
-\textbf{RESUME}
 Expected Choiceworthiness and Maximin can use these $z$-scores directly.
-Nash cannot, because products of negative values are not meaningful as
-choiceworthiness. Nash needs non-negative gains above a disagreement point.
-That point is fixed a priori at a raw score of $0$ on the $0$--$10$ rubric
+Nash cannot however, as products of negative values are not meaningful as
+choiceworthiness. Nash needs non-negative gains above a "disagreement point", that here being
+fixed a priori at a raw score of $0$ on the $0$--$10$ rubric
 (absence of moral worth on the scale), not at the worst score observed in the
 sample. Subtracting the $z$-score of raw $0$ from each response's $z$-score
 simplifies to a surplus of
@@ -730,48 +724,441 @@ change which response is selected relative to a raw product of the $X_i$; the
 substantive choice is the disagreement point at raw $0$.
 
 \subsection{Divergence Measurement}
+\label{sec:divergence}
+\textbf{RESUME AT PROOF READING EVERYTHING AFTER THIS POINT}
 
-Divergence is measured at two levels: whether two rules select different
-responses, and whether the responses they select carry different core
-recommendations. The latter requires each candidate to be labelled with the
-action it endorses, relative to the two canonical actions recorded for the
-dilemma: \texttt{TO\_DO}, \texttt{NOT\_TO\_DO}, \texttt{REFUSAL} (declines to
-engage with the dilemma at all), or \texttt{OTHER} (a distinct third course, or
-no discernible lean).
+The experiment asks whether the four rules of Section~\ref{sec:rules} select
+measurably different outputs. Divergence, however, is not a single quantity.
+Two rules may select different response texts that nonetheless direct the
+reader toward the same course of action, or they may select texts whose core
+recommendations are genuinely opposed. The former constitutes disagreement
+over justification and rhetoric; the latter, disagreement over what ought to
+be done. Both are of interest. The first reveals how the choice of aggregation
+rule shapes the reasoning a system presents; the second is the level at which
+the research question is posed. The two are therefore measured and reported
+separately.
 
-The threshold for the two action labels is deliberately permissive. A response
-that recommends an action tentatively, conditionally, or in a softened or
-gradual form is still recorded as endorsing that action, because the question
-being asked is which way the response would move a reader, not how forcefully it
-argues. An earlier revision of the labelling prompt reserved the action labels
-for confident endorsements and routed cautious answers into a residual
-``hedge'' category, which conflated hesitancy with refusal and split
-near-identical responses across categories; \texttt{REFUSAL} is now restricted
-to responses that give no recommendation of any kind. Each label is stored
-alongside the phrase in the response that carries the recommendation, so the
-labelling can be audited without re-reading the full corpus.
+\subsubsection{Recommendation labelling}
+\label{sec:labelling}
 
-These labels are deliberately assigned \emph{post hoc} by a separate model rather than
-emitted by the generator alongside each response. A
-self-reported label is the generator's claim about its own intent rather than
-an independent reading of the text, and requiring the generator to commit to a
-label while writing risks the label shaping the response toward it. Annotating
-after the fact with a different model keeps the annotation independent of
+The source dataset records, for every dilemma, a pair of canonical actions: a
+\texttt{TO\_DO} action and a \texttt{NOT\_TO\_DO} action. Each of the sixteen
+candidate responses is assigned one of four labels according to the action it
+endorses:
+
+\begin{itemize}[leftmargin=*]
+  \item \texttt{TO\_DO}: the response points the reader toward the named
+  to-do action.
+  \item \texttt{NOT\_TO\_DO}: it points toward the named not-to-do action.
+  \item \texttt{REFUSAL}: it declines to engage with the dilemma at all
+  (typically a short ``I cannot advise on this'' disclaimer, with no
+  recommendation attached).
+  \item \texttt{OTHER}: a distinct third course, or no discernible lean
+  toward either named action.
+\end{itemize}
+
+The threshold for the two action labels is deliberately permissive. A
+response that recommends an action tentatively, conditionally, or in a
+softened or gradual form is still recorded as endorsing that action, since
+the question being asked is which way the text would move a reader, not how
+forcefully it argues. An earlier revision of the labelling prompt reserved
+the action labels for confident endorsements and routed cautious answers into
+a residual ``hedge'' category; this conflated hesitancy with refusal and
+split near-identical responses across categories. \texttt{REFUSAL} is
+accordingly restricted to responses that offer no recommendation of any kind.
+
+Labels are assigned \emph{post hoc} by a separate model
+(\texttt{gpt-4o-mini}) rather than emitted by the generator alongside each
+response. A self-reported label is the generator's claim about its own intent
+rather than an independent reading of the text, and requiring the generator
+to commit to a label while writing risks the label shaping the prose it is
+meant to describe. Annotating after the fact keeps the labels independent of
 generation, at the cost of introducing a second source of error that must
-itself be validated. The residual weakness lies not in this ordering but in the
-\texttt{OTHER} category, which is a residual bucket: two responses may share the
-label while endorsing quite different third courses, so a shared \texttt{OTHER}
-label is weaker evidence of agreement than a shared \texttt{TO\_DO} or
-\texttt{NOT\_TO\_DO} label. This is treated explicitly below rather than assumed
-away.
+itself be examined. To make that examination tractable, each label is stored
+together with the short phrase in the response that carries the
+recommendation, so that the labelling can be audited without re-reading the
+full corpus.
 
-\subsection{Formal Property Comparison}
+Two residual weaknesses should be acknowledged at the outset. First,
+\texttt{OTHER} is a residual category: two responses may share the label
+while endorsing quite different third courses, so a shared \texttt{OTHER} is
+weaker evidence of agreement than a shared \texttt{TO\_DO} or
+\texttt{NOT\_TO\_DO}. Pot labelling, this category proves small, with only 63 responses 
+labelled as \texttt{OTHER}.
+(Section~\ref{sec:results-labels}). Second, the labels have not been
+validated against human ground truth. Automatic checks of internal
+consistency are reported in Section~\ref{sec:results-labels}, and a
+hand-labelled gold sample is left to future work.
 
-\section{H}
+\subsubsection{Set-valued winners}
+\label{sec:ties}
+
+\textbf{RESUME READING HERE}
+On a $0$--$10$ integer rubric, distinct responses frequently receive
+identical score patterns, and because global $z$-scoring is an affine
+transform of each judge's raw scores, such ties survive normalisation intact.
+Several candidates may therefore share the top value under a given rule.
+Rather than breaking these ties arbitrarily, each rule's selection on a
+dilemma is treated as a \emph{winner set}: the set of all candidates whose
+value under that rule lies within $10^{-9}$ of the maximum (a tolerance that
+serves only to absorb floating-point noise and is orders of magnitude smaller
+than any genuine score gap in the data). \textbf{RESUME READING HERE} The alternative, a random tie-break,
+would have made the results depend on an arbitrary seed. Under
+the set-valued convention, every reported disagreement is one that no choice
+of tie-break could remove.
+
+\subsubsection{Agreement at two levels}
+\label{sec:two-levels}
+
+Let $S_A$ and $S_B$ denote the winner sets of rules $A$ and $B$ on a given
+dilemma, and let $\ell(\cdot)$ denote the recommendation label of a response.
+
+\paragraph{Response level.}
+Rules $A$ and $B$ \emph{can agree} on a response when their winner sets
+overlap, $S_A \cap S_B \neq \emptyset$, and \emph{diverge} when the sets are
+disjoint. In the disjoint case no tie-breaking convention, however
+favourable, could produce a common winner, so the disjoint count is a lower
+bound on disagreement. A corresponding upper bound, used only as a
+robustness check, is the probability that two uniform draws from $S_A$ and
+$S_B$ select different responses,
+$1 - |S_A \cap S_B| / (|S_A| \cdot |S_B|)$.
+
+\paragraph{Recommendation level.}
+Rules $A$ and $B$ can agree on an \emph{action} when some label appears in
+both winner sets,
+$\{\ell(r) : r \in S_A\} \cap \{\ell(r) : r \in S_B\} \neq \emptyset$, and
+diverge at this level when the two label sets share nothing, as when one
+winner set is entirely \texttt{TO\_DO} and the other entirely
+\texttt{NOT\_TO\_DO}. This is the criterion that answers whether the rules
+would direct a user toward different courses of action.
+
+Both definitions extend from pairs to all four rules simultaneously: the
+rules are unanimous at a given level when the intersection over all four
+winner sets (respectively, label sets) is non-empty. Unanimity at the
+response level entails unanimity at the recommendation level, since a shared
+response carries a shared label; the converse does not hold, and the gap
+between the two is precisely the quantity of interest in
+Section~\ref{sec:results-two-levels}.
+
+Two kinds of nominal agreement are not treated as agreement on a moral
+position. Where the only shared label is \texttt{REFUSAL}, the rules agree
+merely that the generator declined to answer, not that any particular action
+is right; where the only shared label is \texttt{OTHER}, they agree only
+that both winners depart from the binary, which need not mean they depart in
+the same direction. Both cases are therefore counted separately in the
+results.
 
 \section{Results}
+\label{sec:results}
+
+The pipeline is applied to all $500$ dilemmas: sixteen candidate responses
+per dilemma, scored by the three judges, normalised as in
+Section~\ref{sec:zscore}, and ranked by the four rules of
+Table~\ref{tab:rules}. The results are presented in four stages: the
+composition of the labelled pool, the prevalence of ties, agreement at the
+response level, and agreement at the recommendation level.
+
+\subsection{The labelled pool}
+\label{sec:results-labels}
+
+Of the $8{,}000$ candidate responses, $3{,}195$ are labelled
+\texttt{TO\_DO}, $4{,}074$ \texttt{NOT\_TO\_DO}, $668$ \texttt{REFUSAL}, and
+$63$ \texttt{OTHER}. Two features of this distribution bear on everything
+that follows.
+
+First, refusals form a substantial and structurally distinct part of the
+pool. The median refusal runs to $25$ words against $308$ for all other
+responses, and all but one of the $668$ open with an explicit decline (``I
+can't\ldots'', ``I'm unable to\ldots''). This is the generator-side safety
+behaviour noted in the response-generation stage: on a subset of sensitive
+dilemmas the model declines to recommend any action, and the refusal then
+enters the pool and is scored like any other candidate. Notably, the
+aggregation rules do sometimes select such responses (refusals occupy
+forty-six winning slots across the four rules), so a safety refusal can
+outrank every substantive recommendation available for a dilemma.
+
+Second, \texttt{OTHER} is rare. At $63$ of $8{,}000$ responses ($0.8\%$) it
+functions as a genuine residual rather than a repository for cautious
+answers, which limits the exposure identified in
+Section~\ref{sec:labelling}: only a handful of pairwise agreements rest
+solely on both winners carrying that label.
+
+Because the labels were produced by a second language model rather than by
+hand, two automatic checks were run on their internal consistency. Of the
+$7{,}659$ labels that carry a supporting quote, $99.1\%$ of those quotes
+appear verbatim in the response from which they were drawn once punctuation
+and markdown are normalised, with the remainder being light paraphrases. This
+is evidence that the labeller reads the text rather than inventing support.
+Responses that open with a refusal phrase yet received an action label
+prove, on inspection, to follow the ``disclaimer, then advice'' pattern that
+the prompt instructs the labeller to judge on the advice. These checks
+establish internal consistency, not accuracy: a hand-labelled sample remains
+necessary before the labels can be treated as ground truth, and
+recommendation-level figures should be read with that caveat in place.
+
+\subsection{Ties}
+\label{sec:results-ties}
+
+Ties at the top are pervasive, and markedly uneven across methods
+(Table~\ref{tab:ties}). The utilitarian baseline is indifferent among two or
+more candidates on $383$ of $500$ dilemmas ($77\%$), with a mean winner set
+of seven responses when it ties, and in $26$ dilemmas its winner set is the
+entire pool of sixteen. Expected Choiceworthiness and Nash tie on roughly a
+third of dilemmas, Maximin on just over half.
+
+This pattern reflects the scoring scale more than it reflects moral
+uncertainty. The judges assign integers on a $0$--$10$ rubric, many of the
+sixteen candidates are close paraphrases of one another, and two responses
+with identical raw score triples remain tied after $z$-scoring.
+
+The corpus shows how little of the available range the judges in fact use.
+Across the sixteen candidates for a dilemma, a judge draws on only $3.6$
+distinct utilitarian values on average ($3.6$ deontological, $4.0$ Ubuntu),
+and the sixteen responses realise a mean of $9.4$ distinct score triples
+between them, so $60\%$ of all responses share their exact triple with at
+least one competitor for the same dilemma. The distributions are also
+top-heavy: the deontological judge places $58\%$ of its scores in the
+$8$--$10$ band, the utilitarian and Ubuntu judges roughly $41\%$ each,
+which is the ceiling effect anticipated during judge design. Coarseness and
+compression together, rather than genuine indifference between morally
+distinct options, account for most of Table~\ref{tab:ties}. The baseline
+consults only the utilitarian coordinate and therefore inherits this
+coarseness directly, whereas the three aggregation rules combine three
+coordinates and so resolve some ties that the baseline cannot. The practical
+consequence is the convention already adopted in Section~\ref{sec:ties}:
+disagreement is computed on winner sets, since a large baseline tie-set that
+happens not to contain the EC winner constitutes response-level divergence
+even when every text in both sets recommends the same action. It is exactly
+this possibility that motivates the two-level analysis.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{How often each rule is indifferent among two or more top-scoring
+responses ($n = 500$ dilemmas). ``Complete'' means the winner set is all
+sixteen candidates.}
+\label{tab:ties}
+\vspace{2pt}
+\begin{tabular}{@{}l r r r r@{}}
+\toprule
+\textbf{Rule} & \textbf{Ties} & \textbf{Rate} & \textbf{Mean size} & \textbf{Complete} \\
+\midrule
+EC        & 166 & $33\%$ & $3.3$ & 0 \\
+Maximin   & 280 & $56\%$ & $4.9$ & 6 \\
+Nash      & 180 & $36\%$ & $3.3$ & 0 \\
+Baseline  & 383 & $77\%$ & $7.1$ & 26 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Two levels of agreement}
+\label{sec:results-two-levels}
+
+Table~\ref{tab:two-levels} presents the central result. On $339$ of $500$
+dilemmas ($68\%$), some single response lies in every rule's winner set, so
+the four rules can agree on both the text and the action. On a further $105$
+($21\%$) no common text exists, yet every winner set still contains the same
+core recommendation. Only on the remaining $56$ ($11\%$) do the rules
+diverge on the action itself.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Agreement of all four rules, at two levels ($n = 500$). Sharing
+a response implies sharing its label, so the missing cell is empty by
+construction.}
+\label{tab:two-levels}
+\vspace{2pt}
+\begin{tabular}{@{}l r r@{}}
+\toprule
+ & \textbf{Count} & \textbf{Share} \\
+\midrule
+Same response and same recommendation     & 339 & $67.8\%$ \\
+Different response, same recommendation   & 105 & $21.0\%$ \\
+Different recommendation                  & 56  & $11.2\%$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The figure of $56$ is the one that answers the research question as it
+concerns \emph{what to do}, and it is a lower bound: a dilemma is counted as
+action-level divergence only when the four label sets are entirely disjoint,
+so any overlap whatever is treated as possible agreement. Of those $56$
+dilemmas, $44$ present a direct \texttt{TO\_DO} versus \texttt{NOT\_TO\_DO}
+split, five involve a refusal, and the remainder involve \texttt{OTHER}.
+
+The $105$ dilemmas in the middle row are those on which the rules prefer
+different texts that point the same way. In a minority of these the
+difference amounts to a genuine difference of justification, as when one
+winner counsels ``confess, but carefully'' where another counsels simply
+telling the truth, both labelled \texttt{TO\_DO}. In rather more, the winner sets
+are non-overlapping subsets of near-paraphrases, typically because the
+baseline is indifferent among a large collection of similar answers from
+which the aggregation rules select a different subset. Twenty-four of the
+$105$ are unique-winner splits, and these constitute the strongest evidence
+that the choice of aggregation rule can change which justification is
+presented even when the action is unchanged. The raw response-level figure
+of $161/500$ ($32\%$) therefore overstates practical disagreement
+considerably: most of it is rhetorical, and some of the rhetoric is
+paraphrase.
+
+Of the $444$ recommendation-level agreements, $221$ fall on
+\texttt{NOT\_TO\_DO}, $212$ on \texttt{TO\_DO}, nine on \texttt{REFUSAL},
+and two on \texttt{OTHER}. The nine refusal-agreements record only that the
+generator declined to answer; they are retained in the $444$ but excluded
+from any claim that the rules share a moral position.
+
+\subsection{The structure of the disagreement}
+\label{sec:results-pairwise}
+
+That the four rules disagree on a dilemma is a coarse summary, since it does
+not identify \emph{which} rules disagree. Table~\ref{tab:pairwise} reports
+every pair at both levels, and the pattern is consistent. Expected
+Choiceworthiness and Nash almost never select different actions ($4$ of
+$500$ dilemmas, $0.8\%$); Maximin departs from either more often, though
+still in the low single digits at the recommendation level; and nearly all
+of the action-level disagreement lies between the three moral-uncertainty
+rules on one side and the utilitarian baseline on the other. Even that
+contrast is modest, at $38$ to $44$ dilemmas per pair, or roughly $8\%$.
+Consistent with this, of the $56$ dilemmas on which the four rules cannot
+share a recommendation, $31$ are cases in which the three uncertainty rules
+agree on an action and the baseline stands apart; the remaining $25$ are
+splits among the uncertainty rules themselves.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Pairwise divergence ($n = 500$). Response-level: winner sets
+are disjoint. Recommendation-level: label sets are disjoint.}
+\label{tab:pairwise}
+\vspace{2pt}
+\begin{tabular}{@{}l r r@{}}
+\toprule
+\textbf{Pair} & \textbf{Response} & \textbf{Recommendation} \\
+\midrule
+EC vs Nash            & $7.4\%$  & $0.8\%$ \\
+Maximin vs Nash       & $11.0\%$ & $3.8\%$ \\
+EC vs Maximin         & $20.6\%$ & $5.0\%$ \\
+EC vs Baseline        & $16.6\%$ & $7.8\%$ \\
+Nash vs Baseline      & $21.4\%$ & $7.6\%$ \\
+Maximin vs Baseline   & $26.6\%$ & $8.8\%$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The forced-choice figures are considerably larger, around $70$--$80\%$
+against the baseline and $29\%$ even for EC against Nash, because a
+large tie-set makes a uniform draw unlikely to land on the one shared
+candidate. They describe what would happen were ties broken uniformly at
+random, and they are reported only as an upper bound: that randomness is not
+part of any of the four rules, and treating it as a headline would attribute
+to the rules a disagreement that belongs to the tie-break.
+
+\subsection{Interpretation}
+\label{sec:results-read}
+
+The motivating premise of this study is that the choice of aggregation
+method changes what a system recommends. On the quantity that premise
+concerns --- the recommended action --- the observed effect is modest. Once
+justification is set aside, Expected Choiceworthiness and Nash are close to
+interchangeable, and replacing a utilitarian default with any of the three
+uncertainty rules changes the selected action in fewer than one dilemma in
+ten, on a pool already filtered toward moral contestedness.
+
+This remains an informative result, since it locates \emph{where} the
+machinery matters: rarely between one uncertainty rule and another,
+occasionally against a single-tradition default, and more often as a change
+of justification than as a change of action. Three features of the pipeline
+help to explain why the action-level figure is as small as it is, and they
+belong alongside the result rather than in a footnote.
+
+First, the candidate pool is homogeneous. Responses are sampled from an
+$8$B-parameter model under a single neutral prompt, so diversity arises from
+temperature alone, and many of the sixteen candidates are close restatements
+of the same side of the dilemma. Where the pool is one-sided the judges have
+little to disagree about, and every aggregation rule is reduced to ranking
+stylistic variants of a single recommendation.
+
+Second, the judges sometimes saturate. On dilemmas where nearly every
+candidate satisfies the relevant duty or relational obligation, the
+deontological and Ubuntu scores cluster near the top of the $0$--$10$ scale;
+Expected Choiceworthiness, Maximin, and Nash then become effectively
+utilitarian-driven, since the utilitarian coordinate is the only one still
+carrying information. Agreement in such cases is an artefact of compressed
+scores rather than evidence that the rules coincide in principle.
+
+Third, the filter that selected the $500$ dilemmas is a keyword proxy for
+framework disagreement, not the judges themselves. Dilemmas were retained
+when their annotated values pointed in different framework directions, which
+is a prediction about where disagreement will arise rather than a guarantee
+that the judges will in fact split. Under the real scoring, part of the pool
+is less contested than the filter suggested.
+
+None of this licenses substituting the larger response-level count for the
+$56$. That count is real, but it answers a different question, namely which
+\emph{text} is preferred, and it is inflated by ties among paraphrases.
+The defensible empirical claim is the narrower one that
+Table~\ref{tab:pairwise} supports: modelling moral uncertainty rarely
+changes the recommended action relative to other uncertainty rules, and
+changes it relative to a utilitarian default in roughly eight dilemmas in a
+hundred.
 
 \section{Future Work}
+
+Four limitations of the present study point to concrete extensions.
+
+The measurement scale is coarse, and the tie rates of
+Section~\ref{sec:results-ties} are its most visible consequence. A judge
+that separates sixteen candidates into fewer than four distinct values
+cannot express fine distinctions between them, so a large share of the
+observed indifference is an artefact of resolution rather than a finding
+about the theories. The obvious remedy, re-scoring the corpus on a wider
+rubric, is less straightforward than it appears. Language-model judges
+cluster on round numbers, so a $0$--$100$ scale would be unlikely to yield
+anything approaching a hundred usable levels, and it would resolve only
+those ties that arise from rounding rather than from genuine similarity
+between near-paraphrases. More importantly, the anchors were validated
+against the axiom suite of Section~\ref{sec:axiom-validation} at their present
+granularity; rewriting them produces a different instrument, whose
+behaviour would have to be re-established before any result could be
+compared with the present one. A defensible version of this extension
+therefore revalidates the judges at the new scale rather than simply
+rescoring, and reports both sets of figures. In the meantime the
+set-valued convention keeps the coarseness from inflating the headline
+result, since disagreement is only recorded where no tie-break could
+remove it.
+
+The recommendation labels require human validation. The automatic checks of
+Section~\ref{sec:results-labels} establish that the labeller is consistent
+with its own prompt and that its evidence quotes are grounded in the text;
+they do not establish that a human annotator would assign the same labels.
+A stratified gold sample of several hundred responses, labelled blind to the
+model's output, would yield per-class precision (most importantly on the
+softened-action boundary, where near-identical phrasings can still receive
+different labels) together with a prevalence-reweighted estimate of
+corpus accuracy. Until such a sample exists, the $56$ action-level
+disagreements are best regarded as the output of an unvalidated classifier
+operating on top of an otherwise fully specified pipeline.
+
+A categorical label also discards degree. ``Gradually distance yourself''
+and ``cut off contact immediately'' may share a \texttt{NOT\_TO\_DO} tag
+while differing sharply in force. A scalar lean on $[-1, +1]$, recorded
+alongside the category, would allow divergence to be graded rather than
+binary, and would prevent two quite different third courses from counting
+as agreement merely because both fall under \texttt{OTHER}. Such a scalar
+should not, however, be folded into the aggregation scores themselves: those
+scores measure how choiceworthy a response is under moral uncertainty, and
+weighting them by how firmly the response is phrased would confound the very
+quantity under investigation.
+
+Finally, the homogeneity of the candidate pool is the binding constraint on
+the experiment. A larger generator, or a generation procedure designed to
+produce genuinely opposed courses of action rather than sixteen variants of
+one side, would give the aggregation rules materially more to discriminate
+between. Were action-level divergence to remain near $11\%$ under such a
+pool, the negative result reported here would be considerably strengthened;
+were it to rise, the present figure would stand revealed as an artefact of
+sampling rather than a fact about the rules.
 
 \begin{thebibliography}{99}
 \footnotesize
