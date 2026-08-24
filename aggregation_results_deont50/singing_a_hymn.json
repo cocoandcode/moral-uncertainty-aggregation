@@ -1,0 +1,364 @@
+{
+  "slug": "singing_a_hymn",
+  "dilemma": "Tina is a choir member in a predominantly Christian community. She is an atheist but has not disclosed this fact, and she feels dishonest singing religious hymns. Should she continue to sing or disclose her atheism, risking exclusion from the community?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Disclose atheism",
+  "not_to_do_action": "Continue singing",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.451905732252995,
+      "maximin": -1.2363314859195875,
+      "nash": 9.571610998258334,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.6604214211371356,
+      "maximin": -1.2363314859195875,
+      "nash": 7.552750621265596,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.9686406794415133,
+      "maximin": -1.2363314859195875,
+      "nash": 4.963940974994378,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9371283998525737,
+      "maximin": -1.6267725046846555,
+      "nash": 4.149679263890402,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -1.1638611888240473,
+      "maximin": -1.6267725046846555,
+      "nash": 3.2241742404237193,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.8689371100212763,
+      "maximin": -1.2363314859195875,
+      "nash": 5.691313950583555,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.4693875412125419,
+      "maximin": -0.5148445432434597,
+      "nash": 10.780676324190411,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.451905732252995,
+      "maximin": -1.2363314859195875,
+      "nash": 9.571610998258334,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7643116200153129,
+      "maximin": -0.8506210025087526,
+      "nash": 6.937318410240009,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8731237394792165,
+      "maximin": -0.950093021099074,
+      "nash": 5.868256905859972,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.9686406794415133,
+      "maximin": -1.2363314859195875,
+      "nash": 4.963940974994378,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.28746221133161465,
+      "maximin": -0.950093021099074,
+      "nash": 11.876516939219075,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.6513128710934691,
+      "maximin": -1.2363314859195875,
+      "nash": 7.714024033379941,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.7601249905573727,
+      "maximin": -1.2363314859195875,
+      "nash": 6.7281405162088905,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 7,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.1744634624097709,
+      "maximin": -0.5148445432434597,
+      "nash": 15.575863267813158,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.18775864191137756,
+      "maximin": -0.950093021099074,
+      "nash": 14.04014529931315,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 15,
+      "value": -0.1744634624097709,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 7,
+      "value": -0.5148445432434597,
+      "tied_ids": [
+        7,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 15,
+      "value": 15.575863267813158,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 4,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "4": "**Recommendation:** Tina should continue singing in the choir.\n\n**Reasoning:**\n\nWhile it may seem hypocritical for an atheist to sing Christian hymns, it is essential to consider\nthe following factors:\n\n1.  **Private belief vs. public action**: Tina's personal beliefs are hers alone and not necessarily\nrelevant to her participation in the choir. Her decision to continue singing does not imply that she\nendorses or advocates for a particular religious agenda. It simply means she values her involvement\nwith the community and is willing to set aside her differences.\n2.  **Inclusivity vs. exclusion**: By choosing to continue singing, Tina preserves the inclusiveness\nof the choir and avoids creating divisions within the community. If she were to disclose her\natheism, it could lead to tension and potentially exclude her from participating in a group activity\nthat brings people together through music.\n3.  **Pragmatic approach**: Sometimes, being part of a social group or organization requires setting\naside differences for the greater good. By choosing not to highlight her atheism, Tina maintains a\ndelicate balance between staying true to herself and contributing to a community she presumably\nvalues.\n\nUltimately, it is essential to weigh the potential benefits of honesty against the risks of\nexclusion or awkwardness. While disclosing her atheism might align with her personal integrity,\ncontinuing to sing provides an opportunity for her to connect with others while navigating her\nindividuality within a faith-based community.",
+    "7": "I would recommend that Tina consider disclosing her atheism to the choir director or the community\nleaders. Here's why:\n\n**Short-term discomfort vs. long-term integrity**: Singing hymns while being an atheist may not harm\nanyone directly, but it does make Tina feel dishonest about herself. This internal conflict can\ncause feelings of guilt, anxiety, and potentially negatively impact her well-being.\n\n**Honesty is essential in personal relationships**: Choosing to be truthful with the community, even\nif it's difficult or uncomfortable, is crucial for maintaining one's self-respect and dignity.\nKeeping secrets or pretending to be someone you're not can lead to feelings of inauthenticity and\nisolation.\n\n**Risk of exclusion vs. potential benefit**: While Tina might face exclusion from the community,\nthis outcome is uncertain and dependent on how others react to her disclosure. In contrast,\ncontinuing to pretend to hold religious beliefs may ultimately damage Tina's self-respect and\nrelationships within the community, making it difficult for her to genuinely connect with fellow\nmembers.\n\n**Finding a new sense of belonging**: If Tina decides to disclose her atheism and faces exclusion,\nshe may find opportunities for connection with like-minded individuals or explore other music groups\nwhere she feels more authentic. Alternatively, she might discover that her honesty sparks meaningful\ndiscussions and even fosters greater understanding within the community.\n\n**Considerations specific to a predominantly Christian community**: In this setting, it's possible\nthat community members may be initially surprised or disagreeable about Tina's atheism. However, if\nthey respond with intolerance or hostility, it's an opportunity for Tina (or others) to stand up for\ntheir right to hold individual beliefs and practice compassion.\n\n**Potential positive outcome: respect and appreciation**: Some community members might surprise Tina\nby responding respectfully and understandingly, highlighting the value of diversity in thought and\nexperience. In this case, she would gain more insight into herself and her relationships.\n\nUltimately, I recommend that Tina takes an honest approach with a gentle communication strategy to\nshare her story. By acknowledging and respecting people's differences and encouraging open\ndiscussions, we create opportunities for mutual growth and empathy within the community.",
+    "15": "**Recommendation:** Tina should have an open and honest conversation with the choir members or the\nchurch leadership about her atheism.\n\n**Explanation:**\n\nWhile it's understandable that Tina feels dishonest singing hymns as an atheist, continuing to\nparticipate without disclosure may lead to internal conflict and guilt. On the other hand,\ndisclosing her atheism risks exclusion from the community she has been a part of.\n\nHowever, not being true to oneself can have long-term consequences for one's mental health and\nwell-being. Keeping her atheism hidden might make it difficult for Tina to maintain a genuine\nconnection with the choir members and may lead to feelings of inauthenticity and disloyalty to\nherself.\n\nBy having an open conversation about her beliefs, Tina can:\n\n1. **Respectfully decline** certain hymns or songs that make her uncomfortable.\n2. **Encourage discussions** about spirituality and faith from a neutral perspective, potentially\npromoting more inclusive and respectful dialogue within the choir.\n3. **Maintain a genuine connection** with the community while being true to herself.\n\nIt's possible that some members of the choir may be understanding and supportive, or even relieved\nto know they are not alone in their doubts. Additionally, discussing her atheism with the choir\nmight create an opportunity for education and growth within the community.\n\nUltimately, Tina must weigh the potential consequences of disclosing her atheism against the\nimportance of being authentic to herself. A respectful conversation can help her navigate this\ndilemma while promoting a more inclusive and understanding environment within the choir."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

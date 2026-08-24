@@ -1,0 +1,371 @@
+{
+  "slug": "not_providing_for_your_parents",
+  "dilemma": "John's elderly parents can no longer provide for themselves financially. John has a comfortable income but also has his own family and children's education to fund. Should he prioritize his parents' needs or his children's future?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Prioritize Parents",
+  "not_to_do_action": "Not Prioritize Parents",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.663697369704664,
+      "maximin": -1.2363314859195875,
+      "nash": 7.0486033776386146,
+      "baseline": -0.5148445432434597,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8448874084578051,
+      "maximin": -1.2494352801897008,
+      "nash": 4.216246328321965,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8631045085451381,
+      "maximin": -1.2363314859195875,
+      "nash": 5.0435700156270595,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.1601219020768792,
+      "maximin": -1.6267725046846555,
+      "nash": 2.64013355461736,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7542923890812345,
+      "maximin": -1.2363314859195875,
+      "nash": 5.782611142090727,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9424976631490721,
+      "maximin": -1.6267725046846555,
+      "nash": 3.3979886471821454,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.4460731307768569,
+      "maximin": -1.2363314859195875,
+      "nash": 9.071917673943966,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8631045085451381,
+      "maximin": -1.2363314859195875,
+      "nash": 5.0435700156270595,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.07667781795587825,
+      "maximin": -0.950093021099074,
+      "nash": 14.265370237756143,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.1672728373324488,
+      "maximin": -0.8458904671545197,
+      "nash": 13.803131865005351,
+      "baseline": -0.5148445432434597,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.1672728373324488,
+      "maximin": -0.8458904671545197,
+      "nash": 13.803131865005351,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9536995279217086,
+      "maximin": -1.2494352801897008,
+      "nash": 3.7559161119431375,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.0625116473856122,
+      "maximin": -1.2494352801897008,
+      "nash": 3.2758948194738844,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.566087115013397,
+      "maximin": -0.8458904671545197,
+      "nash": 8.332696874491454,
+      "baseline": -0.5148445432434597,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.06547595318324162,
+      "maximin": -1.2363314859195875,
+      "nash": 14.265370237756143,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.0513097826129756,
+      "maximin": -1.6267725046846555,
+      "nash": 3.0269958902592604,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 15,
+      "value": -0.06547595318324162,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 10,
+      "value": -0.8458904671545197,
+      "tied_ids": [
+        10,
+        11,
+        14
+      ],
+      "recommendation": "OTHER",
+      "tied_recommendations": [
+        "OTHER",
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 9,
+      "value": 14.265370237756143,
+      "tied_ids": [
+        9,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        2,
+        6,
+        7
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "**Recommendation:** John should prioritize his children's education while also finding ways to\nsupport his elderly parents in a sustainable manner.\n\n**Reasoning:**\n\n1. **Moral obligation vs. finite resources**: While John has a moral obligation to help his aging\nparents, he must also consider the long-term financial implications of supporting them. His primary\nresponsibility is to ensure the well-being and education of his children, who will inherit his\nfuture wealth and decisions.\n2. **Prioritizing needs over wants**: It's essential to distinguish between needs and wants.\nSupporting elderly parents (especially if they have assets or resources of their own) may be a want\nrather than a necessity. In contrast, providing for one's children's education is a critical need\nthat ensures their future success and well-being.\n3. **Resource allocation**: John has limited financial resources to allocate between his parents'\nneeds and his children's education. Prioritizing his children's education now will likely lead to\ngreater long-term benefits and returns on investment, whereas supporting his parents might deplete\nthese funds prematurely.\n4. **Long-term planning**: Planning for one's elderly parents is essential, but this can be done\nproactively and within their means, such as by setting up a trust or exploring government assistance\nprograms. In the meantime, John should continue to support them in ways that don't compromise his\nability to fund his children's education.\n5. **Self-sufficiency for aging parents**: It's essential for elderly individuals to remain\nself-sufficient and resourceful during their golden years. John can facilitate this by encouraging\nhis parents to explore available resources, such as adult day care services or assisted living\nfacilities, rather than relying solely on him for support.\n\nTo balance these competing priorities, John may consider the following:\n\n* Explore government assistance programs, non-profit organizations, or financial planning advisors\nthat cater to elderly individuals.\n* Set up a trust or savings plan specifically for his parents' long-term care and support.\n* Gradually establish a regular payment plan to help supplement their living expenses without\ncompromising his children's education.\n* Openly discuss with his parents about their expectations, needs, and available resources to ensure\neveryone is aligned.\n\nUltimately, John must strike a balance between fulfilling his responsibilities to both his family\nand aging parents. By prioritizing his children's education while also finding ways to support his\nelderly parents in a sustainable manner, he can fulfill his obligations without compromising the\nfuture of either generation.",
+    "9": "What a difficult dilemma!\n\nWhile there is no straightforward answer, I'd like to offer a balanced perspective.\n\n**Recommendation:** John should consider prioritizing both his parents' short-term financial needs\nand his children's long-term education goals, but not necessarily in an either-or manner.\n\n**Why:**\n\n1. **Family values and responsibility**: Taking care of one's elderly parents is a moral obligation,\nparticularly when they've contributed to raising him and are now in need. Providing for their basic\nneeds, such as food, housing, healthcare, and living expenses, is essential.\n2. **Impact on his parents' well-being**: Failing to meet their financial needs could lead to\nemotional distress, strain relationships, and potentially create guilt or resentment towards John.\n3. **Short-term commitments vs. long-term plans**: John's children's education is a significant\ninvestment in their future, but it's a long-term goal that can be planned for with flexibility. In\ncontrast, his parents' immediate financial needs are pressing and more unpredictable.\n\nHowever, here's the key:\n\n1. **Balancing both responsibilities**: John should establish an emergency fund to cover at least\n3-6 months of living expenses for both his family and his parents, if needed. This will help him\nrespond effectively to either set of circumstances.\n2. **Open communication**: Regular discussions with his parents about their needs and financial\nsituation can ensure everyone is aware of the other's requirements and constraints.\n3. **Financial planning**: John should consider long-term strategies, such as setting up a trust or\nlife insurance policy, to help support his parents' living expenses without detracting from his\nchildren's education fund.\n\nTo make this work:\n\n1. **Prioritize financial stability**: Focus on building an emergency fund to cover both families'\nneeds.\n2. **Communicate with all parties involved**: Share plans and decisions with his parents, wife, and\nchildren to ensure everyone understands the balancing act he faces.\n3. **Review and adjust regularly**: Periodically assess both sets of needs and make adjustments as\nnecessary.\n\nUltimately, John will need to navigate this challenging situation thoughtfully, considering both\nimmediate and long-term implications for his family, particularly his elderly parents.",
+    "10": "What a difficult decision! I'll try to provide a balanced and fair recommendation.\n\n**Recommendation:** John should find a way to balance both priorities, rather than choosing one over\nthe other. Here's why:\n\n1. **Moral obligation**: As a responsible adult child, John has a natural duty to care for his\nelderly parents' well-being. In many cultures, family members are expected to support their aging\nrelatives financially or otherwise.\n2. **Sense of responsibility and guilt**: If John ignores his parents' needs, he may feel guilty\nabout abandoning them in times of need. This emotional burden can lead to stress and anxiety,\naffecting his relationships with his children and spouse.\n3. **Long-term consequences**: Neglecting his parents now may result in financial burdens or\nemotional repercussions later, when they require more extensive care (e.g., dementia support).\n4. **Financial planning and responsibility**: John has a comfortable income, which he should use\nwisely to manage both his family's expenses and his own responsibilities.\n5. **Seek outside help**: If necessary, consider consulting a geriatric care manager or financial\nadvisor to explore options for supporting his parents without jeopardizing his children's education\nand future.\n\n**Key considerations for balancing priorities:**\n\n1. **Assess the severity of their needs**: Understand whether your parents' situation is an\nemergency or if they can sustain themselves with minimal support.\n2. **Communicate openly**: Explain your limitations to your parents, involve them in discussions\nabout financial decisions, and seek their input on alternative solutions (e.g., government\nassistance programs).\n3. **Explore alternatives to direct financial support**: Consider providing home care services,\nhelping them access public benefits, or facilitating connections with local resources.\n4. **Set a schedule for regular check-ins**: Regular communication will help you stay informed about\nyour parents' needs and plan accordingly.\n\n**Prioritizing John's own family's needs:**\n\nWhile it is essential to support his parents, John must also consider his responsibilities towards\nhis children's education and future well-being. Providing financial security for his family should\nnot be neglected; he can explore creative solutions to balance both concerns:\n\n1. **Save strategically**: Allocate a specific portion of your income for his parents' expenses and\nset aside money for emergency situations.\n2. **Supplemental care options**: Research short-term or part-time caregivers, home health services,\nor technology that enables independence (e.g., medical alert systems).\n\nUltimately, this delicate situation requires empathy, communication, and financial planning to\nensure both his children's education and his parents' well-being are supported.\n\nBy finding a balanced approach, John can demonstrate compassion for his aging parents while\nmaintaining his own family's stability.",
+    "15": "This is a difficult and complex decision, but I'll provide a balanced analysis.\n\n**Recommendation:** John should prioritize his parents' needs over his children's education for the\nshort-term while continuing to plan and contribute to their children's future. Here's why:\n\n1. **Moral obligation:** As John's family members are in need, he has an inherent responsibility to\nsupport them financially.\n2. **Current urgency:** His elderly parents require financial assistance immediately to maintain a\ndecent standard of living. Their situation is more pressing than his long-term goals for his\nchildren.\n3. **Age-related challenges:** Elderly parents may face health issues, mobility problems, and\nincreasing costs associated with aging, which can make their lives unsustainable without financial\nsupport from John.\n4. **Impact on relationships:** Supporting his parents now will likely prevent long-term emotional\nstress, guilt, or feelings of responsibility that could strain his relationships with them.\n5. **Financial flexibility:** By prioritizing his parents' needs initially, John may actually find\ncreative ways to contribute to their well-being while also setting aside a dedicated fund for his\nchildren's education.\n6. **Legacy planning:** Supporting his elderly parents demonstrates the importance of\nintergenerational family ties and creating positive relationships within the family.\n\nHowever, it is essential that John:\n\n1. **Communicate openly:** Discusses the situation with both his family members (parents) and\nexplains the need to prioritize their needs without neglecting his children's education.\n2. **Create a budget:** Allocates funds accordingly, ensuring he doesn't compromise the future\nwell-being of his children by diverting too much resources from their education fund.\n3. **Plan for multiple goals:** Develops strategies to balance competing priorities, including\nsetting aside emergency savings, exploring tax-advantaged options (e.g., 529 plans), and discussing\npotential help from other family members or community services.\n\nUltimately, John should aim to find a mutually beneficial arrangement where his parents receive the\nsupport they need while he continues planning for his children's future. This approach will not only\nbe more practical but also demonstrate John's commitment to supporting all his loved ones in need."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "OTHER",
+    "TO_DO"
+  ],
+  "distinct_winners": 4
+}

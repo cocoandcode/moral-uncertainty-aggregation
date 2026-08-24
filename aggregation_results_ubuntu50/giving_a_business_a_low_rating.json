@@ -1,0 +1,365 @@
+{
+  "slug": "giving_a_business_a_low_rating",
+  "dilemma": "You are a customer who had a bad experience at a local restaurant due to a rude waiter. The restaurant is a small family business struggling to survive during the pandemic. Do you give them a low rating which might significantly affect their business, or do you overlook your single bad experience considering their struggle?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Give a low rating",
+  "not_to_do_action": "Overlook the incident",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5691796635128468,
+      "maximin": -1.2363314859195875,
+      "nash": 26.452468758829585,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.46036754404894314,
+      "maximin": -1.2363314859195875,
+      "nash": 24.215967122074083,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.46036754404894314,
+      "maximin": -1.2363314859195875,
+      "nash": 24.215967122074083,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5814756092439738,
+      "maximin": -0.950093021099074,
+      "nash": 7.175101369503431,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.3515554245850396,
+      "maximin": -1.2363314859195875,
+      "nash": 21.908258573638122,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.753198308122744,
+      "maximin": -0.06500842962438384,
+      "nash": 36.845152198047515,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.46036754404894314,
+      "maximin": -1.2363314859195875,
+      "nash": 24.215967122074083,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.15607097255981223,
+      "maximin": -1.2363314859195875,
+      "nash": 13.386932134242846,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5579777987402101,
+      "maximin": -0.8458904671545197,
+      "nash": 28.627559636997933,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.46036754404894314,
+      "maximin": -1.2363314859195875,
+      "nash": 24.215967122074083,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.46036754404894314,
+      "maximin": -1.2363314859195875,
+      "nash": 24.215967122074083,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6667899182041137,
+      "maximin": -0.8458904671545197,
+      "nash": 31.27150045760217,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.46036754404894314,
+      "maximin": -1.2363314859195875,
+      "nash": 24.215967122074083,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.24975854043583245,
+      "maximin": -0.8458904671545197,
+      "nash": 21.70508965931418,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5691796635128468,
+      "maximin": -1.2363314859195875,
+      "nash": 26.452468758829585,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4491656792763066,
+      "maximin": -0.8458904671545197,
+      "nash": 25.899439642362676,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 6,
+      "value": 0.753198308122744,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 6,
+      "value": -0.06500842962438384,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 6,
+      "value": 36.845152198047515,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        12,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "What a tough decision! As someone who understands the importance of supporting local businesses,\nespecially during challenging times like this pandemic, I would decide to overlook my single bad\nexperience and not give them a low rating.\n\nHere's why:\n\n1. **Empathy for their situation**: Restaurants have been among the hardest hit by the pandemic,\nwith many forced to close or reduce operations. It's likely that the family business I visited was\nstruggling to survive due to factors beyond their control.\n2. **Understanding human error**: Every restaurant has its good and bad days, and a single employee\ncan make all the difference in creating an exceptional (or disappointing) experience for customers.\nChances are, the rude waiter wasn't reflecting the owner's or management's values.\n3. **Supporting local businesses**: As I mentioned earlier, local restaurants need our support more\nthan ever. Giving them a low rating might inadvertently harm their reputation and deter future\ncustomers, ultimately harming the community they serve.\n4. **Opportunity to address concerns privately**: If I'm genuinely concerned about my experience, I\ncan discreetly talk to the owner or manager (if not already done so) to share my feedback and give\nthem an opportunity to make things right. This approach allows them to address any issues without\nalerting a wider audience.\n\nThat being said, if I felt that the restaurant was consistently failing to provide good service or\nquality food, even during non-pandemic times, I would reconsider this decision and leave a\nconstructive review highlighting areas for improvement. However, in cases like this where it's clear\nthey're struggling, I believe my effort is better spent giving them the benefit of doubt rather than\ncontributing to their negative reputation.\n\nOverall, by choosing not to give them a low rating, I'm aiming to support local restaurants during\nthese uncertain times and encourage customers to do the same.",
+    "6": "After careful consideration, I would recommend giving the restaurant a neutral rating with a\ndetailed but constructive feedback rather than a low rating. Here's why:\n\n**Reasoning:**\n\n1. **Understand the context**: The restaurant is a small family business struggling to survive\nduring an unprecedented time like a pandemic. It's likely that their staff is already under a lot of\nstress and pressure, which might have contributed to the waiter's behavior.\n2. **Don't condemn the entire establishment**: A single bad experience with one waiter shouldn't\ndefine the entire restaurant's reputation or service quality. I want to acknowledge that other\ncustomers may have had good experiences there.\n3. **Encourage growth and improvement**: By providing constructive feedback, I'm giving the\nrestaurant an opportunity to reflect on their service and make positive changes for future\ncustomers.\n4. **Support a local business during a difficult time**: As a customer, I should prioritize\nsupporting my community's businesses, especially those that are vulnerable during the pandemic.\n\n**Recommendation:**\n\nI would leave a review on online platforms like Yelp or Google with a neutral rating (3 out of 5)\nand include a feedback that says something like:\n\n\"I had a disappointing experience at your restaurant yesterday. Our waiter seemed quite rude and\nunfriendly, which dampened our enthusiasm for the meal. However, I want to emphasize that I\nunderstand this might not be a reflection of your entire team or management's standards.\n\nI hope you can take my feedback constructively and use it as an opportunity to improve your service\nquality. As a local business struggling during these challenging times, every positive step counts!\nI'll consider giving you another try in the future if I see some improvements.\"\n\nThis way, I'm holding the restaurant accountable for their service while also acknowledging their\ndifficulties and willingness to improve."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

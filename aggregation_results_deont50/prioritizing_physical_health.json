@@ -1,0 +1,365 @@
+{
+  "slug": "prioritizing_physical_health",
+  "dilemma": "John is a personal trainer who advocates for a healthy lifestyle through regular exercise and proper nutrition. One of his clients, who is overweight and suffers from health problems, is struggling to follow the regimen due to lack of motivation and self-discipline. Should John push his client harder to follow the regimen, potentially causing more stress, or lower the intensity to accommodate his client's struggle?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Push the client harder.",
+  "not_to_do_action": "Lower the intensity.",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3289763052771407,
+      "maximin": -0.07959606538784551,
+      "nash": 27.072604174992836,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4286798746973778,
+      "maximin": -0.07959606538784551,
+      "nash": 29.57293477270879,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4286798746973778,
+      "maximin": -0.07959606538784551,
+      "nash": 29.57293477270879,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4286798746973778,
+      "maximin": -0.07959606538784551,
+      "nash": 29.57293477270879,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.3198677552334742,
+      "maximin": -0.5148445432434597,
+      "nash": 25.793393923389765,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6239003840799118,
+      "maximin": -0.07959606538784551,
+      "nash": 35.2876883355616,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1337557958946068,
+      "maximin": -0.07959606538784551,
+      "nash": 22.158589554186968,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6239003840799118,
+      "maximin": -0.07959606538784551,
+      "nash": 35.2876883355616,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.23345936531484385,
+      "maximin": -0.07959606538784551,
+      "nash": 24.205079027694648,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.11135206634933362,
+      "maximin": -0.950093021099074,
+      "nash": 19.973841039778677,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5374919941612814,
+      "maximin": 0.32543258914068407,
+      "nash": 33.19743411112322,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4286798746973778,
+      "maximin": -0.07959606538784551,
+      "nash": 29.57293477270879,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.02494367643070322,
+      "maximin": -0.5148445432434597,
+      "nash": 19.326632055649114,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3289763052771407,
+      "maximin": -0.07959606538784551,
+      "nash": 27.072604174992836,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4286798746973778,
+      "maximin": -0.07959606538784551,
+      "nash": 29.57293477270879,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4286798746973778,
+      "maximin": -0.07959606538784551,
+      "nash": 29.57293477270879,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 6,
+      "value": 0.6239003840799118,
+      "tied_ids": [
+        6,
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 11,
+      "value": 0.32543258914068407,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 6,
+      "value": 35.2876883355616,
+      "tied_ids": [
+        6,
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 11,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "6": "**Recommendation:** Lower the intensity of the regimen to accommodate the client's struggles.\n\n**Reasoning:**\n\nAs a personal trainer, John has a responsibility to prioritize his client's well-being and safety\nabove any expectation for rapid progress or perfection. While it's natural to want to motivate\nclients to reach their goals, pushing someone too hard can actually be counterproductive in this\nsituation.\n\nHere are some reasons why I recommend lowering the intensity:\n\n1. **Avoid burnout**: Constantly being pushed beyond what they can handle can lead to physical and\nmental exhaustion, causing John's client to feel overwhelmed and defeated.\n2. **Build trust and rapport**: By acknowledging and accommodating his client's struggles, John\ndemonstrates empathy and understanding, which is essential for building a positive trainer-client\nrelationship.\n3. **Increase motivation**: A more manageable approach may actually boost the client's motivation\nand confidence in their ability to achieve their goals.\n4. **Prevent setbacks**: If John pushes too hard and his client becomes frustrated or exhausted,\nthey may abandon the regimen altogether, resulting in a step backward in their progress.\n5. **Prioritize self-care**: By focusing on gradual progress rather than pushing for immediate\nresults, John's client will be more likely to adopt sustainable lifestyle habits that promote\noverall well-being.\n\nTo achieve the desired outcomes while being sensitive to his client's needs, John can:\n\n1. Break down goals into smaller, manageable tasks.\n2. Provide regular check-ins and positive feedback to boost motivation.\n3. Explore underlying causes of his client's struggles (e.g., self-discipline issues or health\nconcerns) to address these through education and support.\n4. Offer flexible scheduling options and varying intensities for workouts.\n\nUltimately, John should prioritize the well-being of his client over any potential outcomes or\nexpectations. By doing so, he'll create a safe and supportive environment that fosters long-term\nsuccess and health.",
+    "11": "**Recommendation: Lower the intensity and focus on gradual progress**\n\nJohn should aim to support his client's growth and development in a gentle yet effective manner.\nPushing someone harder who is struggling with motivation and self-discipline can be\ncounterproductive, leading to:\n\n1. **Increased stress**: Excessive pressure to conform to an intensive regimen may exacerbate the\nclient's health problems, particularly if they're already overwhelmed by their condition.\n2. **Decreased adherence**: A rigid approach can lead to discouragement and a decrease in\nmotivation, causing the client to drop out or become even more resistant to change.\n3. **Lack of sustainability**: Rapid progress is often unsustainable in the long term. By forcing\nsomeone to push themselves beyond their limits, John may inadvertently create a sense of burnout and\ndissatisfaction with the regimen.\n\nInstead, I recommend that John adopt a **gradual progression** approach. This involves:\n\n1. **Breaking down goals into manageable steps**: Work with the client to set smaller, achievable\nobjectives that foster a sense of accomplishment and confidence.\n2. **Focusing on progress over perfection**: Emphasize the importance of gradual improvements in\nhealth and wellness, rather than demanding adherence to an idealized fitness plan.\n3. **Providing emotional support and encouragement**: Help the client develop self-discipline\nthrough positive reinforcement, empathy, and ongoing motivation.\n\nBy adopting a more nuanced approach, John can:\n\n1. **Reduce stress and anxiety**: Gradual progress allows for more sustainable growth and decreased\npressure to conform to an unrealistic ideal.\n2. **Increase adherence and motivation**: A supportive and gradual approach fosters long-term\ncommitment to the regimen and encourages self-improvement.\n3. **Build a stronger client relationship**: John can establish trust, empathy, and understanding\nwith his client by acknowledging their challenges and working together towards achievable goals.\n\nUltimately, a compassionate and adaptable approach will enable John to create a healthier and more\nmotivating environment for his client, promoting lasting lifestyle changes rather than temporary\nfixes."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

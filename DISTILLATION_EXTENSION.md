@@ -35,10 +35,13 @@ alone) is broken. Either way there is a result, which is why this beat DPO.
 
 ## Fixed decisions
 
-- **Three separate LoRA adapters** on one small base model
-  (`Llama-3.2-1B-Instruct` or `Qwen2.5-1.5B-Instruct`, pick at step 1).
-  Same config, learning rate, epochs and seed for all three; only the score
-  column differs.
+- **Base model: `Qwen2.5-1.5B-Instruct`** (decided 24 Aug 2026). Apache 2.0,
+  so the released judges carry no licence strings, which matters for a
+  community artifact; also stronger than Llama-3.2-1B at this scale, and
+  independence from the `llama3.1:8b` generator avoids any family-affinity
+  confound. **Three separate LoRA adapters** on this one base, same config,
+  learning rate, epochs and seed for all three; only the score column
+  differs.
 - **Input:** dilemma + response, same format the teacher saw
   (`score_responses.py`).
 - **Output:** a scalar score via a regression or classification head
@@ -74,7 +77,7 @@ Report, per judge, on the 100 held-out dilemmas:
 
 | # | What | Time |
 | --- | --- | --- |
-| 1 | Make the two open choices (base model, output head) and stop editing this file | half a day |
+| 1 | Base model decided (Qwen2.5-1.5B-Instruct); output head remains, settled empirically at step 2; then stop editing this file | half a day |
 | 2 | Build train/validation JSONL from `scores/*.json` per the frozen split | half a day |
 | 3 | Train the 3 adapters (Mac overnight, or ~$5–20 of rented GPU) | 1–2 days |
 | 4 | Score + ranking match (grades 1–2) | half a day |

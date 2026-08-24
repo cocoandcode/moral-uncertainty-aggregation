@@ -1,0 +1,370 @@
+{
+  "slug": "taking_lessons_when_you_re_terrible_at_something",
+  "dilemma": "You've been taking guitar lessons for months, but don't seem to be improving at all. Your instructor, a professional musician, relies on teaching for income and hasn't mentioned your lack of progress. Should you confront your instructor about your lack of improvement, potentially risking their livelihood?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confronting your instructor",
+  "not_to_do_action": "Not Confronting your instructor",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.1783390021642122,
+      "maximin": -1.6267725046846555,
+      "nash": 2.7710696353324,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.46146162500743365,
+      "maximin": -0.8506210025087526,
+      "nash": 8.798376152329764,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.4337771850457298,
+      "maximin": -0.07959606538784551,
+      "nash": 27.506889253873215,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8396066980413746,
+      "maximin": 0.35565241246776874,
+      "nash": 40.24804099377615,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.42676194973103343,
+      "maximin": -0.5148445432434597,
+      "nash": 25.89943964236268,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8396066980413746,
+      "maximin": 0.35565241246776874,
+      "nash": 40.24804099377615,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6401995592009004,
+      "maximin": 0.35565241246776874,
+      "nash": 33.72997062657572,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.1672728373324488,
+      "maximin": -0.8458904671545197,
+      "nash": 13.803131865005351,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.23855667566319586,
+      "maximin": -0.4554494483894518,
+      "nash": 22.1685570826592,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.06966258264118183,
+      "maximin": -0.5148445432434597,
+      "nash": 15.825723420318937,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.14377502682868515,
+      "maximin": -0.052992447146856116,
+      "nash": 20.055960528978318,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.46429023086418986,
+      "maximin": -1.2363314859195875,
+      "nash": 9.265629765215458,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.6748992344773006,
+      "maximin": -0.950093021099074,
+      "nash": 7.0486033776386146,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.05563211201178897,
+      "maximin": -0.4518067248278044,
+      "nash": 15.257086102992597,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.5731023503280934,
+      "maximin": -1.2363314859195875,
+      "nash": 7.837768521134692,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.4337771850457298,
+      "maximin": -0.07959606538784551,
+      "nash": 27.506889253873215,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 4,
+      "value": 0.8396066980413746,
+      "tied_ids": [
+        4,
+        6
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 4,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        4,
+        6,
+        7
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 4,
+      "value": 40.24804099377615,
+      "tied_ids": [
+        4,
+        6
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 4,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        4,
+        6,
+        7,
+        11,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "4": "I would recommend having an open and honest conversation with the instructor about your concerns\nregarding your progress. Here's why:\n\n1.  **Mutual goal**: Both you and the instructor have a shared goal of achieving musical\nimprovement. However, it seems like that goal isn't being met.\n2.  **Potential underlying issues**: There might be various reasons why you're not improving despite\nregular lessons. It could be due to ineffective teaching methods, your learning style or pace, or\neven lack of practice on your part. Discussing these factors can help identify the root cause and\naddress it collaboratively.\n3.  **Opportunity for growth**: Bringing up your concerns demonstrates that you value the\ninstructor's time and are committed to improving. This could lead to a revised teaching approach\ntailored specifically to your needs, potentially resulting in better progress.\n4.  **Instructor's responsibility**: While the instructor relies on teaching for income, it's also\ntheir professional obligation to provide quality instruction that yields results. Confronting them\nabout your lack of improvement encourages an honest assessment of their effectiveness and a\npotential adjustment to their methods.\n\nHere's how you might approach this conversation:\n\n*   Express your appreciation for their teaching and time.\n*   Describe specific areas where you're not seeing the desired progress (e.g., techniques, theory,\nor practice assignments).\n*   Ask them for their perspective on why you may be struggling. They might offer insights or\nsuggestions that hadn't occurred to you.\n*   Collaboratively explore possible adjustments to lessons or your approach to improve progress.\n\nThis conversation can lead to a revised strategy that gets you back on track and helps the\ninstructor refine their teaching methods, ultimately benefiting both of you."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

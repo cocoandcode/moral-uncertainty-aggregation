@@ -1,0 +1,372 @@
+{
+  "slug": "letting_children_interfere_with_a_happy_relationship",
+  "dilemma": "John and Sarah have a happy relationship and are considering adopting a child with behavioral issues. They fear that the child's behavior could potentially disrupt their happy relationship, but they also deeply desire to provide a loving home for a child in need. Should they prioritize their relationship's stability or the child's need for a loving home?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Adopt the child",
+  "not_to_do_action": "Not adopt the child",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.24256791535851036,
+      "maximin": -0.06500842962438384,
+      "nash": 24.874376600573203,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.16945470494148662,
+      "maximin": -0.8458904671545197,
+      "nash": 19.805367057277405,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.15615952543987993,
+      "maximin": -0.4554494483894518,
+      "nash": 21.81855481695584,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.13457792390495088,
+      "maximin": -1.2363314859195875,
+      "nash": 12.973390313700389,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.039060983942654004,
+      "maximin": -0.8458904671545197,
+      "nash": 16.597937007513494,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6463041136251849,
+      "maximin": 0.32543258914068407,
+      "nash": 36.694289063189665,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.16945470494148662,
+      "maximin": -0.8458904671545197,
+      "nash": 19.805367057277405,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.36467521432402056,
+      "maximin": -0.4554494483894518,
+      "nash": 26.0348311126573,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.255863094860117,
+      "maximin": -0.4554494483894518,
+      "nash": 23.833639876898804,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.36467521432402056,
+      "maximin": -0.4554494483894518,
+      "nash": 26.0348311126573,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7551162330890885,
+      "maximin": 0.32543258914068407,
+      "nash": 40.08324466986438,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.36467521432402056,
+      "maximin": -0.4554494483894518,
+      "nash": 26.0348311126573,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.24757667282679463,
+      "maximin": -0.8458904671545197,
+      "nash": 13.585204852050001,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4510836042426509,
+      "maximin": -0.06500842962438384,
+      "nash": 30.033818877497282,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.36467521432402056,
+      "maximin": -0.4554494483894518,
+      "nash": 26.0348311126573,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.36467521432402056,
+      "maximin": -0.4554494483894518,
+      "nash": 26.0348311126573,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 11,
+      "value": 0.7551162330890885,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 6,
+      "value": 0.32543258914068407,
+      "tied_ids": [
+        6,
+        11
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 11,
+      "value": 40.08324466986438,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        2,
+        7,
+        8,
+        10,
+        11,
+        12,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "What a thought-provoking and compassionate question!\n\nAfter careful consideration, I recommend that John and Sarah prioritize the child's need for a\nloving home over the potential risk of disrupting their happy relationship. Here's why:\n\n1. **The impact on the child**: A child with behavioral issues has already experienced trauma or\nneglect, which can have long-term effects on their emotional well-being. By providing a stable and\nloving home, John and Sarah can help heal this child and give them the best chance at thriving.\n2. **The potential benefits for their relationship**: While it's true that adopting a child with\nbehavioral issues may present challenges, research suggests that the experience of fostering or\nadopting a child can also strengthen a couple's relationship by promoting empathy, teamwork, and\ncommitment. John and Sarah will have opportunities to grow together as they navigate the joys and\ndifficulties of parenting.\n3. **The gift of love and compassion**: By choosing to provide a loving home for a vulnerable child,\nJohn and Sarah demonstrate the values of empathy, kindness, and generosity. This experience can\nbring new meaning and purpose to their relationship, deepening their emotional connection and sense\nof fulfillment.\n4. **The rewards outweigh the challenges**: While it's true that parenting a child with behavioral\nissues comes with its share of difficulties, numerous studies have shown that the benefits far\noutweigh the challenges. Research has demonstrated improved social connections, emotional\nwell-being, and even physical health among adults who adopt or foster children.\n\nTo minimize potential risks to their relationship, John and Sarah should:\n\n* **Seek professional support**: Consult a therapist or counselor experienced in working with\nfamilies with adopted or fostered children.\n* **Communicate openly**: Regularly discuss challenges, needs, and feelings with each other.\n* **Foster flexibility**: Develop the ability to adapt to changing situations and prioritize\nteamwork over individual preferences.\n\nIn conclusion, by choosing to prioritize the child's need for a loving home, John and Sarah will not\nonly be providing a stable and nurturing environment but also creating opportunities for their\nrelationship to grow stronger and more meaningful.",
+    "6": "I would recommend that John and Sarah prioritize providing a loving home for the child with\nbehavioral issues, rather than prioritizing the stability of their relationship.\n\nHere's why:\n\n1. **Children in need are counting on them**: A child with behavioral issues is likely already\nexperiencing challenges and trauma. Providing a stable and loving home can help mitigate these\neffects and give the child a chance to thrive.\n2. **Their love and care will only strengthen their relationship**: By choosing to adopt a child who\nneeds extra support, John and Sarah demonstrate that they are committed to caring for each other\nthrough life's ups and downs. This can actually bring them closer together, rather than creating\ntension.\n3. **Stability is not solely tied to relationship dynamics**: While it's true that a child with\nbehavioral issues may require extra effort from the parents, this doesn't necessarily mean their\nrelationship will be unstable. Couples who are genuinely committed to supporting each other through\nchallenges often grow closer and more resilient as they navigate them together.\n4. **The rewards of parenthood outweigh potential challenges**: Caring for a child with behavioral\nissues can bring immense joy and fulfillment. By choosing to adopt this child, John and Sarah have\nthe opportunity to help shape their young life and provide a loving foundation for their future\nsuccess.\n5. **It's not an \"either-or\" situation**: The presence of a child with behavioral issues won't\nnecessarily disrupt the stability of their relationship; rather, it can present opportunities for\ngrowth and deepening commitment as they work together to address challenges.\n\nUltimately, John and Sarah should consider that providing a loving home for this child is not a\nburden to their relationship but an opportunity for them to demonstrate their love, resilience, and\ncommitment to one another.",
+    "11": "I would strongly recommend that John and Sarah prioritize the child's need for a loving home. Here's\nwhy:\n\n1. **The child's well-being is paramount**: A child with behavioral issues may require specialized\ncare, patience, and understanding to thrive in a new environment. By prioritizing their needs, John\nand Sarah can provide a nurturing space where the child feels safe and valued.\n2. **Relationship stability is not necessarily compromised**: While it's natural to worry about\npotential disruptions to their relationship, couples who adopt children with behavioral issues often\nreport strengthened relationships as they work together to support their child's needs. In fact,\nadopting a child can bring John and Sarah closer together as they face challenges and celebrate\nmilestones together.\n3. **Adopting a child is not a transaction**: Providing a loving home for a child in need is about\noffering a new family member love, care, and support, rather than seeing it as a risk to their own\nrelationship. By shifting their focus from \"what's best for us\" to \"what's best for the child,\" John\nand Sarah can foster a more selfless and empathetic dynamic.\n4. **Growth and learning**: Adopting a child with behavioral issues presents an opportunity for\ngrowth and learning in both the child and the adoptive parents. As John and Sarah navigate\nchallenges together, they'll develop valuable skills like empathy, problem-solving, and patience,\nwhich can strengthen their bond.\n5. **The long-term benefits of adopting**: Research suggests that children who are placed in\nnurturing, supportive environments tend to fare better emotionally and socially than those in foster\ncare or other unstable situations. By providing a loving home for a child with behavioral issues,\nJohn and Sarah can create a stable foundation for their child's future success.\n\nUltimately, while it's understandable to have concerns about the potential impact on their\nrelationship, prioritizing the child's needs allows John and Sarah to demonstrate love, compassion,\nand commitment to a vulnerable individual. By doing so, they'll not only provide a loving home but\nalso create an opportunity for growth, learning, and strengthening of their own bond."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

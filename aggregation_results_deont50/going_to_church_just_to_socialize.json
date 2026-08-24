@@ -1,0 +1,366 @@
+{
+  "slug": "going_to_church_just_to_socialize",
+  "dilemma": "John, an atheist, enjoys the community at his local church but doesn't believe in their religious teachings. He's unsure if his attendance is misleading and disingenuous to his friends there. Should John continue to attend church purely for social reasons, or should he stop going to avoid misrepresenting his beliefs?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Continue attending church",
+  "not_to_do_action": "Stop attending church",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.34309361278909145,
+      "maximin": -1.2363314859195875,
+      "nash": 10.74472073516423,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.7377212610120996,
+      "maximin": -1.6267725046846555,
+      "nash": 5.62448774578439,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.5425007516295656,
+      "maximin": -1.2363314859195875,
+      "nash": 8.659465370886318,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.34309361278909145,
+      "maximin": -1.2363314859195875,
+      "nash": 10.74472073516423,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.8598285599776098,
+      "maximin": -1.2363314859195875,
+      "nash": 5.868256905859971,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.14787310340655757,
+      "maximin": -0.8458904671545197,
+      "nash": 15.01620372692421,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.34309361278909145,
+      "maximin": -1.2363314859195875,
+      "nash": 10.74472073516423,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.24757667282679463,
+      "maximin": -0.8458904671545197,
+      "nash": 13.585204852050001,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.4377884247410443,
+      "maximin": 0.32543258914068407,
+      "nash": 30.390659575161333,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.14787310340655757,
+      "maximin": -0.8458904671545197,
+      "nash": 15.01620372692421,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.14705097539621342,
+      "maximin": -0.4554494483894518,
+      "nash": 21.562365960519582,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.4295020027077219,
+      "maximin": -1.6267725046846555,
+      "nash": 7.714024033379943,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.4377884247410443,
+      "maximin": 0.32543258914068407,
+      "nash": 30.390659575161333,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.4427971822093285,
+      "maximin": -1.2363314859195875,
+      "nash": 9.720781291982007,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.8689371100212763,
+      "maximin": -1.2363314859195875,
+      "nash": 5.691313950583555,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.2433900433688544,
+      "maximin": -1.2363314859195875,
+      "nash": 11.737065388984417,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 9,
+      "value": 0.4377884247410443,
+      "tied_ids": [
+        9,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 9,
+      "value": 0.32543258914068407,
+      "tied_ids": [
+        9,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 9,
+      "value": 30.390659575161333,
+      "tied_ids": [
+        9,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 12,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        12
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "9": "I would recommend that John continue to attend the church for social reasons while also being honest\nabout his lack of religious belief with his friends there. Here's why:\n\n1. **Social connections are important**: Human beings are social creatures, and maintaining\nrelationships is essential for our emotional well-being. Attending church provides a sense of\ncommunity and connection with like-minded people.\n2. **Be authentic without confrontation**: If John simply stopped attending the church without\nexplanation, his friends might wonder what happened to him or assume he's no longer interested in\nsocializing. By being open about his non-belief, he can maintain relationships while also being true\nto himself.\n3. **Honesty promotes respect**: When people know where you stand on certain issues, they're more\nlikely to respect your perspective and boundaries. If John's friends understand that he doesn't\nshare their religious views, they may still value him as a friend despite the difference in opinion.\n\nTo navigate this situation effectively:\n\n*   **Have open conversations** with his close friends about his lack of religious belief.\n*   **Be respectful of others' beliefs**: Even if you don't agree on everything, be considerate of\ntheir opinions and traditions.\n*   **Don't proselytize or challenge others**: Avoid discussing your atheism in a way that might\nlead to disagreements or evangelistic conversations.\n\nBy being honest about his non-belief while also respecting the community's values and traditions,\nJohn can enjoy the social benefits of attending church without compromising his personal\nconvictions.",
+    "12": "I would recommend that John continue to attend church purely for social reasons. Here's why:\n\n1. **Social connection**: John mentioned enjoying the community at the church, which suggests that\nattending church provides him with meaningful relationships and a sense of belonging. For many\npeople, these connections are essential to their mental health and well-being.\n2. **Authenticity vs. Honesty**: While it might be true that attending church could potentially\nmisrepresent his beliefs to others, John is not pretending to believe in the teachings or attempting\nto influence anyone else's faith. His primary motivation is social interaction, which does not\nnecessarily imply dishonesty or insincerity.\n3. **Personal comfort**: Church attendance may be a source of comfort and peace for John, which he\nwould miss if he stopped attending purely because of concerns about his beliefs being seen as\ndisingenuous. People have different coping mechanisms for dealing with their own non-beliefs;\nattending church in this context can serve as a harmless way to cope.\n4. **Impact on relationships**: Stopping attendance entirely might disrupt John's friendships and\nsocial connections within the church community, potentially causing unintended hurt or tension.\nContinuing attendance allows him to maintain these relationships without jeopardizing them.\n5. **Personal integrity vs. external judgments**: Instead of worrying about what others might think,\nJohn should focus on living authentically and honestly according to his own values. He can continue\nto appreciate the social benefits while making it clear to friends that he doesn't subscribe to the\nchurch's teachings.\n\nUltimately, as long as John is not deceiving others or promoting false information, his attendance\nat church for social reasons does not necessarily contradict his professed atheism."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

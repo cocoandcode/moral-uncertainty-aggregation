@@ -1,0 +1,371 @@
+{
+  "slug": "not_letting_someone_give_up_on_something_they_love",
+  "dilemma": "Peter, a high school music teacher, has a tremendously talented student, John, who is considering quitting the school orchestra. John's parents want him to focus more on academics and less on music, believing it will secure a better future for him. Should Peter respect the parents' wishes and let John quit or should he encourage John to pursue his passion for music?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Encourage John to pursue music",
+  "not_to_do_action": "Respect parents' wishes and let John quit",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.34318216566915927,
+      "maximin": 0.32543258914068407,
+      "nash": 25.27339882001889,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.04024361778121223,
+      "maximin": -0.8458904671545197,
+      "nash": 15.582869709275592,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.051445482553848815,
+      "maximin": -0.4554494483894518,
+      "nash": 16.16364910370991,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.25085262139432296,
+      "maximin": -0.4554494483894518,
+      "nash": 12.296104480138998,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.4460731307768569,
+      "maximin": -1.2363314859195875,
+      "nash": 9.071917673943966,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.2525871462925887,
+      "maximin": -0.052992447146856116,
+      "nash": 22.1685570826592,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.15079026214338154,
+      "maximin": -0.4518067248278044,
+      "nash": 18.421710339671435,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.2343700462052557,
+      "maximin": -0.07959606538784551,
+      "nash": 22.514046485859133,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.4449790498183664,
+      "maximin": -0.06500842962438384,
+      "nash": 27.935574743721418,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.651401423973537,
+      "maximin": 0.32543258914068407,
+      "nash": 34.130726397916995,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.15497689160132172,
+      "maximin": -0.06500842962438384,
+      "nash": 20.05596052897832,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.14796165628662528,
+      "maximin": -0.4554494483894518,
+      "nash": 20.368525835232663,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.051445482553848815,
+      "maximin": -0.4554494483894518,
+      "nash": 16.16364910370991,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.14377502682868515,
+      "maximin": -0.052992447146856116,
+      "nash": 20.055960528978318,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.05736663691005474,
+      "maximin": -0.4554494483894518,
+      "nash": 17.866248654704545,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.2525871462925887,
+      "maximin": -0.052992447146856116,
+      "nash": 22.1685570826592,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 10,
+      "value": 0.651401423973537,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": 0.32543258914068407,
+      "tied_ids": [
+        1,
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 10,
+      "value": 34.130726397916995,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        2,
+        6,
+        7,
+        10,
+        11,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would strongly recommend that Peter encourages John to pursue his passion for music despite the\nparents' reservations. Here's why:\n\n1. **Intrinsic motivation**: Music is an extracurricular activity that brings joy and satisfaction\nto John. If he quits, he may feel deprived of a source of happiness and fulfillment.\n2. **Personal growth and development**: Pursuing music can help John develop essential skills like\ndiscipline, teamwork, communication, and creativity. These skills are transferable to other areas of\nhis life, including academics.\n3. **Nurturing talent**: As a music teacher, Peter has witnessed John's exceptional talent and\npotential. Ignoring or discouraging him from pursuing music might hinder his growth as a musician\nand artist.\n4. **Balanced approach**: Music can complement John's academic pursuits, promoting cognitive\nbenefits like improved memory, spatial-temporal skills, and language development. By incorporating\nboth academics and music into his schedule, John can achieve a more balanced life.\n5. **Potential long-term consequences**: Forcing John to abandon his passion for music might lead to\ndissatisfaction and disillusionment in the future. Pursuing music can become an integral part of his\nidentity, career goals, or even therapy.\n\nThat being said, Peter should communicate with John's parents to understand their concerns and\nprovide them with information on the benefits of pursuing music. It is essential to involve both\nparties in the decision-making process, encouraging open dialogue about:\n\n* The significance of extracurricular activities in overall development\n* The potential opportunities for John as a musician (e.g., scholarships, competitions)\n* The role of academics and music in building a well-rounded individual\n\nUltimately, Peter should respect John's autonomy and agency, empowering him to make an informed\ndecision that balances his personal interests with academic responsibilities.\n\n**Recommendation:** Encourage John to share his thoughts and feelings about leaving the orchestra.\nListen attentively to his concerns and discuss potential solutions that work for everyone involved.\nFoster an open dialogue among John, Peter, and his parents to arrive at a mutually beneficial\noutcome that respects both music and academics.",
+    "2": "**Recommendation:** Encourage John to continue pursuing his passion for music.\n\n**Reasoning:**\n\nWhile academic achievement is undoubtedly crucial, I strongly believe that pursuing one's passion\nfor the arts can have numerous benefits for students' overall development and future success. Here\nare a few reasons why:\n\n1.  **Development of Transferable Skills**: Pursuing music education and participation in an\norchestra helps develop essential skills such as discipline, perseverance, teamwork,\nproblem-solving, and communication, which are valuable across various aspects of life.\n2.  **Cultural Enrichment**: Engaging with the arts exposes students to diverse cultures, historical\nperiods, and musical styles, broadening their understanding of the world and its complexities.\n3.  **Boosts Academic Performance**: Studies have shown that students involved in the arts tend to\nperform better academically than those who are not (e.g., see \"The Arts and Achievement in At-Risk\nYouth\" by J. Catterall et al.).\n4.  **Cultivates Creativity and Innovation**: Music education encourages creative thinking,\nexperimentation, and innovation, qualities that can be applied to various subjects.\n5.  **Emotional Well-being**: Participating in music programs has been linked to improved mental\nhealth outcomes, stress relief, and social connections.\n\nWhile Peter should ultimately prioritize John's well-being and development as a whole person, it is\nalso essential for him to communicate with John's parents about these benefits to help them\nunderstand the value of preserving his musical pursuits.",
+    "10": "**Recommendation:** Peter should **encourage John to pursue his passion for music**, while also\nconsidering and exploring ways to balance this pursuit with his academic responsibilities.\n\n**Reasoning:**\n\n1.  **Development of talent**: As a music teacher, Peter has witnessed the immense potential and\ntalents of students like John. Encouraging him to continue with music can foster his artistic growth\nand development.\n2.  **Influence on self-esteem**: Music education has been shown to positively impact students'\nself-esteem, confidence, and emotional well-being (DeNora, 2000). Allowing John to pursue his\npassion for music could enhance his overall quality of life.\n3.  **Academic benefits**: Many studies suggest that participation in music programs can actually\nimprove academic performance in various subjects, particularly in reading, language arts, and\nmathematics (Hetland & Winner, 2001).\n4.  **Holistic education**: John's parents might be focusing solely on academics because they're\nconcerned about securing a better future for him. However, Peter's experience will have shown them\nthat music education can also enrich their child's life in profound ways.\n5.  **Supporting personal values**: By encouraging John to pursue his passion, Peter is allowing the\nstudent to prioritize his own values and interests. This approach fosters a more supportive\nrelationship between the teacher and student.\n\n**A balanced approach** would be for Peter to:\n\n*   Have an open conversation with John's parents about the benefits of music education.\n*   Help John find ways to balance his love for music with his academic responsibilities.\n*   Work collaboratively with John to explore the possibilities that combining music and academics\ncould offer him.\n\nBy taking a compassionate, informed, and holistic approach, Peter can support John in making an\ninformed decision about his future while also respecting the values of his parents."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

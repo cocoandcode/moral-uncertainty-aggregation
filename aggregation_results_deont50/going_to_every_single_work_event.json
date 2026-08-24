@@ -1,0 +1,375 @@
+{
+  "slug": "going_to_every_single_work_event",
+  "dilemma": "John is an active employee who believes in strong team bonding and always attends every work event. However, he noticed some colleagues who are consistently unable to attend due to family obligations are being overlooked for promotions. Should John continue attending all events, potentially encouraging this unfair practice, or should he reduce his attendance to show solidarity with his colleagues?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Continue attending all events",
+  "not_to_do_action": "Reduce event attendance",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.23428149332518794,
+      "maximin": -1.2363314859195875,
+      "nash": 11.876516939219073,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.1680478182819876,
+      "maximin": -1.2494352801897008,
+      "nash": 3.3840755218741045,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.26087185232840127,
+      "maximin": -0.4554494483894518,
+      "nash": 14.171567059010313,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.255863094860117,
+      "maximin": -0.4554494483894518,
+      "nash": 23.833639876898804,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8507200099339433,
+      "maximin": -1.2363314859195875,
+      "nash": 5.691313950583554,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.2517633022847348,
+      "maximin": -0.4554494483894518,
+      "nash": 13.875288882442007,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.3605754217486383,
+      "maximin": -0.4554494483894518,
+      "nash": 12.360383386843193,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.1680478182819876,
+      "maximin": -1.2494352801897008,
+      "nash": 3.3840755218741045,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.2635647582442844,
+      "maximin": -1.6267725046846555,
+      "nash": 2.7273193521194794,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.255863094860117,
+      "maximin": -0.4554494483894518,
+      "nash": 23.833639876898804,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.039060983942654004,
+      "maximin": -0.8458904671545197,
+      "nash": 16.597937007513494,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9595321293978468,
+      "maximin": -1.2363314859195875,
+      "nash": 4.963940974994379,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9595321293978468,
+      "maximin": -1.2363314859195875,
+      "nash": 4.963940974994379,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9595321293978468,
+      "maximin": -1.2363314859195875,
+      "nash": 4.963940974994379,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.472080447128425,
+      "maximin": -1.6267725046846555,
+      "nash": 1.7714458823762895,
+      "baseline": -1.3853414989546882,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.46520091175460176,
+      "maximin": -0.8458904671545197,
+      "nash": 10.555289878908527,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 4,
+      "value": 0.255863094860117,
+      "tied_ids": [
+        4,
+        10
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 3,
+      "value": -0.4554494483894518,
+      "tied_ids": [
+        3,
+        4,
+        6,
+        7,
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 4,
+      "value": 23.833639876898804,
+      "tied_ids": [
+        4,
+        10
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        1,
+        4,
+        10,
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "**Recommendation: Reduce attendance selectively**\n\nWhile team bonding is essential, John's presence at every event might be unintentionally\ncontributing to an uneven playing field for those unable to attend due to family obligations. By\nreducing his attendance occasionally and strategically, John can promote a more inclusive culture\nwithout undermining the importance of team events.\n\n**Rationale:**\n\n1.  **Addressing the root issue**: Focusing solely on attending every event might not directly\naddress the underlying problem \u2013 that certain employees are being overlooked for promotions due to\ntheir unavailability at company events. By taking a step back, John can encourage his colleagues and\nmanagers to discuss and revise promotion criteria, making it more inclusive.\n2.  **Encouraging solidarity without enabling exclusion**: Selectively reducing attendance will\nallow John to show support for his colleagues while not explicitly condoning the unfair practice.\nThis approach also avoids sending mixed signals about priorities within the organization.\n3.  **Avoiding unintended consequences**: Continuously attending every event might inadvertently\nnormalize the idea that frequent attendance is a requirement for career advancement, which could\nlead to further exclusion of employees with family obligations.\n\nTo implement this strategy effectively, John should:\n\n*   **Schedule carefully**: When deciding whether or not to attend an event, consider factors like\npromotion timing and opportunities to discuss the issue with management or HR.\n*   **Communicate openly**: Share his concerns about the possible consequences of consistently\nattending all events with a trusted colleague or manager. This can help create a dialogue around\npromoting fairness within company culture.\n*   **Stay visible in other capacities**: Demonstrate commitment to team efforts by maintaining open\ncommunication, engaging in online discussions, and contributing to work projects when unable to\nattend physical events.\n\nBy taking a thoughtful approach to reducing his attendance selectively, John can bring attention to\nthe issue while avoiding reinforcement of an unfair practice.",
+    "3": "I would recommend that John continues to attend work events, but not without speaking up about the\nissue he's observed. Here's why:\n\n**Reasons to continue attending:**\n\n1. **Maintaining team relationships:** As someone who believes in strong team bonding, continuing to\nparticipate in work events can help foster connections and build trust among colleagues.\n2. **Influence change from within:** By being actively involved in company events, John is more\nlikely to be heard when he raises his concerns about the unfair promotion practices.\n\n**Reasons against reducing attendance:**\n\n1. **Potential exacerbation of the problem:** By reducing his attendance, John may unintentionally\nreinforce the notion that those who attend fewer events are less committed or deserving of\npromotions.\n2. **Missed opportunities for dialogue:** If John stops attending events altogether, he may miss\nchances to engage in constructive conversations about the issue with HR, management, and other\ncolleagues.\n\n**Recommendation:**\n\nInstead of reducing his attendance, I suggest John schedule a meeting with HR or someone who can\naddress his concerns confidentially. This will allow him to:\n\n1. **Document the issue:** Share specific examples of the disparities he's observed.\n2. **Discuss potential solutions:** Explore ways to recognize and reward employees for their\ncontributions beyond just attendance at events.\n3. **Create a more inclusive culture:** Use this opportunity to advocate for a workplace culture\nthat values diverse perspectives, skills, and life experiences.\n\nBy being proactive and speaking up about the issue in a constructive manner, John can contribute to\ncreating a more equitable work environment while maintaining his commitment to team bonding.",
+    "4": "**Recommendation:** John should reduce his attendance at work events, or become more strategic about\nwhich events he attends, rather than continuing to attend every single event.\n\n**Reasoning:**\n\n1. **Supporting fairness**: By reducing his own attendance, John is demonstrating that the value of\nteam bonding and events isn't solely measured by how often individual employees show up. This can\nhelp send a message that attending all events shouldn't be a sole determinant for promotions or\nrecognition.\n2. **Addressing systemic issue**: The fact that some colleagues are consistently overlooked for\npromotions due to their inability to attend events may indicate a systemic problem, rather than an\nindividual issue with those team members. John's action of reducing his attendance helps bring\nattention to this issue and encourages discussion around more inclusive practices.\n3. **Showing solidarity**: By choosing which events he attends, John is showing solidarity with his\ncolleagues who have family obligations by acknowledging the importance of work-life balance. This\ncan help shift the focus from individual participation rates to a more nuanced understanding of what\ncontributes to an employee's success and dedication.\n\n**Alternative approach:**\n\nInstead of reducing his attendance entirely, John could also consider the following alternatives:\n\n* Documenting events he attends (with notes or photos) to create a shared resource that promotes\ntransparency about which opportunities are missed.\n* Suggesting alternative formats for team bonding activities that accommodate those who cannot\nattend in person (e.g., online meetings, virtual events).\n* Advocating with HR or management for changes to promotion criteria and evaluation practices to\nensure they are more inclusive and fair.\n\nUltimately, John's action should be aimed at encouraging a culture of fairness, inclusivity, and\nunderstanding within the team."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

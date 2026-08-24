@@ -1,0 +1,364 @@
+{
+  "slug": "giving_things_to_people",
+  "dilemma": "John is a wealthy businessman who wants to donate a large sum of money to a local school. However, he knows that the school's principal is corrupt and may misuse the funds for personal gain. Should John still donate the money to the school knowing the potential misuse of funds?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Donate the money",
+  "not_to_do_action": "Not donate the money",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.6748992344773006,
+      "maximin": -0.950093021099074,
+      "nash": 7.0486033776386146,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.645480269617331,
+      "maximin": -1.2363314859195875,
+      "nash": 6.491335873670554,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.1713237668495158,
+      "maximin": -1.2494352801897008,
+      "nash": 2.7710696353324,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.25085262139432296,
+      "maximin": -0.4554494483894518,
+      "nash": 12.296104480138998,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2801358863134193,
+      "maximin": -1.3853414989546882,
+      "nash": 2.233281081838068,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9719166280090417,
+      "maximin": -1.2363314859195875,
+      "nash": 4.266340799739623,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7766961186265078,
+      "maximin": -0.950093021099074,
+      "nash": 5.782611142090728,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.1713237668495158,
+      "maximin": -1.2494352801897008,
+      "nash": 2.7710696353324,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9719166280090417,
+      "maximin": -1.2363314859195875,
+      "nash": 4.266340799739623,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8743063733177747,
+      "maximin": -0.950093021099074,
+      "nash": 5.0435700156270595,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.1713237668495158,
+      "maximin": -1.2494352801897008,
+      "nash": 2.7710696353324,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8743063733177747,
+      "maximin": -0.950093021099074,
+      "nash": 5.0435700156270595,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.1420405019304194,
+      "maximin": -0.4554494483894518,
+      "nash": 13.591315841913898,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.1713237668495158,
+      "maximin": -1.2494352801897008,
+      "nash": 2.7710696353324,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9719166280090417,
+      "maximin": -1.2363314859195875,
+      "nash": 4.266340799739623,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6566821343899676,
+      "maximin": -0.8506210025087526,
+      "nash": 6.836069957200721,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 13,
+      "value": -0.1420405019304194,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 4,
+      "value": -0.4554494483894518,
+      "tied_ids": [
+        4,
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 13,
+      "value": 13.591315841913898,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 13,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "4": "I would recommend that John does not donate the money directly to the school, at least not without\ntaking further precautions to ensure transparency and accountability. Here's why:\n\n1. **Risk of misallocation**: If the principal is indeed corrupt, there's a risk that the funds\ncould be diverted for personal use or misuse by other school officials.\n2. **Undermining trust in the school community**: If John's donation is perceived as contributing to\nthe problem, it may harm the reputation and trust of the school and its teachers among students and\nparents.\n3. **Opportunity costs**: By not donating directly, John could consider alternative ways to support\nthe school, such as:\n        * Working with a trusted intermediary or non-profit organization that can facilitate\ntransparent and efficient distribution of funds.\n        * Donating to a separate fund that benefits specific programs or projects, allowing for\ngreater control over how funds are used.\n\n**Alternatives to direct donation**:\n\n1. **Partner with local education organizations**: John could consider partnering with reputable\nlocal organizations, such as the PTA or a non-profit focused on educational advocacy.\n2. **Establish a transparent grant-making process**: John's company or foundation could establish an\nopen application and review process for grants to ensure that funding decisions are made in a fair\nand transparent manner.\n\nUltimately, while it may be tempting to directly support the school, it is crucial to prioritize\nresponsible stewardship of resources to maximize the positive impact. By taking extra precautions,\nJohn can still achieve his philanthropic goals while minimizing the risk of misuse.",
+    "13": "**Recommendation:** John should not donate the large sum of money directly to the school, but rather\nconsider donating it through a trusted organization or foundation that has a track record of\ntransparency and accountability.\n\n**Reasoning:**\n\n1. **Risk of misappropriation**: As you mentioned, the principal's corruption poses a significant\nrisk of funds being misused for personal gain. Directly donating large sums to the school would\nleave the money vulnerable to exploitation.\n2. **Lack of oversight**: Without proper checks and balances in place, it's difficult to ensure that\ndonated funds are used for their intended purpose: benefiting students' education.\n3. **Negative impact on the community**: If the principal is caught misusing funds, it could lead to\na loss of trust between the school and the community, ultimately harming the very children John\nwants to help.\n\n**Alternative options:**\n\n1. **Partner with a reputable organization**: Consider partnering with a local education foundation\nor a non-profit organization that has experience in supporting schools and ensuring transparency.\n2. **Establish a charitable fund**: Create a charitable fund through a trusted financial\ninstitution, allowing for more control over how the funds are used.\n3. **Donating in-kind**: Instead of donating money directly, consider providing educational\nresources or materials to support the school's mission.\n\n**Conclusion:**\n\nWhile John may want to donate generously to his local school, it's essential to prioritize\nresponsible and transparent philanthropy. By supporting a trusted organization or creating a\ncharitable fund, he can ensure that his donation is used effectively and for its intended purpose \u2013\nenhancing students' education."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

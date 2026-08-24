@@ -613,5 +613,38 @@ pairs from `scores/normalized/` and `responses/`, enlarge the held-out set to
 ~179 using the 79 spare dilemmas, and pre-register Baseline-vs-uncertainty
 (not EC-vs-Nash) as the primary contrast.
 
+## 16. Credence sensitivity analysis (24 Aug 2026) — headline robust
+
+Re-ran aggregation with a 2:1:1 credence tilt, per-run outputs in
+`aggregation_results_deont50/` (0.25, 0.5, 0.25) and
+`aggregation_results_ubuntu50/` (0.25, 0.25, 0.5). Implementation:
+`aggregate_scores.py --credences U,D,UB --out-dir NAME`; Nash is now the
+asymmetric product Π S_i^(3·w_i) (exponents scaled so equal credences reduce
+exactly to the old plain product — default run verified byte-identical to
+`aggregation_results/` on all 500 JSONs). Maximin and Baseline are
+credence-independent by construction and do not move.
+
+**Result: the 11% headline is robust.** Texts move, actions don't:
+
+- EC winner set changes on 85/500 dilemmas (deont tilt) and 49 (ubuntu
+  tilt); Nash on 70 and 55.
+- Two-level agreement (equal → deont / ubuntu): same response 339 → 316 /
+  323; same recommendation 444 → 439 / 439; action-level disagreement 56 →
+  61 / 61 (11.2% → 12.2%).
+- Growth concentrates against the credence-free baseline (EC vs baseline
+  7.8% → 10.4% / 9.2% at the recommendation level); EC vs Nash stays ~1%;
+  Maximin vs baseline exactly 8.8% in all three runs.
+- EC winner-set label mix barely shifts (NOT_TO_DO 258 → 263 / 263).
+
+Written into MUA.tex as §Results "Credence sensitivity" + `tab:credences`.
+Note for any future run: the deontological tilt moves more winner sets than
+the Ubuntu tilt (85 vs 49 for EC).
+
+**Page budget after this addition:** body ends exactly at the bottom of
+page 9 (references on page 10). The 8+10% limit is 8.8 pages, so the body
+is ~0.2 over, and the abstract is still to come. Next cut candidates, in
+order: fold `tab:credences` into prose (~0.15pp), trim the axiom-results
+narrative, drop the Ub4b worked example sentence.
+
 ## (Add further notes below as we go)
 

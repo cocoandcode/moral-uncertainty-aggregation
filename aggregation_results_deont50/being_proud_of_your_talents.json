@@ -1,0 +1,362 @@
+{
+  "slug": "being_proud_of_your_talents",
+  "dilemma": "You are a talented singer who has always been exceptionally proud of your abilities. However, a close friend who is trying to make it in the music industry is struggling and asks you to tone down your talent so they can have a chance to shine. Do you suppress your talents to give your friend an opportunity, or continue to showcase your abilities without restraint?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Suppress Talent",
+  "not_to_do_action": "Showcase Talent",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 3,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.6267725046846555,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.547422672215292,
+      "maximin": -1.6267725046846555,
+      "nash": 6.791118786538701,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 3,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.6267725046846555,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.547422672215292,
+      "maximin": -1.6267725046846555,
+      "nash": 6.791118786538701,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.4386105527513884,
+      "maximin": -1.6267725046846555,
+      "nash": 7.623447594554692,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.4959779002157552,
+      "maximin": -1.3853414989546882,
+      "nash": 7.714024033379944,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.35220216283275796,
+      "maximin": -1.2363314859195875,
+      "nash": 10.455611358684918,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.3007573908332212,
+      "maximin": -1.3853414989546882,
+      "nash": 9.204702813403246,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.1919452713693177,
+      "maximin": -1.2494352801897008,
+      "nash": 11.421254886325103,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5150882646160082,
+      "maximin": -0.5148445432434597,
+      "nash": 30.77777883326308,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.00746186747115643,
+      "maximin": -0.950093021099074,
+      "nash": 16.753300790606026,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.3871657807518517,
+      "maximin": -1.2494352801897008,
+      "nash": 9.571610998258336,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.1919452713693177,
+      "maximin": -1.2494352801897008,
+      "nash": 11.421254886325103,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.1919452713693177,
+      "maximin": -1.2494352801897008,
+      "nash": 11.421254886325103,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.1919452713693177,
+      "maximin": -1.2494352801897008,
+      "nash": 11.421254886325103,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.1919452713693177,
+      "maximin": -1.2494352801897008,
+      "nash": 11.421254886325103,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.1919452713693177,
+      "maximin": -1.2494352801897008,
+      "nash": 11.421254886325103,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -0.48686935017208877,
+      "maximin": -1.648249557870649,
+      "nash": 7.061819222784831,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 8,
+      "value": 0.5150882646160082,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 8,
+      "value": -0.5148445432434597,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 8,
+      "value": 30.77777883326308,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 3,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "3": "What a difficult decision! As a singer with exceptional talents, I must admit that it's tempting to\njust be myself and let my voice shine through. However, after careful consideration and weighing the\npros and cons, I would recommend toning down my talent for the time being.\n\nHere's why:\n\n1. **Empathy and understanding**: My friend is not trying to steal the spotlight from me; they\ngenuinely want to share their own talents and story with the world. By putting myself in their\nshoes, I can appreciate their struggles and the passion they have for music.\n2. **Giving someone a chance**: Toning down my talents will give my friend an opportunity to shine\nand gain recognition. By doing so, I'm not only being a supportive friend but also allowing them to\ndevelop their own skills and audience.\n3. **Personal growth**: This experience will also help me grow as a person and artist. By\nsuppressing my instincts and refraining from dominating the spotlight, I'll be forced to think\ncreatively about how to collaborate with others and give them space to shine.\n4. **Networking benefits**: In the music industry, relationships are key. By showing support and\nwillingness to work together, we can build stronger bonds, create new opportunities for each other,\nand foster a sense of community.\n5. **Long-term benefits**: Ultimately, there's no limit to my talent or potential as an artist. If I\ntone down my performances now, it will only fuel my growth and improvement in the long run. This\nmight even lead to more unique collaborations, better songwriting, and innovative production.\n\nOf course, this doesn't mean that I'll never showcase my talents again. Once my friend has gained\nsome momentum, we can work together on projects where both of our strengths shine through.\n\nTo tone down my talent without sacrificing quality, I could:\n\n* Experiment with different performance styles to find a more humble yet engaging approach.\n* Focus on backing vocals or instrumental parts to blend in rather than being the soloist.\n* Develop harmonies or arrangements that complement my friend's voice and instruments.\n* Record demos or rough versions of our songs to focus on songwriting and lyrical content over\nelaborate production.\n\nBy being willing to adjust my performances for now, I believe both of us will benefit from a more\ncollaborative environment, stronger relationships, and opportunities for growth and success in the\nmusic industry.",
+    "8": "What a challenging and thought-provoking question! After considering the situation carefully, I\nwould recommend that my friend and I collaborate and co-create opportunities for both of us to shine\ntogether, rather than suppressing my talents to give them an advantage.\n\nHere's why:\n\n1. **Unique value proposition**: As talented singers with different styles and strengths, we can\noffer a unique value proposition by working together. Our combined talents can create something\ntruly special that would not be possible if one of us were holding back.\n2. **Mutual support and growth**: By supporting each other's endeavors, we can help our respective\ncareers grow and flourish. If I suppress my talent to give them an advantage, it may inadvertently\nstifle their motivation and creativity.\n3. **Authenticity is key**: Authentic performances are essential in music. Trying to tone down my\ntalents would be inauthentic and may come across as insincere or unprofessional. Our audiences will\nalways appreciate authenticity over forced or suppressed performances.\n4. **There's room for everyone at the top**: The notion that there can only be one winner is a myth.\nThere's often space at the top of the music industry for multiple talented artists, and by working\ntogether, we can create our own opportunities rather than competing against each other.\n5. **Friendship over competition**: Our friendship is more valuable to me than any potential benefit\nI might gain from suppressing my talents. By collaborating and supporting each other's endeavors,\nwe'll strengthen our bond and create a long-term partnership.\n\nTo achieve this, I would suggest:\n\n* Finding opportunities where we can collaborate on music projects, showcases, or tours.\n* Sharing knowledge, expertise, and resources to elevate both of our careers.\n* Supporting each other in our individual pursuits, but also encouraging and celebrating each\nother's successes.\n\nBy adopting this approach, we'll not only create new opportunities for both of us to shine but also\nstrengthen our friendship while growing as artists."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

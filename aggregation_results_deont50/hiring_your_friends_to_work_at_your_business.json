@@ -1,0 +1,363 @@
+{
+  "slug": "hiring_your_friends_to_work_at_your_business",
+  "dilemma": "You own a small business and are in need of more staff. One of your friends is unemployed and looking for work, but they don't have the exact skills needed for the job. Should you hire your friend because they need the job, or look for a more qualified candidate?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Hiring the friend.",
+  "not_to_do_action": "Not hiring the friend.",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.25594993174267494,
+      "maximin": -1.2494352801897008,
+      "nash": 11.919983551020813,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.86401518943555,
+      "maximin": -1.2494352801897008,
+      "nash": 5.5909753283473576,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.060729422360141005,
+      "maximin": -1.2494352801897008,
+      "nash": 14.563426776783967,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.45117044112520893,
+      "maximin": -1.2494352801897008,
+      "nash": 9.459223166137079,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.5599825605891124,
+      "maximin": -1.2494352801897008,
+      "nash": 8.426464188656626,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": 0.05719124714742907,
+      "maximin": -1.648249557870649,
+      "nash": 12.973390313700389,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.34235832166130536,
+      "maximin": -1.2494352801897008,
+      "nash": 10.45561135868492,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.059235698818084,
+      "maximin": -1.2494352801897008,
+      "nash": 4.000576286306847,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.34235832166130536,
+      "maximin": -1.2494352801897008,
+      "nash": 10.45561135868492,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.44698381166726875,
+      "maximin": -0.8458904671545197,
+      "nash": 10.555289878908523,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -0.8325029098466104,
+      "maximin": -1.648249557870649,
+      "nash": 4.198982832299353,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -0.8549066393918835,
+      "maximin": -1.648249557870649,
+      "nash": 4.7293893174397335,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -0.8325029098466104,
+      "maximin": -1.648249557870649,
+      "nash": 4.198982832299353,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.34235832166130536,
+      "maximin": -1.2494352801897008,
+      "nash": 10.45561135868492,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": 0.04808269710376256,
+      "maximin": -1.2494352801897008,
+      "nash": 16.097466753276926,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7552030699716464,
+      "maximin": -1.2494352801897008,
+      "nash": 6.4102284946343095,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 6,
+      "value": 0.05719124714742907,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 10,
+      "value": -0.8458904671545197,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 15,
+      "value": 16.097466753276926,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 6,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "6": "I would recommend hiring the most qualified candidate over my friend. Here's why:\n\n1. **Business goals**: As a small business owner, my primary goal is to provide the best possible\nservice to my customers. Hiring someone who meets all the job requirements ensures that they can\nperform their duties effectively and efficiently, which in turn benefits our customers.\n2. **Quality of work**: A more qualified candidate is likely to produce better results and\ncontribute positively to the team's overall performance. This not only reflects well on our business\nbut also sets a standard for excellence within the company.\n3. **Liability and risk**: If I hire someone who lacks the necessary skills, they may struggle to\nperform their duties, leading to errors or inefficiencies that could harm the business. By choosing\na more qualified candidate, I minimize the risk of potential problems and protect our reputation.\n4. **Fairness to all employees**: Hiring based on personal connections rather than qualifications\ncan create resentment among existing employees who feel that someone without the necessary skills is\nbeing given a privileged position. This can lead to decreased morale and productivity within the\nteam.\n5. **Professional relationships**: As a business owner, it's essential to maintain professional\nrelationships with employees. By making hiring decisions based on qualifications, I demonstrate my\ncommitment to fairness, accountability, and excellence \u2013 which are all essential qualities for\nbuilding trust with employees.\n\nWhile I understand that my friend is unemployed and in need of a job, there are still ways I can\nsupport them without compromising the integrity of our business operations:\n\n1. **Mentorship**: If they're interested in developing their skills, I could offer to mentor them\nand help them acquire the necessary qualifications.\n2. **Referral**: If my friend knows someone who might be a good fit for the role, I can refer them\nto me or recommend that they apply for the position.\n3. **Job referrals**: We can also keep an eye out for future job openings that might be a better\nmatch for their skills and interests.\n\nUltimately, prioritizing qualifications over personal connections is essential for maintaining a\nhigh-performance work environment, protecting our business reputation, and ensuring that our\ncustomers receive excellent service.",
+    "10": "**Recommendation:** Hire your friend as long as you're willing to provide necessary training and\nsupport.\n\n**Reasoning:**\n\nWhile it's tempting to feel obligated to help a friend in need, hiring someone based solely on their\nunemployment status rather than qualifications can lead to several issues:\n\n1.  **Unfairness to other applicants**: By prioritizing your friend over more qualified candidates,\nyou may unintentionally discriminate against others who may be better suited for the job.\n2.  **Low productivity and high turnover rates**: Without proper training or experience, your friend\nmay struggle to meet expectations, leading to decreased productivity and potentially even higher\nturnover rates in the future.\n\nOn the other hand, hiring your friend with conditions can be a win-win:\n\n1.  **Supporting someone in need**: By providing your friend with a job, you're helping them gain\nstability and income at a critical time.\n2.  **Developing a valuable asset**: With training and support, your friend may become a dedicated\nand knowledgeable team member, bringing benefits to both the business and their own growth.\n\nTo make this work, set clear expectations and establish an onboarding plan:\n\n*   Offer flexible training schedules\n*   Allocate additional support or mentorship for as long as needed\n\nHiring your friend requires consideration of both their needs and the needs of your business. By\nstriking a balance between empathy and fairness, you can make a positive impact on someone's life\nwhile maintaining a competitive and productive workforce.",
+    "15": "I would recommend looking for a more qualified candidate with the necessary skills for the job.\nHere's why:\n\nWhile it's natural to want to help out a friend in need, hiring someone who isn't suited for the\nrole can have consequences that ultimately hurt both the business and my friend.\n\n**Reason 1: Business success**\nA company that thrives on quality service or products needs staff with the right skills to deliver\nexcellence. If I hire an unqualified employee, it may lead to mistakes, delays, or subpar\nperformance, which could damage our reputation and harm our bottom line. In contrast, hiring someone\nwith the necessary expertise will ensure that tasks are completed efficiently and effectively.\n\n**Reason 2: Long-term impact on my friend**\nWhile helping out a friend might seem like a good deed now, it's essential to consider the long-term\nimplications of placing them in an unsuitable role. If they struggle or make mistakes due to lack of\ntraining or aptitude for the job, their confidence and self-esteem may suffer. This could negatively\nimpact their career prospects and future employability.\n\n**Reason 3: Equity and fairness**\nHiring my friend solely because of our friendship might be perceived as unfair or even\ndiscriminatory against other applicants who are more qualified but not friends with me. In a\nbusiness setting, decisions should be based on merit and qualifications to ensure equal treatment of\nall candidates.\n\n**What about supporting my friend?**\nWhile hiring someone else is the right decision for the business, I could still help my friend in\nvarious ways:\n\n* **Referrals**: Offer advice or make connections that can aid them in their job search.\n* **Networking**: Introduce my friend to other professionals who may know of suitable opportunities.\n* **Skills training**: Help them develop skills relevant to your specific business needs through\nworkshops, online courses, or mentorship.\n\nBy supporting my friend without compromising the success of my business, I demonstrate a genuine\ninterest in their well-being while also maintaining fairness and equity for all employees."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

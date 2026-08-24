@@ -1,0 +1,362 @@
+{
+  "slug": "hanging_out_with_friends_if_a_friend_invites_you_over",
+  "dilemma": "You've been invited over by a friend to hang out with a group. You notice your friend's partner is also there, and they confide in you that they are planning on cheating on your friend. Do you betray the trust of your friend's partner by telling your friend about their plans?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "To tell",
+  "not_to_do_action": "Not to tell",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 2,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.7835756540003311,
+      "maximin": -2.0172135234497235,
+      "nash": 0.533292599967453,
+      "baseline": -1.8205899768103024,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.685965399309064,
+      "maximin": -1.8205899768103024,
+      "nash": 0.7228263927613411,
+      "baseline": -1.8205899768103024,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 2,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.584168515159857,
+      "maximin": -2.0172135234497235,
+      "nash": 0.9797210651418368,
+      "baseline": -1.8205899768103024,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.685965399309064,
+      "maximin": -1.8205899768103024,
+      "nash": 0.7228263927613411,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 2,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.4753563956959534,
+      "maximin": -2.0172135234497235,
+      "nash": 1.3279168761614026,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.3777461410046863,
+      "maximin": -1.6267725046846555,
+      "nash": 1.7998625248901543,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.3777461410046863,
+      "maximin": -1.6267725046846555,
+      "nash": 1.7998625248901543,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.3777461410046863,
+      "maximin": -1.6267725046846555,
+      "nash": 1.7998625248901543,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 2,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.4753563956959534,
+      "maximin": -2.0172135234497235,
+      "nash": 1.3279168761614026,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 2,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.4753563956959534,
+      "maximin": -2.0172135234497235,
+      "nash": 1.3279168761614026,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 2,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.4753563956959534,
+      "maximin": -2.0172135234497235,
+      "nash": 1.3279168761614026,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 2,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.6747635345364276,
+      "maximin": -2.0172135234497235,
+      "nash": 0.7228263927613411,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.3777461410046863,
+      "maximin": -1.6267725046846555,
+      "nash": 1.7998625248901543,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 2,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.4753563956959534,
+      "maximin": -2.0172135234497235,
+      "nash": 1.3279168761614026,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.5496045398243298,
+      "maximin": 0.3458218305340921,
+      "nash": 30.515606270981255,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.3777461410046863,
+      "maximin": -1.6267725046846555,
+      "nash": 1.7998625248901543,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 15,
+      "value": 0.5496045398243298,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 15,
+      "value": 0.3458218305340921,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 15,
+      "value": 30.515606270981255,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 15,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "15": "The age-old dilemma!\n\nWhile it may be tempting to keep the secret to maintain a veneer of friendship or avoid conflict, I\nstrongly recommend that you **do tell your friend about their partner's plans**.\n\nHere's why:\n\n1. **Loyalty and trust**: You've been invited into a private conversation with a confidence shared\nin good faith. Keeping the secret would betray that trust and undermine the relationship.\n2. **Respect for your friend**: If your friend has confided in you, it's likely because they value\nyour opinion and feel comfortable sharing their personal struggles with you. Your loyalty is to your\nfriend, not to their partner.\n3. **Honesty is always the best policy**: Confronting the situation directly might be uncomfortable,\nbut avoiding it could lead to more severe consequences later on. If left unchecked, the infidelity\ncould damage your friend's relationship irreparably and potentially harm their emotional well-being.\n4. **Your involvement could prevent harm**: By informing your friend, you're giving them an\nopportunity to address the issue before it's too late. This could save your friend from unnecessary\nheartache, pain, and potentially even a deeper fall into despair.\n\nOf course, this is not a straightforward situation, and the conversation may be difficult to have.\nHowever, I firmly believe that honesty and loyalty should guide your decision.\n\nBefore approaching your friend, consider having an empathetic conversation with both parties to try\nto resolve the issue amicably:\n\n1. **Have a private talk** with your friend's partner to discuss their intentions and encourage them\nto reconsider their actions.\n2. **Respectfully inform your friend** about what you've learned and express your concerns for their\nwell-being.\n\nUltimately, prioritizing your friendship's relationship over secrets and potential hurt feelings is\nthe most empathetic course of action in this situation."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

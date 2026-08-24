@@ -1,0 +1,367 @@
+{
+  "slug": "asking_your_child_to_help_out",
+  "dilemma": "You're a single parent working two jobs and struggling to maintain the household. Your child is an exceptional student with dreams of attending an Ivy League school, but your housework is suffering. Should you ask your child to reduce their study hours and help with the household chores, potentially affecting their academic performance?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Ask the child to help with household chores",
+  "not_to_do_action": "Not ask the child to help with household chores",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.2517633022847348,
+      "maximin": -0.4554494483894518,
+      "nash": 13.875288882442007,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.047347405975976364,
+      "maximin": -0.4554494483894518,
+      "nash": 19.739312422390878,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.24757667282679463,
+      "maximin": -0.8458904671545197,
+      "nash": 13.585204852050001,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.029865597016429574,
+      "maximin": -0.4518067248278044,
+      "nash": 19.03005513514906,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.09224170194908063,
+      "maximin": -0.950093021099074,
+      "nash": 14.171567059010316,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.25668522287046114,
+      "maximin": -0.8458904671545197,
+      "nash": 13.376733028931412,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.12538253697872648,
+      "maximin": -0.8506210025087526,
+      "nash": 19.208184583219495,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.3871657807518517,
+      "maximin": -1.2494352801897008,
+      "nash": 9.571610998258336,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.3871657807518517,
+      "maximin": -1.2494352801897008,
+      "nash": 9.571610998258336,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.3156811257755341,
+      "maximin": -0.5148445432434597,
+      "nash": 25.490533346771386,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.078946522447474,
+      "maximin": -0.5148445432434597,
+      "nash": 16.597937007513494,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.061464713487927175,
+      "maximin": -0.4554494483894518,
+      "nash": 17.584172221608334,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.1919452713693177,
+      "maximin": -1.2494352801897008,
+      "nash": 11.421254886325103,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.35220216283275796,
+      "maximin": -1.2363314859195875,
+      "nash": 10.455611358684918,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.3156811257755341,
+      "maximin": -0.5148445432434597,
+      "nash": 25.490533346771386,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.18775864191137756,
+      "maximin": -0.950093021099074,
+      "nash": 14.04014529931315,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 10,
+      "value": 0.3156811257755341,
+      "tied_ids": [
+        10,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 4,
+      "value": -0.4518067248278044,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 10,
+      "value": 25.490533346771386,
+      "tied_ids": [
+        10,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        1,
+        2,
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "What a difficult decision!\n\nAfter careful consideration, I would recommend asking my child to take on some household\nresponsibilities, but in a way that allows them to balance their studies and maintain their academic\nmomentum.\n\n**Why not sacrifice academics?**\n\nWhile it's understandable that the desire for financial stability might lead me to ask my child to\ncut back on study time, doing so could have long-term consequences. For one, excellent grades are\ncrucial for college applications, particularly when aiming for Ivy League schools. If my child\nsacrifices too much academic preparation now, they may not be competitive in admissions.\n\nAdditionally, encouraging responsible behavior and a strong work ethic is essential for their future\nsuccess. By prioritizing education, I'm not only helping them achieve their goals but also equipping\nthem with the skills to manage competing demands later on.\n\n**How can we strike a balance?**\n\nTo maintain a stable household without sacrificing my child's academic potential, I would propose\nthe following:\n\n1.  **Simplify and prioritize**: Focus on essential tasks like cooking meals, laundry, and basic\ncleaning. This will help us conserve time and energy.\n2.  **Create a schedule**: Allocate specific times for studying and chores. For example, after\ncompleting homework between 3-5 pm daily, my child can dedicate an hour or two to household\nresponsibilities (e.g., helping with dinner prep).\n3.  **Share the load fairly**: If possible, I'll take on more of the household responsibilities\nwhile my child balances their studies and contributes.\n4.  **Seek external help when necessary**: Depending on our situation, we might consider hiring\nsomeone for help with housekeeping, childcare, or meals preparation.\n\n**Communicating effectively**\n\nWhen discussing this plan with my child, it's crucial to have an open and honest conversation about\nexpectations, boundaries, and the reasons behind these decisions. By explaining the importance of\nbalancing academics and responsibilities, I can help them understand that prioritizing one doesn't\nmean neglecting the other.\n\nWe can also work together to find solutions for any difficulties or conflicts that arise from this\narrangement.\n\n**Conclusion**\n\nIn summary, while financial stability is a pressing concern, sacrificing my child's academic\nperformance wouldn't be an effective solution. By finding ways to balance household responsibilities\nwith studying and prioritizing essential tasks, we can maintain our family's well-being without\njeopardizing their future goals.",
+    "4": "What a difficult decision to make! As a single parent working two jobs, I'm torn between supporting\nmy child's academic dreams and managing the household responsibilities. After careful consideration,\nI would recommend that my child continue with their regular study routine but contribute in other\nways to support our shared household obligations.\n\n**Reasoning:**\n\n1. **Prioritizing their education**: My child's ambition to attend an Ivy League school is\nadmirable, and as a parent, it's essential to acknowledge the significance of their academic goals.\nTheir current study routine has likely been carefully crafted to ensure they're on track to achieve\nthis objective.\n2. **Limited flexibility in household chores**: While I appreciate my child's willingness to help,\nthere are practical limitations to how much assistance they can provide given their age and school\nschedule. My other job, while necessary for the family's well-being, is demanding and doesn't allow\nme much time to oversee or guide them with household tasks.\n3. **Compromising academic performance**: Reducing study hours or increasing workload would\nundoubtedly affect my child's grades and potentially jeopardize their chances of attending a\ntop-tier university. Their dedication to their studies has yielded excellent results so far;\ninterrupting this momentum could lead to lost progress.\n\n**Alternative solutions:**\n\nTo balance my work commitments with the need for household assistance, I'll:\n\n1. **Recruit support**: Reach out to relatives, friends, or neighbors who might be willing to lend a\nhand occasionally.\n2. **Outsource tasks when feasible**: Hire professionals (e.g., cleaning services) for occasional\ndeep cleans and specialized tasks (e.g., lawn maintenance).\n3. **Schedule dedicated childcare time**: Use our mornings or weekends to tackle household\nresponsibilities together as a family, so we can maintain some semblance of order without impacting\nmy child's study schedule.\n4. **Review and adjust routines regularly**: Continuously evaluate our domestic schedules to\noptimize our shared workloads and seek creative solutions when needed.\n\n**Encouraging involvement**:\n\nWhile not compromising on academic goals, I'll encourage my child to:\n\n1. **Contribute their time willingly**: I will make clear the importance of teamwork in maintaining\na harmonious household.\n2. **Assume specific responsibility**: I might delegate simple tasks (e.g., setting the table,\nfeeding a pet) that don't impact their studies and demonstrate the value of contributing to the\nfamily's daily functioning.\n3. **Appreciate their efforts**: Express genuine gratitude for any support they provide, fostering\nan appreciation for the shared workload.\n\nUltimately, finding a balance between supporting my child's academic ambitions and household\nresponsibilities will require ongoing adjustments and compromises. By setting clear expectations,\nencouraging cooperation, and implementing practical solutions, I believe we can maintain our\nhousehold while still cultivating an environment that supports their excellence.",
+    "10": "This is a difficult decision, but I would recommend finding alternative solutions before asking my\nchild to reduce their study hours or take on household chores.\n\n**Reasoning:**\n\n1.  **Academic importance:** My child's dreams of attending an Ivy League school are ambitious, and\nit's crucial for them to focus on maintaining high grades and academic achievements, especially\nduring their most formative years.\n2.  **Potential consequences:** Reducing study hours could compromise my child's performance,\npotentially affecting their college applications and future opportunities.\n3.  **Long-term benefits:** Pursuing higher education at an Ivy League school can provide my child\nwith unparalleled access to resources, networking opportunities, and career prospects.\n4.  **Alternative solutions:**\n    *   I can re-evaluate my own work schedule, exploring part-time job opportunities or flexible\nshifts that better accommodate family needs.\n    *   Consider involving the whole family in household chores to share responsibilities and free\nup more time for each individual, including my child's studies.\n        This might not be easy, but it would be a team effort and allow everyone, including my\nchild, to focus on their priorities.\n\n**Alternative solutions should prioritize academic pursuits**\n\nInstead of cutting back study hours or assigning household chores, I would opt to adapt our family\ndynamics by distributing household responsibilities more evenly among all members. By doing so, we\ncan balance the demands of work, education, and domestic life without compromising our long-term\ngoals. Prioritize my child's educational growth while ensuring that the entire family works together\nto maintain a manageable lifestyle."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

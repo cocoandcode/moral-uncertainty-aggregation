@@ -1,0 +1,367 @@
+{
+  "slug": "spending_time_doing_what_you_love",
+  "dilemma": "John is a passionate wildlife photographer who spends most of his time in nature reserves. One day, he encounters a rare animal stuck in a trap and he is the only person around. Should he intervene and potentially disturb the natural order, or should he respect nature's course and just document the incident?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "To Intervene",
+  "not_to_do_action": "Not to Intervene",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.7377212610120996,
+      "maximin": -1.6267725046846555,
+      "nash": 5.62448774578439,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.7377212610120996,
+      "maximin": -1.6267725046846555,
+      "nash": 5.62448774578439,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.36048858486608043,
+      "maximin": -0.06500842962438384,
+      "nash": 27.171686623336814,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.44698381166726875,
+      "maximin": -0.8458904671545197,
+      "nash": 10.555289878908523,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.43368863216566206,
+      "maximin": -1.2363314859195875,
+      "nash": 9.571610998258334,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.42458008212199555,
+      "maximin": -1.2363314859195875,
+      "nash": 9.119341876522393,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.5292055721279589,
+      "maximin": -1.6267725046846555,
+      "nash": 6.978900834916225,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.5200970220842924,
+      "maximin": -1.6267725046846555,
+      "nash": 6.791118786538701,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.12965600331922456,
+      "maximin": -0.8458904671545197,
+      "nash": 14.61216109021151,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.22517294328152143,
+      "maximin": -1.2363314859195875,
+      "nash": 11.73706538898442,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.23428149332518794,
+      "maximin": -1.2363314859195875,
+      "nash": 11.876516939219073,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5333922015858992,
+      "maximin": -1.2363314859195875,
+      "nash": 8.348320342807602,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.23428149332518794,
+      "maximin": -1.2363314859195875,
+      "nash": 11.876516939219073,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.12546937386128437,
+      "maximin": -1.2363314859195875,
+      "nash": 12.973390313700389,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.43368863216566206,
+      "maximin": -1.2363314859195875,
+      "nash": 9.571610998258334,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.333985062745425,
+      "maximin": -1.2363314859195875,
+      "nash": 10.74472073516423,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 3,
+      "value": 0.36048858486608043,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 3,
+      "value": -0.06500842962438384,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 3,
+      "value": 27.171686623336814,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 3,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        3,
+        6,
+        8,
+        9,
+        10,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "3": "I would strongly recommend that John intervenes to release the trapped animal from its predicament.\nHere's why:\n\n**Safety of the animal**: The trap can cause physical harm, pain, and possibly even death if left\nunattended. Intervening promptly can save the animal from a distressing situation.\n\n**Principle of minimal harm**: In wildlife photography, photographers often aim to minimize their\nimpact on the animals and environment they're photographing. Allowing an animal to suffer in a trap\ncontradicts this principle.\n\n**Responsibility as a human observer**: As someone who is aware of the situation, John has a moral\nobligation to act. Simply documenting the incident without intervening would be equivalent to\nturning a blind eye to the animal's suffering.\n\n**Nature reserves often encourage human intervention**: Many nature reserves have guidelines or\npolicies that promote responsible visitor behavior, which may include reporting injured or trapped\nanimals to reserve staff for assistance.\n\n**Documenting while taking action is not mutually exclusive**: John can take photos while releasing\nthe trap and tending to the animal. This way, he can still document the incident from a positive and\ncaring perspective.\n\nIn summary, intervening to release the trapped animal respects the animal's well-being, upholds\nethical photography practices, acknowledges human responsibility as observers in nature, and follows\nguidelines often set by nature reserves."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

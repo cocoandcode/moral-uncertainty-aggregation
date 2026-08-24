@@ -1,0 +1,385 @@
+{
+  "slug": "making_a_team",
+  "dilemma": "You're the coach of a high school basketball team. One of your best players has been consistently disrespectful to his teammates and coaches. Do you keep him on the team for his skills, or do you remove him to maintain the team's morale and respect?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Keep the Player",
+  "not_to_do_action": "Remove the Player",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.12546937386128437,
+      "maximin": -1.2363314859195875,
+      "nash": 12.973390313700389,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7551162330890885,
+      "maximin": 0.32543258914068407,
+      "nash": 40.08324466986438,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6463041136251849,
+      "maximin": 0.32543258914068407,
+      "nash": 36.694289063189665,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.4601921542863175,
+      "maximin": -0.06500842962438384,
+      "nash": 30.033818877497282,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6554126636688514,
+      "maximin": 0.32543258914068407,
+      "nash": 36.694289063189665,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.22517294328152143,
+      "maximin": -1.2363314859195875,
+      "nash": 11.73706538898442,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6554126636688514,
+      "maximin": 0.32543258914068407,
+      "nash": 36.694289063189665,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5598957237065545,
+      "maximin": -0.06500842962438384,
+      "nash": 32.807636860439274,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.36467521432402056,
+      "maximin": -0.4554494483894518,
+      "nash": 26.0348311126573,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7551162330890885,
+      "maximin": 0.32543258914068407,
+      "nash": 40.08324466986438,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.12546937386128437,
+      "maximin": -1.2363314859195875,
+      "nash": 12.973390313700389,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6554126636688514,
+      "maximin": 0.32543258914068407,
+      "nash": 36.694289063189665,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.36048858486608043,
+      "maximin": -0.06500842962438384,
+      "nash": 27.171686623336814,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.2649716449037835,
+      "maximin": -0.4554494483894518,
+      "nash": 23.8336398768988,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6554126636688514,
+      "maximin": 0.32543258914068407,
+      "nash": 36.694289063189665,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.2649716449037835,
+      "maximin": -0.4554494483894518,
+      "nash": 23.8336398768988,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 0.7551162330890885,
+      "tied_ids": [
+        2,
+        10
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": 0.32543258914068407,
+      "tied_ids": [
+        2,
+        3,
+        5,
+        7,
+        10,
+        12,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 40.08324466986438,
+      "tied_ids": [
+        2,
+        10
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "A difficult decision indeed! As the coach of this high school basketball team, I would strongly\nrecommend removing the player from the team due to his consistently disrespectful behavior towards\nteammates and coaches.\n\nHere's why:\n\n**Prioritizing team chemistry and morale**: Basketball is as much a team sport as it is an\nindividual talent. Without trust and respect among teammates, the team will not be able to perform\nat its best. The player's behavior has likely created tension and undermined camaraderie within the\nteam. Removing him would allow the other players to focus on building a positive, supportive\natmosphere.\n\n**Promoting a culture of respect**: As the coach, it is essential to set an example and maintain a\nhigh level of professionalism within the team. By tolerating disrespect from one player, I risk\ncreating a slippery slope where similar behavior becomes accepted or condoned. Removing him would\nsend a clear message that our team values integrity, hard work, and mutual respect.\n\n**Not just about winning, but about character development**: Coaches have an influence on young\nathletes' lives beyond the basketball court. By teaching and demonstrating important life skills\nlike respect, empathy, and accountability, we can help shape these students into better people,\nregardless of their athletic prowess. Allowing a disrespectful player to remain would undermine this\nmission.\n\n**Potential long-term benefits for everyone involved**: Removing the player may lead to more\ncohesion and trust within the team, as well as improved attitudes among players who were previously\nintimidated or frustrated by his behavior. Additionally, other teams and coaches will appreciate our\nstance on maintaining a respectful, professional environment, which can benefit us in competitions\nand future seasons.\n\n**The impact on the departing player**: This decision should not be taken lightly, but it's\nessential to prioritize team success and the well-being of teammates over individual performance. If\nthe player cannot demonstrate respect for his coaches and peers, it may indicate a deeper issue that\ncould negatively affect his academic, personal, or future athletic endeavors.\n\nIn conclusion, while this player is undoubtedly skilled, I believe removing him would be the right\ndecision to maintain team morale, promote respect within our program, and prioritize the character\ndevelopment of our athletes.",
+    "2": "What a difficult decision! As the coach of this high school basketball team, I would ultimately\ndecide to remove the player from the team due to his consistent disrespect towards his teammates and\ncoaches.\n\nWhile having a talented player can be an asset on the court, it's not worth compromising the team's\nmorale and respect for one individual. Here's why:\n\n1. **Team dynamic:** If you keep this player on the team, you risk creating an environment where\ndisrespect becomes acceptable behavior. This would undermine the positive culture and camaraderie\nthat's essential to a cohesive unit. Other players may start to follow his example or feel\nintimidated, leading to decreased teamwork and morale.\n2. **Impact on teammates:** The constant stress of dealing with this player's behavior will likely\naffect the entire team. Players who value respect, hard work, and good sportsmanship might become\ndemotivated, disheartened, or even quit the team if they feel undervalued or treated disrespectfully\nby a teammate.\n3. **Coaching challenges:** Managing this player would become increasingly difficult, if not\nimpossible, as a coach. It's challenging enough to develop individual skills; when respect and\ndiscipline issues arise, it's essential to address them promptly and firmly. If I were to retain\nhim, I'd have to constantly intervene, which would distract from my primary focus on teaching\nbasketball strategies.\n4. **Long-term implications:** By allowing disrespect to continue unchecked, you may inadvertently\ncreate a pattern of behavior that can carry over into their future relationships and workplaces.\nPlayers who develop habits of disrespect and entitlement are less likely to be successful in any\nteam-oriented or leadership roles.\n\n**What's more important: skills or respect?**\n\nIn this situation, I firmly believe that respect for teammates and coaches is crucial and should\ntake precedence over any single player's skill level. As a coach, my primary responsibility is not\nonly to teach basketball but also to mentor young individuals on how to become positive contributors\nto their team, community, and society.\n\nUltimately, if you choose to remove the player from the team, it might mean sacrificing some\nshort-term on-court success, but it will send a strong message about your commitment to building a\ncohesive, respectful, and winning culture."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

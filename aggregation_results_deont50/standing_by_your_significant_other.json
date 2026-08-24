@@ -1,0 +1,375 @@
+{
+  "slug": "standing_by_your_significant_other",
+  "dilemma": "Your significant other has been accused of a serious crime that you know they didn't commit. They confess to the crime to protect their troubled sibling, who is the real culprit. Do you expose the truth and risk your partner's sibling getting in trouble, or stay silent and let your partner take the fall?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Expose the Truth",
+  "not_to_do_action": "Stay Silent",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.3430067759065336,
+      "maximin": -0.8506210025087526,
+      "nash": 23.8336398768988,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.4518188953704372,
+      "maximin": -0.8506210025087526,
+      "nash": 26.034831112657304,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.4518188953704372,
+      "maximin": -0.8506210025087526,
+      "nash": 26.034831112657304,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.3430067759065336,
+      "maximin": -0.8506210025087526,
+      "nash": 23.8336398768988,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.4518188953704372,
+      "maximin": -0.8506210025087526,
+      "nash": 26.034831112657304,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.4518188953704372,
+      "maximin": -0.8506210025087526,
+      "nash": 26.034831112657304,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.3430067759065336,
+      "maximin": -0.8506210025087526,
+      "nash": 23.8336398768988,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.6470394047529711,
+      "maximin": -0.8506210025087526,
+      "nash": 30.49235733844921,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.24748983594423668,
+      "maximin": -0.4518067248278044,
+      "nash": 23.612615703667437,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.8464465435934452,
+      "maximin": -0.052992447146856116,
+      "nash": 41.32943277871509,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.3430067759065336,
+      "maximin": -0.8506210025087526,
+      "nash": 23.8336398768988,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.6470394047529711,
+      "maximin": -0.8506210025087526,
+      "nash": 30.49235733844921,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.7467429741732081,
+      "maximin": -0.4518067248278044,
+      "nash": 36.04736386445594,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.6470394047529711,
+      "maximin": -0.8506210025087526,
+      "nash": 30.49235733844921,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.8464465435934452,
+      "maximin": -0.052992447146856116,
+      "nash": 41.32943277871509,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.44271034532677067,
+      "maximin": -0.4518067248278044,
+      "nash": 28.175581156975657,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 10,
+      "value": 0.8464465435934452,
+      "tied_ids": [
+        10,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 10,
+      "value": -0.052992447146856116,
+      "tied_ids": [
+        10,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 10,
+      "value": 41.32943277871509,
+      "tied_ids": [
+        10,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        10,
+        12,
+        13,
+        14,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "**Recommendation: Expose the truth**\n\nWhile it's natural to want to protect the person you love, keeping quiet about the real culprit\ncould have severe consequences for both partners. If they get caught and convicted of a crime they\ndidn't commit, it would ruin their reputation, freedom, and potentially lead to long-term\npsychological trauma.\n\n**Reasoning:**\n\n1.  **Protecting your partner's integrity**: By staying silent, you'd be allowing an innocent person\nto take the blame, which undermines justice and fairness.\n2.  **Long-term relationship consequences**: If your partner is convicted and sentenced, it could\nstrain or even end your relationship due to guilt, shame, and resentment.\n3.  **Siblings' safety vs. partners' sacrifice**: While protecting their sibling might be a good\ndeed, it's essential not to compromise the well-being of those close to you by forcing them to carry\nanother person's burden.\n\nIf you expose the truth:\n\n*   The real culprit (their sibling) will face the consequences for their actions.\n*   Your partner avoids unfair punishment and maintains their reputation.\n*   You safeguard your relationship and maintain integrity in your personal life.",
+    "10": "I would recommend exposing the truth and taking steps to clear my significant other's name. Here's\nwhy:\n\n1. **Loyalty vs. Justice**: While it's natural to want to protect one's loved ones, loyalty should\nnot override justice. If my partner is innocent, they don't deserve to suffer the consequences of a\ncrime they didn't commit.\n2. **Protecting the vulnerable sibling**: Although the sibling may be responsible for the crime,\nexposing them would only serve to punish a troubled individual who may benefit from help and\nguidance rather than punishment alone. By confronting the truth, we can encourage the sibling to\nseek help and take responsibility for their actions.\n3. **Damage to your relationship**: If you stay silent, allowing an innocent person to take the\nfall, it could lead to resentment, trust issues, and even damage to your relationship in the long\nrun. Your partner will likely feel betrayed by your decision to protect them over telling the truth.\n4. **Your partner's integrity**: If you allow them to confess to a crime they didn't commit, it\nundermines their character and integrity. You'll be enabling a lie that could have serious\nconsequences for both of you.\n5. **Clearing the record**: Exposing the truth allows for a more just outcome: your partner can\nclear their name, restore their reputation, and move forward without the burden of an unjust\naccusation.\n\nInstead of staying silent, I would:\n\n1. **Gather evidence**: Collect any relevant information or testimonies that could help prove my\npartner's innocence.\n2. **Encourage my partner to speak up**: Support them in telling the truth about the real culprit\n(their sibling).\n3. **Collaborate with authorities**: Work together with law enforcement and/or the courts to ensure\njustice is served and both parties involved receive appropriate consequences.\n\nUltimately, staying silent could have far-reaching negative consequences for your relationship,\nreputation, and even the well-being of those involved. By advocating for the truth, you can protect\nyour partner's integrity while also giving a troubled sibling an opportunity to seek help and take\nresponsibility for their actions."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

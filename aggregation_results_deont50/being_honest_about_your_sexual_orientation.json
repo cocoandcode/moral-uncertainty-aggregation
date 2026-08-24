@@ -1,0 +1,364 @@
+{
+  "slug": "being_honest_about_your_sexual_orientation",
+  "dilemma": "You are a closeted gay man living in a highly conservative society. You have finally found love but your partner wants to come out to the world. Should you risk societal backlash and potential harm to openly accept your love or continue living a lie?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Coming out",
+  "not_to_do_action": "Not coming out",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0683442488617505,
+      "maximin": -1.2363314859195875,
+      "nash": 4.198982832299353,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5557959311311723,
+      "maximin": -0.8458904671545197,
+      "nash": 9.402862222758502,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 0,
+        "deontological": 0,
+        "ubuntu": 0
+      },
+      "z": {
+        "utilitarian": -2.691086932521531,
+        "deontological": -2.7980955609798595,
+        "ubuntu": -2.4458781132325456
+      },
+      "ec": -2.683289041928449,
+      "maximin": -2.7980955609798595,
+      "nash": 0.0,
+      "baseline": -2.691086932521531,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.44698381166726875,
+      "maximin": -0.8458904671545197,
+      "nash": 10.555289878908523,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 0,
+        "deontological": 2,
+        "ubuntu": 0
+      },
+      "z": {
+        "utilitarian": -2.691086932521531,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -2.4458781132325456
+      },
+      "ec": -2.2928480231633808,
+      "maximin": -2.691086932521531,
+      "nash": 0.0,
+      "baseline": -2.691086932521531,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 2,
+        "ubuntu": 0
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -2.4458781132325456
+      },
+      "ec": -2.0752237842355736,
+      "maximin": -2.4458781132325456,
+      "nash": 0.0,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.2517633022847348,
+      "maximin": -0.4554494483894518,
+      "nash": 13.875288882442007,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.6805961360125656,
+      "maximin": -1.8205899768103024,
+      "nash": 0.9642530041724927,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.472080447128425,
+      "maximin": -1.6267725046846555,
+      "nash": 1.7714458823762895,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.2635647582442844,
+      "maximin": -1.6267725046846555,
+      "nash": 2.7273193521194794,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.8598285599776098,
+      "maximin": -1.2363314859195875,
+      "nash": 5.868256905859971,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.14295118282083125,
+      "maximin": -0.4554494483894518,
+      "nash": 15.336843786881523,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0683442488617505,
+      "maximin": -1.2363314859195875,
+      "nash": 4.198982832299353,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.15615952543987993,
+      "maximin": -0.4554494483894518,
+      "nash": 21.81855481695584,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.23838128590057017,
+      "maximin": -0.052992447146856116,
+      "nash": 24.49266674081519,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 2,
+        "ubuntu": 1
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -2.0470638355515973
+      },
+      "ec": -1.9755202148153366,
+      "maximin": -2.0470638355515973,
+      "nash": 0.3120912662465418,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 15,
+      "value": 0.23838128590057017,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 15,
+      "value": -0.052992447146856116,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 15,
+      "value": 24.49266674081519,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 12,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        12,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "12": "What a difficult and personal question. As a closeted gay man living in a conservative society, I\nunderstand the weight of secrecy and the fear that comes with it. However, I firmly believe that you\nshould take a deep breath, hold your partner's hand, and choose to come out openly.\n\nHere's why:\n\n1. **Authenticity**: Love is about being true to oneself and embracing one's identity without\napology. Coming out would mean living authentically and celebrating the love and connection you\nshare with your partner.\n2. **Personal happiness**: By staying in the closet, you risk constantly wondering if it's safe to\nexpress yourself and be open with others. This tension can lead to emotional distress, anxiety, and\neven depression. Coming out could bring a sense of liberation and genuine happiness.\n3. **Relationship validation**: Partnering with someone who wants to come out openly is a sign that\nyour relationship has integrity and mutual respect. Their willingness to risk everything for love\nindicates that they value authenticity over societal expectations.\n4. **Breaking stigma**: Your coming out could help reduce the stigma surrounding same-sex\nrelationships in your conservative society. By showing that you're proud of your identity, you'll\ncontribute to creating a more inclusive environment where others may feel empowered to be themselves\ntoo.\n5. **Self-worth**: Embracing who you are and taking control of your narrative sends a powerful\nmessage about self-love and worth. Your decision to come out would demonstrate that you trust\nyourself and your partner enough to take on the challenges associated with being an openly gay\ncouple.\n\nOf course, I'm aware that coming out comes with risks: potential social rejection, harm from family\nor friends, and even persecution by your community. However, it's essential to consider the\nlong-term costs of staying in the closet:\n\n* Continued secrecy may lead to chronic stress, anxiety, and a life unfulfilled.\n* Your partner might feel compelled to move away or hide their true self due to societal pressure.\n\nUltimately, I recommend coming out openly because it allows you and your partner to be honest about\nyourselves, share a full life together, and create positive change in your community. This choice\nwill undoubtedly come with challenges, but I firmly believe that the benefits of authentic love,\nhappiness, and growth outweigh any temporary risks.\n\nTo mitigate potential harm:\n\n* Seek support from trusted friends, family members, or allies who accept your identity.\n* Consider professional help, like therapists or counselors, to navigate the coming-out process and\naddress potential emotional challenges.\n* Build a strong support network before sharing your news publicly.\n* Take care of yourselves physically and emotionally as you begin this new chapter.\n\nYour choice is not just about love; it's about building a life that honors your authentic self.",
+    "15": "**Recommendation:** I strongly advise against hiding my true identity for fear of societal backlash,\nand instead opt to come out and be open about my relationship with my partner.\n\n**Reasoning:**\n\nLiving in a highly conservative society already puts me at risk of emotional distress, anxiety, and\npotential persecution. By continuing to hide my true self, I would be perpetuating the stigma and\nshame that is often associated with being LGBTQ+. This can lead to feelings of isolation,\ndisconnection from my community, and decreased mental health.\n\nOn the other hand, coming out publicly has its own set of risks, but it also offers a range of\nbenefits. By acknowledging and embracing my identity, I would be asserting my humanity and equality\nin front of others. Coming out would send a message that I am not afraid to be myself, and that I\nexpect respect, acceptance, and love from the society around me.\n\nMoreover, being openly gay can help challenge and change societal attitudes towards LGBTQ+\nindividuals. By proudly declaring our relationship to the world, my partner and I would be showing\nthe community what we are capable of: building a loving, respectful, and genuine connection with\neach other.\n\nWhile I understand that coming out may lead to temporary backlash, such as ridicule, judgment, or\neven violence from some individuals, I believe that this is outweighed by the long-term benefits of\nauthenticity, acceptance, and self-love. A society that values diversity and inclusivity will\nultimately thrive from our presence.\n\n**Key Considerations:**\n\n1.  **Support system**: Having a strong support network of family, friends, and community allies can\nsignificantly reduce the anxiety associated with coming out.\n2.  **Emotional preparedness**: Understand your partner's concerns and emotional readiness for\npotential backlash.\n3.  **Professional preparation**: Be aware of local laws and rights regarding LGBTQ+ individuals to\nensure that we have adequate protections if confronted by authorities.\n4.  **Resilience**: Have a growth mindset, learning from each experience and using it as an\nopportunity to educate others about the importance of acceptance and diversity.\n\nUltimately, living authentically is not just about me or my partner \u2013 it's about fostering a culture\nthat values love, respect, and compassion towards all people."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

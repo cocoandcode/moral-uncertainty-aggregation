@@ -1,0 +1,366 @@
+{
+  "slug": "enrolling_your_child_in_classes_without_permission",
+  "dilemma": "Your ex-spouse has custody of your child and you have visitation rights. Without consulting you, your ex-spouse enrolls your child in a football class, even though you think it's too dangerous. Should you confront your ex-spouse about enrolling your child without your permission or let it pass?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confront",
+  "not_to_do_action": "Not Confront",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.06683397678442554,
+      "maximin": -0.4518067248278044,
+      "nash": 14.846562017830328,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.730794578577471,
+      "maximin": -0.07959606538784551,
+      "nash": 35.85375565635786,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5313874397369969,
+      "maximin": -0.07959606538784551,
+      "nash": 30.0473288955451,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3137632008091897,
+      "maximin": -0.950093021099074,
+      "nash": 22.1685570826592,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.13257316205604858,
+      "maximin": -0.07959606538784551,
+      "nash": 19.51631260455621,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.1756460962483291,
+      "maximin": -0.5148445432434597,
+      "nash": 12.949111255854488,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.42959055558778964,
+      "maximin": -0.07959606538784551,
+      "nash": 26.615588185885894,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.1756460962483291,
+      "maximin": -0.5148445432434597,
+      "nash": 12.949111255854488,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8396066980413746,
+      "maximin": 0.35565241246776874,
+      "nash": 40.24804099377615,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.42257532027309325,
+      "maximin": -0.5148445432434597,
+      "nash": 26.20715855579107,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5313874397369969,
+      "maximin": -0.07959606538784551,
+      "nash": 30.0473288955451,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5313874397369969,
+      "maximin": -0.07959606538784551,
+      "nash": 30.0473288955451,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.22316818143261913,
+      "maximin": -0.5148445432434597,
+      "nash": 21.450233086763156,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.3750532350888032,
+      "maximin": -0.8506210025087526,
+      "nash": 9.265629765215458,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8396066980413746,
+      "maximin": 0.35565241246776874,
+      "nash": 40.24804099377615,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.2844582157122327,
+      "maximin": -0.950093021099074,
+      "nash": 10.953614503228232,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 9,
+      "value": 0.8396066980413746,
+      "tied_ids": [
+        9,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 9,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        9,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 9,
+      "value": 40.24804099377615,
+      "tied_ids": [
+        9,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 9,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        9,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "9": "I strongly recommend that you address the issue with your ex-spouse directly, rather than letting it\npass. Here's why:\n\n1. **You have visitation rights**: As the non-custodial parent, you have a right to be involved in\nimportant decisions about your child's life. Enrolling your child in a potentially hazardous\nactivity like football class without consulting you undermines that right.\n2. **Parental consent and decision-making**: In most cases, joint custody agreements or visitation\narrangements assume that both parents will make informed decisions together about their child's\nactivities. Your ex-spouse's unilateral decision to enroll your child in a sport without discussing\nit with you is a breach of this shared decision-making responsibility.\n3. **Potential harm to your relationship with your child**: Letting this issue pass could damage the\nbond between you and your child, as they may feel that you're not taking an active interest in their\nwell-being or activities.\n4. **Risk to your child's safety**: You have concerns about football being too dangerous for your\nchild, which is a legitimate concern that should be considered by both parents.\n\nHow to address the issue:\n\n1. **Schedule a meeting with your ex-spouse**: Choose a private setting and express your concerns\nusing \"I\" statements, such as: \"I feel uneasy about my child participating in football without\ndiscussing it first.\"\n2. **Respectfully discuss differences of opinion**: Acknowledge that you both want what's best for\nyour child but have differing views on the situation.\n3. **Seek clarification on the reasons behind the decision**: Ask your ex-spouse to explain why they\ndecided to enroll your child in football, and listen attentively to their perspective.\n4. **Work together to find a solution**: Collaborate on finding an alternative sport or activity\nthat you both feel is safe and suitable for your child.\n\nBy addressing this issue directly with your ex-spouse, you can maintain open communication,\ndemonstrate your continued involvement as a parent, and work together to prioritize your child's\nwell-being."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

@@ -1,0 +1,369 @@
+{
+  "slug": "not_giving_up",
+  "dilemma": "A talented young athlete is suffering from a potentially career-ending injury. The doctor believes that a risky experimental treatment could potentially save his career, but it could also result in severe health complications. Should the doctor recommend the risky treatment to the athlete, possibly jeopardizing his health, or suggest he retire from the sport, potentially ending his dreams?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Recommending the risky treatment",
+  "not_to_do_action": "Not recommending the risky treatment",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.00746186747115643,
+      "maximin": -0.950093021099074,
+      "nash": 16.753300790606026,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6779032300966825,
+      "maximin": -0.950093021099074,
+      "nash": 7.714024033379941,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.28746221133161465,
+      "maximin": -0.950093021099074,
+      "nash": 11.876516939219075,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.078946522447474,
+      "maximin": -0.5148445432434597,
+      "nash": 16.597937007513494,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.10297880743345333,
+      "maximin": -0.950093021099074,
+      "nash": 16.59793700751349,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.10297880743345333,
+      "maximin": -0.950093021099074,
+      "nash": 16.59793700751349,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.10297880743345333,
+      "maximin": -0.950093021099074,
+      "nash": 16.59793700751349,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.09224170194908063,
+      "maximin": -0.950093021099074,
+      "nash": 14.171567059010316,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.20105382141298417,
+      "maximin": -1.3853414989546882,
+      "nash": 11.421254886325102,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.3007573908332212,
+      "maximin": -1.3853414989546882,
+      "nash": 9.204702813403246,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.00746186747115643,
+      "maximin": -0.950093021099074,
+      "nash": 16.753300790606026,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.28746221133161465,
+      "maximin": -0.950093021099074,
+      "nash": 11.876516939219075,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.20105382141298417,
+      "maximin": -1.3853414989546882,
+      "nash": 11.421254886325102,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.00746186747115643,
+      "maximin": -0.950093021099074,
+      "nash": 16.753300790606026,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.4959779002157552,
+      "maximin": -1.3853414989546882,
+      "nash": 7.714024033379944,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.10297880743345333,
+      "maximin": -0.950093021099074,
+      "nash": 16.59793700751349,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 0.10297880743345333,
+      "tied_ids": [
+        5,
+        6,
+        7,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 4,
+      "value": -0.5148445432434597,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 16.753300790606026,
+      "tied_ids": [
+        1,
+        11,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 4,
+      "value": -0.5148445432434597,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "**Recommendation:** The doctor should not recommend the risky experimental treatment.\n\n**Reasoning:**\n\nWhile it's understandable that the doctor wants to preserve the athlete's career, the primary\nconcern should be the patient's health and well-being. Recommending a risky treatment could lead to\nsevere complications, which would be a heavy burden on both the athlete and his family. As a medical\nprofessional, the doctor has a fiduciary duty to prioritize the patient's best interests.\n\nRetirement from sports might seem like an easier option, but it's essential to consider the\nlong-term implications of such a decision. This athlete may have invested everything in their\ncareer, and suddenly losing that identity could lead to significant emotional distress and potential\nmental health concerns.\n\nThe doctor should instead focus on finding alternative treatments or managing the current injury in\na way that minimizes risks. This approach might involve:\n\n1. Exploring established medical protocols for similar injuries.\n2. Providing realistic expectations about the treatment's effectiveness and potential side effects.\n3. Encouraging open communication with the athlete to discuss all aspects of their condition,\nincluding both physical and mental implications of a career-ending injury.\n\nIt's essential for the doctor to be empathetic and understanding while also upholding their\nprofessional responsibility to prioritize patient care. Suggesting that the athlete retire might\nseem like an easy out, but it would not address the underlying issues or provide adequate support\nfor the athlete during this challenging time.\n\nUltimately, the decision should involve a thorough discussion between the doctor, the athlete, and\npotentially family members or other medical professionals. By exploring alternative options and\nemphasizing patient-centered care, the doctor can ensure that the athlete receives comprehensive\nsupport while prioritizing their well-being above all else.",
+    "4": "I'm going to provide an objective and empathetic response. \n\n**Recommendation:** The doctor should inform the athlete about the risks and benefits of the\nexperimental treatment, but not necessarily recommend it outright. Instead, I suggest the doctor\nadopt a more nuanced approach:\n\n1.  **Fully disclose the potential consequences**: Explain the possible health complications and the\nprobability of success in detail.\n2.  **Explore all available options**: Consider alternative treatments or therapies that may be less\ninvasive and risky.\n3.  **Discuss long-term career implications**: Help the athlete understand how this decision might\naffect his future in sports, both physically and mentally.\n4.  **Involve a support system**: Encourage the athlete to share his concerns with family members or\na trusted mentor for emotional guidance.\n5.  **Prioritize the athlete's well-being**: If the risk outweighs any potential benefit, the doctor\nshould emphasize caution and suggest alternative paths.\n\n**Reasoning:**\n\n*   The athlete is young and has their entire career ahead of them. While saving his career might\nseem like a priority, his health and long-term well-being are more critical.\n*   Medical professionals have a duty to act in the best interest of their patients; prioritizing\nthe athlete's safety above all else is essential.\n*   A patient-centered approach would allow the doctor to discuss the risks, listen to the athlete's\nconcerns, and provide support for whatever decision he chooses.",
+    "5": "**Recommendation:** The doctor should not recommend the risky experimental treatment without full\ndisclosure of its potential risks and the athlete's informed consent.\n\n**Explanation:**\n\n1. **Patient Autonomy**: The doctor has an ethical obligation to respect the patient's autonomy,\nwhich means involving them in the decision-making process about their own care. In this case, the\nathlete should be fully informed about the risks and benefits of the experimental treatment.\n2. **Beneficence and Non-Maleficence**: The doctor has a duty to provide care that benefits the\npatient while minimizing harm (non-maleficence). While the experimental treatment may potentially\nsave the athlete's career, it could also result in severe health complications, which would be\ncounter to the principle of non-maleficence.\n3. **Virtue Ethics**: A virtue-based approach to medical ethics emphasizes the importance of\ncompassion, honesty, and transparency in doctor-patient relationships. Recommending a risky\ntreatment without proper informed consent would compromise these virtues.\n\n**An Alternative Approach:**\n\nRather than recommending the experimental treatment immediately, the doctor should have an open and\nhonest discussion with the athlete about:\n\n1. **The potential risks and benefits**: Provide detailed information about the risks associated\nwith the treatment, including possible severe health complications.\n2. **Alternative options**: Suggest that the athlete consider alternative treatments or retirement\nfrom the sport, potentially ending his dreams but also preserving his health.\n3. **Support and resources**: Offer support and resources to help the athlete cope with the\npotential loss of his career and make an informed decision about his future.\n\n**Conclusion:** The doctor should prioritize the athlete's well-being, safety, and autonomy by\navoiding any hasty recommendations that might compromise these values. By fostering a candid and\nempathetic conversation, the doctor can empower the athlete to make an informed decision that\nrespects their autonomy while prioritizing their health and future."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 3
+}

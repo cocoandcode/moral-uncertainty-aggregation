@@ -1,0 +1,366 @@
+{
+  "slug": "having_dreams_or_aspirations",
+  "dilemma": "Sarah, a dedicated environmental activist, dreams of launching a large-scale recycling program in her city. She discovers an investment opportunity that could fund her project, but the company behind it is known for unethical practices. Should Sarah accept the funding and advance her project, knowing it comes from a potentially harmful source?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Accepting the funding",
+  "not_to_do_action": "Rejecting the funding",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.19357382681002389,
+      "maximin": -1.3853414989546882,
+      "nash": 18.130864150044616,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.09387025738978683,
+      "maximin": -1.3853414989546882,
+      "nash": 15.813666272484397,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.30238594627392745,
+      "maximin": -0.950093021099074,
+      "nash": 22.496893703668775,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.19357382681002389,
+      "maximin": -1.3853414989546882,
+      "nash": 18.130864150044616,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.09387025738978683,
+      "maximin": -1.3853414989546882,
+      "nash": 15.813666272484397,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.19357382681002389,
+      "maximin": -1.3853414989546882,
+      "nash": 18.130864150044616,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.392980965650498,
+      "maximin": -1.3853414989546882,
+      "nash": 22.496893703668775,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.09387025738978683,
+      "maximin": -1.3853414989546882,
+      "nash": 15.813666272484397,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.19357382681002389,
+      "maximin": -1.3853414989546882,
+      "nash": 18.130864150044616,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.19357382681002389,
+      "maximin": -1.3853414989546882,
+      "nash": 18.130864150044616,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.19357382681002389,
+      "maximin": -1.3853414989546882,
+      "nash": 18.130864150044616,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.19357382681002389,
+      "maximin": -1.3853414989546882,
+      "nash": 18.130864150044616,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.19357382681002389,
+      "maximin": -1.3853414989546882,
+      "nash": 18.130864150044616,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.19357382681002389,
+      "maximin": -1.3853414989546882,
+      "nash": 18.130864150044616,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.09387025738978683,
+      "maximin": -1.3853414989546882,
+      "nash": 15.813666272484397,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.392980965650498,
+      "maximin": -1.3853414989546882,
+      "nash": 22.496893703668775,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 7,
+      "value": 0.392980965650498,
+      "tied_ids": [
+        7,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 3,
+      "value": -0.950093021099074,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 3,
+      "value": 22.496893703668775,
+      "tied_ids": [
+        3,
+        7,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 3,
+      "value": -0.950093021099074,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "3": "I would recommend that Sarah reject the funding offer. Here's why:\n\n**Short-term gain vs. long-term consequences**: While accepting the funding might propel Sarah's\nproject forward in the short term, she should consider the potential long-term consequences of\nassociating with a company known for unethical practices. Aligning her environmental activism with a\nmorally questionable organization could damage her personal and professional reputation, undermine\npublic trust in her cause, and ultimately harm the very mission she is trying to promote.\n\n**Tainting the message**: By accepting funding from an unethical source, Sarah's project may\ninadvertently be perceived as condoning or supporting those practices. This can dilute the\ncredibility of her environmental activism and erode the public's perception that her efforts are\ngenuinely motivated by a desire to protect the planet.\n\n**Risk of co-opting influence**: The company behind the investment opportunity may attempt to exert\ncontrol over Sarah's project or dictate its goals, altering the program's original intent and\nvalues. By accepting their funding, Sarah might inadvertently create an opportunity for the company\nto manipulate her initiatives and turn them into a marketing tool for their own interests.\n\n**Alternative solutions**: Instead of accepting potentially tainted funding, Sarah could explore\nalternative sources of support, such as:\n\n1. Crowdfunding campaigns or community donations.\n2. Partnerships with environmentally responsible businesses or foundations that share similar\nvalues.\n3. Collaborations with government agencies or local organizations that align with her project's\ngoals.\n\nThese alternatives may require more creativity and effort to secure funding, but they would allow\nSarah to maintain the integrity of her environmental activism while still advancing her mission.\n\nIn conclusion, prioritizing her project's long-term sustainability and social responsibility should\ntake precedence over short-term gains. By rejecting the funding offer from a potentially harmful\nsource, Sarah can maintain her commitment to environmentally friendly practices, uphold public trust\nin her activism, and ensure that her recycling program remains an authentic representation of her\nvalues.",
+    "7": "**Recommendation: Reject the Funding**\n\nSarah should not accept the funding from a company with known unethical practices, even if it would\naccelerate her project's launch. Here's why:\n\n1.  **Conflict of Interest**: By accepting funding from a morally questionable source, Sarah may\ncompromise her values and goals as an environmental activist. This could lead to an erosion of\npublic trust and undermine the credibility of her recycling program.\n2.  **Unintended Consequences**: Aligning herself with a company known for unethical practices may\ninadvertently perpetuate harm to the environment or the community. For instance, the company's\nbusiness model might prioritize profits over sustainability, ultimately undermining Sarah's mission.\n3.  **Missed Opportunities**: Rejection of funding from this source could encourage Sarah to explore\nalternative investment options that better align with her values and goals. This might lead to the\ndiscovery of more suitable partnerships or fundraising strategies.\n4.  **Long-Term Impact**: Even if the recycling program is successful, the association with an\nunethical company could have lasting effects on Sarah's reputation and relationships with\nstakeholders.\n\n**Alternative Solutions:**\n\nTo maintain her integrity while advancing the project, Sarah can consider:\n\n*   Exploring other funding sources that better align with her values and goals.\n*   Seeking support from local businesses or organizations with a strong track record of\nenvironmental responsibility.\n*   Establishing partnerships with like-minded individuals or companies to co-fund or contribute\nexpertise to the project.\n\nBy prioritizing ethics over short-term gains, Sarah can uphold her commitment to sustainability and\ncreate a positive impact in her community."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

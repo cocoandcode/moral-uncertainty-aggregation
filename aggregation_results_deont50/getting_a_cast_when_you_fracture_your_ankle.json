@@ -1,0 +1,373 @@
+{
+  "slug": "getting_a_cast_when_you_fracture_your_ankle",
+  "dilemma": "You fractured your ankle and need a cast to heal properly. However, you are the primary breadwinner of your family and cannot afford to take time off work for the healing process, but continuing to work may cause permanent damage to your ankle. Should you prioritize your immediate financial needs or your long-term health?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Continue Working",
+  "not_to_do_action": "Take Time Off for Healing",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6554126636688514,
+      "maximin": 0.32543258914068407,
+      "nash": 36.694289063189665,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.5424139147470077,
+      "maximin": -0.052992447146856116,
+      "nash": 32.30418711912188,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.7509296036311484,
+      "maximin": 0.3458218305340921,
+      "nash": 39.61259568782241,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.5424139147470077,
+      "maximin": -0.052992447146856116,
+      "nash": 32.30418711912188,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5466005442049479,
+      "maximin": 0.32543258914068407,
+      "nash": 33.59186265839483,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.1386777164803331,
+      "maximin": -0.4518067248278044,
+      "nash": 21.362404723631244,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5466005442049479,
+      "maximin": 0.32543258914068407,
+      "nash": 33.59186265839483,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.34719340536447374,
+      "maximin": -0.052992447146856116,
+      "nash": 27.072604174992833,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.24748983594423668,
+      "maximin": -0.4518067248278044,
+      "nash": 23.612615703667437,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.6421174841672448,
+      "maximin": 0.3458218305340921,
+      "nash": 36.26343248117928,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5466005442049479,
+      "maximin": 0.32543258914068407,
+      "nash": 33.59186265839483,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 0.7509296036311484,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 3,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        3,
+        4,
+        9,
+        13,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 3,
+      "value": 40.08324466986437,
+      "tied_ids": [
+        3,
+        4,
+        9,
+        13,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        5
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "What a difficult and delicate situation! After careful consideration, I strongly recommend\nprioritizing your long-term health over your immediate financial needs. Here's why:\n\n1. **Permanent damage can have long-lasting consequences**: Ignoring the injury and continuing to\nwork may lead to chronic pain, limited mobility, or even require costly surgical interventions in\nthe future. The economic costs of dealing with a permanent impairment will likely outweigh any\ntemporary financial difficulties.\n2. **Financial instability might recur**: While you may not be able to afford time off now, your\nfinancial situation could change over time, allowing you to take the necessary break without putting\nyour family at risk. In contrast, irreversible damage to your ankle can have lasting impacts on your\nearning potential and overall well-being.\n3. **Healthcare costs will add up in the long run**: Failing to adequately treat your injury may\nrequire additional medical expenses for follow-up treatments, pain management, or even\nrehabilitation services later on. These costs could be substantial, potentially creating a financial\nburden that outweighs any short-term sacrifice.\n4. **Support systems can help with temporary needs**: Reach out to family members, friends, or\nsocial support networks to see if they can provide temporary financial assistance or help cover\nexpenses while you recover.\n5. **Prioritize your earning capacity and mobility**: Your ankle is crucial for daily life and work\nactivities. Failing to address the injury now may compromise your future ability to earn a living,\nimpacting not only your own quality of life but also that of your family.\n\nTo mitigate the immediate financial impact, consider the following:\n\n1. **Communicate with your employer**: Explain your situation and see if they can offer any\naccommodations, such as remote work or a temporary reduction in hours.\n2. **Seek assistance programs**: Look into local, state, or national assistance programs that\nprovide financial support for individuals with temporary disabilities.\n3. **Create a temporary budget plan**: Reassess your expenses to prioritize essential needs and\nallocate funds accordingly.\n\nIn conclusion, prioritizing your long-term health will likely lead to better outcomes for both you\nand your family in the future. The initial financial sacrifice is worth avoiding permanent damage to\nyour ankle, which could have far-reaching consequences for your quality of life and earning\npotential.",
+    "3": "**Recommendation: Prioritize your long-term health**\n\nWhile it may be tempting to continue working to meet your family's immediate financial needs, the\npotential risks of permanent damage to your ankle far outweigh any short-term financial benefits.\nHere's why:\n\n1. **Long-term consequences:** Permanent damage to your ankle could lead to chronic pain, reduced\nmobility, and difficulty performing daily activities. This could significantly impact your ability\nto work, enjoy life, and care for your family in the long run.\n2. **Compensation and support:** If you suffer permanent damage due to neglecting your injury, you\nmay be entitled to compensation or disability benefits through workers' compensation insurance or\nsocial security programs. However, if you can prove that your employer's failure to provide a safe\nwork environment or inadequate accommodations contributed to the condition, you may be eligible for\nmore significant financial support.\n3. **Impact on family:** While it's true that taking time off work will temporarily increase your\nfamily's financial burden, it's essential to consider the long-term consequences of neglecting your\nhealth. Your family depends on your income and well-being; by prioritizing your recovery, you'll be\nable to continue providing for them in a sustainable way.\n4. **Exploring alternatives:** Depending on your job type and employer, it may be possible to\nnegotiate a temporary leave or flexible work arrangement that allows you to recover while still\nmeeting some of your financial obligations.\n\n**Action plan:**\n\n1. Consult with your healthcare provider about the necessary duration for your ankle recovery.\n2. Discuss your situation with your employer and see if they can provide any accommodations, such as\nremote work or modified duties, during your healing period.\n3. Reach out to local social service agencies or non-profit organizations that may offer financial\nassistance or support for workers who need time off for medical reasons.\n4. If necessary, file a claim with workers' compensation insurance or seek guidance from an attorney\nspecializing in employment law.\n\nRemember, prioritizing your health and recovery now will ultimately benefit both you and your family\nin the long run.",
+    "5": "**Recommendation:** Prioritize your long-term health.\n\n**Explanation:**\n\nWhile it's understandable that immediate financial concerns are pressing, the potential consequences\nof not allowing your ankle to heal properly are severe and lasting. Continuing to work with a\nfractured ankle can lead to:\n\n1. **Permanent damage**: Further injury or stress on the already weakened bone and surrounding\ntissue may result in chronic pain, limited mobility, and long-term disability.\n2. **Delayed recovery**: Prolonged use of an injured ankle can lead to slow healing, which may\nrequire additional medical interventions and longer rehabilitation periods.\n3. **Compromised productivity**: Eventually, you may need to take more time off work due to\nworsening symptoms or complications, leading to lost income and increased financial strain.\n\nIn contrast, taking the time to heal your ankle properly will allow you to:\n\n1. **Recover fully**: Ensuring that your ankle heals correctly will prevent long-term consequences\nand allow you to regain full mobility and function.\n2. **Avoid costly interventions**: Ignoring the injury now may lead to more expensive medical\nprocedures or surgeries down the line, which could have been avoided with proper care.\n3. **Maintain productivity**: Although it's inconvenient in the short term, taking time off work for\nhealing will ultimately save you from lost wages and potential long-term disability-related\nexpenses.\n\nTo mitigate immediate financial concerns:\n\n1. **Seek assistance**: Explore available resources, such as government assistance programs,\nemployer-provided leave policies (if available), or temporary disability benefits.\n2. **Negotiate flexible arrangements**: Discuss possible adjustments with your workplace to balance\nwork requirements and recovery needs, ensuring a smooth transition upon returning to work.\n3. **Invest in your health**: While it may seem counterintuitive, taking the time to heal now will\nprevent more costly problems later on.\n\nIn conclusion, prioritizing long-term health is essential in this situation. By doing so, you'll\navoid potential permanent damage and ensure a full recovery, which will ultimately lead to greater\nproductivity, lower expenses, and improved overall well-being."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 3
+}

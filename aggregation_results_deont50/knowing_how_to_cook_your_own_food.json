@@ -1,0 +1,369 @@
+{
+  "slug": "knowing_how_to_cook_your_own_food",
+  "dilemma": "You have been practicing sustainable living and have recently learned to cook your own food. One day, you notice your neighbor throwing away perfectly good vegetables because they're slightly wilted. Should you confront your neighbor about their wastefulness, potentially causing conflict, or stay silent and let them continue their wasteful practices?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confronting the neighbor",
+  "not_to_do_action": "Not confronting the neighbor",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.3654973423343647,
+      "maximin": -0.8458904671545197,
+      "nash": 11.667132365288845,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.038238855932309884,
+      "maximin": -0.4554494483894518,
+      "nash": 19.208184583219495,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.255863094860117,
+      "maximin": -0.4554494483894518,
+      "nash": 23.833639876898804,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.8689371100212763,
+      "maximin": -1.2363314859195875,
+      "nash": 5.691313950583555,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8415246230077189,
+      "maximin": 0.715873607905752,
+      "nash": 43.78519230873881,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.23345936531484385,
+      "maximin": -0.07959606538784551,
+      "nash": 24.205079027694648,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.9686406794415133,
+      "maximin": -1.2363314859195875,
+      "nash": 4.963940974994378,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.15698165345022408,
+      "maximin": -0.8458904671545197,
+      "nash": 14.61216109021151,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.5607178517168986,
+      "maximin": -1.2363314859195875,
+      "nash": 8.348320342807604,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.8689371100212763,
+      "maximin": -1.2363314859195875,
+      "nash": 5.691313950583555,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6463041136251849,
+      "maximin": 0.32543258914068407,
+      "nash": 36.694289063189665,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.7692335406010392,
+      "maximin": -1.2363314859195875,
+      "nash": 6.388849173487286,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.3654973423343647,
+      "maximin": -0.8458904671545197,
+      "nash": 11.667132365288845,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.5607178517168986,
+      "maximin": -1.2363314859195875,
+      "nash": 8.348320342807604,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8415246230077189,
+      "maximin": 0.715873607905752,
+      "nash": 43.78519230873881,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.2635647582442844,
+      "maximin": -1.6267725046846555,
+      "nash": 2.7273193521194794,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 0.8415246230077189,
+      "tied_ids": [
+        5,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 5,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        5,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 5,
+      "value": 43.78519230873881,
+      "tied_ids": [
+        5,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 3,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        3,
+        5,
+        11,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "3": "What a thoughtful dilemma! After considering the potential outcomes, I would recommend speaking with\nyour neighbor about their vegetable waste. Here's why:\n\n**Reason 1: Conservation is a shared value**\nAs someone who has made an effort to adopt sustainable living practices, you likely believe in\nreducing food waste and conserving resources. By approaching your neighbor respectfully, you're\nattempting to share this value with them, which may lead to a positive outcome for both parties.\n\n**Reason 2: Education can be transformative**\nYour conversation might educate your neighbor on the environmental impact of food waste and inspire\nthem to adopt more sustainable habits in their own kitchen. This could lead to long-term changes\nthat reduce the neighborhood's collective carbon footprint.\n\n**Reason 3: It's a relatively low-stakes approach**\nConfronting someone about their wastefulness might feel uncomfortable or confrontational, but it can\nalso be done gently and constructively. A simple conversation in a private setting (e.g., over\ncoffee) can help your neighbor understand the issue without feeling attacked.\n\n**Tips for approaching the conversation:**\n\n1. **Choose the right time and place**: Find a moment when you both have a chance to talk privately,\nfree from distractions or interruptions.\n2. **Be empathetic and non-judgmental**: Acknowledge that everyone makes mistakes, and it's great\nthey're considering donating usable food (e.g., \"I can see why you might think these veggies are\nunusable\").\n3. **Focus on the environmental benefits**: Explain how reduced food waste helps minimize greenhouse\ngas emissions and conserves resources. Avoid criticizing or lecturing your neighbor.\n4. **Suggest potential solutions**: Share some of your own experiences with sustainable living, such\nas using wilted vegetables in soups or stews, making vegetable broth from scraps, or donating excess\nproduce to a local food bank.\n\n**Staying silent might be seen as \"letting someone else suffer\"**\nIf you don't say anything, the wilted veggies will likely still end up in the trash. By speaking up\nand sharing your knowledge, you're contributing to creating a more sustainable neighborhood, even if\nit's just among one neighbor.\n\nRemember that this approach is about promoting positive change through dialogue and education.\nApproach the conversation with kindness, respect, and an open mind. Good luck!",
+    "5": "I would recommend having a gentle and non-judgmental conversation with your neighbor to educate them\nabout the importance of reducing food waste. Here's why:\n\n1. **Food is precious**: In many parts of the world, people struggle to access nutritious food.\nThrowing away edible vegetables is like throwing money away, especially considering the\nenvironmental costs associated with producing new food.\n2. **Your intention is to help**: Your goal is to educate your neighbor, not to criticize or scold\nthem. Approach the conversation as a friendly gesture to reduce waste and promote sustainable\nliving.\n3. **Empathy matters**: Your neighbor may be unaware of the issue or have personal reasons for\nwasting food (e.g., tight schedule or cooking skills). Be understanding and respectful in your\napproach.\n\nTo minimize potential conflict, consider these steps:\n\n1. **Choose the right moment**: Pick a time when you're likely to catch your neighbor at home, not\nduring a busy or stressful moment.\n2. **Frame it positively**: Start by expressing appreciation for their garden/fresh produce, and\nthen gently mention the issue of waste.\n3. **Share information, not opinions**: Provide some simple facts about food waste and its\nenvironmental impact. You can also offer your own experiences with reducing waste in cooking and\nmeal planning.\n4. **Listen actively**: Pay attention to your neighbor's responses and be open to their perspective.\n\nExample conversation:\n\n\"Hi [Neighbor], I love seeing the fresh produce from your garden! I wanted to share something with\nyou \u2013 did you know that a significant amount of food waste comes from slightly wilted or imperfect\nveggies? It's actually really easy to use them up in soups, stews, or even salads. I'd be happy to\nshare some recipes if you're interested.\"\n\nBy having an open and supportive conversation, you may help your neighbor change their behavior and\nreduce food waste without feeling defensive or criticized."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

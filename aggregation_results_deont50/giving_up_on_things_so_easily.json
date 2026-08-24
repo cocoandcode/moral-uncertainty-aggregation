@@ -1,0 +1,368 @@
+{
+  "slug": "giving_up_on_things_so_easily",
+  "dilemma": "A young man is training to be a professional athlete but is prone to giving up easily when the training gets tough. His coach believes in his potential and wants him to push through, but the young man's parents believe it's important for him to enjoy what he's doing and not feel excessively pressured. Should the coach continue to push the young man despite his parents' wishes, or respect their request to let him quit easily if he wishes so?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Continue to push the young man.",
+  "not_to_do_action": "Respect the parents' request to let him quit easily.",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.333985062745425,
+      "maximin": -1.2363314859195875,
+      "nash": 10.74472073516423,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.11135206634933362,
+      "maximin": -0.950093021099074,
+      "nash": 19.973841039778677,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.3654973423343647,
+      "maximin": -0.8458904671545197,
+      "nash": 11.667132365288845,
+      "baseline": -0.5148445432434597,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8283162803886701,
+      "maximin": -1.6267725046846555,
+      "nash": 4.586786132898707,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.13876455336289106,
+      "maximin": -0.8458904671545197,
+      "nash": 15.016203726924214,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.21105563576957068,
+      "maximin": -0.950093021099074,
+      "nash": 21.818554816955842,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.5740130312185053,
+      "maximin": -0.950093021099074,
+      "nash": 8.928688156194326,
+      "baseline": -0.950093021099074,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.0880550724911405,
+      "maximin": -0.950093021099074,
+      "nash": 16.097466753276926,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9280198498089072,
+      "maximin": -1.6267725046846555,
+      "nash": 3.696616846588599,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6330957710061362,
+      "maximin": -1.2363314859195875,
+      "nash": 7.06181922278483,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9280198498089072,
+      "maximin": -1.6267725046846555,
+      "nash": 3.696616846588599,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.3654973423343647,
+      "maximin": -0.8458904671545197,
+      "nash": 11.667132365288845,
+      "baseline": -0.5148445432434597,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.43368863216566206,
+      "maximin": -1.2363314859195875,
+      "nash": 9.571610998258334,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4286798746973778,
+      "maximin": -0.07959606538784551,
+      "nash": 29.57293477270879,
+      "baseline": -0.07959606538784551,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.21105563576957068,
+      "maximin": -0.950093021099074,
+      "nash": 21.818554816955842,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.26579377291412765,
+      "maximin": -0.8458904671545197,
+      "nash": 12.744667716227855,
+      "baseline": -0.5148445432434597,
+      "recommendation": "OTHER"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 14,
+      "value": 0.4286798746973778,
+      "tied_ids": [
+        14
+      ],
+      "recommendation": "OTHER",
+      "tied_recommendations": [
+        "OTHER"
+      ]
+    },
+    "maximin": {
+      "id": 14,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        14
+      ],
+      "recommendation": "OTHER",
+      "tied_recommendations": [
+        "OTHER"
+      ]
+    },
+    "nash": {
+      "id": 14,
+      "value": 29.57293477270879,
+      "tied_ids": [
+        14
+      ],
+      "recommendation": "OTHER",
+      "tied_recommendations": [
+        "OTHER"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        1,
+        4,
+        5,
+        9,
+        10,
+        11,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would recommend that the coach continue to push the young man to his potential while also having\nopen communication with both the athlete and his parents. Here's why:\n\n**Reasons for continued support:**\n\n1. **Long-term goals**: Professional sports require dedication, perseverance, and hard work. If the\nyoung man gives up easily when faced with challenges, it may limit his chances of achieving his\nlong-term goals.\n2. **Personal growth**: Athletes who persevere through tough times develop valuable life skills such\nas resilience, self-discipline, and time management. These qualities will benefit the young man\nbeyond his athletic career.\n3. **Potential for success**: The coach believes in the athlete's potential, and it's essential to\nencourage him to reach that potential. A more challenging training program might be exactly what he\nneeds to grow both physically and mentally.\n\n**Addressing parental concerns:**\n\n1. **Involve the parents**: It's crucial to involve the young man's parents in open discussions\nabout his goals, struggles, and challenges. This will help them understand the coach's perspective\nand why their son is being pushed.\n2. **Communicate progress**: Regular updates from the coach can reassure the parents that their son\nis making progress, even if it's slow. This transparency will help alleviate concerns about\nexcessive pressure or potential harm to their child.\n3. **Focus on enjoyment**: While pushing the young man to his limits, the coach and parents can\nemphasize the importance of enjoying the athletic experience. Encouraging him to find joy in the\nprocess rather than just the outcome can help maintain a positive attitude.\n\n**Balancing support with realism:**\n\n1. **Set realistic expectations**: The young man should be aware of what he's capable of achieving,\ngiven his current level of training and dedication.\n2. **Monitor his well-being**: If the young man is struggling to cope with the demands of training\nor if there are signs of burnout, the coach and parents can reassess priorities and adjust\nexpectations accordingly.\n\nIn conclusion, it's essential for the coach to maintain open communication with both the athlete and\nhis parents. By balancing support with realism and setting clear expectations, the young man will be\nmore likely to develop the skills and dedication required to succeed in professional sports while\nalso enjoying the process.",
+    "14": "I would recommend that the coach should take the time to discuss with the young man's parents about\ncreating a compromise that balances both goals: developing the athlete's potential and ensuring his\nenjoyment of the sport.\n\nHere's why:\n\n1. **Long-term commitment is crucial**: Developing as a professional athlete requires consistent\neffort, resilience, and dedication over an extended period. If the young man becomes discouraged\neasily and decides to quit frequently, it can hinder his progress and undermine his confidence.\n2. **Coaching has a duty of care**: While coaches have high expectations for their athletes'\nperformance, they also have a responsibility to support their well-being and mental health. Forcing\nan athlete to continue training when they are struggling with frustration or burnout can be\ncounterproductive and potentially detrimental to their emotional and physical well-being.\n3. **Open communication is key**: Coaching is not just about pushing athletes to achieve success;\nit's also about fostering a supportive relationship that encourages growth, learning, and\nself-awareness. By engaging in open discussions with the parents and athlete, the coach can find\nways to create a harmonious balance between challenge and enjoyment.\n4. **A compromised approach could work**: The coach might consider developing strategies that make\nthe training process more engaging and rewarding for the young man, while still maintaining the\nnecessary level of intensity and focus. This could involve offering alternative activities or\nexercises, setting achievable milestones, or creating a schedule with regular breaks and review\nsessions.\n\nTherefore, rather than pushing ahead without regard to the parents' concerns, I would recommend that\nthe coach take the time to understand their perspective, involve them in discussions about creating\na balanced approach, and seek ways to foster resilience and motivation in the young athlete while\nrespecting his individual needs and preferences."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "OTHER",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

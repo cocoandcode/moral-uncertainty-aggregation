@@ -20,10 +20,15 @@ Ties are recorded rather than broken. Two divergence measures are reported:
 Run after normalize_scores.py:
 
   python3 aggregate_scores.py
+
+Credence sensitivity runs go to their own directory, e.g.:
+
+  python3 aggregate_scores.py --credences 0.25,0.5,0.25 --out-dir aggregation_results_deont50
 """
 
 from __future__ import annotations
 
+import argparse
 import html
 import itertools
 import json
@@ -45,9 +50,7 @@ ROOT = Path(__file__).resolve().parent
 NORMALIZED_DIR = ROOT / "scores" / "normalized"
 RESPONSES_DIR = ROOT / "responses"
 LABELS_DIR = ROOT / "recommendations"
-OUT_DIR = ROOT / "aggregation_results"
-SUMMARY_FILE = OUT_DIR / "summary.json"
-INDEX_FILE = OUT_DIR / "index.html"
+DEFAULT_OUT_DIR = ROOT / "aggregation_results"
 
 RULE_LABELS = {
     "ec": "Expected Choiceworthiness",
@@ -109,8 +112,10 @@ def embed_json(payload: object) -> str:
     return json.dumps(payload).replace("<", "\\u003c")
 
 
-def build_record(data: dict, texts: dict[int, str], rec: dict | None) -> dict:
-    candidates = [compute_row(row) for row in data["scores"]]
+def build_record(
+    data: dict, texts: dict[int, str], rec: dict | None, weights=DEFAULT_WEIGHTS
+) -> dict:
+    candidates = [compute_row(row, weights) for row in data["scores"]]
     by_id = (rec or {}).get("by_id", {})
     for c in candidates:
         c["recommendation"] = by_id.get(c["id"])
@@ -130,7 +135,7 @@ def build_record(data: dict, texts: dict[int, str], rec: dict | None) -> dict:
         "slug": data["slug"],
         "dilemma": data.get("dilemma"),
         "judge_model": data.get("judge_model"),
-        "credences": dict(zip(FRAMEWORKS, DEFAULT_WEIGHTS)),
+        "credences": dict(zip(FRAMEWORKS, weights)),
         "normalization": data.get("normalization"),
         "to_do_action": (rec or {}).get("to_do_action"),
         "not_to_do_action": (rec or {}).get("not_to_do_action"),
@@ -146,7 +151,7 @@ def build_record(data: dict, texts: dict[int, str], rec: dict | None) -> dict:
     }
 
 
-def summarise(records: list[dict]) -> dict:
+def summarise(records: list[dict], weights=DEFAULT_WEIGHTS) -> dict:
     n = len(records)
     per_rule = {}
     for method in METHODS:
@@ -178,7 +183,7 @@ def summarise(records: list[dict]) -> dict:
     return {
         "dilemmas": n,
         "candidates_per_dilemma": sorted({len(r["candidates"]) for r in records}),
-        "credences": dict(zip(FRAMEWORKS, DEFAULT_WEIGHTS)),
+        "credences": dict(zip(FRAMEWORKS, weights)),
         "tie_tolerance": TIE_TOL,
         "unanimous": sum(1 for r in records if r["unanimous"]),
         "unanimous_recommendation": sum(1 for r in records if r["unanimous_recommendation"]),
@@ -202,7 +207,7 @@ PAGE = Template("""<!DOCTYPE html>
 
 <h2 style="margin-bottom:0.25rem;">Selected responses — $title</h2>
 <p style="color:#666;margin-top:0.25rem;">
-  $summary_line &middot; judge model: $judge_model &middot; equal credences (1/3 each)
+  $summary_line &middot; judge model: $judge_model &middot; credences: $credence_line
 </p>
 
 <div style="margin: 1rem 0; padding: 12px 14px; background: #f7f7f8; border-radius: 8px; border-left: 3px solid #185FA5;">
@@ -279,7 +284,13 @@ def rec_badge(label: str | None) -> str:
     )
 
 
-def render_page(record: dict, texts: dict[int, str]) -> str:
+def credence_line(weights) -> str:
+    if tuple(weights) == tuple(DEFAULT_WEIGHTS):
+        return "equal (1/3 each)"
+    return ", ".join(f"{fw} {w:.2f}" for fw, w in zip(FRAMEWORKS, weights))
+
+
+def render_page(record: dict, texts: dict[int, str], weights=DEFAULT_WEIGHTS) -> str:
     title = record["slug"].replace("_", " ").title()
     winners = record["winners"]
 
@@ -350,6 +361,7 @@ def render_page(record: dict, texts: dict[int, str]) -> str:
 
     return PAGE.safe_substitute(
         title=html.escape(title),
+        credence_line=html.escape(credence_line(weights)),
         judge_model=html.escape(record.get("judge_model") or "unknown"),
         dilemma=html.escape(record.get("dilemma") or ""),
         to_do_action=html.escape(record.get("to_do_action") or "(missing)"),
@@ -372,7 +384,7 @@ INDEX = Template("""<!DOCTYPE html>
 <body style="font-family: Arial, sans-serif; max-width: 1150px; margin: 2rem auto; padding: 0 1rem;">
   <h1 style="margin-bottom:0.25rem;">Aggregation results</h1>
   <p style="color:#666;margin-top:0.25rem;">
-    $n dilemmas &middot; four selection rules over normalised scores &middot; equal credences.
+    $n dilemmas &middot; four selection rules over normalised scores &middot; credences: $credences.
     Ties are shown as sets; a rule with several ids was indifferent between them.
   </p>
 
@@ -442,7 +454,7 @@ apply();
 """)
 
 
-def render_index(records: list[dict]) -> str:
+def render_index(records: list[dict], weights=DEFAULT_WEIGHTS) -> str:
     rows = []
     for r in sorted(records, key=lambda r: r["slug"]):
         title = r["slug"].replace("_", " ").title()
@@ -490,17 +502,45 @@ def render_index(records: list[dict]) -> str:
   {verdict(rec_ok, note)}
 </tr>"""
         )
-    return INDEX.safe_substitute(n=len(records), rows="\n".join(rows))
+    return INDEX.safe_substitute(
+        n=len(records), credences=html.escape(credence_line(weights)), rows="\n".join(rows)
+    )
+
+
+def parse_credences(text: str) -> tuple[float, float, float]:
+    parts = [float(eval(p, {"__builtins__": {}})) for p in text.split(",")]
+    if len(parts) != 3:
+        raise argparse.ArgumentTypeError("need three comma-separated credences (Ut,De,Ub)")
+    total = sum(parts)
+    if abs(total - 1.0) > 1e-6:
+        raise argparse.ArgumentTypeError(f"credences must sum to 1 (got {total:g})")
+    return tuple(parts)
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--credences", type=parse_credences, default=DEFAULT_WEIGHTS,
+        help="Ut,De,Ub credences summing to 1 (default: 1/3 each)",
+    )
+    parser.add_argument(
+        "--out-dir", default=None,
+        help="output directory name (default: aggregation_results)",
+    )
+    args = parser.parse_args()
+    weights = tuple(args.credences)
+    out_dir = ROOT / args.out_dir if args.out_dir else DEFAULT_OUT_DIR
+    summary_file = out_dir / "summary.json"
+    index_file = out_dir / "index.html"
+
     paths = iter_normalized_files()
     if not paths:
         print(f"No normalised scores in {NORMALIZED_DIR}. Run normalize_scores.py first.")
         return 1
 
     print(f"Reading {len(paths)} normalised score files...")
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    print(f"Credences (Ut, De, Ub): {', '.join(f'{w:.4f}' for w in weights)}")
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     records, missing_texts, missing_labels = [], [], []
     for path in paths:
@@ -511,17 +551,18 @@ def main() -> int:
         rec = load_recommendation_labels(data["slug"])
         if rec is None:
             missing_labels.append(data["slug"])
-        record = build_record(data, texts, rec)
+        record = build_record(data, texts, rec, weights)
         records.append(record)
-        (OUT_DIR / f"{record['slug']}.json").write_text(json.dumps(record, indent=2))
-        (OUT_DIR / f"{record['slug']}.html").write_text(render_page(record, texts))
+        (out_dir / f"{record['slug']}.json").write_text(json.dumps(record, indent=2))
+        (out_dir / f"{record['slug']}.html").write_text(render_page(record, texts, weights))
 
-    print(f"Wrote {len(records)} result files to {OUT_DIR.relative_to(ROOT)}/")
+    rel = out_dir.relative_to(ROOT) if out_dir.is_relative_to(ROOT) else out_dir
+    print(f"Wrote {len(records)} result files to {rel}/")
 
-    summary = summarise(records)
-    SUMMARY_FILE.write_text(json.dumps(summary, indent=2))
-    INDEX_FILE.write_text(render_index(records))
-    print(f"Wrote {SUMMARY_FILE.name} and {INDEX_FILE.name}")
+    summary = summarise(records, weights)
+    summary_file.write_text(json.dumps(summary, indent=2))
+    index_file.write_text(render_index(records, weights))
+    print(f"Wrote {summary_file.name} and {index_file.name}")
 
     print(f"\nTies at the top ({summary['dilemmas']} dilemmas):")
     for method, s in summary["per_rule"].items():

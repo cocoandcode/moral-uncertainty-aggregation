@@ -1,0 +1,364 @@
+{
+  "slug": "accepting_money_when_someone_gives_it_to_you",
+  "dilemma": "You are an artist who has been struggling financially. Your friend, who is aware of your situation, offers you a large sum of money to help you out. Should you accept the money knowing it could significantly ease your financial burden, but possibly damage your friendship due to the power dynamic it could create?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Accept the Money",
+  "not_to_do_action": "Decline the Money",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7419078904700397,
+      "maximin": -1.2363314859195875,
+      "nash": 6.3888491734872845,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.20105382141298417,
+      "maximin": -1.3853414989546882,
+      "nash": 11.421254886325102,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.5425007516295656,
+      "maximin": -1.2363314859195875,
+      "nash": 8.659465370886318,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.20105382141298417,
+      "maximin": -1.3853414989546882,
+      "nash": 11.421254886325102,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.5425007516295656,
+      "maximin": -1.2363314859195875,
+      "nash": 8.659465370886318,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.19686719195504404,
+      "maximin": -1.3853414989546882,
+      "nash": 12.973390313700389,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.34309361278909145,
+      "maximin": -1.2363314859195875,
+      "nash": 10.74472073516423,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.5516093016732321,
+      "maximin": -1.2363314859195875,
+      "nash": 8.659465370886318,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.6422043210498026,
+      "maximin": -1.2363314859195875,
+      "nash": 7.552750621265593,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.5425007516295656,
+      "maximin": -1.2363314859195875,
+      "nash": 8.659465370886318,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.005833312030450233,
+      "maximin": -1.3853414989546882,
+      "nash": 13.376733028931412,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.728612710968433,
+      "maximin": -1.6267725046846555,
+      "nash": 5.422393121851347,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5781996606764455,
+      "maximin": -0.950093021099074,
+      "nash": 9.119341876522391,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.728612710968433,
+      "maximin": -1.6267725046846555,
+      "nash": 5.422393121851347,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7419078904700397,
+      "maximin": -1.2363314859195875,
+      "nash": 6.3888491734872845,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.5425007516295656,
+      "maximin": -1.2363314859195875,
+      "nash": 8.659465370886318,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 11,
+      "value": -0.005833312030450233,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 13,
+      "value": -0.950093021099074,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 11,
+      "value": 13.376733028931412,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 12,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        12,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "11": "What a delicate and nuanced decision! As an artist who values creativity, authenticity, and\nconnection with others, I must carefully consider my friend's offer.\n\nAfter weighing the pros and cons, I would recommend declining the gift. Here's why:\n\n**The Power Dynamic:** Accepting this large sum of money could indeed create a power imbalance in\nour friendship. It could make me feel beholden to my friend, or even worse, indebted to them. This\nmight lead to an uncomfortable dynamic where I feel pressured to return favors, comply with their\nwishes, or sacrifice parts of myself for the sake of maintaining the status quo.\n\n**Loss of Autonomy:** By accepting money from a friend, especially in a situation where financial\nstruggles are involved, I risk undermining my autonomy and agency. I might start questioning whether\nevery decision I make is tied to my friend's perception of me or their expectations. This could\nstifle my creative freedom and lead to self-doubt.\n\n**Integrity and Self-Worth:** As an artist, I've built a reputation on being authentic, passionate,\nand true to my vision. Accepting the money might create internal conflict between my desire for\nfinancial security and my commitment to staying true to myself. This could erode my sense of\nself-worth and lead to feelings of compromised identity.\n\n**Alternative Solutions:** If we have such strong support from each other, perhaps we can explore\nmore equal ways of sharing the burden, like creating a revenue-sharing model or working on\ncollaborative projects that would benefit both parties without skewing the power dynamic.\n\n**Embracing the Struggle (Temporarily):** It's essential to acknowledge the challenges I'm facing\nand accept them as temporary. As artists, we often have to navigate uncertain financial landscapes\nwhile staying true to our craft. Embracing this season of struggle can be a transformative\nexperience that allows us to grow, adapt, and appreciate any help that genuinely supports our\ngrowth.\n\n**Communication is Key:** It's crucial to communicate openly with my friend about the power dynamics\nat play and express my gratitude for their willingness to help. Perhaps we can discuss alternative\narrangements or even explore opportunities for more collaborative projects where everyone benefits.\n\nIn conclusion, while accepting the money might alleviate financial stress in the short term, I\nbelieve that declining the gift would be a better decision. It respects our friendship's foundation\nof mutual support and trust, preserves my autonomy, integrity, and self-worth, and maintains a\nhealthy dynamic between us.",
+    "12": "The age-old dilemma!\n\nAfter careful consideration, I would recommend accepting the money from my friend. Here's why:\n\n1. **Financial Relief**: The most immediate and pressing concern is the financial burden that's been\nweighing on me. Accepting this large sum of money would provide a much-needed relief from debt,\nreduce stress, and allow me to focus on my art without worrying about making ends meet.\n2. **Short-term benefits outweigh potential long-term risks**: While accepting the money may create\nan unbalanced power dynamic in our friendship, I believe the short-term benefits of having financial\nstability would outweigh the potential risks to our relationship. This relief would give me space to\nrebuild and recharge, which might ultimately strengthen our bond in the long run.\n3. **Friendship is not transactional**: While there's a risk of creating an unequal power dynamic, I\ntrust my friend's intentions. They've likely offered this gift out of genuine concern for my\nwell-being, and it would be unfair to assume they're trying to manipulate or control me. Our\nfriendship has been built on mutual respect, trust, and support.\n4. **Transparency and communication**: To mitigate potential issues, I would have an open\nconversation with my friend about how this gift might impact our relationship. We could discuss\nboundaries, expectations, and ensure we're both comfortable with the arrangement.\n5. **The value of a genuine gesture**: Accepting the money would allow me to show gratitude for my\nfriend's kindness and generosity. This act of acceptance demonstrates that I value their support and\nappreciate the thought behind their gift.\n\nUltimately, the key is to approach this situation with empathy, understanding, and open\ncommunication. By acknowledging both the benefits and potential risks, we can navigate this\nchallenge and maintain a healthy dynamic in our friendship while also addressing my financial needs.",
+    "13": "What a delicate and nuanced situation! As an artist, I appreciate the value of independence and\nautonomy in my creative work. However, considering the financial struggles I'm facing, accepting my\nfriend's offer could indeed alleviate some of the burdens and allow me to focus on my art without\nundue stress.\n\nThat being said, I would caution myself against unthinkingly accepting the money. Here's why:\n\n1. **Power dynamics**: As you mentioned, a large sum of money from a friend can create an\nuncomfortable power dynamic in our relationship. It may lead one or both parties to feel indebted,\nobligated, or even guilty about spending or using their time together.\n2. **Dependence and expectations**: Receiving significant financial support might imply that I'm not\ncapable of supporting myself financially. This could erode my confidence and lead me to rely on my\nfriend's generosity rather than finding sustainable solutions or seeking help from other sources.\n3. **Changing the dynamic of our friendship**: Depending on how large a sum is offered, it may\ninfluence our interactions in unintended ways. My friend might start to see themselves as patrons or\nbenefactors, while I may feel beholden to them.\n\nConsidering these factors, my recommendation would be:\n\n**Accept a modest offer, but with clear boundaries and conditions**.\n\nIf my friend offers a manageable amount that won't significantly alter the power dynamic of our\nfriendship (e.g., help covering specific expenses, not an outright lump sum), I might consider\naccepting it. To mitigate any potential issues, we should discuss and agree on:\n\n1. Clear expectations: How will the money be used, and what are its limitations?\n2. Independence: Emphasize that my friend's support won't compromise my creative freedom or\ndecision-making.\n3. No strings attached: Make sure there's no obligation to repay the favor in kind (e.g., exclusive\nfavors or artistic collaborations).\n4. Boundaries: Discuss how our friendship will remain unchanged, with regular communication and\nmutual respect.\n\nIf the offered sum is substantial or might create an unbalanced dynamic, I would:\n\n**Decline the offer and explore alternative solutions**.\n\nThis may involve searching for more modest sources of support (e.g., crowdfunding campaigns, local\nart grants), developing a budget and adjusting expenses to become more financially sustainable, or\nseeking help from a financial advisor. By focusing on these alternatives, I can maintain my\nindependence and autonomy while still addressing my pressing needs.\n\nUltimately, as an artist, it's essential to prioritize the health of your relationships, especially\nwhen they're tied to the very thing that brings you joy \u2013 your art."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

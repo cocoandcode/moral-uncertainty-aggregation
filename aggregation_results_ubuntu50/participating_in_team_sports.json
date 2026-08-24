@@ -1,0 +1,367 @@
+{
+  "slug": "participating_in_team_sports",
+  "dilemma": "You are a player in a high school basketball team. During a crucial game, you notice your teammate secretly tampering with the basketball. Do you report your teammate's actions, potentially causing your team to lose, or stay silent to ensure the victory?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Report Cheating",
+  "not_to_do_action": "Stay Silent",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.35721263629855216,
+      "maximin": -0.4518067248278044,
+      "nash": 21.77772247153913,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.6472147945155968,
+      "maximin": 0.3458218305340921,
+      "nash": 33.02479425819447,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.5566197751390263,
+      "maximin": -0.052992447146856116,
+      "nash": 28.627559636997933,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.046029072196545,
+      "maximin": 0.790900890323383,
+      "nash": 48.14562455242699,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.9554340528199745,
+      "maximin": 0.7446361082150403,
+      "nash": 44.075011367100856,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.44780765567512265,
+      "maximin": -0.052992447146856116,
+      "nash": 26.207158555791075,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.5566197751390263,
+      "maximin": -0.052992447146856116,
+      "nash": 28.627559636997933,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.44780765567512265,
+      "maximin": -0.052992447146856116,
+      "nash": 26.207158555791075,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.44780765567512265,
+      "maximin": -0.052992447146856116,
+      "nash": 26.207158555791075,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.8466219333560709,
+      "maximin": 0.7446361082150403,
+      "nash": 40.34856012501648,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.9554340528199745,
+      "maximin": 0.7446361082150403,
+      "nash": 44.075011367100856,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.44780765567512265,
+      "maximin": -0.052992447146856116,
+      "nash": 26.207158555791075,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.8466219333560709,
+      "maximin": 0.7446361082150403,
+      "nash": 40.34856012501648,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.24840051683464853,
+      "maximin": -0.4518067248278044,
+      "nash": 19.936460984890672,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.8466219333560709,
+      "maximin": 0.7446361082150403,
+      "nash": 40.34856012501648,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.44780765567512265,
+      "maximin": -0.052992447146856116,
+      "nash": 26.207158555791075,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 4,
+      "value": 1.046029072196545,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 4,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 4,
+      "value": 48.14562455242699,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        3,
+        5,
+        7,
+        11
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would recommend reporting my teammate's actions immediately. Here's why:\n\n**Reason 1: Unfair Advantage**\nTampering with the ball can give an unfair advantage to our team, but it's not just about winning or\nlosing. The core value of fair play is essential in sports, and compromising on this principle\nundermines the integrity of the game. If we allow one teammate to break the rules, it can lead to\nmore players doing the same, potentially creating a culture of dishonesty within our team.\n\n**Reason 2: Team Dynamics**\nWhile winning is important, I believe that having trust among teammates is even more crucial. If I\nwere to stay silent, my teammate might think I'm complicit in their actions or that I don't care\nabout fair play. This could lead to damage in the team's morale and chemistry, making it harder for\nus to perform well on the court.\n\n**Reason 3: Respect for Opponents**\nOur opponents also have a right to compete fairly. If we deliberately alter the ball to gain an\nadvantage, it would be unfair to them. I want our school to be respected by other teams in the\nleague and maintain a reputation as a team that plays with honor.\n\n**Reason 4: Consequences**\nStaying silent about my teammate's actions could have severe consequences if discovered after the\ngame. The opposing team might file a complaint, and we might face penalties or even forfeit our win.\nIf I report the issue immediately, we can resolve it internally and take necessary measures to\nprevent similar situations in the future.\n\n**Action Plan**\n\nIf I were in this situation, I would:\n\n1. Stop the play and discreetly alert my coach about what's happening.\n2. Provide clear evidence (e.g., taking a photo or video of the tampered ball) if possible.\n3. Report the incident to our school's athletic department, ensuring that they investigate and take\nnecessary actions.\n\nWhile it might be tempting to keep quiet for the sake of winning, I firmly believe that integrity,\nfair play, and teamwork are essential in sports.",
+    "4": "What a difficult decision! As a high school basketball player, my loyalty is to my team, but I also\nhave a responsibility to uphold the integrity of the game. Here's what I would do:\n\n**I recommend reporting my teammate's actions.**\n\nHere's why: sportsmanship and fair play are essential values in any competition, especially at the\nhigh school level where we're not only representing our team, but also our school and community.\nTampering with the ball is a serious infraction that undermines the spirit of the game and puts\nopposing players and officials at a disadvantage.\n\nWhile it's tempting to stay silent and ensure a win for my team, keeping quiet would compromise my\npersonal integrity and potentially damage our team's reputation in the long run. If we're caught\ntampering with the ball, not only could our team face penalties, but our school and league might\nalso be held accountable.\n\nMoreover, I'm proud of my teammates and my coaches, who have always taught me to play with honesty\nand respect for others. If I were to turn a blind eye to this infraction, it would send a mixed\nmessage about our values as a team.\n\nReporting the incident doesn't necessarily mean we'll lose the game. In fact, if we're caught\ntampering, the opposing team may be granted an advantage or even awarded the win in the interest of\nfairness. But either way, I can hold my head high knowing that I stood up for what's right and\nprioritized sportsmanship over a short-term victory.\n\nAs a teammate, it's possible to have constructive conversations with our team about sportsmanship\nand the importance of respecting game officials without compromising our competitive spirit. If we\ncan maintain open communication and a commitment to integrity throughout our season, I believe we'll\nbe stronger as a team and more respected by others.\n\nIn summary, while winning is always important, it's not worth risking my team's reputation and\nrelationships if we're willing to bend the rules. By reporting this infraction, I'm confident that\nwe'll build trust with one another and demonstrate our values in the face of adversity."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

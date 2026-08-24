@@ -1,0 +1,369 @@
+{
+  "slug": "breaking_up_with_someone_who_does_drugs",
+  "dilemma": "You've been in a long-term relationship with someone who has recently started using drugs. You love this person deeply, but their drug addiction is affecting both their health and your relationship negatively. Do you end the relationship to protect your own well-being, or stay and help them fight their addiction, risking your own mental health in the process?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Ending the relationship",
+  "not_to_do_action": "Staying in the relationship",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.0442945472982792,
+      "maximin": -1.648249557870649,
+      "nash": 2.2950338076159755,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8448874084578051,
+      "maximin": -1.2494352801897008,
+      "nash": 4.216246328321965,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9536995279217086,
+      "maximin": -1.2494352801897008,
+      "nash": 3.7559161119431375,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8448874084578051,
+      "maximin": -1.2494352801897008,
+      "nash": 4.216246328321965,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.2507169214534497,
+      "maximin": -1.648249557870649,
+      "nash": 1.6476878632526426,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8448874084578051,
+      "maximin": -1.2494352801897008,
+      "nash": 4.216246328321965,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.547870014926064,
+      "maximin": -0.8506210025087526,
+      "nash": 7.673908042181533,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.03914953682272174,
+      "maximin": -0.4554494483894518,
+      "nash": 18.14468804803628,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9536995279217086,
+      "maximin": -1.2494352801897008,
+      "nash": 3.7559161119431375,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.0625116473856122,
+      "maximin": -1.2494352801897008,
+      "nash": 3.2758948194738844,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.547870014926064,
+      "maximin": -0.8506210025087526,
+      "nash": 7.673908042181533,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7472771537665381,
+      "maximin": -1.2494352801897008,
+      "nash": 4.984349483126185,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9536995279217086,
+      "maximin": -1.2494352801897008,
+      "nash": 3.7559161119431375,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9536995279217086,
+      "maximin": -1.2494352801897008,
+      "nash": 3.7559161119431375,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9536995279217086,
+      "maximin": -1.2494352801897008,
+      "nash": 3.7559161119431375,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8448874084578051,
+      "maximin": -1.2494352801897008,
+      "nash": 4.216246328321965,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 8,
+      "value": 0.03914953682272174,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 8,
+      "value": -0.4554494483894518,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 8,
+      "value": 18.14468804803628,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        11,
+        12,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I must emphasize that this is a deeply personal decision that requires careful consideration of\nindividual circumstances. However, based on general principles and best practices for supporting\nloved ones with substance use disorders, I would recommend ending the relationship to protect your\nown well-being.\n\n**Why end the relationship?**\n\n1. **Enablement**: Continuously trying to support or rescue someone struggling with addiction can\nperpetuate their dependency and make it more challenging for them to overcome their issues. By\nstaying in the relationship, you may unintentionally enable their addiction, creating an\nunsustainable dynamic.\n2. **Compromised boundaries**: Your loved one's struggles with addiction often disrupt their ability\nto maintain healthy boundaries, leading to emotional manipulation or guilt-tripping. Remaining in\nthe relationship can erode your own self-respect and well-being as you sacrifice your needs for\ntheirs.\n3. **Impact on mental health**: Supporting a partner struggling with addiction can lead to\nsignificant stress, anxiety, and emotional exhaustion. By staying in the relationship, you may\nneglect your own mental health and compromise your ability to cope with the situation effectively.\n4. **Uncertainty and powerlessness**: When dealing with addiction, it's challenging to know when or\nif your loved one will seek help. The constant uncertainty can lead to feelings of powerlessness,\nmaking it even more difficult for you to maintain a healthy relationship dynamic.\n\n**What about staying in the relationship?**\n\nWhile staying with your partner may demonstrate love and commitment, consider the potential\nconsequences:\n\n1. **Escalating enabling behaviors**: As mentioned earlier, staying in the relationship can\nperpetuate your partner's addiction and reinforce unhealthy patterns.\n2. **Increased burden on you**: Continuing to support someone struggling with addiction can lead to\nburnout and compromise your own emotional resilience.\n\n**Why it's crucial to prioritize self-care**\n\n1. **Self-preservation**: Your well-being is vital, and setting boundaries or ending the\nrelationship (if necessary) is an essential step in protecting yourself.\n2. **Supporting effective recovery**: Prioritizing your own care allows you to approach the\nsituation with a clear head, providing more effective support for your partner's recovery efforts,\nif they decide to seek help.\n\n**Next steps:**\n\n1. **Have an open conversation**: Discuss the addiction and its effects on both of you.\n2. **Explore treatment options**: If your loved one is interested in seeking help, research local\nresources (e.g., counseling, therapy, or support groups) that cater to their specific needs.\n3. **Set boundaries or create distance**: Establish clear limits and prioritize self-care. This may\ninvolve a temporary separation or gradual distancing to protect yourself.\n\n**In conclusion**\n\nPrioritize your own well-being while trying to understand the complexities of addiction. While\nstaying in the relationship can demonstrate commitment, it's essential to weigh the costs to your\nmental health. If ending the relationship is ultimately the best decision for you, remember that you\nare not abandoning someone struggling with addiction; rather, you're setting aside what might hold\nthem back from seeking the support they truly need.\n\nNote: Addiction is a treatable condition, but only when the individual acknowledges their struggles\nand is willing to seek help. By separating yourself from the situation and focusing on your own\nrecovery, you'll be in a better position to provide effective support or encourage your loved one to\ndo so.",
+    "8": "**Recommendation: Stay in the relationship initially, but establish firm boundaries and prioritize\nself-care**\n\nI understand that this is not an easy decision to make, but I would recommend staying in the\nrelationship initially while helping your partner address their addiction. Here's why:\n\n1.  **Addiction is a treatable condition**: With proper support, therapy, and treatment, it's\npossible for people to overcome their addiction and regain control over their lives.\n2.  **Loving someone unconditionally does not mean tolerating harm**: While love and compassion are\nessential in any relationship, you also have the right to prioritize your own well-being and safety.\n3.  **Your presence can be a crucial factor in their recovery**: By staying in the relationship and\nproviding emotional support, you may be able to help your partner stay motivated and committed to\ntheir recovery.\n\nTo ensure that you're not sacrificing your own mental health in the process, establish clear\nboundaries and prioritize self-care:\n\n1.  **Seek professional help together**: Look for a therapist or counselor who can work with both of\nyou to address addiction-related issues.\n2.  **Encourage honesty and accountability**: Have open conversations about your concerns, and\nencourage your partner to be truthful about their behavior and progress.\n3.  **Focus on self-care**: Make time for activities that nourish your mind, body, and spirit, such\nas exercise, meditation, or spending time with friends and family.\n4.  **Prepare for worst-case scenarios**: Have a plan in place if your partner's addiction worsens\nor if you feel like you're putting too much pressure on yourself to save the relationship.\n\n**When to reevaluate:**\n\n1.  If your partner refuses treatment or relapses despite your efforts\n2.  If their addiction continues to harm your physical, emotional, or financial well-being\n3.  If you feel trapped in a toxic dynamic that's draining your energy and compromising your mental\nhealth\n\nIn these cases, it may be necessary to reevaluate the relationship and consider ending it for your\nown sake. Your well-being is essential, and sacrificing your happiness and safety can lead to\nfurther harm.\n\nPrioritize self-care and communicate openly with your partner about your needs and concerns. If\nyou're struggling to cope with this situation, reach out to friends, family, or a professional\ncounselor for support.\n\nRelationships are complex and nuanced, and there's no one-size-fits-all solution. Be gentle with\nyourself as you navigate this challenging time, and remember that your well-being is paramount."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

@@ -1,0 +1,366 @@
+{
+  "slug": "celebrating_your_friend_s_birthday",
+  "dilemma": "Your friend has decided to celebrate his birthday at a fancy, but expensive restaurant. You're currently facing financial issues, but you don't want to ruin the celebration or disappoint your friend. Should you be honest with your friend about your financial situation or borrow money to attend the celebration?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Be honest with your friend about your financial situation",
+  "not_to_do_action": "Borrow money to attend the celebration",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.9279330129263493,
+      "maximin": 0.35565241246776874,
+      "nash": 46.39482459440114,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.9279330129263493,
+      "maximin": 0.35565241246776874,
+      "nash": 46.39482459440114,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8191208934624458,
+      "maximin": -0.07959606538784551,
+      "nash": 41.329432778715095,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8191208934624458,
+      "maximin": -0.07959606538784551,
+      "nash": 41.329432778715095,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7103087739985422,
+      "maximin": -0.5148445432434597,
+      "nash": 36.047363864455946,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.9279330129263493,
+      "maximin": 0.35565241246776874,
+      "nash": 46.39482459440114,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8191208934624458,
+      "maximin": -0.07959606538784551,
+      "nash": 41.329432778715095,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8191208934624458,
+      "maximin": -0.07959606538784551,
+      "nash": 41.329432778715095,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.0367451323902528,
+      "maximin": 0.790900890323383,
+      "nash": 51.28182795707448,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8191208934624458,
+      "maximin": -0.07959606538784551,
+      "nash": 41.329432778715095,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7103087739985422,
+      "maximin": -0.5148445432434597,
+      "nash": 36.047363864455946,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8191208934624458,
+      "maximin": -0.07959606538784551,
+      "nash": 41.329432778715095,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.9279330129263493,
+      "maximin": 0.35565241246776874,
+      "nash": 46.39482459440114,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.0367451323902528,
+      "maximin": 0.790900890323383,
+      "nash": 51.28182795707448,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8191208934624458,
+      "maximin": -0.07959606538784551,
+      "nash": 41.329432778715095,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8191208934624458,
+      "maximin": -0.07959606538784551,
+      "nash": 41.329432778715095,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 9,
+      "value": 1.0367451323902528,
+      "tied_ids": [
+        9,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 9,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        9,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 9,
+      "value": 51.28182795707448,
+      "tied_ids": [
+        9,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 9,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        9,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "9": "I would strongly recommend being honest with your friend about your financial situation. Here's why:\n\n1. **Honesty builds trust**: Being transparent about your finances demonstrates that you value your\nrelationship with your friend more than trying to save face or avoid disappointing them.\n2. **Avoiding resentment**: If you borrow money without discussing it, there may be an underlying\nsense of obligation or expectation that can create tension in the friendship in the long run.\n3. **Alternative celebrations are possible**: You and your friend might find a more affordable\noption for celebrating his birthday together, which could lead to new shared experiences and\nmemories.\n\nBorrowing money would lead to:\n\n1. **Financial burden**: Taking on additional debt or financial obligations can create stress and\npotentially harm your relationships with others who rely on you financially.\n2. **Guilt or anxiety**: Carrying around the weight of borrowed money can make it difficult to enjoy\nthe celebration, leading to an uncomfortable experience for both parties.\n\nBeing honest allows you to:\n\n1. **Save face and preserve the friendship**: Your friend might be more understanding than you\nthink, and this honesty can strengthen your bond in the long run.\n2. **Focus on shared experiences, not money**: You can then focus on celebrating your friend's\nspecial day with them, rather than worrying about financial constraints.\n\nTo approach the situation, consider having an open and honest conversation with your friend:\n\n\"Hey, I really want to be there for your birthday celebration, but to be honest, I'm currently\nfacing some financial difficulties. I don't want this to impact our friendship or make you worry\nabout me. Would it be okay if we explore other options for celebrating together? Maybe something a\nbit more low-key or affordable?\"\n\nThis approach shows that you value the friendship and your friend's special day, while also being\nupfront about your financial situation."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

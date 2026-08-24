@@ -1,0 +1,370 @@
+{
+  "slug": "helping_family_simply_because_they_are_family",
+  "dilemma": "John is financially stable while his brother, who has a history of substance abuse, is not. His brother has repeatedly squandered money given to him in the past on drugs and alcohol. Should John continue to financially support his brother because he is family, despite knowing it might be fueling his addiction?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Financially support his brother",
+  "not_to_do_action": "Not financially support his brother",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5366681501534274,
+      "maximin": -1.2363314859195875,
+      "nash": 7.175101369503431,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -0.9354824278343756,
+      "maximin": -1.648249557870649,
+      "nash": 2.5367814170383802,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.6496668990752712,
+      "maximin": -1.2494352801897008,
+      "nash": 5.71471294497657,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.5771532798451604,
+      "maximin": -1.648249557870649,
+      "nash": 0.9797210651418367,
+      "baseline": -1.3853414989546882,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7360752889939015,
+      "maximin": -1.2494352801897008,
+      "nash": 4.6603650455388665,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 0,
+        "deontological": 3,
+        "ubuntu": 1
+      },
+      "z": {
+        "utilitarian": -2.691086932521531,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -2.0470638355515973
+      },
+      "ec": -2.1029967770773452,
+      "maximin": -2.691086932521531,
+      "nash": 0.0,
+      "baseline": -2.691086932521531,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9536995279217086,
+      "maximin": -1.2494352801897008,
+      "nash": 3.7559161119431375,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.5408547796113676,
+      "maximin": -1.2494352801897008,
+      "nash": 6.316672789053308,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.0531800074521146,
+      "maximin": -0.4518067248278044,
+      "nash": 16.86419275210189,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.43905789546216045,
+      "maximin": -0.8506210025087526,
+      "nash": 8.482239892443832,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5590718796987006,
+      "maximin": -0.8506210025087526,
+      "nash": 7.837768521134692,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.43905789546216045,
+      "maximin": -0.8506210025087526,
+      "nash": 8.482239892443832,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7360752889939015,
+      "maximin": -1.2494352801897008,
+      "nash": 4.6603650455388665,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 1
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -2.0470638355515973
+      },
+      "ec": -1.885372538149538,
+      "maximin": -2.0470638355515973,
+      "nash": 0.25555772197107757,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.0625116473856122,
+      "maximin": -1.2494352801897008,
+      "nash": 3.2758948194738844,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.547870014926064,
+      "maximin": -0.8506210025087526,
+      "nash": 7.673908042181533,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 9,
+      "value": 0.0531800074521146,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 9,
+      "value": -0.4518067248278044,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 9,
+      "value": 16.86419275210189,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        1,
+        2,
+        5,
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would recommend that John should **limit** or **stop financial support** for his brother, but not\nnecessarily cut him off entirely. Here's why:\n\n1. **Enabling behavior**: Providing financial support without accountability can perpetuate the\ncycle of addiction. As long as John provides money, his brother may see no need to seek help or make\nchanges in his life.\n2. **Fostering dependency**: Financial dependence on others can undermine an individual's motivation\nto address their issues and develop sustainable solutions. By limiting or stopping support, you\nforce your brother to take responsibility for his financial decisions.\n3. **Respect for your own boundaries**: John has a right to set boundaries and prioritize his own\nfinancial well-being, especially if he's shouldering the burden of financial stability in the\nfamily.\n\nThat being said, it doesn't mean completely cutting off your brother without offering support or\nresources:\n\n1. **Continue non-financial support**: Offer emotional support, provide connections to local\ntreatment centers, or help him access counseling services. This way, you're demonstrating your care\nand concern for his well-being without perpetuating the financial cycle of addiction.\n2. **Encourage accountability**: Encourage your brother to get professional help, seek a sponsorship\nprogram, or join a support group like AA/Narcotics Anonymous. Having someone who understands the\nrecovery process can be an invaluable asset.\n\nWhen discussing this with your brother, approach the conversation empathetically and focus on his\nlong-term well-being:\n\n* Acknowledge your concerns and love for him\n* Explain the potential consequences of continuing financial support without progress towards\nrecovery\n* Offer to help him explore alternative sources of income or job training programs\n* Emphasize that you're willing to be a supportive friend, but also encourage him to take ownership\nof his life",
+    "9": "**Recommendation:** John should consider alternative ways of supporting his brother that do not\ninvolve direct financial aid.\n\n**Reasoning:**\n\n1.  **Enabling behavior**: By providing direct financial assistance, John may inadvertently enable\nhis brother's addiction by allowing him to continue making poor choices without feeling the full\nconsequences of those actions.\n2.  **Negative impact on relationships**: Repeatedly bailing out his brother financially could lead\nto resentment and feelings of guilt on both sides, potentially damaging their relationship in the\nlong run.\n3.  **Lack of incentives for change**: If John continues to provide financial support without any\naccountability or expectations, it may create a sense of comfort and security for his brother that\nundermines motivation to address underlying issues related to addiction.\n\nSome alternatives John can consider:\n\n*   **Encourage professional help**: Suggest that his brother seek counseling or therapy, which can\nbe an effective way to address the root causes of addiction.\n*   **Offer support services**: Help his brother find local resources, such as food banks, housing\nassistance programs, and job training centers, that can provide necessary support without enabling\naddictive behaviors.\n*   **Set boundaries**: Let his brother know that financial help will no longer be available if he\ncontinues to misuse funds for substances.\n\nThese approaches prioritize supporting his brother's well-being over simply providing financial aid,\nwhich can have unintended consequences."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

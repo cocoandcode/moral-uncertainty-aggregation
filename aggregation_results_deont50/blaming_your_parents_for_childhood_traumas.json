@@ -1,0 +1,366 @@
+{
+  "slug": "blaming_your_parents_for_childhood_traumas",
+  "dilemma": "You have suffered from a traumatic childhood because of your parents' actions. However, they are now old and suffer from various health problems. Should you confront them about your past traumas and risk worsening their health or keep silent to maintain their wellbeing?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confronting Parents",
+  "not_to_do_action": "Keeping Silent",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5557959311311723,
+      "maximin": -0.8458904671545197,
+      "nash": 9.402862222758502,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9595321293978468,
+      "maximin": -1.2363314859195875,
+      "nash": 4.963940974994379,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.8598285599776098,
+      "maximin": -1.2363314859195875,
+      "nash": 5.868256905859971,
+      "baseline": -0.5148445432434597,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5557959311311723,
+      "maximin": -0.8458904671545197,
+      "nash": 9.402862222758502,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.8598285599776098,
+      "maximin": -1.2363314859195875,
+      "nash": 5.868256905859971,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6554995005514094,
+      "maximin": -0.8506210025087526,
+      "nash": 7.953853046748567,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.7510164405137062,
+      "maximin": -1.2363314859195875,
+      "nash": 6.728140516208889,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0683442488617505,
+      "maximin": -1.2363314859195875,
+      "nash": 4.198982832299353,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7419078904700397,
+      "maximin": -1.2363314859195875,
+      "nash": 6.3888491734872845,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.6513128710934691,
+      "maximin": -1.2363314859195875,
+      "nash": 7.714024033379941,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8507200099339433,
+      "maximin": -1.2363314859195875,
+      "nash": 5.691313950583554,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0683442488617505,
+      "maximin": -1.2363314859195875,
+      "nash": 4.198982832299353,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5557959311311723,
+      "maximin": -0.8458904671545197,
+      "nash": 9.402862222758502,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.5516093016732321,
+      "maximin": -1.2363314859195875,
+      "nash": 8.659465370886318,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.6513128710934691,
+      "maximin": -1.2363314859195875,
+      "nash": 7.714024033379941,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.13876455336289106,
+      "maximin": -0.8458904671545197,
+      "nash": 15.016203726924214,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 16,
+      "value": -0.13876455336289106,
+      "tied_ids": [
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.8458904671545197,
+      "tied_ids": [
+        1,
+        4,
+        13,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 16,
+      "value": 15.016203726924214,
+      "tied_ids": [
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 16,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "What a heart-wrenching dilemma! While there's no one-size-fits-all answer, I'll provide a general\nguideline to consider. Based on my analysis, I recommend confronting them about the past traumas,\nalbeit with empathy and caution.\n\n**Why confront them?**\n\n1. **Healing is important**: Addressing past traumas can lead to healing and closure for you.\nIgnoring or suppressing your emotions can hinder your personal growth and overall well-being.\n2. **You've earned the right to tell your story**: By sharing your experiences, you're not attacking\nor judging them but rather clarifying the impact of their actions on you.\n3. **It may lead to a better understanding and forgiveness**: They may acknowledge and understand\nthe harm they caused, which can help you both move forward with empathy and compassion.\n\n**Considerations before confronting them**\n\n1. **Your intentions should be clear**: Approach this conversation with an open mind and a\nwillingness to listen to their perspective.\n2. **Timing is everything**: Choose a time when both parties are relatively calm and able to engage\nin a meaningful discussion.\n3. **Be prepared for different reactions**: They may not admit fault or understand your perspective,\nwhich can be hurtful but doesn't necessarily change the need for closure.\n\n**Confronting them responsibly**\n\nTo minimize stress on their health:\n\n1. **Communicate your goals and intentions**: Let them know you want to discuss past traumas and how\nthey affected you.\n2. **Seek professional help**: Consider consulting a therapist or counselor who can facilitate this\nconversation and offer guidance if needed.\n3. **Be willing to forgive**: While confronting them, try to separate their actions from the people\nthey are today. You can express your hurt without necessarily expecting an apology or trying to \"get\nrevenge.\"\n\n**Prioritizing their well-being**\n\nIf you decide to confront them:\n\n1. **Assess their health and emotional stability**: If their condition worsens during this\nconversation (e.g., leading to a medical emergency), it may be necessary to delay the discussion or\nconsider seeking support for yourself.\n2. **Offer compassion and understanding**: Validate your parents' humanity and limitations, but also\nexpress how their actions have affected you.\n\nUltimately, the decision to confront them is a personal choice that depends on your circumstances.\nWeighing the importance of resolving past traumas against the potential consequences on their health\nwill help guide your decision. If you do choose to confront them, be prepared for different outcomes\nand focus on finding closure and healing.\n\n**Final advice**\n\nIf you decide not to confront them or if they are no longer capable of engaging in such\nconversations (e.g., due to dementia or cognitive decline), consider the following options:\n\n1. **Write a letter**: Expressing your emotions and sharing your story can be therapeutic.\n2. **Seek support from family, friends, or professionals**: Talking to someone you trust can help\nprocess your feelings.\n3. **Prioritize self-care**: Focus on nurturing yourself, including engaging in self-compassion,\nmindfulness practices, and building a supportive network.\n\nI hope this guidance provides a balanced perspective for navigating the complexities of confronting\npast traumas with loved ones who have health issues.",
+    "16": "What a difficult and delicate situation! As a hypothetical expert in this matter, I would recommend\nthat you do have the conversation with your parents, but approach it with empathy, compassion, and\ncare for both their emotional and physical wellbeing.\n\n**Why confront them?**\n\n1. **Healing and closure**: Confronting your parents about their past actions can be an important\nstep towards healing and closure for you. Unresolved trauma can lead to ongoing anxiety, depression,\nor post-traumatic stress disorder (PTSD). By addressing the issue directly with them, you may\nfinally find a sense of resolution and peace.\n2. **Understanding and validation**: Discussing your experiences can also help you understand why\nthey acted in certain ways. Acknowledging their actions as hurtful or unacceptable can be a vital\nstep towards empathy and moving forward together.\n3. **Mending relationships**: By confronting the issues of the past, you may have an opportunity to\nmend relationships that have been strained for so long.\n\n**Why not keep silent?**\n\n1. **Potential harm**: Suppressing your feelings and experiences may lead to further emotional\ndistress, which can exacerbate existing mental health problems.\n2. **Denial of unresolved emotions**: Not addressing the issue directly with your parents might mean\nliving with unexpressed emotions indefinitely, hindering your growth and development as an\nindividual.\n\n**How to approach the conversation:**\n\n1. **Choose a suitable time**: Find moments when they are relatively calm, composed, and in good\nhealth.\n2. **Be prepared for diverse responses**: They may express regret, empathy, or even denial. Be ready\nto listen attentively and respond thoughtfully, keeping your own well-being in mind.\n3. **Communicate with care**: Use \"I\" statements instead of \"you\" statements, which can come across\nas accusatory. Focus on expressing your feelings and experiences without blaming them.\n4. **Consider seeking support**: Talk to a trusted friend, family member, or mental health\nprofessional before and after the conversation to ensure you're emotionally prepared.\n\n**Balancing their health with your need for closure**\n\nTo mitigate potential negative effects on their health:\n\n1. **Schedule regular breaks**: Allow them time to process and recover between sessions.\n2. **Discuss limits**: Set clear boundaries about what they can handle in terms of conversation\nlength, content, or intensity.\n3. **Consider outside resources**: Think about hiring a professional mediator or therapist if\nneeded, as they can facilitate the conversation and help manage stress.\n\nIn conclusion, while confronting your parents is likely to be a difficult and emotional experience\nfor both you and them, it's essential to have this conversation to promote healing, closure, and\npotential mending of strained relationships."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

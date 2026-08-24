@@ -1,0 +1,377 @@
+{
+  "slug": "attending_your_grandparent_s_funeral",
+  "dilemma": "Your grandmother has passed and your family is having a traditional religious funeral that you disagree with. You believe in respecting all beliefs and values, but you also believe in being true to your own convictions. Do you attend the funeral and participate in the religious rites out of respect for your family, or do you abstain from the religious part, possibly causing offense?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Attending and participating in the religious rites",
+  "not_to_do_action": "Abstaining from the religious rites",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5579777987402101,
+      "maximin": -0.8458904671545197,
+      "nash": 28.627559636997933,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5467759339675735,
+      "maximin": -0.4554494483894518,
+      "nash": 29.694519514112955,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.663697369704664,
+      "maximin": -1.2363314859195875,
+      "nash": 7.0486033776386146,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.4684768603221301,
+      "maximin": -0.5148445432434597,
+      "nash": 9.553698202028059,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 7,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.17145946679038895,
+      "maximin": -0.5148445432434597,
+      "nash": 14.097869277288757,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.23855667566319586,
+      "maximin": -0.4554494483894518,
+      "nash": 22.1685570826592,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3473687951270994,
+      "maximin": -0.4554494483894518,
+      "nash": 24.885565762969524,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3473687951270994,
+      "maximin": -0.4554494483894518,
+      "nash": 24.885565762969524,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.45618091459100296,
+      "maximin": -0.4554494483894518,
+      "nash": 27.506889253873222,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.23855667566319586,
+      "maximin": -0.4554494483894518,
+      "nash": 22.1685570826592,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.4684768603221301,
+      "maximin": -0.5148445432434597,
+      "nash": 9.553698202028059,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6555880534314771,
+      "maximin": -0.4554494483894518,
+      "nash": 32.8223946162844,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.46036754404894314,
+      "maximin": -1.2363314859195875,
+      "nash": 24.215967122074083,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.37086660563086304,
+      "maximin": -0.5148445432434597,
+      "nash": 10.724612522125147,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5579777987402101,
+      "maximin": -0.8458904671545197,
+      "nash": 28.627559636997933,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3473687951270994,
+      "maximin": -0.4554494483894518,
+      "nash": 24.885565762969524,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 12,
+      "value": 0.6555880534314771,
+      "tied_ids": [
+        12
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.4554494483894518,
+      "tied_ids": [
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 12,
+      "value": 32.8223946162844,
+      "tied_ids": [
+        12
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        1,
+        9,
+        12,
+        13,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "What a delicate and sensitive situation! While there's no one-size-fits-all answer, I'd recommend\nfinding a compromise that respects both your own values and those of your family.\n\nHere's why:\n\n**Attend the funeral**: It's essential to be present at the funeral to show love and support for\nyour family during this difficult time. Your physical presence will help them feel comforted and\nvalidated in their grief.\n\n**Respect, but not participate in, the religious rites**: When you disagree with certain aspects of\na religious practice or ritual, it's perfectly acceptable to refrain from participating without\ndrawing attention to yourself. You can observe quietly, showing respect for your family's traditions\nwhile also staying true to your own values and convictions.\n\n**Why not just sit out the entire funeral?** While it might feel tempting to absent yourself\nentirely from an event that doesn't align with your personal beliefs, this could unintentionally\ncause more harm than good. Your family members will likely already be feeling vulnerable, anxious,\nor uncertain about your attendance due to your disagreements. Your presence, even if only for the\nsecular aspects of the funeral (e.g., visiting hours, memorial service), can help them feel\nsupported and acknowledged.\n\n**Communicate privately**: Consider speaking with your loved ones before the funeral to express your\nconcerns and respectfully clarify why you may not participate in certain rites. This conversation\ncan help them understand your position while allowing for an open discussion about their own\ntraditions and values.\n\nIn summary, while it's a difficult situation to navigate, attending the funeral is crucial for\nshowing love and support to your family during this time of grief. By respecting, but not\nparticipating in, the religious rites, you'll be able to maintain a balance between honoring your\nfamily's customs and staying true to your own convictions.\n\n**Key takeaways:**\n\n1. Attend the funeral as a sign of love and respect for your family.\n2. Observe from a distance during the religious rites that don't align with your personal values or\nbeliefs.\n3. Consider communicating privately with your loved ones about your concerns before the funeral,\nensuring they understand where you're coming from.\n4. Remember to prioritize maintaining relationships and avoiding unnecessary conflict.\n\nBy following this approach, you can navigate a difficult situation while staying true to yourself,\nshowing respect for your family's traditions, and ultimately, keeping things harmonious within your\nclose-knit group.",
+    "2": "What a difficult and sensitive situation! Here's my recommendation:\n\n**I recommend attending the funeral and participating in the religious rites with sincerity and\nrespect for your family's traditions, while also being true to your own convictions.**\n\nHere's why:\n\n1. **Respect for your grandmother's legacy**: Your grandmother likely held dear her faith and\nvalues, which are central to the family's traditions. By honoring these traditions at her funeral,\nyou're showing respect for her legacy and upholding the family's bonds.\n2. **Family unity and closure**: The funeral is a time for your family to come together, mourn, and\nfind closure. Attending the service with sincerity will allow you to support your loved ones during\nthis difficult period, even if you don't share their exact beliefs.\n3. **Balance between respecting others' faith and being true to yourself**: You can acknowledge and\nrespect your family's faith traditions while still honoring your own values. For example, you could\nparticipate in the non-religious aspects of the service (e.g., singing or playing music) while\nrespectfully observing from a distance during the more sacred parts.\n4. **Non-confrontational approach**: Avoiding the funeral or expressing disagreement in public might\ncause unnecessary tension and hurt feelings within your family. By attending with an open mind, you\ncan demonstrate that you value their traditions without explicitly rejecting them.\n\nTo maintain authenticity to your own convictions:\n\n1. **Express gratitude**: Offer a heartfelt thank-you for your family's understanding of your\ndiffering views.\n2. **Find moments to honor your values**: During private conversations or quiet reflections,\nconsider expressing your personal perspective on spirituality or faith in ways that feel true and\nrespectful.\n3. **Practice compassion and empathy**: Remind yourself that others may hold genuine conviction\nabout their faith, even if it differs from yours.\n\nUltimately, attending the funeral with respect for both the family's traditions and your own values\nis a delicate balance between honoring your grandmother's legacy and maintaining sincerity to your\nconvictions. By being mindful of these considerations, you'll be able to navigate this sensitive\nsituation with care and compassion.",
+    "12": "I would recommend attending the funeral and participating in the traditional rituals with my family,\nbut I would also express my own personal beliefs and values in a respectful manner.\n\nHere's why:\n\n1. **Respect for family tradition**: Participating in the funeral and rituals shows that you value\nyour family's traditions and heritage, even if they don't align with your personal views.\n2. **Emotional support**: Attending the funeral is an opportunity to provide emotional support to my\nfamily during a difficult time. They will appreciate knowing that I'm there for them, regardless of\nany differences in our beliefs.\n3. **Avoiding controversy**: Refusing to participate in the traditional rituals or openly expressing\ndisagreements may create tension and conflict within the family. By attending and showing respect, I\ncan avoid being confrontational and allow my family members to process their grief without\nadditional stress.\n4. **Personal autonomy**: As an individual with my own convictions, I have a right to express them\nrespectfully and authentically, even if they differ from those of others.\n\nTo minimize any potential offense or discomfort:\n\n1. **Communicate ahead of time**: Consider discussing my wishes with my family before the funeral to\navoid surprises or misunderstandings.\n2. **Participate respectfully**: If I'm attending a specific ritual that doesn't align with my\npersonal values, I can participate quietly and respectfully, without causing a disturbance.\n3. **Express gratitude privately**: After the funeral, I can express my gratitude for being included\nin the celebration of my grandmother's life in a private conversation with family members who\nunderstand my perspectives.\n\nUltimately, attending the funeral and participating in the traditional rituals out of respect for my\nfamily while still expressing my own convictions is a way to balance my personal autonomy with my\ndesire to show support and solidarity."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

@@ -1,0 +1,407 @@
+{
+  "slug": "mentioning_if_you_are_not_sure_of_something",
+  "dilemma": "You are a doctor and you feel uncertain about a patient's diagnosis. You have always been taught to be sure before informing a patient, and your uncertainty may cause distress. Should you tell the patient about your uncertainty or wait until you are completely sure?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Inform the patient about the uncertainty",
+  "not_to_do_action": "Wait until completely sure",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.046029072196545,
+      "maximin": 0.790900890323383,
+      "nash": 48.14562455242699,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.948418817505278,
+      "maximin": 0.715873607905752,
+      "nash": 44.48757230782136,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.9554340528199745,
+      "maximin": 0.7446361082150403,
+      "nash": 44.075011367100856,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.046029072196545,
+      "maximin": 0.790900890323383,
+      "nash": 48.14562455242699,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 1,
+      "value": 1.1548411916604486,
+      "tied_ids": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": 1.10631462667082,
+      "tied_ids": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 52.59218526880512,
+      "tied_ids": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "After careful consideration, I would recommend telling the patient about my uncertainty as soon as\npossible. Here's why:\n\n**Patient-centered care**: Informing patients about potential uncertainties in their diagnosis\nempowers them to make informed decisions about their care. It allows them to understand that they\nare not alone in facing an uncertain situation and can help alleviate anxiety by acknowledging the\ncomplexity of the case.\n\n**Transparency and trust**: By being open about my uncertainty, I demonstrate transparency, which is\nessential for building trust with patients. Patients who feel informed and involved in their care\ntend to have better health outcomes and greater satisfaction with medical services.\n\n**Patient decision-making**: Uncertainty in diagnosis often requires decisions that balance the\nbenefits and risks of different diagnostic tests or treatment options. By discussing my uncertainty,\nI can facilitate patient-centered decision-making and help them weigh the pros and cons of each\napproach.\n\n**Medical education**: This situation provides an opportunity for me to reflect on my own medical\ntraining and potentially learn from this case. I may need to seek additional information, consult\nwith colleagues, or revisit my assessment. Sharing my uncertainty with the patient can prompt a\ncollaborative review of the case, which can lead to more accurate diagnosis and treatment.\n\n**Risk management**: Failing to disclose uncertainty about a diagnosis can lead to miscommunication\nand mismanagement of patient expectations. Patients may feel deceived if they are not informed about\nthe complexity or ambiguity of their condition. In medical practice, this could potentially result\nin malpractice claims or reputational damage.\n\n**Best practice guidelines**: Recent studies and reviews have emphasized the importance of shared\ndecision-making and open communication in healthcare. Guidelines from organizations like the\nAmerican Academy of Family Physicians (AAFP) and the Institute of Medicine (now called the National\nAcademies of Sciences, Engineering, and Medicine) recommend clear and timely disclosure of medical\nuncertainty.\n\n**Precedent for future cases**: If I were to err on the side of caution and delay informing the\npatient about my uncertainty, it might perpetuate a culture where physicians shy away from\nacknowledging potential errors or lack of knowledge. This can hinder progress in improving diagnosis\naccuracy and communication skills within healthcare teams.\n\nTherefore, I believe that telling the patient about my uncertainty is essential for maintaining\ntransparency, trust, and patient-centered care. This honest approach allows us to work together to\nexplore possible solutions, and ultimately leads to better health outcomes and more satisfying\nexperiences for both the patient and me as their caregiver."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

@@ -1,0 +1,378 @@
+{
+  "slug": "introducing_your_friends_to_people_they_don_t_know",
+  "dilemma": "You're at a party and have brought a friend who doesn't know anyone else there. Your friend confides in you that they've recently been diagnosed with a mental health condition and is not ready to share it with others. Do you respect your friend's privacy and introduce them without mentioning their condition, potentially causing them discomfort, or do you inform others to ensure they are sensitive to your friend's situation?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Disclose Friend's Mental Health Condition",
+  "not_to_do_action": "Respect Friend's Privacy",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.07803584155706214,
+      "maximin": -0.5148445432434597,
+      "nash": 14.013869862311392,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.23018341674731552,
+      "maximin": -0.07959606538784551,
+      "nash": 21.121068436938874,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.23018341674731552,
+      "maximin": -0.07959606538784551,
+      "nash": 21.121068436938874,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.2844582157122327,
+      "maximin": -0.950093021099074,
+      "nash": 10.953614503228232,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.42959055558778964,
+      "maximin": -0.07959606538784551,
+      "nash": 26.615588185885894,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.01255917781950842,
+      "maximin": -0.950093021099074,
+      "nash": 15.582869709275592,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6289976944282638,
+      "maximin": -0.07959606538784551,
+      "nash": 32.51801212703778,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.22316818143261913,
+      "maximin": -0.5148445432434597,
+      "nash": 21.450233086763156,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.23018341674731552,
+      "maximin": -0.07959606538784551,
+      "nash": 21.121068436938874,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.16863086093363272,
+      "maximin": -0.8506210025087526,
+      "nash": 11.496853442867401,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.01255917781950842,
+      "maximin": -0.950093021099074,
+      "nash": 15.582869709275592,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.23018341674731552,
+      "maximin": -0.07959606538784551,
+      "nash": 21.121068436938874,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.42959055558778964,
+      "maximin": -0.07959606538784551,
+      "nash": 26.615588185885894,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.01255917781950842,
+      "maximin": -0.950093021099074,
+      "nash": 15.582869709275592,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.01255917781950842,
+      "maximin": -0.950093021099074,
+      "nash": 15.582869709275592,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.23018341674731552,
+      "maximin": -0.07959606538784551,
+      "nash": 21.121068436938874,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 7,
+      "value": 0.6289976944282638,
+      "tied_ids": [
+        7
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        2,
+        3,
+        5,
+        7,
+        9,
+        12,
+        13,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 7,
+      "value": 32.51801212703778,
+      "tied_ids": [
+        7
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        2,
+        3,
+        5,
+        7,
+        9,
+        10,
+        12,
+        13,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "**Recommendation:** Respect your friend's privacy and introduce them without mentioning their mental\nhealth condition.\n\n**Explanation:**\n\nWhile it's essential to be supportive and understanding of your friend's situation, forcing them to\nshare their diagnosis with others before they're ready can cause more distress and discomfort. By\nrespecting their privacy, you're allowing them control over who they trust with this information and\nwhen they're comfortable sharing it.\n\nHere are a few reasons why I think introducing them without mentioning their condition is the better\nchoice:\n\n1.  **Their comfort should be your priority:** Your friend has confided in you about their\ndiagnosis, but that doesn't mean they're ready to discuss it publicly. They might feel vulnerable or\nanxious about how others will react.\n2.  **You can communicate behind closed doors:** If you want to ensure that others are aware of your\nfriend's condition and be sensitive to their situation, you can discreetly let them know without\ndrawing attention to it.\n3.  **They may need time to get comfortable:** Your friend might need some time to adjust to their\nnew diagnosis and figure out how they want to share it with others. Respect their boundaries and let\nthem set the pace for sharing information.\n\nTo be supportive, you can:\n\n*   Let your friend know that they have your full support and understanding.\n*   Keep any conversations about their condition private, especially if they've asked you not to\ndiscuss it publicly.\n*   If you're unsure how others will react, introduce your friend in a way that focuses on shared\ninterests or experiences.\n\nBe patient, understanding, and respectful of your friend's privacy. By doing so, you'll create a\nsafe space for them to feel comfortable sharing their diagnosis with others when the time is right.",
+    "7": "I strongly recommend respecting your friend's privacy and not introducing them with a mention of\ntheir mental health condition. Here's why:\n\n**Your friend's feelings and well-being come first**: It's essential to prioritize your friend's\nemotional comfort and well-being, especially in an unfamiliar environment where they may already\nfeel vulnerable. Sharing their diagnosis without their consent could lead to discomfort,\nembarrassment, or even anxiety.\n\n**You can promote sensitivity and understanding without revealing the condition**: By introducing\nyour friend as you normally would (e.g., \"Hey, this is [Name], I've been wanting you to meet my\nfriend for a while!\"), you're giving others an opportunity to get to know them as an individual.\nLater, if someone expresses concern or curiosity about how they can support your friend, you can\ndiscreetly share information on their mental health condition, ensuring that the person understands\nits implications and can be sensitive when interacting with them.\n\n**Empowering your friend**: By respecting their wishes, you're acknowledging their autonomy and\nagency in managing their mental health. This approach allows them to decide who knows about their\ncondition and how much they want to share.\n\n**Avoid stigmatization**: When a private medical condition is revealed without consent, it can\nperpetuate stigma or reinforce misconceptions. Avoiding premature disclosure encourages others to be\nmore thoughtful and less likely to make assumptions or ask intrusive questions.\n\nIn summary, prioritize your friend's comfort, allow them to set boundaries about their personal\ninformation, and create an opportunity for natural connections to form over time."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

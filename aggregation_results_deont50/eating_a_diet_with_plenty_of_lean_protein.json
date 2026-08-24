@@ -1,0 +1,365 @@
+{
+  "slug": "eating_a_diet_with_plenty_of_lean_protein",
+  "dilemma": "John, a committed vegan, believes in not consuming animal products due to his ethical stance on animal cruelty. He has recently been diagnosed with a health condition that requires him to consume a lot of lean protein, and plant-based proteins are not enough to meet his dietary needs. Should John compromise his principles on animal rights and consume animal-based protein to improve his health?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Consumes animal-based proteins",
+  "not_to_do_action": "Refuses to consume animal-based proteins",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9371283998525737,
+      "maximin": -1.6267725046846555,
+      "nash": 4.149679263890402,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 2,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.1323489092351076,
+      "maximin": -2.0172135234497235,
+      "nash": 2.2587992872754645,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.09224170194908063,
+      "maximin": -0.950093021099074,
+      "nash": 14.171567059010316,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 2,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0235367897712042,
+      "maximin": -2.0172135234497235,
+      "nash": 2.496730129972334,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9595321293978468,
+      "maximin": -1.2363314859195875,
+      "nash": 4.963940974994379,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.42449324523943766,
+      "maximin": -0.07959606538784551,
+      "nash": 29.225695626741324,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9371283998525737,
+      "maximin": -1.6267725046846555,
+      "nash": 4.149679263890402,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.7377212610120996,
+      "maximin": -1.6267725046846555,
+      "nash": 5.62448774578439,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.20105382141298417,
+      "maximin": -1.3853414989546882,
+      "nash": 11.421254886325102,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 2,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.1232403591914413,
+      "maximin": -2.0172135234497235,
+      "nash": 2.0121833441596157,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9371283998525737,
+      "maximin": -1.6267725046846555,
+      "nash": 4.149679263890402,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8283162803886701,
+      "maximin": -1.6267725046846555,
+      "nash": 4.586786132898707,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.0016466825725100446,
+      "maximin": -1.3853414989546882,
+      "nash": 15.480403198533137,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9280198498089072,
+      "maximin": -1.6267725046846555,
+      "nash": 3.696616846588599,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2768599377458911,
+      "maximin": -1.3853414989546882,
+      "nash": 2.7273193521194803,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.1547526387803808,
+      "maximin": -1.6267725046846555,
+      "nash": 3.2241742404237197,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 6,
+      "value": 0.42449324523943766,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 6,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 6,
+      "value": 29.225695626741324,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 4,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        4,
+        10,
+        12,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "4": "**Recommendation:** Yes, John should consider compromising his principles on animal rights for the\nsake of improving his health.\n\n**Reasoning:**\n\n1. **Pragmatism vs. Ideology**: While it's commendable that John holds strong convictions about\nanimal rights, this instance requires balancing principle with pragmatism. His health condition\nnecessitates a significant change in his diet to meet the recommended protein intake. In such cases,\ncompromising principles for the greater good might be justifiable.\n2. **Health as a basic right**: One could argue that access to adequate nutrition is a fundamental\nhuman right, essential to well-being and quality of life. As someone diagnosed with a health\ncondition, John's priority should be ensuring his body receives the necessary sustenance to mitigate\nor manage this condition.\n3. **Alternative options may not suffice**: While plant-based protein sources are beneficial, they\nmight not provide sufficient lean protein for John's specific requirements. Animal-based protein\nsources (e.g., lean meats, fish, eggs) often contain more easily digestible and bioavailable protein\nthan their plant-based counterparts.\n4. **Flexibility in values**: People's priorities can shift as new circumstances arise. If\nprioritizing animal welfare means compromising John's health, it may be wise to reassess his stance\non this issue temporarily, with the intention of reverting back to his usual vegan diet when\nhealthier.\n\nThat being said, if possible, John should:\n\n1. **Explore alternative protein sources**: Consult a registered dietitian or nutritionist\nspecializing in vegan diets to explore plant-based proteins that are rich in essential amino acids\nand might complement his existing dietary plan.\n2. **Re-evaluate his definition of \"vegan\"**: While maintaining the core philosophy of animal\nrights, John may need to reframe his understanding of what it means to be a vegan while also\nacknowledging the practical realities of his health requirements.\n\nIn conclusion, given John's health condition and the specific nutritional needs arising from it, I\nrecommend that he compromise his strict vegan principles temporarily, with the intention of\nreturning to his usual dietary preferences once his health improves.",
+    "6": "After considering the dilemma, I would recommend that John prioritize his health and consult with a\nhealthcare professional or registered dietitian to find alternative sources of lean protein that\nalign with his vegan values.\n\nHere's why:\n\n1. **Health needs are paramount**: John has been diagnosed with a health condition that requires\nadequate nutrition to manage it effectively. Consuming sufficient lean protein is crucial for his\nwell-being, and ignoring this requirement could have severe consequences.\n2. **There may be suitable plant-based options**: While traditional plant-based proteins like beans,\nlentils, and tofu might not provide enough of the required protein, there are newer, more\nnutrient-dense options available, such as pea protein, hemp protein, or legume-based foods with high\nbioavailability. Consulting with a registered dietitian can help identify these alternatives.\n3. **Animal-derived protein doesn't necessarily mean animal exploitation**: There is a growing trend\ntowards sustainably sourced animal products, such as grass-fed, regenerative meat, eggs from\npasture-raised hens, or fish from well-managed fisheries. These options have lower environmental\nimpact and may align better with John's values.\n4. **Finding vegan-friendly, high-protein foods is not impossible**: Some plant-based protein\nsources, like seaweed, nut milk (made from protein-rich nuts), or fortified plant-based milk, can be\nrich in protein and may fill some of the gaps in his diet.\n\nHowever, I would strongly advise against abandoning his vegan principles entirely. **Animal\nagriculture remains a significant contributor to greenhouse gas emissions**, deforestation, water\npollution, and animal suffering. While animal-derived protein might provide temporary relief for\nJohn's health condition, it would be better to find vegan-friendly solutions that promote long-term\nsustainability and align with his values.\n\nUltimately, John should:\n\n* Consult with healthcare professionals or registered dietitians to identify suitable, plant-based\nalternatives or explore other options like high-protein foods mentioned earlier.\n* Be mindful of the environmental impact of animal agriculture and consider options that are more\nregenerative and sustainable.\n* Prioritize his health while upholding his values as a committed vegan.\n\nIn this way, John can balance his nutritional needs with his commitment to animal rights and\nenvironmental sustainability."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

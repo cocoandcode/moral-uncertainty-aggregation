@@ -36,11 +36,24 @@ def expected_choiceworthiness(
 
 
 def maximin(u: float, d: float, ub: float) -> float:
+    # Credence-independent by design: the rule protects the worst-served
+    # theory regardless of how much credence that theory holds.
     return min(u, d, ub)
 
 
-def nash(u: float, d: float, ub: float) -> float:
-    return u * d * ub
+def nash(
+    u: float, d: float, ub: float, weights: Iterable[float] = DEFAULT_WEIGHTS
+) -> float:
+    """Asymmetric Nash product: prod(S_i ** w_i), up to a monotone transform.
+
+    Exponents are scaled by 3 so that equal credences reduce exactly to the
+    plain product u * d * ub used in the main analysis (x ** 1.0 == x), which
+    keeps the equal-credence outputs byte-identical. Scaling all exponents by
+    a common factor is a monotone transform of non-negative surpluses, so it
+    never changes the ordering.
+    """
+    wu, wd, wub = weights
+    return (u ** (3 * wu)) * (d ** (3 * wd)) * (ub ** (3 * wub))
 
 
 def baseline(u: float, d: float, ub: float) -> float:
@@ -67,7 +80,7 @@ def compute_row(row: Mapping[str, Any], weights=DEFAULT_WEIGHTS) -> dict:
         "z": dict(z),
         "ec": expected_choiceworthiness(zu, zd, zub, weights),
         "maximin": maximin(zu, zd, zub),
-        "nash": nash(su, sd, sub),
+        "nash": nash(su, sd, sub, weights),
         "baseline": baseline(zu, zd, zub),
     }
 

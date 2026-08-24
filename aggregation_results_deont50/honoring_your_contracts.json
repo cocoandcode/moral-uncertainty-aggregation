@@ -1,0 +1,367 @@
+{
+  "slug": "honoring_your_contracts",
+  "dilemma": "You are a small business owner who has signed a contract with a supplier. The supplier has recently been exposed for exploiting their workers, but breaking the contract would put your business at risk. Should you continue to honor the contract despite the ethical concerns?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Continue to honor the contract",
+  "not_to_do_action": "Break the contract",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.5424139147470077,
+      "maximin": -0.052992447146856116,
+      "nash": 32.30418711912188,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.8373379935497787,
+      "maximin": 0.3458218305340921,
+      "nash": 42.47223793194728,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.42449324523943766,
+      "maximin": -0.07959606538784551,
+      "nash": 29.225695626741324,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.9503367424716225,
+      "maximin": 0.715873607905752,
+      "nash": 47.829038824159824,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.5200101852017346,
+      "maximin": -0.07959606538784551,
+      "nash": 30.49235733844921,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.8506331730513854,
+      "maximin": 0.715873607905752,
+      "nash": 43.785192308738814,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.15624636232243788,
+      "maximin": -0.8506210025087526,
+      "nash": 14.790392817329424,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.5424139147470077,
+      "maximin": -0.052992447146856116,
+      "nash": 32.30418711912188,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.7601249905573727,
+      "maximin": -1.2363314859195875,
+      "nash": 6.7281405162088905,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 1.0458536824339193,
+      "maximin": 0.7446361082150403,
+      "nash": 51.281827957074476,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.5424139147470077,
+      "maximin": -0.052992447146856116,
+      "nash": 32.30418711912188,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5241968146596747,
+      "maximin": -0.07959606538784551,
+      "nash": 32.30418711912188,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.43360179528310416,
+      "maximin": -0.052992447146856116,
+      "nash": 29.22569562674132,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.0367451323902528,
+      "maximin": 0.790900890323383,
+      "nash": 51.28182795707448,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.6197137546219716,
+      "maximin": -0.07959606538784551,
+      "nash": 34.22954236419437,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 11,
+      "value": 1.0458536824339193,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 15,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 11,
+      "value": 51.28182795707448,
+      "tied_ids": [
+        11,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 4,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        4,
+        6,
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "4": "What a difficult decision! As a small business owner, I understand the importance of maintaining\nrelationships with suppliers and honoring contracts to ensure the success of my business. However,\nas a responsible member of society, I must also consider the impact of our actions on others,\nparticularly vulnerable workers.\n\nGiven the supplier's exploitation of their workers is a significant breach of ethics, I believe it\nwould be prudent for me to reconsider our contract and take the following steps:\n\n**Break the contract (with a strategic plan in place)**\n\nWhile breaking a contract can have financial consequences, I believe it's essential to prioritize\nthe well-being of the exploited workers. Here's why:\n\n1. **Maintain my company's integrity**: By continuing to do business with a supplier that exploits\nits workers, I risk damaging my company's reputation and values.\n2. **Support human rights and social responsibility**: We have a moral obligation to stand up for\nfair labor practices and protect the rights of vulnerable individuals.\n3. **Mitigate future risks**: If we continue to ignore this issue, it may lead to further\nreputational damage and potential losses when more information comes to light or consumers become\naware of our association with the supplier.\n\nHowever, I would not simply walk away from the contract without a plan in place. Instead, I would:\n\n* **Communicate openly with my team** about the situation, its implications, and our decision to\nbreak the contract.\n* **Identify alternative suppliers** that have transparent and equitable labor practices to ensure\nbusiness continuity.\n* **Consider transitioning relationships** or working with local organizations to help establish a\nnew network of responsible suppliers.\n\n**Long-term benefits**\n\nWhile this decision may lead to short-term disruptions, I believe it's essential for maintaining the\nlong-term integrity and reputation of my business. By breaking the contract and prioritizing ethics,\nI:\n\n1. **Demonstrate commitment to social responsibility**: This will likely enhance our brand image,\nimprove customer trust, and potentially even attract socially responsible customers.\n2. **Create opportunities for positive change**: Partnering with new suppliers who prioritize fair\nlabor practices can drive innovation and improvements throughout the supply chain.\n3. **Contribute to industry-wide accountability**: As a small business owner, I'm in a unique\nposition to set an example and push my peers to adopt more responsible business practices.\n\nWhile it's never easy to make tough decisions like this, I firmly believe that prioritizing ethics\nover immediate financial considerations will ultimately benefit both my business and the wider\ncommunity.",
+    "11": "What a difficult decision to make! As a responsible small business owner, I must weigh the potential\nconsequences of my actions on my business against the moral implications of continuing to do\nbusiness with a supplier that exploits their workers.\n\n**Recommendation:** Break the contract and sever ties with the supplier.\n\nHere's why:\n\n1. **Ethical obligations**: As a business owner, I have an ethical obligation to ensure that the\nproducts or services I sell are not manufactured or sourced in ways that harm people or the\nenvironment. Continuing to do business with this supplier would mean I'm inadvertently contributing\nto the exploitation of their workers.\n2. **Reputational risk**: By continuing to partner with a company exposed for worker exploitation,\nmy business's reputation may suffer. Customers and stakeholders may view our actions as condoning or\nprofiting from unethical labor practices, damaging our brand and credibility.\n3. **Supply chain transparency**: The recent exposure of the supplier's practices highlights the\nneed for greater supply chain transparency and accountability. By breaking the contract, I can\ndistance myself from this problematic supplier and demonstrate my commitment to responsible sourcing\nand business practices.\n4. **Long-term consequences**: Continuing to do business with an exploitative supplier may result in\nlong-term consequences, such as:\n\t* Brand damage or loss of customers who value social responsibility.\n        * Damage to our relationships with other partners or investors who prioritize ethics and\nsustainability.\n\t* Increased scrutiny from regulatory bodies or activist groups.\n5. **Opportunities for improvement**: By breaking the contract, I can explore alternative suppliers\nthat share my commitment to responsible business practices and workers' rights.\n\n**Action plan:**\n\n1. Immediately notify the supplier of our intention to cancel the contract and cease all dealings\nwith them.\n2. Review existing supply chain management systems and implement new ones to ensure transparency,\naccountability, and adherence to our company values.\n3. Identify alternative suppliers that align with our business ethics and values.\n4. Communicate with stakeholders (customers, partners, investors) to address concerns and share our\ndecision-making process.\n\nUltimately, breaking the contract may come at a short-term cost, but I believe it's essential for\nupholding my business's integrity and values. By taking this step, we can maintain a clear\nconscience and build trust with customers who value social responsibility in their purchasing\ndecisions.",
+    "15": "The difficult decision!\n\nAfter careful consideration, I strongly recommend **terminating** the contract with the supplier,\neven if it puts my small business at some risk. Here's why:\n\n1. **Ethical responsibility**: As a business owner, I have a moral obligation to consider the impact\nof my decisions on stakeholders beyond just my customers and employees. The exploitation of workers\nby the supplier is a serious concern that affects their dignity, well-being, and human rights.\n2. **Brand reputation and long-term consequences**: Continuously doing business with a supplier\ntainted by such allegations can damage my brand's reputation and potentially lead to financial\nlosses down the line. Consumers are increasingly scrutinizing companies' social responsibility\npractices; ignoring this issue now may compromise our future growth and market standing.\n3. **Risk mitigation**: While terminating the contract might seem risky, it's not necessarily as\nsevere as I initially thought. By diversifying my supplier base and developing relationships with\nnew, trustworthy partners, I can minimize disruptions to my operations and ensure a more stable\nsupply chain.\n4. **Alignment with values**: Running a business that aligns with my personal values is crucial for\nlong-term success and job satisfaction. I wouldn't want to compromise those values by continuing to\ndo business with an exploitative supplier. Staying true to our core principles will not only give me\npeace of mind but also likely attract like-minded customers, employees, and partners.\n5. **Opportunity to drive positive change**: By terminating the contract and vocalizing concerns\nabout labor practices, I can use this platform to advocate for greater accountability from suppliers\nand push industry peers toward more responsible business practices.\n\nTo mitigate potential risks:\n\n1. **Establish a transition plan** to ensure minimal disruption of operations during the switch to a\nnew supplier.\n2. **Communicate with stakeholders** about the decision-making process and the importance of\nupholding social responsibility standards.\n3. **Assess alternative suppliers** that share our values on labor practices and have strong\ninternal controls in place.\n\nUltimately, terminating the contract might require adapting my business operations and investing\ntime into building relationships with new partners. However, I believe this difficult but principled\ndecision will ultimately yield benefits for both our brand reputation and social responsibility\nendeavors."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 3
+}

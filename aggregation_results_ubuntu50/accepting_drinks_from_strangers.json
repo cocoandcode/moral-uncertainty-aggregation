@@ -1,0 +1,372 @@
+{
+  "slug": "accepting_drinks_from_strangers",
+  "dilemma": "You are alone at a bar and a stranger offers to buy you a drink. You are unsure if it's proper to accept the drink as you have always been taught not to take anything from strangers, but you are also aware that it is a common social gesture in such settings. Do you accept the drink from the stranger or decline it politely?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Accept the Drink",
+  "not_to_do_action": "Decline the Drink",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8631045085451381,
+      "maximin": -1.2363314859195875,
+      "nash": 5.0435700156270595,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7920846128570844,
+      "maximin": -1.3853414989546882,
+      "nash": 4.102799327035551,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8631045085451381,
+      "maximin": -1.2363314859195875,
+      "nash": 5.0435700156270595,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8896948675483515,
+      "maximin": -1.3853414989546882,
+      "nash": 3.755916111943138,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9607147632364051,
+      "maximin": -1.6267725046846555,
+      "nash": 4.064751515879723,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.663697369704664,
+      "maximin": -1.2363314859195875,
+      "nash": 7.0486033776386146,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5548852502407604,
+      "maximin": -1.2363314859195875,
+      "nash": 8.081444750726602,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8631045085451381,
+      "maximin": -1.2363314859195875,
+      "nash": 5.0435700156270595,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9607147632364051,
+      "maximin": -1.6267725046846555,
+      "nash": 4.064751515879723,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8631045085451381,
+      "maximin": -1.2363314859195875,
+      "nash": 5.0435700156270595,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.663697369704664,
+      "maximin": -1.2363314859195875,
+      "nash": 7.0486033776386146,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 3,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.6524955049320275,
+      "maximin": -1.6267725046846555,
+      "nash": 6.513058151118004,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.663697369704664,
+      "maximin": -1.2363314859195875,
+      "nash": 7.0486033776386146,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8631045085451381,
+      "maximin": -1.2363314859195875,
+      "nash": 5.0435700156270595,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9607147632364051,
+      "maximin": -1.6267725046846555,
+      "nash": 4.064751515879723,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9607147632364051,
+      "maximin": -1.6267725046846555,
+      "nash": 4.064751515879723,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 7,
+      "value": -0.5548852502407604,
+      "tied_ids": [
+        7
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -1.2363314859195875,
+      "tied_ids": [
+        1,
+        3,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 7,
+      "value": 8.081444750726602,
+      "tied_ids": [
+        7
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 7,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        7,
+        12
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would recommend accepting the drink from the stranger, with a polite expression of gratitude.\nHere's why:\n\n1. **Social norms:** As you mentioned, buying a drink for someone is a common social gesture in bars\nand other public establishments. It's a way to break the ice and create a friendly atmosphere.\n2. **Safety not a concern:** Since you are already at the bar, which is a relatively safe public\nspace, I wouldn't consider accepting the drink as a potential safety risk. You're still in control\nof your situation and can easily leave if needed.\n3. **Don't overthink it:** While it's understandable to have reservations based on being taught not\nto take things from strangers, overthinking or being overly cautious might lead you to miss an\nopportunity for social interaction.\n4. **You can always decline later:** If you feel uncomfortable accepting the drink, you can simply\nsay \"no thanks\" and explain that you're good, or \"I'm actually not drinking right now.\" This way,\nyou've maintained a polite demeanor without feeling obligated.\n\nTo accept the drink politely, you could respond with something like:\n\n\"Thank you so much for offering! I'd love to have a [drink name] if it's no trouble. Appreciate your\nkindness!\"\n\nThis response shows gratitude, acknowledges their offer, and sets a friendly tone for further\nconversation. Remember that accepting a drink in this context is not about compromising your values\nor putting yourself at risk; it's simply about being open to social interactions and reciprocating a\ncommon gesture.",
+    "7": "**Accept the drink**\n\nWhile caution is essential when interacting with a stranger, especially at night or in a potentially\nvulnerable situation, this context suggests that the stranger's offer to buy you a drink is a common\nsocial gesture aimed at fostering friendly interaction rather than any ill intent.\n\nAccepting the drink allows for a neutral and polite engagement, which can help establish a\nconnection. It also acknowledges the stranger's kind gesture while maintaining your autonomy. If\naccepted graciously, this small courtesy might spark a pleasant conversation or even a lasting\nconnection, as often happens in casual social settings.\n\nDeclining the drink could inadvertently lead to awkwardness or an abrupt end of the potential\ninteraction. A polite \"no\" could be seen as overly cautious or ungracious, potentially discouraging\nany further attempts at connection."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}
