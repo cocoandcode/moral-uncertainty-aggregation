@@ -1,0 +1,85 @@
+{
+  "n_dilemmas": 100,
+  "student_vs_teacher": {
+    "ec": {
+      "overlap": 0.45,
+      "exact_set": 0.15,
+      "strict_divergence": 0.55,
+      "rec_agree": 0.91
+    },
+    "maximin": {
+      "overlap": 0.59,
+      "exact_set": 0.08,
+      "strict_divergence": 0.41,
+      "rec_agree": 0.93
+    },
+    "nash": {
+      "overlap": 0.43,
+      "exact_set": 0.12,
+      "strict_divergence": 0.57,
+      "rec_agree": 0.93
+    },
+    "baseline": {
+      "overlap": 0.86,
+      "exact_set": 0.06,
+      "strict_divergence": 0.14,
+      "rec_agree": 0.99
+    }
+  },
+  "floor_vs_teacher": {
+    "ec": {
+      "overlap": 0.2,
+      "exact_set": 0.06,
+      "strict_divergence": 0.8,
+      "rec_agree": 0.84
+    },
+    "maximin": {
+      "overlap": 0.42,
+      "exact_set": 0.04,
+      "strict_divergence": 0.58,
+      "rec_agree": 0.83
+    },
+    "nash": {
+      "overlap": 0.27,
+      "exact_set": 0.09,
+      "strict_divergence": 0.73,
+      "rec_agree": 0.89
+    },
+    "baseline": {
+      "overlap": 0.73,
+      "exact_set": 0.02,
+      "strict_divergence": 0.27,
+      "rec_agree": 0.96
+    }
+  },
+  "internal_divergence": {
+    "teacher": {
+      "ec_vs_maximin": 0.18,
+      "ec_vs_nash": 0.07,
+      "ec_vs_baseline": 0.16,
+      "maximin_vs_nash": 0.06,
+      "maximin_vs_baseline": 0.23,
+      "nash_vs_baseline": 0.16,
+      "unanimous_response": 0.71
+    },
+    "student": {
+      "ec_vs_maximin": 0.15,
+      "ec_vs_nash": 0.06,
+      "ec_vs_baseline": 0.15,
+      "maximin_vs_nash": 0.08,
+      "maximin_vs_baseline": 0.19,
+      "nash_vs_baseline": 0.18,
+      "unanimous_response": 0.72
+    },
+    "floor": {
+      "ec_vs_maximin": 0.27,
+      "ec_vs_nash": 0.12,
+      "ec_vs_baseline": 0.28,
+      "maximin_vs_nash": 0.13,
+      "maximin_vs_baseline": 0.29,
+      "nash_vs_baseline": 0.22,
+      "unanimous_response": 0.56
+    }
+  },
+  "notes": "Teacher = published aggregation_results (global z-stats from all 500 dilemmas). Student/floor = same pipeline on rounded-EV integer scores with z-stats from their own 1,600 held-out scores. Overlap = winner sets share a response; rec_agree = winner sets share a recommendation label."
+}

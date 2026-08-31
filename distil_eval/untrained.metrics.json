@@ -1,0 +1,64 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "metrics": {
+    "teacher_prompt": {
+      "utilitarian": {
+        "pearson": 0.6972,
+        "spearman": 0.6033,
+        "mae": 1.7043,
+        "mean_within_dilemma_kendall_tau": 0.2796,
+        "tau_dilemmas_used": 97,
+        "tau_dilemmas_skipped_constant": 3,
+        "n_rows": 1600
+      },
+      "deontological": {
+        "pearson": 0.3407,
+        "spearman": 0.3915,
+        "mae": 2.0027,
+        "mean_within_dilemma_kendall_tau": 0.132,
+        "tau_dilemmas_used": 96,
+        "tau_dilemmas_skipped_constant": 4,
+        "n_rows": 1600
+      },
+      "ubuntu": {
+        "pearson": 0.5157,
+        "spearman": 0.3828,
+        "mae": 1.9515,
+        "mean_within_dilemma_kendall_tau": 0.1937,
+        "tau_dilemmas_used": 99,
+        "tau_dilemmas_skipped_constant": 1,
+        "n_rows": 1600
+      }
+    },
+    "generic_prompt": {
+      "utilitarian": {
+        "pearson": 0.564,
+        "spearman": 0.4424,
+        "mae": 2.1059,
+        "mean_within_dilemma_kendall_tau": 0.1949,
+        "tau_dilemmas_used": 97,
+        "tau_dilemmas_skipped_constant": 3,
+        "n_rows": 1600
+      },
+      "deontological": {
+        "pearson": 0.2158,
+        "spearman": 0.1734,
+        "mae": 2.8352,
+        "mean_within_dilemma_kendall_tau": 0.0509,
+        "tau_dilemmas_used": 96,
+        "tau_dilemmas_skipped_constant": 4,
+        "n_rows": 1600
+      },
+      "ubuntu": {
+        "pearson": 0.4487,
+        "spearman": 0.3668,
+        "mae": 2.3388,
+        "mean_within_dilemma_kendall_tau": 0.2138,
+        "tau_dilemmas_used": 99,
+        "tau_dilemmas_skipped_constant": 1,
+        "n_rows": 1600
+      }
+    }
+  },
+  "notes": "No adapter, no training. teacher_prompt = refined judge prompts from score_responses.py, one pass per framework. generic_prompt = single no-framework pass; the same score column is compared against all three teacher columns. EV decoding over digit tokens with a cached second step splitting 1 vs 10. Same held-out rows, input budget and metrics() as the students."
+}

@@ -1,0 +1,34 @@
+{
+  "model": "TfidfVectorizer(max_features=20000) + Ridge(alpha=1.0)",
+  "features": "response text only (no dilemma)",
+  "note": "Rebuild of the unsaved 21 Aug pilot (which reported Pearson 0.68/0.53/0.64 Ut/De/Ub). Cite these numbers, not the pilot's.",
+  "metrics": {
+    "utilitarian": {
+      "pearson": 0.757,
+      "spearman": 0.6877,
+      "mae": 1.2036,
+      "mean_within_dilemma_kendall_tau": 0.2833,
+      "tau_dilemmas_used": 97,
+      "tau_dilemmas_skipped_constant": 3,
+      "n_rows": 1600
+    },
+    "deontological": {
+      "pearson": 0.5928,
+      "spearman": 0.6034,
+      "mae": 1.65,
+      "mean_within_dilemma_kendall_tau": 0.1835,
+      "tau_dilemmas_used": 96,
+      "tau_dilemmas_skipped_constant": 4,
+      "n_rows": 1600
+    },
+    "ubuntu": {
+      "pearson": 0.6791,
+      "spearman": 0.6467,
+      "mae": 1.477,
+      "mean_within_dilemma_kendall_tau": 0.3272,
+      "tau_dilemmas_used": 99,
+      "tau_dilemmas_skipped_constant": 1,
+      "n_rows": 1600
+    }
+  }
+}

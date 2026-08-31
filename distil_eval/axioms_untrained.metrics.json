@@ -1,0 +1,1899 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "variants": {
+    "minimal": {
+      "main": {
+        "utilitarian": {
+          "Ut": "93% (15)",
+          "De": "58% (12)",
+          "Ub": "67% (3)"
+        },
+        "deontological": {
+          "Ut": "0% (6)",
+          "De": "73% (15)",
+          "Ub": "33% (6)"
+        },
+        "ubuntu": {
+          "Ut": null,
+          "De": "33% (3)",
+          "Ub": "80% (15)"
+        },
+        "_overall": {
+          "all_cells": "49/75",
+          "diagonal": "37/45"
+        }
+      },
+      "heldout": {
+        "utilitarian": {
+          "Ut": "0% (3)",
+          "De": null,
+          "Ub": null
+        },
+        "deontological": {
+          "Ut": null,
+          "De": "33% (3)",
+          "Ub": null
+        },
+        "ubuntu": {
+          "Ut": null,
+          "De": null,
+          "Ub": null
+        },
+        "_overall": {
+          "all_cells": "1/6",
+          "diagonal": "1/6"
+        }
+      }
+    },
+    "teacher": {
+      "main": {
+        "utilitarian": {
+          "Ut": "73% (15)",
+          "De": "83% (12)",
+          "Ub": "67% (3)"
+        },
+        "deontological": {
+          "Ut": "33% (6)",
+          "De": "60% (15)",
+          "Ub": "17% (6)"
+        },
+        "ubuntu": {
+          "Ut": null,
+          "De": "0% (3)",
+          "Ub": "93% (15)"
+        },
+        "_overall": {
+          "all_cells": "49/75",
+          "diagonal": "34/45"
+        }
+      },
+      "heldout": {
+        "utilitarian": {
+          "Ut": "0% (3)",
+          "De": null,
+          "Ub": null
+        },
+        "deontological": {
+          "Ut": null,
+          "De": "67% (3)",
+          "Ub": null
+        },
+        "ubuntu": {
+          "Ut": null,
+          "De": null,
+          "Ub": null
+        },
+        "_overall": {
+          "all_cells": "2/6",
+          "diagonal": "2/6"
+        }
+      }
+    }
+  },
+  "cells": {
+    "minimal": [
+      {
+        "pair_id": "Ut1a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 4.7891,
+        "score_b": 4.8074,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut1b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 5.4638,
+        "score_b": 8.093,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut1c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 4.7615,
+        "score_b": 2.6917,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut2a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 3.8153,
+        "score_b": 1.8862,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut2a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.4383,
+        "score_b": 1.9954,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut2b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.5037,
+        "score_b": 5.4874,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut2b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.5016,
+        "score_b": 5.8245,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut2c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.5425,
+        "score_b": 3.0945,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut2c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.4627,
+        "score_b": 1.9731,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut3a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 5.8716,
+        "score_b": 3.8857,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut3b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 5.4262,
+        "score_b": 6.8094,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut3c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 4.9466,
+        "score_b": 4.3476,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut4a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.7848,
+        "score_b": 5.1521,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut4a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.853,
+        "score_b": 5.7703,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut4b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 3.1305,
+        "score_b": 1.6598,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut4b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.5895,
+        "score_b": 2.0961,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut4c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.4012,
+        "score_b": 7.8024,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut4c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.8307,
+        "score_b": 5.458,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut5a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 2.4602,
+        "score_b": 1.8335,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut5b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 3.7358,
+        "score_b": 2.9616,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut5c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.3948,
+        "score_b": 3.8038,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De1a",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 2.1036,
+        "score_b": 2.5713,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De1a",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.7337,
+        "score_b": 3.1447,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De1b",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 2.1182,
+        "score_b": 2.6016,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De1b",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.9821,
+        "score_b": 2.109,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De1c",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 2.5547,
+        "score_b": 2.1876,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "De1c",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.705,
+        "score_b": 2.17,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De2a",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 4.732,
+        "score_b": 3.576,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De2a",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 3.5058,
+        "score_b": 4.6151,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De2a",
+        "set": "De",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 4.2346,
+        "score_b": 5.6765,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De2b",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 4.4378,
+        "score_b": 1.7261,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De2b",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 3.1644,
+        "score_b": 1.8821,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "De2b",
+        "set": "De",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 4.6106,
+        "score_b": 2.7689,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "De2c",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.8157,
+        "score_b": 5.9758,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De2c",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.7307,
+        "score_b": 4.2067,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De2c",
+        "set": "De",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 1.7143,
+        "score_b": 5.1246,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De3a",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 0.6257,
+        "score_b": 3.5863,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De3a",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.8011,
+        "score_b": 2.5846,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De3b",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 6.3156,
+        "score_b": 0.7265,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De3b",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.9474,
+        "score_b": 1.6288,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "De3c",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 2.2635,
+        "score_b": 5.7483,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De3c",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 3.385,
+        "score_b": 1.9107,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De4a",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.4742,
+        "score_b": 3.6977,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De4b",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 4.4474,
+        "score_b": 1.7588,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De4c",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.6431,
+        "score_b": 1.7084,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De5a",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 2.627,
+        "score_b": 2.352,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "De5a",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.8219,
+        "score_b": 1.9916,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De5b",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 2.5769,
+        "score_b": 2.9114,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De5b",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.3824,
+        "score_b": 4.1258,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De5c",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.9016,
+        "score_b": 1.9761,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De5c",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.6616,
+        "score_b": 2.0306,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub1a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 4.7708,
+        "score_b": 5.6083,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub1b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 4.8488,
+        "score_b": 2.5753,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub1c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 5.4747,
+        "score_b": 6.4733,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub2a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 6.4468,
+        "score_b": 3.322,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub2b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 1.9966,
+        "score_b": 2.9882,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub2c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 3.7673,
+        "score_b": 2.8046,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub3a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.7209,
+        "score_b": 1.6148,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub3a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 1.146,
+        "score_b": 1.8565,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub3b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.9142,
+        "score_b": 3.9075,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub3b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 1.3608,
+        "score_b": 6.4542,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub3c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.6685,
+        "score_b": 1.8204,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub3c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 3.7139,
+        "score_b": 1.4419,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub4a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 5.312,
+        "score_b": 2.0954,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub4a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 6.0603,
+        "score_b": 2.7171,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub4b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 2.2557,
+        "score_b": 1.8285,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub4b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 1.7925,
+        "score_b": 4.3489,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub4c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.682,
+        "score_b": 5.5979,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub4c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 2.8673,
+        "score_b": 2.8053,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub5a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 3.1368,
+        "score_b": 3.9041,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub5a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 2.8638,
+        "score_b": 5.3131,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub5b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 4.1672,
+        "score_b": 3.8617,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub5b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 5.7709,
+        "score_b": 4.0092,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub5c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.203,
+        "score_b": 2.2333,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub5c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 4.0571,
+        "score_b": 1.9042,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut3h1",
+        "set": "Ut",
+        "source": "heldout",
+        "judge": "utilitarian",
+        "score_a": 2.4144,
+        "score_b": 3.5964,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut3h2",
+        "set": "Ut",
+        "source": "heldout",
+        "judge": "utilitarian",
+        "score_a": 4.9898,
+        "score_b": 3.8233,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut3h3",
+        "set": "Ut",
+        "source": "heldout",
+        "judge": "utilitarian",
+        "score_a": 1.9798,
+        "score_b": 5.0547,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De5h1",
+        "set": "De",
+        "source": "heldout",
+        "judge": "deontological",
+        "score_a": 3.4671,
+        "score_b": 2.2667,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De5h2",
+        "set": "De",
+        "source": "heldout",
+        "judge": "deontological",
+        "score_a": 2.3867,
+        "score_b": 2.6857,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De5h3",
+        "set": "De",
+        "source": "heldout",
+        "judge": "deontological",
+        "score_a": 3.0139,
+        "score_b": 2.6029,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      }
+    ],
+    "teacher": [
+      {
+        "pair_id": "Ut1a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 8.889,
+        "score_b": 5.8649,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut1b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 7.1664,
+        "score_b": 9.4677,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut1c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 9.2162,
+        "score_b": 3.794,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut2a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 7.6719,
+        "score_b": 2.2716,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut2a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.3999,
+        "score_b": 2.8141,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut2b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 2.0232,
+        "score_b": 9.5198,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut2b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.8994,
+        "score_b": 8.4907,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut2c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.8362,
+        "score_b": 9.8353,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut2c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.2983,
+        "score_b": 4.4884,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut3a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 7.9787,
+        "score_b": 8.0452,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut3b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 6.7732,
+        "score_b": 5.7504,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut3c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 7.1096,
+        "score_b": 7.3005,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut4a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.0377,
+        "score_b": 8.0679,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut4a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.2877,
+        "score_b": 4.2405,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut4b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 5.2032,
+        "score_b": 1.5372,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut4b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 3.9131,
+        "score_b": 8.6443,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut4c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.0738,
+        "score_b": 9.7244,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut4c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 6.3179,
+        "score_b": 9.0741,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut5a",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 8.866,
+        "score_b": 2.1183,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut5b",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 8.5604,
+        "score_b": 9.3739,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut5c",
+        "set": "Ut",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 3.5893,
+        "score_b": 8.577,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De1a",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 6.2393,
+        "score_b": 1.7971,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De1a",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.3791,
+        "score_b": 4.1745,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De1b",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.5289,
+        "score_b": 5.7713,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De1b",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.9889,
+        "score_b": 2.6916,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De1c",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.3917,
+        "score_b": 3.9324,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De1c",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.6884,
+        "score_b": 3.8418,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De2a",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 8.2169,
+        "score_b": 1.7251,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De2a",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 5.9186,
+        "score_b": 5.0189,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "De2a",
+        "set": "De",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 7.5522,
+        "score_b": 4.1315,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "De2b",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 8.5971,
+        "score_b": 1.1577,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De2b",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 5.5084,
+        "score_b": 1.853,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "De2b",
+        "set": "De",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 2.9553,
+        "score_b": 1.943,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "De2c",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.2441,
+        "score_b": 7.6307,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De2c",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.8432,
+        "score_b": 6.9759,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De2c",
+        "set": "De",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 1.931,
+        "score_b": 6.8206,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De3a",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.7328,
+        "score_b": 9.1722,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De3a",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.864,
+        "score_b": 2.5929,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De3b",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 8.7715,
+        "score_b": 2.2324,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De3b",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.4723,
+        "score_b": 2.8545,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De3c",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.4081,
+        "score_b": 9.1291,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De3c",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 3.2836,
+        "score_b": 1.8791,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De4a",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.4176,
+        "score_b": 4.2128,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De4b",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 8.0584,
+        "score_b": 2.4067,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De4c",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 3.0841,
+        "score_b": 1.7831,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "De5a",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 4.1749,
+        "score_b": 4.1487,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "De5a",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 6.3427,
+        "score_b": 2.5069,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De5b",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 4.2447,
+        "score_b": 5.7575,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De5b",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.6895,
+        "score_b": 7.2915,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "De5c",
+        "set": "De",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 2.9296,
+        "score_b": 2.7621,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De5c",
+        "set": "De",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 2.546,
+        "score_b": 2.725,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub1a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 7.9712,
+        "score_b": 4.8186,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub1b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 4.3087,
+        "score_b": 6.3699,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub1c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 7.9351,
+        "score_b": 8.1597,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub2a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 7.9107,
+        "score_b": 3.1997,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub2b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 3.4958,
+        "score_b": 7.5816,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub2c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 7.3888,
+        "score_b": 2.8731,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub3a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 1.8241,
+        "score_b": 6.4918,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub3a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 2.0049,
+        "score_b": 4.8158,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub3b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 5.748,
+        "score_b": 7.7853,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub3b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 2.3346,
+        "score_b": 8.5246,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub3c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 7.6165,
+        "score_b": 1.9722,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub3c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 7.8764,
+        "score_b": 2.0953,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub4a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 7.7272,
+        "score_b": 3.2977,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub4a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 8.8525,
+        "score_b": 2.5444,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub4b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 6.0043,
+        "score_b": 2.4318,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub4b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 2.2502,
+        "score_b": 8.598,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub4c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "utilitarian",
+        "score_a": 1.926,
+        "score_b": 7.7322,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub4c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 8.4072,
+        "score_b": 3.2578,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub5a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 7.3617,
+        "score_b": 7.9292,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub5a",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 2.8967,
+        "score_b": 8.2605,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub5b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 7.5312,
+        "score_b": 2.3505,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "Ub5b",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 8.3569,
+        "score_b": 2.1259,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub5c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "deontological",
+        "score_a": 3.9728,
+        "score_b": 4.335,
+        "expected": "b > a",
+        "actual": "b > a",
+        "pass": true
+      },
+      {
+        "pair_id": "Ub5c",
+        "set": "Ub",
+        "source": "main",
+        "judge": "ubuntu",
+        "score_a": 8.4702,
+        "score_b": 2.2535,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "Ut3h1",
+        "set": "Ut",
+        "source": "heldout",
+        "judge": "utilitarian",
+        "score_a": 4.4572,
+        "score_b": 5.9785,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut3h2",
+        "set": "Ut",
+        "source": "heldout",
+        "judge": "utilitarian",
+        "score_a": 6.726,
+        "score_b": 5.7828,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      },
+      {
+        "pair_id": "Ut3h3",
+        "set": "Ut",
+        "source": "heldout",
+        "judge": "utilitarian",
+        "score_a": 3.0598,
+        "score_b": 6.9315,
+        "expected": "a > b",
+        "actual": "b > a",
+        "pass": false
+      },
+      {
+        "pair_id": "De5h1",
+        "set": "De",
+        "source": "heldout",
+        "judge": "deontological",
+        "score_a": 7.6277,
+        "score_b": 3.9039,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De5h2",
+        "set": "De",
+        "source": "heldout",
+        "judge": "deontological",
+        "score_a": 3.192,
+        "score_b": 2.0746,
+        "expected": "a > b",
+        "actual": "a > b",
+        "pass": true
+      },
+      {
+        "pair_id": "De5h3",
+        "set": "De",
+        "source": "heldout",
+        "judge": "deontological",
+        "score_a": 7.6173,
+        "score_b": 4.9584,
+        "expected": "b > a",
+        "actual": "a > b",
+        "pass": false
+      }
+    ]
+  },
+  "teacher_reference": {
+    "utilitarian": {
+      "Ut": "97% (15)",
+      "De": "63% (12)",
+      "Ub": "67% (3)"
+    },
+    "deontological": {
+      "Ut": "100% (6)",
+      "De": "100% (15)",
+      "Ub": "33% (6)"
+    },
+    "ubuntu": {
+      "Ut": null,
+      "De": "100% (3)",
+      "Ub": "100% (15)"
+    }
+  },
+  "notes": "Base model, no adapter. First-generated-token logits over digit tokens; a second pass splits value 1 vs 10 by P(next='0'). Decoded by expected value (same rule as the students, so no ties). 'minimal' = one-sentence framework prompt; 'teacher' = the refined judge prompts from score_responses.py."
+}

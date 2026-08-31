@@ -1,0 +1,83 @@
+{
+  "note": "Validation = 40 dilemmas carved from the 400 training dilemmas (monitoring only, seed 42). NOT the frozen 100-dilemma held-out set; those numbers come from the step-4 evaluation.",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "gpu": "NVIDIA L40S",
+  "runs": [
+    {
+      "framework": "utilitarian",
+      "head": "classification",
+      "total_steps": 720,
+      "epochs": [
+        {
+          "epoch": 0,
+          "val_pearson": 0.8504,
+          "val_mae": 1.0623
+        },
+        {
+          "epoch": 1,
+          "val_pearson": 0.8755,
+          "val_mae": 0.8485
+        }
+      ],
+      "final_val_pearson": 0.8755,
+      "final_val_mae": 0.8485
+    },
+    {
+      "framework": "utilitarian",
+      "head": "regression",
+      "total_steps": 720,
+      "epochs": [
+        {
+          "epoch": 0,
+          "val_pearson": 0.8221,
+          "val_mae": 1.1465
+        },
+        {
+          "epoch": 1,
+          "val_pearson": 0.8366,
+          "val_mae": 1.0298
+        }
+      ],
+      "final_val_pearson": 0.8366,
+      "final_val_mae": 1.0298
+    },
+    {
+      "framework": "deontological",
+      "head": "classification",
+      "total_steps": 720,
+      "epochs": [
+        {
+          "epoch": 0,
+          "val_pearson": 0.7956,
+          "val_mae": 1.2469
+        },
+        {
+          "epoch": 1,
+          "val_pearson": 0.8505,
+          "val_mae": 0.9692
+        }
+      ],
+      "final_val_pearson": 0.8505,
+      "final_val_mae": 0.9692
+    },
+    {
+      "framework": "ubuntu",
+      "head": "classification",
+      "total_steps": 720,
+      "epochs": [
+        {
+          "epoch": 0,
+          "val_pearson": 0.8651,
+          "val_mae": 1.0574
+        },
+        {
+          "epoch": 1,
+          "val_pearson": 0.8849,
+          "val_mae": 0.8784
+        }
+      ],
+      "final_val_pearson": 0.8849,
+      "final_val_mae": 0.8784
+    }
+  ]
+}
