@@ -1,0 +1,363 @@
+{
+  "slug": "for_parents_doing_nice_things_for_their_children",
+  "dilemma": "A working couple with two kids is struggling financially. They want to buy a new computer for their kid's education, but it would mean cutting on essential expenses. Should they prioritize their children's educational needs over basic necessities?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Buying the Computer",
+  "not_to_do_action": "Not Buying the Computer",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2689340215407827,
+      "maximin": -1.6267725046846555,
+      "nash": 2.233281081838068,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.38206847040349967,
+      "maximin": -0.950093021099074,
+      "nash": 10.027509004788444,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.663697369704664,
+      "maximin": -1.2363314859195875,
+      "nash": 7.0486033776386146,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.3319803008965227,
+      "maximin": -0.07959606538784551,
+      "nash": 24.593364712621778,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.21615294611792268,
+      "maximin": -0.950093021099074,
+      "nash": 20.294251336307042,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.07384921209912197,
+      "maximin": -0.5148445432434597,
+      "nash": 15.582869709275592,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.7725094891685675,
+      "maximin": -1.2363314859195875,
+      "nash": 5.962392527124135,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7766961186265078,
+      "maximin": -0.950093021099074,
+      "nash": 5.782611142090728,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.16444423147569254,
+      "maximin": -0.4518067248278044,
+      "nash": 13.591315841913897,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5814756092439738,
+      "maximin": -0.950093021099074,
+      "nash": 7.175101369503431,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.15324236670305597,
+      "maximin": -0.4518067248278044,
+      "nash": 13.80313186500535,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8743063733177747,
+      "maximin": -0.950093021099074,
+      "nash": 5.0435700156270595,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5814756092439738,
+      "maximin": -0.950093021099074,
+      "nash": 7.175101369503431,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.38206847040349967,
+      "maximin": -0.950093021099074,
+      "nash": 10.027509004788444,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5772889797860337,
+      "maximin": -0.950093021099074,
+      "nash": 8.081444750726602,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.6748992344773006,
+      "maximin": -0.950093021099074,
+      "nash": 7.0486033776386146,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 4,
+      "value": 0.3319803008965227,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 4,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 4,
+      "value": 24.593364712621778,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 11,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "4": "**Recommendation:** The family should not prioritize buying a new computer at the expense of basic\nnecessities.\n\n**Reasoning:**\n\nWhile providing a computer for the child's education is undoubtedly important, it should not come at\nthe cost of essential expenses that maintain their overall well-being. Basic necessities like food,\nshelter, clothing, and healthcare are fundamental to a family's survival and long-term prosperity.\nWithout them, the children may struggle in other areas of their lives, making it more challenging\nfor them to succeed academically.\n\nPrioritizing basic necessities ensures:\n\n1. **Food security**: Adequate nutrition is crucial for children's cognitive development,\nconcentration, and overall health.\n2. **Safety and shelter**: A secure home environment allows the family to rest, relax, and focus on\neducation without worrying about basic needs.\n3. **Healthcare**: Ensuring access to medical care helps prevent illnesses that can hinder academic\nperformance.\n4. **Financial stability**: By covering essential expenses, the family will be better equipped to\nmanage debt, create a budget, and build an emergency fund.\n\nThere are alternative ways to address the need for a computer without sacrificing basic necessities:\n\n1. **Explore financial assistance programs**: Research government grants or local organizations that\nprovide aid for education-related expenses.\n2. **Second-hand options**: Consider buying a pre-owned computer at a lower cost or seeking free or\ndiscounted options from schools, libraries, or community centers.\n3. **Set priorities within discretionary spending**: Allocate some funds from entertainment or\nnon-essential expenses towards the computer while maintaining basic necessities.\n\nUltimately, balancing competing needs is essential in such situations. It's better to make\nsacrifices in discretionary spending areas rather than compromise on fundamental necessities. By\nprioritizing the most critical aspects of their lives, this family will ensure that they address\nboth immediate and long-term requirements for stability and growth.",
+    "11": "**Recommendation:** Prioritize basic necessities, not the new computer.\n\n**Explanation:**\n\nWhile buying a new computer can be an important investment in their child's education, it is crucial\nto consider the overall family financial situation. If cutting on essential expenses means\ncompromising on food, shelter, healthcare, or other critical needs, it would be wise to prioritize\nthose over buying a non-essential item.\n\nHere are some reasons why:\n\n1. **Basic needs come first**: A family's basic needs like food, clothing, and shelter should always\ntake precedence over discretionary expenses.\n2. **Education can be achieved without the latest technology**: Children can still learn and develop\ntheir skills with older computers or even borrowed/used devices for schoolwork.\n3. **Short-term sacrifice can lead to long-term benefits**: Making sacrifices in the short term\n(e.g., delaying the purchase of a new computer) may allow the family to prioritize their essential\nexpenses, reducing financial stress and ensuring everyone's well-being is taken care of.\n4. **Alternative funding sources exist**: Many schools offer affordable technology options or\nalternative resources for families in need.\n\n**Instead:**\n\nIf possible, consider these alternatives:\n\n1. **Prioritize existing computers or devices**: If the family already owns a computer or device,\nmake sure to get it serviced or repaired before deciding on buying a new one.\n2. **Explore low-cost solutions**: Visit thrift stores or online marketplaces for affordable\nsecond-hand computers or laptop options.\n3. **Discuss with teachers and school administrators**: Talk to their child's teacher or school\nadministrator about their specific needs and see if there are resources available within the school\ncommunity that can help support technology access.\n\nIn conclusion, while supporting education is vital, in this case, prioritizing basic necessities\nwill have a broader impact on the family's well-being. By doing so, they can create a more stable\nfinancial foundation, ensuring everyone's essential needs are met and paving the way for future\nsuccesses."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

@@ -1,0 +1,373 @@
+{
+  "slug": "expecting_an_acquaintance_to_celebrate_your_birthday",
+  "dilemma": "You've invited an acquaintance to your birthday party, but they're known for drinking excessively and causing scenes. During the party, they become intoxicated and start to behave inappropriately, making your other guests uncomfortable. Should you ask the acquaintance to leave, potentially damaging your relationship, or allow them to stay and potentially ruin the party for your other guests?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Ask the acquaintance to leave",
+  "not_to_do_action": "Allow the acquaintance to stay",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.23356070859076722,
+      "maximin": -0.8505042759618531,
+      "nash": 19.526478130928663,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.17187601291093613,
+      "maximin": -0.8505042759618531,
+      "nash": 13.017652087285775,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.10338393173674737,
+      "maximin": -0.8505042759618531,
+      "nash": 17.085668364562576,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.15696962197129227,
+      "maximin": -0.8505042759618531,
+      "nash": 12.204048831830415,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.23356070859076722,
+      "maximin": -0.8505042759618531,
+      "nash": 19.526478130928663,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.23356070859076722,
+      "maximin": -0.8505042759618531,
+      "nash": 19.526478130928663,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": 0.10616596614811283,
+      "maximin": -0.4557000794746032,
+      "nash": 18.30607324774562,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.17187601291093613,
+      "maximin": -0.8505042759618531,
+      "nash": 13.017652087285775,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.08847754079710352,
+      "maximin": -0.8505042759618531,
+      "nash": 17.356869449714367,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.026792845117272424,
+      "maximin": -0.8505042759618531,
+      "nash": 14.644858598196494,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.302052789764956,
+      "maximin": -0.8505042759618531,
+      "nash": 10.848043406071477,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.23356070859076722,
+      "maximin": -0.8505042759618531,
+      "nash": 19.526478130928663,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": 0.23634274300213262,
+      "maximin": -0.4516278421656973,
+      "nash": 21.35708545570322,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.17187601291093613,
+      "maximin": -0.8505042759618531,
+      "nash": 13.017652087285775,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.10338393173674737,
+      "maximin": -0.8505042759618531,
+      "nash": 17.085668364562576,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.10338393173674737,
+      "maximin": -0.8505042759618531,
+      "nash": 17.085668364562576,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 13,
+      "value": 0.23634274300213262,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 13,
+      "value": -0.4516278421656973,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 13,
+      "value": 21.35708545570322,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.225825820084639,
+      "tied_ids": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        12,
+        13,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "The difficult decision!\n\nIn this situation, I would recommend asking the acquaintance to leave the party. Here's why:\n\n**Guests' comfort and safety take precedence**: Your party is an intimate gathering of friends and\nacquaintances who have gathered to celebrate with you in a specific context (a birthday party).\nAllowing someone to cause discomfort or create a hostile atmosphere undermines the well-being of\nyour other guests, some of whom may be vulnerable to emotional distress due to excessive drinking.\n\n**It's not about personal relationships**: While maintaining friendships is important, allowing an\nindividual's intoxication to disrupt others' enjoyment and creating a potentially embarrassing\nsituation for yourself doesn't seem like a fair price to pay. Your friendship can withstand a\ntemporary disagreement or difficult moment, but the damage done by someone's irresponsible behavior\ncan be lasting.\n\n**You have responsibilities as a host**: As the organizer of the party, it's your duty to ensure\nthat all guests feel welcome and comfortable. If you fail to intervene in an uncomfortable\nsituation, you may be held accountable (even if subtly) by other guests who witness it.\n\n**There are alternative ways to salvage the relationship**: If this is someone close to you, you can\nhave a private conversation with them after the party to discuss their behavior. Explain how their\nactions affected others and ask that they take responsibility for themselves in the future. This can\nactually strengthen your relationship by demonstrating that you care about mutual respect.\n\n**Allowing someone to stay could embolden similar behavior**: If you allow someone to continue\ncausing a disturbance despite requests from others, it may create an expectation of laxness\nregarding responsible drinking and social conduct. Others at the party might start to push\nboundaries or even emulate this behavior.\n\nOf course, every situation is unique, but in general, taking care of your other guests' well-being\nshould take priority over any personal connection with the acquaintance. A clear, honest\nconversation can help prevent miscommunication and strengthen bonds with people willing to\ncommunicate respectfully.",
+    "13": "**Recommendation: Ask the acquaintance to leave**\n\nHere's why:\n\n1.  **Protecting your guests' well-being**: Your primary concern should be ensuring that all your\nguests feel safe, comfortable, and respected. An intoxicated guest can create an uncomfortable\natmosphere, which may lead to stress, anxiety, or even harm for others.\n2.  **Preserving the party atmosphere**: Your goal is likely to celebrate with friends and family in\na pleasant environment. Allowing an intoxicated acquaintance to continue their behavior may destroy\nthe relaxed atmosphere you've worked hard to create.\n3.  **Minimizing potential damage to your relationship**: While asking someone to leave might strain\nrelationships, allowing them to stay could ultimately cause more harm. By setting clear boundaries\nand prioritizing your guests' needs, you're showing that you value both their well-being and the\nparty's atmosphere.\n\n**Alternative options:**\n\nIf you feel unable or unwilling to ask the acquaintance to leave directly:\n\n*   Offer to help them find a safe way home, such as calling an Uber or taxi.\n*   Politely but firmly suggest that they take some time outside to compose themselves before\nrejoining the party.\n*   If you're hosting a private event, consider having a trusted friend or family member who can\nintervene discreetly.\n\nUltimately, your role as a host is to create and maintain a welcoming environment for all guests. By\nprioritizing their comfort and safety, you'll likely preserve positive relationships in the long\nrun."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

@@ -1,0 +1,364 @@
+{
+  "slug": "feeling_annoyed_with_yourself_if_you_want",
+  "dilemma": "You've been working on a project at work that has been taking longer than expected. You've been taking work home and working late hours, causing you to neglect your personal life and health. Should you continue to sacrifice your personal time for work, or prioritize your health and personal life?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Continue sacrificing personal time for work",
+  "not_to_do_action": "Prioritize health and personal life",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.5496045398243298,
+      "maximin": 0.3458218305340921,
+      "nash": 30.515606270981255,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.8578237981287075,
+      "maximin": 0.715873607905752,
+      "nash": 40.726239889707806,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.35019740098385566,
+      "maximin": -0.052992447146856116,
+      "nash": 24.215967122074083,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.45199428513306283,
+      "maximin": 0.32543258914068407,
+      "nash": 27.93557474372142,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.2525871462925887,
+      "maximin": -0.052992447146856116,
+      "nash": 22.1685570826592,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.35019740098385566,
+      "maximin": -0.052992447146856116,
+      "nash": 24.215967122074083,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.2343700462052557,
+      "maximin": -0.07959606538784551,
+      "nash": 22.514046485859133,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7490116786648039,
+      "maximin": 0.715873607905752,
+      "nash": 37.28292036431093,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6401995592009004,
+      "maximin": 0.35565241246776874,
+      "nash": 33.72997062657572,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.24138528151995214,
+      "maximin": -0.052992447146856116,
+      "nash": 21.908258573638122,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.2525871462925887,
+      "maximin": -0.052992447146856116,
+      "nash": 22.1685570826592,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.34318216566915927,
+      "maximin": 0.32543258914068407,
+      "nash": 25.27339882001889,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8508085628140111,
+      "maximin": 0.32543258914068407,
+      "nash": 40.72623988970781,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.651401423973537,
+      "maximin": 0.32543258914068407,
+      "nash": 34.130726397916995,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6401995592009004,
+      "maximin": 0.35565241246776874,
+      "nash": 33.72997062657572,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.3319803008965227,
+      "maximin": -0.07959606538784551,
+      "nash": 24.593364712621778,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 0.8578237981287075,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        2,
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 40.72623988970781,
+      "tied_ids": [
+        2,
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "I would strongly recommend prioritizing your health and personal life over continued long work hours\nand sacrifices of personal time. Here's why:\n\n1. **Burnout is inevitable**: Continuing to push yourself to exhaustion without rest will eventually\nlead to burnout, decreased productivity, and reduced job satisfaction.\n2. **Health risks are significant**: Neglecting physical and mental well-being can have serious\nconsequences, including cardiovascular disease, anxiety, depression, and other chronic health\nissues.\n3. **Personal relationships suffer**: Constantly working late hours and taking work home means less\ntime with loved ones, which can lead to strained relationships and feelings of guilt or resentment.\n4. **Job satisfaction plummets**: The initial enthusiasm and motivation for the project may wear off\nas the exhaustion sets in. Your job satisfaction will decrease, making it harder to stay engaged and\nmotivated.\n5. **Productivity ultimately suffers**: While working late hours might seem like a way to catch up\non work, research shows that productivity decreases significantly after 50-60 hours of work per\nweek. In fact, a study by the American Institute of Stress found that employees who worked over 10\nhours a day experienced 34% lower productivity.\n6. **Alternative solutions are available**: With some creativity and resourcefulness, you can often\nfind ways to manage workload without sacrificing personal time, such as delegating tasks,\nprioritizing essential tasks, and seeking help from colleagues or supervisors.\n\nPrioritizing your health and personal life doesn't mean abandoning your work responsibilities. It\nmeans finding a sustainable balance between your job and other aspects of your life. Here are some\nsteps you can take:\n\n1. **Communicate with your team and supervisor**: Explain your situation and express concerns about\nthe impact on your well-being.\n2. **Re-evaluate project timelines**: Discuss potential adjustments to deadlines or resource\nallocation to reduce workload.\n3. **Set realistic goals and boundaries**: Establish clear expectations for work hours, breaks, and\npersonal time.\n4. **Seek support**: Share your struggles with colleagues, friends, or family members, and ask for\nhelp when needed.\n\nBy prioritizing your health and personal life, you'll be able to maintain a sustainable work-life\nbalance, avoid burnout, and ultimately perform better in your job with renewed energy and\nmotivation."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 1
+}

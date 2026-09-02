@@ -1,0 +1,368 @@
+{
+  "slug": "making_things_out_of_food",
+  "dilemma": "You're an artist specializing in sculptures made from edible materials. You've been commissioned to create a large piece for an event in a region where starvation is rampant. Should you proceed with the commission, knowing your art will be discarded after the event, or reject it due to the potential wastefulness of food resources?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Proceed with the commission",
+  "not_to_do_action": "Reject the commission",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.09960567844256518,
+      "maximin": -1.2367607405987222,
+      "nash": 17.356869449714367,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3627412665619702,
+      "maximin": -0.8462304100366628,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.6230948202700098,
+      "maximin": -0.06516974891254372,
+      "nash": 34.17133672912515,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3031157028033946,
+      "maximin": -0.950421696820317,
+      "nash": 21.967287897294742,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.15525050059836554,
+      "maximin": -1.385671200201308,
+      "nash": 16.272065109107217,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.09960567844256518,
+      "maximin": -1.2367607405987222,
+      "nash": 17.356869449714367,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3031157028033946,
+      "maximin": -0.950421696820317,
+      "nash": 21.967287897294742,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.09960567844256518,
+      "maximin": -1.2367607405987222,
+      "nash": 17.356869449714367,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3031157028033946,
+      "maximin": -0.950421696820317,
+      "nash": 21.967287897294742,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.29099134627511614,
+      "maximin": -1.385671200201308,
+      "nash": 18.30607324774562,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3031157028033946,
+      "maximin": -0.950421696820317,
+      "nash": 21.967287897294742,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.2325644897079504,
+      "maximin": -1.2367607405987222,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.1580325350097309,
+      "maximin": -1.385671200201308,
+      "nash": 16.475465922971054,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.5662512909227997,
+      "maximin": -0.950421696820317,
+      "nash": 27.120108515178696,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 4,
+      "value": 0.6230948202700098,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 4,
+      "value": -0.06516974891254372,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 4,
+      "value": 34.17133672912515,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        1,
+        3,
+        4,
+        7,
+        10,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "What a thought-provoking question! As an artist specializing in edible sculptures, I must consider\nthe gravity of this situation.\n\nAfter careful deliberation, I recommend accepting the commission, but with certain conditions and\nconsiderations.\n\n**Why proceed:**\n\n1. **Raise awareness:** My sculpture can serve as a poignant symbol to highlight the struggle\nagainst hunger in the region. By creating a visually stunning piece from edible materials, I can\ndraw attention to this critical issue and encourage conversations about food security, sustainable\nagriculture, and social justice.\n2. **Temporary use of resources:** While it's true that the sculpture will be discarded after the\nevent, it will be a short-term use of edible resources that is likely smaller in scale compared to\nthe overall consumption patterns in the region. The artwork will occupy a relatively small space and\ntimeframe.\n3. **Potential for long-term impact:** By completing the commission, I can establish myself as an\nartist willing to take on socially relevant projects, potentially opening doors for future\ncommissions focused on topics like food waste, sustainable living, or community development.\n\n**Mitigating factors:**\n\n1. **Collaborate with local partners:** To minimize waste, I would collaborate with local\norganizations and experts to identify edible resources already being discarded or at risk of\nspoilage. This ensures that no new, healthy foods are wasted solely for the art piece.\n2. **Design for decomposition:** My sculpture should be designed to decompose efficiently after the\nevent, reducing the carbon footprint and minimizing the amount of food sent to landfills.\n\n**Additional recommendations:**\n\n1. **Partner with local relief organizations:** After the event, work with local charities or food\nbanks to donate the edible materials from my sculpture, ensuring that food intended for human\nconsumption does not go to waste.\n2. **Incorporate educational components:** Integrate workshops, lectures, or interactive experiences\nduring and after the event to educate attendees about food security, sustainable practices, and\nresponsible resource management.\n\nUltimately, as an artist specializing in edible sculptures, I must weigh the significance of\ncreating a thought-provoking piece that raises awareness against the potential for wastefulness.\nWhile there are no easy answers, I believe that by taking a thoughtful approach, accepting the\ncommission can have a positive impact on raising awareness about food security while minimizing\nunnecessary waste.\n\nIf executed responsibly and with a focus on sustainability, this project can serve as a catalyst for\nmeaningful conversations, community engagement, and advocacy around food-related issues in the\nregion.",
+    "4": "What a thought-provoking and poignant question! As an artist who creates edible sculptures, I am\naccustomed to contemplating the duality of my medium: creating something beautiful with materials\nthat are inherently ephemeral and consumable.\n\nAfter careful consideration, I strongly believe I should not proceed with this commission under\nnormal circumstances. However, in this specific instance, where starvation is a pressing issue, I\nsee an opportunity for my art to transcend mere aesthetics and have a tangible impact on the\ncommunity.\n\nHere's why:\n\n1.  **Alternative perspective**: By transforming food into art, we shift our perception from\n\"consumable goods\" to \"artistic expressions.\" This distinction highlights the value of food beyond\nits sustenance role.\n2.  **Food redistribution**: If you're interested in exploring this further, instead of creating a\nlarge piece and then discarding it, I would propose collaborating with local organizations to donate\nthe edible materials before or after the event. This ensures that those resources are still utilized\nfor their intended purpose \u2013 providing nourishment to individuals struggling with starvation.\n3.  **Increased awareness**: The sculpture could serve as an experiential tool for educating people\nabout food waste, sustainability, and community hunger issues. As it's an immersive experience,\nattendees can better grasp the significance of these problems and potentially encourage change\nbeyond just the event itself.\n\nAs an artist working with edible materials, you have a unique platform to drive positive social\nchange through creative endeavors. In this instance, accepting the commission offers an opportunity\nfor your art to be more than just visually stunning \u2013 it has the potential to address broader issues\nof food security, community engagement, and sustainable use of resources."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

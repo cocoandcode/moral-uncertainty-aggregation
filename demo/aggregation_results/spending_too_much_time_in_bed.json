@@ -1,0 +1,380 @@
+{
+  "slug": "spending_too_much_time_in_bed",
+  "dilemma": "John is a professional artist who works from home and typically spends most of his day in bed, painting. However, he has been struggling with his mental health recently and his productivity has decreased, causing him to miss several project deadlines. Should he force himself to get out of bed and work despite his mental health struggles, or should he prioritize his well-being even if it means missing more deadlines?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Force himself to work",
+  "not_to_do_action": "Prioritize his well-being",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.06422882774054656,
+      "maximin": -0.07992269005833456,
+      "nash": 19.526478130928663,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.06701086215191193,
+      "maximin": -0.07992269005833456,
+      "nash": 19.93327975865634,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 7,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.22315547343541556,
+      "maximin": -0.950421696820317,
+      "nash": 13.288853172437559,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.06701086215191193,
+      "maximin": -0.07992269005833456,
+      "nash": 19.93327975865634,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.1961247259674931,
+      "maximin": -0.4557000794746032,
+      "nash": 14.644858598196498,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.06422882774054656,
+      "maximin": -0.07992269005833456,
+      "nash": 19.526478130928663,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.1961247259674931,
+      "maximin": -0.4557000794746032,
+      "nash": 14.644858598196498,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.33014645027131706,
+      "maximin": -0.07992269005833456,
+      "nash": 26.03530417457155,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.2082490824957716,
+      "maximin": -0.5151721934393257,
+      "nash": 14.238056970468815,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.3439899281725222,
+      "maximin": -0.5151721934393257,
+      "nash": 11.865047475390678,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.32630150282151293,
+      "maximin": -0.8462304100366628,
+      "nash": 12.204048831830413,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.060383880290742487,
+      "maximin": -0.8462304100366628,
+      "nash": 16.272065109107217,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.06422882774054656,
+      "maximin": -0.07992269005833456,
+      "nash": 19.526478130928663,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.32630150282151293,
+      "maximin": -0.8462304100366628,
+      "nash": 12.204048831830413,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.06594794911347329,
+      "maximin": -0.07992269005833456,
+      "nash": 17.08566836456258,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.474166705026542,
+      "maximin": -0.5151721934393257,
+      "nash": 10.17004069319201,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 8,
+      "value": 0.33014645027131706,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.07992269005833456,
+      "tied_ids": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 8,
+      "value": 26.03530417457155,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": -0.07992269005833456,
+      "tied_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would strongly recommend that John prioritizes his well-being over meeting deadlines at this time.\nHere's why:\n\n1. **Mental health is a priority**: Mental health struggles can be as debilitating as physical\nillnesses, and neglecting them can lead to long-term consequences on both physical and mental\nhealth.\n2. **Productivity will come back**: While it may seem counterintuitive, forcing oneself to work\nwhile struggling with mental health issues can actually reduce productivity in the short term. By\nprioritizing well-being, John may find that his creativity and focus improve over time, leading to\nbetter productivity when he's feeling more balanced.\n3. **Missing deadlines is a temporary setback**: While missing several project deadlines might seem\ncatastrophic, it's unlikely that John will lose all his clients or damage his professional\nreputation beyond repair. Artists often have flexibility in scheduling projects and may be able to\nreschedule deadlines with clients.\n4. **Self-care leads to long-term success**: Taking care of one's mental health is essential for\nlong-term success in any creative field. By prioritizing self-care, John will be more resilient and\nbetter equipped to handle future challenges.\n5. **There are resources available**: As a professional artist, John may have access to resources\nlike therapy, counseling, or online support groups that can help him navigate his mental health\nstruggles.\n\nTo get back on track, I would suggest the following:\n\n1. **Take a break**: Allow himself time to rest and recover from his current mental state.\n2. **Reach out for support**: Consider talking to friends, family, or mental health professionals\nabout his struggles.\n3. **Set realistic goals**: Set achievable goals for completing projects, rather than pushing\nhimself too hard.\n4. **Find ways to incorporate self-care into work routine**: As he returns to work, look for ways to\nincorporate self-care practices, such as regular exercise, meditation, or hobbies.\n\nBy prioritizing his well-being, John will be better equipped to handle future challenges and\nultimately achieve long-term success in his career.",
+    "8": "**Recommendation:** John should prioritize his well-being and take care of his mental health needs.\nWhile meeting project deadlines is crucial to his career, neglecting his mental health can have\nlong-term consequences for his overall well-being and productivity.\n\n**Reasoning:**\n\n1. **Mental health is not a temporary state**: Mental health struggles, such as depression or\nanxiety, are not something that can be simply \"overcome\" by forcing oneself to work. These\nconditions require attention, care, and support to manage effectively.\n2. **Productivity will suffer anyway**: If John continues to push himself to work despite his mental\nhealth struggles, he may eventually burn out, leading to decreased productivity, poor-quality work,\nor even burnout syndrome.\n3. **Prioritizing well-being leads to better outcomes**: By taking care of his mental health, John\nwill be able to approach his work with renewed energy and focus when the time is right. This can\nlead to higher quality work, increased motivation, and improved productivity in the long run.\n4. **It's okay to miss deadlines occasionally**: While meeting deadlines is essential, it's not\nworth compromising John's mental health for a single project deadline. In fact, taking care of his\nwell-being will ultimately allow him to meet future deadlines more effectively.\n\n**Action plan:**\n\n1. **Seek professional help**: Encourage John to consult with a mental health professional to\naddress his struggles.\n2. **Adjust project timelines**: Inform clients or collaborators about the situation and request\nextensions for deadline targets if necessary.\n3. **Prioritize manageable tasks**: Break down larger projects into smaller, more manageable tasks\nto reduce overwhelm and promote productivity when he's ready to work again.\n4. **Develop self-care habits**: Encourage John to establish a regular routine that includes\nactivities promoting relaxation, exercise, and social interaction.\n\nBy prioritizing his mental health, John will be able to recover from his struggles and regain his\ncreative energy and productivity, ultimately benefiting both himself and his art career in the long\nrun."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

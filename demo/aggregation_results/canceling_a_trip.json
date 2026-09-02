@@ -1,0 +1,363 @@
+{
+  "slug": "canceling_a_trip",
+  "dilemma": "You've planned a trip to a small remote village that heavily depends on tourism for income. Due to a rise in COVID-19 cases, you're considering canceling your trip, which could contribute to their economic hardship. Should you prioritize your personal safety over the financial well-being of the village?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Proceed with the trip",
+  "not_to_do_action": "Cancel the trip",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.0125622377936307,
+      "maximin": -1.2367607405987222,
+      "nash": 4.339217362428592,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.49291804341599005,
+      "maximin": -0.4557000794746032,
+      "nash": 29.289717196392992,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.1427390146476506,
+      "maximin": -1.6272910711607818,
+      "nash": 3.2544130218214438,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.1604274399986598,
+      "maximin": -1.385671200201308,
+      "nash": 3.051012207957603,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.145521049059016,
+      "maximin": -1.2493807097580087,
+      "nash": 3.2544130218214438,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.19056065714476228,
+      "maximin": -1.2367607405987222,
+      "nash": 13.017652087285775,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.8823854609396109,
+      "maximin": -0.950421696820317,
+      "nash": 5.424021703035739,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.8823854609396109,
+      "maximin": -0.950421696820317,
+      "nash": 5.424021703035739,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.145521049059016,
+      "maximin": -1.2493807097580087,
+      "nash": 3.2544130218214438,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.423563028118065,
+      "maximin": -1.6482571435541644,
+      "nash": 1.6272065109107219,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.0153442722049961,
+      "maximin": -1.2493807097580087,
+      "nash": 4.068016277276804,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.6272910711607818,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.10238771285393056,
+      "maximin": -1.6272910711607818,
+      "nash": 14.644858598196496,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.19334269155612774,
+      "maximin": -0.8462304100366628,
+      "nash": 14.238056970468815,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.057601845879377056,
+      "maximin": -1.2367607405987222,
+      "nash": 14.644858598196496,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.7494266496742257,
+      "maximin": -0.950421696820317,
+      "nash": 6.780027128794674,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.145521049059016,
+      "maximin": -1.2493807097580087,
+      "nash": 3.2544130218214438,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 0.49291804341599005,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.4557000794746032,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 29.289717196392992,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        2,
+        12
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "After careful consideration, I would recommend **postponing or rescheduling** the trip instead of\ncanceling it outright. Here's my reasoning:\n\n1.  **Financial dependence on tourism**: As you mentioned, the village heavily relies on tourism for\nits income. Canceling the trip could have severe economic consequences for the villagers who rely on\nthis industry for their livelihood.\n2.  **Alternative options to minimize risk**: By postponing or rescheduling the trip, I would\nconsider exploring alternative dates that are closer to a time when COVID-19 cases are expected to\nbe lower. This could help minimize the impact on the village's economy while still prioritizing\npersonal safety.\n3.  **Village support and cooperation**: It's likely that the villagers will want to protect their\nvisitors from any potential harm caused by the virus. They might offer additional measures, such as\nvaccination mandates or enhanced hygiene protocols, which could further mitigate risks during your\nvisit.\n4.  **Responsible decision-making**: As a visitor, you have a responsibility towards the local\ncommunity and economy. Canceling the trip without exploring alternative solutions would not only\nimpact the village's financial well-being but also damage the reputation of tourists in general.\n\nThis approach strikes a balance between personal safety and respect for the village's economic\nneeds."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

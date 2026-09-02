@@ -1,0 +1,374 @@
+{
+  "slug": "giving_out_flowers",
+  "dilemma": "A local florist shop has decided to give away their excess flowers at the end of each day. However, they are torn between donating to a local hospital to cheer up patients or a local nursing home where the elderly residents rarely get visitors. Should the florist shop donate the flowers to the hospital or the nursing home?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Donate to Hospital",
+  "not_to_do_action": "Not Donate to Nursing Home",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3627412665619702,
+      "maximin": -0.8462304100366628,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.2325644897079504,
+      "maximin": -1.2367607405987222,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3627412665619702,
+      "maximin": -0.8462304100366628,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3627412665619702,
+      "maximin": -0.8462304100366628,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.21765809876830644,
+      "maximin": -0.8462304100366628,
+      "nash": 21.357085455703224,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.49291804341599005,
+      "maximin": -0.4557000794746032,
+      "nash": 29.289717196392992,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.19056065714476228,
+      "maximin": -1.2367607405987222,
+      "nash": 13.017652087285775,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.21765809876830644,
+      "maximin": -0.8462304100366628,
+      "nash": 21.357085455703224,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3627412665619702,
+      "maximin": -0.8462304100366628,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.09960567844256518,
+      "maximin": -1.2367607405987222,
+      "nash": 17.356869449714367,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3627412665619702,
+      "maximin": -0.8462304100366628,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.2325644897079504,
+      "maximin": -1.2367607405987222,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.08748132191428665,
+      "maximin": -1.2367607405987222,
+      "nash": 17.08566836456258,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3627412665619702,
+      "maximin": -0.8462304100366628,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.2325644897079504,
+      "maximin": -1.2367607405987222,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3627412665619702,
+      "maximin": -0.8462304100366628,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 6,
+      "value": 0.49291804341599005,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 6,
+      "value": -0.4557000794746032,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 6,
+      "value": 29.289717196392992,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "After considering the situation, I recommend that the florist shop donate the excess flowers to the\nnursing home. Here's why:\n\n1. **Targeted impact**: The nursing home is likely to have residents who are elderly and isolated,\nreceiving few visitors throughout the year. A simple act of kindness like receiving fresh flowers\ncan bring them immense joy and comfort.\n2. **Long-term effect**: Donating to a nursing home can create a ripple effect, potentially changing\nthe daily lives of the residents for an extended period. The emotional boost from receiving fresh\nflowers may help alleviate their feelings of loneliness and isolation.\n3. **Prioritizing vulnerable populations**: Older adults often struggle with social isolation, which\nhas serious negative effects on their mental and physical health. By donating to the nursing home,\nthe florist shop is addressing a specific need in their community and bringing some happiness into\nthe lives of those who may be most vulnerable.\n4. **Community outreach**: While donating to the hospital would also bring cheer to patients, it\nmight not have as significant an impact on the lives of residents at the nursing home.\n\nIn contrast, while donating to the hospital is still a kind gesture, its benefits might be more\nshort-term and limited to those receiving medical care for specific reasons. By choosing the nursing\nhome, the florist shop can demonstrate their commitment to enhancing the well-being and quality of\nlife of older adults in the community.\n\nUltimately, both options are compassionate and beneficial, but donating to the nursing home appears\nto have a more significant and lasting impact on its residents' lives.",
+    "6": "After considering the potential impact of each option, I would recommend that the florist shop\ndonates their excess flowers to the local nursing home. Here's why:\n\n1. **Isolation and loneliness**: The elderly residents at the nursing home often suffer from social\nisolation and loneliness due to a lack of visitors and human interaction. A bouquet or arrangement\nof fresh flowers can brighten up their day, provide some solace, and remind them that they are not\nforgotten.\n2. **Long-term impact**: Donating to the nursing home can have a long-term positive impact on the\nresidents' well-being and quality of life. In contrast, while the hospital patients may appreciate a\ntemporary morale boost, the effects of flower donation may be more fleeting due to the often chaotic\nenvironment of a hospital setting.\n3. **Emotional connection**: Nursing home residents are more likely to form an emotional connection\nwith their caregivers and visitors, which can have therapeutic benefits. The flowers will add a\ntouch of warmth and humanity to the facility, fostering a sense of care and compassion.\n4. **Consideration for the elderly population**: As people age, they often experience cognitive\ndecline, depression, or anxiety, making social connections increasingly important. By supporting the\nnursing home, the florist shop can help address some of these issues while brightening the lives of\nvulnerable individuals.\n\nDonating to the hospital may still be a kind gesture, but considering the above factors, I believe\nthat supporting the local nursing home will have a more significant and lasting impact on the\nwell-being of those who need it most."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

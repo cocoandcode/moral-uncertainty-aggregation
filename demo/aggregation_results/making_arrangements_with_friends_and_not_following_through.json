@@ -1,0 +1,378 @@
+{
+  "slug": "making_arrangements_with_friends_and_not_following_through",
+  "dilemma": "A group of friends have planned a weekend getaway together. One friend is responsible for booking the accommodation but consistently fails to do so. Should this friend be confronted about their lack of responsibility, potentially causing conflict within the group?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confronting the friend",
+  "not_to_do_action": "Not confronting the friend",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.3356438249384259,
+      "maximin": -1.2367607405987222,
+      "nash": 10.848043406071477,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.21765809876830644,
+      "maximin": -0.8462304100366628,
+      "nash": 21.357085455703224,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": 0.07635318426882504,
+      "maximin": -0.4516278421656973,
+      "nash": 18.984075960625088,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.47522961806498076,
+      "maximin": 0.3253605816495158,
+      "nash": 30.374521537000145,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.608188429330366,
+      "maximin": 0.3253605816495158,
+      "nash": 34.17133672912516,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.19056065714476228,
+      "maximin": -1.2367607405987222,
+      "nash": 13.017652087285775,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.07257493097464274,
+      "maximin": -0.8462304100366628,
+      "nash": 18.30607324774562,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.47522961806498076,
+      "maximin": 0.3253605816495158,
+      "nash": 30.374521537000145,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.3422708067995955,
+      "maximin": 0.3253605816495158,
+      "nash": 26.577706344875125,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.47522961806498076,
+      "maximin": 0.3253605816495158,
+      "nash": 30.374521537000145,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.2026850136730407,
+      "maximin": -1.2367607405987222,
+      "nash": 12.204048831830413,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.06701086215191193,
+      "maximin": -0.07992269005833456,
+      "nash": 19.93327975865634,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.3356438249384259,
+      "maximin": -1.2367607405987222,
+      "nash": 10.848043406071477,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.2026850136730407,
+      "maximin": -1.2367607405987222,
+      "nash": 12.204048831830413,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.2026850136730407,
+      "maximin": -1.2367607405987222,
+      "nash": 12.204048831830413,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.20931199553421026,
+      "maximin": -0.052751408369541584,
+      "nash": 22.780891152750108,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 0.608188429330366,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 4,
+      "value": 0.3253605816495158,
+      "tied_ids": [
+        4,
+        5,
+        8,
+        9,
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 5,
+      "value": 34.17133672912516,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.3553268133226566,
+      "tied_ids": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "**Recommendation:** Address the issue in a non-confrontational way, emphasizing the impact on the\ngroup rather than attacking or criticizing the individual.\n\n**Why?**\n\n1.  **Preserve group dynamics**: Confronting the friend may lead to defensiveness, causing tension\nwithin the group. By addressing the issue gently and collectively, you can maintain a positive\natmosphere.\n2.  **Focus on the solution**: Instead of criticizing, encourage the friend to understand how their\nbehavior affects others. Ask them to help with finding accommodation or offer assistance in booking\nit.\n3.  **Promote personal growth**: Addressing the lack of responsibility gives your friend an\nopportunity to learn and take ownership of their duties. This can foster a sense of accountability\nand improved relationships within the group.\n\nTo have this conversation, you could say something like:\n\n\"Hey [friend's name], I've noticed we haven't booked our accommodation yet. Can we work together on\nfinding a place that suits everyone's budget? Alternatively, would it be helpful if one person took\ncare of booking? Let's find a solution so we can all have an amazing weekend.\"",
+    "4": "**Recommendation:** Confront the friend in a calm and non-accusatory manner.\n\n**Reasoning:**\n\n1. **Transparency is key**: If the friend is aware that they are not doing their part, it's\nessential to address the issue before it creates tension or stress for others.\n2. **Group cohesion matters**: Avoidance of conflict can lead to underlying resentment and damage\ngroup dynamics in the long run.\n3. **Fairness and expectations**: Each member expects a certain level of responsibility from one\nanother. Addressing this issue upfront shows that you value teamwork and accountability.\n\n**How to do it:**\n\n* Schedule a casual conversation when you're all together or over the phone.\n* Start with a positive tone and express your enthusiasm for the trip.\n* Explain how their lack of responsibility is affecting the group and yourself directly (e.g., \"I've\nnoticed that booking accommodations hasn't happened yet, which worries me because we need to\nfinalize plans soon\").\n* Use non-judgmental language: focus on the specific behavior rather than attacking the friend as a\nperson. For example, say \"we seem to be falling behind with this step\" instead of \"you never do your\npart.\"\n* Encourage them to take ownership of the situation and offer support (e.g., \"Can we work together\non finding and booking an accommodation that suits everyone?\").\n* Set a deadline for addressing the issue or completing tasks.\n\n**Potential responses:**\n\n* The friend might apologize and commit to taking care of it immediately.\n* They may not be aware of their lack of responsibility, and this conversation will give them a\nchance to rectify the situation.\n* In rare cases, they might become defensive. Approach this with empathy, active listening, and a\nclear reiteration of your shared goals.\n\nBy addressing the issue early on in a constructive way, you can resolve potential problems before\nthey escalate into larger conflicts and maintain healthy group dynamics for the trip and future\nget-togethers.",
+    "5": "**Recommendation:** Have an open and non-accusatory conversation with the friend in question.\n\n**Why:**\n\n1.  **Avoids Confrontation**: Approaching the matter tactfully can help prevent unnecessary\nconflict, which could sour the whole weekend.\n2.  **Encourages Ownership**: By expressing concerns through a direct conversation, you might be\nable to help your friend understand the importance of following up on their responsibilities and\nencourage them to take ownership of booking the accommodation.\n3.  **Promotes Problem-Solving Together**: If the group collectively approaches this issue, it can\nfoster collaboration and teamwork in addressing the problem together.\n4.  **Prevents Resentment**: If the situation is resolved without creating tension or hurt feelings,\neveryone can relax knowing that everything will be handled.\n\n**How to have this conversation:**\n\n*   Approach your friend privately rather than confronting them publicly.\n*   Express your concern about the accommodation and how it might affect the group's plans.\n*   Focus on finding a solution together by brainstorming ideas for resolving the booking issue,\nsuch as assigning tasks or looking into alternative options.\n*   Emphasize that your goal is to ensure everyone has a great weekend.\n\nBy having an open conversation, you'll be more likely to resolve the problem amicably and maintain a\npositive atmosphere within the group."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

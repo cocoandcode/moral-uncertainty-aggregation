@@ -1,0 +1,364 @@
+{
+  "slug": "ending_a_relationship_if_that_person_cannot_be_loyal_to_you",
+  "dilemma": "You've been in a relationship with your partner for five years, and you've recently discovered they've been unfaithful. Despite their unfaithfulness, they've been a huge support system for you and have helped you through some tough times. Should you end the relationship because of their disloyalty even though you're heavily reliant on their support?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "End the relationship",
+  "not_to_do_action": "Continue the relationship",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9719166280090417,
+      "maximin": -1.2363314859195875,
+      "nash": 4.266340799739623,
+      "baseline": -0.950093021099074,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7766961186265078,
+      "maximin": -0.950093021099074,
+      "nash": 5.782611142090728,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.6720706286205443,
+      "maximin": -1.2494352801897008,
+      "nash": 5.509376420887608,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.6832724933931809,
+      "maximin": -1.2494352801897008,
+      "nash": 5.090779986213477,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 7,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7696808833118113,
+      "maximin": -1.2494352801897008,
+      "nash": 4.984349483126186,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.46429023086418986,
+      "maximin": -1.2363314859195875,
+      "nash": 9.265629765215458,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.3777461410046863,
+      "maximin": -1.6267725046846555,
+      "nash": 1.7998625248901543,
+      "baseline": -1.3853414989546882,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.6720706286205443,
+      "maximin": -1.2494352801897008,
+      "nash": 5.509376420887608,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7808827480844479,
+      "maximin": -1.2494352801897008,
+      "nash": 4.6603650455388665,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.4656482544653738,
+      "maximin": -1.2494352801897008,
+      "nash": 6.900058493219093,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 4,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.588355144617797,
+      "maximin": -1.8205899768103024,
+      "nash": 0.8968876711879289,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0807287474729452,
+      "maximin": -1.3853414989546882,
+      "nash": 3.4383611567341523,
+      "baseline": -1.3853414989546882,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2801358863134193,
+      "maximin": -1.3853414989546882,
+      "nash": 2.233281081838068,
+      "baseline": -1.3853414989546882,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.6720706286205443,
+      "maximin": -1.2494352801897008,
+      "nash": 5.509376420887608,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8743063733177747,
+      "maximin": -0.950093021099074,
+      "nash": 5.0435700156270595,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.0737135121582488,
+      "maximin": -1.2494352801897008,
+      "nash": 3.2758948194738844,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 6,
+      "value": -0.46429023086418986,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.950093021099074,
+      "tied_ids": [
+        2,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 6,
+      "value": 9.265629765215458,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 10,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "What a difficult and complex situation! While there's no one-size-fits-all answer, I'll provide a\nbalanced perspective to help you weigh your options.\n\n**Recommendation:** Consider ending the relationship due to their disloyalty, but proceed with\ncaution and reflection.\n\n**Reasoning:**\n\n1. **Loyalty matters**: Infidelity is a serious breach of trust that can irreparably damage the\nfoundation of any relationship. While your partner has been supportive, it's essential to\nacknowledge that loyalty is an essential component of a healthy partnership.\n2. **You deserve respect and integrity**: Your feelings, boundaries, and decisions should be\nrespected by your partner. Infidelity implies a lack of commitment and a willingness to disregard\nyour emotions and needs.\n3. **The impact on you:** Even if your partner has been a supportive companion during tough times,\ntheir infidelity can erode the trust and intimacy in your relationship. This can lead to feelings of\nanxiety, insecurity, and sadness, making it challenging for both partners to move forward.\n4. **Your reliance is not justification**: While it's true that you've benefited from their support,\nthis doesn't justify or excuse their infidelity. Your partner's actions are separate from the\nemotional support they provided, which can be replicated by others (e.g., friends, family members).\n5. **Communication and reflection:** Before making any decisions, engage in open and honest\ndiscussions with your partner about what happened, how it affected you, and whether there's a\nwillingness to rebuild trust and work together on improving communication.\n6. **Weigh the consequences**: If you decide to stay in the relationship after their infidelity, ask\nyourself:\n\t* Will I always feel like I'm walking on eggshells, worried that they'll betray me again?\n\t* Am I willing to forgive and rebuild trust, only to risk getting hurt all over again?\n\t* Is there a chance for growth, renewal, or genuine change in our relationship?\n\n**Considerations:**\n\n1. **Your partner's remorse and willingness to change**: If your partner is genuinely sorry,\ncommitted to rebuilding trust, and willing to address the issues that led to infidelity, it may be\nworth exploring whether you can move forward together.\n2. **Personal growth and healing**: Take time for self-reflection, prioritize your emotional\nwell-being, and focus on personal growth.\n\nUltimately, the decision of whether or not to end the relationship is yours alone. While loyalty is\ncrucial in any partnership, weigh the pros and cons carefully, considering both your own needs and\nyour partner's commitment to change and repair.\n\n**Final thought:**\n\nEven if you choose to stay with your partner, keep a keen eye on whether the efforts they make are\ngenuine or surface-level gestures. If trust issues persist or worsen, it may be more detrimental to\nyour emotional well-being to proceed. Your relationship is worth prioritizing your happiness,\nsafety, and respect.",
+    "6": "This is a difficult and nuanced decision. While betrayal can be incredibly painful, I would caution\nagainst ending the relationship solely due to loyalty issues, especially when there's a deeper\nconnection and emotional reliance involved. Here's why:\n\n1. **Support system**: Your partner has indeed been a significant source of support during\nchallenging times. This suggests that the relationship offers something more valuable than just\nloyalty; it provides emotional stability, companionship, and a sense of security.\n2. **Long-term commitment**: Five years is a considerable amount of time to have invested in this\nrelationship. Ending it now may feel like abandoning what's been built together, rather than\nconfronting and potentially working through the issue.\n3. **Guilt and anger management**: While it's essential to acknowledge your feelings about being\nbetrayed, constant guilt and anger can be overwhelming. Maintaining a relationship where you\nconstantly replay past betrayals might hinder personal growth and healing.\n4. **Potential for growth and improvement**: With open communication, counseling, or individual\nwork, your partner may be willing (and committed) to rebuilding trust and addressing underlying\nissues that led to infidelity.\n\nThat being said, it's also crucial to acknowledge the severity of betrayal and its impact on you.\n**Don't feel pressured to stay** if:\n\n* You've tried discussing and working through the issue with no progress.\n* Trust has been severely eroded, leaving you feeling consistently anxious or insecure about the\nrelationship.\n* Your self-worth is closely tied to the idea that being in a monogamous relationship guarantees\nemotional security.\n\nRecommendation:\nIf possible, try an **honest and open conversation** with your partner about their infidelity. This\ncan help both parties understand each other's perspectives, feelings, and expectations for the\nfuture. Approach this discussion calmly and openly, without assuming you'll work through it\ntogether.\n\nConsider a temporary separation or 'time-out' to recharge, reflect on the relationship's value to\nyou, and evaluate whether working through the issues feels sustainable or if you're simply trying to\nsalvage what's already been compromised.\n\nUltimately, **trust your instincts**. If staying in the relationship causes more pain than growth,\nit might be best to consider moving forward with a different kind of connection, one where both\npartners can work together towards a healthier, more trusting partnership.\n\nPrioritize self-care and support:\nSeeking counseling or therapy may help you navigate these complex emotions and determine what's\ntruly best for you.\n\nA gentle reminder: Your well-being is just as important (if not more so) than any external\nexpectation of loyalty or monogamy.",
+    "10": "I must emphasize that infidelity is a serious breach of trust in any relationship, but it's not\nuncommon for people to weigh the importance of the benefits they receive from a partner against the\ndamage caused by their disloyalty. In this scenario, I would recommend ending the relationship, and\nhere's why:\n\nWhile your partner has been a support system for you during tough times, that loyalty and care\nshould be reciprocated in equal measure. Their infidelity undermines the foundation of trust on\nwhich any healthy relationship is built. Trust is not just about actions; it's also about the\nfeelings and emotions involved. When one person cheats, they create a sense of betrayal and hurt for\ntheir partner.\n\nAlthough you've been together for five years and have shared memories and experiences, their\ninfidelity has set in motion a chain reaction of questions and uncertainties: What else were they\nhiding? Have they compromised your emotional well-being or safety?\n\nWeigh the benefits of staying against the consequences. How will continuing the relationship affect\nyou emotionally? Are there too many risks to continue a partnership built on deception? Consider\nwhether maintaining the status quo is more about holding onto a familiar comfort and avoiding future\nuncertainty.\n\nIt's crucial not only to acknowledge the trust broken but also the long-term implications for your\nemotional and psychological well-being. You deserve an honest, caring partner who respects you\nenough not to engage in infidelity.\n\nIt may be heartbreaking to consider ending a relationship with someone you've known for five years,\nespecially if they've been a support system through difficult times. Nevertheless, honesty is\nfundamental to a healthy partnership, so ultimately, it might be more fulfilling for you to\nprioritize your own emotional security and search for someone with whom you can build trust anew.\n\nIn conclusion, I recommend ending the relationship due to the partner's infidelity. Prioritize\nself-preservation, emotional well-being, and re-evaluate what qualities are non-negotiable in a\npartnership moving forward."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

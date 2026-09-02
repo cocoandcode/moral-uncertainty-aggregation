@@ -1,0 +1,386 @@
+{
+  "slug": "taking_your_cue_to_do_something_so_things_don_t_get_awkward",
+  "dilemma": "You are at a social gathering and witness a friend telling an offensive joke. You see that the joke is making others uncomfortable, but your friend is oblivious. Should you interject and risk embarrassing your friend to maintain a comfortable atmosphere?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Interjecting",
+  "not_to_do_action": "Not Interjecting",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3627412665619702,
+      "maximin": -0.8462304100366628,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0285315417717134,
+      "maximin": 0.7158909122115753,
+      "nash": 49.42639776891317,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8983547649176934,
+      "maximin": 0.3253605816495158,
+      "nash": 43.934575794589485,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.7504895627126643,
+      "maximin": 0.7158909122115753,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8983547649176934,
+      "maximin": 0.3253605816495158,
+      "nash": 43.934575794589485,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.6203127858586445,
+      "maximin": 0.3253605816495158,
+      "nash": 34.71373889942873,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0285315417717134,
+      "maximin": 0.7158909122115753,
+      "nash": 49.42639776891317,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0285315417717134,
+      "maximin": 0.7158909122115753,
+      "nash": 49.42639776891317,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0285315417717134,
+      "maximin": 0.7158909122115753,
+      "nash": 49.42639776891317,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7532715971240297,
+      "maximin": 0.3253605816495158,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0285315417717134,
+      "maximin": 0.7158909122115753,
+      "nash": 49.42639776891317,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.6230948202700098,
+      "maximin": -0.06516974891254372,
+      "nash": 34.17133672912515,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8983547649176934,
+      "maximin": 0.3253605816495158,
+      "nash": 43.934575794589485,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7532715971240297,
+      "maximin": 0.3253605816495158,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7532715971240297,
+      "maximin": 0.3253605816495158,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0285315417717134,
+      "maximin": 0.7158909122115753,
+      "nash": 49.42639776891317,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 1.0285315417717134,
+      "tied_ids": [
+        2,
+        7,
+        8,
+        9,
+        11,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": 0.7158909122115753,
+      "tied_ids": [
+        2,
+        4,
+        7,
+        8,
+        9,
+        11,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 49.42639776891317,
+      "tied_ids": [
+        2,
+        7,
+        8,
+        9,
+        11,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 1.225825820084639,
+      "tied_ids": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        11,
+        13,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "I would recommend speaking up and addressing the situation with care and tact. Here's why:\n\n1. **Respect for others**: By not intervening, I would be prioritizing my friend's comfort over that\nof others who may be uncomfortable or even offended by the joke. It's essential to create a\nwelcoming atmosphere where everyone feels valued.\n2. **Oblivious doesn't equal invincible**: Just because your friend is unaware of the joke's impact\ndoesn't mean they won't understand if explained gently and respectfully. Many people are genuinely\nsurprised when they learn about their words or actions offending others, and can use this as an\nopportunity to grow.\n3. **Discomfort compounds over time**: If someone feels consistently uncomfortable in a social\nsetting due to repeated instances of insensitive behavior (like telling racist or misogynistic\njokes), it can lead to feelings of isolation and resentment. By speaking up early, we can help\ncreate a more inclusive environment from the start.\n4. **It's a teachable moment**: Your friend is likely unaware of the joke's harm because they\nhaven't learned about the issue, not necessarily because they're insensitive. By addressing it in\nthe moment, you can provide an educational opportunity for them to learn and grow.\n\nWhen intervening, consider:\n\n1. **Choose the right tone**: Approach your friend privately or gently, without embarrassing or\nhumiliating them in front of others.\n2. **Be specific and respectful**: Explain why the joke was uncomfortable, focusing on its impact\nrather than making a personal attack.\n3. **Listen to their perspective**: After you speak up, give your friend a chance to share their\nintention behind telling the joke, which can help you both understand each other better.\n\nExample script:\n\"Hey [Friend's Name], I want to talk to you about that last joke. I understand it might have been\nfunny in a different context, but for some of us here, it made us uncomfortable. Can we discuss how\njokes like this can affect others? We're all friends, and I value our relationships.\"\n\nBy speaking up with care and tact, you can help maintain a comfortable atmosphere while also\nteaching your friend an important lesson about the importance of being considerate of others'\nfeelings."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

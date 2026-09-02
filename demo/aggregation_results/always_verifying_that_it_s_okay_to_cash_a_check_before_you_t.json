@@ -1,0 +1,384 @@
+{
+  "slug": "always_verifying_that_it_s_okay_to_cash_a_check_before_you_t",
+  "dilemma": "You are a bank teller responsible for cashing checks. A regular customer comes in with a check that you suspect might be fraudulent, but they insist it's legitimate and they need the cash immediately. Do you respect the customer's urgency and cash the check or follow protocol and verify the check first?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Cash the check without verifying",
+  "not_to_do_action": "Verify the check first",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.21865431765112336,
+      "maximin": -0.8505042759618531,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.21865431765112336,
+      "maximin": -0.8505042759618531,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.0715120179362041,
+      "maximin": -0.8505042759618531,
+      "nash": 14.644858598196494,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.21865431765112336,
+      "maximin": -0.8505042759618531,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.20447082920158932,
+      "maximin": -1.2493807097580087,
+      "nash": 10.983643948647371,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.21865431765112336,
+      "maximin": -0.8505042759618531,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.3488310945051432,
+      "maximin": -0.8505042759618531,
+      "nash": 21.696086812142955,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.0715120179362041,
+      "maximin": -0.8505042759618531,
+      "nash": 14.644858598196494,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.21865431765112336,
+      "maximin": -0.8505042759618531,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.21865431765112336,
+      "maximin": -0.8505042759618531,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.20447082920158932,
+      "maximin": -1.2493807097580087,
+      "nash": 10.983643948647371,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.20447082920158932,
+      "maximin": -1.2493807097580087,
+      "nash": 10.983643948647371,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.20168879479022392,
+      "maximin": -0.8505042759618531,
+      "nash": 13.017652087285775,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.21865431765112336,
+      "maximin": -0.8505042759618531,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.21865431765112336,
+      "maximin": -0.8505042759618531,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.21865431765112336,
+      "maximin": -0.8505042759618531,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 7,
+      "value": 0.3488310945051432,
+      "tied_ids": [
+        7
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.8505042759618531,
+      "tied_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 7,
+      "value": 21.696086812142955,
+      "tied_ids": [
+        7
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "As a bank teller, my primary responsibility is to protect the bank from potential losses due to\nfraudulent activities while also providing excellent customer service. In this scenario, I would\nrecommend **following protocol and verifying the check first**.\n\nHere's why:\n\n1. **Protection of the bank**: By following procedure, we minimize the risk of cashing a counterfeit\nor stolen check, which could result in significant financial losses for the bank.\n2. **Prevention of potential harm to the customer**: If the check is indeed fraudulent, cashing it\nwithout verifying its authenticity could put the customer's account at risk, as well as potentially\nlead to identity theft or other malicious activities.\n3. **Adherence to regulatory requirements**: Our bank has strict policies and procedures in place\nfor handling checks, including verification requirements to ensure compliance with anti-money\nlaundering (AML) and Bank Secrecy Act (BSA) regulations.\n\nWhile respecting the customer's urgency is essential, I would explain to them that we must follow\nthe proper procedure to verify the check before cashing it. This may involve:\n\n* Checking if the check has been registered as lost or stolen\n* Verifying the check against our bank's internal systems and external databases (e.g., ChexSystems)\n* Confirming the customer's account information to ensure they have sufficient funds to cover the\ndeposit\n\nIf additional time is needed for verification, I would politely explain the situation and offer\nalternatives, such as:\n\n* Using a different payment method (e.g., transfer from an ATM or mobile device)\n* Providing more detailed documentation or proof of authenticity\n* Holding the check at our location while it is further reviewed internally\n\nUltimately, prioritizing caution and following protocol in this scenario will help us protect both\nthe bank and our customers, even if it means temporarily inconveniencing them.",
+    "7": "**Recommendation: Follow protocol and do not cash the check until it is verified**\n\nAs a bank teller, my primary responsibility is to ensure the security of our customers' accounts and\nprevent potential losses due to fraudulent activities. In this situation, I would advise against\nrespecting the customer's urgency and immediately cashing the check without verifying its\nauthenticity.\n\nHere are some reasons why:\n\n1. **Risk of loss**: If the check turns out to be a scam, cashing it could result in significant\nlosses for our bank and potentially put other customers at risk.\n2. **Protection of customers**: Verifying checks helps prevent unauthorized transactions on our\ncustomers' accounts and protects them from financial harm.\n3. **Compliance with regulations**: As a bank, we have regulatory requirements to follow when\nhandling checks. Failing to verify the authenticity of a check could lead to non-compliance issues.\n4. **Potential for customer misrepresentation**: Customers may unintentionally or intentionally\npresent false information or provide misleading details about the check's origin and validity.\n\nTo balance the customer's urgent needs with our responsibility to protect their accounts, I would\nsuggest:\n\n1. Politely inform the customer that we need some time to verify the check's authenticity.\n2. Explain our standard procedure for verifying checks and reassure them that this is a routine\nprocess to ensure their account's security.\n3. Offer an alternative solution, such as providing a temporary loan or exploring other financial\noptions that do not involve cashing the suspect check.\n\nUltimately, following protocol and verifying the check's authenticity is essential to maintaining\ncustomer trust and protecting our bank from potential losses. While this may cause some\ninconvenience for the customer in the short term, it ensures their long-term security and\nwell-being."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

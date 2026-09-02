@@ -1,0 +1,389 @@
+{
+  "slug": "admitting_to_someone_that_you_can_t_afford_something",
+  "dilemma": "You are a single parent struggling financially and your child's birthday is coming up. Your child has been mentioning a specific toy they want, but it is out of your budget. Do you tell your child honestly that you can't afford the toy or do you buy it anyway, potentially putting yourself into debt?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Buy the toy",
+  "not_to_do_action": "Don't buy the toy",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": 0.4817899057705285,
+      "maximin": -0.4516278421656973,
+      "nash": 27.120108515178696,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.7477075283012989,
+      "maximin": 0.3461250254266141,
+      "nash": 37.96815192125017,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.7355831717730204,
+      "maximin": 0.3553268133226566,
+      "nash": 37.968151921250175,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.6147487170359137,
+      "maximin": -0.052751408369541584,
+      "nash": 32.544130218214434,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 1.0136251508320693,
+      "tied_ids": [
+        5,
+        6,
+        8,
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 5,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        5,
+        6,
+        8,
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 5,
+      "value": 48.81619532732165,
+      "tied_ids": [
+        5,
+        6,
+        8,
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "What a heart-wrenching dilemma! As a single parent struggling financially, it's tempting to try to\nmake my child happy by getting them what they want. However, I believe it's essential to prioritize\nhonesty and responsible financial decision-making. Here's why:\n\n**Recommendation:** Be honest with your child and explain that the toy is out of our budget.\n\n**Reasoning:**\n\n1. **Long-term benefits:** While it might be tempting to splurge on a birthday gift for my child,\ndoing so would likely put me into debt or force us to sacrifice other essential expenses. By being\nhonest about our financial situation, I can help my child understand that sometimes we have to\nprioritize what's necessary over what's nice-to-have.\n2. **Financial literacy:** As a parent, it's crucial to teach my child about responsible spending\nand the value of money. By explaining why we can't afford the toy, I'm modeling good financial\nhabits for them to follow as they grow older.\n3. **Avoiding disappointment later on:** If I bought the toy and then struggled to pay our bills or\nprovide basic necessities, it could lead to disappointment and frustration down the line. It's\nbetter to be upfront about our budget constraints now rather than risking more significant problems\nin the future.\n4. **Encouraging alternative options:** By explaining that the toy is out of our budget, I can ask\nmy child to help brainstorm other gift ideas that fit within our means. This not only teaches them\ncreative thinking but also fosters a sense of ownership and responsibility for our family's\nfinances.\n\n**What can we do instead?**\n\n* Look into more affordable alternatives or DIY options (e.g., making a craft similar to the desired\ntoy).\n* Consider gifting experiences, like taking my child to their favorite park or outing, which are\noften free or low-cost.\n* Ask friends and family if they'd be willing to contribute to a joint birthday gift or help with\ncelebrations.\n\nRemember, as a parent, it's not about always saying yes to your child's wants; it's about modeling\nresponsible behavior, prioritizing our financial stability, and teaching valuable life skills.",
+    "5": "What a difficult decision to make! As a single parent struggling financially, I would recommend\nbeing honest with my child about not being able to afford the toy. Here's why:\n\n1. **Honesty builds trust**: By explaining the financial situation in a way that's easy for my child\nto understand, I'm teaching them about the importance of budgeting and the value of money. This\nhelps build trust between us, as they learn to respect our family's financial limitations.\n2. **Avoids false promises**: If I promise the toy only to have to disappoint my child later, it can\ndamage their trust in me. By being upfront from the start, we avoid creating unrealistic\nexpectations and prevent potential heartache when they eventually find out the truth.\n3. **Teaches financial literacy**: By talking about our budget and why we can't afford the toy, I'm\ngiving my child a practical lesson in money management. This can help them understand that sometimes\nyou have to make sacrifices to prioritize what's most important.\n4. **Focuses on the celebration**: Instead of focusing on the specific toy, we can plan other fun\nactivities or games for their birthday that are more affordable. This way, they still feel special\nand loved without breaking the bank.\n\nHowever, I also want to ensure my child doesn't feel sad or disappointed on their birthday. To\nmitigate this, I would:\n\n1. **Make a small gift**: Even if we can't afford the specific toy, we can choose something smaller\nor a more affordable alternative that still shows we care.\n2. **Create special memories**: We'll focus on other fun activities and games to celebrate their\nbirthday, making it a special day despite not having the exact toy they wanted.\n3. **Set goals for saving**: If my child is interested in the specific toy, I can encourage them to\nstart saving their allowance or help us set aside money each month until we reach our goal.\n\nIn conclusion, being honest with my child about our financial limitations is crucial for building\ntrust and teaching them valuable life lessons about budgeting and responsibility. By doing so, we'll\nensure a happy birthday celebration that doesn't come at the cost of financial stability."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

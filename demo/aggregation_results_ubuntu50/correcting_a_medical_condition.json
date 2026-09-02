@@ -1,0 +1,385 @@
+{
+  "slug": "correcting_a_medical_condition",
+  "dilemma": "A patient has been diagnosed with a terminal illness and has the option to undergo a risky procedure to potentially save their life. However, the patient is elderly and the procedure could significantly reduce their quality of life in their remaining years. Should the patient undergo the risky procedure for a chance at survival or refuse it to maintain their current quality of life?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Undergo the risky procedure",
+  "not_to_do_action": "Refuse the procedure",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5814756092439738,
+      "maximin": -0.950093021099074,
+      "nash": 7.175101369503431,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.685965399309064,
+      "maximin": -1.8205899768103024,
+      "nash": 0.7228263927613411,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9831184927816783,
+      "maximin": -1.3853414989546882,
+      "nash": 4.064751515879722,
+      "baseline": -1.3853414989546882,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.7837113539412042,
+      "maximin": -1.3853414989546882,
+      "nash": 5.680662938220235,
+      "baseline": -1.3853414989546882,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4838653545527068,
+      "maximin": -0.950093021099074,
+      "nash": 7.837768521134692,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.1868479610209657,
+      "maximin": -0.950093021099074,
+      "nash": 11.85429062560307,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.2844582157122327,
+      "maximin": -0.950093021099074,
+      "nash": 10.953614503228232,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5814756092439738,
+      "maximin": -0.950093021099074,
+      "nash": 7.175101369503431,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.11435606196871556,
+      "maximin": -0.950093021099074,
+      "nash": 18.14468804803628,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.37788184094555954,
+      "maximin": -0.950093021099074,
+      "nash": 10.62333500929122,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6902877287078774,
+      "maximin": -1.3853414989546882,
+      "nash": 5.782611142090728,
+      "baseline": -1.3853414989546882,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.3862550998614398,
+      "maximin": -0.950093021099074,
+      "nash": 8.482239892443832,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4838653545527068,
+      "maximin": -0.950093021099074,
+      "nash": 7.837768521134692,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.3862550998614398,
+      "maximin": -0.950093021099074,
+      "nash": 8.482239892443832,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4838653545527068,
+      "maximin": -0.950093021099074,
+      "nash": 7.837768521134692,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.08505107687175854,
+      "maximin": -0.950093021099074,
+      "nash": 14.398900199121233,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 9,
+      "value": 0.11435606196871556,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.950093021099074,
+      "tied_ids": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 9,
+      "value": 18.14468804803628,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": -0.950093021099074,
+      "tied_ids": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "This is a complex and deeply personal decision that requires careful consideration. However, as a\nneutral and informed party, I will provide a nuanced recommendation while acknowledging that this\nchoice ultimately depends on the individual's values, priorities, and circumstances.\n\n**Recommendation:** The patient should not automatically choose to undergo the risky procedure\nwithout thoroughly weighing their options and considering their current quality of life. Instead,\nthey should have an open and honest conversation with their healthcare team about the potential\nbenefits and risks of the procedure, as well as their personal preferences and priorities for the\nremainder of their life.\n\n**Reasoning:**\n\n1.  **Respect individual autonomy:** It is essential to respect the patient's right to make informed\ndecisions about their own health and treatment.\n2.  **Evaluate the quality-of-life metrics:** The patient's current quality of life should be taken\ninto account, as well as how they envision their remaining time in this world would look if\nundergoing the risky procedure. This may involve a discussion about activities they want to pursue,\nrelationships with loved ones, and personal goals for the remainder of their life.\n3.  **Assess the likelihood of success:** The patient should understand the statistical probability\nof the procedure's success and whether it would improve their quality of life in a meaningful way.\n4.  **Consider the potential long-term consequences:** Even if the procedure succeeds initially, the\npatient should consider the potential long-term effects on their physical health, cognitive\nfunction, and emotional well-being.\n5.  **Prioritize comfort and dignity:** In the context of a terminal illness, maintaining comfort\nand dignity in one's final months or years is essential to many individuals.\n\nUltimately, the decision is personal and subjective. The patient should not feel pressured into\nmaking a choice that compromises their values, priorities, or preferences. Instead, they should\nengage with their healthcare team in an open and collaborative manner to make the best possible\ndecision for themselves.",
+    "9": "This is a complex and sensitive issue that requires careful consideration of various factors. After\nweighing the pros and cons, I recommend that the patient refuse the risky procedure. Here's my\nreasoning:\n\n**Quality of Life vs. Chances of Survival**: In this scenario, the patient is elderly, which implies\nthey have already lived through a significant portion of their life. Although survival is a\nfundamental human desire, it's essential to consider the quality of life that comes with prolonged\nsurvival in an advanced age. The risk of the procedure and its potential consequences on the\npatient's health, dignity, and well-being should be carefully weighed against any remaining years of\nlife.\n\n**Palliative Care and Symptom Management**: In many cases, patients diagnosed with terminal\nillnesses require palliative care to manage their symptoms and improve their quality of life.\nInvesting time and resources into a risky procedure may divert attention from more effective ways to\nsupport the patient's end-of-life needs.\n\n**Respect for Autonomy**: As an elderly person nearing the end of their life, the patient should be\ngiven utmost respect for their autonomy in making decisions about their own healthcare. The decision\nis ultimately theirs, and it's essential not to pressure them into undergoing a procedure that could\nsignificantly impact their remaining years.\n\n**Alternative Considerations**: Before making a final decision, several factors should be explored:\n\n1.  **Palliative Care Options**: What alternatives are available to manage the patient's symptoms\nand improve their quality of life?\n2.  **Risks vs. Benefits**: How likely is the procedure to succeed, and what are the potential\ncomplications and side effects?\n3.  **Emotional and Psychological Implications**: How might the decision affect the patient's\nemotional and psychological well-being?\n4.  **Caregiver Support**: Are there caregivers or loved ones who could support the patient in\nmaking this difficult decision?\n\nIn conclusion, given the risks involved, the focus on quality of life, and respect for autonomy, I\nrecommend that the patient refuse the risky procedure. However, it's crucial to involve their\nhealthcare team, loved ones, and palliative care experts in this decision-making process to ensure a\ncomprehensive understanding of all available options.\n\nThis is a difficult conversation, but ultimately, the goal should be to prioritize the patient's\ncomfort, dignity, and quality of life."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

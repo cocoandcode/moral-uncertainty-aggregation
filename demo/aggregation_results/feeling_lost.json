@@ -1,0 +1,387 @@
+{
+  "slug": "feeling_lost",
+  "dilemma": "After a series of unfortunate events, John found himself homeless and without any form of income. He stumbled upon a wallet full of cash on the street, which could greatly aid him in his current predicament. Should he keep the money to help himself survive or try to return it to its rightful owner?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Keeping the Money",
+  "not_to_do_action": "Returning the Money",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.2408438987864248,
+      "maximin": -1.385671200201308,
+      "nash": 10.983643948647371,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.022291689332980286,
+      "maximin": -1.385671200201308,
+      "nash": 14.238056970468815,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 1.1064212427736348,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.11066712193240494,
+      "maximin": -1.385671200201308,
+      "nash": 12.204048831830413,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.30033366839202924,
+      "maximin": -0.950421696820317,
+      "nash": 21.696086812142955,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.034416045861258765,
+      "maximin": -0.950421696820317,
+      "nash": 16.272065109107217,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.30033366839202924,
+      "maximin": -0.950421696820317,
+      "nash": 21.696086812142955,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.28820931186375076,
+      "maximin": -1.385671200201308,
+      "nash": 18.30607324774562,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.30033366839202924,
+      "maximin": -0.950421696820317,
+      "nash": 21.696086812142955,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.30033366839202924,
+      "maximin": -0.950421696820317,
+      "nash": 21.696086812142955,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 1.1064212427736348,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.11066712193240494,
+      "maximin": -1.385671200201308,
+      "nash": 12.204048831830413,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.034416045861258765,
+      "maximin": -0.950421696820317,
+      "nash": 16.272065109107217,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.1701568915380094,
+      "maximin": -0.950421696820317,
+      "nash": 19.52647813092866,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.30033366839202924,
+      "maximin": -0.950421696820317,
+      "nash": 21.696086812142955,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 0.43329247965741446,
+      "tied_ids": [
+        5,
+        7,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 4,
+      "value": -0.950421696820317,
+      "tied_ids": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 5,
+      "value": 24.408097663660826,
+      "tied_ids": [
+        5,
+        7,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 4,
+      "value": -0.950421696820317,
+      "tied_ids": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "4": "I would recommend that John tries to return the money to its rightful owner. Here's why:\n\n**Moral Obligation**: Keeping someone else's money without their consent is considered dishonest and\nmorally questionable, even if one's circumstances are difficult. Returning the money would uphold a\nsense of personal integrity and moral fiber.\n\n**Short-Term vs Long-Term Consequences**: While keeping the money might provide temporary relief\nfrom financial struggles, it could also lead to negative consequences in the long run. If\ndiscovered, John may face guilt, shame, or even legal repercussions. In contrast, returning the\nwallet might lead to a different outcome:\n\n1. **The owner might be sympathetic** and help John in some way.\n2. **John's actions will be guided by a sense of responsibility**, setting an example for others and\nbuilding trust with his community.\n3. **Returning the money maintains a clear conscience**, allowing John to sleep better at night.\n\n**Empathy and Human Connection**: In many situations, people are facing financial struggles due to\ncircumstances beyond their control (e.g., job loss, medical emergencies). Returning the wallet might\ninspire similar kindness in others towards John if he finds himself struggling again.\n\n**Alternative Solutions for Immediate Help**: John can consider alternative solutions while trying\nto locate the owner. These options include:\n\n1. **Local shelters or food banks**, which often provide temporary assistance and connect people\nwith resources.\n2. **Government agencies** that offer assistance programs, job training, and employment\nopportunities.\n3. **Neighborhood resources**, such as community centers or churches that might offer financial aid\nor counseling.\n\nIn conclusion, while the temptation to use the money may be strong, I recommend that John returns it\nto its rightful owner. This choice will help him maintain a clear conscience, possibly earn goodwill\nfrom others, and lead by example in upholding integrity and honesty.",
+    "5": "I'd recommend that John tries to return the money to its rightful owner. Here's why:\n\n1. **Integrity and moral principles**: Keeping the wallet without trying to find the owner would\nmean taking something that doesn't belong to him, which goes against basic moral principles of\nhonesty and fairness.\n2. **Potential consequences**: If John is caught with the money, he might face serious\nrepercussions, including legal charges or even imprisonment. These consequences could further\nexacerbate his current situation, leaving him in an even more vulnerable position.\n3. **Short-term vs. long-term benefits**: While keeping the wallet would provide short-term relief\nfrom his financial struggles, trying to return it has the potential for both short-term and\nlong-term benefits:\n        * If he returns the wallet, its owner might be grateful and help John get back on his feet\nby offering support, a place to stay, or assistance with finding employment.\n        * Additionally, returning the wallet shows that John is taking responsibility for his\nactions and can be trusted, which could have positive consequences in the long run.\n4. **Doing what's right**: In difficult situations like this one, trying to do the right thing is\noften a better investment of time and effort than worrying about immediate benefits or rewards. By\nchoosing to return the wallet, John demonstrates self-control and integrity, which can ultimately\nlead to personal growth and improved relationships with others.\n5. **Avoiding guilt or shame**: If John keeps the wallet without returning it, he may face guilt or\nfeelings of shame in the future, potentially making his current situation more difficult to cope\nwith.\n\nIn conclusion, while keeping the money might seem like an easy solution to his immediate problems,\ntrying to return the wallet is a better choice from both moral and practical perspectives. It\nrequires effort but offers potential long-term benefits, allows John to maintain his integrity, and\navoids the risk of future guilt or repercussions."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

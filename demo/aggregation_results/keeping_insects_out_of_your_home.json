@@ -1,0 +1,371 @@
+{
+  "slug": "keeping_insects_out_of_your_home",
+  "dilemma": "You live in an area that is home to many endangered species of insects that are crucial to the local ecosystem. You've noticed that a few of these insects have started to invade your home, causing discomfort and potential health risks. Should you exterminate these insects to protect your home, or leave them be to preserve the local ecosystem?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Exterminate the insects",
+  "not_to_do_action": "Not exterminate the insects",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 1.2916671298911182,
+      "maximin": 1.1064212427736348,
+      "nash": 61.020244159152064,
+      "baseline": 1.225825820084639,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 1.1614903530370984,
+      "maximin": 0.7158909122115753,
+      "nash": 54.91821974323686,
+      "baseline": 1.225825820084639,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.1587083186257332,
+      "maximin": 1.1064212427736348,
+      "nash": 54.91821974323686,
+      "baseline": 1.225825820084639,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7383652061843857,
+      "maximin": 0.3553268133226566,
+      "nash": 38.4427538202658,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.1587083186257332,
+      "maximin": 1.1064212427736348,
+      "nash": 54.91821974323686,
+      "baseline": 1.225825820084639,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 1.2916671298911182,
+      "maximin": 1.1064212427736348,
+      "nash": 61.020244159152064,
+      "baseline": 1.225825820084639,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.06979289656327736,
+      "maximin": -0.4557000794746032,
+      "nash": 19.526478130928663,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8834483739780495,
+      "maximin": 0.7158909122115753,
+      "nash": 43.934575794589485,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.593282038390722,
+      "maximin": -0.07992269005833456,
+      "nash": 32.95093184594211,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 1.0164071852434349,
+      "maximin": 0.7158909122115753,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8834483739780495,
+      "maximin": 0.7158909122115753,
+      "nash": 43.934575794589485,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.593282038390722,
+      "maximin": -0.07992269005833456,
+      "nash": 32.95093184594211,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 1.2916671298911182,
+      "tied_ids": [
+        2,
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": 1.1064212427736348,
+      "tied_ids": [
+        2,
+        5,
+        7,
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 61.020244159152064,
+      "tied_ids": [
+        2,
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 1.225825820084639,
+      "tied_ids": [
+        2,
+        4,
+        5,
+        7,
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "As much as it may be inconvenient for me to have unwanted insects in my home, I would recommend\nleaving them be to preserve the local ecosystem. Here's why:\n\n1. **Conservation priority**: As you mentioned, many of these insects are endangered and play a\ncrucial role in maintaining the balance of the ecosystem. In fact, some species might even be\nconsidered keystone species, meaning they have a disproportionate impact on their environment\nrelative to their abundance.\n2. **Nesting behavior**: It's likely that these insects are seeking refuge in my home because their\nnatural habitats are being destroyed or fragmented due to human activities such as deforestation,\nurbanization, and climate change. By leaving them be, I can potentially help support the survival of\nthese species by providing a safe haven for their colonies.\n3. **Short-term discomfort vs. long-term ecosystem benefits**: While having insects in my home may\ncause temporary discomfort, the consequences of exterminating them could have unforeseen effects on\nthe local ecosystem. Without these insects, the food chain might become imbalanced, leading to\ncascading effects throughout the ecosystem.\n4. **Non-lethal control methods**: Instead of using insecticides or other lethal means to control\nthe population, I can explore non-lethal options like sealing entry points, removing food sources,\nand using physical barriers to contain the insects. These methods will not harm the insects but will\nstill allow me to maintain my home.\n5. **Ecosystem awareness and education**: Leaving the insects alone could raise awareness about\ntheir importance in the ecosystem and educate others about the need to protect these species.\n\nIn conclusion, I would choose to leave the endangered insects alone, recognizing that preserving the\nlocal ecosystem is more crucial than maintaining a perfectly bug-free home. This compromise will\nrequire some adjustments on my part but can contribute positively to conserving our natural\nheritage."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 1
+}

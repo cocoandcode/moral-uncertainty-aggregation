@@ -1,0 +1,365 @@
+{
+  "slug": "adding_too_much_liquid_to_a_recipe",
+  "dilemma": "You're a professional chef working in a renowned restaurant. During a rush hour, you accidentally pour too much wine into the sauce for a customer's dish, altering its original taste. Should you serve the dish as it is or remake it, potentially delaying the customer's meal?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Serving the dish as it is",
+  "not_to_do_action": "Remaking the dish",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.48457194018189387,
+      "maximin": -0.052751408369541584,
+      "nash": 29.289717196392992,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": 0.09125957520846895,
+      "maximin": -0.4516278421656973,
+      "nash": 18.984075960625084,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.4620423484982636,
+      "maximin": -0.8505042759618531,
+      "nash": 9.763239065464331,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": 0.35161312891650864,
+      "maximin": -0.4516278421656973,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": 0.07635318426882504,
+      "maximin": -0.4516278421656973,
+      "nash": 18.984075960625088,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": 0.07635318426882504,
+      "maximin": -0.4516278421656973,
+      "nash": 18.984075960625088,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.0715120179362041,
+      "maximin": -0.8505042759618531,
+      "nash": 14.644858598196494,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.06872998352483867,
+      "maximin": -0.4516278421656973,
+      "nash": 16.272065109107217,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.19440560459456638,
+      "maximin": -0.07992269005833456,
+      "nash": 21.967287897294742,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.46032322712533685,
+      "maximin": -0.07992269005833456,
+      "nash": 29.28971719639299,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.19440560459456638,
+      "maximin": -0.07992269005833456,
+      "nash": 21.967287897294742,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.19440560459456638,
+      "maximin": -0.07992269005833456,
+      "nash": 21.967287897294742,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": 0.061446793329181154,
+      "maximin": -0.4516278421656973,
+      "nash": 18.30607324774562,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": 0.061446793329181154,
+      "maximin": -0.4516278421656973,
+      "nash": 18.30607324774562,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.19440560459456638,
+      "maximin": -0.07992269005833456,
+      "nash": 21.967287897294742,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.3273644158599516,
+      "maximin": -0.07992269005833456,
+      "nash": 25.628502546843865,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 1,
+      "value": 0.48457194018189387,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.052751408369541584,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 29.289717196392992,
+      "tied_ids": [
+        1,
+        10
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        1,
+        2,
+        4
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "In this situation, I would strongly recommend remaking the dish instead of serving it as it is.\nHere's why:\n\n1. **Quality assurance**: As a professional chef in a renowned restaurant, my primary responsibility\nis to deliver high-quality dishes that meet our standards. Serving a subpar dish with an altered\ntaste due to the accidental wine overpouring would compromise our reputation and quality promise.\n2. **Customer satisfaction**: The customer has ordered a specific dish expecting a certain flavor\nprofile, which I failed to deliver in this instance. Remaking the dish ensures that they receive the\nintended experience, allowing us to maintain their trust and satisfaction.\n3. **Risk of complaint or return**: Serving the dish as it is could lead to an unfavorable review,\nword-of-mouth complaints, or even the customer requesting a complimentary dish or refund. By\nremaking the dish, we mitigate these potential risks and show our commitment to customer\nsatisfaction.\n4. **Efficiency over perfection**: While remaking the dish will delay the customer's meal slightly,\nit's better than potentially serving a subpar product that might need to be reordered entirely. In\nthis case, efficiency is sacrificed for perfection.\n\nHowever, I would take steps to minimize the disruption:\n\n* Inform my kitchen team of the situation and work quickly to remake the dish.\n* Offer an explanation to the customer if they notice or express concern about the delay.\n* Provide a complimentary drink or side dish as a gesture of goodwill, if possible.\n\nUltimately, prioritizing quality, customer satisfaction, and our restaurant's reputation is crucial\nin this situation. Remaking the dish ensures that we maintain our standards, build trust with our\ncustomers, and deliver an exceptional dining experience."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 1
+}

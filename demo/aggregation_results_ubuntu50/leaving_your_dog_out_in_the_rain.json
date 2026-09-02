@@ -1,0 +1,364 @@
+{
+  "slug": "leaving_your_dog_out_in_the_rain",
+  "dilemma": "You have a large dog that loves playing in the rain. However, your neighbor is complaining that your dog is ruining their garden when it gets wet and muddy. Should you keep your dog indoors to maintain a good relationship with your neighbor, even if it means your dog can't enjoy playing in the rain?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Keeping the dog indoors",
+  "not_to_do_action": "Letting the dog play outside",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.34318216566915927,
+      "maximin": 0.32543258914068407,
+      "nash": 25.27339882001889,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.2550392508522631,
+      "maximin": -0.8506210025087526,
+      "nash": 10.917082132754816,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3361669303544628,
+      "maximin": -0.07959606538784551,
+      "nash": 24.885565762969524,
+      "baseline": -0.07959606538784551,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4726634897800702,
+      "maximin": -0.8506210025087526,
+      "nash": 8.482239892443832,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.663697369704664,
+      "maximin": -1.2363314859195875,
+      "nash": 7.0486033776386146,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5313874397369969,
+      "maximin": -0.07959606538784551,
+      "nash": 30.0473288955451,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.25786785670901935,
+      "maximin": -0.8458904671545197,
+      "nash": 12.558662430833555,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.5744603739292773,
+      "maximin": -1.2494352801897008,
+      "nash": 6.0182030690533725,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.3319803008965227,
+      "maximin": -0.07959606538784551,
+      "nash": 24.593364712621778,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.3319803008965227,
+      "maximin": -0.07959606538784551,
+      "nash": 24.593364712621778,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.44079242036042626,
+      "maximin": 0.3458218305340921,
+      "nash": 27.607561132942685,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.27189832733841224,
+      "maximin": -1.6267725046846555,
+      "nash": 9.725153960380563,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.04861687669709258,
+      "maximin": -0.8506210025087526,
+      "nash": 13.181502906021143,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.03496290736478158,
+      "maximin": -0.07959606538784551,
+      "nash": 17.866248654704542,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.14377502682868515,
+      "maximin": -0.052992447146856116,
+      "nash": 20.055960528978318,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.2550392508522631,
+      "maximin": -0.8506210025087526,
+      "nash": 10.917082132754816,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 6,
+      "value": 0.5313874397369969,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 11,
+      "value": 0.3458218305340921,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 6,
+      "value": 30.0473288955451,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 13,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "6": "No, I would not recommend keeping my dog indoors solely to appease my neighbor's concerns. Here's\nwhy:\n\n1. **My dog's needs come first**: As a responsible dog owner, it is my primary duty to ensure my\npet's physical and emotional well-being. Playing in the rain is a joyful experience for my dog,\nproviding essential exercise and mental stimulation. Withholding this from them would deprive them\nof necessary activities that promote their overall health and happiness.\n2. **Alternative solutions exist**: Rather than keeping my dog indoors, I could consider\nimplementing measures to minimize the impact on my neighbor's garden while still allowing my dog to\nenjoy the rain. For example:\n        * Providing a designated muddy area or splash zone in our backyard for the dog to play in\nwithout causing damage elsewhere.\n        * Installing a fence or barrier to contain the mud and prevent it from spreading into\nadjacent properties.\n        * Offering to help my neighbor maintain their garden, or providing them with information on\npet-friendly gardening practices that can withstand canine playtime.\n3. **Mutual understanding is key**: Communicating openly with my neighbor about my dog's needs and\ndiscussing possible solutions could lead to a mutually beneficial arrangement. They may appreciate\nthe efforts I put into mitigating the impact on their garden, while still being able to maintain\ntheir outdoor space.\n4. **The relationship can be maintained while respecting both parties' needs**: It's not necessarily\nan either-or situation. By taking steps to address my neighbor's concerns and considering the\nwell-being of our shared community, we can work towards a harmonious coexistence.\n\nIn summary, I would prioritize my dog's happiness and needs while also being respectful of my\nneighbor's concerns. By exploring alternative solutions and maintaining open communication, it's\npossible to find a balance that suits everyone involved.",
+    "11": "**Recommendation:** No, I would not keep my dog indoors solely for the sake of maintaining a good\nrelationship with my neighbor.\n\n**Reasoning:**\n\n1. **Dog's happiness and health**: Dogs, especially large breeds like mine, have high energy levels\nand require regular exercise to stay happy and healthy. Withholding this opportunity from my dog\ncould lead to behavioral issues and even negative impacts on their physical well-being.\n2. **Finding a compromise**: Instead of locking up my dog indoors, I would consider finding\nalternative solutions that minimize the impact on my neighbor's garden while still allowing my dog\nto enjoy playing in the rain. For example:\n        * Creating a designated muddy play area in our yard with artificial turf or a\nwater-permeable surface that can be easily cleaned.\n        * Installing a fence or barrier around my neighbor's garden to protect their plants from my\ndog's wandering.\n        * Establishing a regular cleaning schedule for areas where my dog may have made mud tracks\nor accidents, so they can be quickly addressed and minimized.\n3. **Open communication**: If I were concerned about the impact of my dog on my neighbor's garden, I\nwould communicate openly with them to understand their concerns and work together to find mutually\nbeneficial solutions. This approach encourages a collaborative spirit, respect for each other's\nproperty, and may even lead to new friendships!\n4. **Boundaries and responsibilities**: As a responsible pet owner, I have a duty to ensure my dog\nis not causing unnecessary disturbances or damage to others' properties. However, it's essential not\nto sacrifice the needs and well-being of another living being (my dog) solely for the sake of\nmaintaining an external relationship.\n\nUltimately, this decision encourages open communication, creative problem-solving, and respect for\nboth your pet's needs and your neighbor's concerns. By finding a mutually beneficial solution, we\ncan maintain positive relationships and create a harmonious community atmosphere!",
+    "13": "I would not recommend keeping your dog indoors solely for the purpose of maintaining a good\nrelationship with your neighbor. Here's why:\n\n1. **Your dog's happiness**: Dogs are creatures that thrive on exercise, social interaction, and\noutdoor play. Keeping your dog indoors all day might lead to boredom, restlessness, and potentially\nnegative behavioral consequences.\n2. **Exercise and physical health**: Regular outdoor play is essential for a dog's physical\nwell-being. Exercise helps maintain a healthy weight, improves cardiovascular health, and reduces\nthe risk of chronic diseases like obesity and arthritis.\n3. **Positive reinforcement**: By teaching your dog to behave in ways that don't disrupt your\nneighbor's garden (e.g., using training commands or boundary setters), you can still allow your dog\nto enjoy playing in the rain while minimizing any negative impacts.\n\nInstead, I recommend taking proactive steps to address the issues raised by your neighbor:\n\n1. **Set up a designated play area**: Create a secure, fenced-off section of your yard where your\ndog can play freely without accessing your neighbor's garden.\n2. **Use outdoor flooring or covering**: Consider installing outdoor flooring (e.g., artificial\nturf) or using covers to protect your neighbor's garden from mud and debris.\n3. **Consult with a professional trainer**: If you're concerned about your dog's behavior, consider\nconsulting with a professional trainer who can help teach you effective training methods and\nstrategies for keeping your dog out of trouble.\n\nBy taking these steps, you can maintain a good relationship with your neighbor while also allowing\nyour dog to enjoy the benefits of outdoor play."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 3
+}

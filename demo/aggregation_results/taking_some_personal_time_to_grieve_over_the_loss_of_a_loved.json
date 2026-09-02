@@ -1,0 +1,367 @@
+{
+  "slug": "taking_some_personal_time_to_grieve_over_the_loss_of_a_loved",
+  "dilemma": "John, a devoted employee, is taking some personal time to grieve over the loss of his mother. Due to a critical project at work, his boss pressures him to cut his grieving time short and return to work. Should John prioritize his personal healing or yield to his boss's pressure and return to work earlier than planned?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Return to Work Early",
+  "not_to_do_action": "Prioritize Personal Healing",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.2287195422581463,
+      "maximin": -0.950421696820317,
+      "nash": 12.204048831830413,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3031157028033946,
+      "maximin": -0.950421696820317,
+      "nash": 21.967287897294742,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.1701568915380094,
+      "maximin": -0.950421696820317,
+      "nash": 19.52647813092866,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.46032322712533685,
+      "maximin": -0.07992269005833456,
+      "nash": 29.28971719639299,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.30033366839202924,
+      "maximin": -0.950421696820317,
+      "nash": 21.696086812142955,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.593282038390722,
+      "maximin": -0.07992269005833456,
+      "nash": 32.95093184594211,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3031157028033946,
+      "maximin": -0.950421696820317,
+      "nash": 21.967287897294742,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.167374857126644,
+      "maximin": -0.950421696820317,
+      "nash": 18.984075960625084,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7234588152447419,
+      "maximin": -0.07992269005833456,
+      "nash": 36.61214649549124,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.1701568915380094,
+      "maximin": -0.950421696820317,
+      "nash": 19.52647813092866,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.30033366839202924,
+      "maximin": -0.950421696820317,
+      "nash": 21.696086812142955,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.5783756474510782,
+      "maximin": -0.5151721934393257,
+      "nash": 30.51012207957603,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.1701568915380094,
+      "maximin": -0.950421696820317,
+      "nash": 19.52647813092866,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.03719808027262414,
+      "maximin": -0.950421696820317,
+      "nash": 17.085668364562576,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 10,
+      "value": 0.7234588152447419,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 5,
+      "value": -0.07992269005833456,
+      "tied_ids": [
+        5,
+        7,
+        10
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 10,
+      "value": 36.61214649549124,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 5,
+      "value": -0.07992269005833456,
+      "tied_ids": [
+        5,
+        7,
+        10
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "5": "**Recommendation:** Prioritize personal healing.\n\n**Explanation:**\n\n1.  **Empathy and compassion**: Losing a loved one is a significant life event that requires time\nand space for grieving. John needs to focus on his emotional well-being during this challenging\nperiod.\n2.  **Mental health importance**: Grief can be an overwhelming process, and taking the time to\nprocess emotions is essential for emotional recovery and resilience.\n3.  **Long-term productivity**: While returning to work earlier might seem beneficial in the short\nterm, it could have negative long-term consequences. Burnout, decreased motivation, and poor\nperformance are potential outcomes of rushing back to work before being emotionally ready.\n4.  **Supporting John's well-being is beneficial for his boss too:** When employees feel supported\nand understood, they're more likely to return to work with increased motivation and productivity.\n5.  **Alternative arrangements**: Depending on the company culture, project urgency, or other\nfactors, the employer could offer flexible working arrangements, temporary reassignment of tasks, or\nother support mechanisms that allow John to attend to his personal needs while minimizing disruption\nto the team and workload.\n\nBy prioritizing his personal healing time, John can ensure a more effective recovery, reduce the\nrisk of burnout, and ultimately become a more productive and engaged employee in the long run.",
+    "10": "I strongly recommend that John prioritize his personal healing over returning to work earlier than\nplanned. Here's why:\n\n1. **Grief is a process**: Losing a loved one can be a traumatic experience, and grieving takes\ntime. Trying to rush through the grieving process can prolong recovery and make it more challenging.\n2. **Emotional well-being**: John's mental health and emotional well-being are at stake here.\nIgnoring his personal needs and forcing himself back to work could lead to increased stress,\nanxiety, or even depression.\n3. **Impact on productivity**: While it might seem beneficial for John to return to work quickly,\ndoing so when emotionally unprepared can actually decrease productivity and efficiency. His\nperformance may suffer, leading to potential mistakes, errors, or rework.\n4. **Team and management dynamics**: If John feels pressured or obligated to return too soon, it\ncould damage his relationship with his boss and colleagues. This might lead to resentment, further\naffecting his well-being and job satisfaction.\n5. **Long-term perspective**: In the short term, it's tempting to prioritize work demands over\npersonal time. However, compromising on personal healing can have long-term consequences on John's\nmental health, relationships, and overall job performance.\n\nIt's essential for employers to be empathetic and understanding of their employees' needs during\nchallenging times. They should allow flexibility in work arrangements or provide support to help\ntheir team members cope with their grief.\n\nHere are some alternatives that might be more beneficial:\n\n* Offer a temporary adjustment in workload or deadlines to accommodate John's personal time.\n* Provide access to employee assistance programs (EAPs) or counseling services for support and\nguidance during this period.\n* Engage in open communication to discuss flexible work arrangements, if needed.\n* Encourage taking the necessary time off without pressure or guilt.\n\nUltimately, prioritizing personal healing allows John to process his emotions, take care of himself,\nand eventually return to work with renewed energy and focus."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

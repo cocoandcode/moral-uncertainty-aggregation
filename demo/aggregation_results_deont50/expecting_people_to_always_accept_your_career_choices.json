@@ -1,0 +1,372 @@
+{
+  "slug": "expecting_people_to_always_accept_your_career_choices",
+  "dilemma": "Sam has always dreamed of becoming a professional musician. His parents, however, believe that a career in music is unstable and want him to pursue a career in law. Should Sam pursue his dream of becoming a musician, even if it means disappointing his parents?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Pursue Music Career",
+  "not_to_do_action": "Pursue Law Career",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.06983797240380749,
+      "maximin": -0.8506210025087526,
+      "nash": 16.097466753276926,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.16954154182404454,
+      "maximin": -1.2494352801897008,
+      "nash": 12.97339031370039,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.1653549123661044,
+      "maximin": -0.4518067248278044,
+      "nash": 15.575863267813157,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.06983797240380749,
+      "maximin": -0.8506210025087526,
+      "nash": 16.097466753276926,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.17865009186771105,
+      "maximin": -0.8506210025087526,
+      "nash": 14.040145299313151,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.06983797240380749,
+      "maximin": -0.8506210025087526,
+      "nash": 16.097466753276926,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6779032300966825,
+      "maximin": -0.950093021099074,
+      "nash": 7.714024033379941,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.373870601250245,
+      "maximin": -0.8506210025087526,
+      "nash": 11.491684174808794,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.27835366128794814,
+      "maximin": -1.2494352801897008,
+      "nash": 11.315338482806666,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.12538253697872648,
+      "maximin": -0.8506210025087526,
+      "nash": 19.208184583219495,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.26505848178634145,
+      "maximin": -0.8506210025087526,
+      "nash": 13.175576178132058,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.029865597016429574,
+      "maximin": -0.4518067248278044,
+      "nash": 19.03005513514906,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 7,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.4735741706704821,
+      "maximin": -1.2494352801897008,
+      "nash": 9.261463710196471,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.27835366128794814,
+      "maximin": -1.2494352801897008,
+      "nash": 11.315338482806666,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.27835366128794814,
+      "maximin": -1.2494352801897008,
+      "nash": 11.315338482806666,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.016570417514822938,
+      "maximin": -0.8506210025087526,
+      "nash": 16.753300790606026,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 10,
+      "value": 0.12538253697872648,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 3,
+      "value": -0.4518067248278044,
+      "tied_ids": [
+        3,
+        12
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 10,
+      "value": 19.208184583219495,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        10,
+        11,
+        12
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would recommend that Sam should pursue his dream of becoming a professional musician, even if it\nmeans disappointing his parents.\n\nHere's why:\n\n1. **Personal fulfillment**: Music is an integral part of who Sam is. Following his passion in music\nwill bring him joy, satisfaction, and a sense of purpose. When people are engaged in work they love,\nthey tend to be more motivated, creative, and happy.\n2. **Uniqueness of opportunity**: Becoming a professional musician requires dedication,\nperseverance, and talent. If Sam has the potential to excel in this field, it's essential for him to\nexplore every avenue available, including formal education, training, or opportunities for growth.\n3. **No regrets**: If Sam chooses a music career and ultimately fails, he can always try something\nelse in the future. However, if he sacrifices his passion for law, as his parents want, he may feel\ntrapped and regretful about his decision.\n4. **Self-doubt and autonomy**: By pursuing his dreams in music, Sam will have the chance to prove\nto himself that he has what it takes to succeed. This experience will help him develop\nself-confidence and resilience.\n5. **Open communication with parents**: While disappointing his parents might be part of this\ndecision, it's essential for Sam to explain his reasons and goals clearly, demonstrating that he's\nresponsible and thoughtful about their concerns.\n\nThat being said, I don't recommend dismissing the potential value of pursuing a law career or other\nstable professions. It would be ideal if Sam could explore both options simultaneously \u2013 for\ninstance, by taking music classes at night while working towards a degree in law during the day.\n\nHowever, given that he's already been interested in becoming a professional musician, I believe it's\nbetter to support him in following his dreams and exploring opportunities related to his passion.",
+    "3": "After considering the situation, I would strongly recommend that Sam pursues his dream of becoming a\nprofessional musician.\n\nHere's why:\n\n1. **Personal fulfillment**: Following one's passion can bring immense joy, happiness, and a sense\nof purpose. If music is something that truly resonates with Sam, he will likely feel more fulfilled\nand satisfied in his life.\n2. **Risk of regret**: If Sam were to pursue a career in law solely because his parents want him to,\nhe may end up feeling unfulfilled and unhappy with his choice. This could lead to long-term regrets\nabout not pursuing his true passion.\n3. **Resilience and adaptability**: The music industry is indeed uncertain, but it's also an\nopportunity for Sam to develop resilience and adaptability skills \u2013 essential qualities for any\nartist to thrive in today's fast-paced entertainment landscape.\n4. **Career satisfaction and longevity**: A career built around a genuine interest or passion tends\nto have higher job satisfaction rates and longer tenures. If Sam becomes a musician, he may find\nhimself working for years, even decades, doing something he loves.\n5. **Values and integrity**: When parents exert pressure on their child to pursue a specific career\npath, it can create internal conflict and tension. By prioritizing his own dreams, Sam demonstrates\npersonal integrity and the courage to stand up for what he truly believes in.\n\nThat being said, there are some important considerations:\n\n1. **Sam's willingness to learn**: Has Sam explored all aspects of a law career? Is he aware of the\nskills and qualities required for success in this field?\n2. **Alternative ways to explore music while keeping parents on board**: Could Sam find part-time or\nflexible opportunities within the music industry that still appeal to his passion, but also maintain\nsome stability? (e.g., teaching music, freelancing as a sound engineer)\n3. **Communication and discussion**: Has Sam expressed his goals and aspirations with his parents,\nlistening to their concerns while clearly articulating his own desires?\n\nUltimately, it's essential for Sam to communicate his dreams and ambitions with his parents. While\ntheir concern about stability is understandable, a deep conversation can lead to a better\nunderstanding of the pros and cons. By explaining why music matters so much to him, Sam may find\nthat they are more willing to support his path.\n\nRecommendation:\n\nPursue his dream of becoming a professional musician! It's okay to have discussions with his parents\nand find ways to satisfy both sides.",
+    "10": "The age-old dilemma! I'd recommend that Sam pursue his dream of becoming a professional musician.\nHere's why:\n\n**Autonomy and Happiness**: When individuals are allowed to pursue their passions, they're more\nlikely to experience a sense of autonomy, purpose, and happiness in life. By following his heart,\nSam may find fulfillment in his work as a musician.\n\n**Long-term Consequences**: While a career in music might be considered unstable by some, many\nmusicians have found success and stability through creative entrepreneurship (e.g., tours,\nmerchandise sales), teaching, or other related fields. Research also suggests that pursuing one's\npassions can lead to a more fulfilling and purpose-driven life, which may have long-term\nconsequences for mental and physical well-being.\n\n**Risk of Regret**: If Sam pursues a career in law purely to please his parents, he may end up\nregretting the decision later on. This could lead to feelings of discontent, frustration, or even\nanxiety-related disorders. On the other hand, by pursuing music, Sam will know that he's giving it\nhis all, and if things don't work out as planned, at least he'll have no regrets about not trying.\n\n**The Power of Influence**: When people around us (like parents) express disapproval or doubt, it\ncan be discouraging. However, ultimately, the decision to pursue one's passion is up to each\nindividual. If Sam is passionate and dedicated to becoming a musician, he should not let his\nparents' opinions hold him back.\n\n**The Importance of Encouragement**: While it's good that Sam's parents care about his well-being,\nthey also have a responsibility to support their child in making decisions that lead to personal\ngrowth and happiness. If Sam decides to pursue music, his parents can offer encouragement and\nguidance rather than trying to dissuade him from his dreams.\n\nIn conclusion, I recommend that Sam trust his instincts and follow his passion for music. While\nthere are risks involved in pursuing a career in an \"unstable\" industry, the potential long-term\nbenefits of autonomy, happiness, and fulfillment outweigh the temporary difficulties of navigating\nuncertainty."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

@@ -1,0 +1,363 @@
+{
+  "slug": "having_second_thoughts_about_having_kids_when_your_wife_gets",
+  "dilemma": "John and Mary have always planned to start a family, but when Mary becomes pregnant, John begins to have second thoughts. He loves his wife but feels unprepared for the responsibility of a child, and contemplates suggesting an abortion, a choice which contradicts their shared values. Should John voice his fears and suggest an abortion, potentially causing emotional harm to his wife?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Suggesting an abortion",
+  "not_to_do_action": "Not suggesting an abortion",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.0901966621700303,
+      "maximin": -0.950421696820317,
+      "nash": 15.18726076850007,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.05488650562363348,
+      "maximin": -0.5151721934393257,
+      "nash": 18.984075960625084,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.4207809937066995,
+      "maximin": -1.6272910711607818,
+      "nash": 1.8306073247745622,
+      "baseline": -1.385671200201308,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 0,
+        "deontological": 0,
+        "ubuntu": 0
+      },
+      "z": {
+        "utilitarian": -2.6914197103442814,
+        "deontological": -2.7988820628469604,
+        "ubuntu": -2.446010011146476
+      },
+      "ec": -2.6454372614459056,
+      "maximin": -2.7988820628469604,
+      "nash": 0.0,
+      "baseline": -2.6914197103442814,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.565864161500363,
+      "maximin": -1.8209207035822992,
+      "nash": 1.2204048831830414,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.5537398049720847,
+      "maximin": -1.6482571435541644,
+      "nash": 1.2204048831830414,
+      "baseline": -1.385671200201308,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.565864161500363,
+      "maximin": -1.8209207035822992,
+      "nash": 1.2204048831830414,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.6988229727657482,
+      "maximin": -1.8209207035822992,
+      "nash": 0.8136032554553609,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 0,
+        "deontological": 0,
+        "ubuntu": 0
+      },
+      "z": {
+        "utilitarian": -2.6914197103442814,
+        "deontological": -2.7988820628469604,
+        "ubuntu": -2.446010011146476
+      },
+      "ec": -2.6454372614459056,
+      "maximin": -2.7988820628469604,
+      "nash": 0.0,
+      "baseline": -2.6914197103442814,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 2,
+        "ubuntu": 0
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -2.0178214017228413,
+        "ubuntu": -2.446010011146476
+      },
+      "ec": -2.0949173721505385,
+      "maximin": -2.446010011146476,
+      "nash": 0.0,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.6988229727657482,
+      "maximin": -1.8209207035822992,
+      "nash": 0.8136032554553609,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.8945098174678894,
+      "maximin": -1.385671200201308,
+      "nash": 5.085020346596005,
+      "baseline": -1.385671200201308,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 2,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -2.0178214017228413,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.828999749619768,
+      "maximin": -2.0178214017228413,
+      "nash": 0.542402170303574,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 2,
+        "ubuntu": 0
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -2.0178214017228413,
+        "ubuntu": -2.446010011146476
+      },
+      "ec": -2.0949173721505385,
+      "maximin": -2.446010011146476,
+      "nash": 0.0,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.6988229727657482,
+      "maximin": -1.8209207035822992,
+      "nash": 0.8136032554553609,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 14,
+      "value": 0.43329247965741446,
+      "tied_ids": [
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.5151721934393257,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 14,
+      "value": 24.408097663660826,
+      "tied_ids": [
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": -0.5151721934393257,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "I can't advise you on this matter but would encourage you to discuss it with Mary directly or seek\nthe help of a medical professional. If John has reservations about starting a family, there are\nalternative solutions such as adoption that do not involve the termination of the pregnancy. This\nway, they can explore other possibilities together.\n\nIf John does voice his concerns to Mary, they can have an open and honest conversation about their\nfeelings and values. They may realize that their shared values on abortion outweigh their individual\nfears and doubts. Additionally, discussing these issues openly may help them find a solution that\nworks for both of them.\n\nTo approach this situation respectfully:\n\n*   **Have the conversation privately**: Discussing this sensitive topic in front of others can make\nit feel like a burden or a performance.\n*   **Use \"I\" statements**: Instead of saying \"you're not ready,\" say \"I'm feeling anxious about our\nreadiness.\" This helps to own feelings and avoid blame.\n*   **Listen actively**: Make sure to listen to each other's perspectives without interrupting,\narguing, or judging.",
+    "14": "**Recommendation:** No, John should not suggest an abortion without first having a compassionate and\nhonest conversation with Mary about his concerns.\n\n**Explanation:**\n\n1.  **Respect for Mary's feelings and autonomy**: An unintended pregnancy can be emotionally\nchallenging, and suggesting an abortion without her knowledge or consent could be perceived as\ndismissive of her feelings and autonomy.\n2.  **Potential harm to the relationship**: Openly sharing his doubts about having a child could\nlead to conflict, hurt, and damage the trust in their relationship.\n3.  **Mary's right to decision-making**: Ultimately, Mary is the one carrying the pregnancy, and\nit's her body and her life that will be significantly impacted by any decisions made regarding the\nfetus.\n4.  **John's responsibility to support Mary**: As a partner, John has a duty to provide emotional\nsupport during this challenging time.\n\n**Alternative approach:**\n\nInstead of suggesting an abortion, John could:\n\n1.  **Be open with Mary about his concerns and fears**\n2.  **Listen actively to her feelings, needs, and perspectives**\n3.  **Explore their shared values together**: Have a conversation about what they envision for their\nfuture as parents, how they can prepare, and what kind of support system they have in place.\n4.  **Together consider counseling or a pregnancy loss support group** if John's concerns persist.\n\nThe key is to approach the conversation with empathy and respect for Mary's feelings and autonomy.\nBy doing so, John can show his commitment to their relationship and their shared future as parents\nwhile also acknowledging and addressing his own fears and reservations."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

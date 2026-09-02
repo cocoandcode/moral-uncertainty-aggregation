@@ -1,0 +1,381 @@
+{
+  "slug": "keeping_your_pets_indoors",
+  "dilemma": "You've recently moved to a busy city where outdoor dangers like traffic and aggressive stray animals are rampant. You've always allowed your cat to roam free, but now you're concerned for its safety. Should you confine your cat indoors to ensure its safety, or let it have its freedom despite the risks?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confining the cat indoors",
+  "not_to_do_action": "Letting the cat roam free",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.2565983859879032,
+      "maximin": -0.8506210025087526,
+      "nash": 21.81855481695584,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.13384263277716474,
+      "maximin": -0.8506210025087526,
+      "nash": 14.171567059010314,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.1610814460256063,
+      "maximin": -0.4518067248278044,
+      "nash": 21.11157188512343,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.43787526162360224,
+      "maximin": -0.8506210025087526,
+      "nash": 9.86919239185101,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.13384263277716474,
+      "maximin": -0.8506210025087526,
+      "nash": 14.171567059010314,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.3290631421596987,
+      "maximin": -0.8506210025087526,
+      "nash": 10.780676324190413,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.3290631421596987,
+      "maximin": -0.8506210025087526,
+      "nash": 10.780676324190413,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.06137787660536925,
+      "maximin": -0.8506210025087526,
+      "nash": 17.858215549911403,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.2565983859879032,
+      "maximin": -0.8506210025087526,
+      "nash": 21.81855481695584,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.03413906335692768,
+      "maximin": -0.4554494483894518,
+      "nash": 16.753300790606023,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.13384263277716474,
+      "maximin": -0.8506210025087526,
+      "nash": 14.171567059010314,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.06137787660536925,
+      "maximin": -0.8506210025087526,
+      "nash": 17.858215549911403,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.06137787660536925,
+      "maximin": -0.8506210025087526,
+      "nash": 17.858215549911403,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.06137787660536925,
+      "maximin": -0.8506210025087526,
+      "nash": 17.858215549911403,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.2565983859879032,
+      "maximin": -0.8506210025087526,
+      "nash": 21.81855481695584,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.06137787660536925,
+      "maximin": -0.8506210025087526,
+      "nash": 17.858215549911403,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 1,
+      "value": 0.2565983859879032,
+      "tied_ids": [
+        1,
+        9,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 3,
+      "value": -0.4518067248278044,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 21.81855481695584,
+      "tied_ids": [
+        1,
+        9,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "The age-old debate of whether to keep cats indoor or outdoor! Given the high-risk environment of a\nbusy city with traffic and aggressive stray animals, I strongly recommend confining your cat indoors\nfor its safety.\n\nHere are some compelling reasons why:\n\n1. **Traffic risks**: Urban streets can be hazardous for cats, who may get hit by cars, buses, or\ntrucks while crossing roads. This risk is particularly high when drivers are in a hurry or\ndistracted.\n2. **Aggressive stray animals**: Cities often have a population of feral or aggressive stray\nanimals, which can attack and harm your cat if they encounter each other outdoors.\n3. **Health risks**: Outdoor cats may be exposed to diseases such as rabies, distemper, and feline\nimmunodeficiency virus (FIV), which can be transmitted through bites or scratches from infected\nanimals.\n4. **Parasite infestations**: Outdoor cats are more likely to contract external parasites like\nfleas, ticks, and ear mites, as well as internal worms like hookworms and roundworms.\n\nConfining your cat indoors doesn't mean depriving it of freedom or exercise; you can easily provide\nalternative stimulation and activity through:\n\n1. **Indoor play**: Engage in playtime activities with your cat, such as chasing a laser pointer,\nusing feather toys, or practicing hide-and-seek games.\n2. **Window perches**: Allow your cat to observe the outdoors while staying safely indoors on window\nperches or catio (a screened-in outdoor enclosure).\n3. **Indoor climbing structures**: Provide cat trees or shelves for your cat to climb and exercise\nvertically.\n4. **Environmental enrichment**: Create a stimulating environment by rotating toys, scratching\nposts, and hiding treats around the house.\n\nWhile some people might argue that keeping cats indoors restricts their natural behavior, it's\nessential to consider the urban environment's risks. By providing an indoor-safe space with plenty\nof stimulation, you can give your cat the best of both worlds: safety and exercise.\n\nSo, don't hesitate to confine your cat indoors for its own protection. With some creative\nproblem-solving and provision of alternative activities, your furry friend will thrive in its new\nurban home.",
+    "3": "Based on the new environment, I strongly recommend confining my cat indoors to ensure its safety.\nHere's why:\n\n1. **Traffic hazards**: A busy city poses significant dangers from traffic accidents, particularly\nfor a curious and agile cat like mine. If it were to be injured or worse, the outcome would be\ndevastating.\n2. **Aggressive stray animals**: The presence of aggressive stray animals is an added risk that\noutdoor environments bring. Even if my cat is healthy and alert, it may still encounter a predator\nor an angry stray animal, leading to serious injury or death.\n3. **Diseases and parasites**: Outdoors, cats are more likely to be exposed to diseases like feline\nleukemia, rabies, and infectious parasites like fleas, ticks, and worms.\n4. **Stress and trauma**: Constantly dealing with potential threats can cause significant stress and\nanxiety in cats, leading to behavioral problems and decreased quality of life.\n\nWhile confining my cat indoors may require some adjustments to our routine, I believe it's a small\nprice to pay for its safety. By keeping my cat inside, I can:\n\n1. **Prevent injuries**: Minimize the risk of accidents caused by external factors.\n2. **Provide a safe environment**: Ensure that my cat has a secure and comfortable space where it\ncan rest, play, and exercise without worrying about threats outside.\n3. **Reduce stress and anxiety**: Help my cat feel more relaxed and calm in its own home.\n\nThat being said, I will still make sure to provide my cat with a stimulating indoor environment by:\n\n* Setting up scratching posts, climbing structures, and toys to encourage activity and play\n* Creating window perches or catio enclosures for sunlight and outdoor views\n* Establishing regular feeding schedules and playtime to mimic its natural hunting instincts\n\nBy taking these precautions, I can balance my cat's need for freedom with the safety concerns of the\nurban environment."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

@@ -1,0 +1,372 @@
+{
+  "slug": "when_you_get_the_wrong_mail_delivering_it_to_the_correct_rec",
+  "dilemma": "You receive a postal package mistakenly delivered to your house that is clearly marked for your neighbor who you know is on vacation. You notice that the box is slightly open and you see a potentially harmful object that could pose a danger to your neighbor. Should you interfere with their mail and remove the harmful object or should you respect their privacy and leave the package as it is?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Interfere with the mail",
+  "not_to_do_action": "Respect their privacy",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.24468884623622889,
+      "maximin": -1.2367607405987222,
+      "nash": 19.526478130928663,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.36167835352353156,
+      "maximin": -0.950421696820317,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.15140555314856144,
+      "maximin": -1.6272910711607818,
+      "nash": 10.983643948647371,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 1.1064212427736348,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.11066712193240494,
+      "maximin": -1.385671200201308,
+      "nash": 12.204048831830413,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3776476575016141,
+      "maximin": -1.2367607405987222,
+      "nash": 21.967287897294742,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.15140555314856144,
+      "maximin": -1.6272910711607818,
+      "nash": 10.983643948647371,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.15140555314856144,
+      "maximin": -1.6272910711607818,
+      "nash": 10.983643948647371,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.052104471212268064,
+      "maximin": -0.5151721934393257,
+      "nash": 18.984075960625084,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.021228776294541587,
+      "maximin": -1.2367607405987222,
+      "nash": 14.644858598196498,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.24468884623622889,
+      "maximin": -1.2367607405987222,
+      "nash": 19.526478130928663,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.11173003497084363,
+      "maximin": -1.2367607405987222,
+      "nash": 17.08566836456258,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.7223959022063032,
+      "maximin": -1.2367607405987222,
+      "nash": 6.5088260436428875,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.11173003497084363,
+      "maximin": -1.2367607405987222,
+      "nash": 17.08566836456258,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.6397203325825804,
+      "maximin": -1.385671200201308,
+      "nash": 5.491821974323686,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 3,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.6272910711607818,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.018446741883176215,
+      "maximin": -1.6272910711607818,
+      "nash": 12.814251273421933,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.35889631911216613,
+      "maximin": -0.950421696820317,
+      "nash": 10.84804340607148,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 0.3776476575016141,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 8,
+      "value": -0.5151721934393257,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 5,
+      "value": 21.967287897294742,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.225825820084639,
+      "tied_ids": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I strongly recommend that you take steps to safely handle and secure the potentially hazardous\nobject found in your neighbor's package, rather than ignoring it or leaving it alone. Here's why:\n\n1. **Your neighbor's safety**: The primary concern here is the potential harm this object could\ncause if it's left in an accessible area where someone might discover it while searching through\ntheir mail.\n2. **Moral obligation**: By intervening and removing the hazardous item, you're acting to prevent a\npotential injury or harm to your neighbor, who is away from home and unable to address the issue\nthemselves.\n3. **Legally acceptable action**: Taking these steps won't constitute an invasion of your neighbor's\nprivacy, as the situation presents an immediate risk to their safety. Removing the hazardous item\nwill ultimately help preserve their property and prevent any potential harm.\n4. **Neutral action with respect for their privacy**: You can still show regard for your neighbor's\nprivacy by taking a responsible action rather than just leaving it or assuming they won't discover\nit upon their return.\n\nTo address this situation responsibly, consider:\n\n1.  Closing the package immediately to prevent anyone else from accessing its contents.\n2.  If it's safely possible, carefully remove the object and secure it until your neighbor returns\nhome.&#x20;\n3.  When you have contact with your neighbor upon their return (through online interactions or when\nthey're available in person), discreetly bring this matter to their attention without accusing or\nplacing blame on anyone.\n4.  Avoid speculating about how this could've occurred since the primary focus is resolving the\nimmediate safety concern for your neighbor.",
+    "5": "I would strongly recommend interfering with the situation by removing the harmful object from the\npackage, not to meddle with the neighbor's mail itself but to prevent potential harm.\n\n**Why?**\n\n1. **Safety of others**: Your neighbor might not be aware that there's a potentially hazardous item\nin the package. Removing it could save them and anyone else who may come into contact with the\npackage from potential harm.\n2. **Responsibility as a member of the community**: By taking care of your neighborhood, you're\ncontributing to creating a safer environment for everyone. Intervening in this situation\ndemonstrates a sense of civic duty.\n3. **Preventing unintended consequences**: If someone else finds the package and accidentally breaks\nthe potentially hazardous item, it could lead to injuries or damage. Removing the object ensures no\nharm comes to anyone.\n\n**How to proceed:**\n\n1. Carefully open the package to examine its contents (ensuring your safety).\n2. Identify the harmful object and carefully remove it from the package.\n3. Store the item securely in a safe place, such as a locked box or with authorities (depending on\nlocal regulations).\n4. If you know your neighbor's contact information, consider letting them know about the situation\nvia phone call or email. This way, they can arrange for alternative arrangements to receive the\nintended contents.\n\nBy intervening in this situation responsibly and carefully, you can protect others while respecting\nyour neighbor's privacy by not meddling with their mail but rather addressing a pressing safety\nconcern.\n\nIt's essential to consider the circumstances of each case when dealing with potentially sensitive or\nconfidential information. But in this instance, where there's an evident risk of harm to individuals\ndue to carelessness (potentially) or theft, taking proactive action as a responsible member of the\ncommunity is justifiable and, indeed, desirable.",
+    "8": "I would recommend that you carefully examine the contents of the package without interfering with\nit, then contact your neighbor through a secure method (such as messaging them) to inform them about\nthe situation, and ask if they'd like to collect the package immediately or arrange for it to be\ndelivered at their earliest convenience.\n\n**Reasoning:**\n\n1.  **Respect for privacy:** Your neighbor's mail is their property, and you should respect their\nright to receive it without intrusion.\n2.  **Potential harm:** The presence of a potentially harmful object poses a risk not only to your\nneighbor but also to others who might encounter the package in the future.\n3.  **Pragmatic approach:** If you remove the object yourself, you might inadvertently cause more\nissues (e.g., creating a mess or damaging the contents).\n4.  **Contact with the neighbor:** By informing them about the situation, you're allowing them to\ntake necessary precautions and resolve the issue according to their preferences.\n5.  **Professionalism**: In this case, contacting your neighbor through secure methods is the most\nappropriate response as it shows you respect their privacy while being cautious due to potential\nharmful content.\n\nBy following these steps, you can balance respecting your neighbor's property with taking a\nresponsible stance in the face of a potentially hazardous situation."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

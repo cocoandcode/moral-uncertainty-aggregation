@@ -1,0 +1,376 @@
+{
+  "slug": "getting_engaged_after_dating_someone_for_only_a_year",
+  "dilemma": "John and Mary have been dating for a year and are deeply in love. John has just received a job offer in another country, but Mary has a promising career in their current city. Should John propose to Mary, asking her to leave her career and move with him, or should he decline the job offer and stay with her?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Propose and move",
+  "not_to_do_action": "Decline the job offer",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.2635647582442844,
+      "maximin": -1.6267725046846555,
+      "nash": 2.7273193521194794,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.40627614515210464,
+      "maximin": -0.950093021099074,
+      "nash": 26.034831112657308,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.08386844303320035,
+      "maximin": -0.950093021099074,
+      "nash": 16.348340283786083,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.7510164405137062,
+      "maximin": -1.2363314859195875,
+      "nash": 6.728140516208889,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": -0.07968181357526016,
+      "maximin": -0.950093021099074,
+      "nash": 15.336843786881523,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.21105563576957068,
+      "maximin": -0.950093021099074,
+      "nash": 21.818554816955842,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.6604214211371356,
+      "maximin": -1.2363314859195875,
+      "nash": 7.552750621265596,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.10716543689139349,
+      "maximin": -0.950093021099074,
+      "nash": 19.2081845832195,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.1547526387803808,
+      "maximin": -1.6267725046846555,
+      "nash": 3.2241742404237197,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.40627614515210464,
+      "maximin": -0.950093021099074,
+      "nash": 26.034831112657308,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.40627614515210464,
+      "maximin": -0.950093021099074,
+      "nash": 26.034831112657308,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3065725757318676,
+      "maximin": -0.950093021099074,
+      "nash": 23.833639876898804,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.6604214211371356,
+      "maximin": -1.2363314859195875,
+      "nash": 7.552750621265596,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.9553454999399067,
+      "maximin": -1.6267725046846555,
+      "nash": 4.370055455451184,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.40627614515210464,
+      "maximin": -0.950093021099074,
+      "nash": 26.034831112657308,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.10224351630566714,
+      "maximin": -1.3853414989546882,
+      "nash": 17.584172221608338,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 0.40627614515210464,
+      "tied_ids": [
+        2,
+        10,
+        11,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.950093021099074,
+      "tied_ids": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 26.034831112657308,
+      "tied_ids": [
+        2,
+        10,
+        11,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 4,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "What a difficult decision!\n\nAfter careful consideration, I recommend that John **decline the job offer and prioritize his\nrelationship with Mary**.\n\nHere's why:\n\n1. **Long-term commitment**: Marriage is a long-term commitment, typically a lifelong one. By\nconsidering asking Mary to leave her career and move with him at this stage, John is putting the\ncart before the horse. It would be unfair to expect Mary to sacrifice her professional goals for an\nuncertain future.\n2. **Mary's well-being and happiness**: Mary has invested in building a promising career in their\ncurrent city. By declining the job offer, John can ensure that his partner will continue to pursue\nher passion and contribute to the relationship with a sense of purpose.\n3. **Trust and communication**: This decision requires open and honest communication between John\nand Mary. By choosing not to ask Mary to leave her career, John demonstrates trust in their\nrelationship and respects Mary's autonomy to prioritize her own goals.\n4. **Flexibility for the future**: If John still has a strong connection with his future employer or\nwould like to pursue opportunities abroad in the future, he can always reevaluate his options and\nconsider making another move when Mary is more established in her career or at a point where she's\nmore willing to make such a significant change.\n5. **Relationship foundation**: A successful marriage begins with trust, mutual respect, and a deep\nunderstanding of each other's goals and aspirations. By choosing not to put pressure on Mary to\nleave her job, John prioritizes the foundation of their relationship over his career ambitions.\n\nIn summary, while the new job opportunity may be exciting for John, it is more important to\nprioritize the long-term happiness, well-being, and equality in his relationship with Mary.",
+    "4": "What a tough decision! Based on the information provided, I would recommend that John propose to\nMary, asking her to leave her career and move with him. Here's why:\n\n**John's job opportunity is likely to be significant**: A job offer in another country suggests that\nit's a well-paying and potentially life-changing opportunity for John. This could provide financial\nstability and security for the couple in their future together.\n\n**Mary can pursue new opportunities**: While Mary has a promising career, it doesn't necessarily\nmean she won't have opportunities elsewhere. Many cities around the world are hubs for professionals\nin various fields, so there's a good chance she'll be able to find similar or even better\nopportunities where John is moving.\n\n**The long-term benefits of shared experiences outweigh temporary sacrifices**: Although Mary may\nneed to leave her current job and career network behind, this decision could lead to new personal\nand professional growth. Sharing an international experience can foster a deeper connection between\nthe couple, broaden their cultural perspectives, and create lifelong memories.\n\n**It's better to propose now rather than later**: If John declines the job offer to stay with Mary,\nhe may always wonder what could have been if he had taken the opportunity. Proposing to Mary now\nallows him to give her a choice: she can choose to leave her career behind for a new adventure\ntogether or explore other options.\n\n**Mary will make her own decision**: Ultimately, it's up to Mary whether or not to join John in his\nnew location. If she feels strongly attached to her current life and career, she'll likely say no.\nBut if she's willing to take the leap, she can grow professionally alongside John in a new country.\n\nOf course, this decision should be based on individual circumstances, values, and priorities. John\nshould have an open conversation with Mary about his feelings, weighing the pros and cons together,\nand make a joint decision that works for both of them."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

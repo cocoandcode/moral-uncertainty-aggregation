@@ -1,0 +1,368 @@
+{
+  "slug": "waiting_for_people_to_catch_up_to_you",
+  "dilemma": "You are an experienced hiker leading a group of beginners on a trail. You notice a storm approaching, but half of your group is falling behind and struggling to keep up. Do you continue on to the shelter, leaving the slower hikers behind, or do you stay with them, risking everyone's safety in the storm?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Continue on to the shelter",
+  "not_to_do_action": "Stay with the slower hikers",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.24468884623622889,
+      "maximin": -1.2367607405987222,
+      "nash": 19.526478130928663,
+      "baseline": 1.225825820084639,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.8564176265101271,
+      "maximin": -0.07992269005833456,
+      "nash": 40.68016277276804,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 1.0164071852434349,
+      "maximin": 0.7158909122115753,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.5662512909227997,
+      "maximin": -0.950421696820317,
+      "nash": 27.120108515178696,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.8564176265101271,
+      "maximin": -0.07992269005833456,
+      "nash": 40.68016277276804,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 1.0015007943037908,
+      "maximin": 0.3553268133226566,
+      "nash": 47.46018990156272,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.871324017449771,
+      "maximin": 0.3553268133226566,
+      "nash": 42.71417091140645,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 1.1465839620974547,
+      "maximin": 0.7905763167036478,
+      "nash": 54.24021703035739,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.593282038390722,
+      "maximin": -0.07992269005833456,
+      "nash": 32.95093184594211,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.8564176265101271,
+      "maximin": -0.07992269005833456,
+      "nash": 40.68016277276804,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 1.0164071852434349,
+      "maximin": 0.7158909122115753,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.8564176265101271,
+      "maximin": -0.07992269005833456,
+      "nash": 40.68016277276804,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 1.1465839620974547,
+      "maximin": 0.7905763167036478,
+      "nash": 54.24021703035739,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.5662512909227997,
+      "maximin": -0.950421696820317,
+      "nash": 27.120108515178696,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 1.1465839620974547,
+      "maximin": 0.7905763167036478,
+      "nash": 54.24021703035739,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.7113344587164634,
+      "maximin": -0.5151721934393257,
+      "nash": 33.900135643973364,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 8,
+      "value": 1.1465839620974547,
+      "tied_ids": [
+        8,
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 8,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        8,
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 8,
+      "value": 54.24021703035739,
+      "tied_ids": [
+        8,
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.225825820084639,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "OTHER",
+      "tied_recommendations": [
+        "OTHER"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "In this situation, I would recommend taking a split decision: lead a smaller group to seek shelter\nwhile another experienced guide accompanies the slower hikers back down the mountain.\n\nHere's my reasoning:\n\n1. **Group safety is paramount**: The primary responsibility of any leader is to ensure the\nwell-being and safety of their group members. If we continue on to the shelter, those who are\nfalling behind may be at risk of getting caught in the storm and potentially injured or lost.\n2. **Leave No One Behind (LNT) policy**: As a hiker, I adhere to the LNT principle, which emphasizes\ntaking care of others and ensuring everyone's safety. By leaving a second guide with the struggling\ngroup, we can ensure that no one is left behind and that they receive the assistance they need.\n3. **Risk mitigation**: If we were to take the entire group on to the shelter without addressing the\nslower hikers' issues, we may create more problems than we solve. We risk exacerbating their\nfatigue, potentially leading to accidents or further delays.\n4. **Communicate with the struggling group**: Before leaving a guide behind, communicate clearly and\nreassure the strugglers that they will be sent aid shortly. This should help alleviate their anxiety\nand provide them with a plan for what's happening next.\n\nTo implement this solution:\n\n* Identify another experienced hiker in our group who can accompany the slower group back down.\n* Make an announcement to inform both groups of the plan and reassure those being left behind that\nthey will be met by assistance shortly.\n* Ensure the slower group has all necessary gear, such as water, snacks, and a first-aid kit, so\nthey're prepared for their descent.\n* Establish clear communication channels with both groups to update them on our status.\n\nBy taking this approach, we can ensure everyone's safety while minimizing delays and potentially\navoid any accidents or further complications related to the storm.",
+    "8": "**Recommendation: Stay with the slower hikers and modify the plan**\n\nI strongly advise against abandoning the slower hikers and continuing to the shelter without them.\nLeaving them behind would not only put their lives at risk but also potentially compromise the\nsafety of everyone else in the group. The reason for this is simple:\n\n1. **Safety in numbers**: In a severe storm, the slower hikers are more vulnerable to hypothermia,\nlightning strikes, and other hazards. Staying together allows us to provide mutual support and\nassistance if needed.\n2. **Equal access to resources**: By staying with the group, we can ensure that everyone has equal\naccess to critical supplies, such as first aid kits, warm clothing, and emergency shelter materials.\n3. **Loss of accountability**: Leaving someone behind without making necessary arrangements for\ntheir care can lead to feelings of guilt and responsibility among the rest of the group.\n4. **Risk assessment**: Continuously assessing the situation and adapting our plan is crucial in\nsuch situations. If conditions worsen, it's better to regroup and reassess the situation rather than\npress on.\n\n**Possible adaptations:**\n\n* Reassess the trail and consider finding a more sheltered location or an alternate route to provide\nbetter protection from the storm.\n* Implement \"buddy systems\" to ensure each hiker has someone watching their back, thereby\nmaintaining group cohesion and enabling everyone to stay together.\n* Rely on experience, skill, and preparedness to guide decision-making and problem-solving in such\nsituations.\n\n**Alternative:**\n\nIf continuing on to the shelter is deemed too perilous, consider setting up a makeshift campsite\nnearby. This will allow us to safeguard everyone's well-being while still getting some protection\nfrom the storm. This approach may require using natural shelters like overhangs or seeking areas\nwith trees that can provide a canopy.\n\nIn any case, as their leader, it is my responsibility to prioritize the safety and well-being of\nevery member in the group. With situational awareness, planning, and adaptability, we should be able\nto overcome this challenge while ensuring everyone's survival and avoiding regrettable decisions."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "OTHER"
+  ],
+  "distinct_winners": 2
+}

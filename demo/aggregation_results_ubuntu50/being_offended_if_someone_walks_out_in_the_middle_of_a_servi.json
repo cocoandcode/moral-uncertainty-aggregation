@@ -1,0 +1,382 @@
+{
+  "slug": "being_offended_if_someone_walks_out_in_the_middle_of_a_servi",
+  "dilemma": "You are the pastor of a small community church. During your sermon, a member of the congregation gets up and leaves abruptly, visibly upset. Should you stop your sermon to address the situation, potentially disrupting the service, or continue preaching, possibly ignoring someone's distress?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Stop the sermon to address the situation",
+  "not_to_do_action": "Continue preaching",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8631045085451381,
+      "maximin": -1.2363314859195875,
+      "nash": 5.0435700156270595,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.3542483305009227,
+      "maximin": 1.10631462667082,
+      "nash": 61.59670095369591,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.2566380758096556,
+      "maximin": 0.715873607905752,
+      "nash": 56.91665053834387,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.3542483305009227,
+      "maximin": 1.10631462667082,
+      "nash": 61.59670095369591,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.3542483305009227,
+      "maximin": 1.10631462667082,
+      "nash": 61.59670095369591,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.2566380758096556,
+      "maximin": 0.715873607905752,
+      "nash": 56.91665053834387,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.2566380758096556,
+      "maximin": 0.715873607905752,
+      "nash": 56.91665053834387,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.0572309369691815,
+      "maximin": 0.715873607905752,
+      "nash": 48.59628817203416,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.2566380758096556,
+      "maximin": 0.715873607905752,
+      "nash": 56.91665053834387,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.147825956345752,
+      "maximin": 0.715873607905752,
+      "nash": 52.10446520894404,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.3542483305009227,
+      "maximin": 1.10631462667082,
+      "nash": 61.59670095369591,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.948418817505278,
+      "maximin": 0.715873607905752,
+      "nash": 44.48757230782136,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.0572309369691815,
+      "maximin": 0.715873607905752,
+      "nash": 48.59628817203416,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.948418817505278,
+      "maximin": 0.715873607905752,
+      "nash": 44.48757230782136,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.2566380758096556,
+      "maximin": 0.715873607905752,
+      "nash": 56.91665053834387,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.2566380758096556,
+      "maximin": 0.715873607905752,
+      "nash": 56.91665053834387,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 1.3542483305009227,
+      "tied_ids": [
+        2,
+        4,
+        5,
+        11
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": 1.10631462667082,
+      "tied_ids": [
+        2,
+        4,
+        5,
+        11
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 61.59670095369591,
+      "tied_ids": [
+        2,
+        4,
+        5,
+        11
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        13,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "I strongly recommend stopping my sermon to address the situation and ministering to the individual\nwho has left. Here's why:\n\n1. **Care for the sheep**: As a pastor, I am called to shepherd and care for all members of our\ncongregation, not just those physically present in the church building. Ignoring someone's distress\ncould be seen as neglecting their spiritual needs.\n2. **Respond to a crisis moment**: The individual's abrupt departure suggests they may be\nexperiencing emotional turmoil or conflict. Stopping my sermon to address this situation can help\nprevent further escalation and potentially lead to a more positive outcome for the individual and\nour community as a whole.\n3. **Model compassion and empathy**: By stopping to minister to someone in distress, I model the\nbehavior we want to see in our congregation: responding with kindness, concern, and love. This\ndemonstration of compassionate leadership can inspire others to do the same when they encounter\nsimilar situations.\n4. **Prevent further conflict or harm**: Ignoring the situation could allow unresolved issues to\nsimmer beneath the surface, potentially leading to future conflicts within the congregation. By\naddressing the issue promptly, I can help prevent further problems from arising.\n\nTo respond effectively:\n\n1. Stop my sermon and address the congregation briefly: Explain that we will resume our service\nshortly but first need to attend to someone who is struggling.\n2. Ask a trusted member of the team (e.g., deacon or elder) to discreetly follow the individual who\nleft, checking on their well-being and offering support as needed.\n3. Pray with the congregation for wisdom in addressing the situation and healing any hurt that may\nhave led to this moment.\n4. Consider having a brief period of ministry time after the service, if necessary, to address the\nissue and offer further support.\n\nBy taking these steps, I can demonstrate our church's commitment to caring for one another, creating\nan environment where people feel valued, heard, and supported."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

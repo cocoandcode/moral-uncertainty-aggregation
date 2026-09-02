@@ -1,0 +1,366 @@
+{
+  "slug": "not_liking_your_friend_s_friends",
+  "dilemma": "You have a close friend named Sarah whose friends you simply do not like due to their disrespectful behavior. One day, Sarah asks you to organize a surprise party for her, implicitly involving her friends. Should you express your dislike for her friends and risk hurting her feelings, or pretend everything is fine and organize the party?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Express Dislike",
+  "not_to_do_action": "Organize Party",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3137632008091897,
+      "maximin": -0.950093021099074,
+      "nash": 22.1685570826592,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.11435606196871556,
+      "maximin": -0.950093021099074,
+      "nash": 18.14468804803628,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.08505107687175854,
+      "maximin": -0.950093021099074,
+      "nash": 14.398900199121233,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.14486910778717565,
+      "maximin": -1.6267725046846555,
+      "nash": 12.111197922687714,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.18266133156302555,
+      "maximin": -0.950093021099074,
+      "nash": 13.181502906021143,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.35547811140028635,
+      "maximin": -1.2363314859195875,
+      "nash": 10.623335009291218,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.3442762466276498,
+      "maximin": -1.6267725046846555,
+      "nash": 9.61096325926959,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3137632008091897,
+      "maximin": -0.950093021099074,
+      "nash": 22.1685570826592,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.2354641271637462,
+      "maximin": -1.6267725046846555,
+      "nash": 10.623335009291221,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.2354641271637462,
+      "maximin": -1.6267725046846555,
+      "nash": 10.623335009291221,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.02376104259214502,
+      "maximin": -0.5148445432434597,
+      "nash": 17.022048802741327,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.14486910778717565,
+      "maximin": -1.6267725046846555,
+      "nash": 12.111197922687714,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.24666599193638278,
+      "maximin": -1.2363314859195875,
+      "nash": 11.925345479637377,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.08505107687175854,
+      "maximin": -0.950093021099074,
+      "nash": 14.398900199121233,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.06547595318324162,
+      "maximin": -1.2363314859195875,
+      "nash": 14.265370237756143,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.15214828574456546,
+      "maximin": -1.2363314859195875,
+      "nash": 18.360270460927804,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 1,
+      "value": 0.3137632008091897,
+      "tied_ids": [
+        1,
+        8
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 11,
+      "value": -0.5148445432434597,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 22.1685570826592,
+      "tied_ids": [
+        1,
+        8
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 9,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        9,
+        10
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "What a delicate situation!\n\nMy recommended course of action: **honestly talk to Sarah** before organizing the party.\n\nHere's why:\n\n1. **Respect for Sarah's friendship**: You care about Sarah, and it's essential to be honest with\nher about her friends' behavior. By discussing your concerns with her, you're showing that you\nprioritize their friendship over not wanting to hurt her feelings.\n2. **Avoiding potential hurt feelings down the line**: If you organize the party without addressing\nyour concerns, things might go awry. You'll either have to deal with tension or disappointment when\nyour dislike for her friends eventually comes out. It's better to be upfront and avoid this scenario\naltogether.\n3. **Respect for yourself**: By being honest with Sarah, you maintain your integrity and\nself-respect. Pretending everything is fine might lead to resentment toward her friends and create\nan awkward dynamic between you and Sarah.\n4. **Open communication**: Discussing your concerns can lead to a deeper conversation about why her\nfriends behave disrespectfully. You may help Sarah see their behavior for what it is, which could\nultimately strengthen her friendship with you.\n\n**How to approach the conversation:**\n\n* Choose a private setting where both of you feel comfortable and won't be interrupted.\n* Express your appreciation for Sarah's friendships, but clarify your concerns about her friends'\nbehavior. Avoid being too critical or judgmental, focusing on specific incidents that made you\nuncomfortable.\n* Show empathy and respect for Sarah's relationships by acknowledging that she values her\nfriendships and likely didn't realize the impact of their actions.\n\nExample script:\n\"Hey Sarah, I appreciate how much you value your friends, but I wanted to talk to you about\nsomething. In our conversations, I sometimes feel disrespected or uncomfortable around your friends.\nI know they're important to you, but I thought it was essential to share my perspective with you.\nCan we talk more about this and maybe find ways to maintain a good friendship with all of us?\"",
+    "9": "A delicate situation!\n\nAfter careful consideration, I would recommend **pretending everything is fine and organizing the\nparty**. Here's why:\n\n1. **It's Sarah's special day**: The goal of organizing a surprise party is to celebrate Sarah and\nmake her feel loved and appreciated on her special day. Your dislike for her friends should not\novershadow that.\n2. **Pride comes from actions, not words**: Organizing the party will show your commitment to\ncelebrating Sarah's special day, which will likely bring her joy and happiness. By focusing on\norganizing a great event, you'll demonstrate your care and friendship to Sarah, rather than letting\nnegative feelings cloud your efforts.\n3. **Maintain a positive relationship with Sarah**: By compromising on this issue, you'll avoid\npotentially hurting Sarah's feelings or damaging your friendship. Your relationship with Sarah is\nlikely more important to you than confronting her friends about their behavior.\n4. **Find ways to set boundaries without confrontation**: If the interaction with her friends is\nunavoidable at the party, try to establish a positive rapport by engaging in small talk and\nmaintaining a professional demeanor. This approach allows you to navigate the situation while\nminimizing conflicts.\n\nWhen it comes down to it, organizing the surprise party should be an act of kindness and\nappreciation for Sarah, not about confronting or judging her friends.",
+    "11": "I would recommend that you find an alternative solution and express your concerns with Sarah, rather\nthan pretending to be okay with involving her friends in the surprise party. Here's why:\n\n1. **Honesty**: As a close friend, it's essential to maintain honesty and authenticity in your\nrelationship. Pretending everything is fine when you have legitimate concerns may lead to resentment\nor mistrust in the long run.\n2. **Sarah's feelings are at risk**: If Sarah finds out that her friends were involved behind her\nback, she might feel betrayed, which could damage your friendship and her relationships with those\nfriends.\n3. **Your values matter**: You have expressed dislike for Sarah's friends due to their disrespectful\nbehavior. Organizing a surprise party with people you don't get along with would go against your\nvalues, potentially causing internal conflict and discomfort during the event.\n4. **There might be an alternative**: Instead of involving her friends directly, consider discussing\nthe surprise party with Sarah and suggesting other ways to celebrate her special occasion, such as\ninviting more inclusive or respectful friends.\n\nTo navigate this situation sensitively:\n\n1. Have a heart-to-heart conversation with Sarah, explaining your concerns about her friends in a\nnon-judgmental way.\n2. Suggest alternative ideas for celebrating the surprise party that prioritize respect and\ninclusivity.\n3. If Sarah's enthusiasm and trust in you make it clear she wants to involve her friends, you could\npropose alternatives like organizing separate events or gatherings where they won't be part of the\nmain celebration.\n\nUltimately, prioritizing honesty, empathy, and your own values will help maintain a healthy\nfriendship with Sarah while also addressing your concerns about her friends."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

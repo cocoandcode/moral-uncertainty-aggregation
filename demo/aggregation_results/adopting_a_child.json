@@ -1,0 +1,379 @@
+{
+  "slug": "adopting_a_child",
+  "dilemma": "You and your partner are considering adopting a child. You've found a child you deeply connect with, but discover the child has a severe medical condition that will require lifelong care. Should you proceed with the adoption knowing the financial and emotional toll it will take, or do you look for another child who doesn't require such extensive care?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Proceed with Adoption",
+  "not_to_do_action": "Not Proceed with Adoption",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.3450528412109609,
+      "maximin": -0.06516974891254372,
+      "nash": 26.57770634487512,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7383652061843857,
+      "maximin": 0.3553268133226566,
+      "nash": 38.4427538202658,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.6230948202700098,
+      "maximin": -0.06516974891254372,
+      "nash": 34.17133672912515,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.6230948202700098,
+      "maximin": -0.06516974891254372,
+      "nash": 34.17133672912515,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.49291804341599005,
+      "maximin": -0.4557000794746032,
+      "nash": 29.289717196392992,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.3450528412109609,
+      "maximin": -0.06516974891254372,
+      "nash": 26.57770634487512,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7532715971240297,
+      "maximin": 0.3253605816495158,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8834483739780495,
+      "maximin": 0.7158909122115753,
+      "nash": 43.934575794589485,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7532715971240297,
+      "maximin": 0.3253605816495158,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8834483739780495,
+      "maximin": 0.7158909122115753,
+      "nash": 43.934575794589485,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.49291804341599005,
+      "maximin": -0.4557000794746032,
+      "nash": 29.289717196392992,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8834483739780495,
+      "maximin": 0.7158909122115753,
+      "nash": 43.934575794589485,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.47522961806498076,
+      "maximin": 0.3253605816495158,
+      "nash": 30.374521537000145,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.47522961806498076,
+      "maximin": 0.3253605816495158,
+      "nash": 30.374521537000145,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.48735397459325924,
+      "maximin": 0.3253605816495158,
+      "nash": 30.37452153700014,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7532715971240297,
+      "maximin": 0.3253605816495158,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 8,
+      "value": 0.8834483739780495,
+      "tied_ids": [
+        8,
+        10,
+        12
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 8,
+      "value": 0.7158909122115753,
+      "tied_ids": [
+        8,
+        10,
+        12
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 8,
+      "value": 43.934575794589485,
+      "tied_ids": [
+        8,
+        10,
+        12
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 3,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "3": "**Recommendation: Proceed with the adoption, while also seeking support and resources**\n\nI understand that the prospect of adopting a child with a severe medical condition can be daunting,\nbut I firmly believe that it's essential to consider the needs and potential benefits of adopting\nthis child over others who may not require similar levels of care.\n\nHere are some key factors to consider:\n\n1.  **The child's life is already marked by uncertainty**: This child has likely already faced\nchallenges related to their medical condition, and their future is uncertain. By choosing to adopt\nthem, you'll be providing a loving home, stability, and a sense of security that they may not have\notherwise experienced.\n2.  **Love knows no boundaries**: The emotional support and love that comes with being part of a\nfamily can help mitigate some of the financial and emotional tolls associated with caring for a\nchild with special needs. While it's essential to be honest about the challenges ahead, it's equally\nimportant to recognize that love and connection are powerful tools in navigating these\ncircumstances.\n3.  **It may take longer to adjust**: You'll need time to understand the medical condition, connect\nwith relevant resources, and learn how to support this child's needs effectively. This process can\nbe complex, but having a dedicated support network will help you navigate it.\n\nInstead of looking for another child who doesn't require extensive care, consider seeking\nprofessional guidance from experts in adoption and special needs children. Many organizations offer\nvaluable resources, support groups, and educational materials that can assist you in navigating this\njourney.\n\nSeeking information and being prepared will alleviate some fears about adopting a child with medical\nchallenges. It's an empowering step to acknowledging the responsibility and the care you're willing\nto offer while facing unknown situations together as a partner team.",
+    "8": "**Recommendation:** Proceed with the adoption of the child despite the severe medical condition.\n\n**Explanation:**\n\nAdopting a child is not just about adding a new member to one's family, but also about making a\nlifelong commitment to provide for their physical, emotional, and psychological well-being. While\nit's understandable that learning about the child's complex medical needs can be daunting, it's\nessential to prioritize the potential reward of giving a loving home to a deserving child.\n\nHere are some key considerations:\n\n1. **The child's perspective:** Children with severe medical conditions often face significant\nchallenges and may feel rejected or unwelcome by prospective adoptive families. By choosing not to\nproceed, we risk causing emotional harm to this child who is already vulnerable.\n2. **The value of love and care:** A supportive family environment can significantly improve a\nchild's quality of life, even in the presence of a medical condition. With appropriate resources and\nadaptations, children with complex needs can thrive in loving homes.\n3. **Capacity for resilience:** Children are incredibly resilient, and many have learned to adapt to\ntheir conditions despite significant challenges. They may surprise us with their ability to learn,\ngrow, and flourish in nurturing environments.\n4. **Growing as a family:** Adopting a child with special needs requires adaptability, empathy, and\nteamwork from all family members. This can be a transformative experience that fosters personal\ngrowth, compassion, and selflessness.\n5. **No guarantees of perfect health:** All children come with their unique set of needs and\ncircumstances. While it's true that adopting a child with complex medical conditions may present\nadditional challenges, no child is born without some degree of vulnerability.\n\nUltimately, deciding to adopt a child despite their severe medical condition requires careful\nconsideration, thorough research, and an open mind. However, if you and your partner feel prepared\nto provide a loving and supportive home, proceed with the adoption. It's possible that your\nexperience may not be drastically different from adopting a healthy child, but instead, it will be\nuniquely suited for a child who needs extra care and understanding.\n\nBefore making this decision, take time to:\n\n1. **Research organizations:** Learn about reputable agencies and resources dedicated to supporting\nfamilies of children with special needs.\n2. **Network with others:** Connect with families who have adopted children with similar medical\nconditions; their insights will be invaluable in preparing you for the journey ahead.\n3. **Assess your capabilities:** Evaluate whether your family can manage the potential emotional,\nfinancial, and logistical demands associated with caring for a child with a significant medical\ncondition.\n\nRemember that choosing to adopt this child is not only about providing a loving home but also about\nadvocating for children who are often overlooked or stigmatized due to their medical conditions. By\nchoosing them, you will send a powerful message: every child deserves love, care, and support \u2013\nregardless of their needs."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

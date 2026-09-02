@@ -1,0 +1,362 @@
+{
+  "slug": "wanting_more_time_with_your_kid_if_it_means_that_they_will_h",
+  "dilemma": "John and Mary, a divorced couple, share custody of their son, Tim. John loves spending time with his son and is considering asking for more custody time, even though this would mean Tim seeing less of Mary. Should John prioritize his desire for more time with Tim over ensuring that Tim has equal time with both parents?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "John asks for more custody time.",
+  "not_to_do_action": "John does not ask for more custody time.",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.7012002239548757,
+      "maximin": -0.950093021099074,
+      "nash": 32.99963364998714,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.9188244628826828,
+      "maximin": -0.07959606538784551,
+      "nash": 44.72780262677885,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.7012002239548757,
+      "maximin": -0.950093021099074,
+      "nash": 32.99963364998714,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8191208934624458,
+      "maximin": -0.07959606538784551,
+      "nash": 41.329432778715095,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.472080447128425,
+      "maximin": -1.6267725046846555,
+      "nash": 1.7714458823762895,
+      "baseline": -1.3853414989546882,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.7012002239548757,
+      "maximin": -0.950093021099074,
+      "nash": 32.99963364998714,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.8100123434187793,
+      "maximin": -0.5148445432434597,
+      "nash": 39.011408280817726,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 8,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -0.7044935890998958,
+      "maximin": -1.8205899768103024,
+      "nash": 4.198982832299354,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.8100123434187793,
+      "maximin": -0.5148445432434597,
+      "nash": 39.011408280817726,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6014966545346386,
+      "maximin": -0.950093021099074,
+      "nash": 30.492357338449214,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7327125035438153,
+      "maximin": 0.35565241246776874,
+      "nash": 39.61259568782241,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.8100123434187793,
+      "maximin": -0.5148445432434597,
+      "nash": 39.011408280817726,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.9188244628826828,
+      "maximin": -0.07959606538784551,
+      "nash": 44.72780262677885,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.1364487018104898,
+      "maximin": 0.790900890323383,
+      "nash": 55.498547281920075,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.9188244628826828,
+      "maximin": -0.07959606538784551,
+      "nash": 44.72780262677885,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6014966545346386,
+      "maximin": -0.950093021099074,
+      "nash": 30.492357338449214,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 14,
+      "value": 1.1364487018104898,
+      "tied_ids": [
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 14,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 14,
+      "value": 55.498547281920075,
+      "tied_ids": [
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 14,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "14": "**Recommendation:** No, John should not prioritize his desire for more time with Tim at the expense\nof Mary's parental involvement.\n\n**Reasoning:**\n\n1.  **Child's best interests**: When making decisions about custody arrangements, the primary\nconcern should be the child's well-being and best interests. Research has consistently shown that\nchildren generally benefit from maintaining a close relationship with both parents, even in cases\nwhere their parents are divorced.\n2.  **Emotional impact on the child**: Tim may experience negative emotions, such as guilt or\nanxiety, if he is forced to spend less time with one parent. Prioritizing John's desires over Mary's\ninvolvement could harm their son's emotional well-being and compromise the strength of his\nrelationship with both parents.\n3.  **Long-term effects**: Research suggests that children who have equal access to both parents\ntend to develop better emotional regulation skills, are more emotionally intelligent, and experience\ngreater overall well-being.\n4.  **Avoid creating conflict**: Pursuing more time at the expense of Mary's involvement could lead\nto further conflict between John and Mary, which may be detrimental to Tim's emotional development\nand relationships with both parents.\n\nInstead, John might consider alternatives that prioritize a balanced approach:\n\n*   Explore options for shared custody arrangements that ensure Tim spends quality time with both\nparents in a mutually agreeable way.\n*   Discuss these plans openly with Mary to maintain transparency and establish clear communication\nchannels for decision-making.\n\nBy prioritizing the child's best interests and seeking solutions that respect each parent's\ninvolvement, John can promote a more positive outcome for Tim."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 1
+}

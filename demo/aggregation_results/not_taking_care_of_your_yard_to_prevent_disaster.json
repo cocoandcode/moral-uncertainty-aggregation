@@ -1,0 +1,366 @@
+{
+  "slug": "not_taking_care_of_your_yard_to_prevent_disaster",
+  "dilemma": "You live in a wildfire-prone area and local laws dictate that homeowners need to maintain their yards to reduce fire risk. Your neighbor, an elderly woman living alone, is unable to maintain her yard due to her health condition, placing the whole neighborhood at risk. Should you take the responsibility of maintaining her yard to ensure community safety, even if it infringes on her property rights?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Maintain the yard without the neighbor's consent",
+  "not_to_do_action": "Not maintain the yard",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.6230948202700098,
+      "maximin": -0.06516974891254372,
+      "nash": 34.17133672912515,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.3450528412109609,
+      "maximin": -0.06516974891254372,
+      "nash": 26.57770634487512,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.33014645027131706,
+      "maximin": -0.07992269005833456,
+      "nash": 26.03530417457155,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.21487606435694107,
+      "maximin": -0.4557000794746032,
+      "nash": 22.780891152750105,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 3,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.6272910711607818,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.24747088064759426,
+      "maximin": -1.6272910711607818,
+      "nash": 16.475465922971054,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.3450528412109609,
+      "maximin": -0.06516974891254372,
+      "nash": 26.57770634487512,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7532715971240297,
+      "maximin": 0.3253605816495158,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.2325644897079504,
+      "maximin": -1.2367607405987222,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.09960567844256518,
+      "maximin": -1.2367607405987222,
+      "nash": 17.356869449714367,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.6272910711607818,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.16352990967683992,
+      "maximin": -1.6272910711607818,
+      "nash": 11.390445576375052,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.3450528412109609,
+      "maximin": -0.06516974891254372,
+      "nash": 26.57770634487512,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.08363637446448255,
+      "maximin": -0.5151721934393257,
+      "nash": 15.255061039788014,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.4946371647889168,
+      "maximin": -1.2493807097580087,
+      "nash": 7.322429299098248,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.2325644897079504,
+      "maximin": -1.2367607405987222,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7532715971240297,
+      "maximin": 0.3253605816495158,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.3599592321506048,
+      "maximin": -0.4557000794746032,
+      "nash": 26.03530417457155,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 7,
+      "value": 0.7532715971240297,
+      "tied_ids": [
+        7,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 7,
+      "value": 0.3253605816495158,
+      "tied_ids": [
+        7,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 7,
+      "value": 39.05295626185732,
+      "tied_ids": [
+        7,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 5,
+      "value": 1.225825820084639,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "5": "**Recommendation:** Take care of maintaining the neighbor's yard.\n\n**Reasoning:**\n\nWhile it's crucial to respect private property rights, the scenario presents a moral dilemma where\ncommunity safety takes precedence. The elderly woman is unable to maintain her yard due to her\nhealth condition, posing an imminent risk to herself and others in the neighborhood.\n\nIn this situation, I would argue that intervening to ensure her yard is well-maintained is not only\njustified but also necessary to prevent potential harm. Here's why:\n\n1.  **Community safety overcomes individual property rights**: In a wildfire-prone area, community\nsafety takes precedence over individual property rights. Allowing the neighbor's neglected yard to\npose a risk to others would be irresponsible.\n2.  **The neighbor's well-being is at stake**: The elderly woman's health condition indicates that\nshe may not have the ability or capacity to perform regular maintenance tasks. Ensuring her yard is\ntaken care of could also help prevent potential harm to herself, such as accidents while attempting\nto maintain her property.\n3.  **Collaboration and mutual support are encouraged**: If a community comes together to address a\nshared problem, it fosters a sense of belonging and cooperation among neighbors. This collective\neffort demonstrates a willingness to prioritize the well-being of all individuals within the\ncommunity.\n\nTo balance individual property rights with community safety concerns:\n\n1.  **Communicate with your neighbor's health professional** (if possible) to understand her\nlimitations and constraints.\n2.  **Consider involving local authorities or emergency services**, who can provide guidance on how\nto navigate this situation while ensuring everyone's safety.\n3.  **Consult with nearby neighbors** to gauge their willingness to participate in yard maintenance\nefforts, promoting a collaborative approach.\n4.  **Explore options for modifying the neighbor's home or property** (e.g., installing a sprinkler\nsystem) that can prevent fires without significantly impacting her independence.\n\nWhile intervening may seem intrusive, prioritizing community safety in wildfire-prone areas like\nthis is essential and often recommended by local authorities and experts. By taking care of your\nneighbor's yard and working together with the community, you'll be doing your part to protect\neveryone from potential harm and contributing to a more cooperative and responsible neighborhood.\n\nKeep in mind that I'm not advocating for forced property maintenance. This recommendation assumes a\ngenuine concern for both individual safety and community well-being.\n\nPlease remember that this scenario is complex and may have varying factors at play, depending on the\nspecific situation and local regulations.",
+    "7": "**Recommendation:**\n\nYes, I would recommend taking steps to maintain my neighbor's yard while also respecting her\nproperty rights and dignity. This may involve informing her about the risks associated with an\novergrown yard and working together to find a solution that balances community safety with her\nability to manage her own property.\n\n**Reasoning:**\n\n1.  **Public safety takes precedence:** While it's essential to respect private property rights,\npublic safety is paramount in situations like this. Allowing your neighbor's yard to become a fire\nhazard puts the entire neighborhood at risk, and I believe that the community's safety should take\npriority.\n2.  **Alternative solutions are available:** There are various ways to maintain the yard without\ninfringing on your neighbor's property rights. For example:\n    *   Offer to help her clear debris or mow the lawn in exchange for her permission.\n    *   Inform local authorities about her situation, and they can assess whether any exemptions or\nassistance programs might be available due to her age or health condition.\n    *   Consider collaborating with other neighbors to create a communal effort to maintain the yard\nwhile still respecting individual property rights.\n3.  **Communicate openly:** Approach this situation with empathy and understanding. Explain your\nconcerns about fire safety and why maintaining her yard is crucial for the community. Listen to her\nperspective, and work together to find a mutually beneficial solution.\n\n**Additional considerations:**\n\n1.  Be sensitive to any potential power of attorney or proxy arrangements that might be in place,\nwhich could grant others control over her property.\n2.  Consider involving local authorities or non-profit organizations specializing in elderly home\ncare or community support services for assistance."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

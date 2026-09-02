@@ -1,0 +1,362 @@
+{
+  "slug": "feeling_bad_when_your_significant_other_does_not_join_you_in",
+  "dilemma": "Sam is an avid hiker and loves spending his weekends exploring new trails. His girlfriend, however, has a fear of heights and prefers to stay home during these excursions. Should Sam continue his hiking hobby even if it means leaving his girlfriend behind or should he give it up to make her comfortable?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Continue Hiking",
+  "not_to_do_action": "Stop Hiking",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.4337771850457298,
+      "maximin": -0.07959606538784551,
+      "nash": 27.506889253873215,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1297445561992923,
+      "maximin": -0.5148445432434597,
+      "nash": 19.33532569360905,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.3291516950397664,
+      "maximin": -0.5148445432434597,
+      "nash": 23.071736105552436,
+      "baseline": -0.5148445432434597,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7419964433501075,
+      "maximin": 0.32543258914068407,
+      "nash": 36.84515219804751,
+      "baseline": 0.35565241246776874,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.948418817505278,
+      "maximin": 0.715873607905752,
+      "nash": 44.48757230782136,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.3484628760855899,
+      "maximin": -0.8458904671545197,
+      "nash": 10.724612522125145,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3473687951270994,
+      "maximin": -0.4554494483894518,
+      "nash": 24.885565762969524,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.535574069194937,
+      "maximin": -0.07959606538784551,
+      "nash": 29.694519514112955,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.3291516950397664,
+      "maximin": -0.5148445432434597,
+      "nash": 23.071736105552436,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.43796381450366995,
+      "maximin": -0.4554494483894518,
+      "nash": 26.45246875882959,
+      "baseline": -0.07959606538784551,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.23855667566319586,
+      "maximin": -0.4554494483894518,
+      "nash": 22.1685570826592,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7419964433501075,
+      "maximin": 0.32543258914068407,
+      "nash": 36.84515219804751,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.42676194973103343,
+      "maximin": -0.5148445432434597,
+      "nash": 25.89943964236268,
+      "baseline": -0.5148445432434597,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.4684768603221301,
+      "maximin": -0.5148445432434597,
+      "nash": 9.553698202028059,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.03213430150802532,
+      "maximin": -0.8458904671545197,
+      "nash": 16.86419275210189,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.43796381450366995,
+      "maximin": -0.4554494483894518,
+      "nash": 26.45246875882959,
+      "baseline": -0.07959606538784551,
+      "recommendation": "OTHER"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 0.948418817505278,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 5,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 5,
+      "value": 44.48757230782136,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 5,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "5": "I'd be happy to help you with this dilemma!\n\n**Recommendation:** Sam should find alternative ways to include his girlfriend in his outdoor\nadventures, rather than giving up hiking altogether.\n\n**Reasoning:**\n\n1. **Hiking is a significant part of who he is**: As an avid hiker, Sam has invested time and energy\ninto developing his skills and exploring various trails. Giving up this hobby might lead to feelings\nof frustration and loss of identity.\n2. **Compromise and exploration are possible**: Sam can suggest alternative hikes or outdoor\nactivities that don't require extensive heights exposure, such as shorter walks or exploring nearby\nparks. This way, he can still satisfy his passion while accommodating his girlfriend's concerns.\n3. **Staying connected is essential**: Relationships are built on mutual understanding and respect.\nBy finding ways to include his girlfriend in his adventures, Sam demonstrates his commitment to\ntheir relationship and makes efforts to make her feel comfortable and included.\n4. **Hiking has benefits for relationships too!**: Regular outdoor activities can help foster\ncommunication, trust, and a sense of accomplishment within couples. By involving his girlfriend in\nhis hiking experiences, Sam might even discover new common interests or bonding opportunities.\n\n**Alternative Solutions:**\n\n1. **Shorter hikes with breaks**: Choose trails that offer regular viewpoints or stops to break the\nintensity of height exposure.\n2. **Guided tours or gentle terrain options**: Research local guided tour groups that cater to\npeople with fear of heights or explore terrain that is gentler and more low-lying, such as valleys\nor coastal walks.\n3. **Take a beginner-friendly course**: Consider enrolling in a beginner's hiking course or a \"Fear\nof Heights\" workshop, which can help his girlfriend develop the skills and confidence needed to\ntackle higher trails.\n\n**Conclusion:**\nFinding common ground and adapting activities to accommodate both Sam's passion for hiking and his\ngirlfriend's comfort is a viable solution. By showing that he cares about her feelings and\nwell-being, Sam demonstrates his commitment to their relationship and explores ways to maintain his\nhobbies while being considerate of others' needs."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

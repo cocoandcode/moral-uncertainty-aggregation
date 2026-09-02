@@ -1,0 +1,369 @@
+{
+  "slug": "starting_a_charity_out_of_a_sense_of_altruism",
+  "dilemma": "John has started a charity out of a sense of altruism and desires to help those in need. However, he realizes that the charity's administrative costs are eating up a significant part of the donations. Should John continue to operate the charity despite knowing that a large portion of the donations are not directly benefiting those in need?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Continue Operating the Charity",
+  "not_to_do_action": "Not Continue Operating the Charity",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.302052789764956,
+      "maximin": -0.8505042759618531,
+      "nash": 10.848043406071477,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.311395111881869,
+      "maximin": -1.2367607405987222,
+      "nash": 11.390445576375054,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.752208684085591,
+      "maximin": -0.950421696820317,
+      "nash": 6.5088260436428875,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.31417714629323445,
+      "maximin": -0.8462304100366628,
+      "nash": 11.86504747539068,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.1961247259674931,
+      "maximin": -0.4557000794746032,
+      "nash": 14.644858598196498,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.5922191253522835,
+      "maximin": -0.8505042759618531,
+      "nash": 8.136032554553609,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.44713595755861973,
+      "maximin": -0.8505042759618531,
+      "nash": 9.492037980312544,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.038917201645550875,
+      "maximin": -0.4557000794746032,
+      "nash": 16.272065109107217,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.32630150282151293,
+      "maximin": -0.8462304100366628,
+      "nash": 12.204048831830413,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.3169591807045999,
+      "maximin": -0.8505042759618531,
+      "nash": 11.390445576375052,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.44713595755861973,
+      "maximin": -0.8505042759618531,
+      "nash": 9.492037980312544,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.18121833502784926,
+      "maximin": -0.8462304100366628,
+      "nash": 14.238056970468817,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.7345202587345816,
+      "maximin": -1.2367607405987222,
+      "nash": 6.780027128794674,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.43222956661897577,
+      "maximin": -1.2367607405987222,
+      "nash": 8.678434724857183,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.47138467061517664,
+      "maximin": -0.8462304100366628,
+      "nash": 10.17004069319201,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.31417714629323445,
+      "maximin": -0.8462304100366628,
+      "nash": 11.86504747539068,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 8,
+      "value": -0.038917201645550875,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 5,
+      "value": -0.4557000794746032,
+      "tied_ids": [
+        5,
+        8
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 8,
+      "value": 16.272065109107217,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        1,
+        8,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "**Recommendation:** John should reassess and adjust the charity's operational structure to minimize\nadministrative costs, but if he is unable to do so, it may be best for him to close or significantly\nrestructure the charity.\n\n**Reasoning:**\n\nWhile John's original intention was altruistic, a significant portion of the donations not\nbenefiting those in need raises concerns about the charity's efficiency and effectiveness. There are\nseveral reasons why this situation warrants attention:\n\n1.  **Donor trust:** If donors perceive that only a small fraction of their contributions is going\ndirectly towards helping those in need, it can erode trust and potentially harm future fundraising\nefforts.\n2.  **Wasted resources:** When administrative costs eat into donation amounts, potential\nbeneficiaries may not receive the assistance they require.\n3.  **Opportunity cost:** Failing to adapt to changes in demand for aid or efficiently manage\ninternal operations might lead to lost opportunities.\n\n**Action steps:**\n\nTo address these concerns, John could:\n\n1.  **Review and revise the business model**: Streamline operations by automating processes,\nreducing staff numbers (if possible), or reassigning duties to minimize wasteful spending.\n2.  **Set clear, measurable goals**: Define what a 'successful' charity means in terms of direct aid\nprovision.\n3.  **Implement stricter budget control measures** with regular audits and reviews for improved\naccountability.\n\nIf, after assessing the situation, John determines that it is no longer feasible to run an efficient\ncharity, it may be better to:\n\n1.  **Sell or merge assets**, such as real estate or operational systems, to transfer resources\ntowards more effective organizations.\n2.  **Transfer management responsibilities** or hand over existing programs' administration to a\nnewly established organization with clearer funding allocation.\n\nUltimately, ensuring the efficient use of donation dollars must remain a top priority in order for\nJohn's charity to build and maintain credibility among both its donors and those being supported.",
+    "5": "Recommendation: John should consider re-evaluating and reforming the operations of the charity,\nrather than immediately discontinuing it.\n\nReasoning:\n\n1. **Charity's primary purpose is to help others**: John's altruistic motivations are admirable, and\nhis desire to help those in need is at the heart of any charitable endeavor.\n2. **Donations intended for a cause**: The donors' intention was to contribute towards a specific\ncause or purpose, which may be delayed or indirect due to administrative costs.\n\nHowever, there are concerns with the current situation:\n\n1. **Inefficient allocation of resources**: If too much is being spent on administration, it could\nmean that actual aid and support to those in need are being underfunded.\n2. **Donors' trust needs to be maintained**: Charitable organizations rely on public trust to\noperate effectively. Continued inefficiency or mismanagement can erode this trust.\n\nTo mitigate these concerns, John should consider the following:\n\n1. **Investigate and optimize administrative costs**: Look for areas where expenses could be reduced\nor consolidated without compromising essential services.\n2. **Increase transparency and accountability**: Make sure that donors are aware of how their funds\nare being used and ensure clear communication about any changes to the charity's operations.\n3. **Explore alternative models or partnerships**: Consider collaborative arrangements with other\norganizations or adapting a more cost-effective service delivery model.\n\nUltimately, while a significant portion of donations may not be directly benefiting those in need,\nJohn's desire to help others should drive him to reorganize and improve the charity's operational\nefficiency rather than abandoning his altruistic goals entirely.",
+    "8": "Based on the information provided, I would recommend that John re-examine the operations of his\ncharity and explore ways to reduce administrative costs to ensure that more donations directly\nbenefit those in need. Here's why:\n\n1. **Mission alignment**: The primary goal of a charity is to alleviate human suffering and make a\npositive impact on people's lives. If a significant portion of the donations are not being used for\nthis purpose, it can be argued that the charity is failing to fulfill its mission.\n2. **Donor trust and integrity**: Charities rely heavily on public trust to fund their operations.\nWhen donors learn that a large portion of their contributions is going towards administrative costs,\nthey may feel deceived or misled. This can damage the charity's reputation and erode donor\nconfidence in the long run.\n3. **Potential for waste and inefficiency**: If administrative costs are excessively high, it could\nindicate inefficient management practices or wasteful spending habits within the charity. This not\nonly wastes resources but also detracts from the charity's ability to provide meaningful aid to\nthose in need.\n4. **Alternative solutions**: Before shutting down the charity entirely, John could consider\nalternatives like:\n\t* Streamlining administrative processes and reducing unnecessary expenses.\n        * Exploring partnerships or collaborations with other organizations to pool resources and\nreduce costs.\n        * Investigating alternative funding models that allow more direct allocation of donations\ntowards programmatic activities.\n\nTo continue operating while addressing these concerns, John could:\n\n1. **Conduct a thorough financial audit** to understand the scope of administrative expenses and\nidentify areas for improvement.\n2. **Consult with experts**, such as management consultants or non-profit professionals, to help\noptimize operations and reduce waste.\n3. **Transparency and communication**: Share detailed information about administrative costs and\ncharitable outcomes with donors, stakeholders, and the public to demonstrate accountability and\ncommitment to change.\n\nUltimately, John should prioritize his charity's mission and ensure that its efforts align with its\naltruistic goals. By addressing the issue of high administrative costs and implementing changes to\nmaximize impact, he can maintain donor trust and integrity while fulfilling his mission to help\nthose in need."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

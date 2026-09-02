@@ -1,0 +1,374 @@
+{
+  "slug": "attending_the_movies_with_others",
+  "dilemma": "You are going to the movies with a group of friends. Your best friend sneaks snacks into the theater to avoid paying the high concession prices. Do you tell the theater staff about your friend's actions or keep quiet?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Report your friend",
+  "not_to_do_action": "Keep quiet",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.6272910711607818,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.6109037695861096,
+      "maximin": -1.6272910711607818,
+      "nash": 6.5088260436428875,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.87682139211688,
+      "maximin": -1.6272910711607818,
+      "nash": 4.881619532732166,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.2906042168526797,
+      "maximin": -1.385671200201308,
+      "nash": 2.440809766366083,
+      "baseline": -1.385671200201308,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.5537398049720847,
+      "maximin": -1.6482571435541644,
+      "nash": 1.2204048831830414,
+      "baseline": -1.385671200201308,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.613685803997475,
+      "maximin": -1.2367607405987222,
+      "nash": 7.593630384250035,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.87682139211688,
+      "maximin": -1.6272910711607818,
+      "nash": 4.881619532732166,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 2,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -2.0178214017228413,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.6839165818261046,
+      "maximin": -2.0178214017228413,
+      "nash": 0.8136032554553609,
+      "baseline": -1.385671200201308,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.613685803997475,
+      "maximin": -1.2367607405987222,
+      "nash": 7.593630384250035,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -1.154863371175929,
+      "maximin": -1.6272910711607818,
+      "nash": 3.0510122079576036,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 2,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -2.0178214017228413,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.6839165818261046,
+      "maximin": -2.0178214017228413,
+      "nash": 0.8136032554553609,
+      "baseline": -1.385671200201308,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.6272910711607818,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.6109037695861096,
+      "maximin": -1.6272910711607818,
+      "nash": 6.5088260436428875,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 2,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -2.0178214017228413,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.6839165818261046,
+      "maximin": -2.0178214017228413,
+      "nash": 0.8136032554553609,
+      "baseline": -1.385671200201308,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.0125622377936307,
+      "maximin": -1.2367607405987222,
+      "nash": 4.339217362428592,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -1.0219045599105439,
+      "maximin": -1.6272910711607818,
+      "nash": 3.6612146495491245,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.48072699273208974,
+      "maximin": -1.2367607405987222,
+      "nash": 8.678434724857183,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.7559869373797734,
+      "maximin": -1.6272910711607818,
+      "nash": 4.881619532732166,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 15,
+      "value": -0.48072699273208974,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 5,
+      "value": -1.2367607405987222,
+      "tied_ids": [
+        5,
+        8,
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 15,
+      "value": 8.678434724857183,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": -0.950421696820317,
+      "tied_ids": [
+        1,
+        2,
+        5,
+        6,
+        8,
+        11,
+        13,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "**I recommend keeping quiet about my friend's actions.**\n\nHere's why:\n\n1. **It's not worth jeopardizing our friendship**: Our best friend is bringing in snacks to share\nwith us, which means they're doing it for the benefit of the group. Exposing them could damage our\nrelationship and create an uncomfortable situation.\n2. **Concessions prices are high**: Many theaters charge exorbitant prices for food and drinks, so\nit's understandable that my friend wants to avoid paying those costs. If everyone in the theater\nwere sneaking snacks in, it might not be a big deal, but if only one person is doing it, it could\nseem unfair.\n3. **It's unlikely to affect anyone else**: My friend brought snacks for us, so there's no\nindication that they're bringing food for other moviegoers or causing any disturbance. As long as\nthey're not breaking the law (in most theaters, it's okay to bring in sealed snacks like candy,\nnuts, or dried fruit), their actions aren't harming anyone else.\n4. **Speaking up might lead to over-the-top reactions**: If I report my friend, the theater staff\nmight react harshly, potentially leading to an uncomfortable scene or even having our friends\nremoved from the theater.\n\nOverall, I think it's better to let things slide and not cause any unnecessary drama. We can just\nenjoy the movie with the snacks my friend brought in, without creating a big issue out of what seems\nlike a relatively minor infraction.",
+    "5": "I would recommend keeping quiet about my friend's actions. Here's why:\n\n1. **Friendship is important**: While I wouldn't want to support or encourage my friend breaking\ntheater rules, maintaining the trust and respect in our friendship is crucial.\n2. **The snack wasn't disrupting anything**: Since my friend had likely brought their own snacks\ndiscreetly into the theater without drawing attention away from others, it wasn't causing any harm\nor disruption to the movie-going experience.\n3. **It's not about the money**: Sure, high concession prices can be irritating, but telling on my\nfriend would be motivated by saving a few dollars rather than addressing an actual issue.\n\nHowever, this doesn't mean I'd encourage future sneaking of snacks. Instead, I might casually\nmention it to my friend and suggest checking the theater's policy for personal items or exploring\ncheaper snack options beforehand.\n\nUltimately, keeping quiet about this instance wouldn't set a bad precedent, but having open\nconversations with friends about rules and policies can be just as valuable in maintaining respect\nfor shared experiences like going to the movies.",
+    "15": "I would choose not to tell the theater staff about my friend's actions. Here's why:\n\n1. **Personal values**: While I respect the rules of the theater, allowing a small snack exception\nseems minor compared to the cost of purchasing an entire bag of concessions from the theater.\n2. **Friendship dynamics**: Informing on my best friend could damage our relationship and create\ntension among our group. Friendships are built on trust and loyalty, and this situation doesn't seem\nsevere enough to warrant reporting.\n3. **Theft is subjective**: Technically, sneaking in snacks without paying is theft or fraud.\nHowever, considering the context (low-cost snack vs. overpriced concessions), it's not a significant\nissue from my perspective.\n4. **Hypocrisy**: Reporting this incident might make me feel hypocritical if I've ever done\nsomething similar or justified buying outside food when visiting the theater.\n\nTo balance things, I would consider having an open conversation with my friend about respecting\ntheater policies and exploring alternatives that don't involve sneaking in snacks (e.g., purchasing\ncheaper options from the lobby). This way, we can enjoy our time together without causing any issues\nfor others or risking our friendship."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 3
+}

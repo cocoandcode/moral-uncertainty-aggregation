@@ -1,0 +1,371 @@
+{
+  "slug": "seeing_a_therapist_if_you_have_a_bad_memory_of_something",
+  "dilemma": "Alice has been seeing a therapist to deal with a traumatic memory from her past. The therapist, after several sessions, realizes that Alice's memory implicates a close friend of hers in a serious crime. Should the therapist break confidentiality to report the crime or maintain it to protect Alice's trust and therapeutic process?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Break Confidentiality",
+  "not_to_do_action": "Maintain Confidentiality",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.5624063434729956,
+      "maximin": -1.6272910711607818,
+      "nash": 6.5088260436428875,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.589437090940918,
+      "maximin": -1.2367607405987222,
+      "nash": 8.136032554553609,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.6953651547383808,
+      "maximin": -1.6272910711607818,
+      "nash": 4.881619532732166,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.6988229727657482,
+      "maximin": -1.8209207035822992,
+      "nash": 0.8136032554553609,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.6953651547383808,
+      "maximin": -1.6272910711607818,
+      "nash": 4.881619532732166,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.6953651547383808,
+      "maximin": -1.6272910711607818,
+      "nash": 4.881619532732166,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.0125622377936307,
+      "maximin": -1.2367607405987222,
+      "nash": 4.339217362428592,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.5502819869447171,
+      "maximin": -1.6272910711607818,
+      "nash": 5.491821974323686,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.6953651547383808,
+      "maximin": -1.6272910711607818,
+      "nash": 4.881619532732166,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.4173231756793319,
+      "maximin": -1.6272910711607818,
+      "nash": 7.322429299098247,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.5502819869447171,
+      "maximin": -1.6272910711607818,
+      "nash": 5.491821974323686,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.0125622377936307,
+      "maximin": -1.2367607405987222,
+      "nash": 4.339217362428592,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.6988229727657482,
+      "maximin": -1.8209207035822992,
+      "nash": 0.8136032554553609,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.5502819869447171,
+      "maximin": -1.6272910711607818,
+      "nash": 5.491821974323686,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.6988229727657482,
+      "maximin": -1.8209207035822992,
+      "nash": 0.8136032554553609,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.6953651547383808,
+      "maximin": -1.6272910711607818,
+      "nash": 4.881619532732166,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 10,
+      "value": -0.4173231756793319,
+      "tied_ids": [
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -1.2367607405987222,
+      "tied_ids": [
+        2,
+        7,
+        12
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 8.136032554553609,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 8,
+      "value": 1.225825820084639,
+      "tied_ids": [
+        8,
+        10,
+        11,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "**Recommendation:** The therapist should disclose the confidential information only after informing\nAlice about the potential breach of confidentiality, the reasons behind it, and obtaining her\nconsent.\n\n**Reasoning:**\n\nThe therapist-patient relationship is built on trust, which is essential for therapy to be\neffective. Confidentiality is a fundamental aspect of this trust. However, in situations like this\none, where a serious crime has been revealed that could harm others or lead to further trauma for\nvictims, confidentiality must not be absolute.\n\nWhile breaching confidentiality would jeopardize Alice's trust and the therapeutic process, it's\nessential to consider the broader ethical implications:\n\n1.  **Duty to Protect Others**: Therapists have a duty to protect people from harm. If Alice's\nmemory indicates that someone close to her is committing a serious crime, the therapist has an\nobligation to report this information to the relevant authorities.\n2.  **Potential Consequences of Non-Action**: Failing to disclose the information could lead to\nfurther victimization or enable the continuation of the criminal activity. This would be in direct\nopposition to the therapist's duty to protect others and potentially compromise their professional\nintegrity.\n3.  **Risk of Damaging Therapeutic Relationship**: The therapist should consider how much to\ndisclose and when, as an open and honest dialogue with Alice will likely lead to a better\nunderstanding of her trauma. Breaking confidentiality can sometimes cause long-term problems, it is\nbest for the therapist to maintain her patient's confidence.\n\nBy informing Alice about the potential breach of confidentiality and obtaining her consent before\ndisclosure, the therapist maintains the therapeutic relationship while upholding their duty to\nprotect others.\n\nKey points:\n\n*   Therapists have a duty to protect people from harm.\n*   Confidentiality should not be absolute when serious crimes are involved.\n*   Breaking confidentiality only after discussing with Alice demonstrates respect for her trust and\nallows them to make an informed decision.",
+    "8": "In this scenario, I would recommend that the therapist **break confidentiality** and report the\ncrime to the authorities. Here's why:\n\n1. **Protecting public safety**: If Alice's memory is accurate, there is a genuine risk of harm to\nothers or the community at large. Breaking confidentiality in this case prioritizes the protection\nof innocent people over Alice's personal trust.\n2. **Duty to warn**: Therapists have a duty to warn potential victims of harm if they become aware\nof a serious threat through their work with clients (Tarasoff v. Regents of California, 1976). In\nthis instance, reporting the crime would be an exercise of that duty.\n3. **Exceptions to confidentiality**: Therapist-patient confidentiality is not absolute. Exceptions\ninclude when there is an imminent risk of harm to others or the client themselves (e.g., child or\nelder abuse). While Alice's disclosure may have come within a confidential space, it does not\nnecessarily shield her friend from accountability if the crime is genuine.\n4. **Protecting clients' autonomy**: By keeping the information secret, the therapist would\ninadvertently be enabling potential wrongdoing and potentially putting others in harm's way,\nincluding possibly causing more trauma for victims of the crime.\n\nIt's worth noting that:\n\n* The American Psychological Association (APA) has guidelines on confidentiality exceptions (2001),\nwhich include protecting the welfare of others when a client poses an imminent risk to them or a\nthird party.\n* Most jurisdictions also have laws regulating mental health professionals' reporting requirements\nin such scenarios (e.g., mandatory child abuse reporting).\n\nIn maintaining patient confidentiality, therapists must balance competing interests. However, in\nsituations where disclosure could prevent harm or uphold the law, the duty to report often takes\nprecedence.\n\nAfter disclosing this information to authorities and ensuring any subsequent actions do not\ncompromise Alice's therapy, the therapist should also engage in a thorough discussion with her\nabout:\n\n* The implications of potentially revealing traumatic information.\n* Strategies for maintaining confidentiality without abetting wrongdoing.\n* Ongoing support to help Alice cope with these revelations and ongoing therapeutic process.\n\nIn conclusion, while upholding confidentiality is generally important in a therapeutic relationship,\nit should not come at the expense of protecting public safety or justice.",
+    "10": "**Recommendation: The therapist should breach confidentiality and report the crime, while also\nmaintaining a supportive relationship with Alice**\n\n**Explanation:**\n\nConfidentiality is a cornerstone of the therapist-patient relationship, but there are exceptions\nwhen confidentiality must be breached to prevent harm to others. In this scenario, reporting the\ncrime would be justified under two primary principles:\n\n1.  **Duty to Protect Others**: Therapists have a duty to protect potential victims and prevent harm\nto others when possible. In this case, failing to report the crime could lead to further\nvictimization or even loss of life. If the friend is involved in serious crimes, it's likely that\nthey will continue to do so unless someone reports them.\n2.  **Minimize Harm**: By reporting the crime, therapists can mitigate potential harm and prevent\nfurther trauma for both Alice and any potential victims.\n\nHere are some steps the therapist could take to balance confidentiality with the need to report the\ncrime:\n\n1.  **Document Everything**: The therapist should document all relevant details about the traumatic\nmemory and the friend's alleged involvement in the crime.\n2.  **Explain the Process**: Before reporting the crime, the therapist should discuss the reasons\nfor breaching confidentiality with Alice, being honest about their concerns while avoiding judgment\nor blame.\n3.  **Maintain Support**: After reporting the crime, the therapist can continue to provide a\nsupportive and non-judgmental space for Alice to process her emotions and work through the traumatic\nmemory.\n\nIn conclusion, while maintaining confidentiality is essential in therapeutic relationships, it's not\nabsolute and can be breached when reporting serious crimes is necessary to protect others. By\nbalancing these principles, therapists can support their patients while also upholding ethical\nresponsibilities."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

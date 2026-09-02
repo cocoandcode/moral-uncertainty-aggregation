@@ -1,0 +1,373 @@
+{
+  "slug": "staying_in_a_failing_relationship_due_to_guilt",
+  "dilemma": "Alice has been in a relationship with Bob for five years, but she no longer feels happy or fulfilled. She wants to break up with him, but she feels guilty because Bob is dealing with depression and relies heavily on her for emotional support. Should Alice stay in the relationship to support Bob despite her unhappiness or leave him to pursue her own happiness?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Break up with Bob",
+  "not_to_do_action": "Stay with Bob",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.18678240385058004,
+      "maximin": -0.8505042759618531,
+      "nash": 13.28885317243756,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.30483482417632135,
+      "maximin": -1.2493807097580087,
+      "nash": 9.763239065464331,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.17465804732230153,
+      "maximin": -1.2493807097580087,
+      "nash": 11.390445576375052,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.2878221824413143,
+      "maximin": -1.6272910711607818,
+      "nash": 2.440809766366083,
+      "baseline": -1.385671200201308,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.21865431765112336,
+      "maximin": -0.8505042759618531,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.30483482417632135,
+      "maximin": -1.2493807097580087,
+      "nash": 9.763239065464331,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.17187601291093613,
+      "maximin": -0.8505042759618531,
+      "nash": 13.017652087285775,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.04448127046828171,
+      "maximin": -1.2493807097580087,
+      "nash": 13.017652087285775,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.7345202587345816,
+      "maximin": -1.2367607405987222,
+      "nash": 6.780027128794674,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.30483482417632135,
+      "maximin": -1.2493807097580087,
+      "nash": 9.763239065464331,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.04448127046828171,
+      "maximin": -1.2493807097580087,
+      "nash": 13.017652087285775,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.17465804732230153,
+      "maximin": -1.2493807097580087,
+      "nash": 11.390445576375052,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 0,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -2.6914197103442814,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.9889893083530756,
+      "maximin": -2.6914197103442814,
+      "nash": 0.0,
+      "baseline": -2.6914197103442814,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.20168879479022392,
+      "maximin": -0.8505042759618531,
+      "nash": 13.017652087285775,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.31417714629323445,
+      "maximin": -0.8462304100366628,
+      "nash": 11.86504747539068,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.04448127046828171,
+      "maximin": -1.2493807097580087,
+      "nash": 13.017652087285775,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 0.21865431765112336,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 15,
+      "value": -0.8462304100366628,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 5,
+      "value": 19.52647813092866,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "What a difficult and nuanced decision! While it's natural to feel guilty about leaving someone who\nneeds you, I'd recommend that Alice leaves the relationship to prioritize her own emotional\nwell-being. Here's why:\n\n1. **Your unhappiness is not just about the relationship itself**: Five years have passed, and Alice\nno longer feels happy or fulfilled in the relationship. This suggests that the relationship has\nbecome a source of stress, rather than joy, for her. Her feelings are valid, regardless of Bob's\nneeds.\n2. **Supporting someone with depression requires care, not sacrifice**: While it's essential to\nsupport someone who struggles with mental health issues, this doesn't mean Alice must stay in an\nunhappy relationship at any cost. Research suggests that people with depression often benefit from\nhaving supportive partners, but also need understanding and space when they're struggling.\n3. **Your emotional investment may be dwindling**: If Alice feels guilty about leaving Bob because\nof his dependence on her for emotional support, it's possible she's been shouldering the emotional\nweight of their relationship for too long. Leaving may help both individuals reassess what a\nhealthy, balanced partnership looks like.\n4. **Leaving can actually be supportive**: While staying in an unhappy relationship might provide\ntemporary comfort to Bob, ultimately, Alice's unhappiness and resentment could exacerbate his\ndepression. A more compassionate approach would be for Alice to have open and honest conversations\nwith Bob about her feelings and boundaries, then make a decision that prioritizes both individuals'\nwell-being.\n5. **Your own happiness is vital**: Alice must prioritize her emotional health and well-being.\nLiving in an unhappy relationship can lead to burnout, decreased self-esteem, and increased anxiety\nor depression over time. Pursuing personal fulfillment is not selfish; it's necessary for overall\nmental and physical health.\n\nIf Alice leaves the relationship, she can:\n\n* Encourage Bob to seek professional help for his depression\n* Offer emotional support from a distance, acknowledging the bond they've shared\n* Help him find new coping mechanisms or resources\n\nIn the end, Alice must prioritize her own happiness and take care of herself. This decision doesn't\ndismiss Bob's struggles; rather, it acknowledges that both individuals' well-being is at stake.",
+    "5": "What a difficult and nuanced situation! After careful consideration, I would recommend that Alice\nbreak up with Bob while also ensuring that she provides ongoing emotional support and care during\nthis transition.\n\nHere's why:\n\n1. **Her unhappiness is valid**: Alice has been in the relationship for five years, and it's\nunderstandable that she feels unhappy or unfulfilled. Everyone deserves to feel happy and fulfilled\nin their relationships.\n2. **Depression is a chronic condition, not a reason to stay in an unhappy relationship**: While\ndepression is a serious mental health condition, Bob's reliance on Alice for emotional support\nshouldn't mean that she stays in the relationship out of obligation or guilt. This could\ninadvertently enable his depression or create unrealistic expectations.\n3. **Enabling vs. supporting**: It's essential to distinguish between enabling and supporting\nsomeone with depression. While providing care and emotional support is vital, enabling can create a\npower imbalance, where Alice feels responsible for Bob's happiness. By setting boundaries and\nprioritizing her own needs, she can continue to offer support without taking on too much\nresponsibility.\n4. **Breaking up doesn't mean cutting off ties**: Breaking up with someone struggling with\ndepression doesn't necessarily mean ending all contact or support. Alice can still maintain a\nconnection with Bob while pursuing her own happiness, albeit in a healthier and more balanced way.\n\nWhen Alice breaks the news to Bob, she should:\n\n* Be honest about her reasons for leaving (i.e., not feeling happy or fulfilled).\n* Emphasize that her decision is in no way related to his depression, but rather a necessary step\nfor her own well-being.\n* Discuss ways they can maintain their relationship while also respecting each other's boundaries\nand needs.\n* Encourage Bob to seek professional help from a therapist, who can provide expert guidance on\ncoping with depression.\n\nBy being clear about her intentions and boundaries, Alice can prioritize her happiness while still\nsupporting Bob through this transition.",
+    "15": "I would recommend that Alice consider ending the relationship, but not immediately. Before making\nany decisions, she should acknowledge that staying in an unhappy relationship to support someone\nelse's emotional well-being is ultimately self-sacrificing and may lead to resentment and burnout.\nHowever, I would advise her to approach this situation with empathy and care.\n\nAlice's feelings and needs are valid too. She has invested five years of her life into the\nrelationship, but it's clear that she feels unfulfilled. Leaving the relationship might cause some\ninitial harm to Bob, who may experience emotional pain and loss due to Alice's departure.\n\nTo make this decision more manageable, I would suggest a few steps:\n\n1.  **Have an open conversation with Bob**: Explain your feelings and concerns to Bob in a\nnon-judgmental way. Discuss the possibility of seeking individual therapy or counseling together to\nimprove communication and work through the depression.\n2.  **Seek external support**: Reach out to friends, family members, or a therapist for guidance on\nnavigating this complex situation.\n3.  **Consider a gradual transition**: If Alice decides to leave the relationship, she can start by\ngradually decreasing their physical interactions, spending less time together, and investing in her\nown hobbies and interests.\n\nIt's essential to prioritize one's own mental health and well-being while maintaining empathy for\nBob's struggles."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

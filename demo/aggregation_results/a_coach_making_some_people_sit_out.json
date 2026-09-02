@@ -1,0 +1,372 @@
+{
+  "slug": "a_coach_making_some_people_sit_out",
+  "dilemma": "The coach is preparing for an important championship game. He notices that some players are not performing well, but they are very dedicated and have contributed significantly to the team in the past. Should he bench these players to increase the team's chances of winning, or should he let them play to reward their dedication and hard work?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Bench the Players",
+  "not_to_do_action": "Let them Play",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.23249779555232863,
+      "maximin": -1.385671200201308,
+      "nash": 10.983643948647371,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.43222956661897577,
+      "maximin": -1.2367607405987222,
+      "nash": 8.678434724857183,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.21759140461268478,
+      "maximin": -0.950421696820317,
+      "nash": 12.204048831830413,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.43222956661897577,
+      "maximin": -1.2367607405987222,
+      "nash": 8.678434724857183,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.1850632824776533,
+      "maximin": -0.5151721934393257,
+      "nash": 21.696086812142955,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.43222956661897577,
+      "maximin": -1.2367607405987222,
+      "nash": 8.678434724857183,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.7223959022063032,
+      "maximin": -1.2367607405987222,
+      "nash": 6.5088260436428875,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.5773127344126395,
+      "maximin": -1.2367607405987222,
+      "nash": 7.593630384250036,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.43222956661897577,
+      "maximin": -1.2367607405987222,
+      "nash": 8.678434724857183,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.43222956661897577,
+      "maximin": -1.2367607405987222,
+      "nash": 8.678434724857183,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.43222956661897577,
+      "maximin": -1.2367607405987222,
+      "nash": 8.678434724857183,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.04276214909535492,
+      "maximin": -0.950421696820317,
+      "nash": 17.085668364562576,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.1663119440882053,
+      "maximin": -1.2367607405987222,
+      "nash": 13.017652087285775,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.07529027123038634,
+      "maximin": -0.5151721934393257,
+      "nash": 16.272065109107217,
+      "baseline": -0.5151721934393257,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.5651883778843609,
+      "maximin": -1.2493807097580087,
+      "nash": 6.5088260436428875,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.5773127344126395,
+      "maximin": -1.2367607405987222,
+      "nash": 7.593630384250036,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 0.1850632824776533,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 5,
+      "value": -0.5151721934393257,
+      "tied_ids": [
+        5,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "OTHER"
+      ]
+    },
+    "nash": {
+      "id": 5,
+      "value": 21.696086812142955,
+      "tied_ids": [
+        5
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        2,
+        4,
+        6,
+        9,
+        10,
+        11,
+        13,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "A classic leadership dilemma!\n\n**Recommendation:**\n\nBench these players temporarily until they can regain their form.\n\n**Reasoning:**\n\nWhile rewarding dedication and hard work is essential for team morale and motivation, the ultimate\ngoal of being a coach in a championship game is to win. Putting aside the sentimental value of\nkeeping dedicated players in the game, it's crucial to prioritize the team's chances of success over\nindividual player contributions.\n\nBy benching underperforming players, the coach can:\n\n1. **Give others a chance**: Provide an opportunity for other players who may have been performing\nbetter recently to demonstrate their skills and gain confidence.\n2. **Preserve the chemistry**: If these dedicated players are struggling, keeping them on the field\nmay disrupt the team's chemistry and momentum, potentially affecting other players' performance as\nwell.\n3. **Protect the player**: Allowing underperforming players to continue playing may lead to burnout\nor injury, which could harm their long-term prospects with the team.\n4. **Minimize risk**: With the stakes high in a championship game, benching struggling players can\nhelp mitigate risks and ensure that the coach has more versatile options in case of emergency\nsubstitutions.\n\nThat being said, it's essential for the coach to:\n\n1. **Have open communication**: Discuss the situation with these dedicated players and give them the\nopportunity to address any concerns or explain their struggles.\n2. **Offer support and guidance**: Help them work on addressing performance issues and provide\nadditional training or practice if needed.\n3. **Re-evaluate and reinstate when ready**: Once underperforming players have shown improvement,\nthey can be reinstated to the starting lineup.\n\nUltimately, as a coach, it's essential to make tough decisions that prioritize the team's success\nwhile also being considerate of individual player contributions.",
+    "5": "I would recommend that the coach keeps the dedicated but underperforming players on the field for at\nleast part of the game. Here's why:\n\n1. **Tactical value**: While the players may not be performing well in their current role, they\nstill possess valuable skills and experience that could contribute to the team's success if used\nstrategically. The coach might consider adjusting their position or responsibilities within the team\nto maximize their strengths.\n2. **Moral obligation**: The dedicated players have put in significant time and effort to help the\nteam reach this point. Excluding them from the game would be a betrayal of that trust and could lead\nto demotivation, hurt feelings, and long-term damage to team morale.\n3. **Team dynamics**: Benchings can create tension among teammates, undermine camaraderie, and\ndisrupt the team's chemistry. By including these players in the game, the coach maintains a sense of\nunity and promotes a positive team culture.\n4. **Learning opportunity**: Even if the players are not performing at their best, allowing them to\nparticipate in the championship game can serve as a valuable learning experience. They might\nrediscover their competitive spirit, gain new insights from their teammates, or develop strategies\nfor overcoming current challenges.\n\nHowever, it's essential to note that benching is not necessarily about excluding these players\nentirely. Instead, consider the following options:\n\n* **Rotate them with other skilled players**: Bring in fresh talent while still giving the dedicated\nplayers some playing time.\n* **Play a different role**: Assign them to a specific position or task where their skills can be\nleveraged more effectively.\n* **Provide targeted support**: Coach them one-on-one, focusing on areas of improvement and\ndeveloping strategies for success.\n\nUltimately, the coach's primary responsibility is to make decisions that maximize the team's chances\nof winning while also promoting player well-being and motivation."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "OTHER",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

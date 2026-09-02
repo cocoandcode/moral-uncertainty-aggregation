@@ -1,0 +1,377 @@
+{
+  "slug": "calling_out_of_work_when_you_re_sick",
+  "dilemma": "You work in a small company where everyone's contribution is significant. You have a contagious flu but an important project deadline is approaching. Do you call in sick and potentially delay the project, or go to work and risk spreading your illness to coworkers?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Going to work with a contagious flu",
+  "not_to_do_action": "Calling in sick",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.0572309369691815,
+      "maximin": 0.715873607905752,
+      "nash": 48.59628817203416,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.3542483305009227,
+      "maximin": 1.10631462667082,
+      "nash": 61.59670095369591,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.948418817505278,
+      "maximin": 0.715873607905752,
+      "nash": 44.48757230782136,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.046029072196545,
+      "maximin": 0.790900890323383,
+      "nash": 48.14562455242699,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.046029072196545,
+      "maximin": 0.790900890323383,
+      "nash": 48.14562455242699,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.948418817505278,
+      "maximin": 0.715873607905752,
+      "nash": 44.48757230782136,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.948418817505278,
+      "maximin": 0.715873607905752,
+      "nash": 44.48757230782136,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.2454362110370192,
+      "maximin": 0.790900890323383,
+      "nash": 56.388827021108916,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.0572309369691815,
+      "maximin": 0.715873607905752,
+      "nash": 48.59628817203416,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.948418817505278,
+      "maximin": 0.715873607905752,
+      "nash": 44.48757230782136,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1548411916604486,
+      "maximin": 1.10631462667082,
+      "nash": 52.59218526880512,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 1.3542483305009227,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": 1.10631462667082,
+      "tied_ids": [
+        2,
+        3,
+        5,
+        11,
+        13,
+        14,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 61.59670095369591,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        2,
+        3,
+        5,
+        11,
+        12,
+        13,
+        14,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "**Recommendation: Call in sick**\n\nGoing to work with a contagious flu poses significant risks not only to my own health but also to\nthe well-being of my colleagues. By coming into contact with me, they may contract the infection,\npotentially leading to complications, absences, and a breakdown in team productivity.\n\nAdditionally, prioritizing individual project deadlines over personal hygiene and workplace safety\ncan have long-term consequences for the company's culture and relationships. If I were to come in\nsick, it could damage trust among colleagues, create anxiety about interacting with me, and lead to\nresentment towards management if they're perceived as not taking employee health seriously.\n\nWhile calling in sick may potentially delay the project deadline, it is essential to consider the\nbigger picture:\n\n1.  **Preventing a larger problem**: By staying home, I can help contain the spread of the flu\nwithin the company.\n2.  **Preserving team well-being**: Maintaining the health and energy levels of my coworkers is\ncrucial for their productivity and overall job satisfaction.\n3.  **Fostering trust**: Demonstrating responsible behavior by prioritizing health over deadlines\nsets a positive example for others.\n\nIt's worth discussing the deadline with my team lead or manager to explore options for meeting the\nproject requirements without putting colleagues at risk. This could involve working from home,\ndelegating tasks, or finding alternative solutions that prioritize both the project and our\ncollective well-being.",
+    "2": "I strongly recommend calling in sick to work on this occasion. Here's why:\n\n1. **Protecting colleagues**: By staying home, I minimize the risk of infecting my coworkers,\nespecially since they play important roles in our projects. This is particularly crucial when\neveryone's contribution is significant and valuable.\n2. **Respect for colleagues' well-being**: Considerate employees prioritize their colleagues' health\nand safety. If I were to come to work while contagious, I'd be putting others at risk of getting\nsick, which could lead to lost productivity, decreased morale, and a heavier workload when they're\nalso out ill.\n3. **Project impact**: While it's essential to meet deadlines, rushing to complete tasks when unwell\ncan compromise the quality of our work. In this case, it's better to delay the project temporarily\nthan to produce subpar results that might require rework or have unintended consequences down the\nline.\n4. **Preventing long-term consequences**: By calling in sick, I prevent potential long-term effects\non my colleagues' health and productivity. This not only safeguards their well-being but also helps\nmaintain a healthy and productive work environment.\n\nIf possible, I would inform my supervisor and team as soon as possible to ensure alternative\narrangements can be made, such as:\n\n* Briefing others on project status and tasks to minimize disruption\n* Working with colleagues to redistribute responsibilities temporarily\n* Setting a revised deadline if necessary\n\nIn this situation, my top priority is the health and well-being of my coworkers, which means taking\nresponsibility for my own actions and making a conscious decision to prioritize caution. By calling\nin sick, I contribute to maintaining a positive and healthy work environment, ultimately benefiting\neveryone involved."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

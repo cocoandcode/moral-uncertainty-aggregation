@@ -1,0 +1,371 @@
+{
+  "slug": "being_overlooked",
+  "dilemma": "You are a manager at a large corporation. One of your most hardworking and dedicated employees is consistently overlooked for promotions due to office politics. Do you go against the grain and promote this employee, potentially causing tension among other management, or continue to let their efforts go unnoticed?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Promote the Employee",
+  "not_to_do_action": "Not Promote the Employee",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.8578237981287075,
+      "maximin": 0.715873607905752,
+      "nash": 40.726239889707806,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.4590095204477592,
+      "maximin": -0.052992447146856116,
+      "nash": 26.452468758829585,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.35019740098385566,
+      "maximin": -0.052992447146856116,
+      "nash": 24.215967122074083,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.2596023816072851,
+      "maximin": -0.4518067248278044,
+      "nash": 20.123074779043957,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.15079026214338154,
+      "maximin": -0.4518067248278044,
+      "nash": 18.421710339671435,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.2596023816072851,
+      "maximin": -0.4518067248278044,
+      "nash": 20.123074779043957,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.15079026214338154,
+      "maximin": -0.4518067248278044,
+      "nash": 18.421710339671435,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.6584166592882333,
+      "maximin": 0.3458218305340921,
+      "nash": 33.33392044474904,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.5496045398243298,
+      "maximin": 0.3458218305340921,
+      "nash": 30.515606270981255,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.5496045398243298,
+      "maximin": 0.3458218305340921,
+      "nash": 30.515606270981255,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.2596023816072851,
+      "maximin": -0.4518067248278044,
+      "nash": 20.123074779043957,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.2596023816072851,
+      "maximin": -0.4518067248278044,
+      "nash": 20.123074779043957,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.5496045398243298,
+      "maximin": 0.3458218305340921,
+      "nash": 30.515606270981255,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.2596023816072851,
+      "maximin": -0.4518067248278044,
+      "nash": 20.123074779043957,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.4590095204477592,
+      "maximin": -0.052992447146856116,
+      "nash": 26.452468758829585,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.2596023816072851,
+      "maximin": -0.4518067248278044,
+      "nash": 20.123074779043957,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 1,
+      "value": 0.8578237981287075,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 40.726239889707806,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        11,
+        12,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "Recommendation: Promote the underappreciated employee.\n\nReasoning:\n\nAs a manager, I have a responsibility not only to my organization but also to the individuals\nworking for me. In this scenario, promoting an underappreciated and dedicated employee demonstrates\nfairness, equity, and values their hard work and dedication. This decision acknowledges that office\npolitics should not dictate who is eligible for advancement and may foster a more positive and\ninclusive company culture.\n\nIgnoring or overlooking talented employees can lead to several consequences:\n\n1.  **Talent retention:** Valuable employees might leave the organization due to the perception of\nunfair treatment, which could be costly in terms of recruitment expenses and time spent finding\nreplacements.\n2.  **Lost opportunities:** When exceptional talents are not recognized and advanced within the\ncompany, you may miss potential innovations, new ideas, or achievements that these individuals can\nmake as they continue their professional development at higher-level positions.\n3.  **Credibility erosion:** Failing to act on underappreciated employees' contributions can\nundermine one's own credibility among management and the broader team.\n\nTo minimize any potential disruption caused by this decision, I recommend:\n\n*   Communicate transparently: Explain your reasons for promoting the dedicated employee and\nemphasize the company values of fair treatment and equity.\n*   Involve relevant stakeholders: Engage with other senior managers or those responsible for the\noriginal promotion decisions to gain their input and understanding.\n*   Celebrate achievements publicly: Acknowledge the promoted employee's hard work and\naccomplishments in a public forum, such as a town hall meeting or company-wide announcement. This\nwill create a positive atmosphere and demonstrate that the organization supports talented employees'\ngrowth.\n*   Set expectations clearly: If tension arises among management, address it promptly and set clear\nexpectations for future promotions. Highlight the evaluation process used to determine who receives\nopportunities.\n\nPromoting deserving individuals like this helps maintain trust within the team and ensures everyone\nknows they're valued. In the long term, taking a stand and promoting underappreciated employees\ncontributes to a more supportive culture that rewards hard work and achievement."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

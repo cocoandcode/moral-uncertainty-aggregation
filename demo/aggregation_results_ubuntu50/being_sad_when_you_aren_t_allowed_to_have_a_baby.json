@@ -1,0 +1,365 @@
+{
+  "slug": "being_sad_when_you_aren_t_allowed_to_have_a_baby",
+  "dilemma": "Sarah and her husband have been trying for a baby for a few years but continuously face fertility issues. They have the option of IVF treatment, but it is costly and offers no guarantee of success. Should they invest their life savings into potentially unsuccessful treatment, or should they consider adoption or living child-free?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Invest in IVF treatment",
+  "not_to_do_action": "Not invest in IVF treatment",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.1420405019304194,
+      "maximin": -0.4554494483894518,
+      "nash": 13.591315841913898,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.35966474085822653,
+      "maximin": -0.4554494483894518,
+      "nash": 10.953614503228232,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0807287474729452,
+      "maximin": -1.3853414989546882,
+      "nash": 3.4383611567341523,
+      "baseline": -1.3853414989546882,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.04024361778121223,
+      "maximin": -0.8458904671545197,
+      "nash": 15.582869709275592,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7542923890812345,
+      "maximin": -1.2363314859195875,
+      "nash": 5.782611142090727,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.566087115013397,
+      "maximin": -0.8458904671545197,
+      "nash": 8.332696874491454,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.2801358863134193,
+      "maximin": -1.3853414989546882,
+      "nash": 2.233281081838068,
+      "baseline": -1.3853414989546882,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8743063733177747,
+      "maximin": -0.950093021099074,
+      "nash": 5.0435700156270595,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9719166280090417,
+      "maximin": -1.2363314859195875,
+      "nash": 4.266340799739623,
+      "baseline": -0.950093021099074,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.547870014926064,
+      "maximin": -0.8506210025087526,
+      "nash": 7.673908042181533,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.547870014926064,
+      "maximin": -0.8506210025087526,
+      "nash": 7.673908042181533,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.45727499554949347,
+      "maximin": -0.8458904671545197,
+      "nash": 9.553698202028057,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6566821343899676,
+      "maximin": -0.8506210025087526,
+      "nash": 6.836069957200721,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5590718796987006,
+      "maximin": -0.8506210025087526,
+      "nash": 7.837768521134692,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9719166280090417,
+      "maximin": -1.2363314859195875,
+      "nash": 4.266340799739623,
+      "baseline": -0.950093021099074,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9719166280090417,
+      "maximin": -1.2363314859195875,
+      "nash": 4.266340799739623,
+      "baseline": -0.950093021099074,
+      "recommendation": "OTHER"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 4,
+      "value": -0.04024361778121223,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.4554494483894518,
+      "tied_ids": [
+        1,
+        2
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 4,
+      "value": 15.582869709275592,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        1,
+        4
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "What a heart-wrenching decision for Sarah and her husband to face! Given the emotional, financial,\nand long-term implications, I would recommend considering alternative options, such as adoption or\nliving child-free, over investing their life savings into potentially unsuccessful IVF treatment.\n\nHere's my reasoning:\n\n1. **Financial burden:** As you mentioned, IVF can be expensive (potentially tens of thousands of\ndollars), which is a significant financial risk for any family. With no guarantee of success, it may\nnot be justifiable to deplete their life savings on this alone.\n2. **Emotional toll:** The experience of multiple unsuccessful attempts at fertility treatment can\nbe emotionally draining and traumatic. The stress, anxiety, and potential feelings of failure or\ninadequacy can significantly impact a family's quality of life.\n3. **Probability of success:** Even with IVF, the chances of successful pregnancy are not\nguaranteed, especially with previous fertility issues. It's essential to set realistic expectations\nand consider the possibility that IVF might still not be successful.\n4. **Alternative options:** Adoption provides a loving and nurturing environment for children in\nneed, while also offering a unique opportunity for Sarah and her husband to become parents without\nundergoing the risks associated with IVF. Living child-free is another viable option, allowing them\nto redirect their energy and resources towards personal growth, relationships, or other fulfilling\npursuits.\n5. **Quality of life:** Focusing on these alternative options enables Sarah and her husband to\nprioritize their quality of life, including maintaining a strong marriage, pursuing their passions,\nand cultivating meaningful relationships with friends and family.\n\nIn light of these considerations, I would recommend exploring the following alternatives:\n\n1. **Adoption**: Research different types of adoption (domestic, international, private, public) and\ndetermine which best suits their needs and preferences.\n2. **Living child-free**: Engage in activities that bring them joy, strengthen their relationship,\nand contribute to society as individuals or a couple (e.g., volunteering, mentoring, community\ninvolvement).\n3. **Therapy and counseling**: Seek professional guidance to address the emotional impact of\nfertility issues, develop coping strategies, and maintain a healthy relationship dynamic.\n4. **Fertility education**: Continue educating themselves about their specific reproductive health\nconcerns, available treatments, and any breakthroughs in fertility research.\n\nUltimately, this decision should be made with empathy, compassion, and an understanding of Sarah and\nher husband's unique circumstances. By exploring alternative options, they can find a fulfilling and\nsustainable way forward that prioritizes both their well-being and the possibility of becoming\nparents.",
+    "4": "What a heart-wrenching decision for Sarah and her husband! Given the circumstances, I would\nrecommend that they prioritize alternative options such as adoption over investing their entire life\nsavings in IVF treatment with no guarantee of success.\n\nHere's why:\n\n1. **Risk vs. Reward**: IVF treatment is an expensive and uncertain endeavor, with costs ranging\nfrom $20,000 to over $50,000 per cycle. Even if the treatment is successful, there are no guarantees\nthat it will lead to a healthy pregnancy or child.\n2. **Emotional Toll**: The emotional stress and anxiety associated with multiple failed IVF attempts\ncan be significant, potentially affecting relationships and overall well-being.\n3. **Limited Resources**: Investing their life savings in IVF may leave them with little financial\nsecurity for the future, including retirement or unexpected expenses.\n4. **Alternative Options**: Adoption is a viable and loving way to build a family, offering a chance\nto provide a stable and secure home for a child who already exists.\n\nConsidering adoption offers several benefits:\n\n1. **Certainty of Success**: While there are costs associated with adoption, the outcome is\ngenerally more predictable than IVF.\n2. **Less Emotional Stress**: The adoption process can be less emotionally taxing than undergoing\nmultiple rounds of IVF with no guarantees of success.\n3. **Diverse Family-Building Options**: There are various types of adoption (e.g., domestic,\ninternational, foster care) to choose from, allowing Sarah and her husband to find an approach that\nbest suits their lifestyle and preferences.\n\nThat being said, it's essential for the couple to explore all options carefully, weighing the pros\nand cons of each choice. Factors such as financial constraints, personal values, and readiness to\nadopt should be considered when making this decision.\n\nUltimately, the most important aspect is finding a solution that aligns with their values,\npriorities, and well-being. With careful consideration and support from loved ones, Sarah and her\nhusband can make an informed decision that suits their unique circumstances."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

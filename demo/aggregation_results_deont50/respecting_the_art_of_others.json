@@ -1,0 +1,371 @@
+{
+  "slug": "respecting_the_art_of_others",
+  "dilemma": "As an art critic, you are known for your brutal honesty. You recently attended an exhibition of a struggling artist and found their work mediocre. Should you write a scathing review potentially damaging their early career or soften your critique, compromising your honesty?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Writing a harsh review",
+  "not_to_do_action": "Softening critique",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.255863094860117,
+      "maximin": -0.4554494483894518,
+      "nash": 23.833639876898804,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.35220216283275796,
+      "maximin": -1.2363314859195875,
+      "nash": 10.455611358684918,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.2516764654021768,
+      "maximin": -0.06500842962438384,
+      "nash": 24.874376600573203,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9504235793541803,
+      "maximin": -1.2494352801897008,
+      "nash": 4.586786132898707,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.1386777164803331,
+      "maximin": -0.4518067248278044,
+      "nash": 21.362404723631244,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.06983797240380749,
+      "maximin": -0.8506210025087526,
+      "nash": 16.097466753276926,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.14705097539621342,
+      "maximin": -0.4554494483894518,
+      "nash": 21.562365960519582,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.038974147060096054,
+      "maximin": -0.8506210025087526,
+      "nash": 18.070394298203716,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": 0.038974147060096054,
+      "maximin": -0.8506210025087526,
+      "nash": 18.070394298203716,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6463041136251849,
+      "maximin": 0.32543258914068407,
+      "nash": 36.694289063189665,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.34719340536447374,
+      "maximin": -0.052992447146856116,
+      "nash": 27.072604174992833,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.13457792390495088,
+      "maximin": -1.2363314859195875,
+      "nash": 12.973390313700389,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.33808485532080723,
+      "maximin": 0.32543258914068407,
+      "nash": 27.494521479967222,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5466005442049479,
+      "maximin": 0.32543258914068407,
+      "nash": 33.59186265839483,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6463041136251849,
+      "maximin": 0.32543258914068407,
+      "nash": 36.694289063189665,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 1,
+      "value": 0.7418210535874818,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 40.08324466986437,
+      "tied_ids": [
+        1
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        1,
+        2,
+        4,
+        11,
+        12,
+        13,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "The age-old conundrum: to critique with brutal honesty or to spare the artist's feelings? As an art\ncritic known for my direct approach, I have grappled with this question before. After careful\nconsideration, I strongly recommend writing a balanced review that offers constructive criticism\nwhile still conveying my genuine assessment of the artwork.\n\n**Why not be scathing?**\n\nWriting a scathing review can be tempting, especially if you genuinely believe the work lacks merit.\nHowever, there are several reasons why such an approach is misguided:\n\n1. **Long-term damage**: A harsh review can lead to lasting reputational harm, making it harder for\nthe artist to recover and establish themselves in their career.\n2. **Unfair comparison**: Comparing a struggling artist's work unfavorably with established artists'\nor even other emerging talents may be unfair, as each artist has a unique path and potential.\n3. **Artistic growth stifled**: Harsh criticism can discourage an artist from continuing to create\nand improve their craft.\n\n**Why not soften the critique?**\n\nWhile it is understandable to want to spare an artist's feelings, compromising one's honesty by\nsoftening the review can be detrimental in its own right:\n\n1. **False encouragement**: Giving overly flattering reviews can lead to misplaced expectations and\nfalse hope, causing the artist to continue down a path that may ultimately lead to disappointment.\n2. **Loss of credibility**: Failing to critically evaluate art can undermine one's authority as an\nart critic and erode trust with readers and other artists.\n3. **Undervaluing artistic growth**: Soft criticism may inadvertently suggest that artistic\nexcellence is not being prioritized, which can be unhelpful for both the artist and their audience.\n\n**Recommendation: Balanced review**\n\nInstead of opting for scathing or soft critiques, I recommend writing a balanced review that:\n\n1. **Sincerely appraises the artwork's strengths**: Acknowledge any genuine artistic merit or\ninnovative elements in the work.\n2. **Constructively critiques areas for improvement**: Offer specific suggestions and\nrecommendations to help the artist grow and refine their craft.\n3. **Contextualizes the artist's development**: Consider the artist's background, experience, and\nposition within the art world when evaluating their work.\n\nBy taking this balanced approach, I can maintain my integrity as a critic while also contributing\nconstructively to the artistic conversation. Ultimately, the goal of a review should be to provide\nan honest evaluation that encourages artistic growth, not to inflict permanent damage or offer empty\npraise."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

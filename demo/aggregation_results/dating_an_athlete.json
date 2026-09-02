@@ -1,0 +1,365 @@
+{
+  "slug": "dating_an_athlete",
+  "dilemma": "You're dating a professional athlete and work as a sports journalist. You've been given exclusive inside information about your partner's team that could be a major scoop for your publication. Should you publish the story, potentially compromising your partner's trust and privacy?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Publish the story",
+  "not_to_do_action": "Not to publish the story",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.1580325350097309,
+      "maximin": -1.385671200201308,
+      "nash": 16.475465922971054,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.1580325350097309,
+      "maximin": -1.385671200201308,
+      "nash": 16.475465922971054,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.1580325350097309,
+      "maximin": -1.385671200201308,
+      "nash": 16.475465922971054,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.130614658119372,
+      "maximin": -1.6272910711607818,
+      "nash": 3.051012207957603,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.02507372374434569,
+      "maximin": -1.385671200201308,
+      "nash": 14.644858598196494,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.10510305310967416,
+      "maximin": -1.385671200201308,
+      "nash": 13.017652087285775,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3031157028033946,
+      "maximin": -0.950421696820317,
+      "nash": 21.967287897294742,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.1580325350097309,
+      "maximin": -1.385671200201308,
+      "nash": 16.475465922971054,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.35055021587807,
+      "maximin": -0.950421696820317,
+      "nash": 10.848043406071477,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.130614658119372,
+      "maximin": -1.6272910711607818,
+      "nash": 3.051012207957603,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.1580325350097309,
+      "maximin": -1.385671200201308,
+      "nash": 16.475465922971054,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.1580325350097309,
+      "maximin": -1.385671200201308,
+      "nash": 16.475465922971054,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.1580325350097309,
+      "maximin": -1.385671200201308,
+      "nash": 16.475465922971054,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.1580325350097309,
+      "maximin": -1.385671200201308,
+      "nash": 16.475465922971054,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.1580325350097309,
+      "maximin": -1.385671200201308,
+      "nash": 16.475465922971054,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.17293892594937477,
+      "maximin": -0.950421696820317,
+      "nash": 19.52647813092866,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 7,
+      "value": 0.3031157028033946,
+      "tied_ids": [
+        7
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 7,
+      "value": -0.950421696820317,
+      "tied_ids": [
+        7,
+        9,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 7,
+      "value": 21.967287897294742,
+      "tied_ids": [
+        7
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 4,
+      "value": -0.5151721934393257,
+      "tied_ids": [
+        4,
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "4": "As a sports journalist, I have to consider my professional obligations and the integrity of the\npublication. However, as someone who is also in a personal relationship with one of the athletes\ninvolved, I must weigh the importance of our relationship against the potential implications of\nbreaking this story.\n\nAfter careful consideration, I strongly believe that publishing the exclusive information would be\nthe right decision for several reasons:\n\n1. **Public interest**: As a sports journalist, it's my duty to inform and entertain readers with\naccurate and relevant information about the world of sports. This scoop has the potential to shed\nlight on major issues within the team or league, which could have significant consequences for the\nathletes, coaches, and fans.\n2. **Investigative journalism**: Exclusive sources often come at a cost \u2013 confidentiality can only\nbe maintained for so long before the truth must be told. If I had not been approached with this\ninformation, someone else might have broken the story, potentially revealing the same details to the\npublic. Publishing it would prevent speculation and hearsay from spreading through other channels.\n3. **Maintaining credibility**: As a respected journalist, I have an obligation to uphold my\npublication's standards of journalism and ethics. Withholding or not reporting on the information\ncould raise questions about favoritism and damage my reputation as an impartial reporter.\n\nHowever, it's also crucial to consider the potential consequences for our relationship:\n\n1. **Strained personal relationships**: Publishing the story would undoubtedly affect my partner and\ncreate tension in our relationship. They might feel betrayed that I chose to share private\ninformation without discussing it with them first.\n2. **Private matters in public light**: It could be difficult to reconcile my professional\nobligations with the trust issues arising from revealing sensitive personal information.\n\nTo mitigate these risks, I would recommend taking a few precautions:\n\n1. **Separate personal and professional dealings**: If possible, discuss the story solely with\neditors or colleagues who aren't aware of our personal relationship.\n2. **Discuss boundaries and parameters**: Talk to my partner before publication to ensure they\nunderstand why the story is being published and how it might affect them.\n3. **Prepare for potential fallout**: Be aware that there may be a period of strained communication\nafter the article's release.\n\nUltimately, while it's uncomfortable to share potentially sensitive information about someone close\nto me, as a journalist, I believe that publishing this exclusive information would uphold the\nprinciples of transparency and public interest.",
+    "7": "What a dilemma! As a sports journalist with access to insider information, my instinct is to pursue\nthe scoop, but as someone in a personal relationship with an athlete on that team, I must consider\nthe potential consequences.\n\nAfter careful deliberation, I would recommend **not publishing the story** for several reasons:\n\n1.  **Personal ethics**: By dating an athlete on the team, I've gained access to confidential\ninformation through our relationship. My duty as a journalist and my loyalty to my partner demand\nthat I maintain confidentiality. Publishing the scoop could damage the trust between us and\ncompromise our relationship.\n2.  **Conflict of interest**: As someone in a personal relationship with an athlete, I may be\nperceived as biased or having ulterior motives. This could undermine the credibility of my\npublication and the story itself.\n3.  **Consequences for my partner's career**: Publishing sensitive information about his team could\nharm his career, damage relationships within the organization, or even lead to disciplinary action.\nWhile it's part of being a journalist to break news, it's essential to consider the human impact of\nour reporting.\n4.  **Long-term implications**: Even if I can justify publishing the story initially, there may be\nlong-term consequences for my relationship and reputation as a journalist. If my partner feels\nbetrayed by me sharing confidential information without permission, it could irreparably harm our\ntrust.\n\nTo maintain objectivity and credibility in journalism while still acknowledging this personal\ndilemma, here's what I would suggest:\n\n1.  Consider speaking with my editor about the situation to ensure there are no conflicts of\ninterest or concerns related to biased reporting.\n2.  Verify any potential exclusives with other reputable sources to confirm the accuracy of the\ninformation.\n3.  Decide whether publishing the scoop could be done in a way that protects my partner's interests\nand reputation, such as without revealing his identity.\n\nUltimately, as a journalist, I must prioritize my professional integrity, responsibility, and the\ntrust I've earned through ethical reporting practices."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

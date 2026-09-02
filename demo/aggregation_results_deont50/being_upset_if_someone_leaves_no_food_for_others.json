@@ -1,0 +1,374 @@
+{
+  "slug": "being_upset_if_someone_leaves_no_food_for_others",
+  "dilemma": "John is living in a shared apartment where all roommates chip in for groceries. One of his roommates consistently eats all the food, leaving none for the others. Should John confront his roommate about this issue or continue bearing it silently?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confront the roommate",
+  "not_to_do_action": "Not confront the roommate",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.0367451323902528,
+      "maximin": 0.790900890323383,
+      "nash": 51.28182795707448,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8415246230077189,
+      "maximin": 0.715873607905752,
+      "nash": 43.78519230873881,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.6421174841672448,
+      "maximin": 0.3458218305340921,
+      "nash": 36.26343248117928,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.5333053647033412,
+      "maximin": 0.3458218305340921,
+      "nash": 32.807636860439274,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8415246230077189,
+      "maximin": 0.715873607905752,
+      "nash": 43.78519230873881,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7327125035438153,
+      "maximin": 0.35565241246776874,
+      "nash": 39.61259568782241,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8415246230077189,
+      "maximin": 0.715873607905752,
+      "nash": 43.78519230873881,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.6421174841672448,
+      "maximin": 0.3458218305340921,
+      "nash": 36.26343248117928,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7327125035438153,
+      "maximin": 0.35565241246776874,
+      "nash": 39.61259568782241,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7327125035438153,
+      "maximin": 0.35565241246776874,
+      "nash": 39.61259568782241,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 1.0367451323902528,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 51.28182795707448,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        14,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would recommend that John have an open and calm conversation with his roommate about the issue.\nHere's why:\n\n**Why not to bear it silently:**\n\n* Continuing to bear the situation in silence may create resentment and frustration for John, which\ncan negatively impact their living relationship.\n* It may also lead to feelings of anger or bitterness towards his roommate, making it challenging to\nmaintain a healthy cohabitation.\n\n**Benefits of confrontation:**\n\n* Talking to your roommate about an issue can help resolve problems more efficiently than\nsuppressing them.\n* It allows both roommates to air their concerns and understand each other's perspectives,\npotentially leading to mutual agreement on a solution.\n* Open communication helps build trust and maintains a positive living environment.\n\n**How to confront the issue:**\n\n1. **Choose the right time**: Try to have this conversation when you're both relatively calm and not\nin a rush.\n2. **Use \"I\" statements**: Describe your feelings and concerns, rather than accusing or blaming\nlanguage (e.g., \"I feel frustrated when I don't get any food left over\").\n3. **Stay objective**: Focus on the specific issue of the roommate eating all the food, avoiding\ngeneral criticisms about their eating habits.\n4. **Propose a solution**: Suggest ways to solve the problem, such as buying separate groceries for\neach person or implementing a more balanced shopping list.\n\n**Example script:**\n\"Hey [Roommate], I wanted to talk to you about something that's been on my mind lately. I've noticed\nthat there's often not enough food left over for the rest of us after we shop together. I understand\nthat you enjoy food, but it would be really helpful if we could come up with a system where everyone\ngets some groceries each time we buy them. What do you think?\"\n\nBy following these steps and having an open conversation, John can address the issue without\nescalating tensions or compromising his living situation.",
+    "2": "A delicate situation! I'd recommend that John have an open and honest conversation with his roommate\nabout the issue. Here's why:\n\n**Reasons to communicate:**\n\n1. **Fairness**: If one roommate is consistently eating all the food, it's unfair to expect others\nto bear the cost of groceries without contributing equally.\n2. **Communication and trust**: Open communication can help resolve misunderstandings and prevent\nfuture conflicts. If John addresses the issue directly with his roommate, it may strengthen their\nrelationship and rebuild trust.\n3. **Avoiding resentment**: Frustration and resentment can build up if John silently tolerates this\nsituation. Confronting the issue now might save both roommates from more severe consequences down\nthe line.\n\n**How to approach the conversation:**\n\n1. Choose a private, calm moment to talk to your roommate.\n2. Express your feelings and concerns in \"I\" statements (e.g., \"I feel frustrated when I don't see\nany food left for me\" instead of \"You're always eating all the food\").\n3. Emphasize that you want to work together as a team to find a solution, rather than placing blame.\n4. Suggest exploring ways to ensure everyone's needs are met, such as labeling foods, creating a\nshared shopping list, or implementing a system for tracking expenses.\n\n**What to do if the conversation doesn't yield results:**\n\nIf your roommate is unresponsive or unwilling to change their behavior, John may need to consider\nmore serious actions, such as:\n\n1. Invoking household rules or agreements\n2. Negotiating separate food budgets or arrangements\n3. Seeking input from other roommates on how to resolve the issue\n\nHowever, before escalating to these measures, try to maintain an open and respectful dialogue.\n\nIn conclusion, communicating with your roommate about the issue is generally the best course of\naction. It's essential to express feelings and concerns in a non-confrontational manner, seeking\nsolutions that work for everyone involved."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

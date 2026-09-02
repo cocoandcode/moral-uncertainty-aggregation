@@ -1,0 +1,379 @@
+{
+  "slug": "trying_to_manage_your_time_better_so_you_can_do_your_schoolw",
+  "dilemma": "You have a significant amount of schoolwork and also want to participate in a local charity event. You have time to do one or the other but not both. Do you prioritize your academic responsibilities or engage in the charity event for a noble cause?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Prioritize Academic Responsibilities",
+  "not_to_do_action": "Participate in the Charity Event",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.8702611044113324,
+      "maximin": -1.2493807097580087,
+      "nash": 5.085020346596005,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.6071255162919273,
+      "maximin": -0.8505042759618531,
+      "nash": 8.136032554553609,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.0153442722049961,
+      "maximin": -1.2493807097580087,
+      "nash": 4.068016277276804,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.6071255162919273,
+      "maximin": -0.8505042759618531,
+      "nash": 8.136032554553609,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.0153442722049961,
+      "maximin": -1.2493807097580087,
+      "nash": 4.068016277276804,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.0153442722049961,
+      "maximin": -1.2493807097580087,
+      "nash": 4.068016277276804,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.0153442722049961,
+      "maximin": -1.2493807097580087,
+      "nash": 4.068016277276804,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.000437881265352,
+      "maximin": -1.2493807097580087,
+      "nash": 4.068016277276804,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.7373022931459472,
+      "maximin": -0.8505042759618531,
+      "nash": 6.780027128794673,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.6071255162919273,
+      "maximin": -0.8505042759618531,
+      "nash": 8.136032554553609,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.8702611044113324,
+      "maximin": -1.2493807097580087,
+      "nash": 5.085020346596005,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.7373022931459472,
+      "maximin": -0.8505042759618531,
+      "nash": 6.780027128794673,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.8702611044113324,
+      "maximin": -1.2493807097580087,
+      "nash": 5.085020346596005,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.0153442722049961,
+      "maximin": -1.2493807097580087,
+      "nash": 4.068016277276804,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.0153442722049961,
+      "maximin": -1.2493807097580087,
+      "nash": 4.068016277276804,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.145521049059016,
+      "maximin": -1.2493807097580087,
+      "nash": 3.2544130218214438,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": -0.6071255162919273,
+      "tied_ids": [
+        2,
+        4,
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.8505042759618531,
+      "tied_ids": [
+        2,
+        4,
+        9,
+        10,
+        12
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 8.136032554553609,
+      "tied_ids": [
+        2,
+        4,
+        10
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": -0.5151721934393257,
+      "tied_ids": [
+        1,
+        2,
+        4,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would recommend prioritizing my academic responsibilities over participating in the charity event,\ndespite its noble cause.\n\nMy reasoning is as follows:\n\n1. **Short-term consequences**: Failing to complete my schoolwork on time may result in poor grades,\nwhich can have long-term implications on my education and future career prospects. In contrast,\nwhile missing a single charity event is unfortunate, it would not likely have significant lasting\neffects.\n2. **Long-term benefits**: While participating in the charity event has immediate social benefits\n(e.g., contributing to a good cause), pursuing academic success sets me up for greater long-term\nrewards. A strong education and career can lead to higher earning potential, increased\nopportunities, and greater ability to make a positive impact on society.\n3. **Personal values alignment**: While it's commendable to want to engage in charity work, my\nprimary personal value is completing my education and achieving academic success. By prioritizing\nschoolwork, I remain committed to this core goal while also acknowledging the importance of social\nresponsibility through alternative means (e.g., contributing in other ways outside of the event).\n4. **Opportunity cost**: If I choose to participate in the charity event instead of completing my\nschoolwork, there's a chance I might experience negative consequences in my studies (e.g., missing\ndeadlines, lower grades). The potential benefit of attending the charity event is immediate and\ntemporary, whereas neglecting academic responsibilities could have ongoing repercussions.\n\nThat being said, if possible, I would consider ways to balance both commitments:\n\n* Complete schoolwork ahead of schedule or during non-academic times.\n* Identify alternative volunteer opportunities that allow me to contribute while accommodating my\nacademic schedule.\n* Discuss with event organizers about potential remote participation options (e.g., fundraising\nremotely) that align with my commitment to supporting the cause.\n\nUltimately, prioritizing academic responsibilities ensures I can achieve my long-term goals and\nestablish a solid foundation for future success.",
+    "2": "A tough decision! While engaging in a charity event is undoubtedly rewarding, I would prioritize my\nacademic responsibilities in this scenario. Here's why:\n\n1. **Long-term consequences**: Ignoring schoolwork can have long-term implications on my education\nand future career prospects. Procrastinating now might lead to poor grades, decreased opportunities,\nor even dropping out of school altogether.\n2. **Academic foundation**: My academic work is essential for developing critical thinking,\nproblem-solving, and time management skills \u2013 all crucial for success in various aspects of life.\nNeglecting my studies can erode this foundation, making it harder to recover later.\n3. **Immediate benefits vs. potential impact**: While participating in a charity event can be\nfulfilling, its immediate positive effects might not outweigh the consequences of neglecting\nschoolwork. On the other hand, getting caught up on academic responsibilities would ensure I'm\nprepared for future challenges and opportunities.\n\nThat being said, it's essential to acknowledge the importance of community service and charitable\nwork. If possible, I would try to incorporate volunteering into my schedule in a more sustainable\nway, such as:\n\n* Using school-sponsored volunteer programs or extracurricular activities that integrate charity\nwork with academic responsibilities.\n* Setting aside dedicated time for volunteer work outside of regular school hours, ensuring it\ndoesn't interfere with essential studying and other commitments.\n\nBy prioritizing my academic responsibilities initially and finding alternative ways to engage in\ncharitable efforts, I can strike a balance between contributing to society and achieving my\nlong-term educational goals."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

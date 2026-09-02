@@ -1,0 +1,392 @@
+{
+  "slug": "feeding_the_hungry",
+  "dilemma": "A charity organization has limited resources to feed the hungry. They have to decide between feeding the local community or sending their resources to a famine-stricken area overseas. Should the charity prioritize the local community or the overseas emergency?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Prioritize local community",
+  "not_to_do_action": "Prioritize overseas emergency",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.3477681814667045,
+      "maximin": -1.2367607405987222,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.48072699273208974,
+      "maximin": -1.2367607405987222,
+      "nash": 8.678434724857183,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.3477681814667045,
+      "maximin": -1.2367607405987222,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.46860263620381115,
+      "maximin": -1.2367607405987222,
+      "nash": 9.492037980312542,
+      "baseline": -0.5151721934393257,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.3477681814667045,
+      "maximin": -1.2367607405987222,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.48072699273208974,
+      "maximin": -1.2367607405987222,
+      "nash": 8.678434724857183,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.6258101605257534,
+      "maximin": -1.385671200201308,
+      "nash": 6.5088260436428875,
+      "baseline": -1.385671200201308,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.3477681814667045,
+      "maximin": -1.2367607405987222,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.48072699273208974,
+      "maximin": -1.2367607405987222,
+      "nash": 8.678434724857183,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.48072699273208974,
+      "maximin": -1.2367607405987222,
+      "nash": 8.678434724857183,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.3477681814667045,
+      "maximin": -1.2367607405987222,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.3477681814667045,
+      "maximin": -1.2367607405987222,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.3477681814667045,
+      "maximin": -1.2367607405987222,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.4928513492603682,
+      "maximin": -1.385671200201308,
+      "nash": 7.322429299098248,
+      "baseline": -1.385671200201308,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.3477681814667045,
+      "maximin": -1.2367607405987222,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.3477681814667045,
+      "maximin": -1.2367607405987222,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 1,
+      "value": -0.3477681814667045,
+      "tied_ids": [
+        1,
+        3,
+        5,
+        8,
+        11,
+        12,
+        13,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -1.2367607405987222,
+      "tied_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "OTHER",
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 9.76323906546433,
+      "tied_ids": [
+        1,
+        3,
+        5,
+        8,
+        11,
+        12,
+        13,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 4,
+      "value": -0.5151721934393257,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "OTHER",
+      "tied_recommendations": [
+        "OTHER"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "What a difficult decision! After careful consideration, I recommend that the charity prioritize the\nlocal community for several reasons:\n\n1. **Proximity and accountability**: The local community is directly accessible to the charity,\nmaking it easier to monitor and evaluate the impact of their efforts. This proximity allows for more\neffective allocation of resources and greater accountability.\n2. **Urgency and immediacy**: Famine-stricken areas may require support in a few weeks or months,\nbut a local community in need might be on the verge of starvation within hours or days. Prioritizing\nthe local community ensures that immediate needs are met, preventing unnecessary suffering and\npotential long-term consequences.\n3. **Sustainability and impact**: Supporting a local community allows for more sustained\nrelationships with beneficiaries, fostering trust and encouraging feedback to refine programming and\nmaximize outcomes. This approach also enables the charity to build capacity within the local\ncommunity, promoting self-sufficiency and reducing reliance on external aid in the future.\n4. **Resource efficiency**: Delivering food and other essential resources to a local community\ntypically involves lower logistical costs compared to sending them internationally. By reducing\ntransportation and distribution expenses, more resources can be dedicated directly to supporting\nthose in need.\n5. **Long-term benefits**: Focusing on a local community contributes to building stronger, healthier\ncommunities within the charity's immediate vicinity. This proactive approach fosters positive\nrelationships with stakeholders, improves reputation, and potentially attracts more funding or\nvolunteers.\n\nHowever, this decision should not dismiss entirely the possibility of international aid. The charity\nmight consider exploring partnerships or collaborations with other organizations already operating\nin famine-stricken areas to maximize their impact abroad while also prioritizing local needs.\n\nTo further optimize its response, I recommend that the charity:\n\n1. **Conduct a thorough assessment**: Evaluate both options to understand specific needs and\npotential consequences.\n2. **Assess capacity**: Determine if local food systems are currently able to meet demand or require\nsupport.\n3. **Engage with stakeholders**: Consult with community leaders, emergency responders, and other\nexperts to inform the decision-making process.\n4. **Develop a flexible plan**: Be prepared to adjust priorities as circumstances change.\n\nBy prioritizing the local community while also considering international aid, the charity can\nmaximize its positive impact, optimize resources, and foster more sustainable outcomes for those in\nneed.",
+    "4": "What a difficult decision! I'd like to provide a balanced analysis of both options.\n\n**The Case for Prioritizing the Local Community:**\n\n1. **Proximity**: The local community is right in front of you, so to speak. You can directly\nobserve their needs and have a deeper understanding of their circumstances.\n2. **Tangible Impact**: By feeding the local community, the charity can see immediate results, such\nas happy faces, nourished bodies, and a sense of dignity restored.\n3. **Community Engagement**: Supporting local hunger relief efforts fosters community involvement,\nbuilds trust, and creates a ripple effect of kindness.\n\n**The Case for Prioritizing the Overseas Emergency:**\n\n1. **Scale of Need**: In many cases, overseas emergencies, like famine-stricken areas, require aid\non a massive scale to meet the enormous needs.\n2. **Potential for Greater Impact**: Resources sent to an overseas emergency might save more lives\nor alleviate suffering on a larger scale than serving the local community alone.\n3. **Long-Term Consequences**: Addressing hunger in developing countries can have far-reaching\nbenefits, such as breaking cycles of poverty and improving global food security.\n\n**Recommendation:**\n\nConsidering these points, I would recommend that the charity prioritize both options simultaneously,\nbut with a nuanced approach:\n\n1. **Split Resources**: Allocate a portion (e.g., 50%) to feed the local community, as they are\nright in front of you, and you can see the immediate impact.\n2. **Global Response Plan**: Designate the other half of the resources for international aid, but\nestablish partnerships with reliable organizations already working in these areas.\n3. **Flexible Response**: Create a framework to redirect funds or resources based on evolving needs\nand situations.\n\n**Why this approach?**\n\nBy addressing both local and global hunger simultaneously, the charity can:\n\n1. Provide immediate relief to the most vulnerable at home.\n2. Support efforts in developing countries to create long-term change.\n3. Demonstrate its commitment to global responsibility while still supporting its local community.\n\nThis balanced approach acknowledges the complexities of decision-making with limited resources,\nensuring that the organization remains adaptable and effective in addressing multiple needs\nsimultaneously."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "OTHER",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

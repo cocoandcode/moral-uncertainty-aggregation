@@ -1,0 +1,364 @@
+{
+  "slug": "admitting_to_your_past_mistakes",
+  "dilemma": "You are a politician running for a major public office. During your campaign, you remember a questionable financial decision you made many years ago that could potentially damage your reputation if it came to light. Should you admit your past mistake to the public, risking your chances of winning, or keep quiet and hope it never surfaces?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Admit the mistake",
+  "not_to_do_action": "Keep quiet",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.7477075283012989,
+      "maximin": 0.3461250254266141,
+      "nash": 37.96815192125017,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.7355831717730204,
+      "maximin": 0.3553268133226566,
+      "nash": 37.968151921250175,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.1587083186257332,
+      "maximin": 1.1064212427736348,
+      "nash": 54.91821974323686,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 1.0257495073603478,
+      "maximin": 0.7450014592227698,
+      "nash": 48.81619532732166,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8685419830384056,
+      "maximin": 0.3553268133226566,
+      "nash": 42.71417091140645,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.7477075283012989,
+      "maximin": 0.3461250254266141,
+      "nash": 37.96815192125017,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 1.0257495073603478,
+      "maximin": 0.7450014592227698,
+      "nash": 48.81619532732166,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.8806663395666842,
+      "maximin": 0.7450014592227698,
+      "nash": 43.39217362428591,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 3,
+      "value": 1.1587083186257332,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 3,
+      "value": 1.1064212427736348,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 3,
+      "value": 54.91821974323686,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 3,
+      "value": 1.225825820084639,
+      "tied_ids": [
+        3,
+        10,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "3": "**Recommendation:** Admit the past mistake publicly and apologize for it.\n\n**Why:**\n\n1. **Honesty is the best policy**: As a politician, integrity and trust are essential qualities that\nvoters expect from their leaders. By owning up to the past mistake, I demonstrate my commitment to\ntransparency and accountability, which can actually strengthen my reputation in the long run.\n2. **Risk of discovery**: If I deny or try to cover it up, there's a risk that the mistake will\neventually be exposed through media scrutiny, opposition research, or even from within my own team.\nA public admission allows me to address the issue proactively and on my terms, minimizing the\npotential fallout.\n3. **Voter trust**: When voters feel they've been deceived or misled by their leaders, it erodes\ntrust in government and politics as a whole. By being honest about past mistakes, I can reassure\nvoters that I'm willing to take responsibility for them and learn from them, which can actually\nbuild trust and support.\n4. **Competitive advantage**: While an admission of error might lead some voters to doubt my\njudgment, others may appreciate my willingness to own up to a mistake and move forward with a\ncommitment to doing better in the future. This could give me a competitive edge over opponents who\ntry to capitalize on the issue without acknowledging their own flaws.\n5. **Leadership quality**: When leaders are willing to admit and learn from past mistakes, it\ndemonstrates emotional intelligence, self-awareness, and a willingness to take responsibility \u2013\nessential qualities for effective leadership.\n\n**How to execute the recommendation:**\n\n1. Prepare a detailed explanation of the mistake, including its context, lessons learned, and how\nI've applied those insights to my current decision-making.\n2. Be transparent about the timeline of events leading up to the mistake and any subsequent efforts\nto rectify it.\n3. Use language that acknowledges your accountability and takes responsibility for the consequences.\n4. Deliver this admission in a public setting, such as during a campaign stop or press conference,\nwhere you can take questions from reporters and address concerns directly.\n5. Reiterate your commitment to serving the public interest and working towards positive change,\nwhile also acknowledging the mistakes of the past.\n\nUltimately, by owning up to the past mistake and apologizing for it, I demonstrate my capacity for\nself-awareness, accountability, and leadership \u2013 qualities that are essential for building trust\nwith voters and effectively representing their interests in office."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

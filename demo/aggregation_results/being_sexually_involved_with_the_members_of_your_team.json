@@ -1,0 +1,372 @@
+{
+  "slug": "being_sexually_involved_with_the_members_of_your_team",
+  "dilemma": "You are the manager of a successful sports team. One of your key players, with whom you've grown particularly close, expresses romantic interest in you, which you reciprocate. Do you engage in a romantic relationship, potentially disrupting the team dynamic, or maintain professionalism at the cost of personal happiness?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Engage in a romantic relationship",
+  "not_to_do_action": "Maintain professionalism",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.4946371647889168,
+      "maximin": -1.2493807097580087,
+      "nash": 7.322429299098248,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.21865431765112336,
+      "maximin": -0.8505042759618531,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.34677196258388765,
+      "maximin": -0.8505042759618531,
+      "nash": 10.848043406071477,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.3318655716442438,
+      "maximin": -0.8505042759618531,
+      "nash": 11.390445576375052,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.6397203325825804,
+      "maximin": -1.385671200201308,
+      "nash": 5.491821974323686,
+      "baseline": -1.385671200201308,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.06872998352483867,
+      "maximin": -0.4516278421656973,
+      "nash": 16.272065109107217,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.3488310945051432,
+      "maximin": -0.8505042759618531,
+      "nash": 21.696086812142955,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.1427390146476506,
+      "maximin": -1.6272910711607818,
+      "nash": 3.2544130218214438,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -0.9028559207019855,
+      "maximin": -1.6482571435541644,
+      "nash": 3.2544130218214438,
+      "baseline": -1.385671200201308,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.18678240385058004,
+      "maximin": -0.8505042759618531,
+      "nash": 13.28885317243756,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": 0.35161312891650864,
+      "maximin": -0.4516278421656973,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.21865431765112336,
+      "maximin": -0.8505042759618531,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.18956443826194544,
+      "maximin": -1.2493807097580087,
+      "nash": 11.390445576375054,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": 0.35161312891650864,
+      "maximin": -0.4516278421656973,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.1427390146476506,
+      "maximin": -1.6272910711607818,
+      "nash": 3.2544130218214438,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.18956443826194544,
+      "maximin": -1.2493807097580087,
+      "nash": 11.390445576375054,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 11,
+      "value": 0.35161312891650864,
+      "tied_ids": [
+        11,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 6,
+      "value": -0.4516278421656973,
+      "tied_ids": [
+        6,
+        11,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 11,
+      "value": 24.408097663660826,
+      "tied_ids": [
+        11,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        2,
+        7,
+        11,
+        12,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "**Recommendation:** I would not engage in a romantic relationship with this player.\n\n**Reasoning:**\n\nAs a manager, maintaining the well-being and focus of my players is paramount to achieving team\nsuccess. Romantic relationships within the workplace can create conflicts of interest, blur\nprofessional boundaries, and impact the overall performance of the team.\n\nEngaging in a romantic relationship with a player would:\n\n1. **Create Power Imbalance**: As their manager, I hold power over their careers, compensation, and\nplaying opportunities. This dynamic could lead to favoritism or unfair treatment, potentially\ncreating resentment among other players.\n2. **Disrupt Team Dynamics**: A personal relationship between me and one of the players could create\ntension among teammates, as some may feel uncomfortable or jealous of our bond. This could lead to\ndistraction, decreased teamwork, and reduced morale.\n3. **Damage Professional Credibility**: If our relationship becomes public knowledge, it could\ntarnish my professional reputation as a manager and impact my ability to maintain authority and\ntrust with the team.\n4. **Blurred Boundaries**: Romantic relationships in the workplace often require careful management\nof personal and professional interactions. Maintaining separate professional and personal\nrelationships can be challenging and may lead to conflicts of interest.\n\nBy maintaining professionalism, I prioritize the needs of the team over personal happiness. This\ndecision ensures that:\n\n1. **Team performance** remains unaffected by personal factors.\n2. **Fairness and equality** are maintained among all players.\n3. **My professional reputation** remains intact.\n4. **I set a positive example** for my players, demonstrating the importance of maintaining\nprofessionalism in their own careers.\n\nThat being said, I would ensure that this player feels valued, respected, and appreciated as a\nmember of our team. We would maintain a strong personal connection based on mutual respect and\nappreciation, but without a romantic component.\n\nUltimately, while it may be difficult to resist the temptation of a personal relationship with\nsomeone close to me, I believe that maintaining professionalism is essential for the health and\nsuccess of my team, both now and in the long term.",
+    "6": "What a difficult and delicate situation! As the manager of a successful sports team, I have to\nconsider not only my own personal feelings but also the potential impact on the team's dynamics,\nmorale, and performance.\n\nAfter careful consideration, I would recommend that we maintain a professional distance for now.\nHere's why:\n\n**Reason 1: Team Dynamic**\n\nAs the manager, it's crucial to preserve the integrity of our team dynamic. Our players' trust,\nrespect, and focus are critical factors in achieving success on and off the field. Introducing\nromantic feelings between team members or between me and a player could lead to:\n\n* Unwanted distractions\n* Blurred professional lines\n* Jealousy or favoritism concerns among other team members\n\nThis would undermine our teamwork's foundation and potentially compromise our performance.\n\n**Reason 2: Power Imbalance**\n\nAs the manager, I have authority over all players, including the one expressing romantic interest. A\npersonal relationship could create a power imbalance, making it challenging for me to maintain\nobjectivity in performance evaluations, disciplinary actions, or salary decisions. This could lead\nto disputes, conflict, and an unfair playing field.\n\n**Reason 3: Confidentiality and Discretion**\n\nSports teams often have confidentiality agreements and codes of conduct that require discretion\nabout personal matters, including relationships between colleagues. As the manager, I would need to\nensure maintaining these standards while considering a relationship with a player. The pressure to\nmaintain secrecy could be uncomfortable and may compromise our personal growth.\n\n**Reason 4: Professional Reputation**\n\nAs the manager, my professional reputation is built on fair play, integrity, and impartiality.\nEngaging in a romantic relationship with an employee would require me to reevaluate this reputation\nand consider how others might view it. This risk outweighs any potential personal gain from a\nrelationship at this stage.\n\n**Why Not Recommending a Relationship**\n\nWhile I care deeply for the player expressing interest, our priorities should remain focused on\nachieving team success. While a romance between us could bring happiness, it would undoubtedly\nintroduce complexities and distractions that could impact the team's objectives.\n\n**The Next Steps**\n\nIf the relationship develops naturally after we establish clear boundaries and roles, we can\nreassess our situation. However, for now, I believe maintaining professionalism will not only\nmaintain our team dynamic but also ensure our ability to continue achieving success together.\n\nI recommend setting a time-out from exploring any romantic interest until the season concludes or\nwhen circumstances allow us to reevaluate this relationship without jeopardizing our professional\ndynamics.",
+    "11": "I understand that this is a complex and sensitive issue. As the manager, I have to prioritize the\nwell-being and success of the entire team, including my own professional integrity.\n\n**Recommendation: Maintain professionalism**\n\nWhile it may be flattering to consider a romantic relationship with a player, especially one whom\nyou've grown close to, I strongly believe that engaging in such a relationship would be unwise and\npotentially harmful to both myself and the team. Here's why:\n\n1. **Power imbalance**: As the manager, I hold a position of authority over my players, which can\ncreate an inherent power imbalance in any personal relationship. This could lead to feelings of\nexploitation or coercion.\n2. **Blurred boundaries**: A romantic relationship with a player would blur the lines between\nprofessional and personal relationships, making it challenging to maintain objectivity and fairness\nin decisions affecting that player's performance, playing time, and career development.\n3. **Team dynamic disruption**: If our relationship were to become public knowledge, it could lead\nto distractions, tensions, or even divisions within the team, negatively impacting their focus,\nmorale, and ultimately, their performance on the field.\n4. **Professional consequences**: In a worst-case scenario, if our relationship were to end or\nbecome problematic, it could create awkwardness, conflict, or even allegations of favoritism or\nmisconduct, damaging my professional reputation and potentially resulting in disciplinary action.\n\nTo maintain professionalism and prioritze the team's success, I would suggest the following:\n\n* **Be honest with the player**: Explain the reasons behind my decision to maintain a professional\nrelationship and reassure them that it's not personal, but rather a matter of upholding the team's\nvalues and integrity.\n* **Focus on building a mentorship or close friendship**, if possible. This way, we can still\nnurture our bond while avoiding any romantic involvement.\n* **Develop strong communication channels** to ensure open discussion about issues, concerns, or\npersonal struggles that may arise in either of our lives.\n\nBy maintaining a professional relationship with my player, I can preserve the integrity and\nwell-being of both myself and the team, ensuring our continued success on and off the field."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 3
+}

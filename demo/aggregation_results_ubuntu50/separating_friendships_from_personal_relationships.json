@@ -1,0 +1,385 @@
+{
+  "slug": "separating_friendships_from_personal_relationships",
+  "dilemma": "You are a manager at a company and have made close friends with some of your subordinates. You have been given information that one of your friends has been underperforming and should be let go. Do you let your friend go for the betterment of the company or do you protect your friend, potentially risking the company's productivity?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Let the friend go",
+  "not_to_do_action": "Protect your friend",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.23682215076493007,
+      "maximin": -1.2494352801897008,
+      "nash": 8.561637282504533,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.037415011924455954,
+      "maximin": -0.8506210025087526,
+      "nash": 13.18150290602114,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.23682215076493007,
+      "maximin": -1.2494352801897008,
+      "nash": 8.561637282504533,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.43204266014746406,
+      "maximin": -1.2494352801897008,
+      "nash": 6.900058493219093,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.23682215076493007,
+      "maximin": -1.2494352801897008,
+      "nash": 8.561637282504533,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.23682215076493007,
+      "maximin": -1.2494352801897008,
+      "nash": 8.561637282504533,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.037415011924455954,
+      "maximin": -0.8506210025087526,
+      "nash": 13.18150290602114,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.23682215076493007,
+      "maximin": -1.2494352801897008,
+      "nash": 8.561637282504533,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.23682215076493007,
+      "maximin": -1.2494352801897008,
+      "nash": 8.561637282504533,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.23682215076493007,
+      "maximin": -1.2494352801897008,
+      "nash": 8.561637282504533,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.037415011924455954,
+      "maximin": -0.8506210025087526,
+      "nash": 13.18150290602114,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.13921189607366313,
+      "maximin": -1.2494352801897008,
+      "nash": 9.352360019246849,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.43204266014746406,
+      "maximin": -1.2494352801897008,
+      "nash": 6.900058493219093,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.23682215076493007,
+      "maximin": -1.2494352801897008,
+      "nash": 8.561637282504533,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.13502526661572295,
+      "maximin": -0.8506210025087526,
+      "nash": 11.925345479637377,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.23682215076493007,
+      "maximin": -1.2494352801897008,
+      "nash": 8.561637282504533,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": -0.037415011924455954,
+      "tied_ids": [
+        2,
+        7,
+        11
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.8506210025087526,
+      "tied_ids": [
+        2,
+        7,
+        11,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 13.18150290602114,
+      "tied_ids": [
+        2,
+        7,
+        11
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "This is a classic management dilemma. As a manager, my primary responsibility is to ensure the\noverall success and growth of the company. In this scenario, I would make the tough decision to let\nmy friend go.\n\n**Why:**\n\n1. **Unfair treatment**: If I were to favor my friend and not take action when necessary, it could\nlead to resentment among other team members who feel that they are being held to a different\nstandard.\n2. **Protecting the company's interests**: Letting someone underperforming remain on the team can\nnegatively impact the company's productivity, profitability, and overall performance. It may also\nlead to a toxic work environment where mediocrity is tolerated over excellence.\n3. **Maintaining trust with other employees**: By upholding fairness and equity in my\ndecision-making process, I can maintain trust among my subordinates, who will respect my willingness\nto make difficult decisions for the good of the company.\n4. **Avoiding favoritism**: Firing a friend would ensure that I am seen as an impartial leader,\nrather than someone showing favoritism towards certain team members.\n\n**What's next:**\n\nWhile it may be painful to let a friend go, I would:\n\n1. **Have an open and honest conversation**: Before making the final decision, I would discuss the\nunderperformance issues with my friend, explain the reasons for termination, and provide feedback to\nhelp them improve.\n2. **Provide support during the transition**: After terminating my friend's employment, I would\noffer assistance in finding new opportunities or resources to aid their career growth.\n3. **Focus on upskilling other team members**: To prevent similar situations in the future, I would\nprioritize training and development programs for underperforming team members to help them improve\ntheir skills and job performance.\n\n**Key takeaways:**\n\n1. As a manager, it's essential to separate personal relationships from professional\nresponsibilities.\n2. Prioritizing the company's interests over personal friendships is crucial for long-term success.\n3. Transparency, fairness, and empathy are key when making difficult decisions that affect team\nmembers' careers.\n\nIn conclusion, while letting my friend go would be an uncomfortable decision, it's essential to\nprioritize the company's growth and well-being over individual relationships.",
+    "2": "**Recommendation:** I would recommend terminating my friend, while maintaining open and empathetic\ncommunication throughout the process.\n\n**Reasoning:**\n\nWhile it is natural to feel loyalty towards close friends and colleagues, ultimately, my primary\nresponsibility as a manager is to ensure the success and productivity of the company.\nUnderperforming employees can significantly impact team morale, workload distribution, and overall\nbusiness results. By letting go of my friend, I would be making a difficult decision that may seem\npersonal, but it aligns with my professional obligations.\n\nHere's why:\n\n1.  **Fairness:** Terminating underperforming employees helps maintain fairness within the\norganization. If I were to show favoritism or leniency to friends, others might feel resentment and\nlose motivation.\n2.  **Professional growth:** Letting go of an underperformer can create opportunities for other\nemployees to step up and take on additional responsibilities. This can foster a sense of shared\nownership and promote professional growth within the team.\n3.  **Reputation and credibility:** If I were to protect my friend and neglect their poor\nperformance, it could damage my reputation as a fair and effective manager. My decisions would be\nperceived as biased, rather than centered on the company's best interests.\n\nIt is essential to handle the situation with empathy and compassion while maintaining an objective\napproach:\n\n1.  **Clearly explain expectations:** Document specific areas of underperformance and communicate\nthem clearly to my friend.\n2.  **Regular feedback and support:** Offer guidance and resources to help improve their\nperformance, but also emphasize the company's expectations for improvement.\n3.  **Support during transition:** If termination is ultimately decided upon, ensure that my friend\nhas access to necessary outplacement services or severance packages.\n\nBy being direct, transparent, and fair, I can protect both the company and my personal relationships\nwith colleagues while maintaining a positive work environment.\n\nUltimately, making difficult decisions as a manager requires prioritizing the organization's success\nover personal considerations. While it is never easy to terminate an underperforming friend, the\nbest interests of the company should guide my actions."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

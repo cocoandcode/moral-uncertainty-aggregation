@@ -1,0 +1,365 @@
+{
+  "slug": "pregnancy_being_good_news",
+  "dilemma": "Sarah and John have been trying to conceive for years, and they finally receive positive pregnancy news. However, Sarah has just been offered a dream job that requires intense physical labor, and taking it would potentially put the baby at risk. Should Sarah prioritize her career or her pregnancy?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Accept the job",
+  "not_to_do_action": "Decline the job",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.26087185232840127,
+      "maximin": -0.4554494483894518,
+      "nash": 14.171567059010313,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.24256791535851036,
+      "maximin": -0.06500842962438384,
+      "nash": 24.874376600573203,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.2699804023720678,
+      "maximin": -0.5148445432434597,
+      "nash": 13.875288882442012,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.03405222647436973,
+      "maximin": -0.07959606538784551,
+      "nash": 20.04694287587329,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3289763052771407,
+      "maximin": -0.07959606538784551,
+      "nash": 27.072604174992836,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.2292727358569037,
+      "maximin": -0.07959606538784551,
+      "nash": 24.492666740815196,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.17027683295183071,
+      "maximin": -0.5148445432434597,
+      "nash": 15.336843786881527,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.5781996606764455,
+      "maximin": -0.950093021099074,
+      "nash": 9.119341876522391,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1337557958946068,
+      "maximin": -0.07959606538784551,
+      "nash": 22.158589554186968,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.12464724585094028,
+      "maximin": -0.5148445432434597,
+      "nash": 21.111571885123436,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 0,
+        "deontological": 3,
+        "ubuntu": 0
+      },
+      "z": {
+        "utilitarian": -2.691086932521531,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -2.4458781132325456
+      },
+      "ec": -2.097627513780847,
+      "maximin": -2.691086932521531,
+      "nash": 0.0,
+      "baseline": -2.691086932521531,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1337557958946068,
+      "maximin": -0.07959606538784551,
+      "nash": 22.158589554186968,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.26087185232840127,
+      "maximin": -0.4554494483894518,
+      "nash": 14.171567059010313,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3289763052771407,
+      "maximin": -0.07959606538784551,
+      "nash": 27.072604174992836,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.22016418581323718,
+      "maximin": -0.5148445432434597,
+      "nash": 23.61261570366744,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0683442488617505,
+      "maximin": -1.2363314859195875,
+      "nash": 4.198982832299353,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 5,
+      "value": 0.3289763052771407,
+      "tied_ids": [
+        5,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.06500842962438384,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 5,
+      "value": 27.072604174992836,
+      "tied_ids": [
+        5,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.35565241246776874,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "I strongly recommend that Sarah prioritize her pregnancy over her career at this time. Here's why:\n\n1. **Fetal development and health**: The first trimester is a critical period of fetal development,\nand any stressors or physical demands can pose risks to the baby's health. The American College of\nObstetricians and Gynecologists (ACOG) suggests that pregnant women avoid heavy lifting, bending, or\nstanding for long periods during this time.\n2. **Potential harm**: Engaging in intense physical labor could lead to complications such as\npreterm labor, low birth weight, or even miscarriage. The potential risks to the baby's health and\nwell-being outweigh any benefits of taking the job at this time.\n3. **Long-term implications**: Although Sarah may feel that she is missing an opportunity by not\ntaking the job, it's essential to consider the long-term implications of putting her pregnancy at\nrisk. A miscarriage or complications during pregnancy could have a lasting impact on her emotional\nand mental health, as well as her relationship with John and their future child.\n4. **Alternative solutions**: Sarah can discuss alternative arrangements with her employer, such as\nremote work, flexible scheduling, or taking maternity leave to accommodate the demands of her job.\nMany companies are now more accommodating and supportive of pregnant employees.\n5. **Prioritizing family and well-being**: This pregnancy is a significant milestone for Sarah and\nJohn, and prioritizing their child's health and well-being should be the top priority. Delaying the\nstart date or finding a more suitable role can ensure that Sarah can balance her career aspirations\nwith her responsibilities as a mother-to-be.\n\nUltimately, while it may not seem like an ideal decision at first, choosing to prioritize her\npregnancy will allow Sarah to minimize risks and focus on a healthy, happy pregnancy \u2013 which is\nessential for both her and the baby's well-being.",
+    "5": "**Recommendation: Sarah should prioritize her pregnancy.**\n\nWhile pursuing a \"dream job\" can be exciting, this particular scenario involves unique circumstances\nthat necessitate prioritizing the unborn child's health above other considerations. Here's why:\n\n1. **Risk to the baby**: As you've mentioned, the job requires intense physical labor, which could\npose significant risks to Sarah's pregnancy. The potential for harm to her developing fetus should\nbe a top concern in this situation.\n2. **Irreversibility**: The impact of physical stress on the pregnancy is not something that can\neasily be undone or reversed. If Sarah were to experience complications due to her job, it could\nresult in long-term consequences, including potential developmental issues for the child or even\nmiscarriage.\n3. **Long-term implications**: Research has shown that maternal stress and fatigue during pregnancy\ncan lead to various issues for both mothers and children, such as low birth weight, premature birth,\nand developmental delays.\n\nIn contrast, taking time off or adjusting her job requirements is likely a more viable option in\nthis situation. With modern technologies and collaborative workplaces, it's increasingly possible\nfor employees to balance work responsibilities with personal needs, including those related to\nfamily care.\n\nIf Sarah takes on the dream job without considering the pregnancy risks, she may put her own\nwell-being at risk, which can have far-reaching effects on both her physical and mental health.\nAdditionally, if there are complications or issues that arise due to her job, she'll be faced with\nfeelings of guilt and responsibility for potentially harming her unborn child.\n\n**Alternative solutions:**\n\n1. **Research flexible work arrangements**: Sarah could discuss possible adjustments with her\nemployer, such as working from home or reducing the intensity of physical labor during pregnancy.\n2. **Postpone starting the new role temporarily**: If necessary, she may need to delay beginning\nthis job until after her baby is born or when it's safer for both herself and her child.\n3. **Seek support from family or a caregiver**: To alleviate some of the stress and pressure on\nSarah, she can consider enlisting help from her partner, relatives, or hired caregivers.\n\nUltimately, while this scenario presents a difficult decision, prioritizing the pregnancy's health\nshould be the primary concern in this situation."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

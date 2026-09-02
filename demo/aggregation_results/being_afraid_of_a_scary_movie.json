@@ -1,0 +1,370 @@
+{
+  "slug": "being_afraid_of_a_scary_movie",
+  "dilemma": "Sarah is a single mother of a young boy who loves scary movies. Sarah is worried that the scary movie might cause nightmares or psychological distress to her son, but she also doesn't want to restrict his interests. Should Sarah let her son watch the scary movie despite the potential negative effects?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Letting her son watch the scary movie",
+  "not_to_do_action": "Not letting her son watch the scary movie",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.7345202587345816,
+      "maximin": -1.2367607405987222,
+      "nash": 6.780027128794674,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.31417714629323445,
+      "maximin": -0.8462304100366628,
+      "nash": 11.86504747539068,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.8823854609396109,
+      "maximin": -0.950421696820317,
+      "nash": 5.424021703035739,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.7223959022063032,
+      "maximin": -1.2367607405987222,
+      "nash": 6.5088260436428875,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.31417714629323445,
+      "maximin": -0.8462304100366628,
+      "nash": 11.86504747539068,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.0125622377936307,
+      "maximin": -1.2367607405987222,
+      "nash": 4.339217362428592,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.6192498728202058,
+      "maximin": -0.950421696820317,
+      "nash": 8.136032554553609,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.6192498728202058,
+      "maximin": -0.950421696820317,
+      "nash": 8.136032554553609,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.489073095966186,
+      "maximin": -0.950421696820317,
+      "nash": 9.492037980312542,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.6192498728202058,
+      "maximin": -0.950421696820317,
+      "nash": 8.136032554553609,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.8823854609396109,
+      "maximin": -0.950421696820317,
+      "nash": 5.424021703035739,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.7494266496742257,
+      "maximin": -0.950421696820317,
+      "nash": 6.780027128794674,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.45926031408689816,
+      "maximin": -0.8462304100366628,
+      "nash": 10.17004069319201,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.18121833502784926,
+      "maximin": -0.8462304100366628,
+      "nash": 14.238056970468817,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.7494266496742257,
+      "maximin": -0.950421696820317,
+      "nash": 6.780027128794674,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.048259523762464035,
+      "maximin": -0.8462304100366628,
+      "nash": 16.61106646554695,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 16,
+      "value": -0.048259523762464035,
+      "tied_ids": [
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.8462304100366628,
+      "tied_ids": [
+        2,
+        5,
+        13,
+        14,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 16,
+      "value": 16.61106646554695,
+      "tied_ids": [
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.3553268133226566,
+      "tied_ids": [
+        2,
+        5,
+        14,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "Based on the context, I would recommend that Sarah allows her son to watch the scary movie with some\nguidelines and safeguards in place.\n\nMy reasoning is as follows:\n\n1. **Restricting freedom**: By not allowing her son to watch the scary movie, Sarah might\ninadvertently restrict his freedom of choice and create a situation where he feels like she's too\ncontrolling or overprotective.\n2. **Potential benefits**: Scary movies can also have positive effects on children, such as\ndeveloping their coping skills, teaching them about emotional regulation, and even helping with\nanxiety and stress management (ironically!).\n3. **Age and maturity**: If her son is mature enough to understand the difference between a scary\nmovie and real life, he might be able to distinguish fantasy from reality.\n4. **Guidance and supervision**: Sarah can use this opportunity to discuss the themes of fear,\nbravery, and consequences with her son, teaching him critical thinking skills and helping him\ndevelop empathy.\n\nHowever, it's essential to set some ground rules for watching scary movies:\n\n1. **Age**: Ensure that the movie is suitable for his age group.\n2. **Guided viewing**: Watch the movie together, so you can have a discussion afterwards about what\nhe liked and didn't like.\n3. **Set boundaries**: Agree on when it's okay to leave the room or take breaks during scary scenes.\n4. **Follow up conversations**: Have ongoing conversations with your son about his emotional state\nand any concerns he may have.\n\nBy balancing freedom and guidance, Sarah can help her son develop coping mechanisms and learn to\nnavigate frightening situations without causing long-term psychological distress.\n\nRemember that every child is different, so it's crucial for parents to tailor their approach to\ntheir individual child's personality and needs.",
+    "16": "**Recommendation:**\nSarah should let her son watch the scary movie under certain conditions.\n\n**Explanation:**\n\nWhile it's true that watching scary movies can potentially lead to nightmares or psychological\ndistress, especially in young children, restricting his interests might not be an effective solution\neither. Here's why:\n\n1. **Restriction vs. guidance**: Banning scary movies altogether may not help her son understand the\ndifference between fantasy and reality, potentially leading to more anxiety about real-life\nsituations.\n2. **Child's sensitivity and maturity level**: Every child is different in terms of their\nsensitivity and ability to distinguish between fiction and reality. If Sarah's son is mature enough\n(e.g., old enough, open-minded) to process the themes and emotions presented in the movie, it might\nnot cause any significant negative effects.\n3. **Balancing exposure with protection**: By letting her son watch the scary movie, but also being\navailable for conversation and support, Sarah can provide a balanced approach that acknowledges his\ninterest while ensuring his emotional well-being is considered.\n\nTo mitigate potential negative effects, consider the following:\n\n* **Watch together**: Co-viewing the movie allows Sarah to gauge her son's reaction, answer any\nquestions he might have, and provide reassurance.\n* **Discuss the themes**: After the movie, engage in a conversation about what her son liked or was\nconcerned about. This encourages critical thinking and emotional regulation.\n* **Monitor his response**: Pay attention to your child's behavior after watching the movie. If you\nnotice signs of distress (e.g., persistent nightmares, increased anxiety), it may be necessary to\nreassess and adjust parental guidance.\n\nBy taking these steps, Sarah can respect her son's interests while ensuring he doesn't suffer from\nnegative psychological effects due to excessive scary movie consumption."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

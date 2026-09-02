@@ -1,0 +1,372 @@
+{
+  "slug": "helping_those_who_are_less_fortunate_than_you",
+  "dilemma": "You are a well-off individual who regularly donates to charitable organizations. One day, you find out that a charity you've been supporting is accused of mismanaging funds. Do you continue your support while the investigation is ongoing, or do you immediately halt your donations?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Continue Donating",
+  "not_to_do_action": "Stop Donating",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9761032574669819,
+      "maximin": -1.2494352801897008,
+      "nash": 3.755916111943138,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.0849153769308855,
+      "maximin": -1.3853414989546882,
+      "nash": 3.0269958902592604,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7808827480844479,
+      "maximin": -1.2494352801897008,
+      "nash": 4.6603650455388665,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5814756092439738,
+      "maximin": -0.950093021099074,
+      "nash": 7.175101369503431,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 7,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9873051222396184,
+      "maximin": -1.3853414989546882,
+      "nash": 3.3979886471821454,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8896948675483515,
+      "maximin": -1.3853414989546882,
+      "nash": 3.755916111943138,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7808827480844479,
+      "maximin": -1.2494352801897008,
+      "nash": 4.6603650455388665,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8855082380904113,
+      "maximin": -1.3853414989546882,
+      "nash": 4.660365045538866,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6902877287078774,
+      "maximin": -1.3853414989546882,
+      "nash": 5.782611142090728,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8896948675483515,
+      "maximin": -1.3853414989546882,
+      "nash": 3.755916111943138,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8743063733177747,
+      "maximin": -0.950093021099074,
+      "nash": 5.0435700156270595,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7808827480844479,
+      "maximin": -1.2494352801897008,
+      "nash": 4.6603650455388665,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8896948675483515,
+      "maximin": -1.3853414989546882,
+      "nash": 3.755916111943138,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7920846128570844,
+      "maximin": -1.3853414989546882,
+      "nash": 4.102799327035551,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.06500842962438384,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6790858639352408,
+      "maximin": -0.950093021099074,
+      "nash": 6.491335873670555,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7808827480844479,
+      "maximin": -1.2494352801897008,
+      "nash": 4.6603650455388665,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 4,
+      "value": -0.5814756092439738,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 4,
+      "value": -0.950093021099074,
+      "tied_ids": [
+        4,
+        11,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 4,
+      "value": 7.175101369503431,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": -0.950093021099074,
+      "tied_ids": [
+        1,
+        3,
+        4,
+        7,
+        11,
+        12,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would recommend halting my donations to the charitable organization until the investigation is\ncomplete and its findings are made public. Here's why:\n\n1. **Transparency and accountability**: The allegations of mismanaging funds raise serious questions\nabout the charity's transparency and accountability. Continuing to donate without knowing the truth\nmay perpetuate a lack of transparency and accountability.\n2. **Protecting my own interests**: As a donor, I have a stake in ensuring that my contributions are\nused effectively and efficiently. If the charity is found to be mismanaging funds, it would\nundermine trust in the organization and potentially lead to financial losses for me as a donor.\n3. **Preserving reputation and credibility**: I value my reputation as a responsible and discerning\nphilanthropist. Continuing to support an organization embroiled in controversy could damage my\nreputation and erode public trust in charitable giving.\n4. **Encouraging reform**: By withholding donations during the investigation, I can send a signal\nthat there are consequences for questionable behavior. This may encourage the charity to cooperate\nfully with the investigation and take steps to rectify any issues that come to light.\n\nThat being said, it's essential to note that I would not immediately assume the worst-case scenario\nor sever ties with the organization without giving them an opportunity to respond and cooperate with\nthe investigation. If the charity is found innocent of wrongdoing or takes swift action to address\nany issues, I would consider reinstating my support.\n\nDuring this period, I might also:\n\n* Monitor the situation closely and follow up with other donors and stakeholders.\n* Request regular updates from the organization on their progress in addressing the allegations.\n* Consider redirecting my donations to alternative charities that demonstrate a strong track record\nof transparency, accountability, and effective use of funds.\n\nUltimately, as a responsible donor, I believe it's crucial to prioritize transparency,\naccountability, and fairness when making charitable contributions. Halting my support until the\ninvestigation is complete aligns with these values and helps ensure that my philanthropic efforts\nhave a positive impact on the causes I care about.",
+    "4": "I would recommend halting my donations to the charity until the investigation is complete and\ntransparency about any wrongdoing has been established.\n\nHere's why:\n\n1. **Accountability**: If the charity has indeed mismanaged funds, it reflects poorly on their\nleadership and organizational practices. As a donor, I expect a certain level of accountability for\nhow my contributions are used.\n2. **Trust erosion**: Continuing to donate without addressing potential issues could further erode\npublic trust in the organization. This is particularly concerning if the investigation reveals\nserious lapses in financial management or governance.\n3. **Lack of due diligence**: Donating while an investigation is ongoing implies a lack of thorough\nscrutiny on my part. It's essential to hold charities accountable for their actions and ensure that\nany allegations are thoroughly investigated before continued support.\n4. **Financial implications**: Mismanaged funds could have a direct impact on the charity's\neffectiveness in achieving its mission. Continuing to donate without knowing how funds will be used\ncould inadvertently perpetuate problems rather than solving them.\n\nHowever, I would not completely sever ties with the organization if an investigation is ongoing.\nInstead, I would:\n\n1. **Monitor updates**: Stay informed about the investigation's progress and any changes or\nstatements made by the charity.\n2. **Review governance practices**: If the charity takes steps to improve their financial management\nand governance practices in response to allegations, I might consider resuming donations once I'm\nconfident they are acting with integrity.\n3. **Consider supporting alternative organizations**: While awaiting resolution of the\ninvestigation, I would also explore other reputable charities that share similar goals but have a\nstronger track record on accountability and transparency.\n\nIn conclusion, as a responsible donor, it's essential to prioritize transparency, accountability,\nand due diligence when considering charitable contributions. Halting donations while an\ninvestigation is ongoing may seem inconvenient, but it sends a clear message about the importance of\nethical leadership and governance in non-profit organizations."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

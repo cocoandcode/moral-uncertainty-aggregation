@@ -1,0 +1,364 @@
+{
+  "slug": "being_angry_when_someone_quits_a_game_before_it_is_over",
+  "dilemma": "You are playing an online competitive game with your friend. He quits the game before it ends, causing your team to lose. Should you confront your friend about his behavior or let it slide to maintain your friendship?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confronting the friend",
+  "not_to_do_action": "Not confronting the friend",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.3338982258628671,
+      "maximin": -0.4518067248278044,
+      "nash": 25.49053334677138,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6330089341235783,
+      "maximin": 0.35565241246776874,
+      "nash": 36.26343248117928,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.26579377291412765,
+      "maximin": -0.8458904671545197,
+      "nash": 12.744667716227855,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5241968146596747,
+      "maximin": -0.07959606538784551,
+      "nash": 32.30418711912188,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5241968146596747,
+      "maximin": -0.07959606538784551,
+      "nash": 32.30418711912188,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.42449324523943766,
+      "maximin": -0.07959606538784551,
+      "nash": 29.225695626741324,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.42449324523943766,
+      "maximin": -0.07959606538784551,
+      "nash": 29.225695626741324,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5241968146596747,
+      "maximin": -0.07959606538784551,
+      "nash": 32.30418711912188,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": 0.3338982258628671,
+      "maximin": -0.4518067248278044,
+      "nash": 25.49053334677138,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6330089341235783,
+      "maximin": 0.35565241246776874,
+      "nash": 36.26343248117928,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.5424139147470077,
+      "maximin": -0.052992447146856116,
+      "nash": 32.30418711912188,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5241968146596747,
+      "maximin": -0.07959606538784551,
+      "nash": 32.30418711912188,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6330089341235783,
+      "maximin": 0.35565241246776874,
+      "nash": 36.26343248117928,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6330089341235783,
+      "maximin": 0.35565241246776874,
+      "nash": 36.26343248117928,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.5424139147470077,
+      "maximin": -0.052992447146856116,
+      "nash": 32.30418711912188,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 3,
+      "value": 0.7418210535874818,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 3,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 3,
+      "value": 40.08324466986437,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 3,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        3,
+        12,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "3": "I would recommend confronting my friend about his behavior in a calm and respectful manner. Here's\nwhy:\n\n1. **Accountability**: By quitting the game early, my friend likely impacted not only our team's\nperformance but also the progress we made up to that point. Addressing this issue helps him take\nownership of his actions and understand their consequences.\n2. **Improving relationships**: Confronting a friend about an issue shows that you value your\nrelationship and care about how he behaves in competitive situations. This can actually strengthen\nyour bond, as it demonstrates that you're willing to address problems together and work towards a\nmore positive outcome.\n3. **Avoidance of future issues**: Ignoring this behavior might lead to repeated instances, causing\nfrustration and negatively impacting our gaming experience (and friendship). By addressing the issue\nnow, we can prevent similar situations from arising in the future.\n4. **Sportsmanship and fair play**: Quitting mid-game, especially in a competitive online game,\ndemonstrates a lack of commitment to sportsmanship and fair play. Confronting my friend about this\nbehavior sends a message that I value competing fairly and respect our opponents (even if they're\nfriends).\n\nWhen confronting my friend, I would approach the conversation with:\n\n1. **Calmness**: Avoid aggression or accusations.\n2. **Specificity**: Describe the incident and its impact on our team's performance.\n3. **Empathy**: Acknowledge that mistakes happen and that we all have bad gaming days.\n4. **Respectful tone**: Focus on finding a solution together, rather than simply placing blame.\n\nExample:\n\n\"Hey, I wanted to talk about what happened during the last game. I felt frustrated when you quit\nmid-game without giving us a chance to recover. I know mistakes happen, but I think it's essential\nwe learn from them and work together as a team. Can we agree on communicating more effectively in\nsituations like this and finding ways to prevent similar losses?\"\n\nBy addressing my friend's behavior constructively, we can strengthen our friendship while\nmaintaining healthy competitiveness and respect for the game (and each other)."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

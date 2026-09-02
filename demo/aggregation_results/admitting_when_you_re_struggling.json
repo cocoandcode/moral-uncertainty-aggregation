@@ -1,0 +1,366 @@
+{
+  "slug": "admitting_when_you_re_struggling",
+  "dilemma": "You are a team lead at a software company. You are finding it hard to meet project deadlines due to personal issues but admitting it may risk your position and team's morale. Should you admit your struggle and risk your position or continue pretending everything is fine?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Admit Struggle",
+  "not_to_do_action": "Pretend Everything is Fine",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 1.2916671298911182,
+      "maximin": 1.1064212427736348,
+      "nash": 61.020244159152064,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0285315417717134,
+      "maximin": 0.7158909122115753,
+      "nash": 49.42639776891317,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8685419830384056,
+      "maximin": 0.3553268133226566,
+      "nash": 42.71417091140645,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8685419830384056,
+      "maximin": 0.3553268133226566,
+      "nash": 42.71417091140645,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8834483739780495,
+      "maximin": 0.7158909122115753,
+      "nash": 43.934575794589485,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8685419830384056,
+      "maximin": 0.3553268133226566,
+      "nash": 42.71417091140645,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0285315417717134,
+      "maximin": 0.7158909122115753,
+      "nash": 49.42639776891317,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.1587083186257332,
+      "maximin": 1.1064212427736348,
+      "nash": 54.91821974323686,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8834483739780495,
+      "maximin": 0.7158909122115753,
+      "nash": 43.934575794589485,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8834483739780495,
+      "maximin": 0.7158909122115753,
+      "nash": 43.934575794589485,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 1.2916671298911182,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": 1.1064212427736348,
+      "tied_ids": [
+        2,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 61.020244159152064,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 1.225825820084639,
+      "tied_ids": [
+        2,
+        3,
+        9,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "**Recommendation: Admit the struggle**\n\nAs difficult as it may be, I would recommend admitting my personal struggles and their impact on our\nproject deadlines. Here's why:\n\n1. **Transparency builds trust**: By acknowledging my difficulties, I demonstrate vulnerability and\na willingness to communicate openly with the team. This fosters trust and creates an environment\nwhere team members feel comfortable discussing their own challenges.\n2. **Improved communication**: Pretending everything is fine can lead to miscommunication and\nmisunderstandings about project expectations, timelines, and dependencies. Being transparent about\nmy personal issues allows us to reassess priorities and create a more realistic plan together as a\nteam.\n3. **More effective support**: Admitting my struggles might prompt colleagues and superiors to offer\nhelp or resources I'm not aware of. This could provide solutions or accommodations that would have\nbeen unavailable if I'd continued hiding behind a fa\u00e7ade of being fine.\n4. **Morale boost**: When people feel valued, understood, and supported, team morale tends to\nimprove. By owning up to my issues and asking for help when needed, I set a positive example and\ndemonstrate that our company values personal well-being alongside professional performance.\n5. **Reducing stress and burnout**: Continuing to pretend everything is fine would likely lead to\nincreased stress levels and the risk of burnout. Admitting my struggles allows me to address them\ndirectly, seek help when needed, and develop healthier coping mechanisms.\n\n**Mitigating risks:**\n\nTo minimize potential negative impacts on my position or team's morale:\n\n1. **Approach the conversation strategically**: Choose an appropriate time and setting for\ndiscussing personal issues, avoiding sensitive topics in meetings or public forums.\n2. **Be prepared to propose solutions**: Offer specific ideas for adapting project timelines,\nallocating tasks more efficiently, or seeking assistance from colleagues or superiors.\n3. **Foster a culture of support**: Emphasize that personal struggles are acceptable and encourage\nteam members to share their own challenges or concerns without fear of judgment.\n\n**Consequences and considerations:**\n\nWhile there may be short-term consequences to admitting my struggles, I believe they outweigh the\nlong-term risks of continued dishonesty. Losing one's position can be a setback, but it may also\nlead to new opportunities for growth and development. Additionally, prioritizing honesty and\ntransparency might actually strengthen relationships with colleagues and superiors, rather than\nweakening them.\n\nBy acknowledging personal challenges and asking for help when needed, I create an environment where\nour team can work more collaboratively and effectively, setting us up for future successes despite\ncurrent difficulties."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

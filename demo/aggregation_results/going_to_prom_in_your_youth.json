@@ -1,0 +1,362 @@
+{
+  "slug": "going_to_prom_in_your_youth",
+  "dilemma": "During high school, you have always been a good friend to a classmate who has a visible disability. This classmate asks you to prom, but you already planned to ask someone else you have feelings for. Do you go to prom with your friend and possibly hurt your own feelings, or ask the person you like and possibly hurt your friend's feelings?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Going to prom with the friend",
+  "not_to_do_action": "Asking the crush to prom",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.2756978259130358,
+      "maximin": -1.6272910711607818,
+      "nash": 2.440809766366083,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.8945098174678894,
+      "maximin": -1.385671200201308,
+      "nash": 5.085020346596005,
+      "baseline": -1.385671200201308,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.2756978259130358,
+      "maximin": -1.6272910711607818,
+      "nash": 2.440809766366083,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.057601845879377056,
+      "maximin": -1.2367607405987222,
+      "nash": 14.644858598196496,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.2756978259130358,
+      "maximin": -1.6272910711607818,
+      "nash": 2.440809766366083,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7532715971240297,
+      "maximin": 0.3253605816495158,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.2027517078286626,
+      "maximin": -0.4557000794746032,
+      "nash": 21.967287897294742,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.33292848468268244,
+      "maximin": -0.07992269005833456,
+      "nash": 25.628502546843865,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.08741462775866488,
+      "maximin": -0.950421696820317,
+      "nash": 14.644858598196496,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.0125622377936307,
+      "maximin": -1.2367607405987222,
+      "nash": 4.339217362428592,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.3477681814667045,
+      "maximin": -1.2367607405987222,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.6220319072315712,
+      "maximin": -0.950421696820317,
+      "nash": 7.593630384250035,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.2027517078286626,
+      "maximin": -0.4557000794746032,
+      "nash": 21.967287897294742,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.33292848468268244,
+      "maximin": -0.07992269005833456,
+      "nash": 25.628502546843865,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.2027517078286626,
+      "maximin": -0.4557000794746032,
+      "nash": 21.967287897294742,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.8945098174678894,
+      "maximin": -1.385671200201308,
+      "nash": 5.085020346596005,
+      "baseline": -1.385671200201308,
+      "recommendation": "OTHER"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 6,
+      "value": 0.7532715971240297,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 6,
+      "value": 0.3253605816495158,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 6,
+      "value": 39.05295626185732,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 6,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "6": "This is a tough moral dilemma! Based on the situation, I would recommend going to prom with your\nclassmate who has a visible disability. Here's why:\n\n1. **Friendship means something**: You've been a good friend to this person for years, supporting\nand caring for them throughout high school. By accepting their invitation, you're showing that your\nfriendship is important to you.\n2. **Empowerment through kindness**: Going to prom with someone with a disability can be an\nempowering experience for both of you. It promotes acceptance, understanding, and inclusivity, which\nare essential values in any relationship or community.\n3. **Your friend's needs come first**: By prioritizing your friend's feelings and well-being, you're\nbeing considerate and empathetic. This shows that you value their friendship and see them as more\nthan just a companion \u2013 you see them as an equal person with worth.\n4. **It's a small sacrifice in the grand scheme**: While it may hurt your own feelings to decline an\ninvitation from someone else you like, this feeling will likely pass over time. In contrast, hurting\nyour friend's feelings could have long-lasting consequences for their emotional well-being and\nself-esteem.\n\nOf course, if going to prom with your classmate were to create significant tension or stress in your\nlife, that would be a different story. However, assuming you can handle the situation graciously, I\nbelieve it's more important to prioritize kindness, empathy, and friendship than personal romantic\ninterests.\n\nAfter prom, you could even use this experience as an opportunity to learn more about advocacy for\npeople with disabilities, or get involved in inclusivity initiatives at your school \u2013 that would be\na wonderful way to make the most of the situation!"
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

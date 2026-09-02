@@ -1,0 +1,363 @@
+{
+  "slug": "putting_on_sunscreen_when_you_re_going_to_be_out_in_the_sun_",
+  "dilemma": "You're a parent taking your child to a beach day out. Your child is allergic to most sunscreens, but without it, they would be exposed to harmful UV rays. Should you risk the allergic reaction for the sake of sun protection?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Apply Sunscreen",
+  "not_to_do_action": "Not Apply Sunscreen",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.06872998352483867,
+      "maximin": -0.4516278421656973,
+      "nash": 16.272065109107217,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.20168879479022392,
+      "maximin": -0.8505042759618531,
+      "nash": 13.017652087285775,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.302052789764956,
+      "maximin": -0.8505042759618531,
+      "nash": 10.848043406071477,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.43222956661897577,
+      "maximin": -1.2367607405987222,
+      "nash": 8.678434724857183,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.44713595755861973,
+      "maximin": -0.8505042759618531,
+      "nash": 9.492037980312544,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.354395163327874,
+      "maximin": -0.052751408369541584,
+      "nash": 26.03530417457155,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.7223959022063032,
+      "maximin": -1.2367607405987222,
+      "nash": 6.5088260436428875,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.3422708067995955,
+      "maximin": 0.3253605816495158,
+      "nash": 26.577706344875125,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.48735397459325924,
+      "maximin": 0.3253605816495158,
+      "nash": 30.37452153700014,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.0538235925851948,
+      "maximin": -0.4516278421656973,
+      "nash": 16.61106646554695,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.48457194018189387,
+      "maximin": -0.052751408369541584,
+      "nash": 29.289717196392992,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.038917201645550875,
+      "maximin": -0.4557000794746032,
+      "nash": 16.272065109107217,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.632437142386923,
+      "maximin": 0.3253605816495158,
+      "nash": 34.17133672912516,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.7504895627126643,
+      "maximin": 0.7158909122115753,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.48457194018189387,
+      "maximin": -0.052751408369541584,
+      "nash": 29.289717196392992,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.2992707553535905,
+      "maximin": -1.2367607405987222,
+      "nash": 10.84804340607148,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 14,
+      "value": 0.7504895627126643,
+      "tied_ids": [
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 14,
+      "value": 0.7158909122115753,
+      "tied_ids": [
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 14,
+      "value": 39.05295626185732,
+      "tied_ids": [
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 13,
+      "value": 1.225825820084639,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "13": "What a conundrum! As a parent, my top priority is always my child's health and safety. In this\nsituation, I would recommend finding alternative sunscreens that are hypoallergenic or specially\nformulated for sensitive skin, even if it means trying out new products. Here's why:\n\n**The risks of ignoring sun protection:** While the allergic reaction may be uncomfortable, it can\nalso be a one-time occurrence. However, exposure to UV radiation increases the risk of skin damage,\npremature aging, and even skin cancer. Children are particularly vulnerable due to their developing\nskin and increased energy expenditure in the sun. As a parent, I would not want to gamble with their\nlong-term health and well-being.\n\n**Alternative solutions:** Before the beach day, I would try to find sunscreens specifically labeled\nas \"hypoallergenic\" or \"sensitive skin-friendly.\" Some brands also offer physical sunblocks (e.g.,\nzinc oxide) that are less likely to cause allergic reactions. Another option is to explore\nmineral-based sunscreens or tinted lip balms with SPF, which can provide some protection while being\ngentler on the skin.\n\n**Additional precautions:** To minimize potential allergenic responses, I would:\n\n1. Perform a patch test on my child's skin before applying sunscreen extensively.\n2. Apply a small amount initially and monitor for any signs of reaction.\n3. Choose clothing with built-in UPF (Ultraviolet Protection Factor) protection to further reduce\nexposure.\n4. Plan regular breaks in shaded areas or during peak sun hours.\n\n**Ultimately, I'd rather prioritize prevention over risk management:** While there may be no\nabsolute guarantee against an allergic reaction, the benefits of sun protection far outweigh the\npotential risks. By carefully selecting sunscreens and taking extra precautions, we can\nsignificantly reduce our child's exposure to UV radiation while ensuring their comfort and safety.",
+    "14": "**Recommendation:** Use a hypoallergenic sunscreen or develop a tailored solution with a healthcare\nprofessional.\n\nAs a parent, it's essential to prioritize both the immediate safety of my child (avoiding the sun\naltogether) and their long-term protection against skin damage. Given the seriousness of the\nallergies involved, I would not want to expose them to any unnecessary risks.\n\nI recommend looking for sunscreens specifically labeled as \"hypoallergenic\" or \"fragrance-free.\"\nThese products typically have fewer irritants that can exacerbate the allergic reaction.\n\nAlternatively, if no suitable sunscreen options exist or I'm unsure about my child's specific needs,\nI would consult a healthcare professional to develop a tailored solution. They may recommend using\nclothing with built-in UPF protection, umbrellas, or other protective gear as an alternative to\nsunscreens.\n\nIt might also be beneficial for me and/or the healthcare provider to speak to the manufacturer of\nany sunscreen options we are considering about adding our child's specific allergy issues to their\n\"allergy warning database\" in case they can create more products that help us."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

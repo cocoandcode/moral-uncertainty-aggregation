@@ -1,0 +1,372 @@
+{
+  "slug": "making_plans_with_your_partner",
+  "dilemma": "You and your partner are planning a surprise birthday party for a mutual friend. Your partner wants to invite some people that the friend has had a falling out with, thinking that the party could be a good opportunity to mend things. Should you agree with your partner's plan and risk the friend feeling uncomfortable, or should you insist on not inviting those people even if it might cause a disagreement with your partner?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Agree with partner's plan",
+  "not_to_do_action": "Insist on not inviting those people",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.0715120179362041,
+      "maximin": -0.8505042759618531,
+      "nash": 14.644858598196494,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.0715120179362041,
+      "maximin": -0.8505042759618531,
+      "nash": 14.644858598196494,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.4946371647889168,
+      "maximin": -1.2493807097580087,
+      "nash": 7.322429299098248,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.6397203325825804,
+      "maximin": -1.385671200201308,
+      "nash": 5.491821974323686,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.4946371647889168,
+      "maximin": -1.2493807097580087,
+      "nash": 7.322429299098248,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.5067615213171952,
+      "maximin": -1.385671200201308,
+      "nash": 7.322429299098247,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.20447082920158932,
+      "maximin": -1.2493807097580087,
+      "nash": 10.983643948647371,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.5067615213171952,
+      "maximin": -1.385671200201308,
+      "nash": 7.322429299098247,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.2315015766695117,
+      "maximin": -0.950421696820317,
+      "nash": 10.848043406071477,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.2315015766695117,
+      "maximin": -0.950421696820317,
+      "nash": 10.848043406071477,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.2165951857298678,
+      "maximin": -0.8505042759618531,
+      "nash": 12.204048831830413,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.0715120179362041,
+      "maximin": -0.8505042759618531,
+      "nash": 14.644858598196494,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.6397203325825804,
+      "maximin": -1.385671200201308,
+      "nash": 5.491821974323686,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.2315015766695117,
+      "maximin": -0.950421696820317,
+      "nash": 10.848043406071477,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.2287195422581463,
+      "maximin": -0.950421696820317,
+      "nash": 12.204048831830413,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.6397203325825804,
+      "maximin": -1.385671200201308,
+      "nash": 5.491821974323686,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 1,
+      "value": -0.0715120179362041,
+      "tied_ids": [
+        1,
+        2,
+        12
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.8505042759618531,
+      "tied_ids": [
+        1,
+        2,
+        11,
+        12
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 1,
+      "value": 14.644858598196494,
+      "tied_ids": [
+        1,
+        2,
+        12
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": -0.07992269005833456,
+      "tied_ids": [
+        1,
+        2,
+        7,
+        12
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would recommend not inviting the people who have had a falling out with the friend to the surprise\nbirthday party. Here's why:\n\n1. **Respect for the friend's feelings**: The ultimate goal of planning a surprise party is to make\nthe friend happy and celebrate their special day. Inviting people they've had a falling out with\ncould create an uncomfortable atmosphere, making it difficult for the friend to fully enjoy the\ncelebration.\n2. **Potential damage to relationships**: If the friend feels forced or pressured to interact with\nthose individuals, it may strain their relationship even further or lead to more tension and\nconflict in the long run. The surprise party should be a joyful occasion, not an opportunity to\nreignite conflicts.\n3. **Consideration of the friend's boundaries**: Your partner is eager to mend relationships, but\nit's essential to prioritize the friend's feelings and comfort level. If they've chosen not to reach\nout or reconnect with these individuals, respecting their decision is crucial.\n\nInsisting on excluding those people might lead to a disagreement with your partner, but prioritizing\nthe friend's well-being and happiness is more important in this situation.\n\nTo navigate the disagreement with your partner:\n\n1. **Have an open discussion**: Share your concerns about potentially creating an uncomfortable\natmosphere or straining relationships.\n2. **Respect their perspective**: Acknowledge that they're coming from a good place, but gently\nexplain why you believe it's best to focus on celebrating the friend's birthday without inviting\nthose individuals.\n3. **Seek compromise (optional)**: If your partner is still willing to consider your concerns, you\nmight explore other options, such as a separate social gathering or casual meetup with those\nindividuals in the future, outside of the surprise party.\n\nRemember that it's essential to prioritize the friend's feelings and preferences when planning this\nspecial occasion."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 1
+}

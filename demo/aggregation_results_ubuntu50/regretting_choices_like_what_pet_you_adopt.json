@@ -1,0 +1,384 @@
+{
+  "slug": "regretting_choices_like_what_pet_you_adopt",
+  "dilemma": "You adopted a dog from a shelter that is proving to be more aggressive than anticipated. The dog has caused numerous problems, such as biting a neighbor and damaging property, but you know that returning it to the shelter could result in the dog being euthanized. Should you keep the dog and risk further incidents, or return him to the shelter despite the potential consequences?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Keep the dog",
+  "not_to_do_action": "Return the dog to the shelter",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8336855436851686,
+      "maximin": -1.6267725046846555,
+      "nash": 3.755916111943139,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.2507169214534497,
+      "maximin": -1.648249557870649,
+      "nash": 1.6476878632526426,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9424976631490721,
+      "maximin": -1.6267725046846555,
+      "nash": 3.3979886471821454,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9424976631490721,
+      "maximin": -1.6267725046846555,
+      "nash": 3.3979886471821454,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8336855436851686,
+      "maximin": -1.6267725046846555,
+      "nash": 3.755916111943139,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.0330926825256426,
+      "maximin": -1.648249557870649,
+      "nash": 2.0444617757686205,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8336855436851686,
+      "maximin": -1.6267725046846555,
+      "nash": 3.755916111943139,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8336855436851686,
+      "maximin": -1.6267725046846555,
+      "nash": 3.755916111943139,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8336855436851686,
+      "maximin": -1.6267725046846555,
+      "nash": 3.755916111943139,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 2,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -2.0172135234497235,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.7835756540003311,
+      "maximin": -2.0172135234497235,
+      "nash": 0.533292599967453,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6342784048446944,
+      "maximin": -1.6267725046846555,
+      "nash": 5.782611142090729,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9424976631490721,
+      "maximin": -1.6267725046846555,
+      "nash": 3.3979886471821454,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8336855436851686,
+      "maximin": -1.6267725046846555,
+      "nash": 3.755916111943139,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8336855436851686,
+      "maximin": -1.6267725046846555,
+      "nash": 3.755916111943139,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9424976631490721,
+      "maximin": -1.6267725046846555,
+      "nash": 3.3979886471821454,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8336855436851686,
+      "maximin": -1.6267725046846555,
+      "nash": 3.755916111943139,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 11,
+      "value": -0.6342784048446944,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -1.6267725046846555,
+      "tied_ids": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 11,
+      "value": 5.782611142090729,
+      "tied_ids": [
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        13,
+        14,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "**Recommendation:** Return the dog to the shelter.\n\n**Reasoning:**\n\nWhile it's understandable that you want to avoid seeing the dog euthanized, keeping the dog with\npotential for further aggressive behavior poses significant risks to human safety and well-being.\nThe dog has already demonstrated problematic behavior (biting a neighbor and damaging property),\nwhich can escalate into more severe incidents. Your responsibility as an animal owner is not only to\nprovide care but also to ensure public safety.\n\nHere are some key considerations:\n\n1.  **Public Safety**: If the dog continues to exhibit aggressive behavior, it's likely that someone\nwill be injured or worse in the future.\n2.  **Liability**: You could face legal consequences if the dog injures someone or causes more\nproperty damage, including financial liability for medical expenses and damages.\n3.  **Animal Welfare**: While returning the dog to the shelter may seem like a \"worse\" option, it's\nessential to consider the long-term fate of the animal. Shelter overcrowding often results in\neuthanization due to lack of space or resources. By returning the dog, you might help create more\nspace for another animal at risk.\n4.  **Personal Well-being**: Living with an aggressive dog can be stressful and traumatic,\nnegatively impacting your mental health.\n\nIf possible, consider working with local animal welfare organizations to identify suitable rescue\ngroups or rehoming options for the dog after returning it to the shelter. Some organizations\nspecialize in rehabilitation and placement of dogs with challenging behaviors.\n\nIn conclusion, while keeping the dog might seem like a way to avoid seeing it euthanized,\nprioritizing public safety, liability concerns, animal welfare, and your own well-being are all\ncrucial factors to consider.",
+    "11": "**Recommendation: Return the Dog to the Shelter**\n\nWhile this decision is undoubtedly difficult and may weigh on one's conscience, prioritizing the\nsafety of humans, other animals, and preventing further damage to property makes returning the dog\nto the shelter the most responsible choice.\n\nReasoning:\n\n1.  **Safety Concerns**: The dog has already bitten a neighbor, which poses an immediate threat to\npeople living nearby and increases the risk of another attack. As aggression escalates, so does the\nlikelihood of serious harm or fatalities.\n2.  **Property Damage**: Irreparable damage to property creates economic burdens on you as well as\npotentially puts others in danger from hazardous conditions resulting from destroyed infrastructure\nor hazardous materials left behind.\n\nThere are some alternatives that you may want to consider before making a decision such as:\n\n*   Consulting with a professional dog trainer or behaviorist who specializes in aggression to\ndevelop strategies for mitigating the situation.\n*   Obtaining support and resources through local shelters, rescue organizations, or online\ncommunities focused on rehabilitation efforts.\n\nThese options will allow you an informed discussion to make best decision possible.\n\n**Prioritize Safety Over Guilt**: The primary concern should be the well-being of both humans and\nanimals. While it's understandable that returning the dog might feel like abandoning him, allowing\naggression to continue can lead to more severe consequences.\n\nThe most compassionate solution in this situation is finding a suitable alternative where everyone\ninvolved stays safe \u2013 both you and your pet"
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

@@ -1,0 +1,367 @@
+{
+  "slug": "judging_parents_when_you_aren_t_one",
+  "dilemma": "You are a high school teacher and have observed a student struggling academically due to lack of parental guidance. This makes you question their parents' involvement and commitment. Should you step in and confront the parents about their apparent neglect?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confront the Parents",
+  "not_to_do_action": "Do Not Confront the Parents",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.4286798746973778,
+      "maximin": -0.07959606538784551,
+      "nash": 29.57293477270879,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.35138003482241387,
+      "maximin": -0.06500842962438384,
+      "nash": 27.494521479967226,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.24256791535851036,
+      "maximin": -0.06500842962438384,
+      "nash": 24.874376600573203,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.451905732252995,
+      "maximin": -1.2363314859195875,
+      "nash": 9.571610998258334,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.15205973286449775,
+      "maximin": -0.4554494483894518,
+      "nash": 15.90845370297912,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.45609236171093526,
+      "maximin": -0.8458904671545197,
+      "nash": 10.780676324190411,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.14787310340655757,
+      "maximin": -0.8458904671545197,
+      "nash": 15.01620372692421,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1337557958946068,
+      "maximin": -0.07959606538784551,
+      "nash": 22.158589554186968,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8415246230077189,
+      "maximin": 0.715873607905752,
+      "nash": 43.78519230873881,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.3422714847787474,
+      "maximin": -0.06500842962438384,
+      "nash": 27.171686623336814,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.3654973423343647,
+      "maximin": -0.8458904671545197,
+      "nash": 11.667132365288845,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.24256791535851036,
+      "maximin": -0.06500842962438384,
+      "nash": 24.874376600573203,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.3654973423343647,
+      "maximin": -0.8458904671545197,
+      "nash": 11.667132365288845,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.25668522287046114,
+      "maximin": -0.8458904671545197,
+      "nash": 13.376733028931412,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6463041136251849,
+      "maximin": 0.32543258914068407,
+      "nash": 36.694289063189665,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.047347405975976364,
+      "maximin": -0.4554494483894518,
+      "nash": 19.739312422390878,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 9,
+      "value": 0.8415246230077189,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 9,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 9,
+      "value": 43.78519230873881,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        2,
+        9,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "As a high school teacher, it's essential to maintain a professional relationship with students,\nparents, and colleagues while addressing concerns that may impact student performance. Here is a\nrecommended approach:\n\n**Recommendation:** Not necessarily confront the parents directly about their alleged neglect, but\nrather, initiate a collaborative effort with other educators or school administrators to identify\nsupport needs for the student.\n\n**Reasoning:**\n\n1.  **Student's well-being is paramount**: While it's understandable to feel concerned about the\nparent's involvement (or lack thereof), it's essential to prioritize the student's overall\nwell-being and education. Taking a more collaborative approach can help ensure that any concerns are\naddressed while maintaining a positive teacher-parent relationship.\n\n2.  **Gathering information before acting:** Confronting parents directly might not provide the full\npicture of their situation. It is possible that there may be unforeseen circumstances or reasons why\nthey seem uninvolved.\n\n3.  **Collaborating with other educators**: School counselors, social workers, or department heads\ncan help assess the student's situation and suggest potential solutions. This will involve\ncommunicating with them discreetly and without making unfounded accusations about their parents'\ncharacter.\n\n4.  **Supporting the student**: Instead of focusing on parental involvement, try to address the\nimmediate needs of the student. Offer extra help during office hours, engage with other teaching\nstaff members or volunteer mentors for individualized support.\n\n5.  **Encouraging communication with parents**: If a parent-teacher meeting is arranged to discuss\nthe child's progress, use this opportunity to communicate your observations and findings in a\nnon-judgmental manner. This allows them an opening to address your concerns and provide additional\ninsights about their situation.\n\nIn conclusion, while concern for students struggling due to apparent parental neglect is\nunderstandable, consider initiating a collaborative effort with other educators rather than directly\nconfronting the parents. By taking a professional approach that prioritizes student well-being and\nfocuses on gathering accurate information, you can create opportunities for constructive dialogue\nand support.\n\nIf direct confrontation cannot be avoided due to urgent matters, emphasize empathy and understanding\nin your conversation, making sure to document concerns in advance and provide concrete suggestions\nfor improvement.",
+    "9": "As a high school teacher, my primary concern is the academic well-being and success of my students.\nHowever, I also recognize that parental guidance plays a significant role in supporting a student's\nlearning. If I have observed a student struggling due to lack of parental involvement, I would make\na gentle yet direct approach to address this issue.\n\n**Recommendation:**\nI recommend reaching out to the parents through a private meeting or phone call, rather than\nconfronting them directly. My goal is not to place blame or accusation, but rather to facilitate\nopen communication and understanding.\n\n**Reasoning:**\n\n1.  **Empathy**: Before reaching out, I would consider potential reasons behind their lack of\ninvolvement. Are they overwhelmed with work or personal issues? Do they struggle with their child's\nlearning style or difficulties?\n2.  **Support, not accusation**: My conversation would focus on the student's needs and struggles,\nrather than criticizing their parents. This would help create a collaborative atmosphere for\naddressing these concerns.\n3.  **Collaborative problem-solving**: I would work together with the parents to identify ways to\nimprove their involvement in the child's education. This might involve setting goals, developing a\nplan for communication and support, or exploring local resources that can provide additional help.\n4.  **Respect for boundaries**: While it is understandable to feel concerned about a student's\nacademic struggles, I would respect the parents' personal circumstances and boundaries while seeking\ntheir involvement.\n\n**Important considerations:**\n\n1.  **Teacher-parent relationship:** Establishing a positive, open relationship with students'\nparents can facilitate more effective communication and support for the child.\n2.  **Student well-being**: Prioritize the student's needs above any potential concerns or issues\nbetween teachers and parents.\n3.  **Professional discretion**: As an educator, I would maintain confidentiality when discussing\nspecific situations or concerns that arise during conversations with parents.\n\nUltimately, my goal is to help students succeed academically by fostering a supportive environment\nthat involves both teachers and parents in their education."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

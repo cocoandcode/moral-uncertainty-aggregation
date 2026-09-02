@@ -1,0 +1,375 @@
+{
+  "slug": "sharing_the_responsibility_of_safety_with_your_partner",
+  "dilemma": "You and your partner are seasoned mountain climbers. During a climb, your partner gets injured, and you have the choice to either continue climbing to get help or stay with them and risk both of your lives. Should you leave your partner behind to seek help or stay and risk both of your lives?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Leave partner behind to seek help",
+  "not_to_do_action": "Stay with injured partner",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.027855758155711063,
+      "maximin": -1.385671200201308,
+      "nash": 14.644858598196496,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3031157028033946,
+      "maximin": -0.950421696820317,
+      "nash": 21.967287897294742,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.17293892594937477,
+      "maximin": -0.950421696820317,
+      "nash": 19.52647813092866,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.6953651547383808,
+      "maximin": -1.6272910711607818,
+      "nash": 4.881619532732166,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.17293892594937477,
+      "maximin": -0.950421696820317,
+      "nash": 19.52647813092866,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.43607451406877984,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3031157028033946,
+      "maximin": -0.950421696820317,
+      "nash": 21.967287897294742,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.43607451406877984,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.027855758155711063,
+      "maximin": -1.385671200201308,
+      "nash": 14.644858598196496,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.29099134627511614,
+      "maximin": -1.385671200201308,
+      "nash": 18.30607324774562,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.43607451406877984,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.29099134627511614,
+      "maximin": -1.385671200201308,
+      "nash": 18.30607324774562,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.29099134627511614,
+      "maximin": -1.385671200201308,
+      "nash": 18.30607324774562,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.17293892594937477,
+      "maximin": -0.950421696820317,
+      "nash": 19.52647813092866,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.17293892594937477,
+      "maximin": -0.950421696820317,
+      "nash": 19.52647813092866,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": -0.3477681814667045,
+      "maximin": -1.2367607405987222,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 6,
+      "value": 0.43607451406877984,
+      "tied_ids": [
+        6,
+        8,
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.950421696820317,
+      "tied_ids": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        11,
+        14,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 6,
+      "value": 24.408097663660826,
+      "tied_ids": [
+        6,
+        8,
+        11
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 4,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        4
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "What a difficult decision! As seasoned mountain climbers, we've faced our fair share of risks and\nuncertainties on the mountain. However, in this situation, I strongly recommend that you prioritize\nhelping your partner instead of leaving them behind to seek help.\n\n**Reasoning:**\n\n1.  **Climbing partner safety is paramount**: Climbing is a team sport, and when one member is\ninjured or at risk, it's essential to put their needs above all else. Your responsibility as a\nclimbing partner is not just about reaching the summit but also ensuring your companion's safety.\n2.  **Time and access might be critical**: Depending on the severity of the injury, the environment\n(e.g., altitude, weather conditions), and your location, leaving your partner behind to seek help\nmight expose you both to significant risks. There may not be adequate time or resources for someone\nelse to reach you before a potentially life-threatening situation arises.\n3.  **Rescue attempts can also risk both lives**: If you leave your partner, the rescue team will\nhave to navigate challenging terrain, weather conditions, and potential additional hazards like\ncrevasses, avalanches, or unstable rock formations. This raises the risk of further injuries or\nfatalities for not just your partner but also the rescuers.\n4.  **Morale, well-being, and human connection**: As a climber who's built a bond with their\npartner, leaving them behind can be emotionally taxing and may even cause irreparable harm to your\nrelationship.\n\n**Recommendation:**\n\nStay with your injured partner and assess the severity of their injuries together. Based on this\nassessment, you should work as a team to:\n\n1.  Administer first aid and stabilize your partner's condition.\n2.  Identify any possible evacuation options or alternatives (e.g., self-evacuation using trekking\npoles or carrying).\n3.  Establish contact with nearby rescue teams or climbing groups, if feasible.\n\nThis approach allows you to take immediate action while minimizing the risk of additional harm to\neither party. In situations where lives are at stake, a measured and compassionate response is\nessential. This decision-making process considers both the climbing partner's safety and your\nresponsibility as their teammate, prioritizing life over reaching a goal like summiting.",
+    "4": "What a difficult decision! As a seasoned mountain climber, I've considered this scenario many times\nin my head. While there's no easy answer, here's my recommendation:\n\n**Leave your partner behind to seek help, but only after ensuring their safety and providing first\naid**.\n\nMy reasoning is as follows:\n\n1. **Prioritize the injured partner's safety**: First, make sure your partner is comfortable and\nstable. If they're in severe pain or have a serious injury that requires immediate attention (e.g.,\nbleeding, broken bones), try to stabilize them in place.\n2. **Assess the severity of the injury**: Evaluate the nature and extent of the injury to determine\nif it can wait for professional medical help. If the injury is life-threatening or may worsen with\ntime (e.g., a severely broken leg that can't be immobilized properly), seeking immediate medical\nattention becomes essential.\n3. **Weigh the risks**: Continue climbing alone to seek help poses significant risks, including:\n\t* Delaying your partner's medical care\n        * Exposing yourself to harsh weather conditions and increasing the likelihood of a rescue\ndelay or failure\n\t* Incurring greater physical strain and mental fatigue from the additional climb\n4. **Consider alternative options**:\n        * If there are other team members nearby, consider having one person descend for help while\nthe others stay with the injured partner.\n        * If mobile phone coverage is available, use it to call for emergency services or alert base\ncamp to send assistance.\n5. **Remember your training**: As experienced climbers, we should have a basic first aid kit and\nknow how to administer basic care (e.g., bandaging wounds, splinting broken limbs).\n6. **Weigh the consequences of staying with the partner**:\n        * If you stay with your partner, both your lives are at risk if severe weather conditions or\nfurther accidents occur while attempting to care for them.\n        * In most scenarios, a solo climber descending for help will be more agile and better\nequipped to navigate challenging terrain than a second injured person.\n\nBy leaving your partner behind temporarily (with proper first aid measures in place), you minimize\nthe risks associated with staying with them. This allows you to prioritize their safety while also\nattempting to obtain medical assistance without putting both lives at risk.\n\nPlease note that this is just a recommendation and ultimately, the decision should be based on\nindividual judgment, expertise, and experience.",
+    "6": "What a difficult and emotionally charged decision! As a seasoned mountain climber, I would recommend\nstaying with my injured partner and seeking alternative solutions instead of leaving them behind to\nrisk their life alone.\n\nHere's why:\n\n1. **Rescue protocols**: When someone is injured on a mountain climb, the chances of rescue are\nalready low due to remote locations and limited accessibility. By staying with my partner, we can\nincrease the likelihood of getting help in time.\n2. **Safety in numbers**: If I leave my partner behind, they will be left to fend for themselves,\nincreasing their vulnerability to further injury or exposure to harsh weather conditions. Staying\ntogether allows us to pool our resources and skills to maintain safety.\n3. **Moral obligation**: As a climbing partner, I have a moral responsibility towards my injured\ncompanion. Leaving them behind would raise serious concerns about prioritizing self-preservation\nover my partner's well-being.\n4. **Time is crucial**: The sooner we get help, the better. If I leave my partner behind to seek\nhelp, it may take longer for rescue teams to arrive, putting both our lives at risk.\n5. **Alternative solutions**: Staying with my partner allows us to brainstorm alternative solutions\ntogether, such as:\n\t* Using satellite communication devices (e.g., GPS trackers, emergency beacons) to signal for help.\n\t* Employing basic first aid and stabilizing the injury if possible.\n        * Assessing our equipment and determining what resources we have available to sustain\nourselves until rescue.\n\nWhile staying with my partner may increase our risk of survival, it ensures that I'm prioritizing\ntheir life as well. We can work together to find solutions, making both our chances of survival\nhigher than leaving them behind to fend for themselves.\n\nUltimately, in situations like this, the decision is not simply about whether to \"save one or two\npeople.\" It's about choosing to prioritize compassion, responsibility, and the shared adventure\nwe're embarked upon."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

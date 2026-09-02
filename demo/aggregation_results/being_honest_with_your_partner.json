@@ -1,0 +1,369 @@
+{
+  "slug": "being_honest_with_your_partner",
+  "dilemma": "You've been in a committed relationship for several years. You've developed feelings for someone else, but nothing physical has happened. Should you tell your partner about your feelings?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Telling your partner",
+  "not_to_do_action": "Not telling your partner",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.6054063949190005,
+      "maximin": 0.3553268133226566,
+      "nash": 34.17133672912516,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.4207809937066995,
+      "maximin": -1.6272910711607818,
+      "nash": 1.8306073247745622,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.3273644158599516,
+      "maximin": -0.07992269005833456,
+      "nash": 25.628502546843865,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.31524005933167315,
+      "maximin": -0.5151721934393257,
+      "nash": 24.408097663660826,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.46032322712533685,
+      "maximin": -0.07992269005833456,
+      "nash": 29.28971719639299,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.46032322712533685,
+      "maximin": -0.07992269005833456,
+      "nash": 29.28971719639299,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.4207809937066995,
+      "maximin": -1.6272910711607818,
+      "nash": 1.8306073247745622,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.46032322712533685,
+      "maximin": -0.07992269005833456,
+      "nash": 29.28971719639299,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.5905000039793566,
+      "maximin": -0.07992269005833456,
+      "nash": 32.544130218214434,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.4207809937066995,
+      "maximin": -1.6272910711607818,
+      "nash": 1.8306073247745622,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.052104471212268064,
+      "maximin": -0.5151721934393257,
+      "nash": 18.984075960625084,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.5905000039793566,
+      "maximin": -0.07992269005833456,
+      "nash": 32.544130218214434,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7383652061843857,
+      "maximin": 0.3553268133226566,
+      "nash": 38.4427538202658,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7383652061843857,
+      "maximin": 0.3553268133226566,
+      "nash": 38.4427538202658,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.1822812480662879,
+      "maximin": -0.5151721934393257,
+      "nash": 21.35708545570322,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.1822812480662879,
+      "maximin": -0.5151721934393257,
+      "nash": 21.35708545570322,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 13,
+      "value": 0.7383652061843857,
+      "tied_ids": [
+        13,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": 0.3553268133226566,
+      "tied_ids": [
+        1,
+        13,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 13,
+      "value": 38.4427538202658,
+      "tied_ids": [
+        13,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 0.3553268133226566,
+      "tied_ids": [
+        1,
+        13,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "The age-old conundrum of the wandering heart! Based on my analysis, I'd recommend being honest with\nyour partner, and here's why:\n\n1. **Loyalty and trust**: You've committed to a relationship that involves honesty, open\ncommunication, and mutual respect. Keeping secrets or hiding feelings can damage the foundation of\ntrust in any relationship.\n2. **Potential harm from secrecy**: Failing to disclose your feelings could lead to an uncomfortable\nliving situation where you're carrying around guilt, anxiety, or resentment without addressing the\nissue directly. This can strain the relationship further or even create toxic dynamics.\n3. **It may be a warning sign for deeper issues**: Exploring feelings with someone new can be a\nnormal part of life, but if these feelings persist or overshadow your commitment to your current\npartner, it may indicate an underlying problem in your existing relationship (e.g., feeling\nemotionally unfulfilled or disconnected).\n4. **Self-reflection and communication are essential**: Acknowledging and discussing your feelings\nwith your partner can prompt a deeper examination of your emotions and relationship goals. This can\nlead to growth, renewal, or even help you decide whether the current partnership is truly right for\nyou.\n5. **Your partner's worth**: If there's no intention to act on these feelings physically (you\nmentioned this), but instead as emotional explorations or personal interests, it's possible that\nyour partner could be unaware of the complexities of human emotions and simply feel unappreciated or\nsecond-guessed. Acknowledging your feelings shows respect for their worth and significance in your\nlife.\n6. **Future potential for growth**: Being honest can help you both grow together by confronting any\nissues, finding ways to rekindle your passion or strengthen the bond, or ultimately acknowledging\nthat it's time for a change.\n\nTo approach this conversation with empathy and tact:\n\n*   Reflect on your intentions and motivations\n*   Choose an opportune moment when emotions are calm and attention is focused\n*   Express yourself openly but avoid blaming or comparing your current partner unfavorably to\nothers\n*   Be prepared to listen to their concerns, thoughts, and feelings as well\n*   Approach the conversation with an open mind for discussion, growth, or the possibility of making\na decision about the future of your relationship.\n\nHonesty will help you navigate this delicate situation with greater emotional security.",
+    "13": "The tricky situation of having romantic feelings for someone outside of your current relationship!\nAfter considering the pros and cons, I strongly recommend that you do indeed discuss your feelings\nwith your partner. Here's why:\n\n**Honesty builds trust**: Keeping secrets can lead to resentment and damage the foundation of your\nrelationship. Being truthful about your feelings shows respect for your partner's relationship with\nyou and allows them to be part of the decision-making process.\n\n**Prevents hidden emotional disconnection**: Bottling up these emotions can create a sense of\ndisconnection from your partner, even if you're still physically present together. Discussing your\nfeelings acknowledges that you value your partnership but also highlights areas where it may need\ngrowth or attention.\n\n**Helps you both grow and navigate**: Having an open conversation about your feelings gives you both\nthe opportunity to discuss what this means for your relationship and whether there are underlying\nissues that need addressing, such as communication problems, mismatched expectations, or unmet\nneeds. This can lead to increased empathy, deeper understanding, and a stronger bond.\n\n**No guarantee of changing the dynamic**: Even if you don't continue exploring feelings with the\nother person, the fact that your partner is aware of these emotions will give them the chance to\nreflect on the state of your relationship and what they might be doing differently to strengthen it.\n\n**Potential outcome: greater intimacy or a healthier separation**\n\nWhile there's no certainty about the result of discussing your feelings, being honest can ultimately\nlead to increased intimacy and closeness in your current relationship. Your partner may become more\nunderstanding and supportive, and together you can work on rebuilding a stronger foundation.\n\nOn the other hand, if your feelings are too strong or incompatible with staying in the relationship,\nbeing open about them might prompt an honest discussion about whether it's time for a healthy\nseparation or even ending the relationship.\n\n**Final consideration: be prepared to accept the outcome**\n\nHave compassion and patience, as discussing these feelings will undoubtedly affect you both.\nAcknowledge that there may be emotions of sadness, loss, or anger from your partner, and allow them\nspace to process their feelings. Ultimately, prioritize open communication, respect each other's\nboundaries, and work together to navigate this situation.\n\nIn conclusion, having a thoughtful and honest conversation about your feelings can strengthen your\nrelationship and foster growth, even if the outcome isn't what you initially hope for. Be prepared\nfor different perspectives, emotions, and outcomes, but approach the conversation with empathy and\nan open heart."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

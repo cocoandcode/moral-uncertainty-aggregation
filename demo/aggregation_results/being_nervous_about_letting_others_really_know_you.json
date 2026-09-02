@@ -1,0 +1,364 @@
+{
+  "slug": "being_nervous_about_letting_others_really_know_you",
+  "dilemma": "You're a highly reserved, introverted individual, and you've just joined a new company. You realize that in order for you to fit in and gain the trust of your colleagues, you'll have to open up and let them know you deeply, but you're afraid they might judge or misuse your information. Should you risk revealing your true self for the sake of workplace harmony, or maintain your privacy at the risk of being an outsider?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Revealing your true self",
+  "not_to_do_action": "Maintaining your privacy",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.2906042168526797,
+      "maximin": -1.385671200201308,
+      "nash": 2.440809766366083,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.04547748935109858,
+      "maximin": -1.2367607405987222,
+      "nash": 15.187260768500073,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.09960567844256518,
+      "maximin": -1.2367607405987222,
+      "nash": 17.356869449714367,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.7373022931459472,
+      "maximin": -0.8505042759618531,
+      "nash": 6.780027128794673,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.0274686287332746,
+      "maximin": -1.385671200201308,
+      "nash": 4.068016277276804,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.0125622377936307,
+      "maximin": -1.2367607405987222,
+      "nash": 4.339217362428592,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.5922191253522835,
+      "maximin": -0.8505042759618531,
+      "nash": 8.136032554553609,
+      "baseline": -0.07992269005833456,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.0153442722049961,
+      "maximin": -1.2493807097580087,
+      "nash": 4.068016277276804,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.2906042168526797,
+      "maximin": -1.385671200201308,
+      "nash": 2.440809766366083,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.1604274399986598,
+      "maximin": -1.385671200201308,
+      "nash": 3.051012207957603,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.2906042168526797,
+      "maximin": -1.385671200201308,
+      "nash": 2.440809766366083,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.2906042168526797,
+      "maximin": -1.385671200201308,
+      "nash": 2.440809766366083,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.8823854609396109,
+      "maximin": -0.950421696820317,
+      "nash": 5.424021703035739,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.048259523762464035,
+      "maximin": -0.8462304100366628,
+      "nash": 16.61106646554695,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.6043434818805619,
+      "maximin": -0.8462304100366628,
+      "nash": 8.475033910993341,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.7373022931459472,
+      "maximin": -0.8505042759618531,
+      "nash": 6.780027128794673,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 3,
+      "value": 0.09960567844256518,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 14,
+      "value": -0.8462304100366628,
+      "tied_ids": [
+        14,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 3,
+      "value": 17.356869449714367,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 3,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        3
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "3": "What a difficult conundrum! As someone who values their reserved nature, I understand the instinct\nto maintain one's privacy in a professional setting. However, I strongly recommend taking a\ncalculated risk and revealing aspects of yourself that foster connection and trust with colleagues.\n\nHere's why:\n\n1. **Authenticity fosters trust**: By being open and genuine, you demonstrate vulnerability and show\nyour colleagues that you're willing to be authentic in the workplace. This breeds trust, which is\nessential for building strong relationships and collaboration.\n2. **Prevents misperceptions**: When others see only a portion of yourself, they may fill in the\ngaps with assumptions or misconceptions about your personality, work style, or values. By sharing\nmore, you can dispel these inaccuracies and reduce potential misunderstandings.\n3. **Builds rapport**: Sharing common interests, experiences, or passions with colleagues creates\nshared understanding and bonds. This social glue helps to integrate you into the team and makes\ninteractions feel more natural and friendly.\n4. **Professional growth**: Exposing yourself to new experiences and learning environments is an\nessential aspect of career development. You can't grow professionally if you're stuck in a comfort\nzone of secrecy.\n5. **Less anxiety in the long run**: Maintaining a veil of secrecy can lead to increased stress\nlevels, as you constantly worry about maintaining appearances or hiding parts of yourself. By taking\na calculated risk and being open, you can reduce this anxiety and focus on building meaningful\nconnections.\n\n**How to do it carefully:**\n\n1. **Gradual reveal**: Don't attempt to share your entire life story in one sitting. Introduce\naspects of yourself gradually, over time, as relationships develop.\n2. **Choose the right people**: Build trust with a small group of colleagues first, rather than\ndiving straight into revealing personal information across the entire team.\n3. **Frame vulnerability as strength**: Position being open and authentic as an aspect of your\nprofessional strengths, highlighting how it enhances collaboration, communication, or creative\nproblem-solving.\n\nIn conclusion, the benefits of taking calculated risks and being open with your colleagues far\noutweigh the potential drawbacks. By gradually revealing aspects of yourself, you can establish\ngenuine connections, foster trust, and accelerate professional growth \u2013 ultimately leading to a more\nharmonious and rewarding work environment.",
+    "14": "What a daunting dilemma! As someone who values their introverted nature and is naturally inclined to\nprioritize caution, my instinct might be to err on the side of maintaining my privacy. However, I\nwould argue that it's worth taking a calculated risk to reveal aspects of yourself in a controlled\nmanner.\n\n**Why take the risk?**\n\n1. **Trust and respect**: By gradually opening up and sharing authentic parts of yourself with your\ncolleagues, you can establish genuine connections and earn their trust. This will facilitate a more\npositive and productive work environment.\n2. **Camaraderie and relationships**: When colleagues feel comfortable around you, they're more\nlikely to be supportive, inclusive, and understanding. Shared experiences and emotions create\nlasting bonds, making it easier to build strong professional relationships.\n3. **Innovation and collaboration**: By being open and sharing your perspectives, you can foster a\nculture of creative problem-solving, constructive feedback, and mutually beneficial ideas.\n\n**How to take the risk?**\n\nTo minimize potential risks, follow these guidelines:\n\n1. **Start small**: Share personal details in private conversations or informal settings, gradually\nincreasing the scope of your openness.\n2. **Set boundaries**: Clearly communicate what you're comfortable sharing and with whom.\n3. **Listen actively**: Pay attention to colleagues' responses and adjust your approach as needed.\n4. **Maintain authenticity**: Avoid pretending to be someone you're not; instead, highlight aspects\nof yourself that align with your professional goals.\n5. **Focus on shared interests**: Engage in common pursuits or hobbies outside of work to build a\nsense of community and ease connections.\n\n**Why maintain some level of reserve?**\n\n1. **Personal protection**: Revealing too much about yourself can make you vulnerable to rumors,\ngossip, or exploitation.\n2. **Coping mechanisms**: To maintain emotional balance and energy, it's essential to establish\nhealthy boundaries between your personal and professional life.\n3. **Self-reflection and growth**: By preserving some level of reserve, you'll be better equipped to\nreflect on your feelings and behaviors, driving personal growth and development.\n\nUltimately, I recommend taking the calculated risk of gradual openness while maintaining careful\nboundaries. This will allow you to:\n\n1. Establish genuine connections with colleagues\n2. Foster a supportive work environment\n3. Nurture trust and respect from others\n\nBy striking a balance between revealing your true self and protecting yourself, you'll set yourself\nup for success in the workplace while staying true to who you are."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

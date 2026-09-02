@@ -1,0 +1,370 @@
+{
+  "slug": "practicing_to_get_better_at_things",
+  "dilemma": "You are a high school student and have been recently practicing to get better at basketball. You discover that you can easily win games by exploiting a loophole in the rules, but it feels unfair to other players. Should you continue to use the loophole to win or play fairly even if it might cost you the game?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Exploit the loophole",
+  "not_to_do_action": "Play fairly",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5019684748770272,
+      "maximin": -1.3853414989546882,
+      "nash": 23.071736105552436,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8284048332687379,
+      "maximin": -0.07959606538784551,
+      "nash": 38.80188036967748,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7195927138048344,
+      "maximin": -0.5148445432434597,
+      "nash": 33.842842891161,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8284048332687379,
+      "maximin": -0.07959606538784551,
+      "nash": 38.80188036967748,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6107805943409308,
+      "maximin": -0.950093021099074,
+      "nash": 28.627559636997933,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8284048332687379,
+      "maximin": -0.07959606538784551,
+      "nash": 38.80188036967748,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 0.8101877331814049,
+      "maximin": -0.950093021099074,
+      "nash": 33.52899715008021,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6107805943409308,
+      "maximin": -0.950093021099074,
+      "nash": 28.627559636997933,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6107805943409308,
+      "maximin": -0.950093021099074,
+      "nash": 28.627559636997933,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6107805943409308,
+      "maximin": -0.950093021099074,
+      "nash": 28.627559636997933,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6107805943409308,
+      "maximin": -0.950093021099074,
+      "nash": 28.627559636997933,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6107805943409308,
+      "maximin": -0.950093021099074,
+      "nash": 28.627559636997933,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6107805943409308,
+      "maximin": -0.950093021099074,
+      "nash": 28.627559636997933,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6107805943409308,
+      "maximin": -0.950093021099074,
+      "nash": 28.627559636997933,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7195927138048344,
+      "maximin": -0.5148445432434597,
+      "nash": 33.842842891161,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6107805943409308,
+      "maximin": -0.950093021099074,
+      "nash": 28.627559636997933,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 0.8284048332687379,
+      "tied_ids": [
+        2,
+        4,
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        2,
+        4,
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 38.80188036967748,
+      "tied_ids": [
+        2,
+        4,
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": -0.07959606538784551,
+      "tied_ids": [
+        2,
+        4,
+        6
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "The dilemma of every competitive high school student: should I win at all costs, or prioritize\nfairness over victory? After much thought, my conclusion is that I should stop exploiting the\nloophole and play fairly.\n\nHere's why:\n\n1. **Respect for others**: By taking advantage of a loophole, I'm essentially cheating. I'm putting\nan unfair advantage over other players, which undermines their efforts and dedication to the game.\nIt feels unfair to them, and it diminishes the value of winning.\n2. **Loss of integrity**: Using loopholes can compromise my own reputation as an honest player. If\nI'm caught, I risk losing the trust of my teammates, coaches, and fellow competitors. Even if I\ndon't get caught, the weight of deceit will linger within me.\n3. **Impact on game quality**: Exploiting a loophole might lead to a loss of interest in the game\nfrom other players, making it less enjoyable for everyone involved. If opponents start questioning\nthe legitimacy of our wins, we risk losing what truly matters: camaraderie and friendly competition.\n4. **What's my goal?** Is it merely to win games, or is it to improve as a player and enjoy the\nexperience with friends and teammates? By playing fairly, I demonstrate my commitment to\nself-improvement and respect for others.\n\nIf using the loophole guarantees success in games, it might seem tempting to keep exploiting it.\nHowever, short-term gains will not compensate for the long-term consequences of compromising my\nvalues and relationships.\n\nInstead, I'll choose to:\n\n* Focus on developing my skills through honest effort.\n* Encourage fellow players to report any concerns about loopholes or questionable practices.\n* Support officials in rectifying issues that could be used to gain an unfair advantage.\n* Develop a sportsmanlike attitude, valuing wins not just as measures of achievement but also as\nrewards for playing the game fairly.\n\nUltimately, my commitment to being an honest and respectful competitor will define how I approach\nbasketball."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 1
+}

@@ -1,0 +1,380 @@
+{
+  "slug": "taking_practice_to_learn_a_new_skill",
+  "dilemma": "You are a beginner learning to play the piano. Your piano teacher, who is a family friend, is not a good teacher and often doesn't correct your mistakes, which is hindering your progress. Should you continue with the lessons out of loyalty and risk not improving, or should you find a new teacher and possibly hurt the friend's feelings?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Continue Lessons",
+  "not_to_do_action": "Find a New Teacher",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.13921189607366313,
+      "maximin": -1.2494352801897008,
+      "nash": 9.352360019246849,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.5408547796113676,
+      "maximin": -1.2494352801897008,
+      "nash": 6.316672789053308,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.037415011924455954,
+      "maximin": -0.8506210025087526,
+      "nash": 13.18150290602114,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.13921189607366313,
+      "maximin": -1.2494352801897008,
+      "nash": 9.352360019246849,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.04861687669709258,
+      "maximin": -0.8506210025087526,
+      "nash": 13.181502906021143,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.04861687669709258,
+      "maximin": -0.8506210025087526,
+      "nash": 13.181502906021143,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.34563427022883364,
+      "maximin": -1.2494352801897008,
+      "nash": 7.837768521134694,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.23682215076493007,
+      "maximin": -1.2494352801897008,
+      "nash": 8.561637282504533,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.14622713138835952,
+      "maximin": -0.8506210025087526,
+      "nash": 12.067034041394907,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.037415011924455954,
+      "maximin": -0.8506210025087526,
+      "nash": 13.18150290602114,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.2480240155375667,
+      "maximin": -1.2494352801897008,
+      "nash": 8.561637282504535,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.23682215076493007,
+      "maximin": -1.2494352801897008,
+      "nash": 8.561637282504533,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.13921189607366313,
+      "maximin": -1.2494352801897008,
+      "nash": 9.352360019246849,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.04861687669709258,
+      "maximin": -0.8506210025087526,
+      "nash": 13.181502906021143,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.34563427022883364,
+      "maximin": -1.2494352801897008,
+      "nash": 7.837768521134694,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.23682215076493007,
+      "maximin": -1.2494352801897008,
+      "nash": 8.561637282504533,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 3,
+      "value": -0.037415011924455954,
+      "tied_ids": [
+        3,
+        10
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 3,
+      "value": -0.8506210025087526,
+      "tied_ids": [
+        3,
+        5,
+        6,
+        9,
+        10,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 3,
+      "value": 13.181502906021143,
+      "tied_ids": [
+        3,
+        5,
+        6,
+        10,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        3,
+        4,
+        8,
+        10,
+        12,
+        13,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would strongly recommend finding a new piano teacher. Here's why:\n\n1. **Personal growth vs. loyalty**: Prioritizing personal growth and improvement over loyalty to a\nfamily friend is essential for making progress in piano lessons. While it might be uncomfortable to\nsay no or make a change, your music education and skills are more important than maintaining a\npotentially unhealthy dynamic.\n2. **Lack of correction = stagnation**: As you've experienced, not having mistakes corrected can\nhinder your progress. A good teacher should provide constructive feedback to help you improve, which\nis being neglected in this situation. Without proper corrections, you'll struggle to learn and might\neven develop bad habits that are difficult to break later on.\n3. **Frustration and disappointment**: Continuing with the current lessons will only lead to\nfrustration and disappointment as you won't be improving at a fair rate. This can create a negative\nassociation with piano playing and make it less enjoyable, which defeats the purpose of learning an\ninstrument in the first place.\n4. **Honesty over tact**: While it's natural to consider hurting a family friend's feelings, it's\nessential to prioritize honesty about your needs as a student. You have the right to learn\neffectively, and it's not selfish to express these concerns to someone who claims to be invested in\nyour progress.\n5. **Explore alternatives together (if needed)**: If you feel that changing teachers will\nnecessarily hurt their feelings, consider having an open conversation with them about your concerns.\nExplain how their teaching methods are not working for you and express a willingness to explore\nalternative options together. This might lead to a joint decision to find a more suitable teacher or\nmake adjustments within the current lessons.\n\nTo navigate this sensitive situation:\n\n* Express your gratitude for their efforts and the value of having a family friend involved in your\nmusical journey.\n* Explain that, despite their good intentions, you feel stuck and need a different approach to\nprogress. Be specific about the issues you've faced and the reasons why you think a change is\nnecessary.\n* Suggest alternative solutions, such as taking lessons with a professional teacher or finding\nonline resources to supplement their instruction.\n\nRemember, your music education and well-being are more important than maintaining loyalty at any\ncost. By seeking help from a new teacher, you'll be investing in yourself and ensuring that you can\ncontinue enjoying the piano for years to come.",
+    "3": "I think it would be best to find a new piano teacher despite the potential emotional impact on the\nfamily friend. Here's why:\n\n1. **Progress is more important**: Your primary goal as a student is to learn and improve in playing\nthe piano. If you continue with lessons from a teacher who doesn't correct your mistakes, you may\nnot reach your full potential or develop good playing habits.\n2. **You're not doing the friend any favor by staying**: Although it's kind of you to want to be\nloyal, allowing yourself to stagnate as a pianist isn't helping anyone in the long run, including\nthe teacher who wants to see you succeed.\n3. **There are other good teachers out there**: It's possible that your family friend is not the\nbest fit for teaching piano, and there may be other skilled instructors in the area who can provide\nmore effective guidance.\n\nIf you're concerned about hurting the friend's feelings, consider having an open conversation with\nthem first. You could say something like:\n\n\"Hey [Friend's Name], I appreciate all the effort you've put into helping me learn piano, but I'm\nfinding that I'm not making as much progress as I'd like. I think it might be helpful for me to work\nwith someone who can provide more tailored feedback and guidance. Would it be okay if I started\nseeing another teacher?\"\n\nThis approach shows appreciation for their efforts while also being honest about your needs.\n\nUltimately, as a beginner piano learner, you owe it to yourself to find the right instruction that\nwill help you grow and develop your skills. Don't compromise on your education because of loyalty or\nfeelings; prioritize progress and enjoyment in playing the piano!"
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

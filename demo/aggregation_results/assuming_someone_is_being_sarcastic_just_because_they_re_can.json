@@ -1,0 +1,372 @@
+{
+  "slug": "assuming_someone_is_being_sarcastic_just_because_they_re_can",
+  "dilemma": "You're working with a Canadian colleague who often uses humor and wit in his communication. You have started interpreting his humor as sarcasm, which is affecting your professional relationship. Do you confront him about his perceived sarcasm, potentially causing conflict, or do you ignore it, possibly leading to a misunderstanding?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confront",
+  "not_to_do_action": "Ignore",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.32351946841014756,
+      "maximin": -1.2367607405987222,
+      "nash": 11.390445576375052,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0285315417717134,
+      "maximin": 0.7158909122115753,
+      "nash": 49.42639776891317,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.6203127858586445,
+      "maximin": 0.3253605816495158,
+      "nash": 34.71373889942873,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.3356438249384259,
+      "maximin": -1.2367607405987222,
+      "nash": 10.848043406071477,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.7504895627126643,
+      "maximin": 0.7158909122115753,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.19056065714476228,
+      "maximin": -1.2367607405987222,
+      "nash": 13.017652087285775,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.8796034265282454,
+      "maximin": -1.2367607405987222,
+      "nash": 5.42402170303574,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.21487606435694107,
+      "maximin": -0.4557000794746032,
+      "nash": 22.780891152750105,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.21765809876830644,
+      "maximin": -0.8462304100366628,
+      "nash": 21.357085455703224,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8834483739780495,
+      "maximin": 0.7158909122115753,
+      "nash": 43.934575794589485,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.07257493097464274,
+      "maximin": -0.8462304100366628,
+      "nash": 18.30607324774562,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8834483739780495,
+      "maximin": 0.7158909122115753,
+      "nash": 43.934575794589485,
+      "baseline": 0.7905763167036478,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8834483739780495,
+      "maximin": 0.7158909122115753,
+      "nash": 43.934575794589485,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0285315417717134,
+      "maximin": 0.7158909122115753,
+      "nash": 49.42639776891317,
+      "baseline": 1.225825820084639,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7532715971240297,
+      "maximin": 0.3253605816495158,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7532715971240297,
+      "maximin": 0.3253605816495158,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 1.0285315417717134,
+      "tied_ids": [
+        2,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": 0.7158909122115753,
+      "tied_ids": [
+        2,
+        5,
+        10,
+        12,
+        13,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 49.42639776891317,
+      "tied_ids": [
+        2,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 1.225825820084639,
+      "tied_ids": [
+        2,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "**Recommendation:** I recommend having an open and honest conversation with your Canadian colleague\nto clarify the difference between humor and sarcasm.\n\n**Explanation:**\n\nInterpreting someone's communication style can be culturally subjective, and what might seem like\nsarcasm in one culture or context may not be intended that way in another. In Canada, it's common to\nuse humor and irony as a way of communicating or diffusing tension, which might differ from your own\ncultural norms. Without clear intentions being conveyed, miscommunication is likely.\n\nIgnoring the issue could lead to misunderstandings, damaged relationships, and decreased\ncollaboration. If you continue to view his intended humor as sarcasm, it may:\n\n* Lead to defensive behaviors\n* Strain your working relationship\n* Reduce trust\n\nConfronting him directly about perceived sarcasm might seem confrontational or accusatory at first,\nbut by approaching the conversation with curiosity and respect for cultural differences, it can help\nclarify each other's communication styles. This approach has several benefits:\n\n* It fosters open dialogue and improved understanding between colleagues from different backgrounds\n* Encourages constructive communication and clarifies expectations\n* Demonstrates sensitivity to cultural nuances and promotes mutual respect\n\nTo navigate this situation effectively, follow these steps when discussing the perceived difference\nin your communication styles:\n\n1.  Start with a calm and non-accusatory tone: Emphasize your desire for clarity and effective\ncollaboration.\n2.  Use open-ended questions to explore the intent behind his communication:\n    *   Can you help me understand what motivated this particular comment/ phrase?\n    *   What were you trying to achieve with that statement?\n3.  Avoid making assumptions about his intentions or motives\n4.  Listen actively and ask for feedback on your part in the interaction\n5.  Work together to develop a better understanding of each other's communication preferences,\nstyles, and boundaries\n\nThis collaborative approach can strengthen your professional relationship, while also enhancing\nmutual respect and empathy in cross-cultural interactions.\n\nBy addressing this issue directly and taking an open-minded, non-judgmental stance, you'll be able\nto clarify the differences between humor and sarcasm and improve the quality of your working\nrelationship."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

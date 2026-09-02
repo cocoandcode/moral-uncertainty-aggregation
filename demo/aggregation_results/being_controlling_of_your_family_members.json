@@ -1,0 +1,363 @@
+{
+  "slug": "being_controlling_of_your_family_members",
+  "dilemma": "You are a single parent of three children and have strict rules to maintain discipline in the house. One of your children, a teenager, has been constantly rebelling against your rules and feels you are being overly controlling. Should you ease your rules to respect your teenager's growing independence or maintain them to ensure discipline and order in the house?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Easing rules",
+  "not_to_do_action": "Maintaining strict rules",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.06594794911347329,
+      "maximin": -0.07992269005833456,
+      "nash": 17.08566836456258,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.3450528412109609,
+      "maximin": -0.06516974891254372,
+      "nash": 26.57770634487512,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.06701086215191193,
+      "maximin": -0.07992269005833456,
+      "nash": 19.93327975865634,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.06701086215191193,
+      "maximin": -0.07992269005833456,
+      "nash": 19.93327975865634,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.06701086215191193,
+      "maximin": -0.07992269005833456,
+      "nash": 19.93327975865634,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.3290835372328783,
+      "maximin": -0.4557000794746032,
+      "nash": 12.204048831830415,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.07913521868019043,
+      "maximin": -0.06516974891254372,
+      "nash": 19.933279758656344,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.06594794911347329,
+      "maximin": -0.07992269005833456,
+      "nash": 17.08566836456258,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.47522961806498076,
+      "maximin": 0.3253605816495158,
+      "nash": 30.374521537000145,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.07913521868019043,
+      "maximin": -0.06516974891254372,
+      "nash": 19.933279758656344,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.1961247259674931,
+      "maximin": -0.4557000794746032,
+      "nash": 14.644858598196498,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.051041558173829396,
+      "maximin": -0.4557000794746032,
+      "nash": 17.08566836456258,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.3450528412109609,
+      "maximin": -0.06516974891254372,
+      "nash": 26.57770634487512,
+      "baseline": 0.3553268133226566,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.3290835372328783,
+      "maximin": -0.4557000794746032,
+      "nash": 12.204048831830415,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 7,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.06516974891254372,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.3571771977392394,
+      "maximin": -0.06516974891254372,
+      "nash": 26.577706344875118,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.06594794911347329,
+      "maximin": -0.07992269005833456,
+      "nash": 17.08566836456258,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 9,
+      "value": 0.47522961806498076,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 9,
+      "value": 0.3253605816495158,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 9,
+      "value": 30.374521537000145,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 15,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "9": "After careful consideration, I would recommend maintaining my current rules for now while also\nfinding ways to encourage my teenager's growing independence within those boundaries. Here's why:\n\n**Reasons to Maintain Current Rules:**\n\n1. **Established Discipline:** The strict rules we have in place have worked well in creating a\nstructured and safe environment for all family members, especially the younger two children.\n2. **Teenager's Developmental Stage:** While it's normal for teenagers to push boundaries, they\nstill require guidance and boundaries to learn responsibility and self-discipline.\n3. **Risk of Unpredictability:** If I were to ease the rules too quickly, my teenager might exploit\nthis new freedom, leading to increased conflicts and possibly even safety risks.\n\n**Reasons to Introduce Flexibility:**\n\n1. **Growing Independence:** As a teenager, they need more autonomy to explore their identity and\ninterests.\n2. **Improved Relationships:** If I demonstrate an understanding of their growing independence, we\nmay be able to have more constructive conversations about our differing perspectives on rules and\nexpectations.\n\n**Compromise Solution:**\n\nTo maintain discipline while also respecting my teenager's growing independence, I would consider\nimplementing the following adjustments:\n\n1. **Regular Review and Discussion:** Schedule regular family meetings to discuss and adjust the\nrules as needed. This way, we can address specific issues together.\n2. **Offer Choices with Consequences:** Allow them to choose between two or three acceptable options\nwithin established boundaries (e.g., \"Do you want to study for 30 minutes now or after dinner?\").\n3. **Gradually Increase Responsibility:** Assign more responsibilities and trust their\ndecision-making in various situations, gradually increasing the level of autonomy.\n4. **Empathy and Open Communication:** Make an effort to understand my teenager's perspective on our\nrules and address any specific concerns they may have.\n\n**Conclusion:**\nBy maintaining the existing structure while incorporating flexibility and open communication, we can\nstrike a balance between discipline and encouragement of independence. This approach acknowledges\nthat both parents and teenagers need boundaries but also recognizes the importance of guiding young\nadults as they grow into maturity.",
+    "15": "As a single parent of three children, maintaining discipline and order in the house can be a\nchallenging but essential task. While it's natural for teenagers to seek independence and freedom,\nrebelling against rules without boundaries can lead to chaos and harm their overall well-being.\n\n**Recommendation:** Maintain the existing rules while also making room for open communication and\ngradual adjustments.\n\nHere's why:\n\n1. **Consistency**: Established rules provide a sense of predictability and stability for children,\nwhich is crucial at this stage of development. Easing rules suddenly can create uncertainty and make\nit harder to enforce discipline in the long run.\n2. **Protecting well-being**: In today's world, with increasing stressors like social media, peer\npressure, and extracurricular activities, teenagers need clear guidelines to navigate their lives\nsafely and responsibly. Stronger rules help ensure they avoid harm to themselves or others.\n3. **Teaching responsibility**: Rules teach children the value of responsibility, accountability,\nand delayed gratification. Easing rules too quickly can undermine these essential life skills and\ncreate entitled attitudes in your teenager.\n4. **Communication is key**: While maintaining discipline is crucial, it's equally important to\nlisten to your teenager's concerns and feelings about your rules. Engaging in open, respectful\nconversations can help you understand their perspective, identify areas for improvement, and find\nsolutions that work for both of you.\n5. **Gradual adjustment**: As your teenager grows, it's essential to gradually adjust the rules to\nreflect increasing maturity and responsibility. For example, if they're now capable of managing a\nfew more freedoms, like staying out later on weekends or having friends over, you can introduce\nthese changes in a controlled manner.\n\n**Recommendation action plan:**\n\n1. **Schedule regular family discussions**: Set aside time for open conversations with your teenager\nto understand their perspectives, listen to concerns, and discuss ways to adjust the rules.\n2. **Document specific rules**: Write down specific rules and consequences for breaking them. This\nwill help create a clear understanding of expectations and responsibility.\n3. **Set intermediate goals**: Based on your discussions, set measurable objectives for\ntransitioning towards more independence. These goals can include gradually increasing privileges,\nsuch as later bedtimes or greater freedom in social activities.\n4. **Monitor progress**: Periodically review your teenager's behavior and assess whether the rules\nhave been effective. Adjust them accordingly to ensure they align with their growth and maturity\nlevel.\n\nBy maintaining a balance between structure and flexibility, you'll create an environment that\nrespects your teenager's growing independence while also teaching essential life skills and\ndiscipline. This will ultimately help you build a stronger relationship based on mutual\nunderstanding and respect."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

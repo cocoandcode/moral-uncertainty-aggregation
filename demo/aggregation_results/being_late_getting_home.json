@@ -1,0 +1,367 @@
+{
+  "slug": "being_late_getting_home",
+  "dilemma": "You've promised your spouse you'll be home early to help with the kids. On your way, your boss asks you to stay late to finish a project that could potentially earn you a promotion. Should you break your promise to your spouse and stay late at work, or go home as promised and potentially miss a career opportunity?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Stay late at work",
+  "not_to_do_action": "Go home as promised",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.7262408496561072,
+      "maximin": -0.07992269005833456,
+      "nash": 36.61214649549124,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.7113344587164634,
+      "maximin": -0.5151721934393257,
+      "nash": 33.900135643973364,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7234588152447419,
+      "maximin": -0.07992269005833456,
+      "nash": 36.61214649549124,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3031157028033946,
+      "maximin": -0.950421696820317,
+      "nash": 21.967287897294742,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.7113344587164634,
+      "maximin": -0.5151721934393257,
+      "nash": 33.900135643973364,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.8564176265101271,
+      "maximin": -0.07992269005833456,
+      "nash": 40.68016277276804,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.5662512909227997,
+      "maximin": -0.950421696820317,
+      "nash": 27.120108515178696,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.5662512909227997,
+      "maximin": -0.950421696820317,
+      "nash": 27.120108515178696,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.5783756474510782,
+      "maximin": -0.5151721934393257,
+      "nash": 30.51012207957603,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.5783756474510782,
+      "maximin": -0.5151721934393257,
+      "nash": 30.51012207957603,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.5662512909227997,
+      "maximin": -0.950421696820317,
+      "nash": 27.120108515178696,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.5427543268150812
+      },
+      "ec": 0.5662512909227997,
+      "maximin": -0.950421696820317,
+      "nash": 27.120108515178696,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 8,
+      "value": 0.8564176265101271,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.07992269005833456,
+      "tied_ids": [
+        1,
+        4,
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 8,
+      "value": 40.68016277276804,
+      "tied_ids": [
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": -0.07992269005833456,
+      "tied_ids": [
+        1,
+        4,
+        8
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "I would recommend going home as promised to help with the kids. Here's why:\n\n1. **Family commitments come first**: Marriage is a partnership that requires compromise and\nprioritizing each other's needs, especially when it comes to family responsibilities. Leaving early\nto care for the children demonstrates commitment to your spouse and shows that you value your shared\nresponsibilities.\n2. **Relationships are more important than promotions**: While career advancement is significant,\nrelationships with loved ones are long-term investments that cannot be replaced by professional\nachievements alone. Missing this one night to help with childcare can foster stronger bonds with\nyour partner and children, ultimately benefiting your family's well-being.\n3. **There will be other opportunities**: While staying late might lead to a promotion now, there\nwill likely be other chances for career advancement in the future. If you prioritize your job over\nfamily responsibilities too frequently, it may damage your relationships and potentially harm your\nmental and physical health. Leaving early this one time can help you maintain a work-life balance\nthat supports both personal and professional growth.\n4. **Your spouse can rely on you**: Breaking promises repeatedly can create distrust and resentment\nin your relationship. By keeping your commitment to help with the kids, you demonstrate reliability\nand show that you're a partner who can be counted on to follow through.\n\nOf course, this decision might require some creativity to find solutions for completing the project\nat a later time or communicating its importance to your boss. However, ultimately prioritizing\nfamily commitments over career advancement sends a clear message about what's truly important in\nlife: relationships, loyalty, and personal responsibilities.",
+    "8": "I would recommend going home as promised and prioritizing family commitments over the potential\ncareer opportunity. Here's why:\n\n**Reasons for leaving work on time:**\n\n1. **Prior commitment:** You've already committed to being home early to help with the kids, which\nis a vital responsibility that requires your care and attention.\n2. **Family values:** Spending quality time with your loved ones is essential to maintaining healthy\nrelationships and creating lifelong memories. Leaving them for an unspecified period can lead to\nguilt, resentment, or even affect their well-being.\n3. **Dependability and trust:** By prioritizing family commitments, you demonstrate your\ndependability and show that you're trustworthy in caring for your children. This builds strong\nrelationships with your spouse and kids.\n\n**Reasons against staying late:**\n\n1. **Potential risks of staying late:** If something unexpected happens at home while you're stuck\nat work, the consequences can be severe (e.g., accidents, injuries, or unmanageable situations).\n2. **Short-term benefits vs. long-term costs:** While staying late might lead to a promotion in the\nshort term, it may undermine your relationships and compromise your personal well-being in the long\nrun.\n3. **Alternative solutions:** It's possible that other colleagues or team members can assist with\ncompleting the project, or you can discuss flexible work arrangements with your boss to ensure the\nproject is completed while respecting family commitments.\n\n**Recommendation:**\n\nInstead of staying late at work, communicate with your boss as soon as possible about your prior\ncommitment and the importance of maintaining a healthy work-life balance. Together, explore\nalternatives for completing the project without having to stay late on this particular day or\nfinding other flexible solutions that support both work and family responsibilities.\n\nRemember, career development is essential, but it shouldn't come at the expense of personal\nrelationships, which can lead to long-term stress, burnout, and a lack of fulfillment. By\nprioritizing your family commitments and communicating openly with your employer, you'll maintain a\nhealthy balance between work and personal life while staying on track with professional goals."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

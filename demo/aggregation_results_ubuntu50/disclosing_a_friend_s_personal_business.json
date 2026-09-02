@@ -1,0 +1,375 @@
+{
+  "slug": "disclosing_a_friend_s_personal_business",
+  "dilemma": "Your friend tells you about their struggle with substance abuse. They are a school bus driver and you fear for the safety of the children. Should you report your friend to their employer?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Report to Employer",
+  "not_to_do_action": "Not Reporting",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7542923890812345,
+      "maximin": -1.2363314859195875,
+      "nash": 5.782611142090727,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4278560306895239,
+      "maximin": -1.2363314859195875,
+      "nash": 7.8377685211346915,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.02511906619332893,
+      "maximin": -1.2363314859195875,
+      "nash": 14.39890019912123,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.22844889184904976,
+      "maximin": -1.2363314859195875,
+      "nash": 10.95361450322823,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.029041753008575633,
+      "maximin": -1.2363314859195875,
+      "nash": 14.39890019912123,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.17036538583189847,
+      "maximin": -1.2363314859195875,
+      "nash": 18.14468804803628,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4278560306895239,
+      "maximin": -1.2363314859195875,
+      "nash": 7.8377685211346915,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.029041753008575633,
+      "maximin": -1.2363314859195875,
+      "nash": 14.39890019912123,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.07667781795587825,
+      "maximin": -0.950093021099074,
+      "nash": 14.265370237756143,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8631045085451381,
+      "maximin": -1.2363314859195875,
+      "nash": 5.0435700156270595,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.22844889184904976,
+      "maximin": -1.2363314859195875,
+      "nash": 10.95361450322823,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.724873424221265,
+      "maximin": -1.6267725046846555,
+      "nash": 4.102799327035551,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.4278560306895239,
+      "maximin": -1.2363314859195875,
+      "nash": 7.8377685211346915,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.22844889184904976,
+      "maximin": -1.2363314859195875,
+      "nash": 10.95361450322823,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.22844889184904976,
+      "maximin": -1.2363314859195875,
+      "nash": 10.95361450322823,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5254662853807909,
+      "maximin": -1.6267725046846555,
+      "nash": 6.316672789053308,
+      "baseline": 1.2261493681789972,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 6,
+      "value": 0.17036538583189847,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 9,
+      "value": -0.950093021099074,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 6,
+      "value": 18.14468804803628,
+      "tied_ids": [
+        6
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "**Recommendation:** Yes, I would recommend that you inform your friend's employer about the\nsituation, while also being considerate of their well-being.\n\n**Reasoning:**\n\n1.  **Public safety:** As a school bus driver, your friend is responsible for transporting children,\nwhich carries significant public trust and safety responsibilities. Substance abuse can impair\njudgment, reaction time, and decision-making ability, creating a risk to the children's safety.\n2.  **Professional obligations:** Employers have a duty to ensure that their employees are fit to\nperform their duties safely and effectively. Reporting your friend's substance abuse is essential in\nmaintaining the well-being of the children on their care.\n3.  **Help for your friend:** By informing the employer, you may inadvertently prompt them to\naddress their friend's issue through internal support systems or treatment programs. This can help\nyour friend receive the assistance they need to overcome their addiction while minimizing\ndisruptions to their work.\n\nWhen reporting the situation:\n\n1.  Prioritize caution: Before speaking to anyone, consider whether sharing this information will\nput yourself or others at risk. Confidentiality should be respected.\n2.  Approach sensitively: When sharing your concerns, do so with empathy and care for your friend's\nwell-being. You can express your worries while encouraging them to seek support.\n\n**Key things to remember:**\n\n*   Your concern for the children's safety is paramount.",
+    "6": "What a difficult and delicate situation!\n\nMy clear recommendation would be **to report your friend's struggles with substance abuse to their\nemployer, while also offering support to help them seek professional help**.\n\nHere's why:\n\n1. **Safety of the children**: As you mentioned, your primary concern is the well-being and safety\nof the children in your friend's care. Substance abuse can impair judgment, reaction time, and\ndecision-making skills, all of which are critical for ensuring safe transportation.\n2. **Employer's responsibility**: Schools have a duty to ensure that bus drivers are fit to\ntransport students safely. Employers have a responsibility to investigate any potential risks to\nstudent safety and take necessary steps to address them.\n3. **Friend's well-being**: Your friend is likely struggling with addiction, which can lead to\nfurther complications if left unchecked. Reporting their substance abuse issues could help your\nfriend receive the professional support they need to overcome these challenges.\n\nHowever, it's essential to handle this situation with care and empathy:\n\n1. **Talk to your friend first**: Before reporting your concerns, try to have an open conversation\nwith your friend about what you've observed. Be non-judgmental and encourage them to seek help.\n2. **Provide support**: Offer to accompany your friend to appointments or meetings related to their\nsubstance abuse treatment.\n3. **Keep confidentiality (for now)**: If your friend agrees to seek help, maintain confidentiality\nby not reporting the matter immediately. Only report concerns if you notice a significant lapse in\njudgment or behavior that poses an imminent risk to student safety.\n\nOnce you've decided to report your friend's substance abuse issues, consider the following:\n\n1. **Contact your employer**: If you're concerned about child safety, talk to your own supervisor or\nHR representative. Explain the situation and seek guidance on how to proceed.\n2. **Report anonymously**: If possible, ask a supervisor or HR representative if there's an\nanonymous reporting process available.\n3. **Provide facts, not opinions**: When reporting your friend's struggles with substance abuse,\nfocus on specific incidents or behaviors that demonstrate a potential risk to child safety.\n\nRemember, this recommendation is not about \"betraying\" your friend but rather ensuring the\nwell-being of the children and promoting their friend's recovery by addressing any underlying\nissues.",
+    "9": "What a difficult and sensitive situation!\n\nAfter careful consideration, I would recommend that you have an open conversation with your friend\nabout your concerns before deciding whether to report them to their employer. Here's why:\n\n1. **Compassion and empathy**: Approach the conversation with understanding and compassion.\nSubstance abuse is often a symptom of deeper issues, such as mental health struggles or personal\nproblems. Your friend may appreciate having a supportive ear and be more likely to seek help.\n2. **Understand the risks**: Familiarize yourself with your state's reporting laws regarding\nsubstance abuse in the workplace. Some states have specific procedures for reporting incidents\nrelated to public safety, like working around children. Be aware of these regulations so you can\nmake an informed decision.\n3. **Consider a non-judgmental conversation**: Approach the discussion as a concerned friend rather\nthan an informant. Avoid being accusatory or critical, which could lead your friend to become\ndefensive and less likely to accept help.\n4. **Assess your friend's willingness to receive support**: Observe their attitude toward seeking\nhelp and whether they seem genuinely interested in addressing their struggles.\n\nIf, after this conversation, you believe that the risk of harm to the children is significant enough\nto report your friend to their employer or authorities (e.g., due to a severe impairment or\nneglect), then do so. However:\n\n**Do not**: Report them solely based on speculation or hearsay without having an open and honest\nconversation with them first.\n\nRemember, as a concerned friend, you're doing what's best for the well-being of others while also\nshowing compassion and support for your friend.\n\nTo facilitate a constructive conversation:\n\n* Choose a private setting where both parties feel safe\n* Listen actively and empathetically\n* Avoid giving unsolicited advice or judgments\n* Focus on the impact their actions may have on the children and the potential risks involved\n\nPrioritize the safety of the school bus passengers while also maintaining your friendship, which is\nbuilt on mutual trust. By following these steps, you'll be supporting your friend in a\nnon-judgmental way, without compromising your own integrity or concern for public safety."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

@@ -1,0 +1,374 @@
+{
+  "slug": "overworking_yourself_when_you_re_pregnant",
+  "dilemma": "Amy is a high-powered executive who has recently discovered that she's pregnant. She is torn between continuing to work long hours to maintain her career trajectory, potentially risking her health and that of her unborn child, or scaling back, which could impact her future opportunities and financial stability. Should Amy continue to overwork, potentially putting her pregnancy at risk, or should she prioritize her health and that of her baby, even if it means slowing her career progression?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Continue to overwork",
+  "not_to_do_action": "Prioritize Health",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6463041136251849,
+      "maximin": 0.32543258914068407,
+      "nash": 36.694289063189665,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.5424139147470077,
+      "maximin": -0.052992447146856116,
+      "nash": 32.30418711912188,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.4468969747847108,
+      "maximin": 0.32543258914068407,
+      "nash": 30.39065957516134,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.34719340536447374,
+      "maximin": -0.052992447146856116,
+      "nash": 27.072604174992833,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.6421174841672448,
+      "maximin": 0.3458218305340921,
+      "nash": 36.26343248117928,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.23838128590057017,
+      "maximin": -0.052992447146856116,
+      "nash": 24.49266674081519,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.6421174841672448,
+      "maximin": 0.3458218305340921,
+      "nash": 36.26343248117928,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.8506331730513854,
+      "maximin": 0.715873607905752,
+      "nash": 43.785192308738814,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5466005442049479,
+      "maximin": 0.32543258914068407,
+      "nash": 33.59186265839483,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.6421174841672448,
+      "maximin": 0.3458218305340921,
+      "nash": 36.26343248117928,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.8506331730513854,
+      "maximin": 0.715873607905752,
+      "nash": 43.785192308738814,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.7418210535874818,
+      "maximin": 0.715873607905752,
+      "nash": 40.08324466986437,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.8506331730513854,
+      "maximin": 0.715873607905752,
+      "nash": 43.785192308738814,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": 0.6421174841672448,
+      "maximin": 0.3458218305340921,
+      "nash": 36.26343248117928,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.32543258914068407,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": 0.4560055248283773,
+      "maximin": -0.052992447146856116,
+      "nash": 29.57293477270879,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 9,
+      "value": 0.8506331730513854,
+      "tied_ids": [
+        9,
+        12,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 6,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        6,
+        9,
+        12,
+        13,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 9,
+      "value": 43.785192308738814,
+      "tied_ids": [
+        9,
+        12,
+        14
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 9,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        9,
+        12,
+        14,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "6": "**Recommendation:**\n\nAmy should prioritize her health and the health of her unborn child by scaling back her work hours\nand adjusting her career goals accordingly.\n\n**Reasoning:**\n\nWhile maintaining a high-powered executive position may be an important aspect of Amy's identity,\nthe risks associated with overworking during pregnancy far outweigh any potential benefits to her\ncareer. Here are some key considerations:\n\n1.  **Health Risks:** Pregnancy can pose significant health risks for both the mother and fetus if\nshe continues to work long hours, especially in demanding executive roles that require prolonged\nperiods of stress, traveling, or intense focus.\n2.  **Financial Impact:** While it's true that scaling back may impact her financial stability, it's\nalso essential to consider that investing in Amy's health and well-being will ultimately benefit her\nability to provide for her child's future needs and ensure she has the energy and resources to be an\nengaged parent.\n3.  **Support System:** Encourage friends and family members to build a support system that can help\nbalance the demands of work, pregnancy, and parenting in the long run.\n\nPrioritizing Amy's health and the health of her baby is not only a matter of self-care but also a\nresponsible decision for someone who values her future as a mother. By adjusting her career goals\nnow, she will be better equipped to tackle future challenges with more energy, resilience, and\nperspective.\n\nWhile scaling back might not fit perfectly into traditional or short-term expectations, consider the\nlong-term implications on Amy's overall well-being, professional fulfillment, and quality of life in\nall aspects of her life.",
+    "9": "I strongly recommend that Amy prioritize her health and the health of her unborn child by scaling\nback on her work commitments and adopting a healthier balance between her professional life and\npregnancy. Here's why:\n\n1. **Risk to maternal and fetal health**: Research has consistently shown that prolonged periods of\nexcessive work stress during pregnancy can increase the risk of miscarriage, preterm labor, low\nbirth weight, and other complications for both mother and baby.\n2. **Short-term benefits vs. long-term costs**: Continuing to overwork may provide short-term career\ngains, but it may ultimately cost Amy in the long run. Prioritizing her health now can ensure that\nshe's able to maintain a healthy pregnancy, give birth to a healthy baby, and return to work when\nready without compromising her well-being.\n3. **Caring for others is caring for herself**: By prioritizing her own needs during this time, Amy\nwill be more energized, focused, and effective in the workplace upon her return. Taking care of her\nphysical and emotional health now can also help her be a better partner, friend, and colleague in\nthe long run.\n4. **Career flexibility is overrated**: The idea that taking time off for family or personal reasons\nwill irreparably harm one's career is an outdated trope. Many companies are shifting towards more\nsupportive work cultures, prioritizing employee well-being, and recognizing the benefits of flexible\nwork arrangements.\n\nSome possible alternatives to consider:\n\n* Discuss flexible work options with her employer (e.g., telecommuting, part-time, or job sharing).\n* Gradually reduce working hours and take on fewer responsibilities during pregnancy.\n* Use paid time off or vacation days for self-care and rest during the second trimester when energy\nlevels tend to dip.\n* Prioritize prenatal care, including routine check-ups and any recommended interventions to ensure\na healthy pregnancy.\n\nUltimately, it's essential for Amy to prioritize her health, well-being, and the health of her\nunborn child. While it may require making temporary adjustments to her career trajectory, this\ndecision will likely lead to long-term benefits for her overall quality of life, relationships, and\nprofessional success in the future."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

@@ -1,0 +1,363 @@
+{
+  "slug": "agreeing_with_your_partner_on_how_to_spend_shared_finances",
+  "dilemma": "You and your partner have just moved in together and have agreed to split all shared expenses equally. However, your partner has recently lost their job and is struggling to contribute their half, leaving you to cover more of the costs. Should you continue to demand equal contribution or shoulder more of the financial burden until your partner finds another job?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Demand equal contribution",
+  "not_to_do_action": "Not demand equal contribution",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": -0.35055021587807,
+      "maximin": -0.950421696820317,
+      "nash": 10.848043406071477,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.49291804341599005,
+      "maximin": -0.4557000794746032,
+      "nash": 29.289717196392992,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3627412665619702,
+      "maximin": -0.8462304100366628,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.7494266496742257,
+      "maximin": -0.950421696820317,
+      "nash": 6.780027128794674,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.21765809876830644,
+      "maximin": -0.8462304100366628,
+      "nash": 21.357085455703224,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.0125622377936307,
+      "maximin": -1.2367607405987222,
+      "nash": 4.339217362428592,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.225825820084639,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3776476575016141,
+      "maximin": -1.2367607405987222,
+      "nash": 21.967287897294742,
+      "baseline": 1.225825820084639,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3627412665619702,
+      "maximin": -0.8462304100366628,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.2325644897079504,
+      "maximin": -1.2367607405987222,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.2325644897079504,
+      "maximin": -1.2367607405987222,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.2325644897079504,
+      "maximin": -1.2367607405987222,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.05766854003499888,
+      "maximin": -0.5151721934393257,
+      "nash": 18.30607324774562,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3627412665619702,
+      "maximin": -0.8462304100366628,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.3627412665619702,
+      "maximin": -0.8462304100366628,
+      "nash": 24.408097663660826,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.2325644897079504,
+      "maximin": -1.2367607405987222,
+      "nash": 19.52647813092866,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.8462304100366628,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.21765809876830644,
+      "maximin": -0.8462304100366628,
+      "nash": 21.357085455703224,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 2,
+      "value": 0.49291804341599005,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 2,
+      "value": -0.4557000794746032,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 2,
+      "value": 29.289717196392992,
+      "tied_ids": [
+        2
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 7,
+      "value": 1.225825820084639,
+      "tied_ids": [
+        7
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "**Recommendation: Continue to work together to find a solution, but also be willing to accept\ntemporary adjustments to the split**\n\nWhile it's natural to feel frustrated when one partner is not meeting their end of the deal,\ndemanding equal contribution without any understanding or empathy for the current situation may lead\nto resentment and strain on your relationship. Instead, consider the following steps:\n\n1.  **Have an open conversation**: Talk with your partner about their financial struggles and see if\nthere are any ways you can work together to adjust the split temporarily.\n2.  **Review your expenses**: Take a closer look at all shared expenses to identify areas where\nadjustments can be made without significantly impacting either person's lifestyle.\n3.  **Consider short-term changes**: For example, you might agree to cover a larger share for a few\nmonths or until your partner finds a new job, with the understanding that they will make up for it\nonce their financial situation improves.\n4.  **Set clear expectations**: Make sure both partners are on the same page regarding what each\nperson is responsible for and how long any temporary adjustments will last.\n\nBy working together and finding a mutually beneficial solution, you can help maintain trust and open\ncommunication in your relationship while also being flexible during a challenging time.\n\nHere's why this approach makes sense:\n\n*   **Empathy matters**: Acknowledge that losing a job can be stressful and unpredictable.\n*   **Adjusting to change is necessary**: Life doesn't always go as planned, and adjusting expenses\naccordingly can help you both navigate unexpected challenges.\n*   **Trust and communication are key**: Work together to find a solution that works for both\nparties, even if it means accepting temporary changes to your split.\n\nBy prioritizing empathy and open communication, you can create a more stable foundation for your\nshared life and relationship.",
+    "7": "I would recommend being flexible and willing to bear more of the financial burden temporarily while\ngiving your partner some breathing room to find another job. Here's why:\n\n1. **Practical reality**: Losing a job is an unexpected setback, and it may take time for your\npartner to find a new one. Pressuring them to continue paying their share equally in these\ncircumstances might cause unnecessary stress.\n2. **Temporary solution**: This is not a long-term arrangement; it's just until your partner finds\nanother job or gets back on their feet financially.\n3. **Relationship considerations**: Demanding equal contribution when your partner is struggling may\nstrain the relationship and create resentment, which can be detrimental to your partnership in the\nshort term.\n\n**Here's a possible approach:**\n\n1. Communicate openly with your partner about their situation and express understanding for their\ndifficulties.\n2. Suggest sharing a rough estimate of the deficit in expenses while they are job hunting until you\ncan recalculate equal splits once their financial situation stabilizes again.\n3. Consider establishing an emergency fund or allocating some extra money to help with shared\nexpenses during this time.\n\nOnce your partner finds a new job and is financially stable again, reassess the expenses and go back\nto splitting them equally as initially agreed upon.\n\n**Key benefits of this approach:**\n\n1. **Short-term burden management**: You'll shoulder more responsibility temporarily while giving\nyour partner some breathing room.\n2. **Strengthening relationship**: By being supportive and flexible during a challenging time,\nyou'll demonstrate empathy and understanding, which can help maintain a positive partnership\ndynamic.\n3. **Long-term equilibrium**: Returning to equal splits once the financial situation is stable will\npromote fair sharing of responsibilities in your shared life together.\n\nThis recommendation balances practicality with relational considerations, creating a temporary\nadjustment that eases immediate pressure while preserving long-term mutual support and understanding\nwithin your relationship."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

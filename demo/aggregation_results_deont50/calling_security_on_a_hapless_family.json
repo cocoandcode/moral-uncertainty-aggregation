@@ -1,0 +1,377 @@
+{
+  "slug": "calling_security_on_a_hapless_family",
+  "dilemma": "You are a hotel manager and see a family that seems homeless taking shelter in your hotel lobby. The family is not causing any disturbance, but their presence is making some of your paying guests uncomfortable. Do you prioritize your guests' comfort and call security or allow the family to stay?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Prioritize guests' comfort",
+  "not_to_do_action": "Allow the family to stay",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.9503367424716225,
+      "maximin": 0.715873607905752,
+      "nash": 47.829038824159824,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.9503367424716225,
+      "maximin": 0.715873607905752,
+      "nash": 47.829038824159824,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8415246230077189,
+      "maximin": 0.715873607905752,
+      "nash": 43.78519230873881,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8415246230077189,
+      "maximin": 0.715873607905752,
+      "nash": 43.78519230873881,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.9503367424716225,
+      "maximin": 0.715873607905752,
+      "nash": 47.829038824159824,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.9503367424716225,
+      "maximin": 0.715873607905752,
+      "nash": 47.829038824159824,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1455572518541564,
+      "maximin": 1.10631462667082,
+      "nash": 56.01803740035803,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.9503367424716225,
+      "maximin": 0.715873607905752,
+      "nash": 47.829038824159824,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.9503367424716225,
+      "maximin": 0.715873607905752,
+      "nash": 47.829038824159824,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.0500403118918595,
+      "maximin": 0.715873607905752,
+      "nash": 51.761847780725155,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8415246230077189,
+      "maximin": 0.715873607905752,
+      "nash": 43.78519230873881,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.9503367424716225,
+      "maximin": 0.715873607905752,
+      "nash": 47.829038824159824,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 1.10631462667082,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 1.1455572518541564,
+      "maximin": 1.10631462667082,
+      "nash": 56.01803740035803,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 10
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.5422646635769368
+      },
+      "ec": 1.0500403118918595,
+      "maximin": 0.715873607905752,
+      "nash": 51.761847780725155,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 9,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 1.2261493681789972,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.9503367424716225,
+      "maximin": 0.715873607905752,
+      "nash": 47.829038824159824,
+      "baseline": 1.2261493681789972,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8415246230077189,
+      "maximin": 0.715873607905752,
+      "nash": 43.78519230873881,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 7,
+      "value": 1.1455572518541564,
+      "tied_ids": [
+        7,
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 7,
+      "value": 1.10631462667082,
+      "tied_ids": [
+        7,
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 7,
+      "value": 56.01803740035803,
+      "tied_ids": [
+        7,
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 1,
+      "value": 1.2261493681789972,
+      "tied_ids": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "In this situation, I would recommend allowing the family to stay in our hotel lobby with some\ncareful consideration of their needs and ours.\n\nHere's my reasoning:\n\n1. **Basic Human Dignity**: We have an obligation to treat everyone with respect and dignity,\nregardless of their circumstances. Forcing them out or calling security could be perceived as\nhostile and stigmatizing.\n2. **Emergency Shelter**: In many cities, hotels can serve as temporary shelters for those in need\ndue to various crises like natural disasters, fires, or domestic violence. Our lobby might be the\nonly safe space available for this family tonight.\n3. **Safety**: Calling security could lead to escalation of the situation and create tension between\nlaw enforcement, our staff, and the family. It may also force them onto the streets, potentially\nexposing them to further vulnerability.\n4. **Alternative Accommodations**: If we were to contact local social services or a homeless\noutreach program, it's likely that they would provide assistance in finding alternative\naccommodations for the family. This way, we can ensure their well-being without sacrificing our\npaying guests' comfort.\n5. **Guests' concerns are valid, but not at someone else's expense**: While some of our paying\nguests might feel uncomfortable, I'd prioritize finding solutions that address both groups' needs.\nOffering alternatives or amenities to alleviate their discomfort could help maintain a positive\natmosphere.\n\nTo balance the situation:\n\n* Offer a temporary place for them to rest in a less-congested area of the lobby.\n* Provide essential supplies (water, blankets, snacks) from our in-house pantry or contacting local\norganizations that can deliver resources directly to us.\n* Coordinate with social services or outreach programs to offer them more permanent assistance and\nget their basic needs met.\n* Communicate transparently with both groups: explain the situation and solutions we're\nimplementing, so all parties understand our actions.\n\nBy doing so, we maintain a caring and inclusive environment while ensuring everyone's safety and\ndignity.",
+    "7": "As a hotel manager, I would recommend allowing the family to stay in our lobby area. Here's why:\n\n**Key considerations:**\n\n1. **Humanitarian obligation:** The family appears to be in need of shelter, which is an essential\nhuman right. As a business, we have a moral obligation to provide assistance when possible.\n2. **No disturbance or harm caused:** The family is not causing any disruptions or disturbing other\nguests. This indicates that they are being respectful and responsible, making it reasonable to\naccommodate them.\n3. **Safety concerns of the family:** If we were to ask them to leave or call security, they may be\nforced to return outdoors in precarious conditions (e.g., extreme weather). This could pose\nsignificant safety risks for them, particularly vulnerable members such as children.\n\n**Concerns about guests' comfort:**\n\n1. **Discomfort is subjective:** While some guests may find the family's presence uncomfortable,\nothers might be sympathetic and understanding.\n2. **Temporary accommodation:** The family's stay in the lobby would likely be temporary, until\nother arrangements can be made (e.g., social services or local shelters can be contacted to assist\nthem).\n3. **Providing basic human needs:** By allowing them to stay in our lobby, we are essentially\nproviding basic human dignity and respect, which should not be taken away.\n\n**Alternative solutions:**\n\n1. **Informal assistance:** If the family is unable to access external resources (e.g., social\nservices or shelters), I would offer our staff's support to assist them in finding help.\n2. **Lobby management:** To minimize any discomfort, we could reconfigure seating areas or provide a\ndesignated quiet zone for guests who may be disturbed by the presence of the family.\n\n**Final decision:**\n\nI believe it is essential to prioritize compassion and humanity when dealing with vulnerable\nindividuals in need. Allowing them to stay in our lobby area temporarily would not only be a\nresponsible decision but also demonstrate our hotel's commitment to serving its community, even\nthose who may not be paying guests."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

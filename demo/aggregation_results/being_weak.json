@@ -1,0 +1,367 @@
+{
+  "slug": "being_weak",
+  "dilemma": "John, a physically weak person, is being bullied at school. He knows fighting back would only escalate the situation but remaining passive isn't helping either. Should he endure the bullying in hopes it will stop, or should he fight back knowing it might get worse?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Fighting back",
+  "not_to_do_action": "Enduring the bullying",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.4207809937066995,
+      "maximin": -1.6272910711607818,
+      "nash": 1.8306073247745622,
+      "baseline": -1.385671200201308,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 5,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.4384694190577088,
+      "maximin": -1.8209207035822992,
+      "nash": 1.3560054257589347,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.565864161500363,
+      "maximin": -1.8209207035822992,
+      "nash": 1.2204048831830414,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.1604274399986598,
+      "maximin": -1.385671200201308,
+      "nash": 3.051012207957603,
+      "baseline": -1.385671200201308,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 0,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -2.6914197103442814,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.9889893083530756,
+      "maximin": -2.6914197103442814,
+      "nash": 0.0,
+      "baseline": -2.6914197103442814,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.6220319072315712,
+      "maximin": -0.950421696820317,
+      "nash": 7.593630384250035,
+      "baseline": -0.950421696820317,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7532715971240297,
+      "maximin": 0.3253605816495158,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 4,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.5686461959117284,
+      "maximin": -1.8209207035822992,
+      "nash": 1.084804340607148,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.47522961806498076,
+      "maximin": 0.3253605816495158,
+      "nash": 30.374521537000145,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 0,
+        "deontological": 0,
+        "ubuntu": 0
+      },
+      "z": {
+        "utilitarian": -2.6914197103442814,
+        "deontological": -2.7988820628469604,
+        "ubuntu": -2.446010011146476
+      },
+      "ec": -2.6454372614459056,
+      "maximin": -2.7988820628469604,
+      "nash": 0.0,
+      "baseline": -2.6914197103442814,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.423563028118065,
+      "maximin": -1.6482571435541644,
+      "nash": 1.6272065109107219,
+      "baseline": -1.385671200201308,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 5,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.4384694190577088,
+      "maximin": -1.8209207035822992,
+      "nash": 1.3560054257589347,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.051041558173829396,
+      "maximin": -0.4557000794746032,
+      "nash": 17.08566836456258,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 8,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.0479390884956492,
+      "maximin": -1.8209207035822992,
+      "nash": 2.169608681214296,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.354395163327874,
+      "maximin": -0.052751408369541584,
+      "nash": 26.03530417457155,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.7504895627126643,
+      "maximin": 0.7158909122115753,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "OTHER"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 7,
+      "value": 0.7532715971240297,
+      "tied_ids": [
+        7
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 16,
+      "value": 0.7158909122115753,
+      "tied_ids": [
+        16
+      ],
+      "recommendation": "OTHER",
+      "tied_recommendations": [
+        "OTHER"
+      ]
+    },
+    "nash": {
+      "id": 7,
+      "value": 39.05295626185732,
+      "tied_ids": [
+        7,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "OTHER"
+      ]
+    },
+    "baseline": {
+      "id": 7,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        7,
+        15,
+        16
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO",
+        "OTHER"
+      ]
+    }
+  },
+  "winner_texts": {
+    "7": "**Recommendation:** John should not fight back against his bullies. Instead, he should seek help\nfrom trusted adults such as teachers, school counselors, or parents to address the bullying.\n\n**Reasoning:**\n\nFighting back can lead to:\n\n1.  **Escalation**: As you mentioned, fighting back might only escalate the situation, making it\nworse for John and potentially leading to more severe consequences.\n2.  **Physical harm**: Engaging in physical confrontation increases the risk of injury or even\nserious harm to John.\n3.  **Bad reputation**: Fighting back can also damage John's reputation at school, making him more\nvulnerable to further bullying.\n\nOn the other hand, enduring the bullying without seeking help is not a viable long-term solution\neither, as it can lead to:\n\n1.  **Emotional distress**: Prolonged exposure to bullying can cause significant emotional distress,\nincluding anxiety, depression, and low self-esteem.\n2.  **Social isolation**: Bullying can also isolate John from his peers, making him feel alone and\nunsupported.\n\nBy seeking help from trusted adults, John can:\n\n1.  **Ensure safety**: Get the support he needs to stay safe at school and prevent further incidents\nof bullying.\n2.  **Address the issue**: Work with authorities to address the root causes of the bullying and\ndevelop strategies to prevent future instances.\n3.  **Develop coping skills**: Learn healthy ways to cope with stress and manage his emotions, which\ncan help him navigate difficult situations.\n\nJohn should focus on building a support network, which includes trusted adults who can help him\nnavigate this challenging situation.",
+    "16": "**Recommendation:** John should seek help and support to address the bullying, rather than fighting\nback or enduring it passively.\n\n**Reasoning:**\n\n1.  **Safety first**: Fighting back can lead to physical harm to both John and the bully, which is\nnot a preferable outcome.\n2.  **Emotional toll**: Enduring bullying can have severe emotional consequences, including\ndepression, anxiety, and low self-esteem.\n3.  **Escalation risk**: Fighting back might escalate the situation, leading to more aggressive\nbehavior from the bully or their cohorts.\n4.  **Support systems**: Schools often have resources in place to address bullying, such as\ncounseling services, anti-bullying programs, and disciplinary measures for bullies.\n5.  **Empowerment through reporting**: By reporting the incidents, John can take control of the\nsituation and seek help from authorities, rather than being a passive victim.\n\nBy seeking help and support, John can:\n\n*   Take advantage of available resources to address bullying\n*   Maintain his physical safety\n*   Reduce emotional distress and promote well-being"
+  },
+  "unanimous": false,
+  "unanimous_recommendation": false,
+  "shared_recommendations": [],
+  "distinct_recommendations": [
+    "NOT_TO_DO",
+    "OTHER"
+  ],
+  "distinct_winners": 2
+}

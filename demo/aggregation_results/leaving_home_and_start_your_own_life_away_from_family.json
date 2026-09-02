@@ -1,0 +1,366 @@
+{
+  "slug": "leaving_home_and_start_your_own_life_away_from_family",
+  "dilemma": "You've moved out of your family home to start your own life independently. Your parents are aging and they need constant care and support; however, you also need to build your own life and career in a different city. Should you sacrifice your personal growth and return home to take care of your parents?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Returning home to care for parents",
+  "not_to_do_action": "Not returning home to care for parents",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.7223959022063032,
+      "maximin": -1.2367607405987222,
+      "nash": 6.5088260436428875,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.3169591807045999,
+      "maximin": -0.8505042759618531,
+      "nash": 11.390445576375052,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.04448127046828171,
+      "maximin": -1.2493807097580087,
+      "nash": 13.017652087285775,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.06316591470210789,
+      "maximin": -0.4557000794746032,
+      "nash": 17.08566836456258,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.5773127344126395,
+      "maximin": -1.2367607405987222,
+      "nash": 7.593630384250036,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.8553547134716885,
+      "maximin": -1.2493807097580087,
+      "nash": 4.881619532732166,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.3318655716442438,
+      "maximin": -0.8505042759618531,
+      "nash": 11.390445576375052,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 5,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.16909397849957072,
+      "maximin": -0.8462304100366628,
+      "nash": 13.560054257589348,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -0.7102715456780248,
+      "maximin": -1.2493807097580087,
+      "nash": 5.695222788187527,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.1961247259674931,
+      "maximin": -0.4557000794746032,
+      "nash": 14.644858598196498,
+      "baseline": -0.07992269005833456,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.3290835372328783,
+      "maximin": -0.4557000794746032,
+      "nash": 12.204048831830415,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": 0.08847754079710352,
+      "maximin": -0.8505042759618531,
+      "nash": 17.356869449714367,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 7,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.06516974891254372,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.0538235925851948,
+      "maximin": -0.4516278421656973,
+      "nash": 16.61106646554695,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.4557000794746032,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.1840003694392146,
+      "maximin": -0.4557000794746032,
+      "nash": 14.238056970468815,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": -0.8462304100366628,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.32630150282151293,
+      "maximin": -0.8462304100366628,
+      "nash": 12.204048831830413,
+      "baseline": -0.07992269005833456,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.8674790699999668,
+      "maximin": -1.2367607405987222,
+      "nash": 5.424021703035739,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 12,
+      "value": 0.08847754079710352,
+      "tied_ids": [
+        12
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 13,
+      "value": -0.4516278421656973,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 12,
+      "value": 17.356869449714367,
+      "tied_ids": [
+        12
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 3,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        3,
+        8,
+        12
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "3": "This is a challenging decision that requires careful consideration. After weighing the pros and\ncons, I would recommend finding alternative solutions for your parents' care while also pursuing\nyour own life and career in the new city.\n\nHere's why:\n\n**Reasons to prioritize your personal growth and career:**\n\n1. **Independence**: By staying in the new city, you'll be able to establish a separate identity,\nbuild relationships, and create a sense of independence that's essential for mental and emotional\nwell-being.\n2. **Career opportunities**: Pursuing your career goals is crucial for long-term financial stability\nand personal fulfillment. Leaving the new city could jeopardize these opportunities, leading to\nregrets about not taking control of your professional life.\n3. **Future responsibilities**: Although it may seem counterintuitive, being away from family\nmembers at this stage can actually help you build skills and experience that will serve you well\nwhen caring for them in the future.\n\n**Reasons why returning home isn't necessarily the best solution:**\n\n1. **Burden on you alone**: Taking care of your aging parents would likely lead to burnout, guilt,\nand resentment if you don't have a support system or external help.\n2. **Lack of professional input**: You may feel overwhelmed by trying to manage their care while\nalso dealing with the emotional strain of caregiving responsibilities without having access to\nprofessionals who specialize in senior care.\n\n**Alternative solutions for your parents' care:**\n\n1. **Hire caregivers or home health aides**: This would allow you to contribute financially and\nemotionally to your parents' well-being, even from a distance.\n2. **Explore aging support services**: Many cities offer specialized assistance programs, such as\nadult day centers, respite care services, or geriatric case managers who can provide valuable\nguidance.\n3. **Consult with elder law attorneys**: These professionals can help you navigate the complex\nfinancial and medical aspects of caregiving.\n\n**Conclusion:**\n\nWhile it's essential to support your aging parents, abandoning your personal growth and career goals\nmight lead to long-term consequences that negatively impact both you and your family members. It's\ncrucial to find alternative solutions for their care, such as professional caregivers or respite\nservices, while allowing yourself to establish a fulfilling life in the new city.\n\nUltimately, having an open conversation with your parents about their needs and desires will help\nclarify the best path forward.",
+    "12": "What a difficult and heart-wrenching decision! After considering the complexities of this situation,\nI would recommend finding alternative solutions that balance caregiving responsibilities with\npersonal growth and independence. Here's why:\n\n**Reasons against returning home:**\n\n1. **Self-sacrifice**: Prioritizing care for your parents above all else may lead to burnout and\nimpact your mental and physical health.\n2. **Limited opportunities**: Living with or caring for your parents full-time might hinder your\nability to pursue a career, education, or personal interests that could bring fulfillment and\nfinancial stability.\n3. **Inhibiting autonomy**: Constantly prioritizing family responsibilities might undermine your\nsense of independence and confidence in making life choices.\n\n**Reasons for seeking alternative solutions:**\n\n1. **Caregiving is not just about physical presence**: You can support your parents from a distance,\nleveraging technology, caregivers, and community resources to ensure their well-being while allowing\nyou to maintain your own life.\n2. **Build a supportive network**: Assemble a team of trusted family members, friends, and\nprofessionals who can help with caregiving tasks, such as hiring home health aides or adult daycare\nservices.\n3. **Prioritize your skills and experience**: By staying in the new city, you can leverage your\neducation, skills, and work experience to build a career that will eventually allow you to\ncontribute financially to your parents' care.\n\n**Recommendation:**\n\n1. **Establish open communication channels**: Regularly discuss caregiving needs and expectations\nwith your parents to ensure they feel supported and understood.\n2. **Research local resources**: Familiarize yourself with local services, such as adult daycare\ncenters, home health agencies, or non-profit organizations that specialize in elder care.\n3. **Make a plan for emergencies**: Develop a contingency plan for unexpected events, like\nhospitalizations or caregiving crises, so you can balance your responsibilities without compromising\nyour own life.\n\nIn conclusion, while it's essential to be supportive and involved in your parents' care, sacrificing\npersonal growth and independence is not the only solution. By finding alternative arrangements that\ncater to their needs while enabling you to build a fulfilling life elsewhere, you'll create a more\nsustainable and balanced approach to this complex family situation.",
+    "13": "The age-old conundrum of caregiving versus personal growth! While this is a deeply personal decision\nthat ultimately depends on individual circumstances, I'll provide a general recommendation based on\ncommon sense and values.\n\n**Recommendation:** It's essential to find a balance between caring for your parents and pursuing\nyour personal goals, rather than sacrificing one aspect entirely. Here's why:\n\n1. **Support your family from a distance**: With modern technology, you can maintain close\nrelationships with your parents while still building your life elsewhere. Regular phone calls, video\nchats, and visits (if possible) can help them feel connected to their child while also receiving\nessential support remotely.\n2. **Hire professional caregivers if necessary**: If your parents require around-the-clock care,\nconsider hiring professionals who are trained to provide the necessary assistance. This will allow\nyou to contribute to their well-being without sacrificing your own career and life plans.\n3. **Cultivate a support network in both locations**: Reach out to friends, family members, or\nneighbors in your hometown who can help care for your parents occasionally, allowing you to visit\nmore frequently. You may also find like-minded individuals through online communities or local\nsupport groups, helping to distribute caregiving responsibilities across multiple shoulders.\n4. **Invest in eldercare solutions and services**: Research local options, such as adult day\nprograms, home healthcare services, or respite care facilities. These alternatives can provide\nmuch-needed support for your parents while enabling you to continue pursuing your goals.\n5. **Stay flexible and open-minded**: As circumstances evolve, be prepared to adjust your plans\naccordingly. Life is unpredictable, and balancing caregiving responsibilities with personal growth\nrequires a willingness to adapt.\n\n**The reasons against immediate return home:**\n\n* Sacrificing your own life and career can ultimately lead to burnout and decreased effectiveness as\na caregiver.\n* Relying solely on yourself for care might exacerbate stress levels, straining relationships and\nmaking it challenging to find quality time for both personal growth and caregiving responsibilities.\n\nBy finding ways to balance caregiving responsibilities with personal growth, you'll:\n\n1. **Demonstrate the importance of independence**: You're showing your parents that you can build a\nlife outside their home while still caring about them.\n2. **Foster self-sufficiency and resilience**: By navigating both aspects simultaneously, you'll\nbecome more adept at handling uncertainty and responsibility.\n3. **Improve mental and emotional well-being**: Pursuing your goals will give you a sense of purpose\nand fulfillment, helping to mitigate the emotional impact of caregiving.\n\nUltimately, prioritizing balance rather than sacrifice is essential in this situation. Find ways to\nnurture both aspects of your life \u2013 personal growth and caregiving \u2013 to create a more harmonious and\nfulfilling existence for yourself and those around you."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 3
+}

@@ -1,0 +1,371 @@
+{
+  "slug": "giving_someone_a_note_if_you_love_them_that_explains_your_af",
+  "dilemma": "You are in a committed relationship, but you have developed strong feelings for a close friend. You have written a note expressing your feelings and are torn between your loyalty to your partner and your desire to be honest with your friend. Should you give the note to your friend, potentially risking your current relationship, or not?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Give the note to your friend",
+  "not_to_do_action": "Not give the note to your friend",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.6988229727657482,
+      "maximin": -1.8209207035822992,
+      "nash": 0.8136032554553609,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 0,
+        "deontological": 3,
+        "ubuntu": 0
+      },
+      "z": {
+        "utilitarian": -2.6914197103442814,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -2.446010011146476
+      },
+      "ec": -2.254906930883846,
+      "maximin": -2.6914197103442814,
+      "nash": 0.0,
+      "baseline": -2.6914197103442814,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 0,
+        "ubuntu": 0
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -2.7988820628469604,
+        "ubuntu": -2.446010011146476
+      },
+      "ec": -2.3552709258585782,
+      "maximin": -2.7988820628469604,
+      "nash": 0.0,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.0125622377936307,
+      "maximin": -1.2367607405987222,
+      "nash": 4.339217362428592,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.5537398049720847,
+      "maximin": -1.6482571435541644,
+      "nash": 1.2204048831830414,
+      "baseline": -1.385671200201308,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.1576454055872945,
+      "maximin": -1.385671200201308,
+      "nash": 3.2544130218214438,
+      "baseline": -1.385671200201308,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.1427390146476506,
+      "maximin": -1.6272910711607818,
+      "nash": 3.2544130218214438,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": -0.7466446152628602,
+      "maximin": -1.2367607405987222,
+      "nash": 6.5088260436428875,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.8796034265282454,
+      "maximin": -1.2367607405987222,
+      "nash": 5.42402170303574,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -1.2493807097580087
+      },
+      "ec": -1.565864161500363,
+      "maximin": -1.8209207035822992,
+      "nash": 1.2204048831830414,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.6272910711607818,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.7438625808514948,
+      "maximin": -1.6272910711607818,
+      "nash": 5.695222788187526,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -1.2878221824413143,
+      "maximin": -1.6272910711607818,
+      "nash": 2.440809766366083,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -1.385671200201308,
+        "deontological": -1.6272910711607818,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -1.154863371175929,
+      "maximin": -1.6272910711607818,
+      "nash": 3.0510122079576036,
+      "baseline": -1.385671200201308,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 2,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8209207035822992,
+        "deontological": -2.0178214017228413,
+        "ubuntu": -1.6482571435541644
+      },
+      "ec": -1.828999749619768,
+      "maximin": -2.0178214017228413,
+      "nash": 0.542402170303574,
+      "baseline": -1.8209207035822992,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.2367607405987222,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.613685803997475,
+      "maximin": -1.2367607405987222,
+      "nash": 7.593630384250035,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 0,
+        "deontological": 0,
+        "ubuntu": 0
+      },
+      "z": {
+        "utilitarian": -2.6914197103442814,
+        "deontological": -2.7988820628469604,
+        "ubuntu": -2.446010011146476
+      },
+      "ec": -2.6454372614459056,
+      "maximin": -2.7988820628469604,
+      "nash": 0.0,
+      "baseline": -2.6914197103442814,
+      "recommendation": "REFUSAL"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 15,
+      "value": -0.613685803997475,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 4,
+      "value": -1.2367607405987222,
+      "tied_ids": [
+        4,
+        8,
+        9,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 15,
+      "value": 7.593630384250035,
+      "tied_ids": [
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 4,
+      "value": -0.950421696820317,
+      "tied_ids": [
+        4,
+        7,
+        8,
+        9,
+        11,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "4": "I'll provide a recommendation after exploring both sides of the dilemma.\n\n**Why you might choose to give the note:**\n\n1.  **Honesty**: Expressing your feelings can bring closure to both parties involved. Your friend\nmay have had similar feelings, making it easier for you to navigate your current relationship.\n2.  **Friendship preservation**: Being open about your feelings could prevent potential resentment\nor hurt if you were to continue keeping them hidden.\n\n**Why you might choose not to give the note:**\n\n1.  **Risk of damaging relationships**: Giving the note may lead to rejection, causing emotional\ndistress and potentially harming both relationships.\n2.  **Uncertainty**: Your friend's response may be negative, forcing you to confront the possibility\nof losing your friendship or relationship with your current partner.\n\n**Recommendation:**\n\nI recommend not giving the note at this time, if possible. Withholding it may allow you to process\nyour emotions while minimizing potential risks to both relationships. However, consider whether\nhonesty will ultimately make you feel more authentic and bring you closer to a resolution that\nbenefits all parties involved.\n\nConsider reflecting on why these feelings arose in the first place. Are there underlying issues with\nyour current relationship? Are you looking for validation or connection elsewhere?\n\nHere are some steps to consider:\n\n*   **Take time to reflect**: Understand the root causes of your feelings and how they may relate to\nyour current relationship.\n*   **Communicate with your partner (if comfortable)**: Expressing your thoughts can help resolve\nunderlying issues before exploring other relationships.\n*   **Assess your friend's comfort level**: Gauge their response to your note, if you decide to\nshare it. Be prepared for any outcome and approach the situation empathetically.\n*   **Evaluate priorities**: Decide what matters more: your relationship with your partner or\nmaintaining a close connection with your friend.\n\n**If giving the note becomes unavoidable**\n\nApproach this situation with empathy. If rejection is a possibility, be prepared to maintain healthy\nrelationships and respect boundaries. Consider keeping emotions in check and being understanding of\ntheir perspective.\n\nUltimately, prioritize honest self-reflection and weigh the pros and cons carefully before making a\ndecision.",
+    "15": "I would recommend **not giving the note to your friend**. Here's why:\n\n1. **Consideration for your partner**: Your partner has entrusted their feelings and future with\nyou, and keeping a secret from them could damage your relationship and erode trust.\n2. **Friendship preservation**: Revealing your feelings to your friend might lead them to feel\nuncomfortable or guilty about having unknowingly triggered such strong emotions in you. This could\nirreparably change the dynamics of your friendship.\n3. **Unclear intentions and consequences**: Your feelings for your friend are genuine, but it's\nunclear how they will respond to this revelation or if they'll even feel the same way. This\nuncertainty creates a risk of rejection, disappointment, or even conflict in your friendship, rather\nthan resolving any underlying issues.\n4. **Take care of yourself first**: Acknowledge and accept your feelings without immediately acting\non them. Processing these emotions can help you understand their root causes and potentially resolve\nthe issue internally before taking further actions that could impact relationships.\n\nInstead, consider the following:\n\n1. **Reflect on why you're feeling this way**: Identify whether there are underlying issues or needs\nin your current relationship that may be contributing to your feelings.\n2. **Communicate openly with yourself**: Share these thoughts and emotions with someone you trust,\nsuch as a therapist, counselor, or another close friend who can provide objective advice.\n3. **Prioritize your existing relationships**: Nurture the connections you have with both your\npartner and your friend, acknowledging that honesty and transparency are essential but also must be\nhandled thoughtfully.\n\nUltimately, it's crucial to prioritize your emotional well-being and weigh the potential\nconsequences before making any decisions that could affect the people close to you."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

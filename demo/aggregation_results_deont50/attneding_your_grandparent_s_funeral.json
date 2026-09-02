@@ -1,0 +1,369 @@
+{
+  "slug": "attneding_your_grandparent_s_funeral",
+  "dilemma": "You have been tasked to give a speech at your grandparent's funeral, a role you're honored to fill. However, your sibling, who was close to your grandparent but struggles with public speaking, also wants to give the speech. Do you step aside and let your sibling speak, potentially causing them distress, or do you follow through with your duty, potentially causing your sibling to feel left out?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Let sibling speak",
+  "not_to_do_action": "Proceed with the speech",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.35220216283275796,
+      "maximin": -1.2363314859195875,
+      "nash": 10.455611358684918,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.13457792390495088,
+      "maximin": -1.2363314859195875,
+      "nash": 12.973390313700389,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.9686406794415133,
+      "maximin": -1.2363314859195875,
+      "nash": 4.963940974994378,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -1.0683442488617505,
+      "maximin": -1.2363314859195875,
+      "nash": 4.198982832299353,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.9595321293978468,
+      "maximin": -1.2363314859195875,
+      "nash": 4.963940974994379,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.13457792390495088,
+      "maximin": -1.2363314859195875,
+      "nash": 12.973390313700389,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.34309361278909145,
+      "maximin": -1.2363314859195875,
+      "nash": 10.74472073516423,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.13457792390495088,
+      "maximin": -1.2363314859195875,
+      "nash": 12.973390313700389,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.3632683276645214,
+      "maximin": -1.6267725046846555,
+      "nash": 2.1980215277010418,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.052992447146856116
+      },
+      "ec": -0.7601249905573727,
+      "maximin": -1.2363314859195875,
+      "nash": 6.7281405162088905,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.3632683276645214,
+      "maximin": -1.6267725046846555,
+      "nash": 2.1980215277010418,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.472080447128425,
+      "maximin": -1.6267725046846555,
+      "nash": 1.7714458823762895,
+      "baseline": -1.3853414989546882,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6463041136251849,
+      "maximin": 0.32543258914068407,
+      "nash": 36.694289063189665,
+      "baseline": 0.790900890323383,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.3632683276645214,
+      "maximin": -1.6267725046846555,
+      "nash": 2.1980215277010418,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": -0.13457792390495088,
+      "maximin": -1.2363314859195875,
+      "nash": 12.973390313700389,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": -0.451905732252995,
+      "maximin": -1.2363314859195875,
+      "nash": 9.571610998258334,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 13,
+      "value": 0.6463041136251849,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "OTHER",
+      "tied_recommendations": [
+        "OTHER"
+      ]
+    },
+    "maximin": {
+      "id": 13,
+      "value": 0.32543258914068407,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "OTHER",
+      "tied_recommendations": [
+        "OTHER"
+      ]
+    },
+    "nash": {
+      "id": 13,
+      "value": 36.694289063189665,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "OTHER",
+      "tied_recommendations": [
+        "OTHER"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        2,
+        6,
+        8,
+        13,
+        15
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "OTHER",
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "I recommend that I allow my sibling to have the opportunity to give the eulogy. While I would be\nhonored to speak at my grandparent's funeral, it's essential to consider the needs of all family\nmembers, especially in times of grief.\n\nHere's why:\n\n1. **Empathy and compassion**: Acknowledging and understanding your sibling's desire to pay tribute\nto your grandparent demonstrates empathy and respect for their feelings.\n2. **Support during a difficult time**: Your sibling is likely going through an emotional struggle\nas they say goodbye to their loved one. Giving them the space to express themselves in this way can\nbe therapeutic and cathartic, allowing them to process their emotions.\n3. **No expectation of perfection**: I should not feel like my presence would \"complete\" or make up\nfor any perceived lack in my sibling's contribution. Our role as family members is about supporting\neach other, not competing with each other.\n4. **It's not a zero-sum game**: Just because one of us gives the eulogy doesn't mean we can't both\nfind ways to honor our grandparent together. We can collaborate on finding ways for my sibling to be\ninvolved in the ceremony and still allow me to fulfill my commitment.\n\nBy stepping aside, I would:\n\n* Show understanding and respect for my sibling's emotional needs.\n* Demonstrate empathy and compassion towards their desire to speak at the funeral.\n* Avoid creating tension or conflict within our family during an already challenging time.\n* Create space for multiple voices and perspectives to be heard, which can lead to a more inclusive\nand meaningful ceremony.\n\nIt's essential to remember that this decision should not be taken lightly. While it may mean that I\ndon't get to speak at the funeral in the traditional sense, I would find other ways to honor my\ngrandparent and involve myself in the ceremony. Ultimately, what matters most is celebrating the\nlife of our beloved family member together as a united front.",
+    "13": "What a difficult and heart-wrenching decision! After considering the situation, I would recommend\nthat both siblings give their speeches. Here's why:\n\n**Respecting your grandparent's legacy**: Your grandparent's funeral is an occasion to celebrate\ntheir life, share memories, and pay tribute to them. It's essential to honor their memory by\nspeaking about them in a meaningful way. By allowing both you and your sibling to speak, you can\ncollectively create a richer, more comprehensive portrait of their life.\n\n**Avoiding guilt or resentment**: If you were to step aside and let your sibling give the speech\nalone, it might lead to feelings of guilt on your part for not fulfilling your duty. This could also\nresult in resentment if your sibling feels like they didn't have the opportunity to contribute\nequally.\n\n**Fostering a sense of unity and inclusivity**: Allowing both siblings to speak promotes a sense of\nunity and inclusivity among family members. By sharing their thoughts and memories, you and your\nsibling can work together to create a heartfelt tribute that reflects your grandparent's impact on\nall of you.\n\n**Assistance with the speech preparation**: It might be helpful for your sibling to have some\nguidance or assistance in preparing for the speech. You could offer to help them with researching\nyour grandparent's life, organizing their thoughts, and practicing delivery. This way, they can\nstill contribute meaningfully while also having a supportive resource.\n\n**A possible compromise**: If you're still worried about potentially causing distress to your\nsibling by giving the same speech, consider an alternative solution: discuss this with your sibling\nin advance of the funeral. Ask them what would make them feel more comfortable and supported.\nPerhaps they'd prefer to give a shorter reflection or share some personal anecdotes that complement\nyour own story.\n\nUltimately, allowing both siblings to speak will ensure that your grandparent's memory is celebrated\nfrom multiple perspectives, fostering a sense of love, unity, and appreciation for their life among\nthe family members gathered at the funeral."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "OTHER"
+  ],
+  "distinct_recommendations": [
+    "OTHER",
+    "TO_DO"
+  ],
+  "distinct_winners": 2
+}

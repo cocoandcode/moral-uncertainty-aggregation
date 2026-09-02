@@ -1,0 +1,368 @@
+{
+  "slug": "moving_on_and_remarrying_after_the_death_of_a_spouse",
+  "dilemma": "After losing his wife to cancer, John has recently moved on and is contemplating remarriage. However, his deceased wife's family strongly disapproves of him remarrying as they believe it dishonors her memory. Should John respect his late wife's family's wishes and remain single or should he pursue his own happiness and remarry?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.5,
+    "ubuntu": 0.25
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Remarry",
+  "not_to_do_action": "Not Remarry",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.5466873810875058,
+      "maximin": -0.8506210025087526,
+      "nash": 8.928688156194324,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 4,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.3765635071661282,
+      "maximin": -1.648249557870649,
+      "nash": 2.0121833441596157,
+      "baseline": -1.3853414989546882,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 4,
+        "ubuntu": 0
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -2.4458781132325456
+      },
+      "ec": -1.6847827654705059,
+      "maximin": -2.4458781132325456,
+      "nash": 0.0,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6554995005514094,
+      "maximin": -0.8506210025087526,
+      "nash": 7.953853046748567,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.6554995005514094,
+      "maximin": -0.8506210025087526,
+      "nash": 7.953853046748567,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 3,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -1.3853414989546882,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -1.472080447128425,
+      "maximin": -1.6267725046846555,
+      "nash": 1.7714458823762895,
+      "baseline": -1.3853414989546882,
+      "recommendation": "REFUSAL"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9504235793541803,
+      "maximin": -1.2494352801897008,
+      "nash": 4.586786132898707,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9504235793541803,
+      "maximin": -1.2494352801897008,
+      "nash": 4.586786132898707,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.7327993404263733,
+      "maximin": -1.2494352801897008,
+      "nash": 5.691313950583555,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.4518067248278044
+      },
+      "ec": -0.8598285599776098,
+      "maximin": -1.2363314859195875,
+      "nash": 5.868256905859971,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 4,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -1.2363314859195875,
+        "ubuntu": 0.3458218305340921
+      },
+      "ec": -0.7692335406010392,
+      "maximin": -1.2363314859195875,
+      "nash": 6.388849173487286,
+      "baseline": -0.950093021099074,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.86401518943555,
+      "maximin": -1.2494352801897008,
+      "nash": 5.5909753283473576,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 6,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": -0.4554494483894518,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.34235832166130536,
+      "maximin": -1.2494352801897008,
+      "nash": 10.45561135868492,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.7643116200153129,
+      "maximin": -0.8506210025087526,
+      "nash": 6.937318410240009,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 4,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.8416114598902767,
+      "maximin": -1.2494352801897008,
+      "nash": 5.148948915588844,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 2,
+        "deontological": 3,
+        "ubuntu": 2
+      },
+      "z": {
+        "utilitarian": -1.8205899768103024,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.648249557870649
+      },
+      "ec": -1.6805961360125656,
+      "maximin": -1.8205899768103024,
+      "nash": 0.9642530041724927,
+      "baseline": -1.8205899768103024,
+      "recommendation": "REFUSAL"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 13,
+      "value": -0.34235832166130536,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 1,
+      "value": -0.8506210025087526,
+      "tied_ids": [
+        1,
+        4,
+        5,
+        14
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 13,
+      "value": 10.45561135868492,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 9,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        9,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "1": "What a difficult and complex dilemma for John to face.\n\nAfter careful consideration, I would recommend that John follow his heart and consider remarriage\nafter a suitable period of grief and reflection. Here's why:\n\n1. **Grief is not about honoring one's memory, but about healing**: While it's essential to\nacknowledge the love and memories shared with his late wife, holding onto those feelings as an\nexcuse for remaining single may delay John's own emotional healing process.\n2. **John's happiness is a legitimate consideration**: His marriage is over, and he has moved on.\nPursuing happiness is not inherently \"dishingonor\" to his deceased wife's memory. It's a testament\nto her love that they shared a deep connection, which likely led to the establishment of their\nfamily in the first place.\n3. **Respecting family dynamics while also being honest with oneself**: While it's admirable for\nJohn to respect his late wife's family's wishes, he must also be true to himself and consider what's\nbest for his personal growth and well-being. Suppressing one's emotions or desires can lead to\nlong-term consequences, potentially causing resentment.\n4. **Supportive family dynamics are healthy**: Encouraging John to follow his heart could create a\npositive ripple effect within the family. His family might come to see that he is not \"disloyal\" but\nrather moving forward with their love and support.\n\nIt's essential to note that any decision should be made with sensitivity and care, taking into\naccount the feelings of all parties involved. If John decides to remarry, it would be kind for him\nto have an open conversation with his late wife's family to understand their concerns and show\nrespect for their perspective.\n\nIn conclusion, I recommend that John prioritize his own emotional healing and happiness while also\nmaintaining a respectful dialogue with those closest to his deceased wife. By doing so, he can\ndemonstrate that he values the love and memories shared with her but is also willing to move forward\nin a positive direction.",
+    "9": "**Recommendation:** John should prioritize his own emotional well-being and pursue remarriage, while\nstill being respectful of his late wife's memory and family.\n\n**Reasoning:**\n\n1. **Grief is not a substitute for life**: While it's natural to grieve the loss of a loved one,\nallowing grief to define one's life can be detrimental to mental health in the long run. John has\nlikely experienced significant emotional healing since his wife's passing, and pursuing remarriage\ncan be a meaningful way to rebuild his life.\n2. **Respect, not obligation**: While it's understandable that John's late wife's family would feel\nstrongly about this issue, they are making a judgment based on their own emotions and values.\nRespect for their wishes does not necessarily mean obedience. John should prioritize his own needs,\ngoals, and values in determining whether to remarry.\n3. **Honor through living**: By continuing to live life to the fullest and pursuing his own\nhappiness, John can actually honor his late wife's memory more than by remaining single out of\nobligation. His decision to remarry would demonstrate that her legacy lives on in him, motivating\nhim to move forward with purpose and joy.\n4. **Avoiding guilt and resentment**: If John chooses to remain single solely due to family\npressure, he may experience feelings of guilt or resentment towards his late wife's family over\ntime. This could lead to unhealthy dynamics within the family and hinder John's emotional healing\nprocess.\n5. **Prioritizing his future**: Remarriage can bring new experiences, love, and connections into\nJohn's life. Prioritizing his own happiness and well-being will ultimately allow him to create a\nmeaningful, fulfilling future.\n\nUltimately, John should seek guidance from trusted friends, family members outside of his late\nwife's immediate family, or even a therapist if needed, to make an informed decision that aligns\nwith his values and priorities.",
+    "13": "I would recommend that John pursue his own happiness and remarry if he feels ready to do so. Here's\nwhy:\n\n**Firstly, honoring memory is complex**: While it's understandable that John's late wife's family\nwants to honor her memory, their wishes may not necessarily be in line with what the deceased woman\nherself would have wanted. Many people who have experienced a loss find comfort and solace in moving\nforward with life after losing a loved one. Remarrying can be an important step towards rebuilding\none's life.\n\n**Secondly, John has moved on**: Losing a spouse to cancer is an incredibly difficult experience,\nand it takes time for someone to emotionally recover. If John has genuinely moved on from his grief\nand is now in a good place mentally, remarrying could bring him joy, fulfillment, and a new sense of\npurpose.\n\n**Thirdly, restricting one's life choices may not be healthy**: Forcing oneself to remain single out\nof obligation to others can lead to feelings of guilt, resentment, or stifled growth. John should\nprioritize his own emotional well-being and happiness above anyone else's expectations.\n\n**Lastly, respecting the deceased loved one's legacy is different from sacrificing one's\nhappiness**: While it's essential to remember and honor the deceased loved one's memory, this\ndoesn't necessarily mean imposing strict expectations on oneself or others. By living a happy life\nwith someone new, John can, in fact, be honoring his late wife's memory by continuing to live and\nfind joy.\n\nOf course, every situation is unique, and it's essential for John to have open and honest\nconversations with his late wife's family about their concerns and expectations. However,\nultimately, he should prioritize his own heart and what feels right for him."
+  },
+  "unanimous": false,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}

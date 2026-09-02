@@ -1,0 +1,362 @@
+{
+  "slug": "being_organized_so_as_not_waste_time",
+  "dilemma": "John is an office manager known for his impeccable organization skills, ensuring everything runs smoothly and efficiently. However, he noticed that a co-worker has been spending considerable time on personal affairs during office hours, affecting the workflow and overall productivity. Should John confront the co-worker directly or report the matter to the higher-ups, potentially jeopardizing his co-worker's job?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confront the co-worker directly",
+  "not_to_do_action": "Not confront the co-worker",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6331843238862039,
+      "maximin": -0.07959606538784551,
+      "nash": 32.8223946162844,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5313874397369969,
+      "maximin": -0.07959606538784551,
+      "nash": 30.0473288955451,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.730794578577471,
+      "maximin": -0.07959606538784551,
+      "nash": 35.85375565635786,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5425893045096334,
+      "maximin": 0.32543258914068407,
+      "nash": 30.878171227365712,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 4,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -1.2363314859195875,
+        "ubuntu": -0.8506210025087526
+      },
+      "ec": -0.8631045085451381,
+      "maximin": -1.2363314859195875,
+      "nash": 5.0435700156270595,
+      "baseline": -0.5148445432434597,
+      "recommendation": "OTHER"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.6401995592009004,
+      "maximin": 0.35565241246776874,
+      "nash": 33.72997062657572,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6219824591135674,
+      "maximin": -0.5148445432434597,
+      "nash": 31.27150045760217,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 3,
+        "ubuntu": 3
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -1.6267725046846555,
+        "ubuntu": -1.2494352801897008
+      },
+      "ec": -0.9424976631490721,
+      "maximin": -1.6267725046846555,
+      "nash": 3.3979886471821454,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.948418817505278,
+      "maximin": 0.715873607905752,
+      "nash": 44.48757230782136,
+      "baseline": 0.790900890323383,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1297445561992923,
+      "maximin": -0.5148445432434597,
+      "nash": 19.33532569360905,
+      "baseline": -0.5148445432434597,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.5425893045096334,
+      "maximin": 0.32543258914068407,
+      "nash": 30.878171227365712,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8396066980413746,
+      "maximin": 0.35565241246776874,
+      "nash": 40.24804099377615,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8396066980413746,
+      "maximin": 0.35565241246776874,
+      "nash": 40.24804099377615,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8396066980413746,
+      "maximin": 0.35565241246776874,
+      "nash": 40.24804099377615,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6331843238862039,
+      "maximin": -0.07959606538784551,
+      "nash": 32.8223946162844,
+      "baseline": -0.07959606538784551,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.715873607905752,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8396066980413746,
+      "maximin": 0.35565241246776874,
+      "nash": 40.24804099377615,
+      "baseline": 0.35565241246776874,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 9,
+      "value": 0.948418817505278,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 9,
+      "value": 0.715873607905752,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 9,
+      "value": 44.48757230782136,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 9,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        9
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "9": "I would recommend that John have an initial conversation with the co-worker before escalating the\nissue to the higher-ups. Here's why:\n\n**Pros of confronting the co-worker directly:**\n\n1. **Encourages personal responsibility:** Talking to the co-worker may make them aware of their\nactions and encourage them to rectify the situation.\n2. **Prevents escalation:** Confronting the issue internally can prevent further complaints and\npotential conflict if it's addressed at a higher management level.\n3. **Preserves relationships:** Addressing the issue directly promotes a positive and respectful\nwork environment.\n\n**Cons of reporting to higher-ups immediately:**\n\n1. **Potential harm to co-worker:** Reporting the matter might lead to disciplinary action or damage\nto their reputation, which could have long-term consequences for their job security and professional\ndevelopment.\n2. **Overemphasis on punishment:** Focusing on penalty rather than resolution may create a negative\ndynamic in the workplace.\n\n**Recommended approach:**\n\n1. **Schedule a private meeting**: Invite the co-worker to discuss their work performance and\nprovide examples of specific instances when they spent excessive time on personal matters during\noffice hours.\n2. **Be empathetic but firm**: Explain how their behavior affects the team's productivity and\nworkload, using \"I\" statements to express concerns rather than accusations.\n3. **Seek a solution together**: Collaborate with the co-worker to develop strategies for managing\nwork-life balance, such as flexible working arrangements or regular time management checks.\n4. **Document progress**: Keep a record of agreements, follow-ups, and outcomes, which can be\nreferred to if necessary.\n\nIf, after having this conversation, the co-worker continues to disregard office hours and\nsignificantly impacts productivity, John may need to report the issue to their manager or HR\ndepartment. However, it's essential to have already addressed the issue directly with the co-worker\nbefore escalating it.\n\nBy following this approach, John can address the situation while maintaining a supportive work\nenvironment and potentially helping his coworker improve their time management skills and work\nhabits."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 1
+}

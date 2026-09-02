@@ -1,0 +1,369 @@
+{
+  "slug": "following_safe_food_preparation_practices",
+  "dilemma": "You are a chef in a popular restaurant that emphasizes the importance of safe food preparation practices. One day, you notice your sous-chef is not washing their hands properly before preparing food, which could lead to foodborne illnesses among the customers. Do you report your colleague to your superiors potentially jeopardizing their job, or do you confront them privately about their unsafe practices?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.25,
+    "deontological": 0.25,
+    "ubuntu": 0.5
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Report to superiors",
+  "not_to_do_action": "Confront privately",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.43796381450366995,
+      "maximin": -0.4554494483894518,
+      "nash": 26.45246875882959,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.23855667566319586,
+      "maximin": -0.4554494483894518,
+      "nash": 22.1685570826592,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950093021099074,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.12272932088459587,
+      "maximin": -0.950093021099074,
+      "nash": 17.022048802741327,
+      "baseline": -0.950093021099074,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7419964433501075,
+      "maximin": 0.32543258914068407,
+      "nash": 36.84515219804751,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.43796381450366995,
+      "maximin": -0.4554494483894518,
+      "nash": 26.45246875882959,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.43796381450366995,
+      "maximin": -0.4554494483894518,
+      "nash": 26.45246875882959,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8508085628140111,
+      "maximin": 0.32543258914068407,
+      "nash": 40.72623988970781,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.5467759339675735,
+      "maximin": -0.4554494483894518,
+      "nash": 29.694519514112955,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.535574069194937,
+      "maximin": -0.07959606538784551,
+      "nash": 29.694519514112955,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.35565241246776874,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.7419964433501075,
+      "maximin": 0.32543258914068407,
+      "nash": 36.84515219804751,
+      "baseline": 0.35565241246776874,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1297445561992923,
+      "maximin": -0.5148445432434597,
+      "nash": 19.33532569360905,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.4554494483894518,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.1297445561992923,
+      "maximin": -0.5148445432434597,
+      "nash": 19.33532569360905,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 7,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": -0.06500842962438384,
+        "ubuntu": 0.7446361082150403
+      },
+      "ec": 0.3361669303544628,
+      "maximin": -0.07959606538784551,
+      "nash": 24.885565762969524,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 5,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5148445432434597,
+        "deontological": -0.8458904671545197,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.23154144034849944,
+      "maximin": -0.8458904671545197,
+      "nash": 20.123074779043957,
+      "baseline": -0.5148445432434597,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.790900890323383,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.8508085628140111,
+      "maximin": 0.32543258914068407,
+      "nash": 40.72623988970781,
+      "baseline": 0.790900890323383,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07959606538784551,
+        "deontological": 0.32543258914068407,
+        "ubuntu": 1.1434503858959886
+      },
+      "ec": 0.6331843238862039,
+      "maximin": -0.07959606538784551,
+      "nash": 32.8223946162844,
+      "baseline": -0.07959606538784551,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 7,
+      "value": 0.8508085628140111,
+      "tied_ids": [
+        7,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 4,
+      "value": 0.32543258914068407,
+      "tied_ids": [
+        4,
+        7,
+        10,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 7,
+      "value": 40.72623988970781,
+      "tied_ids": [
+        7,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 7,
+      "value": 0.790900890323383,
+      "tied_ids": [
+        7,
+        15
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "4": "I would recommend confronting my sous-chef privately about their unsafe practices before considering\nreporting them to our superiors. Here's why:\n\n1. **Empowerment through feedback**: Confronting the issue directly allows for a one-on-one\nconversation, which may encourage the sous-chef to take ownership of their mistake and make\nnecessary corrections.\n2. **Opportunity for education**: A private conversation provides an opportunity to explain the\nimportance of proper hand washing techniques, emphasize the risks associated with foodborne\nillnesses, and remind them of our restaurant's policies and standards.\n3. **Positive impact on the individual**: By addressing the issue in a constructive manner, we can\nhelp our sous-chef improve their skills, gain confidence in following safe practices, and maintain a\npositive work environment.\n4. **Preserving trust and collaboration**: Reporting the issue to superiors without discussing it\nwith my colleague could be seen as a betrayal, potentially damaging our working relationship and\naffecting our teamwork.\n\nHowever, if after speaking privately and providing guidance, my sous-chef continues to neglect\nproper hand washing practices, I would consider escalating the matter to our superiors. The safety\nof our customers is paramount, and we must adhere to strict food safety standards to prevent any\npotential harm.\n\nTo ensure that this conversation is productive and respectful:\n\n*   **Document the incident**: Record the details of the observation, including the date, time, and\ncontext.\n*   **Maintain confidentiality**: Only involve necessary personnel (e.g., HR or management) in\naddressing the issue.\n*   **Review policies and procedures**: Refresh all kitchen staff on proper hand washing techniques,\nreiterating the importance of adhering to established protocols.\n\nUltimately, our shared responsibility is to protect the health and well-being of our customers. By\nfollowing a constructive and supportive approach, we can create a culture that prioritizes food\nsafety while fostering an environment where team members feel encouraged to improve their practices\nand maintain the highest standards in the kitchen.",
+    "7": "I strongly recommend confronting my sous-chef privately about their unsafe handwashing practices\nbefore reporting them to our superiors. Here's why:\n\n1. **Immediate corrective action**: Confronting the issue directly allows for immediate correction\nof the behavior, reducing the risk of foodborne illnesses and protecting our customers.\n2. **Respect for colleagues**: A private conversation shows empathy and respect for the sous-chef,\nacknowledging that they might not be aware of the gravity of their actions. This approach can lead\nto a constructive discussion about proper handwashing techniques rather than simply disciplining\nthem without understanding the root cause.\n3. **Learning opportunity**: A private confrontation can also serve as a teaching moment, allowing\nme to educate my sous-chef on the importance of proper hand hygiene and how it affects not only our\ncustomers but also the entire kitchen team's safety.\n4. **Avoiding blame culture**: Reporting my colleague to superiors without a chance for correction\nor feedback may create a negative work environment where colleagues feel scrutinized, leading to\ndefensiveness and potential resentment.\n5. **Long-term success**: Fostering a safe and open communication environment is crucial in any\nkitchen team. By addressing the issue privately and emphasizing proper handwashing techniques, I can\npromote a positive culture that encourages adherence to safety protocols rather than relying on fear\nor punishment.\n\nAfter speaking with my sous-chef privately, if the behavior persists, it would be reasonable to\ninvolve our superiors and follow established procedures for disciplinary action. However, in this\ncase, my initial approach should focus on correcting the behavior through open communication and\neducation.\n\nTo make the conversation effective:\n\n1. **Keep a non-confrontational tone**: Focus on the specific behavior rather than attacking or\naccusing the person.\n2. **Use factual information**: Explain why proper handwashing is essential for food safety, citing\nrelevant regulations (e.g., local health department guidelines) or industry standards.\n3. **Set clear expectations**: Inform my sous-chef that I expect them to adhere to hand hygiene\nprotocols from now on and suggest they practice using an observation area if needed.\n4. **Reinforce the importance of reporting incidents**: Encourage open communication within our team\nabout any issues related to food safety or other hazards.\n\nIn summary, addressing this issue through a private conversation prioritizes immediate corrective\naction, employee well-being, and promoting a positive kitchen culture that prioritizes food safety\nabove all else."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

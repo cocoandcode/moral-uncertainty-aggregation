@@ -1,0 +1,364 @@
+{
+  "slug": "changing_due_dates",
+  "dilemma": "In a project management scenario, the project leader has the power to change due dates. The project leader is aware that the team is overworked and stressed, but the client is pressuring for an earlier completion date. Should the project leader prioritize the team's well-being and stick to the original schedule, or succumb to the client's pressure and adjust the due date?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Change Due Dates",
+  "not_to_do_action": "Stick to Original Schedule",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.8685419830384056,
+      "maximin": 0.3553268133226566,
+      "nash": 42.71417091140645,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 8,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 0.3253605816495158,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7532715971240297,
+      "maximin": 0.3253605816495158,
+      "nash": 39.05295626185732,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7234588152447419,
+      "maximin": -0.07992269005833456,
+      "nash": 36.61214649549124,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.5783756474510782,
+      "maximin": -0.5151721934393257,
+      "nash": 30.51012207957603,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7234588152447419,
+      "maximin": -0.07992269005833456,
+      "nash": 36.61214649549124,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7234588152447419,
+      "maximin": -0.07992269005833456,
+      "nash": 36.61214649549124,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.593282038390722,
+      "maximin": -0.07992269005833456,
+      "nash": 32.95093184594211,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7383652061843857,
+      "maximin": 0.3553268133226566,
+      "nash": 38.4427538202658,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.5783756474510782,
+      "maximin": -0.5151721934393257,
+      "nash": 30.51012207957603,
+      "baseline": -0.5151721934393257,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 9,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.593282038390722,
+      "maximin": -0.07992269005833456,
+      "nash": 32.95093184594211,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 6,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.07992269005833456,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.7234588152447419,
+      "maximin": -0.07992269005833456,
+      "nash": 36.61214649549124,
+      "baseline": -0.07992269005833456,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 8,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": 0.7905763167036478,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 1.0136251508320693,
+      "maximin": 0.7905763167036478,
+      "nash": 48.81619532732165,
+      "baseline": 0.7905763167036478,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 10,
+        "ubuntu": 9
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 1.1064212427736348,
+        "ubuntu": 1.1438778930189255
+      },
+      "ec": 0.43329247965741446,
+      "maximin": -0.950421696820317,
+      "nash": 24.408097663660826,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.6054063949190005,
+      "maximin": 0.3553268133226566,
+      "nash": 34.17133672912516,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 7,
+        "deontological": 6,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": 0.3553268133226566,
+        "deontological": -0.4557000794746032,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.21487606435694107,
+      "maximin": -0.4557000794746032,
+      "nash": 22.780891152750105,
+      "baseline": 0.3553268133226566,
+      "recommendation": "NOT_TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 13,
+      "value": 1.0136251508320693,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 13,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 13,
+      "value": 48.81619532732165,
+      "tied_ids": [
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": 0.7905763167036478,
+      "tied_ids": [
+        2,
+        13
+      ],
+      "recommendation": "NOT_TO_DO",
+      "tied_recommendations": [
+        "NOT_TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "I would recommend that the project leader prioritize the team's well-being and stick to the original\nschedule, but with a twist.\n\n**Initial Recommendation:** Stick to the original schedule.\n\nIn this scenario, prioritizing the team's well-being is essential for maintaining productivity,\nquality, and morale. Allowing them to complete tasks at a sustainable pace reduces burnout, stress,\nand turnover rates. This ultimately benefits the project, as a healthy and motivated team produces\nhigher-quality work.\n\nHowever, I would not recommend unilaterally telling the client that the original schedule will be\nmaintained without exploring options for compromise or adjustment.\n\n**Alternative Recommendation:**\n\n1. **Communicate with the client**: Explain to the client the concerns about the team's workload and\nstress levels.\n2. **Collaborate on a mutually beneficial solution**: Work together with the client to explore\nflexible solutions, such as:\n\t* Breaking down large tasks into smaller ones\n\t* Adjusting deadlines for non-critical tasks\n\t* Adding additional resources (if feasible)\n\t* Exploring alternative delivery dates or milestones\n3. **Re-evaluate and renegotiate if necessary**: If adjustments are made, re-assess the impact on\nthe team's well-being and project quality.\n\nThis approach acknowledges the client's needs while prioritizing the team's welfare. By working\ntogether to find solutions, both parties' interests can be served.\n\n**Why?**\n\nPrioritizing the team's well-being leads to a better quality outcome in the long run.\nCollaboration with the client builds trust and maintains a positive relationship.\nFinding mutually beneficial solutions demonstrates that the project leader values communication and\ncooperation.\n\nUltimately, effective project management involves balancing competing demands while maintaining a\nfocus on the project's overall goals and success. By working together and finding a compromise, the\nproject leader can ensure both the team's well-being and the client's satisfaction are addressed.",
+    "13": "**Recommendation: Prioritize the team's well-being and stick to the original schedule**\n\n**Reasoning:**\n\n1. **Team burnout and performance:** When teams are overworked and stressed, their productivity and\nquality of work suffer. Rushing to meet an earlier deadline without sufficient resources can lead to\nburnout, decreased morale, and potential mistakes.\n2. **Long-term project success:** A team's well-being is critical to the project's overall success.\nInvesting in their health and safety will ultimately benefit the project's quality, timelines, and\nbudget.\n3. **Client relationships are built on trust:** While meeting a client's deadlines is essential,\nit's equally important to maintain open communication with the client about realistic expectations\nand resource constraints. By explaining the situation to the client, you may be able to negotiate or\nfind alternative solutions that meet their needs while prioritizing team welfare.\n4. **Potential consequences of underdelivering:** Rushing to meet an unrealistically early deadline\ncan lead to inadequate quality control measures, potentially causing significant issues down the\nline (e.g., defects, rework, damage to reputation).\n5. **Project leader's accountability:** As a project leader, you have a responsibility to ensure\nthat your team is able to deliver quality results while maintaining a healthy work environment.\n\n**Alternative solution:**\n\nConsider alternatives to meet the client's requests:\n\n1. **Request additional resources:** Ask for more personnel, skills, or equipment to support the\nteam in meeting the deadline.\n2. **Negotiate with the client:** Explain the situation and see if you can agree on an extended\ndeadline or a phase-by-phase delivery plan.\n3. **Identify critical tasks:** Focus on delivering high-priority tasks on time, while temporarily\nadjusting less urgent activities.\n\nUltimately, prioritizing team welfare will contribute to the project's overall success by ensuring\nthat all stakeholders receive quality results while maintaining a positive and productive work\nenvironment."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_recommendations": [
+    "NOT_TO_DO"
+  ],
+  "distinct_winners": 2
+}

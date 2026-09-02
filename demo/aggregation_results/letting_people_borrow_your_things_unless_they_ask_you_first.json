@@ -1,0 +1,385 @@
+{
+  "slug": "letting_people_borrow_your_things_unless_they_ask_you_first",
+  "dilemma": "You have a rare book collection that you don't let anyone borrow. Your best friend, who never asks for permission, takes one of your rare books to read for a literature project. Should you confront your friend about borrowing the book without asking first, knowing it could potentially harm your friendship?\n\nGive a clear recommendation and explain your reasoning.",
+  "judge_model": "gpt-4o-mini",
+  "credences": {
+    "utilitarian": 0.3333333333333333,
+    "deontological": 0.3333333333333333,
+    "ubuntu": 0.3333333333333333
+  },
+  "normalization": "global z-score per judge; Nash surplus anchored at raw 0",
+  "to_do_action": "Confronting the friend",
+  "not_to_do_action": "Not confronting the friend",
+  "labeler_model": "gpt-4o-mini",
+  "candidates": [
+    {
+      "id": 1,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.2287195422581463,
+      "maximin": -0.950421696820317,
+      "nash": 12.204048831830413,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 2,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.2165951857298678,
+      "maximin": -0.8505042759618531,
+      "nash": 12.204048831830413,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 3,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.36167835352353156,
+      "maximin": -0.950421696820317,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 4,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.2165951857298678,
+      "maximin": -0.8505042759618531,
+      "nash": 12.204048831830413,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 5,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.2165951857298678,
+      "maximin": -0.8505042759618531,
+      "nash": 12.204048831830413,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 6,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 9,
+        "ubuntu": 4
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.8505042759618531
+      },
+      "ec": -0.36167835352353156,
+      "maximin": -0.950421696820317,
+      "nash": 9.76323906546433,
+      "baseline": -0.950421696820317,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 7,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.08363637446448255,
+      "maximin": -0.5151721934393257,
+      "nash": 15.255061039788014,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 8,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.31524005933167315,
+      "maximin": -0.5151721934393257,
+      "nash": 24.408097663660826,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 9,
+      "raw": {
+        "utilitarian": 4,
+        "deontological": 3,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.950421696820317,
+        "deontological": -1.6272910711607818,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": -0.7438625808514948,
+      "maximin": -1.6272910711607818,
+      "nash": 5.695222788187526,
+      "baseline": -0.950421696820317,
+      "recommendation": "NOT_TO_DO"
+    },
+    {
+      "id": 10,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 8,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.3253605816495158,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.21381315131850237,
+      "maximin": -0.5151721934393257,
+      "nash": 13.560054257589348,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 11,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 6
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.052751408369541584
+      },
+      "ec": 0.049322436800902675,
+      "maximin": -0.5151721934393257,
+      "nash": 18.30607324774562,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 12,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.08363637446448255,
+      "maximin": -0.5151721934393257,
+      "nash": 15.255061039788014,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 13,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 8
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.7450014592227698
+      },
+      "ec": 0.31524005933167315,
+      "maximin": -0.5151721934393257,
+      "nash": 24.408097663660826,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 14,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 7
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": 0.3461250254266141
+      },
+      "ec": 0.1822812480662879,
+      "maximin": -0.5151721934393257,
+      "nash": 21.35708545570322,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 15,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.08363637446448255,
+      "maximin": -0.5151721934393257,
+      "nash": 15.255061039788014,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    },
+    {
+      "id": 16,
+      "raw": {
+        "utilitarian": 5,
+        "deontological": 9,
+        "ubuntu": 5
+      },
+      "z": {
+        "utilitarian": -0.5151721934393257,
+        "deontological": 0.7158909122115753,
+        "ubuntu": -0.4516278421656973
+      },
+      "ec": -0.08363637446448255,
+      "maximin": -0.5151721934393257,
+      "nash": 15.255061039788014,
+      "baseline": -0.5151721934393257,
+      "recommendation": "TO_DO"
+    }
+  ],
+  "winners": {
+    "ec": {
+      "id": 8,
+      "value": 0.31524005933167315,
+      "tied_ids": [
+        8,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "maximin": {
+      "id": 7,
+      "value": -0.5151721934393257,
+      "tied_ids": [
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "nash": {
+      "id": 8,
+      "value": 24.408097663660826,
+      "tied_ids": [
+        8,
+        13
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    },
+    "baseline": {
+      "id": 2,
+      "value": -0.5151721934393257,
+      "tied_ids": [
+        2,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "recommendation": "TO_DO",
+      "tied_recommendations": [
+        "TO_DO"
+      ]
+    }
+  },
+  "winner_texts": {
+    "2": "The delicate dance of friendships and boundaries! I'd recommend that you do confront your best\nfriend about borrowing the book without permission. Here's why:\n\n1. **Respect for boundaries**: You've explicitly stated that no one can borrow your rare books,\nwhich means it's not just a matter of \"if you ask\" or \"if I feel like lending.\" It's a firm boundary\nto protect your collection and your comfort level.\n2. **Understanding your values**: By setting clear boundaries around your book collection, you're\nexercising control over something that's precious to you. Confronting your friend about the\nunauthorized borrowing will help maintain that sense of control and agency.\n3. **Potential for ongoing disrespect**: If your friend disregards your clear boundary once without\nasking permission, it may lead to a slippery slope where they assume other rules don't apply too. By\naddressing the issue upfront, you're avoiding potential future conflicts.\n4. **The importance of communication**: Openly discussing the situation with your friend will help\nclear up any misunderstandings and reinforce that borrowing books requires explicit permission.\n\nTo handle the conversation, consider approaching it with empathy and a non-confrontational tone:\n\n* Express your feelings: \"Hey, I wanted to talk to you about taking my rare book without asking. I'm\ndisappointed because I thought we understood each other better.\"\n* Explain the reason behind your boundary: \"You know how important these books are to me. It's not\njust their value but also the emotional significance they hold. That's why I'm so protective of\nthem.\"\n* Avoid blaming or accusing language, focusing on your own feelings and needs instead.\n* Come up with a solution together: If your friend genuinely needed to borrow the book for the\nproject, discuss alternatives, such as making digital scans or finding another resource.\n\nRemember that maintaining boundaries is an essential part of any relationship. By confronting the\nissue directly and respectfully, you can strengthen your friendship while still defending your\nvalues and collection.",
+    "7": "**Recommendation:** Confront your friend and express your concerns in a calm and non-accusatory\nmanner.\n\n**Reasoning:**\n\n1. **Respect for property**: Your rare book collection is something that you value highly, and\nlending them to others without consent can be considered an invasion of your personal space. By\nstanding firm on this principle, you're communicating your boundaries to your friend.\n2. **Potential harm**: As you mentioned, the book might get damaged or lost, which would not only\naffect your collection but also have long-term consequences for its historical value and research\npotential.\n3. **Friendship dynamics**: Although lending your best friend the book without asking first might\nseem like a trivial issue, it can actually highlight deeper patterns of behavior in your friendship.\nIf your friend consistently disregards your boundaries or respects them selectively, it may affect\nthe trust and mutual respect that underpin your relationship.\n4. **Open communication**: Confronting your friend about their actions is an opportunity to discuss\nunderlying issues and clarify expectations. By talking things through, you can work together to find\na mutually acceptable solution for your friend's literature project.\n\n**Approaching the conversation:**\n\nWhen talking to your friend, express your feelings using \"I\" statements:\n\n* \"Hey, I noticed you took one of my rare books without asking first. I feel concerned that it might\nget damaged or lost.\"\n* \"I understand you need a book for your project, but I'm worried about the potential risks\ninvolved. Can we discuss alternative options?\"\n* \"In the future, please ask me before taking something from my collection. That way, we can make\nsure to find a solution that works for both of us.\"\n\nBy addressing the issue directly and non-confrontationally, you can resolve any misunderstandings\nand reaffirm your friendship while maintaining your right to protect your belongings.",
+    "8": "The difficult dilemma!\n\nWhile I understand that your friend's intentions are likely pure (for a literature project), taking\none of your rare books without permission can be seen as a breach of trust. Your book collection is\nunique, and its value may extend beyond monetary worth to sentimental or emotional significance. To\naddress the situation effectively, consider these points:\n\n**You have every right to expect respect for your property**: Since you've explicitly stated that no\none can borrow your rare books, it's essential to stand firm on this principle. Your collection is a\npersonal asset, and allowing borrowing would create inconsistencies in expectations.\n\n**Open conversation is key**: Instead of confronting your friend immediately (which might lead to\ndefensiveness), consider a calm, open conversation about what happened. Ask them why they took the\nbook without asking first, as this can help clarify their perspective.\n\n**Empathy and understanding**: Try to see things from your friend's point of view: maybe they didn't\nthink it would be a problem or perhaps they genuinely believed you'd want them to contribute to\ntheir project in some way. Be willing to listen to their reasoning and provide context for why\nborrowing is not an option.\n\n**Reaffirm boundaries and expectations**: Make it clear that you value your friend's opinion, but\nborrowing from your collection requires permission. This conversation also presents an opportunity\nto reiterate the significance of discussing plans before taking actions involving personal\nbelongings or sensitive matters.\n\n**Avoid guilt-tripping or punishing behavior**: While it's essential to maintain boundaries, try not\nto turn this situation into a \"who's right vs. who's wrong\" issue. Your focus should be on clearly\ncommunicating expectations and addressing any underlying concerns, rather than placing blame or\ntrying to shame your friend.\n\n**Potential long-term benefits of open communication**: This conversation could strengthen the\nfriendship by promoting trust, respect, and clear communication. By addressing this sensitive topic\nopenly and empathetically, you can actually foster a deeper connection with your friend while\nreaffirming your boundaries.\n\nRecommendation: Have a calm and respectful conversation with your friend about what happened,\nclarifying your expectations and reaffirming the importance of asking permission before borrowing\nfrom your rare book collection."
+  },
+  "unanimous": true,
+  "unanimous_recommendation": true,
+  "shared_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_recommendations": [
+    "TO_DO"
+  ],
+  "distinct_winners": 3
+}
