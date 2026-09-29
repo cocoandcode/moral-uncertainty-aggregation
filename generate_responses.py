@@ -31,6 +31,8 @@ TEMPERATURE = 1.1
 TOP_P = 0.95
 WRAP_WIDTH = 100
 OLLAMA_URL = "http://localhost:11434/api/generate"
+# Generation averages ~27s per response, so this only fires on a stall.
+REQUEST_TIMEOUT = 300
 
 ROOT = Path(__file__).resolve().parent
 DILEMMAS_FILE = ROOT / "data" / "filtered_dilemmas.json"
