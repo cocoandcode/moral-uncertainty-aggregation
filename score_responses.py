@@ -36,6 +36,9 @@ except ImportError:
 
 # ── Settings ─────────────────────────────────────────────────
 MODEL = "gpt-4o-mini"
+# Written when both attempts fail. Mid-scale, so it is indistinguishable from a
+# real judgement unless tagged; every row that uses it carries a "fallbacks" key.
+FALLBACK_SCORE = 5
 
 ROOT = Path(__file__).resolve().parent
 RESPONSES_DIR = ROOT / "responses"
@@ -145,6 +148,23 @@ def score_response(
     return None
 
 
+def score_with_retry(
+    client: OpenAI,
+    response_text: str,
+    framework_prompt: str,
+    dilemma: str | None = None,
+) -> tuple[int, bool]:
+    """Score once, retry once, then fall back. Returns (score, is_fallback)."""
+    for attempt in (1, 2):
+        score = score_response(client, response_text, framework_prompt, dilemma)
+        if score is not None:
+            return score, False
+        if attempt == 1:
+            print("FAILED, retrying...", end=" ", flush=True)
+            time.sleep(2)
+    return FALLBACK_SCORE, True
+
+
 def render_html(
     title: str,
     rows: list[dict],
@@ -221,19 +241,18 @@ def main() -> int:
             text = "\n".join(text)
         print(f"\nResponse {rid}:", flush=True)
         row: dict = {"id": rid, "response": text}
+        fallbacks: list[str] = []
         for name, prompt in FRAMEWORKS.items():
             print(f"  {name}...", end=" ", flush=True)
-            s = score_response(client, text, prompt, dilemma_text)
-            if s is None:
-                print("FAILED, retrying...", end=" ", flush=True)
-                time.sleep(2)
-                s = score_response(client, text, prompt, dilemma_text)
-            if s is None:
-                s = 5
+            s, is_fallback = score_with_retry(client, text, prompt, dilemma_text)
+            if is_fallback:
+                fallbacks.append(name)
                 print(f"FALLBACK {s}")
             else:
                 print(s)
             row[name] = s
+        if fallbacks:
+            row["fallbacks"] = fallbacks
         rows.append(row)
 
     output = {
@@ -246,6 +265,7 @@ def main() -> int:
                 "utilitarian": r["utilitarian"],
                 "deontological": r["deontological"],
                 "ubuntu": r["ubuntu"],
+                **({"fallbacks": r["fallbacks"]} if "fallbacks" in r else {}),
             }
             for r in rows
         ],
@@ -260,6 +280,13 @@ def main() -> int:
     print("Raw scores:")
     for r in rows:
         print(f"  R{r['id']:>2}: U={r['utilitarian']} D={r['deontological']} Ub={r['ubuntu']}")
+
+    n_fallback = sum(len(r.get("fallbacks", ())) for r in rows)
+    if n_fallback:
+        ids = [r["id"] for r in rows if "fallbacks" in r]
+        print(f"\nWARNING: {n_fallback} of {3 * len(rows)} scores are fallbacks, "
+              f"not judgements (responses {ids}). They are tagged in the JSON; "
+              f"re-run this dilemma before using it.")
 
     render_html(title, rows, output_html, dilemma=dilemma_text or "")
     refresh_index()
